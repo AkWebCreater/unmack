@@ -33,6 +33,13 @@
       "footer": {
         "type": "footer",
         "blocks": {
+          "65eb48c7-0912-4431-a67c-22d9201952fd": {
+            "type": "text",
+            "settings": {
+              "heading": "#Umanac",
+              "subtext": "<p>Olympia Industries Limited C-205,<br\/>Synthofine Industrial Estate,<br\/>Behind Virwani Industrial Estate ,<br\/>Goregaon (East), Mumbai - 400063 Phone No: <strong>+91 9833379988<\/strong><br\/>Email: <strong>info@petoly.in<\/strong><\/p>"
+            }
+          },
           "footer-0": {
             "type": "link_list",
             "settings": {
@@ -56,6 +63,7 @@
           }
         },
         "block_order": [
+          "65eb48c7-0912-4431-a67c-22d9201952fd",
           "footer-0",
           "091da5bd-c03d-4798-bc37-ff6a51c7bf27",
           "66a9ba47-6031-4db5-a6ab-06240c0fdef2"
