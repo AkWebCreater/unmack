@@ -60,6 +60,7 @@
   </div>
   {% endif %}
   {% endcomment %}
+  {% comment %}
   <div class="logo page-width">
     <ul>
       <li><a href="">Home</a></li>
@@ -69,6 +70,7 @@
       <li><a href="">Home</a></li>
     </ul>
   </div>
+  {% endcomment %}
   <div class="banner__content page-width" style="align-items: {{ section.settings.desktop_text_box_position }};">
     <div class="text-banner banner__box color-{{ section.settings.color_scheme }}">
       {%- for block in section.blocks -%}
