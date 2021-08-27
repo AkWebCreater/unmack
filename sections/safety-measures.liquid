@@ -31,12 +31,12 @@
 
 {% schema %}
   {
-    "name": "bg with images",
+    "name": "safety measure ",
     "settings": [
 					{
-                      "id": "background-image",
-                      "type": "image_picker",
-                      "label": "Choose images for background"
+                      "id": "background-color",
+                      "type": "color",
+                      "label": "Choose color for background"
                     },
 					{
                       "id": "heading",
@@ -71,7 +71,7 @@
         ],
 "presets": [
 {
-"name": "bg with images",
+"name": "safety measure ",
 "category": "ADVANCED LAYOUT"
 }
 ]
@@ -87,9 +87,8 @@
 <style>
   {% if section.settings.background-image != blank %}
   .section-{{section.id}} .image-with-text{
-    background-image:url({{section.settings.background-image | img_url: 'master'}});
-    background-position: center center;
-    background-size: cover;
+    background-color:{{section.settings.background-image }};
+    
   }
   {% endif %}
   .section-{{section.id}} h2.title{
