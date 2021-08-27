@@ -1,30 +1,6 @@
 <!-- start section safety measure -->
 <section class="section-{{section.id}}">
-  <div class="image-with-text  color-scheme-background-1">
-      <div class="page-width">
-        {% if section.settings.heading != blank %}
-          <div class="heading">
-            <h2 class="title">{{ section.settings.heading}}</h2>
-          </div>
-        {% endif %}
-        
-        <div class="grid grid-3">
-          {% for block in section.blocks %}
-          <div class="grid-1">
-            {% if block.settings.image != blank %}
-            <div class="grid-up"><img src="{{ block.settings.image | img_url:'200x200' }}" class="small-img"></div>
-            
-            <div class="grid-down">
-              <span>{{ block.settings.title}}</span>
-              <p>{{ block.settings.description }}</p>
-            </div>
-            {% endif %}
-          </div>
-           {% endfor %}
-        </div> 
-       
-      </div>
-  </div>
+  
 </section>
 <!-- End section safety measure  -->
 
@@ -85,41 +61,5 @@
 {% endjavascript %}
 
 <style>
-  {% if section.settings.background-image != blank %}
-  .section-{{section.id}} .image-with-text{
-    background-color:{{section.settings.background-image }};
-    
-  }
-  {% endif %}
-  .section-{{section.id}} h2.title{
-  	text-align:center;
-    padding-top: 15px;
-  }
-  .section-{{section.id}} .grid.grid-3{
-  	width:80%;
-    margin:auto;
-    text-align:center;
-  }
-  .section-{{section.id}} .small-img{
-  	height:120px;
-  } 
-  .section-{{section.id}} .heading .title:after{
-    content: '';
-    display: block;
-    margin: .25em auto 0;
-    width: 100px;
-    border-top: 3px solid #B84D1D;
-  }
-  .section-{{section.id}} .grid-down span h3 {
-    color: white;
-    font-weight: 600;
-}
-  .section-{{section.id}} .grid-down p {
-    color: white;
-}
-  @media screen and (max-width:768px){
-    .section-{{section.id}} .grid-1{
-    	width: 100%;
-    }
-  }
+ 
 </style>
