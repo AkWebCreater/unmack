@@ -1,6 +1,7 @@
 {
   "current": {
     "colors_accent_1": "#546d36",
+    "colors_accent_2": "#f58634",
     "social_twitter_link": "https:\/\/twitter.com\/UmanacIN?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
     "social_facebook_link": "https:\/\/www.facebook.com\/Umanac\/",
     "social_instagram_link": "https:\/\/www.instagram.com\/umanac.in\/?hl=en",
@@ -27,6 +28,7 @@
       "header": {
         "type": "header",
         "settings": {
+          "color_scheme": "accent-2",
           "logo_width": 100,
           "logo_position": "middle-left",
           "menu": "main-menu",
