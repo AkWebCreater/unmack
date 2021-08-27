@@ -71,6 +71,9 @@
 {% endjavascript %}
 
 <style>
+  .section-{{section.id}} .image-with-text{
+    background-color:{{ section.settings.background-color }};
+  }
   .section-{{section.id}} .heading .title:after{
     content: '';
     display: block;
