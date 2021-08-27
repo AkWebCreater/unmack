@@ -86,12 +86,86 @@
         "color_scheme": "background-1",
         "full_width": true
       }
+    },
+    "1630044136009a8f84": {
+      "type": "image-with-textvideo",
+      "blocks": {
+        "1630044136009a8f84-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text"
+          }
+        },
+        "1630044136009a8f84-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "1630044136009a8f84-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1630044136009a8f84-0",
+        "1630044136009a8f84-1",
+        "1630044136009a8f84-2"
+      ],
+      "settings": {
+        "height": "adapt",
+        "color_scheme": "background-1",
+        "layout": "text_first"
+      }
+    },
+    "16300441400f67cd94": {
+      "type": "background-with-images",
+      "blocks": {
+        "8235c2a9-14db-469e-bae0-5981d02a0874": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/s1.png",
+            "title": "<h3>FAST &amp; EASY<\/h3>",
+            "description": "<p>Get superfood delivered within 3-5 days.<\/p>"
+          }
+        },
+        "fe05499a-d62d-48fa-8a4b-a5fc2cb09057": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/s2.png",
+            "title": "<h3>SOURCING &amp; PROCESSING<\/h3>",
+            "description": "<p>High quality ingredients sourced from across the globe<\/p>"
+          }
+        },
+        "4822afcf-b5a0-4844-b8ec-a7ce53680a72": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/s3.png",
+            "title": "<h3>PACKAGING<\/h3>",
+            "description": "<p>Packed in sturdy, reliable bags<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "8235c2a9-14db-469e-bae0-5981d02a0874",
+        "fe05499a-d62d-48fa-8a4b-a5fc2cb09057",
+        "4822afcf-b5a0-4844-b8ec-a7ce53680a72"
+      ],
+      "settings": {
+        "background-image": "shopify:\/\/shop_images\/banner2.jpg",
+        "heading": "WHAT MAKE US DIFFERENT"
+      }
     }
   },
   "order": [
     "main",
     "163004193400fba96e",
     "1630041953ce8ee818",
-    "16300432373f322551"
+    "16300432373f322551",
+    "1630044136009a8f84",
+    "16300441400f67cd94"
   ]
 }
