@@ -34,9 +34,9 @@
     "name": "safety measures",
     "settings": [
 					{
-                      "id": "background-image",
-                      "type": "image_picker",
-                      "label": "Choose images for background"
+                      "id": "background-color",
+                      "type": "color",
+                      "label": "Choose color for background"
                     },
 					{
                       "id": "heading",
@@ -49,7 +49,7 @@
           {
             "type":"image",
             "name":"image-block",
-			"limit":3,
+			"limit":5,
             "settings":[
 							{
                               "id":"image",
@@ -85,11 +85,9 @@
 {% endjavascript %}
 
 <style>
-  {% if section.settings.background-image != blank %}
+  {% if section.settings.background-color != blank %}
   .section-{{section.id}} .image-with-text{
-    background-image:url({{section.settings.background-image | img_url: 'master'}});
-    background-position: center center;
-    background-size: cover;
+    background-image:url({{section.settings.background-color | img_url: 'master'}});
   }
   {% endif %}
   .section-{{section.id}} h2.title{
