@@ -77,6 +77,8 @@
             assign footer_grid_class = 'grid--4col-desktop'
           elsif section.blocks.size > 4
             assign footer_grid_class = 'grid--3-col-tablet'
+          elsif section.blocks.size == 5
+            assign footer_grid_class = 'grid--5col-desktop'   
           endif
         -%}
         <div class="footer__blocks-wrapper grid grid--1-col grid--2-col grid--4-col-tablet {{ footer_grid_class }}">
