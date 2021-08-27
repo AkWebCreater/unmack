@@ -283,6 +283,7 @@
     },
     "163006957410434a5f": {
       "type": "safety-measures",
+      "disabled": true,
       "blocks": {
         "aae45f56-546e-4b6c-98c1-8b93defdc076": {
           "type": "image",
