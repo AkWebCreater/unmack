@@ -9,8 +9,9 @@
         <div class="grid heading">
           {% for block in section.blocks %}
           <div class="grid-1">{% if block.settings.image != blank %}
-            <div class="grid-up"><img src="{{ block.settings.image | img_url:'200x200' }}" class="small-img"></div>
-            
+            <div class="grid-up">
+              <img src="{{ block.settings.image | img_url:'200x200' }}" class="small-img">
+            </div> 
             <div class="grid-down">
               <span>{{ block.settings.title}}</span>
               <p>{{ block.settings.description }}</p>
@@ -98,6 +99,18 @@
   }
   .section-{{section.id}} .grid .grid-1{
     width:16%;
+  }
+  .section-{{section.id}} .small-img{
+  	height:120px;
+  }
+   .section-{{section.id}} .grid-down span h3 {
+    font-weight: 600;
+}
+
+  @media screen and (max-width:768px){
+    .section-{{section.id}} .grid-1{
+    	width: 100%;
+    }
   }
  
 </style>
