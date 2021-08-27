@@ -67,7 +67,67 @@
           </div>
         {%- endif -%}
 
-        {%- if section.settings.show_social -%}
+        
+      </div>
+      {%- if section.blocks.size > 0 -%}
+        {%- liquid
+          if section.blocks.size == 9
+            assign footer_grid_class = 'grid--3-col-tablet'
+          elsif section.blocks.size > 6
+            assign footer_grid_class = 'grid--4col-desktop'
+          elsif section.blocks.size > 4
+            assign footer_grid_class = 'grid--3-col-tablet'
+          endif
+        -%}
+        <div class="footer__blocks-wrapper grid grid--1-col grid--2-col grid--4-col-tablet {{ footer_grid_class }}">
+          {%- for block in section.blocks -%}
+
+            {%- if block.type == 'link_list' and block.settings.heading != blank -%}
+              <div class="accordion">
+                <details>
+                  <summary><h2 class="h4 accordion__title">{{ block.settings.heading | escape }}</h2>{% render 'icon-caret' %}</summary>
+                  {%- if block.settings.menu != blank -%}
+                    <ul class="footer-block__details-content list-unstyled">
+                      {%- for link in block.settings.menu.links -%}
+                        <li>
+                          <a href="{{ link.url }}" class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}">
+                            {{ link.title }}
+                          </a>
+                        </li>
+                      {%- endfor -%}
+                    </ul>
+                  {%- endif -%}
+                </details>
+              </div>
+            {%- endif -%}
+
+            <div class="footer-block grid__item{% if block.type == 'link_list' and block.settings.heading != blank %} footer-block--menu small-hide{% endif %}">
+              {%- if block.settings.heading != blank -%}
+                <h2 class="footer-block__heading">{{- block.settings.heading | escape -}}</h2>
+              {%- endif -%}
+
+              {%- case block.type -%}
+                {%- when 'text' -%}
+                  <div class="footer-block__details-content rte">
+                    {{ block.settings.subtext }}
+                  </div>
+                {%- when 'link_list' -%}
+                  {%- if block.settings.menu != blank and block.settings.heading != blank -%}
+                    <ul class="footer-block__details-content list-unstyled">
+                      {%- for link in block.settings.menu.links -%}
+                        <li>
+                          <a href="{{ link.url }}" class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}">
+                            {{ link.title }}
+                          </a>
+                        </li>
+                      {%- endfor -%}
+                    </ul>
+                  {%- endif -%}
+                {%- endcase -%}
+            </div>
+          {%- endfor -%}
+          {%- if section.settings.show_social -%}
+          <div class="footer-block grid__item">
           <ul class="footer__list-social list-unstyled list-social" role="list">
             {%- if settings.social_twitter_link != blank -%}
               <li class="list-social__item">
@@ -143,65 +203,8 @@
             {%- endif -%}
             <li class="list-social__item--placeholder">{{ 'sections.footer.social_placeholder' | t }}</li>
           </ul>
-        {%- endif -%}
-      </div>
-      {%- if section.blocks.size > 0 -%}
-        {%- liquid
-          if section.blocks.size == 9
-            assign footer_grid_class = 'grid--3-col-tablet'
-          elsif section.blocks.size > 6
-            assign footer_grid_class = 'grid--4col-desktop'
-          elsif section.blocks.size > 4
-            assign footer_grid_class = 'grid--3-col-tablet'
-          endif
-        -%}
-        <div class="footer__blocks-wrapper grid grid--1-col grid--2-col grid--4-col-tablet {{ footer_grid_class }}">
-          {%- for block in section.blocks -%}
-
-            {%- if block.type == 'link_list' and block.settings.heading != blank -%}
-              <div class="accordion">
-                <details>
-                  <summary><h2 class="h4 accordion__title">{{ block.settings.heading | escape }}</h2>{% render 'icon-caret' %}</summary>
-                  {%- if block.settings.menu != blank -%}
-                    <ul class="footer-block__details-content list-unstyled">
-                      {%- for link in block.settings.menu.links -%}
-                        <li>
-                          <a href="{{ link.url }}" class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}">
-                            {{ link.title }}
-                          </a>
-                        </li>
-                      {%- endfor -%}
-                    </ul>
-                  {%- endif -%}
-                </details>
-              </div>
+          </div>
             {%- endif -%}
-
-            <div class="footer-block grid__item{% if block.type == 'link_list' and block.settings.heading != blank %} footer-block--menu small-hide{% endif %}">
-              {%- if block.settings.heading != blank -%}
-                <h2 class="footer-block__heading">{{- block.settings.heading | escape -}}</h2>
-              {%- endif -%}
-
-              {%- case block.type -%}
-                {%- when 'text' -%}
-                  <div class="footer-block__details-content rte">
-                    {{ block.settings.subtext }}
-                  </div>
-                {%- when 'link_list' -%}
-                  {%- if block.settings.menu != blank and block.settings.heading != blank -%}
-                    <ul class="footer-block__details-content list-unstyled">
-                      {%- for link in block.settings.menu.links -%}
-                        <li>
-                          <a href="{{ link.url }}" class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}">
-                            {{ link.title }}
-                          </a>
-                        </li>
-                      {%- endfor -%}
-                    </ul>
-                  {%- endif -%}
-                {%- endcase -%}
-            </div>
-          {%- endfor -%}
         </div>
       {%- endif -%}
 
