@@ -6,6 +6,7 @@
   width: 100%;
   border:1px solid #000;
   position: relative;
+  border-radius:30px;
 }
 .newsletter-form *{
 box-shadow:none !important;
