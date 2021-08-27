@@ -280,6 +280,71 @@
         "button_link": "",
         "swipe_on_mobile": false
       }
+    },
+    "163006957410434a5f": {
+      "type": "safety-measures",
+      "blocks": {
+        "aae45f56-546e-4b6c-98c1-8b93defdc076": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1s.png",
+            "title": "",
+            "description": ""
+          }
+        },
+        "8f0d6df2-cc77-4141-b74e-b1a5aae74180": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2s.png",
+            "title": "",
+            "description": ""
+          }
+        },
+        "a3364dce-84fc-42f0-95ef-efe7a3821ad4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3s.png",
+            "title": "",
+            "description": ""
+          }
+        },
+        "87681c60-fc1c-49f2-9b8b-7f22a0fef7f0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4s.png",
+            "title": "",
+            "description": ""
+          }
+        },
+        "984d8726-9799-4d1e-bca3-308669571606": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/5s.png",
+            "title": "",
+            "description": ""
+          }
+        },
+        "e83ccb35-5cef-4db2-83e4-b6b3dc962a7d": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/6s.png",
+            "title": "",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "aae45f56-546e-4b6c-98c1-8b93defdc076",
+        "8f0d6df2-cc77-4141-b74e-b1a5aae74180",
+        "a3364dce-84fc-42f0-95ef-efe7a3821ad4",
+        "87681c60-fc1c-49f2-9b8b-7f22a0fef7f0",
+        "984d8726-9799-4d1e-bca3-308669571606",
+        "e83ccb35-5cef-4db2-83e4-b6b3dc962a7d"
+      ],
+      "settings": {
+        "background-color": "#f3f3f3",
+        "heading": "Safety Measures"
+      }
     }
   },
   "order": [
@@ -291,6 +356,7 @@
     "16300441400f67cd94",
     "1630047374cc6bf00e",
     "16300475096746fb20",
-    "163004502857e20478"
+    "163004502857e20478",
+    "163006957410434a5f"
   ]
 }
