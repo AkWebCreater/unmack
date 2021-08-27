@@ -168,6 +168,38 @@
         "heading": "WHAT MAKE US DIFFERENT"
       }
     },
+    "1630047374cc6bf00e": {
+      "type": "image-with-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/1.jpg",
+        "image-right": "shopify:\/\/shop_images\/3.jpg",
+        "height": "adapt",
+        "color_scheme": "background-1",
+        "layout": "image_first",
+        "text-left": "<p>Loaded with<br> High - Quality<br> Protein<\/p>",
+        "text-right": "<p>Natural source<br> of Fiber!<\/p>",
+        "button-left": "Shop Now",
+        "url_button1": "",
+        "button-right": "Shop Now",
+        "url_button2": ""
+      }
+    },
+    "16300475096746fb20": {
+      "type": "image-with-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/2.jpg",
+        "image-right": "shopify:\/\/shop_images\/4.jpg",
+        "height": "adapt",
+        "color_scheme": "background-1",
+        "layout": "image_first",
+        "text-left": "<p>Loaded with<br> High - Quality<br> Protein<\/p>",
+        "text-right": "<p>Natural source<br> of Fiber!<\/p>",
+        "button-left": "Shop Now",
+        "url_button1": "",
+        "button-right": "Shop Now",
+        "url_button2": ""
+      }
+    },
     "163004502857e20478": {
       "type": "testomonials",
       "blocks": {
@@ -248,38 +280,6 @@
         "button_link": "",
         "swipe_on_mobile": false
       }
-    },
-    "1630047374cc6bf00e": {
-      "type": "image-with-image",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/1.jpg",
-        "image-right": "shopify:\/\/shop_images\/3.jpg",
-        "height": "adapt",
-        "color_scheme": "background-1",
-        "layout": "image_first",
-        "text-left": "<p>Loaded with<br> High - Quality<br> Protein<\/p>",
-        "text-right": "<p>Natural source<br> of Fiber!<\/p>",
-        "button-left": "Shop Now",
-        "url_button1": "",
-        "button-right": "Shop Now",
-        "url_button2": ""
-      }
-    },
-    "16300475096746fb20": {
-      "type": "image-with-image",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/2.jpg",
-        "image-right": "shopify:\/\/shop_images\/4.jpg",
-        "height": "adapt",
-        "color_scheme": "background-1",
-        "layout": "image_first",
-        "text-left": "<p>Loaded with<br> High - Quality<br> Protein<\/p>",
-        "text-right": "<p>Natural source<br> of Fiber!<\/p>",
-        "button-left": "Shop Now",
-        "url_button1": "",
-        "button-right": "Shop Now",
-        "url_button2": ""
-      }
     }
   },
   "order": [
@@ -289,8 +289,8 @@
     "16300432373f322551",
     "1630044136009a8f84",
     "16300441400f67cd94",
-    "163004502857e20478",
     "1630047374cc6bf00e",
-    "16300475096746fb20"
+    "16300475096746fb20",
+    "163004502857e20478"
   ]
 }
