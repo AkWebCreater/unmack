@@ -46,11 +46,19 @@
               "heading": "Policies",
               "menu": "policies"
             }
+          },
+          "66a9ba47-6031-4db5-a6ab-06240c0fdef2": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Shop By Category",
+              "menu": "shop-by-categories"
+            }
           }
         },
         "block_order": [
           "footer-0",
-          "091da5bd-c03d-4798-bc37-ff6a51c7bf27"
+          "091da5bd-c03d-4798-bc37-ff6a51c7bf27",
+          "66a9ba47-6031-4db5-a6ab-06240c0fdef2"
         ],
         "settings": {
           "color_scheme": "background-1",
