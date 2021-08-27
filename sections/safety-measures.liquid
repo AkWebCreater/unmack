@@ -1,4 +1,4 @@
-<!-- start section safety-measures -->
+<!-- start section background-with-images -->
 <section class="section-{{section.id}}">
   <div class="image-with-text  color-scheme-background-1">
       <div class="page-width">
@@ -8,7 +8,7 @@
           </div>
         {% endif %}
         
-        <div class="grid-3">
+        <div class="grid grid-3">
           {% for block in section.blocks %}
           <div class="grid-1">
             {% if block.settings.image != blank %}
@@ -26,17 +26,17 @@
       </div>
   </div>
 </section>
-<!-- End section safety-measures -->
+<!-- End section background-with-images -->
 
 
 {% schema %}
   {
-    "name": "safety measures",
+    "name": "bg with images",
     "settings": [
 					{
-                      "id": "background-color",
-                      "type": "color",
-                      "label": "Choose color for background"
+                      "id": "background-image",
+                      "type": "image_picker",
+                      "label": "Choose images for background"
                     },
 					{
                       "id": "heading",
@@ -49,7 +49,7 @@
           {
             "type":"image",
             "name":"image-block",
-			"limit":6,
+			"limit":3,
             "settings":[
 							{
                               "id":"image",
@@ -71,7 +71,7 @@
         ],
 "presets": [
 {
-"name": "safety measures",
+"name": "bg with images",
 "category": "ADVANCED LAYOUT"
 }
 ]
@@ -85,22 +85,25 @@
 {% endjavascript %}
 
 <style>
-  {% if section.settings.background-color != blank %}
+  {% if section.settings.background-image != blank %}
   .section-{{section.id}} .image-with-text{
-    background-color:{{section.settings.background-color}};
+    background-image:url({{section.settings.background-image | img_url: 'master'}});
+    background-position: center center;
+    background-size: cover;
   }
   {% endif %}
   .section-{{section.id}} h2.title{
   	text-align:center;
     padding-top: 15px;
   }
-
-  .section-{{section.id}} .grid-3{
+  .section-{{section.id}} .grid.grid-3{
   	width:80%;
     margin:auto;
     text-align:center;
-    display:flex
   }
+  .section-{{section.id}} .grid-1 {
+    width: 33%;
+}
   .section-{{section.id}} .small-img{
   	height:120px;
   } 
