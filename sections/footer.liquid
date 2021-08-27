@@ -57,7 +57,7 @@
                   <small class="newsletter-form__message form__message" id="ContactFooter-error">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</small>
                 {%- endif -%}
               </div>
-              <button type="submit" class="button button--secondary color-{{ section.settings.newsletter_button_color_scheme }} newsletter-form__button" name="commit" id="Subscribe">
+              <button type="submit" class="color-{{ section.settings.newsletter_button_color_scheme }} button button--secondary newsletter-form__button" name="commit" id="Subscribe">
                 {{ 'newsletter.button_label' | t }}
               </button>
               {%- if form.posted_successfully? -%}
