@@ -1,5 +1,6 @@
 {
   "current": {
+    "colors_accent_1": "#546d36",
     "social_twitter_link": "https:\/\/twitter.com\/UmanacIN?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
     "social_facebook_link": "https:\/\/www.facebook.com\/Umanac\/",
     "social_instagram_link": "https:\/\/www.instagram.com\/umanac.in\/?hl=en",
@@ -72,7 +73,7 @@
           "66a9ba47-6031-4db5-a6ab-06240c0fdef2"
         ],
         "settings": {
-          "color_scheme": "background-2",
+          "color_scheme": "accent-1",
           "newsletter_enable": true,
           "newsletter_heading": "Be a Part Of  Umanac Fitness Community",
           "show_social": true,
