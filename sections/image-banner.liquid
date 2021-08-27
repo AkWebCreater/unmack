@@ -9,6 +9,7 @@
     }
   {%- endstyle -%}
 {%- endif -%}
+<!-- Start section image-banner -->
 <section class="section-{{section.id }}">
 <div id="Banner-{{ section.id }}" class="banner{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank%} banner--stacked{% endif %}{% if section.settings.adapt_height_first_image and section.settings.image != blank %} banner--adapt{% endif %}">
   {%- if section.settings.image != blank -%}
@@ -102,7 +103,7 @@
   </div>
 </div>
 </section>
-  
+<!-- END section image-banner -->  
   
 {% schema %}
 {
