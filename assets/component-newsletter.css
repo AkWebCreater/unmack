@@ -43,6 +43,8 @@
 
 .newsletter-form__button {
  padding:0;
+ border: 0;
+ box-shadow: none; 
 }
 
 @media screen and (max-width: 989px) {
