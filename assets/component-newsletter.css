@@ -41,9 +41,9 @@
   }
 }
 
-/* .newsletter-form__button {
-  margin-left: 1.4rem;
-} */
+.newsletter-form__button {
+ padding:0;
+}
 
 @media screen and (max-width: 989px) {
   .newsletter-form__button {
