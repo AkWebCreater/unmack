@@ -57,7 +57,7 @@
                   <small class="newsletter-form__message form__message" id="ContactFooter-error">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</small>
                 {%- endif -%}
               </div>
-              <button type="submit" class="button button--secondary newsletter-form__button" name="commit" id="Subscribe">
+              <button type="submit" class="button button--secondary color-{{ section.settings.newsletter_button_color_scheme }} newsletter-form__button" name="commit" id="Subscribe">
                 {{ 'newsletter.button_label' | t }}
               </button>
               {%- if form.posted_successfully? -%}
@@ -435,6 +435,34 @@
       ],
       "default": "background-1",
       "label": "t:sections.footer.settings.color_scheme.label"
+    },
+{
+      "type": "select",
+      "id": "newsletter_button_color_scheme",
+      "options": [
+        {
+          "value": "accent-1",
+          "label": "t:sections.footer.settings.color_scheme.options__1.label"
+        },
+        {
+          "value": "accent-2",
+          "label": "t:sections.footer.settings.color_scheme.options__2.label"
+        },
+        {
+          "value": "background-1",
+          "label": "t:sections.footer.settings.color_scheme.options__3.label"
+        },
+        {
+          "value": "background-2",
+          "label": "t:sections.footer.settings.color_scheme.options__4.label"
+        },
+        {
+          "value": "inverse",
+          "label": "t:sections.footer.settings.color_scheme.options__5.label"
+        }
+      ],
+      "default": "background-1",
+      "label": "Newsletter Button Color Scheme"
     },
     {
       "type": "header",
