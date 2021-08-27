@@ -87,7 +87,7 @@
 <style>
   {% if section.settings.background-color != blank %}
   .section-{{section.id}} .image-with-text{
-    background-image:url({{section.settings.background-color | img_url: 'master'}});
+    background-color:{{section.settings.background-color}};
   }
   {% endif %}
   .section-{{section.id}} h2.title{
