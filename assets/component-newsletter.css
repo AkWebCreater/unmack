@@ -6,6 +6,10 @@
   width: 100%;
   position: relative;
 }
+.newsletter-form *{
+box-shadow:none !important;
+  border:0 !important;
+}
 #NewsletterForm--footer,.newsletter-form__button:hover{
 box-shadow:none !important;
 }
