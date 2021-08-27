@@ -206,7 +206,7 @@
 
   .footer-block__newsletter .newsletter-form__button.button {
     margin-top: 0;
-    margin-left: 1.4rem;
+/*     margin-left: 1.4rem; */
   }
 
   .footer-block__newsletter:not(:only-child) .footer__newsletter {
