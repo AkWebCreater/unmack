@@ -158,6 +158,87 @@
         "background-image": "shopify:\/\/shop_images\/banner2.jpg",
         "heading": "WHAT MAKE US DIFFERENT"
       }
+    },
+    "163004502857e20478": {
+      "type": "testomonials",
+      "blocks": {
+        "163004502857e20478-0": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "163004502857e20478-1": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "163004502857e20478-2": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "ffe76d29-b54f-4351-af43-fefc6c079f7d": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "c0037366-8024-421e-a325-05613c1a46bd": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "0468e717-9c2a-4cf8-a8b4-aa4e525def3c": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "9cc10e08-38c9-46e2-85ad-044854a9a7e1": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "120214c8-86b4-4a74-afda-ef0c83fbefa2": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "163004502857e20478-0",
+        "163004502857e20478-1",
+        "163004502857e20478-2",
+        "ffe76d29-b54f-4351-af43-fefc6c079f7d",
+        "c0037366-8024-421e-a325-05613c1a46bd",
+        "0468e717-9c2a-4cf8-a8b4-aa4e525def3c",
+        "9cc10e08-38c9-46e2-85ad-044854a9a7e1",
+        "120214c8-86b4-4a74-afda-ef0c83fbefa2"
+      ],
+      "settings": {
+        "title": "WHY DO PEOPLE LOVE US?",
+        "image_width": "half",
+        "image_ratio": "circle",
+        "column_alignment": "left",
+        "background_style": "secondary",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false
+      }
     }
   },
   "order": [
@@ -166,6 +247,7 @@
     "1630041953ce8ee818",
     "16300432373f322551",
     "1630044136009a8f84",
-    "16300441400f67cd94"
+    "16300441400f67cd94",
+    "163004502857e20478"
   ]
 }
