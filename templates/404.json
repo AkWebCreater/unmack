@@ -44,10 +44,27 @@
         "stack_images_on_mobile": true,
         "adapt_height_first_image": false
       }
+    },
+    "1630041953ce8ee818": {
+      "type": "image-with-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/left.jpg",
+        "image-right": "shopify:\/\/shop_images\/right.jpg",
+        "height": "adapt",
+        "color_scheme": "background-1",
+        "layout": "image_first",
+        "text-left": "<p>Loaded with<br> High - Quality<br> Protein<\/p>",
+        "text-right": "<p>Natural source<br> of Fiber!<\/p>",
+        "button-left": "Shop Now",
+        "url_button1": "",
+        "button-right": "Shop Now",
+        "url_button2": ""
+      }
     }
   },
   "order": [
     "main",
-    "163004193400fba96e"
+    "163004193400fba96e",
+    "1630041953ce8ee818"
   ]
 }
