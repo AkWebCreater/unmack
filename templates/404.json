@@ -280,6 +280,13 @@
         "button_link": "",
         "swipe_on_mobile": false
       }
+    },
+    "1630071793752a4d2d": {
+      "type": "safety-measures",
+      "settings": {
+        "background-color": "#f3f3f3",
+        "heading": "Safety Measure"
+      }
     }
   },
   "order": [
@@ -291,6 +298,7 @@
     "16300441400f67cd94",
     "1630047374cc6bf00e",
     "16300475096746fb20",
-    "163004502857e20478"
+    "163004502857e20478",
+    "1630071793752a4d2d"
   ]
 }
