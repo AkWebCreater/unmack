@@ -168,6 +168,71 @@
         "heading": "WHAT MAKE US DIFFERENT"
       }
     },
+    "1630071793752a4d2d": {
+      "type": "safety-measures",
+      "blocks": {
+        "bf197dc1-363a-4046-ad83-db5b4c96fdb7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1s.png",
+            "title": "<h3>Wash Hand<\/h3>",
+            "description": ""
+          }
+        },
+        "0b40a6de-c581-450a-847e-1e85effc054c": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2s.png",
+            "title": "<h3>Use Soap<\/h3>",
+            "description": ""
+          }
+        },
+        "4920033d-cf38-4ada-b2d5-24cdeb042e1f": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3s.png",
+            "title": "<h3>Avoid Crowd<\/h3>",
+            "description": ""
+          }
+        },
+        "e7facd18-0a33-4129-9f19-ea20ac062ee0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4s.png",
+            "title": "<h3>Wear Mask<\/h3>",
+            "description": ""
+          }
+        },
+        "4998514a-7991-4a40-bfc1-4ca522442d1d": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/5s.png",
+            "title": "<h3>Avoid Shakehand<\/h3>",
+            "description": ""
+          }
+        },
+        "36d1d7b8-ca30-4715-8b81-a85f883ca2e3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/6s.png",
+            "title": "<h3>Use Disinfection<\/h3>",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "bf197dc1-363a-4046-ad83-db5b4c96fdb7",
+        "0b40a6de-c581-450a-847e-1e85effc054c",
+        "4920033d-cf38-4ada-b2d5-24cdeb042e1f",
+        "e7facd18-0a33-4129-9f19-ea20ac062ee0",
+        "4998514a-7991-4a40-bfc1-4ca522442d1d",
+        "36d1d7b8-ca30-4715-8b81-a85f883ca2e3"
+      ],
+      "settings": {
+        "background-color": "#f3f3f3",
+        "heading": "SAFETY MEASURES"
+      }
+    },
     "1630047374cc6bf00e": {
       "type": "image-with-image",
       "settings": {
@@ -280,71 +345,6 @@
         "button_link": "",
         "swipe_on_mobile": false
       }
-    },
-    "1630071793752a4d2d": {
-      "type": "safety-measures",
-      "blocks": {
-        "bf197dc1-363a-4046-ad83-db5b4c96fdb7": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/1s.png",
-            "title": "<h3>Wash Hand<\/h3>",
-            "description": ""
-          }
-        },
-        "0b40a6de-c581-450a-847e-1e85effc054c": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/2s.png",
-            "title": "<h3>Use Soap<\/h3>",
-            "description": ""
-          }
-        },
-        "4920033d-cf38-4ada-b2d5-24cdeb042e1f": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/3s.png",
-            "title": "<h3>Avoid Crowd<\/h3>",
-            "description": ""
-          }
-        },
-        "e7facd18-0a33-4129-9f19-ea20ac062ee0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/4s.png",
-            "title": "<h3>Wear Mask<\/h3>",
-            "description": ""
-          }
-        },
-        "4998514a-7991-4a40-bfc1-4ca522442d1d": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/5s.png",
-            "title": "<h3>Avoid Shakehand<\/h3>",
-            "description": ""
-          }
-        },
-        "36d1d7b8-ca30-4715-8b81-a85f883ca2e3": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/6s.png",
-            "title": "<h3>Use Disinfection<\/h3>",
-            "description": ""
-          }
-        }
-      },
-      "block_order": [
-        "bf197dc1-363a-4046-ad83-db5b4c96fdb7",
-        "0b40a6de-c581-450a-847e-1e85effc054c",
-        "4920033d-cf38-4ada-b2d5-24cdeb042e1f",
-        "e7facd18-0a33-4129-9f19-ea20ac062ee0",
-        "4998514a-7991-4a40-bfc1-4ca522442d1d",
-        "36d1d7b8-ca30-4715-8b81-a85f883ca2e3"
-      ],
-      "settings": {
-        "background-color": "#f3f3f3",
-        "heading": "SAFETY MEASURES"
-      }
     }
   },
   "order": [
@@ -354,9 +354,9 @@
     "16300432373f322551",
     "1630044136009a8f84",
     "16300441400f67cd94",
+    "1630071793752a4d2d",
     "1630047374cc6bf00e",
     "16300475096746fb20",
-    "163004502857e20478",
-    "1630071793752a4d2d"
+    "163004502857e20478"
   ]
 }
