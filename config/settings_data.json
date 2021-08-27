@@ -76,6 +76,7 @@
         ],
         "settings": {
           "color_scheme": "accent-1",
+          "newsletter_button_color_scheme": "accent-2",
           "newsletter_enable": true,
           "newsletter_heading": "Be a Part Of  Umanac Fitness Community",
           "show_social": true,
