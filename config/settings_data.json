@@ -39,10 +39,18 @@
               "heading": "Know Us",
               "menu": "know-us"
             }
+          },
+          "091da5bd-c03d-4798-bc37-ff6a51c7bf27": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Policies",
+              "menu": "policies"
+            }
           }
         },
         "block_order": [
-          "footer-0"
+          "footer-0",
+          "091da5bd-c03d-4798-bc37-ff6a51c7bf27"
         ],
         "settings": {
           "color_scheme": "background-1",
