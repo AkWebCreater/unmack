@@ -14,6 +14,10 @@ box-shadow:none !important;
 #NewsletterForm--footer,.newsletter-form__button:hover{
 box-shadow:none !important;
 }
+.footer-block--newsletter .footer-block__heading{
+font-size: 3.4rem;
+font-weight:normal;  
+}
 .newsletter-form__field-wrapper input{
 background: #fff;
 color:#000;
