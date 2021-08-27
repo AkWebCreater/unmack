@@ -8,6 +8,6 @@
 .footer-block .list-social{
 justify-content :flex-start;
 }
-.footer-block .list-social__item:first-child{
+.footer-block .list-social__item:first-child a{
 padding-left:0;
 }
