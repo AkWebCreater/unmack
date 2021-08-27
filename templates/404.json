@@ -6,25 +6,31 @@
       "settings": {
       }
     },
-    "163004193400fba96e": {
-      "type": "banner",
+    "163004697302ee3adf": {
+      "type": "image-banner",
       "blocks": {
-        "163004193400fba96e-0": {
+        "163004697302ee3adf-0": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner"
+            "heading": "Good for your"
           }
         },
-        "163004193400fba96e-1": {
+        "163004697302ee3adf-1": {
+          "type": "html",
+          "settings": {
+            "title": "Skin, Brain & Heart"
+          }
+        },
+        "163004697302ee3adf-2": {
           "type": "text",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template."
+            "text": "We assure you that our product is manufactured to International Standards"
           }
         },
-        "163004193400fba96e-2": {
+        "163004697302ee3adf-3": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Button label",
+            "button_label_1": "SHOP NOW",
             "button_link_1": "",
             "button_style_secondary_1": false,
             "button_label_2": "",
@@ -34,15 +40,18 @@
         }
       },
       "block_order": [
-        "163004193400fba96e-0",
-        "163004193400fba96e-1",
-        "163004193400fba96e-2"
+        "163004697302ee3adf-0",
+        "163004697302ee3adf-1",
+        "163004697302ee3adf-2",
+        "163004697302ee3adf-3"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/banner1.jpg",
         "desktop_text_box_position": "center",
         "color_scheme": "background-1",
         "stack_images_on_mobile": true,
-        "adapt_height_first_image": false
+        "adapt_height_first_image": false,
+        "logo-url": ""
       }
     },
     "1630041953ce8ee818": {
@@ -243,7 +252,7 @@
   },
   "order": [
     "main",
-    "163004193400fba96e",
+    "163004697302ee3adf",
     "1630041953ce8ee818",
     "16300432373f322551",
     "1630044136009a8f84",
