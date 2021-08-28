@@ -145,6 +145,16 @@
     margin-bottom: 5rem;
   }
   {% endif %}
+  .section-{{section.id}} .button, .customer button, .shopify-challenge__button {
+    padding: 2px;
+    min-width: 0;
+    min-height: 0;
+    border-radius: 5px;
+    border: 1px solid #F28B1C;
+    background-color: transparent;
+    color: #F28B1C;
+    box-shadow: none;
+}
   @media screen and (max-width:768px){
     {% if section.settings.mobile-background-image != blank %}
     .section-{{section.id}} .mobile-background-image{
