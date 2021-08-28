@@ -18,7 +18,7 @@
 
 <footer class="footer color-{{ section.settings.color_scheme }}">
   {%- if section.blocks.size > 0 or section.settings.newsletter_enable or section.settings.show_social -%}
-    <div class="footer__content-top ">
+    <div class="footer__content-top page-width">
       <div class="footer-block--newsletter">
         {%- if section.settings.newsletter_enable -%}
           <div class="footer-block__newsletter ">
@@ -226,7 +226,7 @@
   
   </div>
        {% if section.settings.footer_new_enable %}
-  <div class="footer-center ">
+  <div class="footer-center page-width">
     <div class="container">
       <div class="multicolumn-list grid grid--1-col grid--2-col-tablet grid--4-col-desktop">
         <!-- for 1st-->
