@@ -3,7 +3,10 @@
       box-shadow: none;
   outline:0;
 }
-
+.search__input.field__input:focus{
+      box-shadow: none;
+  outline:0;
+}
 .search__button .icon {
   height: 1.8rem;
 }
