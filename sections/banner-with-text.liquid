@@ -182,4 +182,11 @@
     margin-bottom: 5rem;
   }
   {% endif %}
+  @media screen and (max-width:768px){
+    .section-{{section.id}} .mobile-background-image{
+    background-image:url({{section.settings.background-image | img_url: 'master'}});
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 5rem;
+  }
 </style>
