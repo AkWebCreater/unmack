@@ -549,9 +549,11 @@ footer details[open] summary ~ * {
 .footer-info-svg-icons svg{
 width: 70px;
     height: 70px;
-  fill:#ff8c0b;
+ 
 }
-.footer-info-svg-icons svg .st0
+.footer-info-svg-icons svg .st0{
+ fill:#ff8c0b;
+}
 .footer-center{
 text-align:center;
 }
