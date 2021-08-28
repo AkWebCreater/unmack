@@ -1794,6 +1794,7 @@ input[type='checkbox'] {
   display: flex;
   grid-area: icons;
   justify-self: end;
+  width:100%;
 }
 
 .header__icon:not(.header__icon--summary),
