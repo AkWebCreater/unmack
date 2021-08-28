@@ -556,4 +556,9 @@ width: 70px;
 }
 .footer-center{
 text-align:center;
+    background: #fff;
+    color: #727272;  
+}
+.footer-center h2{
+    color: #727272;
 }

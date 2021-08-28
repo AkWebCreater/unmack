@@ -380,8 +380,8 @@
       ],
       "settings": {
         "background-image": "shopify:\/\/shop_images\/9.jpg",
-        "heading": "",
-        "desktop_text_box_position": "flex-end"
+        "mobile-background-image": "shopify:\/\/shop_images\/mobile.jpg",
+        "heading": ""
       }
     }
   },
