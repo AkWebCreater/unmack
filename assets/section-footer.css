@@ -545,3 +545,8 @@ footer details[open] summary ~ * {
 .footer .disclosure__link--active {
   text-decoration: underline;
 }
+/* footer center */
+.footer-info-svg-icons svg{
+width: 70px;
+    height: 70px;
+}
