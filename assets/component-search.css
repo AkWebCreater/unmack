@@ -3,6 +3,8 @@
       box-shadow: none;
   outline:0;
   background:#fff;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
 }
 .search__input.field__input:focus{
       box-shadow: none;
@@ -14,6 +16,8 @@
 .search__button{
 background:#000;
   height: 4.5rem;
+        border-top-right-radius: 5px;
+      border-bottom-left-radius: 5px;
 }
 .search-modal__content label{
 color:#000;
