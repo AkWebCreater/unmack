@@ -68,7 +68,11 @@
             {%- endform -%}
           </div>
         {%- endif -%}
-
+        <div class="newsletter-bottom">
+        {% if section.settings.newsletter_bottom_text_enable %}
+        {{ section.settings.newsletter_bottom_heading }}
+        {% endif %}
+        </div>
         
       </div>
       {%- if section.blocks.size > 0 -%}
