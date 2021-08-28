@@ -224,9 +224,9 @@
      {% if section.settings.footer_new_enable %}
   <div class="footer-center">
     <div class="container">
-      <div class="row">
+      <div class="multicolumn-list grid grid--1-col grid--2-col-tablet grid--4-col-desktop">
         <!-- for 1st-->
-        <div class="sec-footer-info col-xs-6 col-sm-6 col-md-6 col-lg-3" id="sec-last-info"> 
+        <div class="grid__item" id="sec-last-info"> 
           <div class="footer-info-img {% if section.settings.img_cat_svg != blank %}svg-icon{% endif %}">
             {% if section.settings.img_cat_svg != blank %}
             <div class="footer-info-svg-icons">{{section.settings.img_cat_svg}}</div>
@@ -240,7 +240,7 @@
           </div>   
         </div> 
         <!-- for 2nd-->
-        <div class="sec-footer-info col-xs-6 col-sm-6 col-md-6 col-lg-3" id="sec-last-info">
+        <div class="grid__item" id="sec-last-info">
           <div class="footer-info-img {% if section.settings.img_cat1_svg != blank %}svg-icon{% endif %}">
             {% if section.settings.img_cat1_svg != blank %}
             <div class="footer-info-svg-icons">{{section.settings.img_cat1_svg}}</div>
@@ -254,7 +254,7 @@
           </div>   
         </div> 
         <!-- for 3rd-->
-        <div class="sec-footer-info col-xs-6 col-sm-6 col-md-6 col-lg-3" id="sec-last-info"> 
+        <div class="grid__item" id="sec-last-info"> 
           <div class="footer-info-img {% if section.settings.img_cat2_svg != blank %}svg-icon{% endif %}">
             {% if section.settings.img_cat2_svg != blank %}
             <div class="footer-info-svg-icons">{{section.settings.img_cat2_svg}}</div>
@@ -268,7 +268,7 @@
           </div>   
         </div>   
         <!-- for 4rd-->
-        <div class="sec-footer-info col-xs-6 col-sm-6 col-md-6 col-lg-3" id="sec-last-info"> 
+        <div class="grid__item" id="sec-last-info"> 
           <div class="footer-info-img {% if section.settings.img_cat3_svg != blank %}svg-icon{% endif %}">
             {% if section.settings.img_cat3_svg != blank %}
             <div class="footer-info-svg-icons">{{section.settings.img_cat3_svg}}</div>
