@@ -49,7 +49,7 @@
 .footer__content-bottom {
   border-top: solid 0.1rem var(--color-foreground-20);
   padding-top: 3rem;
-  padding-bottom: 3rem;
+/*   padding-bottom: 3rem; */
 }
 
 .footer__content-bottom:only-child {
@@ -232,11 +232,11 @@
   }
 }
 
-/* @media screen and (min-width: 750px) {
+@media screen and (min-width: 750px) {
   .footer__content-bottom {
     border-top-width: 0.1rem;
   }
-} */
+}
 
 .footer__localization {
   display: flex;
