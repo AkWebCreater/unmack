@@ -3,8 +3,8 @@
       box-shadow: none;
   outline:0;
   background:#fff;
-      border-top-left-radius: 5px;
-      border-bottom-left-radius: 5px;
+  border-radius:5px;
+      
 }
 .search__input.field__input:focus{
       box-shadow: none;
