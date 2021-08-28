@@ -515,7 +515,7 @@
         "color_scheme": "background-1",
         "swipe_on_mobile": true,
         "image_padding": false,
-        "show_view_all": false
+        "show_view_all": true
       }
     }
   },
