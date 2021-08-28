@@ -21,6 +21,7 @@ font-weight:normal;
 }
 .newsletter-form__field-wrapper input{
 background: #fff;
+  outline:0 !important;
 color:#000;
 border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;  
