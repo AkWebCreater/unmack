@@ -71,11 +71,13 @@
 
         
       </div>
+      {% if section.settings.newsletter_bottom_text_enable %}
       <div class="newsletter-bottom">
-        {% if section.settings.newsletter_bottom_text_enable %}
+        
         {{ section.settings.newsletter_bottom_heading }}
-        {% endif %}
+      
       </div>
+        {% endif %}
       {%- if section.blocks.size > 0 -%}
         {%- liquid
           if section.blocks.size == 9
