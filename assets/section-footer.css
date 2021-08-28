@@ -187,7 +187,10 @@
 
 .footer-block__newsletter {
   text-align: center;
-  padding-bottom:40px;
+  padding-bottom:15px;
+}
+.newsletter-bottom{
+padding-bottom:40px;
 }
 
 /* @media screen and (max-width: 749px) {
