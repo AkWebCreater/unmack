@@ -16,7 +16,13 @@
 .collection-list-title {
   margin: 0;
 }
-
+.collection-list .card__text-spacing{
+padding:0;
+  text-align:center;
+}
+.collection-list .card .icon-wrap{
+display:none;
+}
 @media screen and (max-width: 749px) {
   .collection-list-wrapper.page-width {
     padding: 0;
