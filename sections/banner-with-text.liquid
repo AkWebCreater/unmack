@@ -16,9 +16,51 @@
 
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
-  }
+    "name": "bg with images",
+    "settings": [
+					{
+                      "id": "background-image",
+                      "type": "image_picker",
+                      "label": "Choose images for background"
+                    },
+					{
+                      "id": "heading",
+                      "type": "text",
+                      "label": "Enter heading"
+                    }
+
+				],
+"blocks":[
+          {
+            "type":"image",
+            "name":"image-block",
+			"limit":3,
+            "settings":[
+							{
+                              "id":"image",
+                              "type":"image_picker",
+                              "label":"your image"
+                            },
+							{
+                              "id":"title",
+                              "type":"html",
+                              "label":"your title"
+                            },
+							{
+                              "id":"description",
+                              "type":"html",
+                              "label":"your description"
+                            }
+          				]
+          }
+        ],
+"presets": [
+{
+"name": "bg with images",
+"category": "ADVANCED LAYOUT"
+}
+]
+}
 {% endschema %}
 
 {% stylesheet %}
