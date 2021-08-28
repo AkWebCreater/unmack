@@ -12,7 +12,7 @@ slider-component {
     -webkit-overflow-scrolling: touch;
 }
 
-@media screen and (max-width: 989px) {
+
   slider-component .slider {
     padding-bottom: 6rem;
   }
@@ -20,7 +20,7 @@ slider-component {
   .no-js slider-component .slider {
     padding-bottom: 3rem;
   }
-}
+
 
 .slider__slide {
   scroll-snap-align: start;
