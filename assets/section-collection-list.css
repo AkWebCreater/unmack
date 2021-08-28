@@ -16,13 +16,7 @@
 .collection-list-title {
   margin: 0;
 }
-.collection-list .card__text-spacing{
-padding:0;
-  text-align:center;
-}
-.collection-list .card .icon-wrap{
-display:none;
-}
+
 @media screen and (max-width: 749px) {
   .collection-list-wrapper.page-width {
     padding: 0;
@@ -124,4 +118,17 @@ display:none;
 .collection-list__item .card__text,
 .collection-list__item .card-colored {
   position: relative;
+}
+
+/* card component override */
+.collection-list .card__text-spacing{
+padding:0;
+  text-align:center;
+}
+.collection-list .card .icon-wrap{
+display:none;
+}
+.collection-list .card--media .card__text-spacing{
+padding:1rem 0;
+  text-align:center
 }
