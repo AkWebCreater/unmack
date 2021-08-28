@@ -11,6 +11,9 @@
 .search__button .icon {
   height: 1.8rem;
 }
+.search__button{
+background:#000;
+}
 
 /* Remove extra spacing for search inputs in Safari */
 input::-webkit-search-decoration {
