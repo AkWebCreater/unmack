@@ -17,7 +17,7 @@
 background:#000;
   height: 4.5rem;
         border-top-right-radius: 5px;
-      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
 }
 .search-modal__content label{
 color:#000;
