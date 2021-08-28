@@ -1688,7 +1688,7 @@ input[type='checkbox'] {
 .header {
   display: grid;
   grid-template-areas: 'left-icon heading icons';
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns:60px 0 auto;
   align-items: center;
   background-color: var(--color-background);
   padding-top: 1rem;
