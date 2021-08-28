@@ -1,6 +1,13 @@
 <!-- start backgroun-with-tetx-->
 <section class="section-{{ section.id }}">
   <div class="image-with-text  color-scheme-background-1">
+     <div class="page-width">
+        {% if section.settings.heading != blank %}
+          <div class="heading">
+            <h2 class="title">{{ section.settings.heading}}</h2>
+          </div>
+        {% endif %}
+    </div>
   </div>
 
 </section>
