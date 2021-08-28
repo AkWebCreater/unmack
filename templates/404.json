@@ -345,6 +345,55 @@
         "button_link": "",
         "swipe_on_mobile": false
       }
+    },
+    "163012731539729af3": {
+      "type": "image-banner",
+      "blocks": {
+        "163012731539729af3-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "ORGANIC VIRGIN"
+          }
+        },
+        "163012731539729af3-1": {
+          "type": "html",
+          "settings": {
+            "title": "COCONUT OIL"
+          }
+        },
+        "163012731539729af3-2": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template."
+          }
+        },
+        "163012731539729af3-3": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop Now",
+            "button_link_1": "",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "163012731539729af3-0",
+        "163012731539729af3-1",
+        "163012731539729af3-2",
+        "163012731539729af3-3"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/8.jpg",
+        "desktop_text_box_position": "flex-start",
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": false,
+        "adapt_height_first_image": false,
+        "logo-url": ""
+      }
     }
   },
   "order": [
@@ -357,6 +406,7 @@
     "1630071793752a4d2d",
     "1630047374cc6bf00e",
     "16300475096746fb20",
-    "163004502857e20478"
+    "163004502857e20478",
+    "163012731539729af3"
   ]
 }
