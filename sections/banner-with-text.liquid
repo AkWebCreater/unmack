@@ -167,11 +167,13 @@
   }
   {% endif %}
   @media screen and (max-width:768px){
+    {% if section.settings.mobile-background-image != blank %}
     .section-{{section.id}} .mobile-background-image{
-    background-image:url({{section.settings.background-image | img_url: 'master'}});
+    background-image:url({{section.settings.mobile-background-image | img_url: 'master'}});
     background-position: center center;
     background-size: cover;
     margin-bottom: 5rem;
   }
+    {% endif %}
  }
 </style>
