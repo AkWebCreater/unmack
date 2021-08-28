@@ -130,5 +130,6 @@ display:none;
 }
 .collection-list .card--media .card__text-spacing{
 padding:1rem 0;
-  text-align:center
+/*   text-align:center */
+    justify-content:center;
 }
