@@ -1,7 +1,9 @@
+<!--start section section-grid-->
+
 {{ 'section-multicolumn.css' | asset_url | stylesheet_tag }}
 <link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">
 <noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
-
+<section class="section-{{ section.id}}">
 <div class="multicolumn background-{{ section.settings.background_style }}{% if section.settings.title == blank %} no-heading{% endif %}">
   <div class="page-width">
     <div class="title-wrapper-with-link title-wrapper--self-padded-mobile{% if section.settings.title == blank %} title-wrapper-with-link--no-heading{% endif %}">
@@ -89,6 +91,8 @@
     </div>
   </div>
 </div>
+</section>
+<!--end section section-grid-->
 
 {% schema %}
 {
@@ -243,3 +247,10 @@
   ]
 }
 {% endschema %}
+<style>
+  .multicolumn-card-spacing{
+  	    padding-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+</style>
