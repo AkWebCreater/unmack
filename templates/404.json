@@ -381,6 +381,50 @@
         "mobile-background-image": "shopify:\/\/shop_images\/mobile.jpg",
         "heading": ""
       }
+    },
+    "1630155100e70d79d8": {
+      "type": "section-grid-home",
+      "blocks": {
+        "1630155100e70d79d8-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mobile.jpg",
+            "title": "HEALTH TIPS",
+            "text": ""
+          }
+        },
+        "1630155100e70d79d8-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mobile.jpg",
+            "title": "BEAUTY TIPS",
+            "text": ""
+          }
+        },
+        "1630155100e70d79d8-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mobile.jpg",
+            "title": "RECIPIE TIPS",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "1630155100e70d79d8-0",
+        "1630155100e70d79d8-1",
+        "1630155100e70d79d8-2"
+      ],
+      "settings": {
+        "title": "",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "center",
+        "background_style": "secondary",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false
+      }
     }
   },
   "order": [
@@ -394,6 +438,7 @@
     "1630047374cc6bf00e",
     "16300475096746fb20",
     "163004502857e20478",
-    "1630133642e6b919cc"
+    "1630133642e6b919cc",
+    "1630155100e70d79d8"
   ]
 }
