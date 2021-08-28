@@ -60,6 +60,11 @@ slider-component {
     padding-bottom: 0;
   }
 }
+@media (min-width:990px){
+   .slider.collection-list.grid--6-col-desktop .grid__item {
+    max-width: 16.66%;
+  }
+}
 
 /* Scrollbar */
 
@@ -202,6 +207,3 @@ slider-component .slider-buttons {
   z-index: 1;
 }
 
-   .slider.collection-list.grid--6-col-desktop .grid__item {
-    max-width: 16.66%;
-  }
