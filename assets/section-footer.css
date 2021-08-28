@@ -560,9 +560,9 @@ text-align:center;
     color: #727272;
       padding-bottom: 15px;
     padding-top: 15px;
-  box-shadow: 0px 0px 11px 4px #3c5034;
--webkit-box-shadow: 0px 0px 11px 4px #3c5034;
--moz-box-shadow: 0px 0px 11px 4px #3c5034;
+  box-shadow: 0px 0px 7px 13px #3c5034;
+-webkit-box-shadow: 0px 0px 7px 13px #3c5034;
+-moz-box-shadow: 0px 0px 7px 13px #3c5034;
 }
 .footer-center h2{
     color: #727272;
