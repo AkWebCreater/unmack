@@ -252,4 +252,12 @@
   	height: 300px;
     overflow: auto;
   }
+  {% if section.settings.background-image != blank %}
+  .section-{{section.id}} .image-with-text{
+    background-image:url({{section.settings.background-image | img_url: 'master'}});
+    background-position: center center;
+    background-size: cover;
+    height:300px;
+  }
+  {% endif %}
 </style>
