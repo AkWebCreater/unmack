@@ -19,6 +19,7 @@
 <footer class="footer color-{{ section.settings.color_scheme }}">
   {%- if section.blocks.size > 0 or section.settings.newsletter_enable or section.settings.show_social -%}
     <div class="footer__content-top page-width">
+      <div>
       <div class="footer-block--newsletter">
         {%- if section.settings.newsletter_enable -%}
           <div class="footer-block__newsletter ">
@@ -75,6 +76,7 @@
         {% if section.settings.newsletter_bottom_text_enable %}
         {{ section.settings.newsletter_bottom_heading }}
         {% endif %}
+      </div>
       </div>
       {%- if section.blocks.size > 0 -%}
         {%- liquid
