@@ -16,6 +16,10 @@
             <h2 class="banner__heading h1">
               <span>{{ block.settings.heading | escape }}</span>
             </h2>
+      	  {%- when 'html' -%}
+            <h2 class="banner__title">
+              <span>{{ block.settings.title | escape }}</span>
+            </h2>
           {%- when 'text' -%}
             <div class="banner__text">
               <span>{{ block.settings.text | escape }}</span>
