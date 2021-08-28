@@ -221,6 +221,71 @@
    
   {%- endif -%}
 
+     {% if section.settings.footer_new_enable %}
+  <div class="footer-center">
+    <div class="container">
+      <div class="row">
+        <!-- for 1st-->
+        <div class="sec-footer-info col-xs-6 col-sm-6 col-md-6 col-lg-3" id="sec-last-info"> 
+          <div class="footer-info-img {% if section.settings.img_cat_svg != blank %}svg-icon{% endif %}">
+            {% if section.settings.img_cat_svg != blank %}
+            <div class="footer-info-svg-icons">{{section.settings.img_cat_svg}}</div>
+            {% else %}
+            <img src="{{ section.settings.img_cat| img_url :"master"}}">
+            {% endif %}
+          </div>
+          <h2>{{ section.settings.img-txt }}</h2>
+          <div class="txt-finfo">
+            <p> {{ section.settings.img-linktext }}</p>
+          </div>   
+        </div> 
+        <!-- for 2nd-->
+        <div class="sec-footer-info col-xs-6 col-sm-6 col-md-6 col-lg-3" id="sec-last-info">
+          <div class="footer-info-img {% if section.settings.img_cat1_svg != blank %}svg-icon{% endif %}">
+            {% if section.settings.img_cat1_svg != blank %}
+            <div class="footer-info-svg-icons">{{section.settings.img_cat1_svg}}</div>
+            {% else %}
+            <img src="{{ section.settings.img_cat1| img_url :"master"}}">
+            {% endif %}
+          </div>
+          <h2>{{ section.settings.img-txt1 }}</h2>
+          <div class="txt-finfo">
+            <p> {{ section.settings.img-linktext1 }}</p>
+          </div>   
+        </div> 
+        <!-- for 3rd-->
+        <div class="sec-footer-info col-xs-6 col-sm-6 col-md-6 col-lg-3" id="sec-last-info"> 
+          <div class="footer-info-img {% if section.settings.img_cat2_svg != blank %}svg-icon{% endif %}">
+            {% if section.settings.img_cat2_svg != blank %}
+            <div class="footer-info-svg-icons">{{section.settings.img_cat2_svg}}</div>
+            {% else %}
+            <img src="{{ section.settings.img_cat2| img_url :"master"}}">
+            {% endif %}
+          </div>
+          <h2>{{ section.settings.img-txt2 }}</h2>
+          <div class="txt-finfo">
+            <p> {{ section.settings.img-linktext2 }}</p>
+          </div>   
+        </div>   
+        <!-- for 4rd-->
+        <div class="sec-footer-info col-xs-6 col-sm-6 col-md-6 col-lg-3" id="sec-last-info"> 
+          <div class="footer-info-img {% if section.settings.img_cat3_svg != blank %}svg-icon{% endif %}">
+            {% if section.settings.img_cat3_svg != blank %}
+            <div class="footer-info-svg-icons">{{section.settings.img_cat3_svg}}</div>
+            {% else %}
+            <img src="{{ section.settings.img_cat3| img_url :"master"}}">
+            {% endif %}
+          </div>
+          <h2>{{ section.settings.img-txt3 }}</h2>
+          <div class="txt-finfo">
+            <p> {{ section.settings.img-linktext3 }}</p>
+          </div>   
+        </div> 
+      </div>
+    </div>
+  </div>
+  {% endif %}   
+      
   <div class="footer__content-bottom">
     <div class="footer__content-bottom-wrapper page-width">
       <div class="footer__column footer__localization">
