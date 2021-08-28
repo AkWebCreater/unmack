@@ -5,9 +5,51 @@
 
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
-  }
+    "name": "safety measure ",
+    "settings": [
+					{
+                      "id": "background-color",
+                      "type": "color",
+                      "label": "Choose color for background"
+                    },
+					{
+                      "id": "heading",
+                      "type": "text",
+                      "label": "Enter heading"
+                    }
+
+				],
+"blocks":[
+          {
+            "type":"image",
+            "name":"image-block",
+			"limit":6,
+            "settings":[
+							{
+                              "id":"image",
+                              "type":"image_picker",
+                              "label":"your image"
+                            },
+							{
+                              "id":"title",
+                              "type":"html",
+                              "label":"your title"
+                            },
+							{
+                              "id":"description",
+                              "type":"html",
+                              "label":"your description"
+                            }
+          				]
+          }
+        ],
+"presets": [
+{
+"name": "safety measure ",
+"category": "ADVANCED LAYOUT"
+}
+]
+}
 {% endschema %}
 
 {% stylesheet %}
@@ -15,6 +57,7 @@
 
 {% javascript %}
 {% endjavascript %}
+
 
 <style>
   .section-{{section.id}} .image-with-text{
