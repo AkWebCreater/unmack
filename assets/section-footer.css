@@ -190,9 +190,13 @@
   padding-bottom:15px;
 }
 .newsletter-bottom{
+   text-align: center;
 padding-bottom:40px;
 }
-
+.pipe{
+color: #f58634;
+    margin: 0 5px;
+}
 /* @media screen and (max-width: 749px) {
   .footer-block__newsletter .newsletter-form__field-wrapper {
     width: 30rem;
