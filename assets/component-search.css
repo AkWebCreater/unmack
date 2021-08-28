@@ -2,6 +2,7 @@
   padding-right: 5rem;
       box-shadow: none;
   outline:0;
+  background:#fff;
 }
 .search__input.field__input:focus{
       box-shadow: none;
