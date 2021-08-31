@@ -3,7 +3,7 @@ background:#fff8ed;
   margin-top:0;
   padding-top:4rem;
 }
-#shopify-section-template--14951749845192__163038833315e79f47::after{
+#shopify-section-template--14951749845192__163038833315e79f47 > div::after{
 content=" ";
   display:block;
   position:absolute;
