@@ -63,9 +63,9 @@
                 {%- if block.settings.text != blank -%}
                   <div class="rte">{{ block.settings.text }}</div>
                 {%- endif -%}
-                {%- if block.settings.text != blank -%}
+                {%- if block.settings.button-text != blank -%}
                 <div class="banner__buttons">
-        			<button class="banner-btn button button--primary" href="">Shop Now</button>
+        			<button class="banner-btn button button--primary" href="">{{ block.settings.button-text}}</button>
         		</div>
                 {% endif %}
               </div>
