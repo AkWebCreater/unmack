@@ -30,7 +30,8 @@
 
 {% schema %}
   {
-    "name": "safety measure ",
+    "name": "Safety Measure",
+"class":"safety-measure",
     "settings": [
 					{
                       "id": "background-color",
@@ -84,26 +85,26 @@
 {% endjavascript %}
 
 <style>
-  .section-{{section.id}} .image-with-text{
+ .safety-measure{
     background-color:{{ section.settings.background-color }};
   }
-  .section-{{section.id}} .heading{
+  .safety-measure .heading{
     text-align:center;
   }
-  .section-{{section.id}} .heading .title:after{
+  .safety-measure .heading .title:after{
     content: '';
     display: block;
     margin: .25em auto 0;
     width: 100px;
     border-top: 3px solid #B84D1D;
   }
-  .section-{{section.id}} .grid .grid-1{
+  .safety-measure .grid .grid-1{
     width:16%;
   }
   .section-{{section.id}} .small-img{
   	height:120px;
   }
-   .section-{{section.id}} .grid-down span h3 {
+  .section-{{section.id}} .grid-down span h3 {
     font-weight: 600;
 }
  .section-{{section.id}} h2.title {
@@ -111,7 +112,7 @@
 }
 
   @media screen and (max-width:768px){
-    .section-{{section.id}} .grid .grid-1{
+    .safety-measure .grid .grid-1{
     	width: 50%;
     }
   }
