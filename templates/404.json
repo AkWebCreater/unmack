@@ -516,7 +516,7 @@
             "title": "BEAUTY TIPS",
             "text": "",
             "background-color": "#f58634",
-            "text-color": "#FFFFFF"
+            "text-color": "#ffffff"
           }
         },
         "1630155100e70d79d8-2": {
@@ -553,6 +553,12 @@
         "background-image": "shopify:\/\/shop_images\/Untitled-2.png",
         "heading": ""
       }
+    },
+    "163038833315e79f47": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div>\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0591\/8192\/4552\/files\/Untitled-2.png?v=1630178012\">\n<\/div>"
+      }
     }
   },
   "order": [
@@ -570,6 +576,7 @@
     "163004502857e20478",
     "1630133642e6b919cc",
     "1630155100e70d79d8",
-    "16301762615c0e8b89"
+    "16301762615c0e8b89",
+    "163038833315e79f47"
   ]
 }
