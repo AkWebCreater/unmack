@@ -1,5 +1,6 @@
 {{ 'component-image-with-text.css' | asset_url | stylesheet_tag }}
-
+{{ 'collage.css' | asset_url | stylesheet_tag }}
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
 <!-- start section image-with-textvideo -->
 <section class="section-{{ section.id}}">
 <div class="image-with-text {% if section.settings.full_width %}image-with-text--full-width{% else %}page-width{% endif %} color-scheme-{{ section.settings.color_scheme }}">
