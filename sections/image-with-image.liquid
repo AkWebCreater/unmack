@@ -4,74 +4,44 @@
 <div class="image-with-text {% if section.settings.full_width %}image-with-text--full-width{% else %}{% endif %} color-scheme-{{ section.settings.color_scheme }}">
   <div class="image-with-text__grid color-{{ section.settings.color_scheme }}{% if section.settings.layout == 'text_first' %} image-with-text__grid--reverse{% endif %} grid grid--gapless grid--1-col grid--2-col-tablet">
      {%- for block in section.blocks -%}
+     {% case block.type %}
+     {%- when 'image-block' -%}
     <div class="grid__item">
-      <div class="image-with-text__media image-with-text__media--{{ section.settings.height }} {% if section.settings.image != blank %}media{% else %}image-with-text__media--placeholder placeholder{% endif %}"
-        {% if section.settings.height == 'adapt' and section.settings.image != blank %} style="padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;"{% endif %}
+      <div class="image-with-text__media image-with-text__media--{{ block.settings.height }} {% if block.settings.image != blank %}media{% else %}image-with-text__media--placeholder placeholder{% endif %}"
+        {% if block.settings.height == 'adapt' and block.settings.image != blank %} style="padding-bottom: {{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100 }}%;"{% endif %}
       >
         {%- if section.settings.image != blank -%}
           <img srcset="{%- if section.settings.image.width >= 165 -%}{{ section.settings.image | img_url: '165x' }} 165w,{%- endif -%}
-            {%- if section.settings.image.width >= 360 -%}{{ section.settings.image | img_url: '360x' }} 360w,{%- endif -%}
-            {%- if section.settings.image.width >= 535 -%}{{ section.settings.image | img_url: '535x' }} 535w,{%- endif -%}
-            {%- if section.settings.image.width >= 720 -%}{{ section.settings.image | img_url: '720x' }} 720w,{%- endif -%}
-            {%- if section.settings.image.width >= 940 -%}{{ section.settings.image | img_url: '940x' }} 940w,{%- endif -%}
-            {%- if section.settings.image.width >= 1070 -%}{{ section.settings.image | img_url: '1070x' }} 1070w{%- endif -%}"
-            src="{{ section.settings.image | img_url: '533x' }}"
+            {%- if block.settings.image.width >= 360 -%}{{ block.settings.image | img_url: '360x' }} 360w,{%- endif -%}
+            {%- if block.settings.image.width >= 535 -%}{{ block.settings.image | img_url: '535x' }} 535w,{%- endif -%}
+            {%- if block.settings.image.width >= 720 -%}{{ block.settings.image | img_url: '720x' }} 720w,{%- endif -%}
+            {%- if block.settings.image.width >= 940 -%}{{ block.settings.image | img_url: '940x' }} 940w,{%- endif -%}
+            {%- if block.settings.image.width >= 1070 -%}{{ block.settings.image | img_url: '1070x' }} 1070w{%- endif -%}"
+            src="{{ block.settings.image | img_url: '533x' }}"
             sizes="(min-width: 1100px) 535px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
-            alt="{{ section.settings.image.alt | escape }}"
+            alt="{{ block.settings.image.alt | escape }}"
             loading="lazy"
-            width="{{ section.settings.image.width }}"
-            height="{{ section.settings.image.height }}"
+            width="{{ block.settings.image.width }}"
+            height="{{ block.settings.image.height }}"
           >
         {%- else -%}
           {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
         {%- endif -%}
       </div>
       <div class="text-over-image">
-        {% if section.settings.text-left != blank %}
-        	<div class="text-image">{{ section.settings.text-left }}</div>
+        {% if block.settings.text-left != blank %}
+        	<div class="text-image">{{ block.settings.text-left }}</div>
         {% endif %}
         <div class="banner__buttons">
-        {% if section.settings.button-left != blank %}
-        	<button class="banner-btn button button--primary" href="{{ section.settings.url_button1 }}">{{ section.settings.button-left}}</button>
+        {% if block.settings.button-left != blank %}
+        	<button class="banner-btn button button--primary" href="{{ block.settings.url_button1 }}">{{ block.settings.button-left}}</button>
         {% endif %}
         </div>
       </div>
     </div>
+              {%- endcase -%}
     {% endfor %}
-    <div class="grid__item">
-      <div class="image-margin image-with-text__media image-with-text__media--{{ section.settings.height }} {% if section.settings.image-right != blank %}media{% else %}image-with-text__media--placeholder placeholder{% endif %}"
-        {% if section.settings.height == 'adapt' and section.settings.image-right != blank %} style="padding-bottom: {{ 1 | divided_by: section.settings.image-right.aspect_ratio | times: 100 }}%;"{% endif %}
-      >
-        {%- if section.settings.image-right != blank -%}
-          <img srcset="{%- if section.settings.image-right.width >= 165 -%}{{ section.settings.image-right | img_url: '165x' }} 165w,{%- endif -%}
-            {%- if section.settings.image-right.width >= 360 -%}{{ section.settings.image-right | img_url: '360x' }} 360w,{%- endif -%}
-            {%- if section.settings.image-right.width >= 535 -%}{{ section.settings.image-right | img_url: '535x' }} 535w,{%- endif -%}
-            {%- if section.settings.image-right.width >= 720 -%}{{ section.settings.image-right | img_url: '720x' }} 720w,{%- endif -%}
-            {%- if section.settings.image-right.width >= 940 -%}{{ section.settings.image-right | img_url: '940x' }} 940w,{%- endif -%}
-            {%- if section.settings.image-right.width >= 1070 -%}{{ section.settings.image-right | img_url: '1070x' }} 1070w{%- endif -%}"
-            src="{{ section.settings.image-right | img_url: '533x' }}"
-            sizes="(min-width: 1100px) 535px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
-            alt="{{ section.settings.image-right.alt | escape }}"
-            loading="lazy"
-            width="{{ section.settings.image-right.width }}"
-            height="{{ section.settings.image-right.height }}"
-          >
-        {%- else -%}
-          {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-        {%- endif -%}
-      </div>
-      <div class="text-over-image">
-        
-        {% if section.settings.text-right != blank %}
-        	<div class="text-image">{{ section.settings.text-right }}</div>
-        {% endif %}
-        <div class="banner__buttons">
-        {% if section.settings.button-right != blank %}
-        	<button class="banner-btn button button--primary" href="{{ section.settings.url_button2 }}">{{ section.settings.button-right }}</button>
-        {% endif %}
-        </div>
-      </div>
-    </div>
+
     {% comment %}
     <div class="grid__item">
       <div class="image-with-text__content image-with-text__content--{{ section.settings.height }}">
