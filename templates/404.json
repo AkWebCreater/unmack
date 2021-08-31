@@ -181,7 +181,7 @@
         "16300432373f322551-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<\/p>\n<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<\/p>"
+            "text": "<p>In today's fast-paced and dynamic world, health often takes a backseat. Stress, pollution, long hours of work take a toll on your\nhealth. Unhealthy eating habits in adults, as well as children, also affect health. Thus, we at UMANAC only believe in offering health\nand nutrition in your daily life, in the easiest and tastiest way and free of chemicals.\n\nUMANAC Gourmet Range is developed with great precision to deliver quality products to its consumers with the intent of\npromoting every day healthy living without any compromise in taste. Also, in today's fast-paced world, you need to stand out among\nthe crowd and personal grooming is essential to make that first and lasting impression.<\/p>"
           }
         }
       },
@@ -192,6 +192,41 @@
       "settings": {
         "color_scheme": "background-1",
         "full_width": true
+      }
+    },
+    "1630397519047103ef": {
+      "type": "vedio-collage",
+      "blocks": {
+        "1630397519047103ef-0": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "description": "Describe the video for customers using screen readers",
+            "image_padding": false
+          }
+        },
+        "1630397519047103ef-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Since 2016,Unamac  has been a name you can trust"
+          }
+        },
+        "1630397519047103ef-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Discover our story and experience the exciting moment and milestones  <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1630397519047103ef-0",
+        "1630397519047103ef-1",
+        "1630397519047103ef-2"
+      ],
+      "settings": {
+        "heading": "Unamac Journey",
+        "desktop_layout": "left",
+        "mobile_layout": "column"
       }
     },
     "16300441400f67cd94": {
@@ -515,41 +550,6 @@
         "background-image": "shopify:\/\/shop_images\/Untitled-2.png",
         "heading": ""
       }
-    },
-    "1630397519047103ef": {
-      "type": "vedio-collage",
-      "blocks": {
-        "1630397519047103ef-0": {
-          "type": "video",
-          "settings": {
-            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "description": "Describe the video for customers using screen readers",
-            "image_padding": false
-          }
-        },
-        "1630397519047103ef-1": {
-          "type": "heading",
-          "settings": {
-            "heading": "Since 2016,Unamac  has been a name you can trust"
-          }
-        },
-        "1630397519047103ef-2": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Discover our story and experience the exciting moment and milestones  <\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "1630397519047103ef-0",
-        "1630397519047103ef-1",
-        "1630397519047103ef-2"
-      ],
-      "settings": {
-        "heading": "Unamac Journey",
-        "desktop_layout": "left",
-        "mobile_layout": "column"
-      }
     }
   },
   "order": [
@@ -559,6 +559,7 @@
     "163017222359fc16f2",
     "163038833315e79f47",
     "16300432373f322551",
+    "1630397519047103ef",
     "16300441400f67cd94",
     "1630071793752a4d2d",
     "1630047374cc6bf00e",
@@ -566,7 +567,6 @@
     "163004502857e20478",
     "1630133642e6b919cc",
     "1630155100e70d79d8",
-    "16301762615c0e8b89",
-    "1630397519047103ef"
+    "16301762615c0e8b89"
   ]
 }
