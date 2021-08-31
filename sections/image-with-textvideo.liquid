@@ -8,18 +8,18 @@
     
           <div class="collage-card collage-video{% if focus_card_left %} collage-card--left{% elsif focus_card_right %} collage-card--right{% endif %}">
             <noscript>
-              <a href="{{ block.settings.video_url }}" class="card{% if block.settings.cover_image == blank %} collage-video-placeholder{% endif %}"
-                {% if block.settings.cover_image != blank and focus_card_left and forloop.first %}
-                  style="padding-bottom: {{ 1 | divided_by: block.settings.cover_image.aspect_ratio | times: 100 }}%;"
-                {% elsif block.settings.cover_image != blank and focus_card_right and forloop.last %}
-                  style="padding-bottom: {{ 1 | divided_by: block.settings.cover_image.aspect_ratio | times: 100 }}%;"
+              <a href="{{ section.settings.video_url }}" class="card{% if section.settings.cover_image == blank %} collage-video-placeholder{% endif %}"
+                {% if section.settings.cover_image != blank and focus_card_left and forloop.first %}
+                  style="padding-bottom: {{ 1 | divided_by: section.settings.cover_image.aspect_ratio | times: 100 }}%;"
+                {% elsif section.settings.cover_image != blank and focus_card_right and forloop.last %}
+                  style="padding-bottom: {{ 1 | divided_by: section.settings.cover_image.aspect_ratio | times: 100 }}%;"
                 {% endif %}
               >
-                <div class="collage-content collage-card__image-wrapper media media--transparent{% if block.settings.image_padding %} collage-card-spacing{% endif %}">
-                  {%- if block.settings.cover_image != blank -%}
+                <div class="collage-content collage-card__image-wrapper media media--transparent{% if section.settings.image_padding %} collage-card-spacing{% endif %}">
+                  {%- if section.settings.cover_image != blank -%}
                     <img
-                      srcset="{%- if block.settings.cover_image.width >= 500 -%}{{ block.settings.cover_image | img_url: '500x' }} 500w,{%- endif -%}
-                      {%- if block.settings.cover_image.width >= 730 -%}{{ block.settings.cover_image | img_url: '730x' }} 730w,{%- endif -%}
+                      srcset="{%- if section.settings.cover_image.width >= 500 -%}{{ section.settings.cover_image | img_url: '500x' }} 500w,{%- endif -%}
+                      {%- if section.settings.cover_image.width >= 730 -%}{{ block.settings.cover_image | img_url: '730x' }} 730w,{%- endif -%}
                       {%- if block.settings.cover_image.width >= 1440 -%}{{ block.settings.cover_image | img_url: '1440x' }} 1440w,{%- endif -%}
                       {%- if block.settings.cover_image.width >= 990 -%}{{ block.settings.cover_image | img_url: '990x' }} 990w,{%- endif -%}
                       {%- if block.settings.cover_image.width >= 2080 -%}{{ block.settings.cover_image | img_url: '2080x' }} 2080w{%- endif -%}"
@@ -38,31 +38,31 @@
               </a>
             </noscript>
             {%- if section.blocks.size == 1 -%}
-              <deferred-media class="deferred-media no-js-hidden{% if block.settings.image_padding %} collage-card-spacing{% endif %}" data-media-id="{{ block.settings.video_url.id }}"
-                {% if block.settings.cover_image != blank %}
-                  style="padding-bottom: {{ 1 | divided_by: block.settings.cover_image.aspect_ratio | times: 100 }}%;"
+              <deferred-media class="deferred-media no-js-hidden{% if section.settings.image_padding %} collage-card-spacing{% endif %}" data-media-id="{{ section.settings.video_url.id }}"
+                {% if section.settings.cover_image != blank %}
+                  style="padding-bottom: {{ 1 | divided_by: section.settings.cover_image.aspect_ratio | times: 100 }}%;"
                 {% else %}
                   style="padding-bottom: 100%;"
                 {% endif %}
               >
                 <button
-                  id="Deferred-Poster-Modal-{{ block.settings.video_url.id }}"
+                  id="Deferred-Poster-Modal-{{ section.settings.video_url.id }}"
                   class="collage-content collage-card__image-wrapper media deferred-media__poster"
                   type="button"
                 >
-                  {%- if block.settings.cover_image != blank -%}
+                  {%- if section.settings.cover_image != blank -%}
                     <img
                       srcset="{%- if block.settings.cover_image.width >= 500 -%}{{ block.settings.cover_image | img_url: '500x' }} 500w,{%- endif -%}
-                      {%- if block.settings.cover_image.width >= 730 -%}{{ block.settings.cover_image | img_url: '730x' }} 730w,{%- endif -%}
-                      {%- if block.settings.cover_image.width >= 1440 -%}{{ block.settings.cover_image | img_url: '1440x' }} 1440w,{%- endif -%}
-                      {%- if block.settings.cover_image.width >= 990 -%}{{ block.settings.cover_image | img_url: '990x' }} 990w,{%- endif -%}
-                      {%- if block.settings.cover_image.width >= 2080 -%}{{ block.settings.cover_image | img_url: '2080x' }} 2080w{%- endif -%}"
-                      src="{{ block.settings.cover_image | img_url: '533x' }}"
+                      {%- if section.settings.cover_image.width >= 730 -%}{{ section.settings.cover_image | img_url: '730x' }} 730w,{%- endif -%}
+                      {%- if section.settings.cover_image.width >= 1440 -%}{{ section.settings.cover_image | img_url: '1440x' }} 1440w,{%- endif -%}
+                      {%- if section.settings.cover_image.width >= 990 -%}{{ section.settings.cover_image | img_url: '990x' }} 990w,{%- endif -%}
+                      {%- if section.settings.cover_image.width >= 2080 -%}{{ section.settings.cover_image | img_url: '2080x' }} 2080w{%- endif -%}"
+                      src="{{ section.settings.cover_image | img_url: '533x' }}"
                       sizes="(min-width: 990px){% if section.blocks.size == 1 %} 990px{% else %} 730px{% endif %}, (min-width: 750px){% if section.blocks.size == 1 %} calc(100vw - 100px){% else%} 500px{% endif %}, calc(100vw - 30px)"
-                      alt="{{ block.settings.description | escape }}"
+                      alt="{{ section.settings.description | escape }}"
                       loading="lazy"
-                      width="{{ block.settings.cover_image.width }}"
-                      height="{{ block.settings.cover_image.height }}"
+                      width="{{ section.settings.cover_image.width }}"
+                      height="{{ section.settings.cover_image.height }}"
                       class="collage-card__image"
                     >
                   {%- else -%}
