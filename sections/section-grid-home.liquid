@@ -63,9 +63,11 @@
                 {%- if block.settings.text != blank -%}
                   <div class="rte">{{ block.settings.text }}</div>
                 {%- endif -%}
+                {%- if block.settings.text != blank -%}
                 <div class="banner__buttons">
         			<button class="banner-btn button button--primary" href="">Shop Now</button>
         		</div>
+                {% endif %}
               </div>
             </div>
           </li>
