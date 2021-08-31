@@ -487,7 +487,7 @@
         "1630155100e70d79d8-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/mobile.jpg",
+            "image": "shopify:\/\/shop_images\/aa.png",
             "title": "HEALTH TIPS",
             "text": "",
             "background-color": "#053512",
@@ -501,7 +501,7 @@
         "1630155100e70d79d8-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/mobile.jpg",
+            "image": "shopify:\/\/shop_images\/b.png",
             "title": "BEAUTY TIPS",
             "text": "",
             "background-color": "#ffffff",
@@ -515,7 +515,7 @@
         "1630155100e70d79d8-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/mobile.jpg",
+            "image": "shopify:\/\/shop_images\/c.png",
             "title": "RECIPIE TIPS",
             "text": "",
             "background-color": "#f9bdef",
