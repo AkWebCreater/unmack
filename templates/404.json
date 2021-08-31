@@ -165,7 +165,7 @@
     "163038833315e79f47": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div class=\"wrapper\">\n<div class=\"page-width page-width-desktop\">\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0591\/8192\/4552\/files\/Untitled-2.png?v=1630178012\" width=\"100%\">\n<\/div>\n<\/div>"
+        "custom_liquid": "<div class=\"img-wrapper\">\n<div class=\"page-width page-width-desktop\">\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0591\/8192\/4552\/files\/Untitled-2.png?v=1630178012\" width=\"100%\">\n<\/div>\n<\/div>"
       }
     },
     "16300432373f322551": {
