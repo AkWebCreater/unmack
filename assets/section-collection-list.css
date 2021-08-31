@@ -1,5 +1,7 @@
 .collection-list-section,.collection-list-section + section{
 background:#fff8ed;
+  margin-top:0;
+  padding-top:4rem;
 }
 @media screen and (max-width: 749px) {
   .collage-section + .collection-list-section .no-heading.no-mobile-link {
