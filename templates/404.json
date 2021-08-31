@@ -490,7 +490,7 @@
             "title": "HEALTH TIPS",
             "text": "",
             "background-color": "#053512",
-            "text-color": "#FFFFFF",
+            "text-color": "#ffffff",
             "button-text-color": "#f58634",
             "button-text": "Explore Now",
             "button-url": "",
@@ -503,7 +503,7 @@
             "image": "shopify:\/\/shop_images\/mobile.jpg",
             "title": "BEAUTY TIPS",
             "text": "",
-            "background-color": "#FFFFFF",
+            "background-color": "#ffffff",
             "text-color": "#0e0e0e",
             "button-text-color": "#0e0e0e",
             "button-text": "Explore Now",
@@ -549,6 +549,41 @@
         "background-image": "shopify:\/\/shop_images\/Untitled-2.png",
         "heading": ""
       }
+    },
+    "1630397519047103ef": {
+      "type": "vedio-collage",
+      "blocks": {
+        "1630397519047103ef-0": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "description": "Describe the video for customers using screen readers",
+            "image_padding": false
+          }
+        },
+        "1630397519047103ef-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text"
+          }
+        },
+        "1630397519047103ef-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1630397519047103ef-0",
+        "1630397519047103ef-1",
+        "1630397519047103ef-2"
+      ],
+      "settings": {
+        "heading": "Multimedia collage",
+        "desktop_layout": "left",
+        "mobile_layout": "column"
+      }
     }
   },
   "order": [
@@ -566,6 +601,7 @@
     "163004502857e20478",
     "1630133642e6b919cc",
     "1630155100e70d79d8",
-    "16301762615c0e8b89"
+    "16301762615c0e8b89",
+    "1630397519047103ef"
   ]
 }
