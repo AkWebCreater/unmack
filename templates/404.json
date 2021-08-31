@@ -506,7 +506,9 @@
             "title": "HEALTH TIPS",
             "text": "",
             "background-color": "#546d36",
-            "text-color": ""
+            "text-color": "",
+            "button-text": "Explore More",
+            "button-url": ""
           }
         },
         "1630155100e70d79d8-1": {
@@ -516,7 +518,9 @@
             "title": "BEAUTY TIPS",
             "text": "",
             "background-color": "#f58634",
-            "text-color": "#ffffff"
+            "text-color": "#ffffff",
+            "button-text": "Explore More",
+            "button-url": ""
           }
         },
         "1630155100e70d79d8-2": {
@@ -526,7 +530,9 @@
             "title": "RECIPIE TIPS",
             "text": "",
             "background-color": "",
-            "text-color": ""
+            "text-color": "",
+            "button-text": "Explore More",
+            "button-url": ""
           }
         }
       },
