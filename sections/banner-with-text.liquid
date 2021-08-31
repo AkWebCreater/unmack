@@ -43,7 +43,8 @@
 
 {% schema %}
   {
-    "name": "bg with images",
+    "name": "Make Your Own Box",
+"class":"make-your-own-box",
     "settings": [
 					{
                       "id": "background-image",
@@ -162,7 +163,7 @@
     background-image:url({{section.settings.background-image | img_url: 'master'}});
     background-position: center center;
     background-size: cover;
-    margin-bottom: 5rem;
+/*     margin-bottom: 5rem; */
   }
   {% endif %}
   .section-{{section.id}} .button, .customer button, .shopify-challenge__button {
