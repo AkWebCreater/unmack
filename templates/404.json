@@ -489,10 +489,11 @@
             "image": "shopify:\/\/shop_images\/mobile.jpg",
             "title": "HEALTH TIPS",
             "text": "",
-            "background-color": "#546d36",
+            "background-color": "#FFFFFF",
             "text-color": "",
             "button-text": "Explore Now",
-            "button-url": ""
+            "button-url": "",
+            "border-color": "#f58634"
           }
         },
         "1630155100e70d79d8-1": {
@@ -504,7 +505,8 @@
             "background-color": "#f58634",
             "text-color": "#ffffff",
             "button-text": "Explore Now",
-            "button-url": ""
+            "button-url": "",
+            "border-color": ""
           }
         },
         "1630155100e70d79d8-2": {
@@ -516,7 +518,8 @@
             "background-color": "",
             "text-color": "",
             "button-text": "Explore Now",
-            "button-url": ""
+            "button-url": "",
+            "border-color": ""
           }
         }
       },
