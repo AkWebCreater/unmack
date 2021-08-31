@@ -16,7 +16,7 @@ content:" ";
 
 }
 
-.collection-list-section + section .page-width{
+.collection-list-section + section .img-wrapper{
 position: relative;
     z-index: 2;
 }
