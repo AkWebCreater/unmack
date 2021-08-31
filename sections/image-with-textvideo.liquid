@@ -160,6 +160,40 @@
   "name": "image-with-textvideo",
   "class": "spaced-section spaced-section--full-width",
   "settings": [
+{"type":"header",
+"content":"vedio"
+},
+{
+          "type": "image_picker",
+          "id": "cover_image",
+          "label": "t:sections.collage.blocks.video.settings.cover_image.label"
+        },
+        {
+          "type": "video_url",
+          "id": "video_url",
+          "accept": [
+            "youtube",
+            "vimeo"
+          ],
+          "default": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+          "label": "t:sections.collage.blocks.video.settings.video_url.label",
+          "placeholder": "t:sections.collage.blocks.video.settings.video_url.placeholder",
+          "info": "t:sections.collage.blocks.video.settings.video_url.info"
+        },
+        {
+          "type": "text",
+          "id": "description",
+          "default": "Describe the video for customers using screen readers",
+          "label": "Video alt text"
+        },
+        {
+          "type": "checkbox",
+          "id": "image_padding",
+          "default": false,
+          "label": "t:sections.collage.blocks.video.settings.image_padding.label",
+          "info": "t:sections.collage.blocks.video.settings.image_padding.info"
+        }
+,
     {
       "type": "image_picker",
       "id": "image",
