@@ -168,28 +168,6 @@
         "custom_liquid": "<div>\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0591\/8192\/4552\/files\/Untitled-2.png?v=1630178012\">\n<\/div>"
       }
     },
-    "1630177944844fd60c": {
-      "type": "banner",
-      "blocks": {
-        "1630177944844fd60c-0": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": ""
-          }
-        }
-      },
-      "block_order": [
-        "1630177944844fd60c-0"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Untitled-2.png",
-        "desktop_text_box_position": "flex-start",
-        "color_scheme": "background-1",
-        "stack_images_on_mobile": true,
-        "adapt_height_first_image": true
-      }
-    },
     "16300432373f322551": {
       "type": "about-text",
       "blocks": {
@@ -567,7 +545,6 @@
     "1630041953ce8ee818",
     "163017222359fc16f2",
     "163038833315e79f47",
-    "1630177944844fd60c",
     "16300432373f322551",
     "1630044136009a8f84",
     "16300441400f67cd94",
