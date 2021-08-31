@@ -12,6 +12,7 @@
         },
         "1630400134fcc17c93-1": {
           "type": "html",
+          "disabled": true,
           "settings": {
             "title": "Image banner"
           }
