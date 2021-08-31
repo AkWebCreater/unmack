@@ -3,6 +3,14 @@ background:#fff8ed;
   margin-top:0;
   padding-top:4rem;
 }
+.collection-list-section + section:after{
+content=" ";
+  display:block;
+  position:absolute;
+  width:100%;
+  height:100%;
+  background:#fff;
+}
 @media screen and (max-width: 749px) {
   .collage-section + .collection-list-section .no-heading.no-mobile-link {
     margin-top: -7rem;
