@@ -26,7 +26,6 @@
         },
         "1630400134fcc17c93-3": {
           "type": "buttons",
-          "disabled": true,
           "settings": {
             "button_label_1": "Button label",
             "button_link_1": "",
