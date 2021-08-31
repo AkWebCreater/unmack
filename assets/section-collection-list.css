@@ -1,3 +1,6 @@
+.collection-list-section,.collection-list-section + section{
+background:#fff8ed;
+}
 @media screen and (max-width: 749px) {
   .collage-section + .collection-list-section .no-heading.no-mobile-link {
     margin-top: -7rem;
