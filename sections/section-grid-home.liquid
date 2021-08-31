@@ -260,8 +260,10 @@
  .section-{{section.id}} .multicolumn-card {
     border-radius: 10px;
 }
+  {% for block in section.blocks %}
   .section-{{section.id}} .multicolumn-card__info {
     background-color: {{ block.settings.background-color }};
 }
+  {% endfor %}
   
 </style>
