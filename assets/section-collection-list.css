@@ -10,6 +10,7 @@ content:" ";
   width:100%;
   height:100%;
   background:#fff;
+  z-index:-1;
 }
 @media screen and (max-width: 749px) {
   .collage-section + .collection-list-section .no-heading.no-mobile-link {
