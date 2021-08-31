@@ -65,7 +65,7 @@
                 {%- endif -%}
                 {%- if block.settings.button-text != blank -%}
                 <div class="banner__buttons">
-        			<button class="banner-btn button button--primary" href="">{{ block.settings.button-text}}</button>
+        			<button class="banner-btn button button--primary" href="{{ block.settings.button-url}}">{{ block.settings.button-text}}</button>
         		</div>
                 {% endif %}
               </div>
