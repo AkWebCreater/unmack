@@ -200,6 +200,7 @@
         "1630397519047103ef-0": {
           "type": "video",
           "settings": {
+            "cover_image": "shopify:\/\/shop_images\/jouney.png",
             "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
             "description": "Describe the video for customers using screen readers",
             "image_padding": false
