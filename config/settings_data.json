@@ -2,6 +2,9 @@
   "current": {
     "colors_accent_1": "#546d36",
     "colors_accent_2": "#f58634",
+    "sale_badge_color_scheme": "accent-2",
+    "sold_out_badge_color_scheme": "inverse",
+    "accent_icons": "text",
     "social_twitter_link": "https:\/\/twitter.com\/UmanacIN?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
     "social_facebook_link": "https:\/\/www.facebook.com\/Umanac\/",
     "social_instagram_link": "https:\/\/www.instagram.com\/umanac.in\/?hl=en",
@@ -191,6 +194,13 @@
             "settings": {
               "show_dynamic_checkout": true
             }
+          },
+          "5698d0ce-0191-4af2-8b32-41a6f1fe211f": {
+            "type": "text",
+            "settings": {
+              "text": "Text block",
+              "text_style": "body"
+            }
           }
         },
         "block_order": [
@@ -198,7 +208,8 @@
           "f801924d-df04-4680-bc95-1ac6e80b7a46",
           "62e456f0-55a0-473a-9f2e-ad8554ce63aa",
           "332a902c-4726-4ce6-9cd4-05e2f43e8ebb",
-          "1d81b782-2ed8-413c-9f99-6cc8cb64a568"
+          "1d81b782-2ed8-413c-9f99-6cc8cb64a568",
+          "5698d0ce-0191-4af2-8b32-41a6f1fe211f"
         ],
         "settings": {
           "enable_sticky_info": true,
