@@ -65,7 +65,7 @@
                 {%- endif -%}
                 {%- if block.settings.button-text != blank -%}
                 <div class="banner__buttons">
-        			<button class="banner-btn button button--primary" href="{{ block.settings.button-url}}" style="color:{{ block.settings.text-color}}">{{ block.settings.button-text}}<i class="fa fa-long-arrow-alt-right"></i></button>
+        			<button class="banner-btn button button--primary" href="{{ block.settings.button-url}}" style="color:{{ block.settings.text-color}};border:1px solid {{block.settings.border-color}}">{{ block.settings.button-text}}<i class="fa fa-long-arrow-alt-right"></i></button>
         		</div>
                 {% endif %}
               </div>
@@ -299,7 +299,7 @@
     min-width: 0;
     min-height: 0;
     border-radius: 5px;
-    border: 1px solid grey;
+    /*border: 1px solid grey;*/
     background-color: transparent;
     box-shadow: none;
   }
