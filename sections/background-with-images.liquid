@@ -96,7 +96,9 @@
   {% endif %}
   .section-{{section.id}} h2.title{
   	text-align:center;
-    padding-top: 15px;
+     {% if section.settings.background-image != blank %}
+ color:#fff;
+      {% endif %}
   }
   .section-{{section.id}} .grid.grid-3{
   	width:80%;
