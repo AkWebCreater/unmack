@@ -581,7 +581,7 @@
       ],
       "settings": {
         "heading": "Unamac Journey",
-        "desktop_layout": "right",
+        "desktop_layout": "left",
         "mobile_layout": "column"
       }
     }
