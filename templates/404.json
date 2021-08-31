@@ -532,7 +532,7 @@
       "settings": {
         "title": "",
         "image_width": "full",
-        "image_ratio": "adapt",
+        "image_ratio": "portrait",
         "column_alignment": "center",
         "background_style": "secondary",
         "button_label": "",
