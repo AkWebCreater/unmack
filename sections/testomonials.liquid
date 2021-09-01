@@ -70,9 +70,7 @@
             </div>
           </li>
         {%- endfor -%}
-<!--                 {% if section.settings.shadow-effect == true %}
-        <div class="shadow"></div>
-        {% endif %} -->
+ 
       </ul>
       </div>
 
@@ -265,6 +263,22 @@
 }
 {% endschema %}
 <style>
+
+     {% if section.settings.shadow-effect == true %}
+  .shadow{
+    display:block;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    box-shadow: 0px 0px 19px 3px rgba(0,0,0,0.75) inset;
+    -webkit-box-shadow: 0px 0px 19px 3px rgba(0,0,0,0.75) inset;
+    -moz-box-shadow: 0px 0px 19px 3px rgba(0,0,0,0.75) inset;
+    z-index:2;
+
+  }
+        {% endif %}
   .section-{{ section.id }} .multicolumn-list{
   	height: 300px;
     overflow: auto;
