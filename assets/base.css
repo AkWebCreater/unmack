@@ -1,5 +1,7 @@
 /* Derived from base colors (theme settings) */
-
+body{
+  background: red;
+}
 :root,
 .color-background-1 {
   --color-foreground: var(--color-base-text);
