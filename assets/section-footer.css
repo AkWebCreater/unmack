@@ -21,6 +21,13 @@ padding:0;
 -moz-box-shadow: 5px 6px 7px 0px rgba(0,0,0,0.75);
 transition: all .1s ease-in;
 }
+.footer-login-link .button:hover{
+  box-shadow: 5px 6px 7px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 5px 6px 7px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 5px 6px 7px 0px rgba(0,0,0,0.75);
+      transform: scale(1.1);
+  
+}
 .footer-login-link svg{
 margin-right:8px;
 }
