@@ -574,6 +574,11 @@
         "img-txt3": "We Support",
         "img-linktext3": "7days, 9am to 9pm"
       }
+    },
+    "1630490361a33c4b6f": {
+      "type": "map-with-num-aanimation",
+      "settings": {
+      }
     }
   },
   "order": [
@@ -592,6 +597,7 @@
     "1630155100e70d79d8",
     "163004502857e20478",
     "16301762615c0e8b89",
-    "163046513230d6c091"
+    "163046513230d6c091",
+    "1630490361a33c4b6f"
   ]
 }
