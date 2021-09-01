@@ -10,6 +10,7 @@ margin-top: -125px;
 }
 .footer-login-link .button{
 padding:0;
+  justify-content:space-around;
 }
 .footer-login-link{
 width:auto !important;
