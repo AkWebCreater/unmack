@@ -5,6 +5,10 @@ width:100%;
 .footer-top-bg{
 font-size:0;
 }
+.footer-top-bg + .footer{
+margin-top: -125px;
+}
+}
 .footer {
   border-top: 0.1rem solid var(--color-foreground-20);
 }
