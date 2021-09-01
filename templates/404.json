@@ -581,33 +581,33 @@
         "1630493245926e8dc9-0": {
           "type": "text-block",
           "settings": {
-            "heading": "Number",
-            "text": 245,
-            "text-after-number": ""
+            "heading": "Product Range",
+            "text": 45,
+            "text-after-number": "<p>+<\/p>"
           }
         },
         "1630493245926e8dc9-1": {
           "type": "text-block",
           "settings": {
-            "heading": "Number",
-            "text": 245,
-            "text-after-number": ""
+            "heading": "Popular  Brands",
+            "text": 27,
+            "text-after-number": "<p>+<\/p>"
           }
         },
         "1630493245926e8dc9-2": {
           "type": "text-block",
           "settings": {
-            "heading": "Number",
-            "text": 245,
-            "text-after-number": ""
+            "heading": "Export Cities",
+            "text": 18,
+            "text-after-number": "<p>+<\/p>"
           }
         },
         "1630493245926e8dc9-3": {
           "type": "text-block",
           "settings": {
-            "heading": "Number",
-            "text": 245,
-            "text-after-number": ""
+            "heading": "Happy Customer",
+            "text": 21,
+            "text-after-number": "<p>k<\/p>"
           }
         }
       },
