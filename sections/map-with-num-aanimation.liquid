@@ -1,5 +1,5 @@
 {{ 'section-num-animation.css' | asset_url | stylesheet_tag }}
-<div class="map-with-num-aanimation" >
+<div class="map-with-num-aanimation page-width" >
   <div class="img-wrapper"><img src="" alt="map"></div>
   <div class="num-animation-wrtapper grid grid--2-col grid--4-col-tablet grid--4-col-desktop">
     {% for block in section.blocks %}
@@ -23,7 +23,7 @@
 {% schema %}
   {
     "name": "Map With Number Aniamtion",
-"class":"section-map-with-num-aanimation",
+"class":"section-map-with-num-aanimation spaced-section--full-width",
     "settings": [],
 
   "blocks": [
