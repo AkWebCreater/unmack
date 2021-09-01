@@ -8,6 +8,8 @@ font-size:0;
 .footer-top-bg + .footer{
 margin-top: -125px;
 }
+.footer-login-link .button{
+padding:0;
 }
 .footer {
   border-top: 0.1rem solid var(--color-foreground-20);
