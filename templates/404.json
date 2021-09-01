@@ -533,6 +533,7 @@
         "120214c8-86b4-4a74-afda-ef0c83fbefa2"
       ],
       "settings": {
+        "shadow-effect": true,
         "background-image": "shopify:\/\/shop_images\/8.jpg",
         "title": "WHY DO PEOPLE LOVE US?",
         "image_width": "half",
@@ -551,6 +552,24 @@
         "background-image": "shopify:\/\/shop_images\/Untitled-2.png",
         "heading": ""
       }
+    },
+    "163046513230d6c091": {
+      "type": "icon-set",
+      "settings": {
+        "footer_new_enable": false,
+        "img_cat_svg": "",
+        "img-txt": "",
+        "img-linktext": "Enter text",
+        "img_cat1_svg": "",
+        "img-txt1": "",
+        "img-linktext1": "Enter text",
+        "img_cat2_svg": "",
+        "img-txt2": "",
+        "img-linktext2": "Enter text",
+        "img_cat3_svg": "",
+        "img-txt3": "",
+        "img-linktext3": "Enter text"
+      }
     }
   },
   "order": [
@@ -568,6 +587,7 @@
     "1630133642e6b919cc",
     "1630155100e70d79d8",
     "163004502857e20478",
-    "16301762615c0e8b89"
+    "16301762615c0e8b89",
+    "163046513230d6c091"
   ]
 }
