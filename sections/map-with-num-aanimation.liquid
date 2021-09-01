@@ -3,7 +3,8 @@
   <div class="num-animation-wrtapper grid grid--1-col grid--2-col-tablet grid--4-col-desktop">
     {% for block in section.blocks %}
     <div class="animation-block grid__item">
-      <span class="counter">{{block.settings.text}}</span> <span>{{block.settings.text-after-number}}</span>
+      
+      <div class="grid"><span class="counter">{{block.settings.text}}</span> <span>{{block.settings.text-after-number}}</span></div>
       <h3>{{block.settings.heading}}</h3>
     </div>  
     {% endfor %}
