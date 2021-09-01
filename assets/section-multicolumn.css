@@ -2,7 +2,7 @@
 position:relative;
 z-index:1;  
 }
-.multicolumn-list .shadow{
+.multicolumn-list .shadow,.shadow{
   display:block;
 position:absolute;
 top:0;
