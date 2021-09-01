@@ -2,6 +2,10 @@
 font-size:40px;
   font-weight:800;
 }
-.num-animation-wrtapper{
+.num-animation-wrtapper,.counter-wrap{
 justify-content:center;
+  
+}
+.map-with-num-aanimation{
+text-align:center;
 }
