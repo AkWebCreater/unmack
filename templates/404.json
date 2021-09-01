@@ -574,6 +574,51 @@
         "img-txt3": "We Support",
         "img-linktext3": "7days, 9am to 9pm"
       }
+    },
+    "1630493245926e8dc9": {
+      "type": "map-with-num-aanimation",
+      "blocks": {
+        "1630493245926e8dc9-0": {
+          "type": "text-block",
+          "settings": {
+            "heading": "Number",
+            "text": 245,
+            "text-after-number": ""
+          }
+        },
+        "1630493245926e8dc9-1": {
+          "type": "text-block",
+          "settings": {
+            "heading": "Number",
+            "text": 245,
+            "text-after-number": ""
+          }
+        },
+        "1630493245926e8dc9-2": {
+          "type": "text-block",
+          "settings": {
+            "heading": "Number",
+            "text": 245,
+            "text-after-number": ""
+          }
+        },
+        "1630493245926e8dc9-3": {
+          "type": "text-block",
+          "settings": {
+            "heading": "Number",
+            "text": 245,
+            "text-after-number": ""
+          }
+        }
+      },
+      "block_order": [
+        "1630493245926e8dc9-0",
+        "1630493245926e8dc9-1",
+        "1630493245926e8dc9-2",
+        "1630493245926e8dc9-3"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -592,6 +637,7 @@
     "1630155100e70d79d8",
     "163004502857e20478",
     "16301762615c0e8b89",
-    "163046513230d6c091"
+    "163046513230d6c091",
+    "1630493245926e8dc9"
   ]
 }
