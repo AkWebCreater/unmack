@@ -11,6 +11,8 @@ margin-top: -125px;
 .footer-login-link .button{
 padding:0;
   justify-content:space-around;
+  background:#fff;
+  border-radius:8px;
 }
 .footer-login-link{
 width:auto !important;
