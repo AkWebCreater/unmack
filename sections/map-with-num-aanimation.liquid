@@ -1,20 +1,12 @@
 <div class="map-with-num-aanimation" >
   <div class="img-wrapper"><img src="" alt="map"></div>
   <div class="num-animation-wrtapper grid grid--1-col grid--2-col-tablet grid--4-col-desktop">
-{% for block in section.blocks %}
+    {% for block in section.blocks %}
     <div class="animation-block grid__item">
       <span class="counter">{{block.settings.text}}</span> <span>{{block.settings.text-after-number}}</span>
       <h3>{{block.settings.heading}}</h3>
     </div>  
-    
-  {% endfor %}
-    <div>
-      <p>Cities</p>
-     <span class="counter">1,234,567.00</span>
-<span>$</span><span class="counter">1.99</span>
-<span class="counter">12345</span>
-
-    </div>
+    {% endfor %}
   </div>
 </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
