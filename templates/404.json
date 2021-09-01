@@ -194,6 +194,52 @@
         "full_width": true
       }
     },
+    "1630493245926e8dc9": {
+      "type": "map-with-num-aanimation",
+      "blocks": {
+        "1630493245926e8dc9-0": {
+          "type": "text-block",
+          "settings": {
+            "heading": "Product Range",
+            "text": 45,
+            "text-after-number": "+"
+          }
+        },
+        "1630493245926e8dc9-1": {
+          "type": "text-block",
+          "settings": {
+            "heading": "Popular  Brands",
+            "text": 27,
+            "text-after-number": "+"
+          }
+        },
+        "1630493245926e8dc9-2": {
+          "type": "text-block",
+          "settings": {
+            "heading": "Export Cities",
+            "text": 18,
+            "text-after-number": "+"
+          }
+        },
+        "1630493245926e8dc9-3": {
+          "type": "text-block",
+          "settings": {
+            "heading": "Happy Customer",
+            "text": 21,
+            "text-after-number": "k"
+          }
+        }
+      },
+      "block_order": [
+        "1630493245926e8dc9-0",
+        "1630493245926e8dc9-1",
+        "1630493245926e8dc9-2",
+        "1630493245926e8dc9-3"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/map.png"
+      }
+    },
     "1630397519047103ef": {
       "type": "vedio-collage",
       "blocks": {
@@ -574,52 +620,6 @@
         "img-txt3": "We Support",
         "img-linktext3": "7days, 9am to 9pm"
       }
-    },
-    "1630493245926e8dc9": {
-      "type": "map-with-num-aanimation",
-      "blocks": {
-        "1630493245926e8dc9-0": {
-          "type": "text-block",
-          "settings": {
-            "heading": "Product Range",
-            "text": 45,
-            "text-after-number": "+"
-          }
-        },
-        "1630493245926e8dc9-1": {
-          "type": "text-block",
-          "settings": {
-            "heading": "Popular  Brands",
-            "text": 27,
-            "text-after-number": "+"
-          }
-        },
-        "1630493245926e8dc9-2": {
-          "type": "text-block",
-          "settings": {
-            "heading": "Export Cities",
-            "text": 18,
-            "text-after-number": "+"
-          }
-        },
-        "1630493245926e8dc9-3": {
-          "type": "text-block",
-          "settings": {
-            "heading": "Happy Customer",
-            "text": 21,
-            "text-after-number": "k"
-          }
-        }
-      },
-      "block_order": [
-        "1630493245926e8dc9-0",
-        "1630493245926e8dc9-1",
-        "1630493245926e8dc9-2",
-        "1630493245926e8dc9-3"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/map.png"
-      }
     }
   },
   "order": [
@@ -629,6 +629,7 @@
     "163017222359fc16f2",
     "163038833315e79f47",
     "16300432373f322551",
+    "1630493245926e8dc9",
     "1630397519047103ef",
     "16300441400f67cd94",
     "1630071793752a4d2d",
@@ -638,7 +639,6 @@
     "1630155100e70d79d8",
     "163004502857e20478",
     "16301762615c0e8b89",
-    "163046513230d6c091",
-    "1630493245926e8dc9"
+    "163046513230d6c091"
   ]
 }
