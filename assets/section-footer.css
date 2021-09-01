@@ -1,5 +1,9 @@
 .footer-top-bg img{
 width:100%;
+  
+}
+.footer-top-bg{
+font-size:0;
 }
 .footer {
   border-top: 0.1rem solid var(--color-foreground-20);
