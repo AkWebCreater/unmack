@@ -20,9 +20,9 @@
         id="Slider-{{ section.id }}"
         role="list"
       >
-        {% if section.settigns.shadow-effect == true %}
+       
         <div class="shadow"></div>
-        {% endif %}
+     
         {%- liquid
           assign highest_ratio = 0
           for block in section.blocks
