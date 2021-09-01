@@ -557,18 +557,19 @@
       "type": "icon-set",
       "settings": {
         "footer_new_enable": false,
+        "img_cat": "shopify:\/\/shop_images\/icon-1.png",
         "img_cat_svg": "",
-        "img-txt": "",
-        "img-linktext": "Enter text",
+        "img-txt": "Free Shipping",
+        "img-linktext": "Order Rs 799 or more",
         "img_cat1_svg": "",
-        "img-txt1": "",
-        "img-linktext1": "Enter text",
+        "img-txt1": "Free Returns",
+        "img-linktext1": "witin7 days(T&Cs Apply)",
         "img_cat2_svg": "",
-        "img-txt2": "",
-        "img-linktext2": "Enter text",
+        "img-txt2": "Upto 50% Off",
+        "img-linktext2": "On Pet Products",
         "img_cat3_svg": "",
-        "img-txt3": "",
-        "img-linktext3": "Enter text"
+        "img-txt3": "We Support",
+        "img-linktext3": "7days, 9am to 9pm"
       }
     }
   },
