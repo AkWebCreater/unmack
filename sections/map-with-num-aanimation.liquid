@@ -1,11 +1,15 @@
 <div class="map-with-num-aanimation" >
   <div class="img-wrapper"><img src="" alt="map"></div>
   <div class="num-animation-wrtapper">
-  {% for block in section.blocks %}
+<!--   {% for block in section.blocks %}
     <div class="animation-block">
     </div>  
     
-  {% endfor %}
+  {% endfor %} -->
+    <div>
+      <p>Cities</p>
+      <span class="counter">145</span>
+    </div>
   </div>
 </div>
 
@@ -13,7 +17,11 @@
   {
     "name": "Map With Number Aniamtion",
 "class":"section-map-with-num-aanimation",
-    "settings": []
+    "settings": [],
+"presets":[{
+"category":"Maps",
+"name":"Map With Number Animation"
+}]
   }
 {% endschema %}
 
