@@ -402,7 +402,8 @@
     </div>
    {% if section.settings.footer-bottom-page != blank %}
       <div class="footer__content-bottom-wrapper page-width" >
-    {{pages[section.settings.footer-bottom-page].content}}
+      {% assign pageHandle = section.settings.footer-bottom-page %}
+    {{pages[pageHandle].content}}
     </div>
    {% endif %}
   </div>
