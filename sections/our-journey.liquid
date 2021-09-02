@@ -1,6 +1,6 @@
 <noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
 
-<div class="multicolumn background-{{ section.settings.background_style }}{% if section.settings.title == blank %} no-heading{% endif %}">
+<div class=" background-{{ section.settings.background_style }}{% if section.settings.title == blank %} no-heading{% endif %}">
   <div class="page-width">
    <div class="section-images-wrapper">
    {% for block in section.blocks %}
@@ -80,7 +80,7 @@
     align-items: flex-end;
 }
 .section-nav li{    
-    font-size: 0.875rem;
+    font-size: 1.5rem;
     letter-spacing: 0.0125rem;
     position: relative;
     padding: 0;
@@ -95,13 +95,13 @@
 
     .year::before {
     position: absolute;
-    bottom: -24px;
+    bottom: -26px;
     left: 50%;
     content: "";
     width: 9px;
     height: 10px;
-    -webkit-transform: translateX(-50%) rotate(90deg);
-    transform: translateX(-50%) rotate(90deg);
+    -webkit-transform: translateX(-50%) rotate(45deg);
+    transform: translateX(-50%) rotate(45deg);
     background: #f97e20;
     
 }  
