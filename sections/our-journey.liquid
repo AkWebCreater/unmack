@@ -8,11 +8,9 @@
 {% endfor %}
    </div> 
   <div class="section-nav">
-  <input type="range" min="1" max="{{section.blocks.size}}" step="1" value="0">
-
 <ul class="">
 {% for block in section.blocks %}
-   <li data-index="{{forloop.index}}" data-res-id="1" data-survey-res-id="1291" data-res-text="Short" data-res-desc-text="" class="year   res-active "><span>{{block.settings.title}}</span></li> 
+   <li data-index="{{forloop.index}}" data-res-id="1" data-survey-res-id="1291" data-res-text="Short" data-res-desc-text="" class="year"><span>{{block.settings.title}}</span></li> 
 {% endfor %}
 </ul>
 </div>
@@ -20,6 +18,20 @@
   </div>
 </div>
 <style>
+.section-nav{
+        width: 100%;
+    line-height: 1.42857;
+    font-size: 1rem;
+    color: #000;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    box-sizing: border-box;
+    word-break: keep-all;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 37px;
+    }
 .section-images-wrapper{
         display: flex;
     width: 100%;
@@ -27,6 +39,10 @@
   .section-images-wrapper img{
       width:100%;
   }  
+  .year-img{
+      font-size:0;
+      margin:0 8px;
+  }
 .section-nav ul:before {
     position: absolute;
     left: 50%;
@@ -75,21 +91,6 @@
    flex:1;
     width: 120px;
     line-height: 1;}
-.section-nav input{   
-    margin: 0;
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
-    position: absolute;
-    width: 100%;
-    z-index: 10;
-    cursor: pointer;
-    left: 0;
-    bottom: 32px;
-    height: 0;
-    -webkit-appearance: none;
-    padding: 0 45px;
-    }
   .section-nav>li::before {
     position: absolute;
     bottom: -24px;
@@ -103,19 +104,20 @@
     border-color: #000;
     border-radius: 50%;
 }  
-.section-nav{
-        width: 100%;
-    line-height: 1.42857;
-    font-size: 1rem;
-    color: #000;
-    -webkit-text-size-adjust: 100%;
-    -webkit-font-smoothing: antialiased;
-    text-align: center;
-    box-sizing: border-box;
-    word-break: keep-all;
-    display: inline-block;
-    position: relative;
-    padding-bottom: 37px;}
+
+    .year::before {
+    position: absolute;
+    bottom: -24px;
+    left: 50%;
+    content: "";
+    width: 9px;
+    height: 9px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background: #000;
+    border-color: #000;
+    border-radius: 50%;
+}  
 </style>
 {% schema %}
 {
