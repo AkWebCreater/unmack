@@ -400,6 +400,11 @@
         {%- endif -%}
       </div>
     </div>
+   {% if section.settings.footer-bottom-page != blank %}
+      <div class="footer__content-bottom-wrapper page-width" >
+    {{pages[section.settings.footer-bottom-page].content}}
+    </div>
+   {% endif %}
   </div>
 </footer>
 
@@ -724,6 +729,15 @@
       "id": "payment_enable",
       "default": true,
       "label": "t:sections.footer.settings.payment_enable.label"
+    },
+    {
+      "type": "header",
+      "content": "Footer Bottom"
+    },{
+      "type": "page",
+      "id": "footer-bottom-page",
+      "label": "Please Chose Page",
+      "info": "this will show content from your page"
     }
   ],
   "default": {
