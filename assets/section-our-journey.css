@@ -13,8 +13,12 @@ display: flex;
 align-items: flex-end;
 width: 100%;
 }
+.our-journey{
+    background-color: #f3f3f3;
+}
 .section-images-wrapper img{
 width:100%;
+border-radius: 8px;
 }  
 .year-img{
 transition: all 0.5s ease-in;
@@ -23,7 +27,7 @@ flex:1;
 margin:0 8px;
 }
 .year-img.active{
-    flex:2;
+    flex:1.4;
 }
 .section-nav ul:before {
 position: absolute;
