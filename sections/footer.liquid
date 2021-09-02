@@ -401,8 +401,9 @@
       </div>
     </div>
    {% if section.settings.footer-bottom-page != blank %}
-      <div class="footer__content-bottom-wrapper page-width" >
+      <div class="footer__content-bottom-page page-width" >
       {% assign pageHandle = section.settings.footer-bottom-page %}
+      <h2>{{section.settings.footer-bottom-page-heading}}</h2>
     {{ pages[pageHandle].content }}
     </div>
    {% endif %}
@@ -739,6 +740,12 @@
       "id": "footer-bottom-page",
       "label": "Please Chose Page",
       "info": "this will show content from your page"
+    },{
+      "type": "text",
+      "id": "footer-bottom-page-heading",
+      "label": "Footer Bootom Page Heading",
+      "default": "Explor Other Options For You Here"
+      
     }
   ],
   "default": {

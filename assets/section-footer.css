@@ -8,6 +8,10 @@ font-size:0;
 .footer-top-bg + .footer{
 margin-top: -125px;
 }
+.footer__content-bottom-page{
+  border-top:5px solid #fff;
+  padding-top: 8rem;
+}
 .footer-login-link .button{
 padding:0;
   min-width: 11rem;
