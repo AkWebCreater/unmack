@@ -9,17 +9,21 @@
 }
 .explore{
     text-align: center;
+    position: relative;
 }
 .explore-button{
-    background-color: #fff;
-    position: relative;
+    background-color: #b3aaaa;
+    padding: 6px 14px;
+    text-decoration: none;
+    line-height: 1;
     z-index: 2;
     color: #fff;
-    border: 1px solid #f1f1f1;
-    color: #f1f1f1;
+    border: 1px solid #b3aaaa;
 }
-.explore-button::before{
+.explore::before{
+    content: '';
     position: absolute;
+    color: #b3aaaa;
     width: 100%;
     height: 1px;
     left: 0;
