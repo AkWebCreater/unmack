@@ -1,0 +1,65 @@
+<!-- start section banner-with-text-->
+<section class="section-{{ section.id }}">
+<div class="heading">
+    <h2 class="collection-list-title">{{section.settings.section-heading}}</h2></div>
+<div class="best-seller-nav">
+{%- for block in section.blocks -%}
+  <span class="best-seller-nav-item"> {% if block.settings.title == blank %}
+      {% assign handle = block.settings.collection %}
+      {{collections[handle].title}}
+  {% else %}
+      {{block.settings.title}}
+  {% endif %} </span>  
+{%- endfor -%}
+</div>
+</section>
+<!-- End section banner-with-text-->
+
+
+{% schema %}
+  {
+    "name": "Best Seller",
+    "class":"best-seller",
+    "settings": [
+					{
+                      "id": "section-heading",
+                      "type": "text",
+                      "label": "Best Sellers"
+                    }
+				],
+"blocks":[
+ 
+	{
+      "type": "collection",
+      "name": "title",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "default": "Collection",
+          "label": "title"
+        },
+        {
+            "type": "collection",
+            "id": "collection",
+            "label": "choose collection",
+            "info": "choose collection hear form which products will be shown "
+        }
+      ]
+    }
+  ],
+"presets": [
+    {
+        "name": "banner-with-text",
+        "category":"slider"
+
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
