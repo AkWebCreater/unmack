@@ -12,6 +12,27 @@
   {% endif %} </span>  
 {%- endfor -%}
 </div>
+<div class="best-seller-collection-grid-wrapper ">
+{%- for block in section.blocks -%}
+    {%- if block.settings.collection != blank -%}
+        {% assign handle = block.settings.collection %} 
+        {%- assign seller_collection = collections[handle] -%}
+        <div class="grid grid--1-col grid--2-col-tablet grid--4-col-desktop" >
+        {%- for product in seller_collection.products -%}
+        <div class="grid__item">
+         {% render 'product-card',
+                product_card_product: product,
+                media_size: section.settings.image_ratio,
+                show_secondary_image: section.settings.show_secondary_image,
+                add_image_padding: section.settings.add_image_padding,
+                show_vendor: section.settings.show_vendor
+              %}
+           </div> 
+        {%- endfor -%} 
+        </div>       
+    {%- endif -%}
+{%- endfor -%}
+</div>
 </section>
 <!-- End section banner-with-text-->
 
@@ -50,7 +71,7 @@
   ],
 "presets": [
     {
-        "name": "banner-with-text",
+        "name": "Best Seller",
         "category":"slider"
 
     }
