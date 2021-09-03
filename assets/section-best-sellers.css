@@ -1,3 +1,28 @@
 .best-seller-nav{
     gap:2rem;
 }
+.best-seller-nav span{
+    cursor:pointer;
+}
+.best-seller-nav .add-border{
+    border-bottom:solid 1px #ff8125;
+}
+.explore{
+    text-align: center;
+}
+.explore-button{
+    background-color: #fff;
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    border: 1px solid #f1f1f1;
+    color: #f1f1f1;
+}
+.explore-button::before{
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    top: 50%;
+    z-index: 1;
+}
