@@ -123,6 +123,7 @@
   </head>
 
   <body>
+  {% render 'pincode-input-box' %}
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ "accessibility.skip_to_text" | t }}
     </a>
@@ -179,6 +180,6 @@ $('.best-seller-collection-grid-wrapper').slick({
    $(this).addClass('add-border').siblings().removeClass('add-border')
  });
 </script>
-  
+  {% render 'pincode-validator' %}
   </body>
 </html>
