@@ -25,6 +25,11 @@ $.extend({
     }
 });
 // utility functions
+// popup close
+$('.popup_zipcode-inner .close').click(function(){
+    $(this).closest('.popup-zipcode').hide();
+  })
+// massage printer
 function msgPrinter(msg, pin, city) {
     $('#del_time').text(msg + ' ' + city + ' ' + pin);
     $('#msg').text('Deliver To ' + city + ' ' + pin)
