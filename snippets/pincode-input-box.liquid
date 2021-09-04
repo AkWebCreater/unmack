@@ -1,0 +1,9 @@
+<div class="header-zipcode">
+  <div class="cutomer-wrap">
+    <div class="icon-location">{% render 'component-map-icon' %}</div>
+    <div class="wrap-inner">
+     <span class="customer-name">Deliver To {% if customer %} {{customer.first_name | capitalize | append: ' ' }} {% endif %} </span>
+      <span class="pin-city-wrapper"><span class="customer-city"></span><span class="customer-pincode">Enter Your Pincode</span></span>
+    </div>
+  </div>
+</div>

@@ -247,4 +247,10 @@
             -ms-transform: translate(10px, -18px);
                 transform: translate(10px, -18px);
    }
+   .wrap-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: left;
+}
      
