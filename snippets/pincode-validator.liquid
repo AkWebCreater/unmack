@@ -1,0 +1,115 @@
+<!-- pincodes    -->
+    <div class="pincodes" >
+      {% if settings.pincodes != blank %}
+      {% assign pincodes = settings.pincodes | split: ',' %}
+      <span class="all_pincodes pincode-text" delivery-message_1="{{settings.msg}}" >{% for pincode in pincodes %}{{ pincode }},{% endfor %}</span>
+      {% endif %}
+      {% if settings.pincodes1 != blank %}
+      {% assign pincodes1 = settings.pincodes1 | split: ',' %}
+      <span class="all_pincodes pincode-text1" delivery-message_2="{{settings.msg1}}">{% for pincode in pincodes1 %}{{ pincode }},{% endfor %}</span>
+      {% endif %}
+      {% if settings.pincodes2 != blank %}
+      {% assign pincodes2 = settings.pincodes2 | split: ',' %}
+      <span class="all_pincodes pincode-text2" delivery-message_3="{{settings.msg2}}">{% for pincode in pincodes2 %}{{ pincode }},{% endfor %}</span>
+      {% endif %}
+      {% if settings.pincodes3 != blank %}
+      {% assign pincodes3 = settings.pincodes3 | split: ',' %}
+      <span class="all_pincodes pincode-text3" delivery-message_4="{{settings.msg3}}">{% for pincode in pincodes3 %}{{ pincode }},{% endfor %}</span>
+      {% endif %}
+    </div>
+    {% comment %} pincode popup {% endcomment %}
+  <div class="popup-zipcode">
+  <div class="popup_zipcode-inner">
+    <div class="flexbox"><span class="close">x</span>
+    <h4>Choose your location</h4></div>
+    <div class="popup-top-text">
+   {% if customer %}
+      {% else %}
+         <p class="pra1"> Enter Your Pincode to see  delivery availability at Your Location</p>
+      {% endif %}
+     {% if customer %} 
+      {% if customer.addresses.size > 0 %}
+       <p class="pra1"> Select a delivery location to see  delivery availability at Your Address</p>
+      {% else %}
+      <p class="pra1"> Enter Your Pincode to see  delivery availability at Your Location</p>
+      {% endif %}
+      <div class="customer-address">
+        <div class="address-wrapper">
+      {% for address in customer.addresses %}
+{% if address.zip != blank %}
+        <div class="address">
+          <h5 class="acc-name">
+        {{ address.first_name | capitalize }} {{address.last_name | capitalize }}
+
+        {% if address == customer.default_address %}
+        <span {% if settings.enable_multilang %}data-translate="customer.addresses.default"{% endif %}>
+          ({{ 'customer.addresses.default' | t }})
+        </span>
+        {% endif %}
+      </h5>            
+
+        <div class="addr">
+      {% if address.company != blank %}
+          {{ address.company }}
+          {% endif %}
+          {% if address.street != blank %}
+          {{ address.street }}
+          {% endif %}
+          {% if address.city != blank %}
+          {{ address.city | capitalize }}
+          {% endif %}       
+          {% if address.province_code != blank %}
+             {{ address.province_code | upcase }}
+          {% endif %}
+          {% if address.zip != blank %}
+          <span id="address-pincode">{{ address.zip | upcase }}</span>
+          {% endif %}
+          {% if address.country != blank %}
+           {{ address.country }}
+          {% endif %}
+           {% if address.phone != blank %}
+          <strong class="cus-addr">
+          	 Mob: {{ address.phone }}
+          </strong>
+          {% endif %}
+         
+        </div>
+        </div>
+        {% endif %}
+      {% endfor %}
+        </div>
+      {% if settings.enable_multilang %}
+      <script>
+        $(".button").find("a:eq(0)").attr("data-translate","customer.addresses.edit");
+        $(".button").find("a:eq(1)").attr("data-translate","customer.addresses.delete");
+      </script>
+      {% endif %}
+
+      
+      </div>
+      {% else %}
+      <p class="pra2"> <a href="{{routes.account_login_url}}">Sign in to see your address</a></p>
+      {% endif %}
+      <fieldset class="pra3">
+        <legend align="center">or enter an indian pincode</legend>
+      </fieldset>
+    </div>
+   
+
+    
+    <div class="header-zipcode">
+        <div class="header-input-wrapper pincode-input-wrapper">
+          <div class="zip-inner">
+            <div class="input-with-map">
+            <input type="text" class="header-input-zip" placeholder="Enter Pincode" maxlength="6" onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')" >
+            </div>
+            <a href="javascript:void(0)" class="check-pincode" data-val ="{{settings.btn}}">Apply</a>
+          </div>
+        </div>
+      </div>
+     <p class="popup-pincode-error-invalid">{{settings.invalid_pincode_massage}}</p>
+    <p class="popup-pincode-error">{{settings.no_delevery_massage}}</p>
+  </div>
+</div>
+{% comment %} end popup {% endcomment %}
+<!-- end pincode   -->
