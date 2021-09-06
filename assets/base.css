@@ -1469,7 +1469,7 @@ input[type='checkbox'] {
 
 /* component-quantity */
 .quantity {
-  border: 0.1rem solid var(--color-foreground-55);
+  /* border: 0.1rem solid var(--color-foreground-55); */
   position: relative;
   width: 14rem;
   display: flex;
@@ -1481,8 +1481,9 @@ input[type='checkbox'] {
   font-weight: 500;
   opacity: 0.85;
   text-align: center;
-  background-color: transparent;
-  border: 0;
+  background-color: transparent ;
+  border: 1px solid var(--color-foreground-55);
+  border-radius: 4px;
   padding: 0 0.5rem;
   height: 4.5rem;
   width: 100%;
@@ -1492,7 +1493,9 @@ input[type='checkbox'] {
 }
 
 .quantity__button {
-  width: 4.5rem;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
   flex-shrink: 0;
   font-size: 1.8rem;
   border: 0;
