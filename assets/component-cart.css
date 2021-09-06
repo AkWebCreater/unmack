@@ -1,15 +1,17 @@
 .body--cart #MainContent{
   display: flex;
   max-width: 140rem;
-  padding: 0 5rem;
+  padding:20px 5rem;
   gap: 20px;
-  padding-bottom: 20px;
+}
+.body--cart #MainContent:first-child{
+  flex: 1;
 }
 .body--cart #MainContent > div{
-  box-shadow: 2px 0px 16px 0px rgb(0 0 0 / 75%);
-  -webkit-box-shadow: 2px 0px 12px 0px rgb(0 0 0 / 75%);
-  -moz-box-shadow: 2px 0px 16px 0px rgba(0,0,0,0.75);
-  border-radius: 8px;
+  box-shadow: 2px 0px 10px 0px rgb(0 0 0 / 75%);
+  -webkit-box-shadow: 2px 0px 10px 0px rgb(0 0 0 / 75%);
+  -moz-box-shadow: 2px 0px 10px 0px rgba(0,0,0,0.75);
+  border-radius: 4px;
 }
 .body--cart .cart__footer-wrapper{
   max-width: 30%;
