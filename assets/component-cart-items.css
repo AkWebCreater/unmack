@@ -94,18 +94,19 @@
 cart-remove-button .button {
   min-width:auto;
   min-height: auto;
-  padding: 5px;
-  background: #ccc;
+  padding: 5px 10px;
+  background: #eaeaea;
+  border-radius: 4px;
   color:  var(--color-base-accent-2);
   margin: 0 0.1rem 0.1rem 0;
 }
 
-@media screen and (min-width: 750px) {
+/* @media screen and (min-width: 750px) {
   cart-remove-button .button {
     min-width: 3.5rem;
     min-height: 3.5rem;
   }
-}
+} */
 
 cart-remove-button .icon-remove {
   height: 1.5rem;
