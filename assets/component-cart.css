@@ -5,7 +5,10 @@
   gap: 35px;
 }
 #main-cart-footer .cart__footer{
-  padding:20px 5rem;
+  padding:0 !important;
+}
+.cart-shadow{
+  padding: 15px;
 }
 #shopify-section-template--14951752597704__cart-items{
   flex: 1;
@@ -13,6 +16,11 @@
 .cart-bd{
   border-bottom: 1px solid #1a1b1833;
 }
+.pos-r .cart-count-bubble{
+  left: unset;
+  right: 0;
+}
+
 .body--cart #MainContent > div,#main-cart-footer > .header-zipcode,.cart-shadow{
   box-shadow: 2px 0px 10px 0px rgb(0 0 0 / 75%);
   -webkit-box-shadow: 2px 0px 10px 0px rgb(0 0 0 / 75%);

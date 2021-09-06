@@ -6,7 +6,7 @@
 {{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
 
 <cart-items class="cart--wrapper{% if cart == empty %} is-empty{% endif %}">
-  <div class="">
+  <div class="cart-bd">
     <h1 class="h3 pos-r">{{ 'sections.cart.title' | t }} <div class="cart-count-bubble"><span aria-hidden="true">1</span><span class="visually-hidden">1 item</span>
           </div></h1>
  
