@@ -16,6 +16,9 @@
 .cart-bd{
   border-bottom: 1px solid #1a1b1833;
 }
+.cart-footer-title{
+  padding-bottom: 10px;
+}
 .pos-r .cart-count-bubble{
   left: unset;
   right: 0;
