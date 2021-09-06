@@ -96,7 +96,7 @@ cart-remove-button .button {
   min-height: auto;
   padding: 5px;
   background: #ccc;
-  color:  var(--color-base-accent-1);
+  color:  var(--color-base-accent-2);
   margin: 0 0.1rem 0.1rem 0;
 }
 
