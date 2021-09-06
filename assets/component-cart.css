@@ -1,9 +1,7 @@
 .body--cart #MainContent{
   display: flex;
 }
-.body--cart .cart--wrapper{
-  max-width: 70%;
-}
+
 .body--cart .cart__footer-wrapper{
   max-width: 30%;
 }
