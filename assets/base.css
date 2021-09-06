@@ -1,13 +1,6 @@
 /* Derived from base colors (theme settings) */
 
 :root,
-.pincode_validator_bg ,.address.selecte,.cutomer-wrap.successd{
-  background: var(--color-pincode-validator);
-  color:#fff;
-}
-.pincode_validator_color-text{
-  color: var(--color-pincode-validator);
-} 
 .color-background-1 {
   --color-foreground: var(--color-base-text);
   --color-foreground-rgb: var(--color-base-text-rgb);
