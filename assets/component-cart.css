@@ -18,9 +18,11 @@
 }
 .cart-footer-title{
   padding-bottom: 10px;
+  display: block;
 }
 .pos-r .cart-count-bubble{
   left: unset;
+  top: 4px;
   right: 0;
 }
 
@@ -66,6 +68,9 @@ cart-items.is-empty .title-wrapper-with-link,
 .cart__contents > * + * {
   margin-top: 2.5rem;
 }
+.cart__contents,.h3.pos-r{
+  padding: 0 15px;
+}
 
 @media screen and (min-width: 990px) {
   .cart__warnings {
@@ -79,7 +84,6 @@ cart-items.is-empty .title-wrapper-with-link,
 
 cart-items {
   display: block;
-  padding: 0 15px;
 }
 
 .cart__items {
