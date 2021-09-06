@@ -8,7 +8,7 @@
   flex: 1;
 }
 
-.body--cart #MainContent > div{
+.body--cart #MainContent > div,#main-cart-footer > .header-zipcode,#main-cart-footer .cart__footer{
   box-shadow: 2px 0px 10px 0px rgb(0 0 0 / 75%);
   -webkit-box-shadow: 2px 0px 10px 0px rgb(0 0 0 / 75%);
   -moz-box-shadow: 2px 0px 10px 0px rgba(0,0,0,0.75);
@@ -16,8 +16,9 @@
 }
 .body--cart .cart__footer-wrapper{
   max-width: 30%;
-  box-shadow: none;
+  box-shadow: none !important;
 }
+
 .cart {
   position: relative;
   display: block;
