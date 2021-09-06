@@ -4,7 +4,7 @@
   padding:20px 5rem;
   gap: 20px;
 }
-.body--cart #MainContent:first-of-type{
+#shopify-section-template--14951752597704__cart-items{
   flex: 1;
 }
 .body--cart #MainContent > div{
