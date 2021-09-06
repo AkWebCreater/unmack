@@ -15,6 +15,11 @@
             "content": "General Messages"
           },
           {
+            "type": "color",
+            "id": "pincode_validator_accent",
+            "label": "Pincode Validator Accent"
+          },
+          {
             "type": "text",
             "id": "no_delevery_massage",
             "label": "No Delivery Message"

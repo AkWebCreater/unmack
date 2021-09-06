@@ -51,8 +51,6 @@
    -webkit-text-fill-color: #666 !important;
 }
 .popup-zipcode .check-pincode {
-    border: 1px solid #f86c6e !important;
-    background: #f86c6e;
     border-radius: 5px;
     padding: 1px 18px;
     color: #fff !important;
@@ -107,9 +105,7 @@
 }
 .popup_zipcode-inner h4 {
     text-transform: uppercase;
-    background: #f86c6e;
     padding: 10px 0;
-    color: #fff;
   -webkit-box-flex:1;
       -ms-flex:1;
           flex:1;
@@ -176,7 +172,6 @@
         width: 16px;
    }
     .cutomer-wrap.success {
-        background: #f86c6e;
         padding: 6px;
    }
     .cutomer-wrap.success svg, .cutomer-wrap.success .wrap-inner {
