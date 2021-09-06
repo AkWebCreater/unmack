@@ -2075,7 +2075,13 @@ details-disclosure > details {
   }
 }
 /* custome css */
-  
+.pincode_validator_bg ,.address.selecte,.cutomer-wrap.successd{
+  background: var(--color-pincode-validator);
+  color:#fff;
+}
+.pincode_validator_color-text{
+  color: var(--color-pincode-validator);
+} 
   .mt-0{
   margin-top:0;
   }
