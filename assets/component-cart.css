@@ -1,4 +1,4 @@
-.body--cart{
+.body--cart #MainContent{
   display: flex;
 }
 .body--cart .cart-items{
