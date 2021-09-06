@@ -5,9 +5,9 @@
 {{ 'component-discounts.css' | asset_url | stylesheet_tag }}
 {{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
 
-<cart-items class="page-width cart--wrapper{% if cart == empty %} is-empty{% endif %}">
-  <div class="title-wrapper-with-link">
-    <h1 class="title title--primary">{{ 'sections.cart.title' | t }}</h1>
+<cart-items class="cart--wrapper{% if cart == empty %} is-empty{% endif %}">
+  <div class="">
+    <h1 class="h3">{{ 'sections.cart.title' | t }}</h1>
     <a href="{{ routes.all_products_collection_url }}" class="underlined-link">{{ 'general.continue_shopping' | t }}</a>
   </div>
 
@@ -130,19 +130,10 @@
 
                      <cart-remove-button id="Remove-{{ item.index | plus: 1 }}" data-index="{{ item.index | plus: 1 }}">
                       <a href="{{ item.url_to_remove }}" class="button button--tertiary" aria-label="{{ 'sections.cart.remove_title' | t: title: item.title }}">
-                        {% render 'icon-remove' %}
+                        {% comment %} {% render 'icon-remove' %} {% endcomment %}{{ 'sections.cart.remove_title' | t: title: item.title }}
                       </a>
                     </cart-remove-button>
                   </td>
-
-                  <td class="cart-item__prices right">
-                  
-                  </td>
-
-                  <td class="cart-item__quantity">
-                   
-                  </td>
-
                   <td class="cart-item__totals right">
                   <div><a>Write product review</a></div>
                     <div class="cart-item__price-wrapper">
