@@ -8,7 +8,7 @@
 <cart-items class="cart--wrapper{% if cart == empty %} is-empty{% endif %}">
   <div class="">
     <h1 class="h3">{{ 'sections.cart.title' | t }}</h1>
-    <a href="{{ routes.all_products_collection_url }}" class="underlined-link">{{ 'general.continue_shopping' | t }}</a>
+ 
   </div>
 
   <div class="cart__warnings">
@@ -211,6 +211,8 @@
     <p class="visually-hidden" id="cart-live-region-text" aria-live="polite" role="status"></p>
     <p class="visually-hidden" id="shopping-cart-line-item-status" aria-live="polite" aria-hidden="true" role="status">{{ 'accessibility.loading' | t }}</p>
   </form>
+  <div>   <a href="{{ routes.all_products_collection_url }}" class="underlined-link">{{ 'general.continue_shopping' | t }}</a></div>
+
 </cart-items>
 
 <script src="{{ 'cart.js' | asset_url }}" defer="defer"></script>
