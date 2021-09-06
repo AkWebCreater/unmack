@@ -1473,6 +1473,7 @@ input[type='checkbox'] {
   position: relative;
   width: 14rem;
   display: flex;
+  justify-content: space-between;
 }
 
 .quantity__input {

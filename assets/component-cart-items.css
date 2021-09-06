@@ -1,6 +1,6 @@
 .cart-items td,
 .cart-items th {
-  padding: 0;
+  padding: 4rem 0;
   border: none;
   border-bottom: 1px solid #1a1b1833;
 }
