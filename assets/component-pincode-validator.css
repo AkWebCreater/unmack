@@ -162,7 +162,12 @@
 	font-size:16px;
 	  margin-bottom:0 !important;
 	}
+    .icon-location{
+        line-height: 1;
+    }
     .cutomer-wrap {
+        display: flex;
+        gap: 10px;
         background: #d0cbcb;
         padding: 12px 6px;
         border-radius: 4px;
@@ -177,12 +182,10 @@
     .cutomer-wrap.success svg, .cutomer-wrap.success .wrap-inner {
         color: #fff;
    }
-    .customer-name {
+    .customer-name,.pin-city-wrapper {
         font-size: 12px;
    }
     .pin-city-wrapper {
-        font-size: 12px;
-        line-height: 15px;
         font-weight: 700;
    }
     .pin-city-wrapper .customer-city {
