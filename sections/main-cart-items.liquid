@@ -23,14 +23,14 @@
       <div class="js-contents">
         {%- if cart != empty -%}
           <table class="cart-items">
-            <thead>
+            {% comment %} <thead>
               <tr>
                 <th class="caption-with-letter-spacing" colspan="2" scope="col">{{ 'sections.cart.headings.product' | t }}</th>
                 <th class="right caption-with-letter-spacing" colspan="1" scope="col">{{ 'sections.cart.headings.price' | t }}</th>
                 <th class="cart-items__heading--wide medium-up caption-with-letter-spacing" colspan="1" scope="col">{{ 'sections.cart.headings.quantity' | t }}</th>
                 <th class="medium-up right caption-with-letter-spacing" colspan="1" scope="col">{{ 'sections.cart.headings.total' | t }}</th>
               </tr>
-            </thead>
+            </thead> {% endcomment %}
 
             <tbody>
               {%- for item in cart.items -%}
@@ -105,9 +105,46 @@
                         <path d="M5.87413 3.17832H5.51535L5.52424 3.537L5.6245 7.58083L5.63296 7.92216H5.97439H7.02713H7.36856L7.37702 7.58083L7.47728 3.537L7.48617 3.17832H7.12739H5.87413ZM6.50076 10.0109C7.06121 10.0109 7.5317 9.57872 7.5317 9.00504C7.5317 8.43137 7.06121 7.99918 6.50076 7.99918C5.94031 7.99918 5.46982 8.43137 5.46982 9.00504C5.46982 9.57872 5.94031 10.0109 6.50076 10.0109Z" fill="white" stroke="#EB001B" stroke-width="0.7">
                       </svg>
                     </p>
+                     <label class="medium-down" for="Quantity-{{ item.index | plus: 1 }}">
+                      {{ 'products.product.quantity.label' | t }}
+                    </label>
+                    <quantity-input class="quantity">
+                      <button class="quantity__button no-js-hidden" name="minus" type="button">
+                        <span class="visually-hidden">{{ 'products.product.quantity.decrease' | t: product: item.product.title | escape }}</span>
+                        {% render 'icon-minus' %}
+                      </button>
+                      <input class="quantity__input"
+                        type="number"
+                        name="updates[]"
+                        value="{{ item.quantity }}"
+                        min="0"
+                        aria-label="{{ 'products.product.quantity.input_label' | t: product: item.product.title | escape }}"
+                        id="Quantity-{{ item.index | plus: 1 }}"
+                        data-index="{{ item.index | plus: 1 }}"
+                      >
+                      <button class="quantity__button no-js-hidden" name="plus" type="button">
+                        <span class="visually-hidden">{{ 'products.product.quantity.increase' | t: product: item.product.title | escape }}</span>
+                        {% render 'icon-plus' %}
+                      </button>
+                    </quantity-input>
+
+                     <cart-remove-button id="Remove-{{ item.index | plus: 1 }}" data-index="{{ item.index | plus: 1 }}">
+                      <a href="{{ item.url_to_remove }}" class="button button--tertiary" aria-label="{{ 'sections.cart.remove_title' | t: title: item.title }}">
+                        {% render 'icon-remove' %}
+                      </a>
+                    </cart-remove-button>
                   </td>
 
                   <td class="cart-item__prices right">
+                  
+                  </td>
+
+                  <td class="cart-item__quantity">
+                   
+                  </td>
+
+                  <td class="cart-item__totals right">
+                  <div><a>Write product review</a></div>
                     <div class="cart-item__price-wrapper">
                       {%- if item.original_price != item.final_price -%}
                         <dl class="cart-item__discounted-prices">
@@ -145,34 +182,6 @@
                         </span>
                       {%- endif -%}
                     </div>
-                  </td>
-
-                  <td class="cart-item__quantity">
-                    <label class="medium-down" for="Quantity-{{ item.index | plus: 1 }}">
-                      {{ 'products.product.quantity.label' | t }}
-                    </label>
-                    <quantity-input class="quantity">
-                      <button class="quantity__button no-js-hidden" name="minus" type="button">
-                        <span class="visually-hidden">{{ 'products.product.quantity.decrease' | t: product: item.product.title | escape }}</span>
-                        {% render 'icon-minus' %}
-                      </button>
-                      <input class="quantity__input"
-                        type="number"
-                        name="updates[]"
-                        value="{{ item.quantity }}"
-                        min="0"
-                        aria-label="{{ 'products.product.quantity.input_label' | t: product: item.product.title | escape }}"
-                        id="Quantity-{{ item.index | plus: 1 }}"
-                        data-index="{{ item.index | plus: 1 }}"
-                      >
-                      <button class="quantity__button no-js-hidden" name="plus" type="button">
-                        <span class="visually-hidden">{{ 'products.product.quantity.increase' | t: product: item.product.title | escape }}</span>
-                        {% render 'icon-plus' %}
-                      </button>
-                    </quantity-input>
-                  </td>
-
-                  <td class="cart-item__totals right">
                     <div class="loading-overlay hidden">
                       <div class="loading-overlay__spinner">
                         <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
@@ -198,11 +207,7 @@
                       {%- endif -%}
                     </div>
 
-                    <cart-remove-button id="Remove-{{ item.index | plus: 1 }}" data-index="{{ item.index | plus: 1 }}">
-                      <a href="{{ item.url_to_remove }}" class="button button--tertiary" aria-label="{{ 'sections.cart.remove_title' | t: title: item.title }}">
-                        {% render 'icon-remove' %}
-                      </a>
-                    </cart-remove-button>
+                   
                   </td>
                 </tr>
               {%- endfor -%}
