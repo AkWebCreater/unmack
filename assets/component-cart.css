@@ -23,7 +23,7 @@
 .pos-r .cart-count-bubble{
   left: unset;
   top: 4px;
-  right: 0;
+  right: 15px;
 }
 
 .body--cart #MainContent > div,#main-cart-footer > .header-zipcode,.cart-shadow{
@@ -68,7 +68,7 @@ cart-items.is-empty .title-wrapper-with-link,
 .cart__contents > * + * {
   margin-top: 2.5rem;
 }
-.cart__contents,.h3.pos-r{
+.cart__items .js-contents,.h3.pos-r{
   padding: 0 15px;
 }
 

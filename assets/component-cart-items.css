@@ -2,8 +2,11 @@
 .cart-items th {
   padding: 0;
   border: none;
+  border-bottom: 1px solid #1a1b1833;
 }
-
+.cart-items tr:last-child td{
+  border: 0 ;
+}
 .cart-items th {
   text-align: left;
   padding-bottom: 1.8rem;
