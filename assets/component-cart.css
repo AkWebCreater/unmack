@@ -4,6 +4,17 @@
   padding:20px 5rem;
   gap: 35px;
 }
+.add-more-products{
+  text-align: right;
+  padding: 10px 15px;
+}
+.add-more-products a{
+  text-decoration: none;
+  background: #ccc;
+  border-radius: 4px;
+  color:  var(--color-base-accent-1);
+  padding: 5px;
+}
 #main-cart-footer .cart__footer{
   padding:0 !important;
 }
