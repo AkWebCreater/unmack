@@ -10,7 +10,9 @@
 #shopify-section-template--14951752597704__cart-items{
   flex: 1;
 }
-
+.cart-bd{
+  border-bottom: 1px solid #1a1b1833;
+}
 .body--cart #MainContent > div,#main-cart-footer > .header-zipcode,#main-cart-footer .cart__footer{
   box-shadow: 2px 0px 10px 0px rgb(0 0 0 / 75%);
   -webkit-box-shadow: 2px 0px 10px 0px rgb(0 0 0 / 75%);

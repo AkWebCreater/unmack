@@ -7,9 +7,9 @@
 
 <cart-items class="cart--wrapper{% if cart == empty %} is-empty{% endif %}">
   <div class="">
-    <h1 class="h3">{{ 'sections.cart.title' | t }}</h1>
- <div class="cart-count-bubble"><span aria-hidden="true">1</span><span class="visually-hidden">1 item</span>
-          </div>
+    <h1 class="h3 pos-r">{{ 'sections.cart.title' | t }} <div class="cart-count-bubble"><span aria-hidden="true">1</span><span class="visually-hidden">1 item</span>
+          </div></h1>
+ 
   </div>
 
   <div class="cart__warnings">
@@ -131,7 +131,7 @@
 
                      <cart-remove-button id="Remove-{{ item.index | plus: 1 }}" data-index="{{ item.index | plus: 1 }}">
                       <a href="{{ item.url_to_remove }}" class="button button--tertiary" aria-label="{{ 'sections.cart.remove_title' | t: title: item.title }}">
-                        {% comment %} {% render 'icon-remove' %} {% endcomment %}{{ 'sections.cart.remove_title' | t: title: item.title }}
+                        {% comment %} {% render 'icon-remove' %} {% endcomment %}{{ 'sections.cart.remove_title' }}
                       </a>
                     </cart-remove-button>
                   </td>
