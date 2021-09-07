@@ -174,7 +174,8 @@
         border-radius: 4px;
    }
     .cutomer-wrap svg {
-        width: 16px;
+        width: 35px;
+        height: 35px;
    }
     .cutomer-wrap.success svg, .cutomer-wrap.success .wrap-inner {
         color: #fff;
