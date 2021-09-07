@@ -1,7 +1,8 @@
-<div class="cart-shadow">
+<div class="cart-shadow {% if context == 'form' %} hide gift-wrap-form {% else %} gift-wrap-outer {% endif %} ">
+
 <p class="cart-attribute__field">
   <label>Gift Wrap</label>
   <input type="hidden" name="attributes[Gift Wrap]" value="No">
-  <input type="checkbox" name="attributes[Gift Wrap]" value="Yes"{% if cart.attributes["Gift Wrap"] == "Yes" %} checked{% endif %}>
+  <input type="checkbox" name="attributes[Gift Wrap]" value="Yes"{% if cart.attributes['gift-wrap'] == 'Yes' %} checked{% endif %}>
 </p>
 </div>
