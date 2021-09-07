@@ -1,8 +1,9 @@
 <div class="cart-shadow {% if context == 'form' %} hide gift-wrap-form {% else %} gift-wrap-outer {% endif %} ">
 
 <p class="cart-attribute__field">
+<img src="https://cdn.shopify.com/s/files/1/0591/8192/4552/files/gift1.png?v=1630990425" alt="gift-wrap-icon">
   <label>Gift Wrap</label>
   <input type="hidden" name="attributes[Gift Wrap]" value="No">
-  <input class="regular-checkbox big-checkbox" type="checkbox" name="attributes[Gift Wrap]" value="Yes"{% if cart.attributes['gift-wrap'] == 'Yes' %} checked{% endif %}>
+  <input class="regular-checkbox " type="checkbox" name="attributes[Gift Wrap]" value="Yes"{% if cart.attributes['gift-wrap'] == 'Yes' %} checked{% endif %}>
 </p>
 </div>
