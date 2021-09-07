@@ -20,20 +20,14 @@
 }
 .regular-checkbox:checked:after {
 	content: '\1f5f8';
-  font-size: 30px;
+  font-size: 50px;
+  font-weight: bold;
   position: absolute;
-  top: -13px;
-  left: 3px;
+  top: -27px;
+  left: -2px;
   color: #f58634;
 }
-.big-checkbox {
-	padding: 18px;
-}
 
-.big-checkbox:checked:after {
-	font-size: 28px;
-	left: 6px;
-}
 .body--cart #MainContent{
   display: flex;
   max-width: 140rem;

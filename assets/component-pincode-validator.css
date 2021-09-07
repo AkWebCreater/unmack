@@ -156,10 +156,10 @@
    -webkit-box-align: center;
        -ms-flex-align: center;
            align-items: center;
-   font-size: 16px;
+   font-size: inherit;
 }
 .popup_zipcode-inner input{
-	font-size:16px;
+	font-size:inherit;
 	  margin-bottom:0 !important;
 	}
     .icon-location{
@@ -172,16 +172,12 @@
         background: #d0cbcb;
         padding:12px 6px;
         border-radius: 4px;
-        font-size: 14px;
    }
     .cutomer-wrap svg {
         width: 16px;
    }
     .cutomer-wrap.success svg, .cutomer-wrap.success .wrap-inner {
         color: #fff;
-   }
-    .customer-name,.pin-city-wrapper {
-        font-size: 12px;
    }
     .pin-city-wrapper {
         font-weight: 700;
