@@ -10,12 +10,12 @@
  
        <div class="section-title container"> 
         <h2>
-          {% include 'multilang' with section.settings.section_title %}
+          {{ section.settings.section_title }}
         </h2>
         
         {%if section.settings.shop_all_text != blank %}
           <a class="shop-all-new" href="{{section.settings.shop_all_url}}">
-            {%include 'multilang' with section.settings.shop_all_text%}
+            {{section.settings.shop_all_text}}
           </a>
           {%endif%}
         
