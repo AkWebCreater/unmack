@@ -1,45 +1,49 @@
 {
-    "sections":{
-       "cart-items":{
-          "type":"main-cart-items",
-          "settings":{
-             
-          }
-       },
-       "cart-footer":{
-          "type":"main-cart-footer",
-          "blocks":{
-             "subtotal":{
-                "type":"subtotal",
-                "settings":{
-                   
-                }
-             },
-             "buttons":{
-                "type":"buttons",
-                "settings":{
-                   
-                }
-             }
-          },
-          "block_order":[
-             "subtotal",
-             "buttons"
-          ],
-          "settings":{
-             
-          }
-       },
-       "recently-viewed-products": {
-        "type": "recently-viewed-products",
-        "settings": {
-
-        }
+  "sections": {
+    "cart-items": {
+      "type": "main-cart-items",
+      "settings": {
+        "show_vendor": false
       }
     },
-    "order":[
-       "cart-items",
-       "cart-footer",
-       "recently-viewed-products"
-    ]
- }
+    "cart-footer": {
+      "type": "main-cart-footer",
+      "blocks": {
+        "subtotal": {
+          "type": "subtotal",
+          "settings": {
+          }
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "subtotal",
+        "buttons"
+      ],
+      "settings": {
+        "show_cart_note": false
+      }
+    },
+    "recently-viewed-products": {
+      "type": "recently-viewed-products",
+      "settings": {
+        "display_recently_viewed_products": true,
+        "recently_viewed_products_title": "Recently Viewed Products",
+        "section_title": "Recently Viewed Products",
+        "shop_all_text": "",
+        "shop_all_url": "",
+        "number_of_recently_viewed_products": "8",
+        "number_of_showing_products": "5"
+      }
+    }
+  },
+  "order": [
+    "cart-items",
+    "cart-footer",
+    "recently-viewed-products"
+  ]
+}
