@@ -132,14 +132,3 @@ class CartItems extends HTMLElement {
 }
 
 customElements.define('cart-items', CartItems);
-// custome js for gift wrap button
-$(document).ready(function(){
-  $('.cart__checkout-button').hover(function(){
-    if($('.gift-wrap-outer .regular-checkbox.input').prop("checked") == true){
-      $( ".gift-wrap-form .regular-checkbox.input" ).prop( "checked", true );
-      $(".gift-wrap-form .regular-checkbox.input").attr('checked', true); 
-      $(".gift-wrap-form .regular-checkbox.input").prop('checked', true);
-      alert('done')
-    }
-  })
-})
