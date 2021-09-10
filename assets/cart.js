@@ -135,8 +135,8 @@ customElements.define('cart-items', CartItems);
 // custome js for gift wrap button
 $(document).ready(function(){
   $('.cart__checkout-button').hover(function(){
-    if($('.gift-wrap-outer input').prop("checked") == true){
-      $( ".gift-wrap-form input" ).prop( "checked", true );
+    if($('.gift-wrap-outer regular-checkbox.input').prop("checked") == true){
+      $( ".gift-wrap-form regular-checkbox.input" ).prop( "checked", true );
     }
   })
 })
