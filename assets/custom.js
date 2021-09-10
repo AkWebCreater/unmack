@@ -12,8 +12,8 @@ $(document).ready(function(){
      if($('.gift-wrap-outer input.regular-checkbox').is(":checked")){
       alert('checked')
        $( ".gift-wrap-form input.regular-checkbox" ).prop( "checked", true );
-       $(".gift-wrap-form input.regular-checkbox").attr('checked', true).attr( 'checked', 'checked' ); 
-       $(".gift-wrap-form input.regular-checkbox").prop('checked', true).attr( 'checked', 'checked' );
+      //  $(".gift-wrap-form input.regular-checkbox").attr('checked', true).attr( 'checked', 'checked' ); 
+      //  $(".gift-wrap-form input.regular-checkbox").prop('checked', true).attr( 'checked', 'checked' );
        alert('done')
      }
    })
