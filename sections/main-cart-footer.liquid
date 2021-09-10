@@ -80,7 +80,7 @@
   </div>
   {%- for block in section.blocks -%}
     {%- case block.type -%}
-      {%- when 'offer-link' -%}
+      {%- when 'offer_link' -%}
         <div class="cart-shadow">
         <a href="{{block.settings.offer-link}}"><img src="{{block.settings.offer-image | img_url:'medium'}}" ></a>
         </div>
