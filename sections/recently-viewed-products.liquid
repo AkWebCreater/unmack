@@ -129,22 +129,22 @@
                       <div class="sale"> 
                         <div class="special-price">
                             {% endraw %}{% raw %}
-                            {{html Shopify.formatMoney(price_min, window.money_format)}}
+                             {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
   						</div>
                         <div style="margin-top:5px;">
                             <span class="mrp">MRP:</span>
-                        	<span class="old-price">{% endraw %}{% raw %}{{html Shopify.formatMoney(compare_at_price_min, window.money_format)}}</span>
+                        	<span class="old-price">{% endraw %}{% raw %} {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}</span>
   						</div>
   						</div>
                     {{else}}
                       <div class="regular-product">
                         <div class="special-price without-compare">
                         	{% endraw %}{% raw %}
-                            {{html Shopify.formatMoney(price_min, window.money_format)}}
+                             {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
 					 	</div>
                          <div style="margin-top:5px;">
                             <span class="mrp">MRP:</span>
-                        	<span class="old-price">{% endraw %}{% raw %}{{html Shopify.formatMoney(price_min, window.money_format)}}</span>
+                        	<span class="old-price">{% endraw %}{% raw %} {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}</span>
   						</div>
 					  </div>
                     {{/if}}
