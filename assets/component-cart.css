@@ -30,6 +30,8 @@
 
 .body--cart #MainContent{
   display: flex;
+  align-items: flex-start;
+  flex-direction: column;
   max-width: 140rem;
   padding:20px 5rem;
   gap: 35px;
@@ -195,7 +197,9 @@ cart-items {
     grid-column-start: 1;
     grid-column-end: 3;
   }
-
+  .body--cart #MainContent{
+    flex-direction: row;
+  }
   .cart__contents > * + * {
     margin-top: 0;
   }
