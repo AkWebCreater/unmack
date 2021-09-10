@@ -94,9 +94,18 @@
 }
 .body--cart .cart__footer-wrapper{
   max-width: 100%;
+  width: 100%;
   box-shadow: none !important;
 }
-
+.body--cart .totals{
+  justify-content: space-between;
+}
+.body--cart .tax-note,.body--cart .cart__ctas button{
+  text-align: left;
+}
+.body--cart .cart__ctas button{
+  max-width: 100%;
+}
 .cart {
   position: relative;
   display: block;
