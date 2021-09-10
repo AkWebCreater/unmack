@@ -5,16 +5,11 @@ $(document).ready(function(){
     $('.year-img[data-index='+index+']').addClass('active').siblings().removeClass('active')
    })
 })
-// custome js for gift wrap button
+// custome js for gift wrap button -- check form input on chekout click if outer cechekbox checked
 $(document).ready(function(){
-   $('.cart__ctas').hover(function(){
-      alert('hovered')
+   $('.cart__ctas').click(function(){
      if($('.gift-wrap-outer input.regular-checkbox').is(":checked")){
-      alert('checked')
        $( ".gift-wrap-form input.regular-checkbox" ).prop( "checked", true );
-      //  $(".gift-wrap-form input.regular-checkbox").attr('checked', true).attr( 'checked', 'checked' ); 
-      //  $(".gift-wrap-form input.regular-checkbox").prop('checked', true).attr( 'checked', 'checked' );
-       alert('done')
      }
    })
  })
