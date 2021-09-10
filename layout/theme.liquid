@@ -182,6 +182,10 @@ $('.best-seller-collection-grid-wrapper').slick({
    $(this).addClass('add-border').siblings().removeClass('add-border')
  });
 </script>
- 
+ {% if template contains 'product' %}
+<script>
+  Shopify.Products.recordRecentlyViewed();
+</script>
+{% endif %}
   </body>
 </html>
