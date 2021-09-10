@@ -43,6 +43,7 @@
     },
     "order":[
        "cart-items",
-       "cart-footer"
+       "cart-footer",
+       "product-recommendations"
     ]
  }
