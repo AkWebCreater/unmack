@@ -1,6 +1,5 @@
-
-
 {% if section.settings.display_recently_viewed_products %} 
+{{ 'componnent-recently-viewed.css' | asset_url | stylesheet_tag }}
 {{ 'jquery-cookie.min.js' | asset_url | script_tag }}
 {{ '//ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js' | script_tag }}
 {{ 'jquery.products.min.js' | asset_url | script_tag }}
@@ -29,23 +28,7 @@
   </div>
 </section>
 
-{% if settings.enable_multilang %}
-<script>
-  function splitTitle(title) {
-    if (title.indexOf("|") < 0) 
-      return title;
-    var titleArr = title.split("|")[0];
-    return titleArr;
-  }
 
-  function splitTitle2(title) {
-    if (title.indexOf("|") < 0) 
-      return title;
-    var titleArr = title.split("|")[1];
-    return titleArr;
-  }
-</script>
-{% else %}
 <script>
   function splitTitle(title) {
     if (title.indexOf("|") < 0) 
@@ -54,7 +37,7 @@
     return titleArr;
   }
 </script>
-{% endif %}
+
 
 {% raw %}
 <script id="recently-viewed-product-grid-template" type="text/x-jquery-tmpl">
@@ -258,77 +241,7 @@
       });
     };
   }, 100);    
-  
-  
-  // check for wishlist
-//   $(document).off('click.wishlistClick','.wishlist-btn:not(.btn-active)').on('click.wishlistClick', '.wishlist-btn:not(.btn-active)', function(e){
-
-//         e.preventDefault();
-//         $(this).addClass('btn-active');
-//         $(this).find(".wishlist_text").text(window.inventory_text.remove_wishlist);
-//         addToWishlist($(this));
-//       }); 
-
-//       $(document).on('click', '.btn-active', function(e){
-//         $(this).find(".wishlist_text").text(window.inventory_text.add_wishlist);
-//         e.preventDefault();	
-// 		removeFromWishlist($(this));
-//         $(this).removeClass('btn-active');
-
-//       }); 
-// 	// active added products
-//       var itemsArray = localStorage.getItem('items') ? JSON.parse(localStorage.getItem('items')) : [];
-  
-//       itemsArray.forEach(function (item) {
-// 		var activeButton = $('.addwishlist .wishlist-btn[data-product-handle="'+item+'"]')
-  
-//           activeButton.addClass('btn-active');
-//           activeButton.find('.wishlist_text').text(window.inventory_text.remove_wishlist);
-       
-//       });
-  
-//     function addToWishlist(self) {
-//       var itemsArray = localStorage.getItem('items') ? JSON.parse(localStorage.getItem('items')) : [];
-//         var ProductHandle = self.attr('data-product-handle');
-
-//           itemsArray.push(ProductHandle);
-
-//           //remove duplicate items
-//           var uniqueItems = [];
-//           $.each(itemsArray, function(i, el){
-//             if($.inArray(el, uniqueItems) === -1) uniqueItems.push(el);
-//           });
-//           itemsArray = uniqueItems;
-
-//           localStorage.setItem('items', JSON.stringify(itemsArray));
-
-
-//       }
-//      function removeFromWishlist(self){
-//       var itemsArray = localStorage.getItem('items') ? JSON.parse(localStorage.getItem('items')) : [];
-//       var ProductHandle = self.attr('data-product-handle'),
-//           removeIndex = itemsArray.indexOf(ProductHandle);
-//       itemsArray.splice(removeIndex, 1);
-//       localStorage.setItem('items', JSON.stringify(itemsArray));
-//     }
-
-//   if($('.spr-badge').length > 0) {
-//     return window.SPR.registerCallbacks(), window.SPR.initRatingHandler(), window.SPR.initDomEls(), window.SPR.loadProducts(), window.SPR.loadBadges();
-//   }; 
-
-//   if (window.show_multiple_currencies) {
-//     Currency.convertAll(window.shop_currency, $('.currency-toggle').first().val(), 'span.money', 'money_format');
-//   };
-  
-  
-  }; 
-  
-  
-  
-  };  
-  
-  
-  }
+  };};}
   });
 </script>
 
@@ -402,23 +315,5 @@
   .recently-viewed-products .slick-current {%for i in (1.. n) %}+ .slick-active {%endfor%} .inner-top{
     border-right:none;
   }
-    .widget-trending-product .products-grid .grid-item{
-    margin: 0 6px;
-  }
-   .recently-viewed-products .product-label,.recently-viewed-products .product-des,.recently-viewed-products .product-bottom .product-title{
-    display: none!important;
-  }
-  .product-top{
-    width: auto!important;
-    height: auto!important;
-  }
-  .recently-viewed-products.not-homepage .inner-top{
-    padding: 10px 5px 0 10px!important;
-  }
-  .recently-viewed-products .price-box{
-    margin: 0px !important;
-  }
-  .products-grid .grid-item .product-title{
-     margin: 5px 0;
-  }
+ 
 </style>

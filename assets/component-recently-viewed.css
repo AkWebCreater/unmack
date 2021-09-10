@@ -1,0 +1,22 @@
+.widget-trending-product .products-grid .grid-item{
+    margin: 0 6px;
+  }
+   .recently-viewed-products .product-label,.recently-viewed-products .product-des,.recently-viewed-products .product-bottom .product-title{
+    display: none!important;
+  }
+  .product-top{
+    width: auto!important;
+    height: auto!important;
+  }
+  .recently-viewed-products.not-homepage .inner-top{
+    padding: 10px 5px 0 10px!important;
+  }
+  .recently-viewed-products .price-box{
+    margin: 0px !important;
+  }
+  .products-grid .grid-item .product-title{
+     margin: 5px 0;
+  }
+  .recently-viewed-products .slick-track{
+      min-width: 100%;
+  }
