@@ -144,6 +144,7 @@
     </ul>
 
     <script>
+     window.money_format = "{{ shop.money_with_currency_format }}";
       window.routes = {
         cart_add_url: '{{ routes.cart_add_url }}',
         cart_change_url: '{{ routes.cart_change_url }}',
@@ -188,6 +189,7 @@ $('.best-seller-collection-grid-wrapper').slick({
 {{ 'jquery.products.min.js' | asset_url | script_tag }}
 <script>
   Shopify.Products.recordRecentlyViewed();
+
 </script>
 {% endif %}
   </body>
