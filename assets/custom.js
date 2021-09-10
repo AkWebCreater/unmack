@@ -9,7 +9,7 @@ $(document).ready(function(){
 $(document).ready(function(){
    $('.cart__ctas').hover(function(){
       alert('hovered')
-     if($('.gift-wrap-outer .regular-checkbox.input').prop("checked") == true){
+     if($('.gift-wrap-outer input.regular-checkbox').is(":checked")){
       alert('checked')
        $( ".gift-wrap-form .regular-checkbox.input" ).prop( "checked", true );
        $(".gift-wrap-form .regular-checkbox.input").attr('checked', true).attr( 'checked', 'checked' ); 
