@@ -81,8 +81,8 @@
   {%- for block in section.blocks -%}
     {%- case block.type -%}
       {%- when 'offer_link' -%}
-        <div class="cart-shadow">
-        <a href="{{block.settings.offer-link}}"><img src="{{block.settings.offer-image | img_url:'medium'}}" ></a>
+        <div class="">
+        <a class="offer--link" href="{{block.settings.offer-link}}"><img class="cart-shadow" src="{{block.settings.offer-image | img_url:'medium'}}" ></a>
         </div>
         
     {%- endcase -%}

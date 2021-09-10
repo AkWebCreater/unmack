@@ -69,6 +69,14 @@
 .cart-shadow{
   padding: 15px;
 }
+img.cart-shadow{
+  padding: 0;
+  width: 100%;
+}
+.offer--link{
+  display: block;
+  font-size: 0;
+}
 #shopify-section-template--14951752597704__cart-items{
   flex: 1;
 }
