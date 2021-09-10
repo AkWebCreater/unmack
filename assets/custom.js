@@ -1,3 +1,4 @@
+// Umanac Journey year section js
 $(document).ready(function(){
    $('.year').click(function(){
     var index = $(this).attr('data-index');
@@ -7,6 +8,7 @@ $(document).ready(function(){
 // custome js for gift wrap button
 $(document).ready(function(){
    $('.cart__checkout-button').hover(function(){
+      alert('hovered')
      if($('.gift-wrap-outer .regular-checkbox.input').prop("checked") == true){
        $( ".gift-wrap-form .regular-checkbox.input" ).prop( "checked", true );
        $(".gift-wrap-form .regular-checkbox.input").attr('checked', true); 
