@@ -30,11 +30,15 @@
 
 .body--cart #MainContent{
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-start;
   flex-direction: column;
   max-width: 140rem;
   padding:20px 5rem;
   gap: 35px;
+}
+.body--cart #MainContent .recently-viewed-products-bg{
+  width: 100%;
 }
 .cart-attribute__field{
   line-height: 1;
