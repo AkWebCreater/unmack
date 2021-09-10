@@ -30,20 +30,16 @@
              
           }
        },
-       "product-recommendations": {
-        "type": "product-recommendations",
+       "recently-viewed-products": {
+        "type": "recently-viewed-products",
         "settings": {
-          "heading": "You may also like",
-          "image_ratio": "adapt",
-          "show_secondary_image": false,
-          "add_image_padding": false,
-          "show_vendor": false
+
         }
       }
     },
     "order":[
        "cart-items",
        "cart-footer",
-       "product-recommendations"
+       "recently-viewed-products"
     ]
  }
