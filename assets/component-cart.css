@@ -93,7 +93,7 @@
   margin-bottom: 20px;
 }
 .body--cart .cart__footer-wrapper{
-  max-width: 30%;
+  max-width: 100%;
   box-shadow: none !important;
 }
 
@@ -196,6 +196,9 @@ cart-items {
   .cart__items {
     grid-column-start: 1;
     grid-column-end: 3;
+  }
+  .body--cart .cart__footer-wrapper{
+    max-width: 30%;
   }
   .body--cart #MainContent{
     flex-direction: row;
