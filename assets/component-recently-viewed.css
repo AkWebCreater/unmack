@@ -20,6 +20,13 @@
   .recently-viewed-products .slick-track{
       min-width: 100%;
   }
-  .recently-viewed-products {
-    
+  .recently-viewed-products .recent-price{
+font-size: 16px;
+  }
+  .recently-viewed-products .recent-price-text{
+    font-size: 12px;
+  }
+  .recent-product-title{
+   font-size: 14px;
+   color: var(--color-pincode-validator);
   }
