@@ -18,7 +18,7 @@
       padding: 0 30px;
 }
 .header-zipcode{
-    cursor:pointer !important;
+    cursor:pointer ;
     }
 .popup-zipcode .zip-inner {
     display: -webkit-box;
@@ -38,22 +38,22 @@
 
 .header-input-zip, .header-zipcode .existingZipcode {
    text-align: left;
-  /* width: 120px!important;
+  /* width: 120px;
    */
-   margin-bottom: 5px !important;
-   border: none !important;
-   background: #eee !important;
-   border-radius: 5px !important;
-   border-bottom: 1px solid #eee !important;
-   padding: 4px 8px !important;
-   padding-left: 20px !important;
-   color: #666 !important;
-   -webkit-text-fill-color: #666 !important;
+   margin-bottom: 5px ;
+   border: none ;
+   background: #eee ;
+   border-radius: 5px ;
+   border-bottom: 1px solid #eee ;
+   padding: 4px 8px ;
+   padding-left: 20px ;
+   color: #666 ;
+   -webkit-text-fill-color: #666 ;
 }
 .popup-zipcode .check-pincode {
     border-radius: 5px;
     padding: 1px 18px;
-    color: #fff !important;
+    color: #fff ;
 }
 /* product page */
 .pincode_wrapper input::-webkit-outer-spin-button, .pincode_wrapper input::-webkit-inner-spin-button {
@@ -72,7 +72,7 @@
   padding:20px;
 }
 .All-address a {
-    color: #f86c6e;
+    color: var(--color-pincode-validator);
     text-decoration: underline;
     text-underline-offset: 3px;
 }
@@ -101,7 +101,7 @@
     -webkit-transform: translate(0, -50%);
         -ms-transform: translate(0, -50%);
             transform: translate(0, -50%);
-    border-radius: 20px !important;
+    border-radius: 20px ;
 }
 .popup_zipcode-inner h4 {
     text-transform: uppercase;
@@ -117,14 +117,14 @@
     top: 12px;
     right: 10px;
     position: absolute;
-    color: #fff !important;
+    color: #fff ;
     opacity: 1;
 }
 .popup-top-text {
     padding: 10px 30px;
 }
 .popup-top-text p {
-    margin-bottom: 18px !important;
+    margin-bottom: 18px ;
 }
 .popup-top-text .pra1 {
     text-align: left;
@@ -136,17 +136,18 @@
     margin: 0 10px;
 }
 .popup-top-text .pra3 {
-    border-top: 2px solid #f86c6e;
+    border: 0;
+    border-top: 2px solid var(--color-pincode-validator);
     margin: 0 10px;
 }
 .popup-zipcode legend {
-    width: auto !important;
+    width: auto ;
     font-size: inherit;
     padding: 0 10px;
 }
 .popup-zipcode .header-input-zip {
-    border: 2px solid #f86c6e !important;
-    padding-left: 8px !important;
+    border: 2px solid var(--color-pincode-validator) ;
+    padding-left: 8px;
 }
 .popup-zipcode .check-pincode {
 /* 	 padding: 5px 18px; */
@@ -160,7 +161,7 @@
 }
 .popup_zipcode-inner input{
 	font-size:inherit;
-	  margin-bottom:0 !important;
+	  margin-bottom:0 ;
 	}
     .icon-location{
         line-height: 1;
@@ -192,7 +193,7 @@
    }
     .customer-address > .address:first-child {
         display: inline-block;
-        background: #ee585a;
+        background: var(--color-pincode-validator);
         min-width: 150px;
         color: white;
         position: relative;
@@ -217,7 +218,7 @@
         margin: 0;
    }
     .address.selected {
-        border: 1px solid #f86c6e;
+        border: 1px solid var(--color-pincode-validator);
    }
     .template-customers-addresses .action-btn {
         padding-bottom: 10px;
@@ -226,19 +227,6 @@
    }
     .action-btn.last-child-border {
         border: none;
-   }
-    .address-coount {
-        position: absolute;
-        display: inline-block;
-        width: 25px;
-        height: 25px;
-        border-radius: 50%;
-        background-color: #f86c6e;
-        line-height: 26px;
-        color: #fff;
-        -webkit-transform: translate(10px, -18px);
-            -ms-transform: translate(10px, -18px);
-                transform: translate(10px, -18px);
    }
    .wrap-inner {
     display: -webkit-box;
