@@ -21,12 +21,13 @@
       min-width: 100%;
   }
   .recently-viewed-products .recent-price{
-font-size: 16px;
+font-size: 18px;
+color: var(--color-pincode-validator);
   }
   .recently-viewed-products .recent-price-text{
     font-size: 12px;
   }
   .recent-product-title{
-   font-size: 14px;
-   color: var(--color-pincode-validator);
+   font-size: 15px;
+  text-decoration: none;
   }
