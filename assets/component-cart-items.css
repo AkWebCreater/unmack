@@ -4,7 +4,10 @@
   border: none;
   
 }
-
+.write-review{
+  font-size: 11px;
+  color: #83b3f3;
+}
 #shopify-section-template--14951752597704__cart-items{
   width: 100%;
 }
