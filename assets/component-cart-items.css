@@ -193,7 +193,7 @@ cart-remove-button .icon-remove {
 
   .cart-item {
     display: grid;
-    grid-template: repeat(2, auto) / repeat(4, 1fr);
+    grid-template: repeat(2, auto) / repeat(3, 1fr);
     gap: 1.5rem;
     margin-bottom: 3.5rem;
     border-bottom: 1px solid #1a1b1833;
@@ -202,6 +202,7 @@ cart-remove-button .icon-remove {
   .cart-item:last-child {
     margin-bottom: 0;
     border: 0;
+    grid-column: 3;
   }
 
   .cart-item__media {
@@ -209,7 +210,7 @@ cart-remove-button .icon-remove {
   }
 
   .cart-item__details {
-    grid-column: 2 / 4;
+    grid-column: 2 ;
   }
 
   .cart-item__quantity {
