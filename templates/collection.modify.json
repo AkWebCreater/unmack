@@ -1,0 +1,81 @@
+{
+  "sections": {
+    "1630411253b12b9000": {
+      "type": "image-banner",
+      "blocks": {
+        "1630411253b12b9000-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner"
+          }
+        },
+        "1630411253b12b9000-1": {
+          "type": "html",
+          "disabled": true,
+          "settings": {
+            "title": "Image banner"
+          }
+        },
+        "1630411253b12b9000-2": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template."
+          }
+        },
+        "1630411253b12b9000-3": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "1630411253b12b9000-0",
+        "1630411253b12b9000-1",
+        "1630411253b12b9000-2",
+        "1630411253b12b9000-3"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/p1.jpg",
+        "desktop_text_box_position": "center",
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "adapt_height_first_image": false,
+        "logo-url": ""
+      }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": false,
+        "show_collection_image": false
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid-new",
+      "settings": {
+        "products_per_page": 16,
+        "image_ratio": "portrait",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_vendor": false,
+        "enable_filtering": false,
+        "enable_sorting": false,
+        "layout": "text_first"
+      }
+    }
+  },
+  "order": [
+    "1630411253b12b9000",
+    "banner",
+    "product-grid"
+  ]
+}
