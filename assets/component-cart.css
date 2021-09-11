@@ -50,6 +50,17 @@
   list-style: none;
   gap: 10px;
 }
+.slick-dots button{
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  color: transparent;
+  border: 0;
+  background: #878787;
+}
+.slick-active button{
+  background:var(--color-pincode-validator);
+}
 }
 @media (max-width:991px) {
   .body--cart .slick-arrow{
