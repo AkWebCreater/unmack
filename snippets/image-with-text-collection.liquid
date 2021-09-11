@@ -1,0 +1,344 @@
+{{ 'component-image-with-text.css' | asset_url | stylesheet_tag }}
+
+<div class="image-with-text {% if section.settings.full_width %}image-with-text--full-width{% else %}{% endif %} color-scheme-{{ section.settings.color_scheme }}">
+  <div class="image-with-text__grid color-{{ section.settings.color_scheme }}{% if section.settings.layout == 'text_first' %} {% endif %} grid grid--gapless grid--1-col grid--2-col-tablet">
+    <div class="grid__item right">
+      <div{% if add_image_padding %} class="card__media-full-spacer"{% endif %}>
+        <a href="{{ product_card_product.url | default: '#' }}" class="full-unstyled-link">
+        <div class="media media--transparent media--{{ media_size }} media--hover-effect"
+             {% if media_size == 'adapt' and product_card_product.featured_media %} style="padding-bottom: {{ 1 | divided_by: featured_media_aspect_ratio | times: 100 }}%;"{% endif %}
+             >
+			
+          <img srcset="{%- if product_card_product.featured_media.width >= 165 -%}{{ product_card_product.featured_media | img_url: '165x' }} 165w,{%- endif -%}
+                       {%- if product_card_product.featured_media.width >= 360 -%}{{ product_card_product.featured_media | img_url: '360x' }} 360w,{%- endif -%}
+                       {%- if product_card_product.featured_media.width >= 533 -%}{{ product_card_product.featured_media | img_url: '533x' }} 533w,{%- endif -%}
+                       {%- if product_card_product.featured_media.width >= 720 -%}{{ product_card_product.featured_media | img_url: '720x' }} 720w,{%- endif -%}
+                       {%- if product_card_product.featured_media.width >= 940 -%}{{ product_card_product.featured_media | img_url: '940x' }} 940w,{%- endif -%}
+                       {%- if product_card_product.featured_media.width >= 1066 -%}{{ product_card_product.featured_media | img_url: '1066x' }} 1066w{%- endif -%}"
+               src="{{ product_card_product.featured_media | img_url: '400x' }}"
+               sizes="(min-width: 1100px) 535px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+               alt="{{ product_card_product.featured_media.alt | escape }}"
+               loading="lazy"
+               class="motion-reduce product-img"
+               width="{{ product_card_product.featured_media.width }}"
+               height="{{ product_card_product.featured_media.height }}"
+               >
+
+          {%- if product_card_product.media[1] != nil and show_secondary_image -%}
+          <img srcset="{%- if product_card_product.media[1].width >= 165 -%}{{ product_card_product.media[1] | img_url: '165x' }} 165w,{%- endif -%}
+                       {%- if product_card_product.media[1].width >= 360 -%}{{ product_card_product.media[1] | img_url: '360x' }} 360w,{%- endif -%}
+                       {%- if product_card_product.media[1].width >= 533 -%}{{ product_card_product.media[1] | img_url: '533x' }} 533w,{%- endif -%}
+                       {%- if product_card_product.media[1].width >= 720 -%}{{ product_card_product.media[1] | img_url: '720x' }} 720w,{%- endif -%}
+                       {%- if product_card_product.media[1].width >= 940 -%}{{ product_card_product.media[1] | img_url: '940x' }} 940w,{%- endif -%}
+                       {%- if product_card_product.media[1].width >= 1066 -%}{{ product_card_product.media[1] | img_url: '1066x' }} 1066w{%- endif -%}"
+               src="{{ product_card_product.media[1] | img_url: '400x' }}"
+               sizes="(min-width: 1100px) 535px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+               alt="{{ product_card_product.media[1].alt | escape }}"
+               loading="lazy"
+               class="motion-reduce product-img"
+               width="{{ product_card_product.media[1].width }}"
+               height="{{ product_card_product.media[1].height }}"
+               >
+          {%- endif -%}
+			
+          </div>
+          </a>
+        </div>
+      
+      </div>
+      <div class="grid__item left">
+        <div class="image-with-text__content image-with-text__content--{{ section.settings.height }}">
+          {%- if show_vendor -%}
+          <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>
+          <div class="caption-with-letter-spacing light">{{ product_card_product.vendor }}</div>
+          {%- endif -%}
+
+          {%- if product_card_product.featured_media -%}
+          <a href="{{ product_card_product.url | default: '#' }}" class="full-unstyled-link">
+          <span class="card-information__text h2">
+            {{ product_card_product.title | escape }}
+          </span>
+          </a>
+          <span class="card-information__text h5">
+            {% render 'product-collection-description',product: product_card_product %}
+          </span>
+          <div class="variants">
+            <div class="variant-opt">
+              {% for variant in product_card_product.variants %}
+              {% if variant.available == true %}
+              <div class="variant-option" data-variant-id="{{ variant.id}}" variant-price="{{ variant.price | money }}" variant-mrp="{{ variant.compare_at_price | money }}" varinat-discount-price="{{ variant.compare_at_price | minus: variant.price | money_with_currency }}" variant-discount-percentage="{{ variant.compare_at_price | minus: variant.price |times:100 |divided_by:variant.compare_at_price | remove: '.0' | append: '%' }}">
+                {{ variant.title }}
+              </div>
+              {% endif %}
+              {% endfor%}
+            </div>
+            <!-- start price-->
+            <div class="mrp-price">
+              {% comment %}{% render 'collection-price', product: product_card_product, price_class: '' %}{% endcomment %}
+              
+              
+              <div class="price  price--on-sale ">
+                <dl><div class="price__regular">
+                  <dt>
+                    <span class="visually-hidden visually-hidden--inline">Regular price</span>
+                  </dt>
+                  <dd>
+                    <span class="price-item price-item--regular">
+
+                    </span>
+                  </dd>
+                  </div>
+                  <table class="table-price">
+                  <div class="price__sale">
+                    <dt class="price__compare">
+                      <span class="visually-hidden visually-hidden--inline">Regular price</span>
+                    </dt>
+                    <tr>
+                      {% if product_card_product.selected_or_first_available_variant.compare_at_price != blank %}
+                      <dd class="price__compare"><td style="font-size: 17px;font-weight: 600;">M.R.P</td>
+                      <td><span class="price-item price-item--regular">
+                        :{{product_card_product.selected_or_first_available_variant.compare_at_price | money}}
+                        </span></td>
+                    </dd>
+                      {% endif %}
+                    </tr>
+                    <dt>
+                      <span class="visually-hidden visually-hidden--inline">Sale price</span>
+                    </dt>
+                    <tr>
+                      <dd class="price"><td style="font-size: 25px; font-weight:700;">Price</td>
+                      <td><span class="price-item price-item--sale">
+                        :{{ product_card_product.selected_or_first_available_variant.price | money }}
+                        </span></td>
+                    </dd>
+                    </tr>
+                    <tr>
+                    {% if product_card_product.selected_or_first_available_variant.compare_at_price > product_card_product.selected_or_first_available_variant.price %}
+                      <dd><td style="font-size: 17px;font-weight: 600;">You save</td>
+                    <td>
+                      <span class="price-item price-item--discount discount">:{{ product_card_product.selected_or_first_available_variant.compare_at_price | minus: product_card_product.selected_or_first_available_variant.price | money_with_currency }}</span>
+                      <span class="price-item percentage">({{product_card_product.selected_or_first_available_variant.compare_at_price | minus: product_card_product.selected_or_first_available_variant.price |times:100 |divided_by:product_card_product.selected_or_first_available_variant.compare_at_price | remove: '.0' | append: '%' }})</span>
+                     </td>
+                      </dd>
+                     {% endif %} 
+                    </tr>
+                  </div>
+                  </table>
+                  <small class="unit-price caption hidden">
+                    <dt class="visually-hidden">Unit price</dt>
+                    <dd>
+                      <span></span>
+                      <span aria-hidden="true">/</span>
+                      <span class="visually-hidden">&nbsp;per&nbsp;</span>
+                      <span>
+                      </span>
+                    </dd>
+                  </small>
+                </dl>
+
+              </div>
+              
+            </div>
+            <!-- end price-->
+            <div class="product-rating ">
+              reviews
+            </div>
+          </div>
+          {%- endif -%}
+          <div class="product-button variants">
+            <div class="left-button mobile-button">
+              <a href="{{ product_card_product.url | default: '#' }}" class="full-unstyled-link">
+                <div class="product-view">Product Details</div>
+              </a>
+            </div>
+            <div class="right-button mobile-button">
+              <a href="" class="full-unstyled-link">
+                <div class="add-to-cart product-view button-category" data-variant-id="{{product_card_product.selected_or_first_available_variant.id}}">Add To Cart</div>
+              </a>
+            </div>
+            <div class="button-buy mobile-button">
+              <a href="" class="full-unstyled-link">
+                <div class="buy-it-now product-view button-category" data-variant-id="{{product_card_product.selected_or_first_available_variant.id}}">But It Now</div>
+              </a>
+            </div>
+          </div>
+          {% comment %} TODO: metafield
+          <span class="caption-large light">{{ block.settings.description | escape }}</span>
+
+          {% render 'price', product: product_card_product, price_class: '' %}  {% endcomment %}
+        </div>
+      </div>
+    </div>
+
+</div>
+
+
+<style>
+  .image-text:nth-child(odd) .image-with-text .image-with-text__grid{
+    flex-direction: row-reverse;
+}
+.image-text:nth-child(even) .image-with-text .image-with-text__grid{
+  flex-direction: row;
+}
+  .image-text:nth-child(even) .image-with-text .image-with-text__grid span.card-information__text.h2 {
+    text-align: end;
+}
+ 
+  .image-with-text__content {
+    display: block;
+    padding:0px;
+  }
+
+  .image-text {
+    background-color: #F3F3F3;
+    border-radius: 10px;
+}
+  .image-with-text__content {
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: justify;
+}
+  .variants {
+    display: flex;
+    width: 100%;
+}
+.variant-opt {
+    width: 20%;
+}
+  .mrp-price {
+    width: 50%;
+    padding-left:10px;
+}
+  .product-rating {
+    width: 30%;
+}
+  .variant-option {
+    text-align: center;
+    border: 1px solid grey;
+    /* padding: 0px; */
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 400;;
+    cursor: pointer;
+}
+  
+  .variant-option:hover{
+  	background-color:#F58634;
+    color:white;
+    border-color: #F58634;
+  }
+  .active{
+  	background-color:#F58634;
+    color:white;
+    border-color: #F58634;
+  }
+  .variant-option:active{
+  	background-color:#F58634;
+    border-color: #F58634;
+  }
+  .left-button{
+  	width:45%;
+  }
+  .right-button{
+  	width:25%;
+    margin-left: 5px;
+  }
+  .button-buy{
+  	width:25%;
+    margin-left: 5px;
+  }
+  .image-text:nth-child(even) .image-with-text .image-with-text__grid span.card-information__text.h2:after{
+      content: '';
+    display: block;
+    position: absolute;
+    right: 95px;
+    /* padding-top: 0px; */
+    margin-top: 5px;
+    width: 110px;
+    border-top: 3px solid #F58634;
+  }
+  	span.card-information__text.h2:after{
+      content: '';
+    display: block;
+    /* padding-top: 0px; */
+    margin-top: 5px;
+    width: 90px;
+    border-top: 3px solid #F58634;
+  }
+  .product-view {
+    border: 1px solid gray;
+    text-align: center;
+    border-radius: 6px;
+    padding: 2px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 17px;
+}
+  .button-category {
+    background-color: #c9c9c9;
+    border-color: #c9c9c9;
+    color: black;
+    font-weight: 700;
+  }
+  .product-view:hover{
+  	background-color:#F58634;
+    color:white;
+    border-color: #F58634;
+  }
+  .grid__item.right {
+    width: 30%;
+}
+  span.card-information__text.h2 {
+    font-weight: 600;
+    font-size: 30px;
+}
+  .price--on-sale .price__sale{
+  	flex-direction: column;
+  }
+  span.price-item.price-item--sale {
+    font-size: 23px;
+    color: #f58634;
+}
+span.price-item {
+    font-size: 20px;
+    font-weight: 500;
+    color: #f58634;
+}
+  @media screen and (max-width:767px){
+  	.banner__content {
+        padding-bottom: 0px!important; 
+        padding-top: 0px!important; 
+      height:0px!important;
+}
+    .image-text:nth-child(even) .image-with-text .image-with-text__grid span.card-information__text.h2 {
+    /* text-align: end; */
+    text-align: center;
+    font-size: 28px;
+}
+  
+    .mobile-button{
+    	margin-top: 15px;
+    width: 100%;
+    margin-left: 0px;
+    }
+    span.card-information__text.h2 {
+    	font-size:24px;
+    }
+    .variants {
+    display: table-row;
+    width: 100%;
+}
+    .variant-opt {
+    width: 100%;
+    margin-top: 30px;
+}
+     .mrp-price {
+    width: 100%;
+    padding-left: 0px; 
+}
+  }
+  </style>
+
+
