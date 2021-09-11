@@ -1,0 +1,40 @@
+{% assign productDescription = product.description | split:"<!-- split -->" %}
+<div class="decription-main">
+  {{ productDescription[0] }}
+
+</div>
+
+
+<style>
+  .decription-main {
+    margin-bottom: 30px;
+}
+ .decription-image {
+    display: flex;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+ }
+  .grid-1 {
+    padding-left: 25px;
+    font-weight: 600;
+}
+  .description-text p {
+    text-indent: 95px;
+    font-weight: 600;
+    padding-top: 20px;
+  }
+  @media screen and (max-width:767px){
+  	.decription-image {
+    display: block;
+    width: 100%;
+ }
+    .grid-1 {
+    width: 50%;
+    float: left;
+      padding-left: 10px;
+    }
+   
+  }
+</style>
+
