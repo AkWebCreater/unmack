@@ -13,3 +13,8 @@ $(document).ready(function(){
      }
    })
  })
+// empty cart other items hide
+var empt = $('.cart--wrapper.is-empty').length;
+if(empt){
+  alert('cart empty');
+} 
