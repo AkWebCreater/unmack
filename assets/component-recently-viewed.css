@@ -30,4 +30,5 @@ color: var(--color-pincode-validator);
   .recent-product-title{
    font-size: 15px;
   text-decoration: none;
+  color: inherit;
   }
