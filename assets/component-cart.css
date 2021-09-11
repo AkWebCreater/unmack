@@ -44,17 +44,23 @@
   padding:15px 2rem;
   gap: 20px;
 }
+.slick-dots{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 10px;
+}
 }
 @media (max-width:991px) {
   .body--cart .slick-arrow{
     position: absolute;
-    top: 50%;
+    top: 35%;
   }
   .body--cart .slick-next{
-   right: 0;
+   right: -15px;
   }
   .body--cart .slick-prev{
-    left: 0;
+    left: -15px;
   }
   .body--cart .slick-arrow .fa:before{
     color: var(--color-pincode-validator);
