@@ -4,6 +4,9 @@
   border: none;
   
 }
+#shopify-section-template--14951752597704__cart-items{
+  width: 100%;
+}
 .cart-items tr:last-child td{
   border: 0 ;
 }
