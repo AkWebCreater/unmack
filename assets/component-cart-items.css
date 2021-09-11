@@ -4,6 +4,7 @@
   border: none;
   
 }
+
 #shopify-section-template--14951752597704__cart-items{
   width: 100%;
 }
@@ -271,4 +272,19 @@ cart-remove-button .icon-remove {
   .cart-items .cart-items__heading--wide {
     padding-left: 10rem;
   }
+}
+@media (max-width:480px) {
+  .cart-item__media{
+    grid-area: media;
+  }
+  .cart-item__details{
+    grid-area: details;
+  }
+  .cart-item__totals{
+    grid-area: total;
+  }
+  .cart-item{
+    grid-template-areas: "media media media media" "details details details total ";
+  }
+  
 }
