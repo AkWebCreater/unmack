@@ -139,13 +139,13 @@
                     {{else}}
                       <div class="regular-product">
                         <div class="special-price without-compare">
-                        	{% endraw %}₹ ${price_min.toFixed(2)/100}{% raw %}
+                        	{% endraw %}<span class='recent-price-text'>Price</span><span class="recent-price"> ₹ ${price_min.toFixed(2)/100}</span>{% raw %}
                             {{html Shopify.formatMoney(price_min, window.money_format)}}
 					 	</div>
-                         <div style="margin-top:5px;">
-                            <span class="mrp">MRP:₹ ${price_min.toFixed(2)}</span>
+                         {% comment %} <div style="margin-top:5px;">
+                            <span class="mrp">MRP:₹ ${price_min.toFixed(2)/100}</span>
                         	<span class="old-price">{% endraw %}{% raw %}{{html Shopify.formatMoney(price_min, window.money_format)}}</span>
-  						</div>
+  						</div> {% endcomment %}
 					  </div>
                     {{/if}}
  			 	</div>
