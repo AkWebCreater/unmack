@@ -55,6 +55,7 @@
   height: 10px;
   border-radius: 100%;
   color: transparent;
+  padding: 0;
   border: 0;
   background: #878787;
 }
@@ -66,6 +67,7 @@
   .body--cart .slick-arrow{
     position: absolute;
     top: 35%;
+    z-index: 22;
   }
   .body--cart .slick-next{
    right: -15px;

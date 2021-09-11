@@ -2,7 +2,7 @@
 .cart-items th {
   padding: 4rem 0;
   border: none;
-  border-bottom: 1px solid #1a1b1833;
+  
 }
 .cart-items tr:last-child td{
   border: 0 ;
@@ -237,6 +237,7 @@ cart-remove-button .icon-remove {
   .cart-items td {
     vertical-align: top;
     padding-top: 4rem;
+    border-bottom: 1px solid #1a1b1833;
   }
 
   .cart-item {
