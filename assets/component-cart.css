@@ -364,3 +364,8 @@ cart-items {
     gap: 1rem;
   }
 }
+.cart__checkout-button{
+  background: #a0a0a0;
+  box-shadow: unset;
+  font-size: 20px;
+}
