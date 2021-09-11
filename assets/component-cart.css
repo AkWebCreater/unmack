@@ -37,6 +37,30 @@
   padding:20px 5rem;
   gap: 35px;
 }
+@media screen and (max-width:767px){
+  
+.body--cart #MainContent{
+  max-width: 140rem;
+  padding:15px 2rem;
+  gap: 20px;
+}
+}
+@media (max-width:991px) {
+  .body--cart .slick-arrow{
+    position: absolute;
+    top: 50%;
+  }
+  .body--cart .slick-next{
+   right: 0;
+  }
+  .body--cart .slick-prev{
+    left: 0;
+  }
+  .body--cart .slick-arrow .fa:before{
+    color: var(--color-pincode-validator);
+    font-size: 50px;
+  }
+}
 .body--cart #MainContent .recently-viewed-products-bg{
   width: 100%;
   box-shadow: none;
