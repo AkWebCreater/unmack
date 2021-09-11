@@ -367,5 +367,6 @@ cart-items {
 .cart__checkout-button{
   background: #a0a0a0;
   box-shadow: unset;
+  border-radius: 5px;
   font-size: 20px;
 }
