@@ -128,22 +128,22 @@
 	              {{if compare_at_price_min > price_min}} 
                       <div class="sale"> 
                         <div class="special-price">
-                            {% endraw %}₹ ${price_min}{% raw %}
+                            {% endraw %}₹ ${price_min.toFixed(2)}{% raw %}
                             {{html Shopify.formatMoney(price_min, window.money_format)}}
   						</div>
                         <div style="margin-top:5px;">
                             <span class="mrp">MRP:₹</span>
-                        	<span class="old-price">{% endraw %}${compare_at_price_min}{% raw %}{{html Shopify.formatMoney(compare_at_price_min, window.money_format)}}</span>
+                        	<span class="old-price">{% endraw %}${compare_at_price_min.toFixed(2)}{% raw %}{{html Shopify.formatMoney(compare_at_price_min, window.money_format)}}</span>
   						</div>
   						</div>
                     {{else}}
                       <div class="regular-product">
                         <div class="special-price without-compare">
-                        	{% endraw %}₹ ${price_min}{% raw %}
+                        	{% endraw %}₹ ${price_min.toFixed(2)}{% raw %}
                             {{html Shopify.formatMoney(price_min, window.money_format)}}
 					 	</div>
                          <div style="margin-top:5px;">
-                            <span class="mrp">MRP:₹ ${price_min}</span>
+                            <span class="mrp">MRP:₹ ${price_min.toFixed(2)}</span>
                         	<span class="old-price">{% endraw %}{% raw %}{{html Shopify.formatMoney(price_min, window.money_format)}}</span>
   						</div>
 					  </div>
