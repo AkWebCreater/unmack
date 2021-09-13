@@ -136,6 +136,7 @@
 }
 .popup-top-text .pra1 {
     text-align: left;
+    padding-bottom: 10px;
 }
 .popup-top-text .pra2 {
     background: #ddd;
@@ -156,6 +157,7 @@
 .popup-zipcode .header-input-zip {
     border: 2px solid var(--color-pincode-validator) ;
     padding-left: 8px;
+    width: 100%;
     box-shadow: none !important;
     outline: 0 !important;
 }
@@ -163,6 +165,7 @@
 /* 	 padding: 5px 18px; */
   display: -webkit-box;
   display: -ms-flexbox;
+  margin-left: 20px;
   display: flex;
    -webkit-box-align: center;
        -ms-flex-align: center;
