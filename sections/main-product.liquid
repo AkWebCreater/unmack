@@ -81,7 +81,7 @@
               {{ product.title | escape }}
             </h1>
         	<hr>
-        <div>
+        <div class="product-form-divider">
           {%- when 'price' -%}
             <div class="no-js-hidden" id="price-{{ section.id }}">
               {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
