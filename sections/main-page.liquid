@@ -4,7 +4,7 @@
 <noscript>{{ 'section-main-page.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
 
-<div class="page-width page-width--narrow">
+<div class="page-width page-width">
   <h1 class="main-page-title page-title h0">
     {{ page.title | escape }}
   </h1>
@@ -14,8 +14,12 @@
   </div>
   
  
-  <div class="images-top"><a href="{{section.settings.top_link}}"><img src="{{section.settings.top_img |img_url:'grand'}}"></a></div>
-  <div class="images-bottom"><a href="{{section.settings.bottom_link}}"><img src="{{section.settings.bottom_img | img_url:'grand'}}"></a></div>
+  <div class="images-top"><a href="{{section.settings.top_link}}"><img class="desk" src="{{section.settings.top_img |img_url:'grand'}}">
+  <img class="mobile" src="{{section.settings.top_img_mob |img_url:'grand'}}">
+  </a></div>
+  <div class="images-bottom"><a href="{{section.settings.bottom_link}}"><img class="desk" src="{{section.settings.bottom_img | img_url:'grand'}}">
+  <img class="mobile" src="{{section.settings.bottom_img_mob | img_url:'grand'}}">
+  </a></div>
   </div>
 
 </div>
@@ -33,8 +37,18 @@
     },
     {
       "type": "image_picker",
+      "id": "top_img_mob",
+      "label": "Top Right Image Mobile"
+    },
+    {
+      "type": "image_picker",
       "id": "bottom_img",
       "label": "Bottom Right Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "bottom_img_mob",
+      "label": "Bottom Right Image Mobile"
     },
     {
       "type": "url",

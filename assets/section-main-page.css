@@ -11,8 +11,21 @@
 }
 .page-wrapper img{
   width: 100%;
+  border-radius: 8px;
+}
+@media (min-width:641px) {
+  .desk{
+    display: block;
+  }  
+  .mobile{
+    display: none;
+  }
 }
 @media (max-width:640px) {
+  .desk{
+    display: none;
+  }
+
   .page-wrapper{
     grid-template-areas: "bottomimage bottomimage topimage topimage" "page-content page-content page-content page-content";
   }
@@ -20,6 +33,7 @@
     max-height:300px;
     object-fit: cover;
     object-position: top;
+
   }
 }
 
