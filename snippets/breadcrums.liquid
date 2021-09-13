@@ -4,4 +4,7 @@
     <span aria-hidden="true">&rsaquo;</span>
     <span class="active-page brand-active-page">{{ collection.title }}</span>
  	{% endif %}
+   {% if template contains 'blog' %}
+   <span class="active-page brand-active-page">{{ blog.title }}</span>  
+   {% endif %}
 </nav>  

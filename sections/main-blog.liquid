@@ -4,7 +4,11 @@
 
 {% comment %} blog strted {% endcomment %}
 {%- paginate blog.articles by 6 -%}
-
+<div class="breadcrums">
+    <!-- start snippet breadcrumbs-->
+			{% render 'breadcrums' %}
+        <!-- start snippet breadcrumbs-->
+</div>
   <div class="main-blog page-width">
     <h1 class="title--primary">{{ blog.title | escape }}</h1>
 
