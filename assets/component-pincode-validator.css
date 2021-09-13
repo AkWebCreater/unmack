@@ -7,8 +7,10 @@
 
 .popup-zipcode a{
     text-decoration: none;
-    display: block;
     color: var(--color-pincode-validator);
+}
+.popup-zipcode span,.popup-zipcode.open,.popup-zipcode a{
+    display: block;
 }
 .popup-zipcode .input-with-map {
     position: relative;
@@ -43,14 +45,10 @@
     margin-bottom: 10px;
     clear: both;
 }
-#msg, #header-msg {
-    font-weight: 600;
-}
+
 
 .header-input-zip, .header-zipcode .existingZipcode {
    text-align: left;
-  /* width: 120px;
-   */
    margin-bottom: 5px ;
    border: none ;
    background: #eee ;
@@ -82,17 +80,11 @@
     display: none;
   padding:20px;
 }
-.All-address a {
-    color: var(--color-pincode-validator);
-    text-decoration: underline;
-    text-underline-offset: 3px;
-}
+
 .customer-address {
     margin-bottom: 10px;
 }
-.popup-zipcode.open {
-    display: block;
-}
+
 .popup_zipcode-inner {
     z-index: 1;
     position: relative;
@@ -100,9 +92,7 @@
     width: 100%;
     background: #fff;
     margin: 0 auto;
-   /* padding: 30px;
-    */
-    padding-bottom: 18px;
+    padding-bottom: 20px;
     text-align: -webkit-center;
     text-align: center;
     border-radius: 5px;
@@ -139,17 +129,13 @@
 .popup-top-text p {
     margin-bottom: 18px ;
 }
-.popup-top-text a{
 
-}
 .popup-top-text .pra1 {
     text-align: left;
-    display: block;
     padding-bottom: 10px;
 }
 .popup-top-text .pra2 {
     background: #ddd;
-    display: block;
     padding: 6px;
 }
 .popup-top-text .pra3{
@@ -158,12 +144,13 @@
 .popup-top-text .pra3::before {
     content: '';
  position: absolute;
+ padding: 0 10px;
  left: 0;
  top: 50%;
  width: 100%;
  height: 2px;
  background: var(--color-pincode-validator);
-  
+  z-index: -1;
 }
 .popup-zipcode .header-input-zip {
     border: 2px solid var(--color-pincode-validator) ;
