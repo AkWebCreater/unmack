@@ -81,7 +81,7 @@
               {{ product.title | escape }}
             </h1>
         	<hr>
-        
+        <div class="product-form-divider">
           {%- when 'price' -%}
             <div class="no-js-hidden" id="price-{{ section.id }}">
               {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
@@ -276,7 +276,7 @@
                 </div>
               {%- endform -%}
             </product-form>
-        
+        </div>
             {{ 'component-pickup-availability.css' | asset_url | stylesheet_tag }}
 
             {%- assign pick_up_availabilities = product.selected_or_first_available_variant.store_availabilities | where: 'pick_up_enabled', true -%}
@@ -373,7 +373,7 @@
               </template>
 
             {%- if media.media_type == 'model' -%}
-                <product-model>
+                </product-model>
                 <button
                   class="button button--full-width product__xr-button"
                   type="button"
@@ -386,8 +386,7 @@
                   {% render 'icon-3d-model' %}
                   {{ 'products.product.xr_button' | t }}
                 </button>
-             
-                
+              </div>
             {%- else -%}
               </deferred-media>
             {%- endif -%}
