@@ -138,20 +138,7 @@
     background: #ddd;
     padding: 6px;
 }
-.popup-top-text .pra3{
-    position: relative;
-}
-.popup-top-text .pra3::before {
-    content: '';
- position: absolute;
- padding: 0 10px;
- left: 0;
- top: 50%;
- width: 100%;
- height: 2px;
- background: var(--color-pincode-validator);
-  z-index: -1;
-}
+
 .popup-zipcode .header-input-zip {
     border: 2px solid var(--color-pincode-validator) ;
     padding-left: 8px;
