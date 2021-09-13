@@ -152,15 +152,18 @@
     display: block;
     padding: 6px;
 }
-.popup-top-text .pra3 {
-    border: 0;
-    border-top: 2px solid var(--color-pincode-validator);
-    margin: 0 10px;
+.popup-top-text .pra3{
+    position: relative;
 }
-.popup-zipcode legend {
-    width: auto ;
-    font-size: inherit;
-    padding: 0 10px;
+.popup-top-text .pra3::before {
+    content: '';
+ position: absolute;
+ left: 0;
+ top: 50%;
+ width: 100%;
+ height: 2px;
+ background: var(--color-pincode-validator);
+  
 }
 .popup-zipcode .header-input-zip {
     border: 2px solid var(--color-pincode-validator) ;
