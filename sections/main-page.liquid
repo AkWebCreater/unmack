@@ -13,8 +13,8 @@
     {{ page.content }}
   </div>
  
-  <div class="images-top"><a href="{{section.settings.top_link}}"><img src="{{section.settings.top_img}}"></a></div>
-  <div class="images-bottom"><a href="{{section.settings.bottom_link}}"><img src="{{section.settings.bottom_img}}"></a></div>
+  <div class="images-top"><a href="{{section.settings.top_link}}"><img src="{{section.settings.top_img |img_url:'medium'}}"></a></div>
+  <div class="images-bottom"><a href="{{section.settings.bottom_link}}"><img src="{{section.settings.bottom_img | img_url:'medium'}}"></a></div>
   </div>
 
 </div>
