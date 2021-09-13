@@ -13,13 +13,11 @@
       -ms-flex: 3;
           flex: 3;
 }
-.popup-zipcode .header-zipcode {
-    margin-top: 12px;
-      padding: 0 30px;
+.header-zipcode {
+   padding: 0 30px;
+   cursor:pointer ;
 }
-.header-zipcode{
-    cursor:pointer ;
-    }
+
 .popup-zipcode .zip-inner {
     display: -webkit-box;
     display: -ms-flexbox;
