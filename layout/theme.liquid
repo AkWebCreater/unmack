@@ -185,7 +185,7 @@ $('.best-seller-collection-grid-wrapper').slick({
    $(this).addClass('add-border').siblings().removeClass('add-border')
  });
 </script>
- {% if template contains 'product' %}
+ {% if template contains 'product' or template contains 'blog'%}
  {{ 'jquery-cookie.min.js' | asset_url | script_tag }}
 {{ '//ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js' | script_tag }}
 {{ 'jquery.products.min.js' | asset_url | script_tag }}
