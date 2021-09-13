@@ -52,4 +52,5 @@
               "logo-url": ""
             }
           },
-          "main":{"type":"main-blog","blocks":{"title":{"type":"title","settings":{}},"summary":{"type":"summary","settings":{}},"link":{"type":"link","settings":{}}},"block_order":["title","summary","link"],"settings":{}}},"order":["main"]}
+          "main":{"type":"main-blog","blocks":{"title":{"type":"title","settings":{}},"summary":{"type":"summary","settings":{}},"link":{"type":"link","settings":{}}},"block_order":["title","summary","link"],"settings":{}}},"order":[
+              "1630411253b12b9000","main"]}
