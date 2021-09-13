@@ -1,7 +1,28 @@
 .page-title {
   margin-top: 0;
 }
+.page-wrapper{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px,auto);
+  grid-template-areas: "page-content page-content page-content topimage" "page-content page-content page-content bottomimage";
 
+}
+@media (max-width:749px) {
+  .page-wrapper{
+    grid-template-areas: "bottomimage bottomimage topimage topimage" "page-content page-content page-content page-content";
+  }
+}
+.rte{
+  grid-area: page-content;
+}
+.images-top{
+  grid-area: topimage;
+}
+.images-bottom{
+  grid-area: bottomimage;
+}
 .main-page-title {
   margin-bottom: 3rem;
 }
