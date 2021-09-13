@@ -131,12 +131,13 @@
 }
 
 .popup-top-text .pra1 {
-   border-radius: 5px;
+   
     padding-bottom: 10px;
 }
 .popup-top-text .pra2 {
     background: #ddd;
     padding: 6px;
+    border-radius: 5px;
 }
 
 .popup-zipcode .header-input-zip {
