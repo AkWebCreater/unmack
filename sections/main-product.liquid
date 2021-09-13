@@ -83,7 +83,11 @@
         	<hr>
         <div class="product-form-divider">
           <div class="">
-            <div class="product-details-origin"></div>
+            {% if product.metafields.my_fields.country_of_origin!= blanks %}
+            <div class="product-details-origin">
+              {{ product.metafields.my_fields.country_of_origin }}
+            </div>
+            {% endif %}
             < div class=""></div>
             <div class=""></div>
           </div>
