@@ -9,11 +9,20 @@
   grid-template-areas: "page-content page-content page-content topimage" "page-content page-content page-content bottomimage";
 
 }
-@media (max-width:749px) {
+.page-wrapper img{
+  width: 100%;
+}
+@media (max-width:640px) {
   .page-wrapper{
     grid-template-areas: "bottomimage bottomimage topimage topimage" "page-content page-content page-content page-content";
   }
+  .page-wrapper img{
+    max-height:300px;
+    object-fit: cover;
+    object-position: top;
+  }
 }
+
 .rte{
   grid-area: page-content;
 }
