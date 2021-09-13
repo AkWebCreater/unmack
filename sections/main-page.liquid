@@ -8,8 +8,14 @@
   <h1 class="main-page-title page-title h0">
     {{ page.title | escape }}
   </h1>
+  <div class="page-wrapper">
   <div class="rte">
     {{ page.content }}
+  </div>
+  <div class="images">
+  <div class="top"><a href="{{section.settings.top_link}}"><img src="{{section.settings.top_img}}"></a></div>
+  <div class="bottom"><a href="{{section.settings.bottom_link}}"><img src="{{section.settings.bottom_img}}"></a></div>
+  </div>
   </div>
 </div>
 
@@ -17,6 +23,25 @@
 {
   "name": "t:sections.main-page.name",
   "tag": "section",
-  "class": "spaced-section"
+  "class": "spaced-section",
+  "settings"[
+    {
+      "type": "image_picker",
+      "id": "top_img",
+      "label": "Top Right Image"
+    },{
+      "type": "image_picker",
+      "id": "bottom_img",
+      "label": "Bottom Right Image"
+    },{
+      "type": "url",
+      "id": "top_link",
+      "label": "Top Right Image Link"
+    },{
+      "type": "url",
+      "id": "bottom_link",
+      "label": "Bottom Right Image Link"
+    }
+  ]
 }
 {% endschema %}
