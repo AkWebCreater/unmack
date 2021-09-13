@@ -14,10 +14,11 @@
           flex: 3;
 }
 .header-zipcode {
-   padding: 0 30px;
    cursor:pointer ;
 }
-
+.address-wrapper{
+    border: 1px solid #ccc;
+}
 .popup-zipcode .zip-inner {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -146,6 +147,8 @@
 .popup-zipcode .header-input-zip {
     border: 2px solid var(--color-pincode-validator) ;
     padding-left: 8px;
+    box-shadow: none !important;
+    outline: 0 !important;
 }
 .popup-zipcode .check-pincode {
 /* 	 padding: 5px 18px; */
@@ -156,6 +159,7 @@
        -ms-flex-align: center;
            align-items: center;
    font-size: inherit;
+   text-decoration: none;
 }
 .popup_zipcode-inner input{
 	font-size:inherit;
@@ -204,10 +208,9 @@
         overflow-y: scroll;
    }
     .address:not(:last-child) {
-        border-bottom: 0;
+        border-bottom: 1px solid #ccc;
    }
     .address {
-        border: 1px solid #ccc;
         padding: 8px;
         text-align: left;
    }

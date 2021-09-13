@@ -23,17 +23,17 @@
   <div class="popup-zipcode">
   <div class="popup_zipcode-inner">
     <div class=""><span class="close">x</span>
-    <h4 class="pincode_validator_bg">Choose your location</h4></div>
+    <span class="pincode_validator_bg">Choose your location</span></div>
     <div class="popup-top-text">
    {% if customer %}
       {% else %}
-         <p class="pra1"> Enter Your Pincode to see  delivery availability at Your Location</p>
+         <span class="pra1"> Enter Your Pincode to see  delivery availability at Your Location</span>
       {% endif %}
      {% if customer %} 
       {% if customer.addresses.size > 0 %}
-       <p class="pra1"> Select a delivery location to see  delivery availability at Your Address</p>
+       <span class="pra1"> Select a delivery location to see  delivery availability at Your Address</span>
       {% else %}
-      <p class="pra1"> Enter Your Pincode to see  delivery availability at Your Location</p>
+      <span class="pra1"> Enter Your Pincode to see  delivery availability at Your Location</span>
       {% endif %}
       <div class="customer-address">
         <div class="address-wrapper">
