@@ -16,6 +16,11 @@
 .header-zipcode {
    cursor:pointer ;
 }
+.pincode_validator_bg{
+    display: block;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
 .address-wrapper{
     border: 1px solid #ccc;
 }
@@ -84,9 +89,6 @@
 .popup_zipcode-inner {
     z-index: 1;
     position: relative;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    display: block;
     max-width: 420px;
     width: 100%;
     background: #fff;
@@ -118,9 +120,9 @@
 .popup_zipcode-inner .close {
     top: 12px;
     right: 10px;
-    line-height: 1;
     position: absolute;
     color: #fff ;
+    line-height: 1;
     opacity: 1;
 }
 .popup-top-text {
