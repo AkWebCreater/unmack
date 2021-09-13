@@ -5,7 +5,11 @@
         display:none;margin:0;color:red
         }    
 
-  
+.popup-zipcode a{
+    text-decoration: none;
+    display: block;
+    color: var(--color-pincode-validator);
+}
 .popup-zipcode .input-with-map {
     position: relative;
     margin-right: 5px;
@@ -130,19 +134,23 @@
 }
 .popup-top-text,.pincode-pop-up-footer {
     padding: 10px 30px;
+    padding-bottom: 0;
 }
 .popup-top-text p {
     margin-bottom: 18px ;
 }
+.popup-top-text a{
+
+}
 .popup-top-text .pra1 {
     text-align: left;
+    display: block;
     padding-bottom: 10px;
 }
 .popup-top-text .pra2 {
     background: #ddd;
+    display: block;
     padding: 6px;
-    font-weight: 600;
-    margin: 0 10px;
 }
 .popup-top-text .pra3 {
     border: 0;
