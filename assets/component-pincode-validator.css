@@ -16,11 +16,11 @@
 .header-zipcode {
    cursor:pointer ;
 }
-.pincode_validator_bg{
-    display: block;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+.pop-up-header{
+    padding:10px 0;
+    background: var(--color-pincode-validator);
 }
+
 .address-wrapper{
     border: 1px solid #ccc;
 }
