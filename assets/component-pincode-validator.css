@@ -19,6 +19,9 @@
 .pop-up-header{
     padding:10px 0;
     background: var(--color-pincode-validator);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color:#fff;
 }
 
 .address-wrapper{
@@ -125,7 +128,7 @@
     line-height: 1;
     opacity: 1;
 }
-.popup-top-text {
+.popup-top-text,.pincode-pop-up-footer {
     padding: 10px 30px;
 }
 .popup-top-text p {
