@@ -58,7 +58,7 @@
                 
                 {%- for link in linklists.top-blogs.links -%}
                     {% assign top_blogs = link.object.handle %}
-                    <h4>{{link.object.title}}</h4>
+                    <h4>{{link.object.title}} {{blogs[top_blogs].articles.size}}</h4>
                     {% for topArticle in blogs[top_blogs].articles %}
                     {{topArticle.title}}
                         <div class="blog-articles__article article">
