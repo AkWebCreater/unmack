@@ -3,7 +3,7 @@
   grid-gap: 1rem;
   grid-template-columns: repeat(2,1fr);
   gap: 10px;
-  grid-template-rows: 60px auto;
+  grid-auto-rows:min-content ;
 }
 .blog-articles .blog-page-title{
 grid-column: span 2;
