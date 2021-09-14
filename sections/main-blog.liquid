@@ -45,9 +45,10 @@
             <h1 class="title--primary">{{ blog.title | escape }}</h1>
         {% endcomment %}
         <div class="blogs-main-wrapper">
+        <h3 class="blog-page-title">{{blog.title}}</h3>
             <div class="blog-articles">
                
-                <h3 class="blog-page-title">{{blog.title}}</h3>
+                
                     {% for article in blog.articles %}
                         <div class="blog-articles__article article">
                             {%- render 'article-card', article: article, show_image: section.settings.show_image -%}
