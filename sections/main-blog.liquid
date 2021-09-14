@@ -57,8 +57,8 @@
             <div class="blog-sidebar">
                 {%- assign top_blogs_menu = linklists.top-blogs -%}
                 {%- for link in top_blogs_menu.links -%}
-                    {% assign blog = link.object %}
-                    {% for topArticle in top_blogs_menu %}
+                    {% assign top_blogs = link.object %}
+                    {% for topArticle in top_blogs.articles %}
                         <div class="blog-articles__article article">
                             {%- render 'article-card', article: topArticle, show_image:true -%}
                         </div>
