@@ -95,11 +95,19 @@
         "number_of_recently_viewed_products": "8",
         "number_of_showing_products": "5"
       }
+    },
+    "1631627412ad2cf2fd": {
+      "type": "banner-with-text",
+      "settings": {
+        "background-image": "shopify:\/\/shop_images\/banner.png",
+        "heading": ""
+      }
     }
   },
   "order": [
     "1630411253b12b9000",
     "main",
-    "1631539707747db7e5"
+    "1631539707747db7e5",
+    "1631627412ad2cf2fd"
   ]
 }
