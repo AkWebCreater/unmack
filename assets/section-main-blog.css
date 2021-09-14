@@ -2,13 +2,23 @@
   display: grid;
   grid-gap: 1rem;
 }
-.blog-nav-link{
+.blog-nav-link a{
   color: #fff;
   background: #ccc;
+  display: block;
+  text-decoration: none;
 }
 .blog-nav-link.active{
   padding: 10px 20px;
   background: #f58634; 
+}
+.blog-nav-link{
+flex: 1;
+border-radius: 4px;
+}
+.blogs-nav{
+  display: flex;
+  gap: 15px;
 }
 .blog-nav-link:hover{
   background: #f58634;
