@@ -1,6 +1,18 @@
 .blog-articles {
   display: grid;
   grid-gap: 1rem;
+  grid-template-columns: repeat(3,1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px,auto);
+  grid-template-areas:
+      "title title title" "article" ;
+}
+.blog-articles .blog-page-title{
+  grid-area: title;
+
+}
+.blog-articles .blog-articles__article{
+  grid-area: article;
 }
 .blog-nav-link a{
   color: #fff;
@@ -44,14 +56,14 @@ flex: 1;
     gap: 10px;
     grid-auto-rows: minmax(100px,auto);
     grid-template-areas:
-      "heading heading heading sidebar"  "articles articles articles sidebar";
+        "articles articles articles sidebar";
 
 }
-.blog-articles{
+.blogs-main-wrapper .blog-articles{
   grid-area: articles;
 }
 .blog-page-title{
-  grid-area: heading;
+
 }
 .blog-sidebar{
   grid-area: sidebar;
