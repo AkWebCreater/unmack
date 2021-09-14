@@ -5,9 +5,11 @@
 .blog-nav-link a{
   color: #fff;
   background: #ccc;
+  border: 1px solid rgb(150, 149, 149);
   display: block;
   border-radius: 4px;
   padding: 10px 20px;
+  font-weight: 900;
   text-decoration: none;
   text-align: center;
 }
@@ -24,6 +26,14 @@ flex: 1;
 }
 .blog-nav-link a:hover{
   background: #f58634;
+}
+.recipe-menu a{
+  text-decoration: none;
+  color: inherit;
+}
+.recipe-menu{
+  border: 1px solid rgb(150, 149, 149);
+  padding: 15px;
 }
 @media screen and (min-width: 750px) {
   .blog-articles {

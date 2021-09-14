@@ -20,7 +20,18 @@
 
 </nav>
 </div>
-    <h1 class="title--primary">{{ blog.title | escape }}</h1>
+<div class="recipe-menu">
+{%- assign recipe_menu = linklists[section.settings.recipe_menu] -%}
+<nav class="recipe-nav">
+{%- for link in recipe_menu.links -%}
+  <span class="recipe-nav-link {% if link.active %}active{% endif %}"><a href="{{link.url}}">{{link.title}}</a></span>{%- unless forloop.last -%}
+    <span class="pipe"> | </span>
+  {%- endunless -%}
+{%- endfor -%}
+
+</nav>
+</div>
+    {% comment %} <h1 class="title--primary">{{ blog.title | escape }}</h1> {% endcomment %}
 
     <div class="blog-articles">
     {% for blog in blogs %}
@@ -60,6 +71,11 @@
       "type": "link_list",
       "id": "blogs_menu",
       "label": "Blogs Menu"
+    },
+    {
+      "type": "link_list",
+      "id": "recipe_menu",
+      "label": "Recipe Menu"
     },
     {
       "type": "paragraph",
