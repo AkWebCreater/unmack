@@ -70,6 +70,5 @@ flex: 1;
 
   .blog-articles .blog-page-title{
     grid-column: span 3;
-    text-align: center;
   }
 }
