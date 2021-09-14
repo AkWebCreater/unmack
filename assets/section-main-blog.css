@@ -63,6 +63,9 @@ flex: 1;
   flex-direction: column;
   gap: 10px;
 }
+.main-blog .article-card{
+  height: auto;
+}
 @media screen and (min-width: 750px) {
   .blog-articles {
     grid-template-columns: repeat(3,1fr);
