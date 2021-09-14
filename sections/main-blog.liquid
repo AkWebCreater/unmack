@@ -10,7 +10,7 @@
         <!-- start snippet breadcrumbs-->
 </div>
 <div class="blogs-menu">
-{%- assign blog-menu = link_lists[section.settings.blog-menu] -%}
+{%- assign blog-menu = linklists[section.settings.blog-menu] -%}
 <nav class="blogs-nav">
 {%- for link in blog-menu.links -%}
   <span class="blog-nav-link {% if link.active %}active{% endif %}"><a href="{{link.url}}">{{link.title}}</span>
