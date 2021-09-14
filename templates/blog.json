@@ -79,7 +79,9 @@
         "link"
       ],
       "settings": {
-        "show_image": true
+        "show_image": true,
+        "blogs_menu": "blogs-menu",
+        "recipe_menu": "blog-recipe-menu"
       }
     },
     "1631539707747db7e5": {
