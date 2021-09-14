@@ -9,6 +9,15 @@
 			{% render 'breadcrums' %}
         <!-- start snippet breadcrumbs-->
 </div>
+<div class="blogs-menu">
+{%- assign blog-menu = link_lists[section.settings.blog-menu] -%}
+<nav class="blogs-nav">
+{%- for link in blog-menu.links -%}
+  <span class="blog-nav-link {% if link.active %}active{% endif %}"><a href="{{link.url}}">{{link.title}}</span>
+{%- endfor -%}
+
+</nav>
+</div>
   <div class="main-blog page-width">
     <h1 class="title--primary">{{ blog.title | escape }}</h1>
 
@@ -45,6 +54,11 @@
       "default": true,
       "label": "t:sections.main-blog.settings.show_image.label",
       "info": "t:sections.main-blog.settings.show_image.info"
+    },
+    {
+      "type": "link_list",
+      "id": "blogs-menu",
+      "label": "Blogs Menu"
     },
     {
       "type": "paragraph",
