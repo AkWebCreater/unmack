@@ -4,16 +4,12 @@
   grid-template-columns: repeat(3,1fr);
   gap: 10px;
   grid-auto-rows: minmax(100px,auto);
-  grid-template-areas:
-      "title title title" "article article article" ;
-}
-.blog-articles .blog-page-title{
-  grid-area: title;
 
 }
-.blog-articles .blog-articles__article{
-  grid-area: article;
+.blog-articles .blog-page-title{
+grid-column: span 2;
 }
+
 .blog-nav-link a{
   color: #fff;
   background: #ccc;
