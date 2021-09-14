@@ -31,6 +31,9 @@ flex: 1;
   text-decoration: none;
   color: inherit;
 }
+.recipe-menu,.blogs-nav{
+  margin-top: 20px;
+}
 .recipe-menu{
   border: 1px solid rgb(150, 149, 149);
   padding: 15px;

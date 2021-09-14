@@ -23,6 +23,7 @@
 <div class="recipe-menu">
 {%- assign recipe_menu = linklists[section.settings.recipe_menu] -%}
 <nav class="recipe-nav">
+<span class="pipe"> Top {{recipe_menu.title}} </span>
 {%- for link in recipe_menu.links -%}
   <span class="recipe-nav-link {% if link.active %}active{% endif %}"><a href="{{link.url}}">{{link.title}}</a></span>{%- unless forloop.last -%}
     <span class="pipe"> | </span>
