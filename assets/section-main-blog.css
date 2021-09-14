@@ -6,21 +6,23 @@
   color: #fff;
   background: #ccc;
   display: block;
+  border-radius: 4px;
+  padding: 10px 20px;
   text-decoration: none;
+  text-align: center;
 }
 .blog-nav-link.active{
-  padding: 10px 20px;
   background: #f58634; 
 }
 .blog-nav-link{
 flex: 1;
-border-radius: 4px;
+
 }
 .blogs-nav{
   display: flex;
   gap: 15px;
 }
-.blog-nav-link:hover{
+.blog-nav-link a:hover{
   background: #f58634;
 }
 @media screen and (min-width: 750px) {
