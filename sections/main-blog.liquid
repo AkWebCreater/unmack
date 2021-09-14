@@ -15,7 +15,7 @@
 {%- assign blog_menu = linklists[section.settings.blogs_menu] -%}
 <nav class="blogs-nav">
 {%- for link in blog_menu.links -%}
-  <span class="blog-nav-link {% if link.active %}active{% endif %}"><a href="{{link.url}}">{{link.title}}</span>
+  <span class="blog-nav-link {% if link.active %}active{% endif %}"><a href="{{link.url}}">{{link.title}}</a></span>
 {%- endfor -%}
 
 </nav>
