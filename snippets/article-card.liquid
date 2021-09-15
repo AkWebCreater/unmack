@@ -10,17 +10,17 @@
         {% render 'article-card' blog: blog, article: article, show_image: section.settings.show_image %}
 {% endcomment %}
 <article class="article-card{% if article.image == blank or show_image == false %} article-card--no-image{% endif %}" aria-labelledby="Article-{{ article.id }}">
-    <div  class="article-content motion-reduce">
+    <a href="{{ article.url }}" class="article-content motion-reduce">
         {%- if show_image == true and article.image -%}
             <div class="article-card__image-wrapper">
                 <div class="article-card__image media media--landscape">
-                 <a href="{{ article.url }}">   <img srcset="
+                    <img srcset="
                                     {%- if article.image.src.width >= 165 -%}{{ article.image.src | img_url: '165x' }} 165w,{%- endif -%}
                                     {%- if article.image.src.width >= 360 -%}{{ article.image.src | img_url: '360x' }} 360w,{%- endif -%}
                                     {%- if article.image.src.width >= 533 -%}{{ article.image.src | img_url: '533x' }} 533w,{%- endif -%}
                                     {%- if article.image.src.width >= 720 -%}{{ article.image.src | img_url: '720x' }} 720w,{%- endif -%}
                                     {%- if article.image.src.width >= 940 -%}{{ article.image.src | img_url: '940x' }} 940w,{%- endif -%}
-                                    {%- if article.image.src.width >= 1066 -%}{{ article.image.src | img_url: '1066x' }} 1066w{%- endif -%}" src="{{ article.image.src | img_url: '533x' }}" sizes="(min-width: 1100px) 535px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)" alt="{{ article.image.src.alt | escape }}" width="{{ article.image.width }}" height="{{ article.image.height }}" loading="lazy" class="motion-reduce"></a>
+                                    {%- if article.image.src.width >= 1066 -%}{{ article.image.src | img_url: '1066x' }} 1066w{%- endif -%}" src="{{ article.image.src | img_url: '533x' }}" sizes="(min-width: 1100px) 535px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)" alt="{{ article.image.src.alt | escape }}" width="{{ article.image.width }}" height="{{ article.image.height }}" loading="lazy" class="motion-reduce">
                 </div>
             </div>
             {%- endif -%}
@@ -30,10 +30,7 @@
                         {%- when 'title' -%}
                             <header class="article-card__header">
                                 <h2 class="article-card__title" id="Article-{{ article.id }}">
-                                  <a href="{{ article.url }}">
                                     {{ article.title | escape }}
-                                  </a>  
-
                                 </h2>
                                 {%- if block.settings.show_date -%}
                                     <span class="circle-divider">
@@ -61,13 +58,9 @@
                                     {{ readtime }}
                                     Minutes Read
                                 </span>
-                                
                             {%- endif -%}
 
                         {%- when 'link' -%}
-                        <div class="article-template__social-sharing page-width page-width--narrow">
-                          {% render 'social-sharing', share_title: article.title, share_permalink: article.url, share_image: article.image %}
-                        </div>
                             <div class="article-card__footer">
                                 <span class="article-card__link" aria-label="{{ 'blogs.article.read_more_title' | t: title: article.title | escape }}">
                                     {{ 'blogs.article.read_more' | t }}
@@ -79,6 +72,5 @@
                     {%- endcase -%}
                 {%- endfor -%}
             </div>
-            
-          </div>
+        </a>
     </article>
