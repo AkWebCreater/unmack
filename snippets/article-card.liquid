@@ -44,7 +44,7 @@
               </h2>
               {%- if block.settings.show_date -%}
                 <span class="circle-divider caption-with-letter-spacing">
-                <span>Published </span>  {{- article.published_at | time_tag: format: '%b %d, %Y' -}}
+                <span>Published </span>  {{- article.published_at | time_tag: format:%b %d, %Y -}}
                 </span>
               {%- endif -%}
               {%- if block.settings.show_author -%}
