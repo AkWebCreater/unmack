@@ -30,7 +30,10 @@
                         {%- when 'title' -%}
                             <header class="article-card__header">
                                 <h2 class="article-card__title" id="Article-{{ article.id }}">
-                                    {{ article.title | escape }}
+                                <a href="{{article.url}}" >
+
+                                  {{ article.title | escape }}
+                                </a>
                                 </h2>
                                 {%- if block.settings.show_date -%}
                                     <span class="circle-divider">
@@ -71,7 +74,10 @@
                         </div>
                             <div class="article-card__footer">
                                 <span class="article-card__link" aria-label="{{ 'blogs.article.read_more_title' | t: title: article.title | escape }}">
-                                    {{ 'blogs.article.read_more' | t }}
+                                    <a href="{{article.url}}">
+                                      {{ 'blogs.article.read_more'  | t }}
+                                    </a>
+
                                 </span>
                                 {%- if article.comments_count > 0 and blog.comments_enabled? -%}
                                     <span>{{ 'blogs.article.comments' | t: count: article.comments_count }}</span>
