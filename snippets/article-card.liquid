@@ -67,7 +67,9 @@
 {{readtime}} Minutes Read
 </span>
             {%- endif -%}
- {% render 'social-sharing', share_title: article.title, share_permalink: article.url, share_image: article.image %}
+ <span class="article-template__social-sharing page-width page-width--narrow">
+            {% render 'social-sharing', share_title: article.title, share_permalink: article.url, share_image: article.image %}
+          </span>
           {%- when 'link'-%}
             <div class="article-card__footer">
             
