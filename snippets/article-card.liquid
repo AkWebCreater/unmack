@@ -58,6 +58,9 @@
                                     {{ readtime }}
                                     Minutes Read
                                 </span>
+                                <span class="article-template__social-sharing page-width page-width--narrow">
+                                  {% render 'social-sharing', share_title: article.title, share_permalink: article.url, share_image: article.image %}
+                              </span>   
                             {%- endif -%}
 
                         {%- when 'link' -%}
