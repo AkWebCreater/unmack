@@ -44,7 +44,7 @@
               </h2>
               {%- if block.settings.show_date -%}
                 <span class="circle-divider caption-with-letter-spacing">
-                  {{- article.published_at | time_tag: format: 'month_year' -}}
+                <span>Published </span>  {{- article.published_at | time_tag: format: '%b %d, %Y' -}}
                 </span>
               {%- endif -%}
               {%- if block.settings.show_author -%}
@@ -56,16 +56,16 @@
             {%- if article.excerpt.size > 0 or article.content.size > 0 -%}
               <p class="article-card__excerpt rte-width">
                 {%- if article.excerpt.size > 0 -%}
-                  {{ article.excerpt | strip_html | truncatewords: 30 }}
+                  {{ article.excerpt | strip_html | truncatewords: 10 }}
                 {%- else -%}
-                  {{ article.content | strip_html | truncatewords: 30 }}
+                  {{ article.content | strip_html | truncatewords: 10 }}
                 {%- endif -%}
               </p>
             {%- endif -%}
 
           {%- when 'link'-%}
             <div class="article-card__footer">
-              <span class="link article-card__link" aria-label="{{ 'blogs.article.read_more_title' | t: title: article.title | escape }}">
+              <span class="article-card__link" aria-label="{{ 'blogs.article.read_more_title' | t: title: article.title | escape }}">
                 {{ 'blogs.article.read_more' | t }}
               </span>
 
