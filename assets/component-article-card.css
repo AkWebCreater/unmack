@@ -33,6 +33,12 @@
 .article-card .social-container{
 display: flex;
 justify-content: space-between;
+align-items: center;
+padding:0.5rem 0;
+}
+
+.article-card .list-social__link{
+  padding:0 1rem;
 }
 .article-card {
   align-self: flex-start;
