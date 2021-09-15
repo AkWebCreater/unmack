@@ -43,18 +43,18 @@
                 {{ article.title | escape }}
               </h2>
               {%- if block.settings.show_date -%}
-                <span class="circle-divider caption-with-letter-spacing">
+                <span class="circle-divider">
                 <span>Published </span>  {{- article.published_at | date: "%B %d, %Y" -}}
                 </span>
               {%- endif -%}
               {%- if block.settings.show_author -%}
-                <span class="caption-with-letter-spacing">{{ article.author -}}</span>
+                <span class="">{{ article.author -}}</span>
               {%- endif -%}
             </header>
 
           {%- when 'summary'-%}
             {%- if article.excerpt.size > 0 or article.content.size > 0 -%}
-              <p class="article-card__excerpt rte-width">
+              <p class="article-card__excerpt">
                 {%- if article.excerpt.size > 0 -%}
                   {{ article.excerpt | strip_html | truncatewords: 5 }}
                 {%- else -%}
