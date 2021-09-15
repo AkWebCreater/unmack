@@ -35,7 +35,7 @@
                                     <span class="circle-divider">
                                         <span>Published
                                         </span>
-                                        {{ - article.published_at | date: "%B %d, %Y" - }}
+                                        {{article.published_at | date: "%B %d, %Y"}}
                                     </span>
                                 {%- endif -%}
                                 {%- if block.settings.show_author -%}
