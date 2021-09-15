@@ -55,23 +55,27 @@
                                         {{ article.content | strip_html | truncatewords: 5 }}
                                     {%- endif -%}
                                 </p>
-                                <span class="reading-time" title="Estimated read time">
-                                    {% assign words = article.content | strip_html | split:' ' %}
-                                    {%- assign readtime = words.size | divided_by: 200 | round | at_least: 1 -%}
-                                    {{ readtime }}
-                                    {%- if readtime > 1 -%}
-                                    Minutes
-                                    {%- else -%}
-                                    Minute
-                                    {%- endif -%} Read
-                                </span>
+                                <div class="social-container">
+
+                                  <span class="reading-time" title="Estimated read time">
+                                      {% assign words = article.content | strip_html | split:' ' %}
+                                      {%- assign readtime = words.size | divided_by: 200 | round | at_least: 1 -%}
+                                      {{ readtime }}
+                                      {%- if readtime > 1 -%}
+                                      Minutes
+                                      {%- else -%}
+                                      Minute
+                                      {%- endif -%} Read
+                                  </span>
+                                  <div class="article-template__social-sharing">
+                                    {% render 'social-sharing', share_title: article.title, share_permalink: article.url, share_image: article.image %}
+                                  </div>
+                                </div>
                                 
                             {%- endif -%}
 
                         {%- when 'link' -%}
-                        <div class="article-template__social-sharing page-width page-width--narrow">
-                          {% render 'social-sharing', share_title: article.title, share_permalink: article.url, share_image: article.image %}
-                        </div>
+                       
                             <div class="article-card__footer">
                                 <span class="article-card__link" aria-label="{{ 'blogs.article.read_more_title' | t: title: article.title | escape }}">
                                     <a href="{{article.url}}">

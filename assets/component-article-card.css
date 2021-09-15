@@ -28,6 +28,11 @@
 }
 .article-card a{
   text-decoration: none;
+  color:inherit ;
+}
+.article-card .social-container{
+display: flex;
+justify-content: space-between;
 }
 .article-card {
   align-self: flex-start;
