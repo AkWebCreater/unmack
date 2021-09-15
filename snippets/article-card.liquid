@@ -61,6 +61,14 @@
                   {{ article.content | strip_html | truncatewords: 10 }}
                 {%- endif -%}
               </p>
+              <span class="reading-time" title="Estimated read time">
+  {% assign words = article.content | number_of_words %}
+  {% if words < 360 %}
+    1 min
+  {% else %}
+    {{ words | divided_by:180 }} mins
+  {% endif %}
+</span>
             {%- endif -%}
 
           {%- when 'link'-%}
