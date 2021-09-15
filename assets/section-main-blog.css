@@ -23,6 +23,10 @@ grid-column: span 2;
 .blog-nav-link.active{
   background: #f58634; 
 }
+.body--blog .make-your-own-box .image-with-text{
+  min-height: 300px;
+  margin: 50px 0;
+}
 .blog-nav-link{
 flex: 1;
 
