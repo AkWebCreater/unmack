@@ -78,7 +78,9 @@
   text-decoration: none;
   word-break: break-word;
 }
-
+.article-card__excerpt{
+  margin: 0;
+}
 .article-card__link {
  background: #eee;
  border-radius: 4px;
