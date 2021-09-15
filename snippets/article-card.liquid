@@ -70,6 +70,9 @@
 
           {%- when 'link'-%}
             <div class="article-card__footer">
+            <div class="article-template__social-sharing">
+            {% render 'social-sharing', share_title: article.title, share_permalink: article.url, share_image: article.image %}
+          </div>
               <span class="article-card__link" aria-label="{{ 'blogs.article.read_more_title' | t: title: article.title | escape }}">
                 {{ 'blogs.article.read_more' | t }}
               </span>
