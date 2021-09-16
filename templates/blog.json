@@ -127,12 +127,48 @@
         "number_of_recently_viewed_products": "8",
         "number_of_showing_products": "5"
       }
+    },
+    "16317931435797d67e": {
+      "type": "blog-bottom",
+      "blocks": {
+        "01948312-aaf2-4cc2-a624-c6901b22a130": {
+          "type": "second-sidebar-image",
+          "settings": {
+            "sidebar-img": "shopify:\/\/shop_images\/all-policy_imsge.png",
+            "image-link": ""
+          }
+        },
+        "a0ffbd3b-21ba-4e2c-8d77-cec1d353476c": {
+          "type": "second-sidebar-image",
+          "settings": {
+            "sidebar-img": "shopify:\/\/shop_images\/image-2.png",
+            "image-link": ""
+          }
+        },
+        "9c957b7a-49b2-4749-9683-e69eeb33f822": {
+          "type": "second-sidebar-image",
+          "settings": {
+            "sidebar-img": "shopify:\/\/shop_images\/all-policy_imsge.png",
+            "image-link": ""
+          }
+        }
+      },
+      "block_order": [
+        "01948312-aaf2-4cc2-a624-c6901b22a130",
+        "a0ffbd3b-21ba-4e2c-8d77-cec1d353476c",
+        "9c957b7a-49b2-4749-9683-e69eeb33f822"
+      ],
+      "settings": {
+        "show_image": true,
+        "bottom-blog": "news"
+      }
     }
   },
   "order": [
     "1630411253b12b9000",
     "main",
     "1631627412ad2cf2fd",
-    "1631539707747db7e5"
+    "1631539707747db7e5",
+    "16317931435797d67e"
   ]
 }
