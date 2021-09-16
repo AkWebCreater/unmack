@@ -147,6 +147,7 @@
         },
         "9c957b7a-49b2-4749-9683-e69eeb33f822": {
           "type": "second-sidebar-image",
+          "disabled": true,
           "settings": {
             "sidebar-img": "shopify:\/\/shop_images\/all-policy_imsge.png",
             "image-link": ""
