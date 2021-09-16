@@ -86,7 +86,7 @@
   {% endif %}
 {%- endfor -%}
 
-<div class="grid {% if count > 0 %}grid-with-sidebar {% else %} blog-only-grid{% endif %}">
+<div class="page-width {% if count > 0 %}grid-with-sidebar {% else %} blog-only-grid{% endif %}">
 <div class="blog-container">
 {% for bottom_articles in bottom_blog.articles %}
 <div class="blog-articles__article article">
