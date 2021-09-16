@@ -81,7 +81,8 @@
       "settings": {
         "show_image": true,
         "blogs_menu": "blogs-menu",
-        "recipe_menu": "blog-recipe-menu"
+        "recipe_menu": "blog-recipe-menu",
+        "bottom-blog": "news"
       }
     },
     "1631627412ad2cf2fd": {
