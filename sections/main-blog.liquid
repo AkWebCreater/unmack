@@ -78,11 +78,10 @@
 
 {% paginate bottom_blog.articles by 12 %}
 {%- for block in section.blocks -%}
-  {% assign count = 0 %}
   {% if block.type == 'sidebar-img' %}
-  {% capture count %}
+  
   {% assign count = count | plus: 1 %}
-  {% endcapture %}
+ 
     
   {% endif %}
 {%- endfor -%}
