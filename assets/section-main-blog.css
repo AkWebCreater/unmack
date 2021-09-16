@@ -25,6 +25,7 @@ grid-column: span 2;
 }
 .grid-with-sidebar {
   display: grid;
+  gap: 10px;
   grid-template-columns: repeat(4,1fr);
 }
 .bottom-sidebar{
@@ -34,6 +35,7 @@ grid-column: span 2;
 }
 .blog-container{
   display: grid;
+  grid-column: span 3;
   grid-template-columns: repeat(2,1fr);
 grid-auto-rows: min-content;
 gap: 10px;
