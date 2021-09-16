@@ -85,6 +85,13 @@
             "sidebar-img": "shopify:\/\/shop_images\/all-policy_imsge.png",
             "image-link": ""
           }
+        },
+        "3fdeced5-3e87-4436-aa68-791c70f42187": {
+          "type": "second-sidebar-image",
+          "settings": {
+            "sidebar-img": "shopify:\/\/shop_images\/image-2.png",
+            "image-link": ""
+          }
         }
       },
       "block_order": [
@@ -92,7 +99,8 @@
         "summary",
         "link",
         "003eea04-0607-405d-9f24-31799044b665",
-        "8926b2b8-cd53-4a7b-b2ca-e0ae49a44dd9"
+        "8926b2b8-cd53-4a7b-b2ca-e0ae49a44dd9",
+        "3fdeced5-3e87-4436-aa68-791c70f42187"
       ],
       "settings": {
         "show_image": true,
