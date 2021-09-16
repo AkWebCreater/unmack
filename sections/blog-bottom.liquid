@@ -1,0 +1,83 @@
+{{ 'component-article-card.css' | asset_url | stylesheet_tag }}
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'section-main-blog.css' | asset_url | stylesheet_tag }}
+{% if section.settings.bottom-blog != blank %}
+{% assign bottom_blog = blogs[section.settings.bottom-blog] %}
+
+{% paginate bottom_blog.articles by 6 %}
+<div class="page-width {% if section.blocks.size > 0 %}grid-with-sidebar {% else %} blog-only-grid{% endif %}">
+<div class="blog-container">
+{% for bottom_articles in bottom_blog.articles %}
+<div class="blog-articles__article article">
+  {%- render 'article-card', article: bottom_articles, show_image: section.settings.show_image -%}
+</div>
+{% endfor %}
+</div>
+{% if section.blocks.size > 0 %}
+<div class="bottom-sidebar">
+  {%- for block in section.blocks -%}
+    {% if block.settings.image-link != blank %}
+      <a href="{{block.settings.image-link}}"><img src="{{block.settings.sidebar-img | img_url: 'grande'}}"></a>
+      {% else %}
+      <img src="{{block.settings.sidebar-img | img_url: 'grande'}}">
+    {% endif %}  
+  {%- endfor -%}
+</div>
+{% endif %}
+{%- if paginate.pages > 1 -%}
+{%- render 'pagination', paginate: paginate -%}
+{%- endif -%}
+</div>
+{% endpaginate %}
+  
+{% endif %}
+{% schema %}
+{
+  "name": "Bottom Blog",
+  "tag": "section",
+  "class": "spaced-section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:sections.main-blog.settings.header.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_image",
+      "default": true,
+      "label": "t:sections.main-blog.settings.show_image.label",
+      "info": "t:sections.main-blog.settings.show_image.info"
+    },
+    
+   {
+      "type": "header",
+      "content": "Bottom Blog",
+      "info": "You may Choose Secendory Blog to show at bottom here"
+    },
+    {
+      "type": "blog",
+      "id": "bottom-blog",
+      "label": "Bottom Blog"
+    }
+  ],
+  "blocks": [
+   {
+      "type": "second-sidebar-image",
+      "name": "second sidebar image",
+      "limit": 5,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "sidebar-img",
+          "label": "Sidebar Image"
+        },
+        {
+          "type": "url",
+          "id": "image-link",
+          "label": "sidebar image link"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
