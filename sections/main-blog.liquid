@@ -73,6 +73,45 @@
         {%- endif -%}
     </div>
 {%- endpaginate -%}
+{% if section.settings.bottom-blog != blank %}
+{% assign bottom_blog = blogs[section.settings.bottom-blog] %}
+
+{% paginate bottom_blog.articles by 12 %}
+{%- for block in section.blocks -%}
+  {% assign count = 0 %}
+  {% if block.type == 'sidebar-img' %}
+  {% assign count = count | plus: 1 %}
+    
+  {% endif %}
+{%- endfor -%}
+
+<div class="grid {% if count > 0 %}grid-with-sidebar {% else %} blog-only-grid{% endif %}">
+<div class="blog-container">
+{% for bottom_articles in bottom_blog.articles %}
+<div class="blog-articles__article article">
+  {%- render 'article-card', article: bottom_articles, show_image: section.settings.show_image -%}
+</div>
+{% endfor %}
+</div>
+{% if count > 0 %}
+<div class="bottom-sidebar">
+  {%- for block in section.blocks -%}
+  {% case block.type %}
+    {% when 'second-sidebar-image' %}
+    {% if block.settings.image-link != blank %}
+      <a href="{{block.settings.image-link}}"><img src="{{block.settings.sidebar-img | img_url: 'grande'}}"></a>
+      {% else %}
+      <img src="{{block.settings.sidebar-img | img_url: 'grande'}}">
+    {% endif %}  
+  {% endcase %}
+    
+  {%- endfor -%}
+</div>
+{% endif %}
+</div>
+{% endpaginate %}
+  
+{% endif %}
 
 {% schema %}
 {
@@ -104,6 +143,15 @@
     {
       "type": "paragraph",
       "content": "t:sections.main-blog.settings.paragraph.content"
+    },{
+      "type": "header",
+      "content": "Bottom Blog",
+      "info": "You may Choose Secendory Blog to show at bottom here"
+    },
+    {
+      "type": "blog",
+      "id": "bottom-blog",
+      "label": "Bottom Blog"
     }
   ],
   "blocks": [
@@ -135,6 +183,22 @@
       "type": "link",
       "name": "t:sections.main-blog.blocks.link.name",
       "limit": 1
+    },{
+      "type": "second-sidebar-image",
+      "name": "second sidebar image",
+      "limit": 5,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "sidebar-img",
+          "label": "Sidebar Image"
+        },
+        {
+          "type": "url",
+          "id": "image-link",
+          "label": "sidebar image link"
+        }
+      ]
     }
   ]
 }
