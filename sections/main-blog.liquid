@@ -78,18 +78,15 @@
 
 {% paginate bottom_blog.articles by 12 %}
 {%- for block in section.blocks -%}
-  {% if block.type == 'sidebar-img' %}
-  {% capture i %}
-  si{%- unless forloop.last -%},
-  {%- endunless -%}
-  {% endcapture %}
-  {% assign count = i | split: ',' %}
- 
+  {% assign count = 0 %}
+  {% if block.type == 'second-sidebar-image' %}
+  
+  {% assign count = count | plus: 1 %}
     
   {% endif %}
 {%- endfor -%}
 
-<div class="grid {% if count.size > 0 %}grid-with-sidebar {% else %} blog-only-grid{% endif %}">
+<div class="grid {% if count > 0 %}grid-with-sidebar {% else %} blog-only-grid{% endif %}">
 <div class="blog-container">
 {% for bottom_articles in bottom_blog.articles %}
 <div class="blog-articles__article article">
