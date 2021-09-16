@@ -71,12 +71,20 @@
           "type": "link",
           "settings": {
           }
+        },
+        "003eea04-0607-405d-9f24-31799044b665": {
+          "type": "second-sidebar-image",
+          "settings": {
+            "sidebar-img": "shopify:\/\/shop_images\/image-2.png",
+            "image-link": ""
+          }
         }
       },
       "block_order": [
         "title",
         "summary",
-        "link"
+        "link",
+        "003eea04-0607-405d-9f24-31799044b665"
       ],
       "settings": {
         "show_image": true,
