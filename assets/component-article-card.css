@@ -1,7 +1,10 @@
 .articles-wrapper.grid {
   margin: 0 0 5rem 0;
 }
-
+.article-template__social-sharing{
+  display: flex;
+  align-items: center;
+}
 @media screen and (min-width: 750px) {
   .articles-wrapper.grid {
     margin-bottom: 7rem;
