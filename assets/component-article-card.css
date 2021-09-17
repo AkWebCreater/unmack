@@ -174,7 +174,7 @@ position: relative;
     position: relative;
   }
   .article-card__excerpt.bottom{
-    top: -101%;
+    top: calc(-100% - 20px);
     background-color:rgba(81,81,81,.85);
   }
 }
