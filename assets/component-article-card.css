@@ -158,8 +158,6 @@ position: relative;
 .article-card__footer {
   letter-spacing: 0.1rem;
   font-size: 1.4rem;
-  position: relative;
-  z-index: 2;
 }
 
 .article-card__footer:not(:last-child) {
