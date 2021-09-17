@@ -189,7 +189,11 @@ position: relative;
 
   }
 }
-
+@media (max-width:480px) {
+  .article-card:not(:last-child){
+    margin-bottom: 10px;
+  }
+}
 /* .article-card__link:not(:only-child) {
   margin-right: 3rem;
 }
