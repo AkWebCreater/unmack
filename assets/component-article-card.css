@@ -174,7 +174,8 @@ position: relative;
     position: relative;
   }
   .article-card__excerpt.bottom{
-    top: calc(-100% - 20px);
+    transform: translateY(-100%);
+    top: -25px;
     background-color:rgba(81,81,81,.85);
   }
 }
