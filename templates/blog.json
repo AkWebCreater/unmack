@@ -95,6 +95,23 @@
     "16317931435797d67e": {
       "type": "blog-bottom",
       "blocks": {
+        "963f672a-f4da-4c69-bb4d-fb0ef543e194": {
+          "type": "title",
+          "settings": {
+            "show_date": true,
+            "show_author": false
+          }
+        },
+        "4f5e6a96-c8df-4c20-bd7a-12d012e263dc": {
+          "type": "summary",
+          "settings": {
+          }
+        },
+        "30e5281b-2502-4cd1-9ceb-1408d68ebfcc": {
+          "type": "link",
+          "settings": {
+          }
+        },
         "01948312-aaf2-4cc2-a624-c6901b22a130": {
           "type": "second-sidebar-image",
           "settings": {
@@ -108,23 +125,19 @@
             "sidebar-img": "shopify:\/\/shop_images\/image-2.png",
             "image-link": ""
           }
-        },
-        "9c957b7a-49b2-4749-9683-e69eeb33f822": {
-          "type": "second-sidebar-image",
-          "disabled": true,
-          "settings": {
-            "sidebar-img": "shopify:\/\/shop_images\/all-policy_imsge.png",
-            "image-link": ""
-          }
         }
       },
       "block_order": [
+        "963f672a-f4da-4c69-bb4d-fb0ef543e194",
+        "4f5e6a96-c8df-4c20-bd7a-12d012e263dc",
+        "30e5281b-2502-4cd1-9ceb-1408d68ebfcc",
         "01948312-aaf2-4cc2-a624-c6901b22a130",
-        "a0ffbd3b-21ba-4e2c-8d77-cec1d353476c",
-        "9c957b7a-49b2-4749-9683-e69eeb33f822"
+        "a0ffbd3b-21ba-4e2c-8d77-cec1d353476c"
       ],
       "settings": {
         "show_image": true,
+        "blogs_menu": "",
+        "recipe_menu": "",
         "bottom-blog": "news"
       }
     },
