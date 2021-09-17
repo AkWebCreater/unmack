@@ -169,29 +169,13 @@ position: relative;
 .article-card__footer:last-child {
   margin-top: auto;
 }
-.article-card__excerpt.bottom{
-display: none;
-}
-.article-template__social-sharing{
-  color: var(--color-foreground-75);
-}
-.bottom-sidebar{
- display: none;
-}
 @media (min-width:1024px) {
-  .bottom-sidebar{
-    display: block;
-  }
-  .bottom .article-template__social-sharing{
-    color: #fff;
-  }
   .social-container.bottom .article-card__footer{
     padding-bottom: 10px;
     margin-right: 1.5rem;
   }
   .article-card__excerpt.bottom{
     position: absolute;
-    display: block;
     bottom: 0;
     right: 0;
     padding: 10px;
