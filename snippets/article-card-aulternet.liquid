@@ -36,13 +36,7 @@
                                         {{article.published_at | date: "%B %d, %Y"}}
                                     </span>
                                 {%- endif -%}
-                                <p class="article-card__excerpt bottom">
-                                    {%- if article.excerpt.size > 0 -%}
-                                        {{ article.excerpt | strip_html | truncatewords: 25 }}
-                                    {%- else -%}
-                                        {{ article.content | strip_html | truncatewords: 25 }}
-                                    {%- endif -%}
-                                </p>
+                                
                                 {%- if block.settings.show_author -%}
                                     <span class="">{{ article.author}}</span>
                                 {%- endif -%}
@@ -57,6 +51,13 @@
                                       {%- endif -%} Read
                                   </span>
                                   <div class="article-card__footer">
+                                    <p class="article-card__excerpt bottom">
+                                        {%- if article.excerpt.size > 0 -%}
+                                            {{ article.excerpt | strip_html | truncatewords: 25 }}
+                                        {%- else -%}
+                                            {{ article.content | strip_html | truncatewords: 25 }}
+                                        {%- endif -%}
+                                    </p>
                                     <span class="article-card__link" aria-label="{{ 'blogs.article.read_more_title' | t: title: article.title | escape }}">
                                         <a href="{{article.url}}">
                                           {{ 'blogs.article.read_more'  | t }}

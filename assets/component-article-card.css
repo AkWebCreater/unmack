@@ -4,7 +4,7 @@
 .article-template__social-sharing{
   display: flex;
   align-items: center;
-  position: relative;
+ 
 }
 .article-card__excerpt.bottom{
   position: absolute;
@@ -13,6 +13,7 @@
   padding: 5px;
   background-color: #515151;
   color: #fff;
+  z-index: 1;
 }
 @media screen and (min-width: 750px) {
   .articles-wrapper.grid {
@@ -47,6 +48,7 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 padding:0.5rem 0;
+position: relative;
 }
 
 .article-card .list-social__link{
@@ -130,6 +132,8 @@ padding:0.5rem 0;
 .article-card__footer {
   letter-spacing: 0.1rem;
   font-size: 1.4rem;
+  position: relative;
+  z-index: 2;
 }
 
 .article-card__footer:not(:last-child) {
