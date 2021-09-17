@@ -96,7 +96,7 @@ flex: 1;
     grid-column: span 3;
   }
 }
-.bottom-sidebar{
+.bottom-sidebar,.body--blog .banner__content{
   display: none;
  }
  .bottom-sidebar img{
