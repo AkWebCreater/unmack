@@ -61,9 +61,7 @@ position: relative;
   justify-content: space-between;
   color: #fff;
   padding-left: 10px;
-  padding-bottom: 10px;
   margin-left: 1.5rem;
-  margin-right: 1.5rem;
 }
 .social-container.bottom .circle-divider,.social-container.bottom .reading-time{
   align-self: flex-end;
@@ -181,12 +179,16 @@ display: none;
   .bottom .article-template__social-sharing{
     color: #fff;
   }
+  .social-container.bottom .article-card__footer{
+    padding-bottom: 10px;
+    margin-right: 1.5rem;
+  }
   .article-card__excerpt.bottom{
     position: absolute;
     display: block;
     bottom: 0;
     right: 0;
-    padding: 5px;
+    padding: 10px;
     padding-bottom: 4rem;
     background-color: #515151;
     color: #fff;
