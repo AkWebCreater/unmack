@@ -178,14 +178,29 @@ position: relative;
   .article-template__social-sharing{
     color: var(--color-foreground-75);
   }
+  .article-card__info{
+    position: relative;
+  }
+  .article-card__excerpt.bottom{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: -101%;
+    padding: 10px;
+   background-color:rgba(81,81,81,.85);
+    color: #fff;
+    z-index: 1;
+  }
 }
-@media screen and (min-width: 749px) {
+@media screen and (min-width: 750px) {
   .social-container.bottom .article-card__footer{
     flex: 1;
     padding-left: 10px;
     margin-left: 1.5rem;
     padding-bottom: 10px;
     margin-right: 1.5rem;
+      position: relative;
+      z-index: 2;
 
   }
 }
