@@ -5,8 +5,11 @@ grid-column: span 2;
 .blog-nav-link a{
   color: #fff;
   background: #ccc;
-  border: 1px solid rgb(150, 149, 149);
-  display: block;
+  border: 1px solid #969595;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
   border-radius: 4px;
   padding: 10px 20px;
   font-weight: 900;
@@ -38,11 +41,12 @@ gap: 10px;
   margin: 50px 0;
 }
 .blog-nav-link{
-flex: 1;
+flex:1;
 
 }
 .blogs-nav{
   display: flex;
+  flex-wrap: wrap;
   gap: 15px;
 }
 .blog-nav-link a:hover{
