@@ -60,10 +60,8 @@ position: relative;
   display: flex;
   justify-content: space-between;
   color: #fff;
-  padding-left: 10px;
-  margin-left: 1.5rem;
-  padding-bottom: 10px;
-    margin-right: 1.5rem;
+  margin: 0;
+  padding: 10px 0;
 }
 .social-container.bottom .circle-divider,.social-container.bottom .reading-time{
   align-self: flex-end;
@@ -184,8 +182,11 @@ position: relative;
 @media screen and (min-width: 749px) {
   .social-container.bottom .article-card__footer{
     flex: 1;
-    margin: 0;
-    padding: 10px 0;
+    padding-left: 10px;
+    margin-left: 1.5rem;
+    padding-bottom: 10px;
+    margin-right: 1.5rem;
+
   }
 }
 
