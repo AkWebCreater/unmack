@@ -60,6 +60,8 @@ position: relative;
   justify-content: space-between;
   color: #fff;
   padding-left: 10px;
+  padding-bottom: 10px;
+  margin-left: 1.5rem;
 }
 .social-container.bottom .circle-divider,.social-container.bottom .reading-time{
   align-self: flex-end;
