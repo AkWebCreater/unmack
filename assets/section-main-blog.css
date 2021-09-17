@@ -1,6 +1,9 @@
 .blog-articles .blog-page-title{
   grid-column: span 2;
   }
+  .body--blog h3{
+    font-weight: 700;
+  }
   .blogs-main-wrapper{
     display: grid;
   grid-template-columns: repeat(4,1fr);
