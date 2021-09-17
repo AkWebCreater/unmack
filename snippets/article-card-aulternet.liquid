@@ -55,6 +55,17 @@
                                       Minute
                                       {%- endif -%} Read
                                   </span>
+                                  <div class="article-card__footer">
+                                    <span class="article-card__link" aria-label="{{ 'blogs.article.read_more_title' | t: title: article.title | escape }}">
+                                        <a href="{{article.url}}">
+                                          {{ 'blogs.article.read_more'  | t }}
+                                        </a>
+    
+                                    </span>
+                                    {%- if article.comments_count > 0 and blog.comments_enabled? -%}
+                                        <span>{{ 'blogs.article.comments' | t: count: article.comments_count }}</span>
+                                    {%- endif -%}
+                                </div>
                                   <div class="article-template__social-sharing">
                                    <span>Share : </span> {% render 'social-sharing', share_title: article.title, share_permalink: article.url, share_image: article.image %}
                                   </div>
@@ -64,17 +75,7 @@
 
                      
                        
-                            <div class="article-card__footer">
-                                <span class="article-card__link" aria-label="{{ 'blogs.article.read_more_title' | t: title: article.title | escape }}">
-                                    <a href="{{article.url}}">
-                                      {{ 'blogs.article.read_more'  | t }}
-                                    </a>
-
-                                </span>
-                                {%- if article.comments_count > 0 and blog.comments_enabled? -%}
-                                    <span>{{ 'blogs.article.comments' | t: count: article.comments_count }}</span>
-                                {%- endif -%}
-                            </div>
+                            
               
             </div>
             
