@@ -58,9 +58,11 @@ position: relative;
   flex: 1;
   display: flex;
   justify-content: space-between;
+  color: #fff;
+}
+.article-card__footer .article-card__link,.article-card__footer .article-template__social-sharing{
   position: relative;
   z-index: 3;
-  color: #fff;
 }
 
 .article-card .list-social__link{
