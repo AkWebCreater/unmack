@@ -23,28 +23,29 @@
                                   {{ article.title | escape }}
                                 </a>
                                 </h2>
-                                {%- if block.settings.show_date -%}
+                                
+                            </header>
+                       
+                            {%- if article.excerpt.size > 0 or article.content.size > 0 -%}
+                                
+                                <div class="social-container">
+                                    {%- if block.settings.show_date -%}
                                     <span class="circle-divider">
                                         <span>Published
                                         </span>
                                         {{article.published_at | date: "%B %d, %Y"}}
                                     </span>
                                 {%- endif -%}
-                                {%- if block.settings.show_author -%}
-                                    <span class="">{{ article.author}}</span>
-                                {%- endif -%}
-                            </header>
-                       
-                            {%- if article.excerpt.size > 0 or article.content.size > 0 -%}
-                                <p class="article-card__excerpt">
+                                <p class="article-card__excerpt bottom">
                                     {%- if article.excerpt.size > 0 -%}
                                         {{ article.excerpt | strip_html | truncatewords: 5 }}
                                     {%- else -%}
                                         {{ article.content | strip_html | truncatewords: 5 }}
                                     {%- endif -%}
                                 </p>
-                                <div class="social-container">
-
+                                {%- if block.settings.show_author -%}
+                                    <span class="">{{ article.author}}</span>
+                                {%- endif -%}
                                   <span class="reading-time" title="Estimated read time">
                                       {% assign words = article.content | strip_html | split:' ' %}
                                       {%- assign readtime = words.size | divided_by: 200 | round | at_least: 1 -%}

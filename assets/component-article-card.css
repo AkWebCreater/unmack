@@ -4,6 +4,15 @@
 .article-template__social-sharing{
   display: flex;
   align-items: center;
+  position: relative;
+}
+.article-card__excerpt.bottom{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 5px;
+  background-color: #515151;
+  color: #fff;
 }
 @media screen and (min-width: 750px) {
   .articles-wrapper.grid {
