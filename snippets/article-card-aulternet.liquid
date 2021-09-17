@@ -38,9 +38,9 @@
                                 {%- endif -%}
                                 <p class="article-card__excerpt bottom">
                                     {%- if article.excerpt.size > 0 -%}
-                                        {{ article.excerpt | strip_html | truncatewords: 5 }}
+                                        {{ article.excerpt | strip_html | truncatewords: 25 }}
                                     {%- else -%}
-                                        {{ article.content | strip_html | truncatewords: 5 }}
+                                        {{ article.content | strip_html | truncatewords: 25 }}
                                     {%- endif -%}
                                 </p>
                                 {%- if block.settings.show_author -%}
