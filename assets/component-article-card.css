@@ -50,6 +50,17 @@ align-items: center;
 padding:0.5rem 0;
 position: relative;
 }
+.social-container.bottom{
+  justify-content: flex-start;
+}
+.social-container.bottom .article-card__footer{
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 3;
+  color: #fff;
+}
 
 .article-card .list-social__link{
   padding:0 1rem;
