@@ -99,6 +99,9 @@ flex: 1;
 .bottom-sidebar{
   display: none;
  }
+ .bottom-sidebar img{
+   width: 100%;
+ }
 @media (min-width:1024px) {
   .blog-container{
     grid-column: span 3;
