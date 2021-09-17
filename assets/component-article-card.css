@@ -174,8 +174,13 @@ position: relative;
 .article-card__excerpt.bottom{
 display: none;
 }
+.article-template__social-sharing{
+  color: var(--color-foreground-75);
+}
 @media (min-width:1024px) {
-  
+  .bottom .article-template__social-sharing{
+    color: var(--color-foreground-75);
+  }
   .article-card__excerpt.bottom{
     position: absolute;
     display: block;
