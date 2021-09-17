@@ -179,7 +179,7 @@ display: none;
 }
 @media (min-width:1024px) {
   .bottom .article-template__social-sharing{
-    color: var(--color-foreground-75);
+    color: #fff;
   }
   .article-card__excerpt.bottom{
     position: absolute;
