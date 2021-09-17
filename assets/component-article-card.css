@@ -175,6 +175,9 @@ position: relative;
 display: none;
 }
 @media (min-width:1024px) {
+  .social-container.bottom .article-card__footer{
+    color: inherit;
+  }
   .article-card__excerpt.bottom{
     position: absolute;
     display: block;
