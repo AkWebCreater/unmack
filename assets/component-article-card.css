@@ -167,7 +167,9 @@ position: relative;
 .article-card__footer:not(:last-child) {
   margin-bottom: 1rem;
 }
-
+.page-width.grid-with-sidebar{
+  padding: 0 2rem;
+} 
 .article-card__footer:last-child {
   margin-top: auto;
 }
