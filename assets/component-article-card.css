@@ -10,7 +10,7 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  padding: 5px;
+  padding: 10px;
   padding-bottom: 4rem;
   background-color: #515151;
   color: #fff;
@@ -172,16 +172,7 @@ position: relative;
   margin-top: auto;
 }
 @media (min-width:1024px) {
-  .article-card__excerpt.bottom{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding: 10px;
-    padding-bottom: 4rem;
-    background-color: #515151;
-    color: #fff;
-    z-index: 1;
-  }
+
 }
 
 /* .article-card__link:not(:only-child) {
