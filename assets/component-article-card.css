@@ -184,6 +184,8 @@ position: relative;
 @media screen and (min-width: 749px) {
   .social-container.bottom .article-card__footer{
     flex: 1;
+    margin: 0;
+    padding: 10px 0;
   }
 }
 
