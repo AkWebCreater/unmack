@@ -59,6 +59,16 @@ position: relative;
   display: flex;
   justify-content: space-between;
   color: #fff;
+  padding-left: 10px;
+}
+.social-container.bottom .circle-divider,.social-container.bottom .reading-time{
+  align-self: flex-end;
+  line-height: 1.3;
+}
+.social-container.bottom .article-card__link a{
+  color: #5a5a5a;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .article-card__footer .article-card__link,.article-card__footer .article-template__social-sharing{
   position: relative;
