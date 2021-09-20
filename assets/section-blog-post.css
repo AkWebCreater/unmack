@@ -188,3 +188,15 @@
 .social-container .list-social__link{
   padding: 0.5rem;
 }
+.article-template__title{
+  text-align: center;
+  text-transform: capitalize;
+}
+.article-header-card{
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 1px 1px 14px 3px rgba(0,0,0,0.75);
+-webkit-box-shadow: 1px 1px 14px 3px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 1px 14px 3px rgba(0,0,0,0.75);
+padding:10px 8px;
+}
