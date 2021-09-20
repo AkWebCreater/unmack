@@ -41,7 +41,7 @@
       {%- for block in section.blocks -%}
       {%- case block.type -%}
           {%- when 'title'-%}
-            <header class="page-width page-width--narrow">
+            <header class="">
               <h1 class="article-template__title" itemprop="headline">{{ article.title | escape }}</h1>
               <div class="article-categories">
 
@@ -73,7 +73,7 @@
             </header>
   
           {%- when 'content'-%}
-            <div class="article-template__content page-width page-width--narrow rte" itemprop="articleBody">
+            <div class="article-template__content rte" itemprop="articleBody">
                 {{ article.content }}
             </div>
       {%- endcase -%}
@@ -87,7 +87,7 @@
     </div>
     {%- if blog.comments_enabled? -%}
       <div class="article-template__comment-wrapper background-secondary">
-        <div id="comments" class="page-width page-width--narrow">
+        <div id="comments" class="">
           {%- if article.comments_count > 0 -%}
             {%- assign anchorId = '#Comments-' | append: article.id -%}
   
