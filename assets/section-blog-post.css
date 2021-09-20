@@ -180,10 +180,11 @@
   display: flex;
   width: 100%;
   text-align: center;
+  font-size: 12px;
   align-items: center;
 }
 .social-container > *{
-  flex:1;
+  flex: 1 1 auto;
 }
 .social-container .list-social__link{
   padding: 0.5rem;
@@ -201,5 +202,5 @@
 padding:10px 8px;
 }
 .date{
-  color: var(--color-foreground-75);
+  color: rgb(245, 134, 52);
 }

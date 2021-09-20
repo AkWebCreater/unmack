@@ -49,7 +49,7 @@
               
               <div class="social-container">
                 {%- if block.settings.blog_show_date -%}
-                <div class="date-wrapper"><span>Published</span><span class="circle-divider date" itemprop="dateCreated pubdate date Published">{{ article.published_at | date: "%B %d, %Y" }}</span></div>
+                <div class="date-wrapper"><span>Published </span><span class="circle-divider date" itemprop="dateCreated pubdate date Published">{{ article.published_at | date: "%B %d, %Y" }}</span></div>
               {%- endif -%}
               {%- if block.settings.blog_show_author -%}
                 <span class="" itemprop="author" itemscope itemtype="http://schema.org/Person">
