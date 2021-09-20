@@ -49,7 +49,7 @@
 
 .body--cart #MainContent .recently-viewed-products-bg{
   width: 100%;
-  box-shadow: none;
+  box-shadow: none !important;
 }
 .cart-attribute__field{
   line-height: 1;
