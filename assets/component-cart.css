@@ -64,26 +64,9 @@
 }
 }
 @media (max-width:991px) {
-  .body--cart .slick-arrow{
-    position: absolute;
-    top: 35%;
-    z-index: 22;
-  }
-  .body--cart .slick-next{
-   right: -15px;
-  }
-  .body--cart .slick-prev{
-    left: -15px;
-  }
-  .body--cart .slick-arrow .fa:before{
-    color: var(--color-pincode-validator);
-    font-size: 50px;
-  }
+
 }
-.body--cart #MainContent .recently-viewed-products-bg{
-  width: 100%;
-  box-shadow: none;
-}
+
 .cart-attribute__field{
   line-height: 1;
   display: flex;
