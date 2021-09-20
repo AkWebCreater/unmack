@@ -6,6 +6,24 @@
     top: 35%;
     z-index: 22;
   }
+  .slick-dots{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 10px;
+  }
+  .slick-dots button{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    color: transparent;
+    padding: 0;
+    border: 0;
+    background: #878787;
+  }
+  .slick-active button{
+    background:var(--color-pincode-validator);
+  }
   .recently-viewed-products .slick-next{
    right: -15px;
   }
