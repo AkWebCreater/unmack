@@ -6,6 +6,9 @@
     top: 35%;
     z-index: 22;
   }
+  .body--cart .recently-viewed-products-bg.page-width{
+    padding: 0;
+  }
   .slick-dots{
     display: flex;
     justify-content: center;
