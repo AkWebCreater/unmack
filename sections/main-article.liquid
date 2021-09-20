@@ -1,10 +1,8 @@
 {{ 'section-blog-post.css' | asset_url | stylesheet_tag }}
 <!-- article post page  started -->
-<div class="article-wrapper page-width">
-    <article class="article-template" itemscope itemtype="http://schema.org/BlogPosting">
-    {%- for block in section.blocks -%}
-      {%- case block.type -%}
-        {%- when 'featured_image'-%}
+{%- for block in section.blocks -%}
+{%- case block.type -%}
+{%- when 'featured_image'-%}
           {%- if article.image -%}
             <div class="article-template__hero-container">
               <div class="article-template__hero-{{ block.settings.image_height }} media"
@@ -26,10 +24,27 @@
               </div>
             </div>
           {%- endif -%}
+    
   
+    
+{%- endcase -%}
+{%- endfor -%}
+<div class="article-wrapper page-width">
+  <div class="breadcrums">
+            <!-- start snippet breadcrumbs-->
+            {% render 'breadcrums' %}
+            <!-- start snippet breadcrumbs-->
+        </div>
+ 
+    <article class="article-template" itemscope itemtype="http://schema.org/BlogPosting">
+    {%- for block in section.blocks -%}
+      {%- case block.type -%}
           {%- when 'title'-%}
             <header class="page-width page-width--narrow">
               <h1 class="article-template__title" itemprop="headline">{{ article.title | escape }}</h1>
+              <div class="article-categories">
+
+              </div>
               {%- if block.settings.blog_show_date -%}
                 <span class="circle-divider caption-with-letter-spacing" itemprop="dateCreated pubdate datePublished">{{ article.published_at | time_tag: format: 'month_year' }}</span>
               {%- endif -%}
@@ -38,6 +53,22 @@
                   <span itemprop="name">{{ article.author }}</span>
                 </span>
               {%- endif -%}
+              <div class="social-container">
+
+                <span class="reading-time" title="Estimated read time">
+                    {% assign words = article.content | strip_html | split:' ' %}
+                    {%- assign readtime = words.size | divided_by: 200 | round | at_least: 1 -%}
+                    {{ readtime }}
+                    {%- if readtime > 1 -%}
+                    Minutes
+                    {%- else -%}
+                    Minute
+                    {%- endif -%} Read
+                </span>
+                <div class="article-template__social-sharing">
+                 <span>Share : </span> {% render 'social-sharing', share_title: article.title, share_permalink: article.url, share_image: article.image %}
+                </div>
+              </div>
             </header>
   
           {%- when 'content'-%}
