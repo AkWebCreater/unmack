@@ -85,17 +85,17 @@
 
 .article-template__social-sharing {
   display: flex;
-  align-items: self-end;
+  align-items: center;
 }
-
-.article-template__social-sharing .social-sharing {
-  margin-left: -1.3rem;
-}
-
 .article-template__comment-wrapper {
   margin-top: 5rem;
 }
-
+.social-container > :first-child{
+  text-align-last: left;
+}
+.social-container > :last-child{
+  text-align-last: right;
+}
 @media screen and (min-width: 750px) {
   .article-template__comment-wrapper {
     margin-top: 6rem;
