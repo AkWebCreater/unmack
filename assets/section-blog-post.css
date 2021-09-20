@@ -195,8 +195,11 @@
 .article-header-card{
   border-radius: 8px;
   background-color: #fff;
-  box-shadow: 1px 1px 14px 3px rgba(0,0,0,0.75);
--webkit-box-shadow: 1px 1px 14px 3px rgba(0,0,0,0.75);
--moz-box-shadow: 1px 1px 14px 3px rgba(0,0,0,0.75);
+  box-shadow: 1px 1px 11px 1px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 1px 1px 11px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 1px 1px 11px 1px rgba(0,0,0,0.75);
 padding:10px 8px;
+}
+.date{
+  color: var(--color-foreground-75);
 }
