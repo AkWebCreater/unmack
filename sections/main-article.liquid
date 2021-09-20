@@ -76,11 +76,6 @@
             <div class="article-template__content page-width page-width--narrow rte" itemprop="articleBody">
                 {{ article.content }}
             </div>
-  
-          {%- when 'social_sharing'-%}
-            <div class="article-template__social-sharing page-width page-width--narrow">
-              {% render 'social-sharing', share_title: article.title, share_permalink: article.url, share_image: article.image %}
-            </div>
       {%- endcase -%}
     {%- endfor -%}
   
