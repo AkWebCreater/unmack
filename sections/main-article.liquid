@@ -30,14 +30,15 @@
 {%- endcase -%}
 {%- endfor -%}
 <div class="article-wrapper page-width">
-  <div class="breadcrums">
-            <!-- start snippet breadcrumbs-->
-            {% render 'breadcrums' %}
-            <!-- start snippet breadcrumbs-->
-        </div>
+
  
     <article class="article-template" itemscope itemtype="http://schema.org/BlogPosting">
-    {%- for block in section.blocks -%}
+      <div class="breadcrums">
+        <!-- start snippet breadcrumbs-->
+        {% render 'breadcrums' %}
+        <!-- start snippet breadcrumbs-->
+    </div>
+      {%- for block in section.blocks -%}
       {%- case block.type -%}
           {%- when 'title'-%}
             <header class="page-width page-width--narrow">
