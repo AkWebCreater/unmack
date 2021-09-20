@@ -86,6 +86,7 @@
 .article-template__social-sharing {
   display: flex;
   align-items: center;
+  justify-content: end;
 }
 .article-template__comment-wrapper {
   margin-top: 5rem;
@@ -179,7 +180,11 @@
   display: flex;
   width: 100%;
   text-align: center;
+  align-items: center;
 }
 .social-container > *{
   flex:1;
+}
+.social-container .list-social__link{
+  padding: 0.5rem;
 }
