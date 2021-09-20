@@ -148,9 +148,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 4rem;
   }
-  .article-sidebar{
-    display: none;
-  }
+  
 }
 
 .article-template__comment-warning {
@@ -209,6 +207,9 @@ padding:10px 8px;
 }
 @media (max-width:749px) {
   .article-template{
-    grid-column:span 3;
+    grid-column:span 4;
+  }
+  .article-sidebar{
+    display: none;
   }
 }
