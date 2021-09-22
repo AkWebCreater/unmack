@@ -49,7 +49,7 @@
       }
     },
     "ingredients":{
-      "type": "recently-viewed-products",
+      "type": "article-ingredient",
       "settings":{}
     }
   },
