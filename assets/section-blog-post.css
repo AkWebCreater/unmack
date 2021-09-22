@@ -205,6 +205,9 @@ padding:10px 8px;
 .date{
   color: rgb(245, 134, 52);
 }
+.article-card__title a{
+  text-decoration: none;
+}
 @media (max-width:749px) {
   .article-template{
     grid-column:span 4;

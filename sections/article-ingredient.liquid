@@ -1,0 +1,38 @@
+{{ 'section-blog-post.css' | asset_url | stylesheet_tag }}
+<!-- article post page  started -->
+<div class="ingredients page-width">
+    
+    {%- for block in section.blocks -%}
+    {% assign product = all_products[block.settings.ingredient] %}
+    {% render 'product-card',
+                product_card_product: product,
+                media_size: section.settings.image_ratio,
+                show_secondary_image: section.settings.show_secondary_image,
+                add_image_padding: section.settings.add_image_padding,
+                show_vendor: section.settings.show_vendor
+              %}
+    {%- endfor -%}
+</div>
+
+
+
+{% schema %}
+{
+  "name": "article ingredient",
+  "tag": "section",
+  "blocks": [
+    {
+      "type": "product",
+      "name": "product",
+      "limit": 4,
+      "settings": [
+        {
+          "type": "product",
+          "id": "ingredient",
+          "label": "Ingredient Product"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

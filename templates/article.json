@@ -47,10 +47,15 @@
         "number_of_recently_viewed_products": "8",
         "number_of_showing_products": "5"
       }
+    },
+    "ingredients":{
+      "type": "recently-viewed-products",
+      "settings":{}
     }
   },
   "order": [
     "main",
+    "ingredients",
     "16321171576b70e4c4"
   ]
 }
