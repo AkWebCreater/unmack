@@ -1,3 +1,4 @@
+{{ 'section-contact-form.css' | asset_url | stylesheet_tag }}
 <div class="contact page-width page-width--narrow spaced-section">
     {%- form 'contact', id: 'ContactForm' -%}
       {%- if form.posted_successfully? -%}
