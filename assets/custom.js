@@ -18,3 +18,36 @@ var empt = $('.cart--wrapper.is-empty').length;
 if(empt){
   $('.cart__footer-wrapper').hide();
 } 
+
+// custom add t cart
+function addToCart(qnt,id){
+  $.ajax({
+    type: 'POST',
+    url: '/cart/add.js',
+    async:false,
+    data: {
+      quantity: qnt,
+      id: id
+    },
+    dataType: 'json', 
+    success: function (data) { 
+//           $('#CartCount span:first').text(data.quantity);
+      console.log(data.quantity);
+      alert('added to cart')
+    } 
+  });
+}
+// add cart
+$(document).on('click','.add-cart',function(){ 
+ var product = $(this).parent();
+   var id =  product.find('.var-id').data("var-id")
+   addToCart(1,id)
+ })
+// bulk add
+$(document).on('click','#bulk-add-button',function(){ 
+   $('.ingredients-inner .grid__item').each(function(){
+    var id =  $(this).find('.var-id').data("var-id")
+    addToCart(1,id)
+  })
+  
+  })

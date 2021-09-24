@@ -1,0 +1,96 @@
+{{ 'section-blog-post.css' | asset_url | stylesheet_tag }}
+{{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
+
+<link rel="preload" href="{{ 'component-card.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="{{ 'component-price.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="{{ 'component-badge.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<!-- article post page  started -->
+<div class="ingredients page-width">
+    <div class="ingredients-inner grid grid--2-col grid--3-col-tablet grid--one-third-max grid--4-col-desktop grid--quarter-max negative-margin">
+
+        {%- for block in section.blocks -%}
+        {% assign product = all_products[block.settings.ingredient] %}
+  <div class="grid__item">
+    {% render 'product-card',
+    product_card_product: product,
+    media_size: section.settings.image_ratio,
+    show_secondary_image: section.settings.show_secondary_image,
+    add_image_padding: section.settings.add_image_padding,
+    show_vendor: section.settings.show_vendor
+  %}
+
+  <div  class="btn add-cart">Add to cart</div>
+  </div>
+        {%- endfor -%}
+    </div>
+    <div id="bulk-add-button" class="bulk-add-button btn">
+        Add All Umanac Ingredients to your cart
+    </div>
+</div>
+
+
+
+{% schema %}
+{
+  "name": "article ingredient",
+  "tag": "section",
+  "settings":[
+  {
+    "type": "header",
+    "content": "t:sections.main-collection-product-grid.settings.header__3.content"
+  },
+  {
+    "type": "select",
+    "id": "image_ratio",
+    "options": [
+      {
+        "value": "adapt",
+        "label": "t:sections.main-collection-product-grid.settings.image_ratio.options__1.label"
+      },
+      {
+        "value": "portrait",
+        "label": "t:sections.main-collection-product-grid.settings.image_ratio.options__2.label"
+      },
+      {
+        "value": "square",
+        "label": "t:sections.main-collection-product-grid.settings.image_ratio.options__3.label"
+      }
+    ],
+    "default": "adapt",
+    "label": "t:sections.main-collection-product-grid.settings.image_ratio.label"
+  },
+  {
+    "type": "checkbox",
+    "id": "show_secondary_image",
+    "default": false,
+    "label": "t:sections.main-collection-product-grid.settings.show_secondary_image.label"
+  },
+  {
+    "type": "checkbox",
+    "id": "add_image_padding",
+    "default": false,
+    "label": "t:sections.main-collection-product-grid.settings.add_image_padding.label"
+  },
+  {
+    "type": "checkbox",
+    "id": "show_vendor",
+    "default": false,
+    "label": "t:sections.main-collection-product-grid.settings.show_vendor.label"
+  }
+  ],
+  "blocks": [
+    {
+      "type": "product",
+      "name": "product",
+      "limit": 4,
+      "settings": [
+        {
+          "type": "product",
+          "id": "ingredient",
+          "label": "Ingredient Product"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

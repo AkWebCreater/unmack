@@ -1,1 +1,94 @@
-{"sections":{"main":{"type":"main-article","blocks":{"featured_image":{"type":"featured_image","settings":{}},"title":{"type":"title","settings":{}},"content":{"type":"content","settings":{}},"social_sharing":{"type":"social_sharing","settings":{}}},"block_order":["featured_image","title","content","social_sharing"],"settings":{}}},"order":["main"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "featured_image": {
+          "type": "featured_image",
+          "settings": {
+            "image_height": "adapt"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "blog_show_date": true,
+            "blog_show_author": false
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {
+          }
+        },
+        "social_sharing": {
+          "type": "social_sharing",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "featured_image",
+        "title",
+        "content",
+        "social_sharing"
+      ],
+      "settings": {
+      }
+    },
+    "ingredients": {
+      "type": "article-ingredient",
+      "blocks": {
+        "29014f4e-9551-4a25-89e5-691842a335d0": {
+          "type": "product",
+          "settings": {
+            "ingredient": "cow-ghee-range"
+          }
+        },
+        "10bac984-272d-471f-b690-5f34c17c1448": {
+          "type": "product",
+          "settings": {
+            "ingredient": "acana-adult-small-breed-dry-dog-food"
+          }
+        },
+        "546a5d78-6242-428e-95ca-397a87ac507d": {
+          "type": "product",
+          "settings": {
+            "ingredient": "organic-cow-ghee"
+          }
+        },
+        "a207e098-8400-4f66-a29a-d0b0aed9a647": {
+          "type": "product",
+          "settings": {
+            "ingredient": "organic-cow-ghee"
+          }
+        }
+      },
+      "block_order": [
+        "29014f4e-9551-4a25-89e5-691842a335d0",
+        "10bac984-272d-471f-b690-5f34c17c1448",
+        "546a5d78-6242-428e-95ca-397a87ac507d",
+        "a207e098-8400-4f66-a29a-d0b0aed9a647"
+      ],
+      "settings": {
+      }
+    },
+    "16321171576b70e4c4": {
+      "type": "recently-viewed-products",
+      "settings": {
+        "display_recently_viewed_products": true,
+        "recently_viewed_products_title": "Recently Viewed Products",
+        "section_title": "Today's Deal",
+        "shop_all_text": "Shop All",
+        "shop_all_url": "",
+        "number_of_recently_viewed_products": "8",
+        "number_of_showing_products": "5"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "ingredients",
+    "16321171576b70e4c4"
+  ]
+}

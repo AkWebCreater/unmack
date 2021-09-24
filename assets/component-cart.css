@@ -44,45 +44,12 @@
   padding:15px 2rem;
   gap: 20px;
 }
-.slick-dots{
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  gap: 10px;
+
 }
-.slick-dots button{
-  width: 10px;
-  height: 10px;
-  border-radius: 100%;
-  color: transparent;
-  padding: 0;
-  border: 0;
-  background: #878787;
-}
-.slick-active button{
-  background:var(--color-pincode-validator);
-}
-}
-@media (max-width:991px) {
-  .body--cart .slick-arrow{
-    position: absolute;
-    top: 35%;
-    z-index: 22;
-  }
-  .body--cart .slick-next{
-   right: -15px;
-  }
-  .body--cart .slick-prev{
-    left: -15px;
-  }
-  .body--cart .slick-arrow .fa:before{
-    color: var(--color-pincode-validator);
-    font-size: 50px;
-  }
-}
+
 .body--cart #MainContent .recently-viewed-products-bg{
   width: 100%;
-  box-shadow: none;
+  box-shadow: none !important;
 }
 .cart-attribute__field{
   line-height: 1;

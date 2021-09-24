@@ -1,14 +1,4 @@
-{% comment %}
-    Renders an article card for a given blog with settings to either show the image or not.
-    
-        Accepts:
-        - blog: {Object} Blog object
-        - article: {Object} Article object
-        - show_image: {String} The setting either show the article image or not. If it's not included it will show the image by default
-    
-        Usage:
-        {% render 'article-card' blog: blog, article: article, show_image: section.settings.show_image %}
-{% endcomment %}
+
 <article class="article-card{% if article.image == blank or show_image == false %} article-card--no-image{% endif %}" aria-labelledby="Article-{{ article.id }}">
     <div  class="article-content motion-reduce">
         {%- if show_image == true and article.image -%}
@@ -25,9 +15,7 @@
             </div>
             {%- endif -%}
             <div class="article-card__info">
-                {%- for block in section.blocks -%}
-                    {%- case block.type -%}
-                        {%- when 'title' -%}
+               
                             <header class="article-card__header">
                                 <h2 class="article-card__title" id="Article-{{ article.id }}">
                                 <a href="{{article.url}}" >
@@ -35,60 +23,62 @@
                                   {{ article.title | escape }}
                                 </a>
                                 </h2>
-                                {%- if block.settings.show_date -%}
+                                
+                            </header>
+                       
+                            {%- if article.excerpt.size > 0 or article.content.size > 0 -%}
+                                
+                                <div class="social-container bottom">
+                                   
                                     <span class="circle-divider">
                                         <span>Published
                                         </span>
-                                        <span class="date">{{article.published_at | date: "%B %d, %Y"}}</span>
+                                       <span class="date"> {{article.published_at | date: "%B %d, %Y"}}</span>
                                     </span>
-                                {%- endif -%}
+                                
+                                
                                 {%- if block.settings.show_author -%}
                                     <span class="">{{ article.author}}</span>
                                 {%- endif -%}
-                            </header>
-                        {%- when 'summary' -%}
-                            {%- if article.excerpt.size > 0 or article.content.size > 0 -%}
-                                <p class="article-card__excerpt">
-                                    {%- if article.excerpt.size > 0 -%}
-                                        {{ article.excerpt | strip_html | truncatewords: 5 }}
-                                    {%- else -%}
-                                        {{ article.content | strip_html | truncatewords: 5 }}
-                                    {%- endif -%}
-                                </p>
-                                <div class="social-container">
-
                                   <span class="reading-time" title="Estimated read time">
                                       {% assign words = article.content | strip_html | split:' ' %}
                                       {%- assign readtime = words.size | divided_by: 200 | round | at_least: 1 -%}
                                       {{ readtime }}
                                       {%- if readtime > 1 -%}
-                                      Minutes
+                                      Minutes 
                                       {%- else -%}
-                                      Minute
-                                      {%- endif -%} Read
+                                      Minute 
+                                      {%- endif -%}&nbsp;Read
                                   </span>
-                                  <div class="article-template__social-sharing">
-                                   <span>Share : </span> {% render 'social-sharing', share_title: article.title, share_permalink: article.url, share_image: article.image %}
-                                  </div>
+                                  <div class="article-card__footer">
+                                    <p class="article-card__excerpt bottom">
+                                        {%- if article.excerpt.size > 0 -%}
+                                            {{ article.excerpt | strip_html | truncatewords: 25 }}
+                                        {%- else -%}
+                                            {{ article.content | strip_html | truncatewords: 25 }}
+                                        {%- endif -%}
+                                    </p>
+                                    <span class="article-card__link" aria-label="{{ 'blogs.article.read_more_title' | t: title: article.title | escape }}">
+                                        <a href="{{article.url}}">
+                                          {{ 'blogs.article.read_more'  | t }}
+                                        </a>
+    
+                                    </span>
+                                    {%- if article.comments_count > 0 and blog.comments_enabled? -%}
+                                        <span>{{ 'blogs.article.comments' | t: count: article.comments_count }}</span>
+                                    {%- endif -%}
+                                    <div class="article-template__social-sharing">
+                                     <span>Share : </span> {% render 'social-sharing', share_title: article.title, share_permalink: article.url, share_image: article.image %}
+                                    </div>
+                                </div>
                                 </div>
                                 
                             {%- endif -%}
 
-                        {%- when 'link' -%}
+                     
                        
-                            <div class="article-card__footer">
-                                <span class="article-card__link" aria-label="{{ 'blogs.article.read_more_title' | t: title: article.title | escape }}">
-                                    <a href="{{article.url}}">
-                                      {{ 'blogs.article.read_more'  | t }}
-                                    </a>
-
-                                </span>
-                                {%- if article.comments_count > 0 and blog.comments_enabled? -%}
-                                    <span>{{ 'blogs.article.comments' | t: count: article.comments_count }}</span>
-                                {%- endif -%}
-                            </div>
-                    {%- endcase -%}
-                {%- endfor -%}
+                            
+              
             </div>
             
           </div>
