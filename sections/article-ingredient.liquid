@@ -1,17 +1,21 @@
 {{ 'section-blog-post.css' | asset_url | stylesheet_tag }}
 <!-- article post page  started -->
 <div class="ingredients page-width">
-    
-    {%- for block in section.blocks -%}
-    {% assign product = all_products[block.settings.ingredient] %}
+    <div class="grid grid--2-col grid--3-col-tablet grid--one-third-max grid--4-col-desktop grid--quarter-max negative-margin">
+
+        {%- for block in section.blocks -%}
+        {% assign product = all_products[block.settings.ingredient] %}
+  <div class="grid__item">
     {% render 'product-card',
-                product_card_product: product,
-                media_size: section.settings.image_ratio,
-                show_secondary_image: section.settings.show_secondary_image,
-                add_image_padding: section.settings.add_image_padding,
-                show_vendor: section.settings.show_vendor
-              %}
-    {%- endfor -%}
+    product_card_product: product,
+    media_size: section.settings.image_ratio,
+    show_secondary_image: section.settings.show_secondary_image,
+    add_image_padding: section.settings.add_image_padding,
+    show_vendor: section.settings.show_vendor
+  %}
+  </div>
+        {%- endfor -%}
+    </div>
 </div>
 
 
