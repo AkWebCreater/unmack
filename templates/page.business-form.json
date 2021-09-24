@@ -23,7 +23,7 @@
           "type":"business-form",
           "settings":{}
       },
-      "recently viwed":{
+      "recently-viwed":{
           "type":"recently-viewed-products",
           "settings":{}
       }
@@ -32,7 +32,7 @@
         "banner",
       "main",
       "form",
-      "recently viwed"
+      "recently-viwed"
     ]
   }
   

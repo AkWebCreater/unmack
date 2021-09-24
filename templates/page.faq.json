@@ -16,7 +16,7 @@
              
             }
           },
-          "bottom-Links":{
+          "bottom-links":{
             "type":"faq-bottom-links",
             "settings":{
 
@@ -36,7 +36,7 @@
     "order": [
         "banner",
       "main",
-      "bottom-Links",
+      "bottom-links",
       "social-connection",
       "recently-viwed"
     ]
