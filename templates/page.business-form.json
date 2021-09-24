@@ -14,11 +14,16 @@
           "top_link": "",
           "bottom_link": ""
         }
+      },
+      "form":{
+          "type":"business-form",
+          "settings":{}
       }
     },
     "order": [
         "banner",
-      "main"
+      "main",
+      "form"
     ]
   }
   
