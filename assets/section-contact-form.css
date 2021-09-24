@@ -1,9 +1,20 @@
 .contact img {
   max-width: 100%;
 }
-
+.title h3{
+  color: #878787;
+  text-align: center;
+}
+.inner{
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
 .contact .field {
   margin-bottom: 1.5rem;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+  color: #7b7b7b;
+  border-color: #7b7b7b;
 }
 
 @media screen and (min-width: 750px) {
