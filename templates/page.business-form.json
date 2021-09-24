@@ -1,0 +1,23 @@
+{
+    "sections": {
+        "banner": {
+            "type": "banner",
+            "settings": {
+              
+            }
+          },
+      "main": {
+        "type": "main-page",
+        "settings": {
+          "top_img": "shopify:\/\/shop_images\/all-policy_imsge.png",
+          "bottom_img": "shopify:\/\/shop_images\/image-2.png",
+          "top_link": "",
+          "bottom_link": ""
+        }
+      }
+    },
+    "order": [
+      "main"
+    ]
+  }
+  

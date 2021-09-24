@@ -33,7 +33,7 @@ function addToCart(qnt,id){
     success: function (data) { 
 //           $('#CartCount span:first').text(data.quantity);
       console.log(data.quantity);
-      alert('added to cart')
+    
     } 
   });
 }
