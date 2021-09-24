@@ -18,10 +18,15 @@
   color:#fff;
   margin: auto;
   width: 80%;
+  cursor: pointer;
 }
 .bulk-add-button{
   width:fit-content;
   padding: 5px 15px;
+  
+}
+.price{
+  justify-content: center !important;
 }
 .ingredients-inner{
   border-radius: 4px;
