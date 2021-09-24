@@ -5,13 +5,14 @@
   color: #878787;
   text-align: center;
 }
-.inner{
+.form-inner-wrapper{
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 8px;
+  padding: 30px;
 }
 .contact .field {
   margin-bottom: 1.5rem;
-  border-radius: 4px;
+  border-radius: 8px;
   background-color: #f5f5f5;
   color: #7b7b7b;
   border-color: #7b7b7b;

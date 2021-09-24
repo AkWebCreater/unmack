@@ -1,8 +1,8 @@
 {{ 'section-contact-form.css' | asset_url | stylesheet_tag }}
 <div class="contact page-width spaced-section">
-    <div class="inner">
+    <div class="form-inner-wrapper">
         <div class="title">
-            <h3>Business Form</h3>
+            <h3 class="h1">Business Form</h3>
         </div>
         {%- form 'contact', id: 'ContactForm' -%}
           {%- if form.posted_successfully? -%}
