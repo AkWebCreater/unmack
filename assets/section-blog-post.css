@@ -1,7 +1,7 @@
 .article-template > *:first-child:not(.article-template__hero-container) {
   margin-top: 5rem;
 }
-.media--square{
+.ingredients .media{
   padding-bottom: 100%;
 }
 .article-template__hero-container {
