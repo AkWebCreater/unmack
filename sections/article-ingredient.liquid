@@ -19,6 +19,9 @@
     show_vendor: section.settings.show_vendor
   %}
   </div>
+  {%- unless forloop.last -%}
+      <span class="plus-icon">+</span>
+  {%- endunless -%}
         {%- endfor -%}
     </div>
 </div>
