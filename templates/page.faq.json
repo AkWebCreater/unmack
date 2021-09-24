@@ -1,44 +1,41 @@
 {
-    "sections": {
-        "banner": {
-            "type": "banner",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Untitled-1.png",
-              "desktop_text_box_position": "center",
-              "color_scheme": "background-1",
-              "stack_images_on_mobile": true,
-              "adapt_height_first_image": false
-            }
-          },
-          "main": {
-            "type": "main-page",
-            "settings": {
-             
-            }
-          },
-          "bottom-links":{
-            "type":"faq-bottom-links",
-            "settings":{
-
-            }
-          },
-          "social-connection":{
-              "type":"social-connect",
-              "settings":{
-
-              }
-          },
-      "recently-viwed":{
-          "type":"recently-viewed-products",
-          "settings":{}
+  "sections": {
+    "banner": {
+      "type": "banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Untitled-1.png",
+        "desktop_text_box_position": "center",
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "adapt_height_first_image": false
       }
     },
-    "order": [
-        "banner",
-      "main",
-      "bottom-links",
-      "social-connection",
-      "recently-viwed"
-    ]
-  }
-  
+    "main": {
+      "type": "main-page",
+      "settings": {
+      }
+    },
+    "bottom-links": {
+      "type": "faq-bottom-links",
+      "settings": {
+      }
+    },
+    "social-connection": {
+      "type": "social-connect",
+      "settings": {
+      }
+    },
+    "recently-viwed": {
+      "type": "recently-viewed-products",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "main",
+    "bottom-links",
+    "social-connection",
+    "recently-viwed"
+  ]
+}
