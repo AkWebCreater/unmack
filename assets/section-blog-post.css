@@ -4,6 +4,9 @@
 .ingredients .media{
   padding-bottom: 100%;
 }
+.ingredients  *{
+  text-align: center;
+}
 .article-template__hero-container {
   max-width: 130rem;
   margin: 0 auto;
@@ -18,6 +21,7 @@
 }
 .bulk-add-button{
   width:fit-content;
+  padding: 5px 15px;
 }
 .ingredients-inner{
   border-radius: 4px;
