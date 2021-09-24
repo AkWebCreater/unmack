@@ -14,9 +14,18 @@
   text-align: center;
   color:#fff;
   margin: auto;
+  width: 80%;
 }
 .bulk-add-button{
-  width: 100%;
+  width:fit-content;
+}
+.ingredients-inner{
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 1px 1px 8px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 1px 1px 8px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 1px 1px 8px 0px rgba(0,0,0,0.75);
+padding:10px 8px;
 }
 @media screen and (min-width: 1320px) {
   .article-template__hero-container:first-child {

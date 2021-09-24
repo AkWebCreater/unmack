@@ -6,7 +6,7 @@
 <link rel="preload" href="{{ 'component-badge.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <!-- article post page  started -->
 <div class="ingredients page-width">
-    <div class="grid grid--2-col grid--3-col-tablet grid--one-third-max grid--4-col-desktop grid--quarter-max negative-margin">
+    <div class="ingredients-inner grid grid--2-col grid--3-col-tablet grid--one-third-max grid--4-col-desktop grid--quarter-max negative-margin">
 
         {%- for block in section.blocks -%}
         {% assign product = all_products[block.settings.ingredient] %}
@@ -22,9 +22,9 @@
   <div class="btn">Add to cart</div>
   </div>
         {%- endfor -%}
+    </div>
     <div class="bulk-add-button btn">
         Add All Umanac Ingredients to your cart
-    </div>
     </div>
 </div>
 
