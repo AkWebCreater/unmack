@@ -36,6 +36,43 @@
       "settings": {
       }
     },
+    "ingredients": {
+      "type": "article-ingredient",
+      "blocks": {
+        "29014f4e-9551-4a25-89e5-691842a335d0": {
+          "type": "product",
+          "settings": {
+            "ingredient": "cow-ghee-range"
+          }
+        },
+        "10bac984-272d-471f-b690-5f34c17c1448": {
+          "type": "product",
+          "settings": {
+            "ingredient": "acana-adult-small-breed-dry-dog-food"
+          }
+        },
+        "546a5d78-6242-428e-95ca-397a87ac507d": {
+          "type": "product",
+          "settings": {
+            "ingredient": "organic-cow-ghee"
+          }
+        },
+        "a207e098-8400-4f66-a29a-d0b0aed9a647": {
+          "type": "product",
+          "settings": {
+            "ingredient": "organic-cow-ghee"
+          }
+        }
+      },
+      "block_order": [
+        "29014f4e-9551-4a25-89e5-691842a335d0",
+        "10bac984-272d-471f-b690-5f34c17c1448",
+        "546a5d78-6242-428e-95ca-397a87ac507d",
+        "a207e098-8400-4f66-a29a-d0b0aed9a647"
+      ],
+      "settings": {
+      }
+    },
     "16321171576b70e4c4": {
       "type": "recently-viewed-products",
       "settings": {
@@ -47,10 +84,6 @@
         "number_of_recently_viewed_products": "8",
         "number_of_showing_products": "5"
       }
-    },
-    "ingredients":{
-      "type": "article-ingredient",
-      "settings":{}
     }
   },
   "order": [
