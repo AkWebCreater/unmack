@@ -1,24 +1,27 @@
 {
-    "sections": {
-        "banner": {
-            "type": "banner",
-            "settings": {
-              
-            }
-          },
-      "main": {
-        "type": "main-page",
-        "settings": {
-          "top_img": "shopify:\/\/shop_images\/all-policy_imsge.png",
-          "bottom_img": "shopify:\/\/shop_images\/image-2.png",
-          "top_link": "",
-          "bottom_link": ""
-        }
+  "sections": {
+    "banner": {
+      "type": "banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Untitled-1.png",
+        "desktop_text_box_position": "center",
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "adapt_height_first_image": false
       }
     },
-    "order": [
-        "banner",
-      "main"
-    ]
-  }
-  
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "top_img": "shopify:\/\/shop_images\/all-policy_imsge.png",
+        "bottom_img": "shopify:\/\/shop_images\/image-2.png",
+        "top_link": "",
+        "bottom_link": ""
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "main"
+  ]
+}
