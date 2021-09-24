@@ -10,6 +10,12 @@
   border-radius: 8px;
   padding: 30px;
 }
+.form-inner-wrapper .field > *{
+
+  border-radius: 8px;
+  outline: 0 !important;
+  box-shadow: none !important;
+}
 .contact .field {
   margin-bottom: 1.5rem;
   border-radius: 8px;
