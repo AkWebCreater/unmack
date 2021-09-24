@@ -8,18 +8,22 @@
   <h1 class="main-page-title page-title h0">
     {{ page.title | escape }}
   </h1>
-  <div class="page-wrapper">
+  <div class="page-wrapper {% if section.settings.bottom_img != blank %}sidebar{% endif %}">
   <div class="rte">
     {{ page.content }}
   </div>
   
- 
-  <div class="images-top"><a href="{{section.settings.top_link}}"><img class="desk" src="{{section.settings.top_img |img_url:'grande'}}">
-  <img class="mobile" src="{{section.settings.top_img_mob |img_url:'grande'}}">
-  </a></div>
+  {% if section.settings.bottom_img != blank %}
   <div class="images-bottom"><a href="{{section.settings.bottom_link}}"><img class="desk" src="{{section.settings.bottom_img | img_url:'grande'}}">
   <img class="mobile" src="{{section.settings.bottom_img_mob | img_url:'grande'}}">
   </a></div>
+  {% endif %}
+  {% if section.settings.top_img != blank %}
+  <div class="images-top"><a href="{{section.settings.top_link}}"><img class="desk" src="{{section.settings.top_img |img_url:'grande'}}">
+  <img class="mobile" src="{{section.settings.top_img_mob |img_url:'grande'}}">
+  </a></div>
+  {% endif %}
+    
   </div>
 
 </div>

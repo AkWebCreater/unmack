@@ -13,17 +13,22 @@
           "main": {
             "type": "main-page",
             "settings": {
-              "top_img": "shopify:\/\/shop_images\/all-policy_imsge.png",
-              "bottom_img": "shopify:\/\/shop_images\/image-2.png",
-              "top_link": "",
-              "bottom_link": ""
+             
             }
           },
-      "form":{
-          "type":"business-form",
-          "settings":{}
-      },
-      "recently viwed":{
+          "bottom-Links":{
+            "type":"faq-bottom-links",
+            "settings":{
+
+            }
+          },
+          "social-connection":{
+              "type":"social-connect",
+              "settings":{
+
+              }
+          },
+      "recently-viwed":{
           "type":"recently-viewed-products",
           "settings":{}
       }
@@ -31,8 +36,9 @@
     "order": [
         "banner",
       "main",
-      "form",
-      "recently viwed"
+      "bottom-Links",
+      "social-connection",
+      "recently-viwed"
     ]
   }
   
