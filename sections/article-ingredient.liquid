@@ -1,4 +1,9 @@
 {{ 'section-blog-post.css' | asset_url | stylesheet_tag }}
+{{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
+
+<link rel="preload" href="{{ 'component-card.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="{{ 'component-price.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="{{ 'component-badge.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <!-- article post page  started -->
 <div class="ingredients page-width">
     <div class="grid grid--2-col grid--3-col-tablet grid--one-third-max grid--4-col-desktop grid--quarter-max negative-margin">
