@@ -1,9 +1,13 @@
 .contact img {
   max-width: 100%;
 }
+.title{
+  margin: 0;
+}
 .title h3{
   color: #878787;
   text-align: center;
+  margin: 0;
 }
 .form-inner-wrapper{
   border: 1px solid #ccc;
@@ -51,4 +55,26 @@
 
 .grecaptcha-badge {
   visibility: hidden;
+}
+/* custome */
+.contact__fields.selecte{
+  grid-template-columns: auto 1fr;
+  margin-bottom: 2rem;
+}
+.selecte > *{
+  color: inherit;
+  padding: 1.5rem;
+}
+.selecte select{
+outline: 0;
+box-shadow: none;
+}
+.selecte option{
+  padding: 1.5rem;
+  border-bottom: 1px solid #ccc;
+  background-color: #f8b17e;
+}
+.selecte option:hover{
+  background-color: #f58634;
+  color: #fff;
 }
