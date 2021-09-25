@@ -61,7 +61,8 @@ $(document).on('click','#bulk-add-button',function(){
       $(this).closest('.bottom-card').find('.popup-layer').addClass('open');
       $('body').addClass('scroll-block')
     })
-    $(document).on('click','.overlay',function(){
+    $(document).on('click','.overlay',function(e){
+      e.stopPropagation()
       $(this).closest('.popup-layer').removeClass('open');
       $('body').removeClass('scroll-block');
     })
