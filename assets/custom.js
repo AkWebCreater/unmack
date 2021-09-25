@@ -59,7 +59,7 @@ $(document).on('click','#bulk-add-button',function(){
     $('.card-btn').click(function(){
       $(this).closest('.bottom-card').find('.popup-layer').addClass('open');
     })
-    $('overlay').click(function(){
+    $('.overlay').click(function(){
       $(this).closest('.popup-layer').removeClass('open');
     })
   })
