@@ -59,6 +59,46 @@
     },
     "social-connection": {
       "type": "social-connect",
+      "blocks": {
+        "cd914c41-3eb7-4e14-9506-19989b069a0d": {
+          "type": "social-card",
+          "settings": {
+            "card-name": "Facebook",
+            "card-icon": "shopify:\/\/shop_images\/Untitled-2_ddf0f787-6850-4714-848f-7d446f050572.png",
+            "icon-url": ""
+          }
+        },
+        "c8bc86ca-157b-46ae-b3ae-e6828edc3d06": {
+          "type": "social-card",
+          "settings": {
+            "card-name": "Instagram",
+            "card-icon": "shopify:\/\/shop_images\/Untitled-3.png",
+            "icon-url": ""
+          }
+        },
+        "06e8bbdf-d5d9-49e8-b682-6fa75320847c": {
+          "type": "social-card",
+          "settings": {
+            "card-name": "Twitter",
+            "card-icon": "shopify:\/\/shop_images\/Untitled-4.png",
+            "icon-url": ""
+          }
+        },
+        "88648ea9-ab05-40ea-aa69-b7419626170a": {
+          "type": "social-card",
+          "settings": {
+            "card-name": "Pintrest",
+            "card-icon": "shopify:\/\/shop_images\/Untitled-5.png",
+            "icon-url": ""
+          }
+        }
+      },
+      "block_order": [
+        "cd914c41-3eb7-4e14-9506-19989b069a0d",
+        "c8bc86ca-157b-46ae-b3ae-e6828edc3d06",
+        "06e8bbdf-d5d9-49e8-b682-6fa75320847c",
+        "88648ea9-ab05-40ea-aa69-b7419626170a"
+      ],
       "settings": {
         "title": "Social Connect"
       }
