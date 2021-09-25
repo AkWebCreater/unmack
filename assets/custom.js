@@ -66,7 +66,7 @@ $(document).on('click','#bulk-add-button',function(){
       $(this).closest('.popup-layer').removeClass('open');
       $('body').removeClass('scroll-block');
     })
-    $('.popup-layer').click(function(e){
+    $('.overlay').click(function(e){
       e.stopPropagation()
     })
   })
