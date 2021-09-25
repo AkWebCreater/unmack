@@ -3,7 +3,7 @@
     "banner": {
       "type": "banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Untitled-1.png",
+        "image": "shopify:\/\/shop_images\/Untitled-1_9c37e285-7233-4a48-94dd-69224be6f81d.png",
         "desktop_text_box_position": "center",
         "color_scheme": "background-1",
         "stack_images_on_mobile": true,
@@ -13,21 +13,66 @@
     "main": {
       "type": "main-page",
       "settings": {
+        "top_link": "",
+        "bottom_link": ""
       }
     },
     "bottom-links": {
       "type": "faq-bottom-links",
+      "blocks": {
+        "ee61a8ec-9f37-4792-bb73-62a036eae78e": {
+          "type": "bottom-card",
+          "settings": {
+            "title": "Contact Us",
+            "bg_img": "shopify:\/\/shop_images\/bottom-card-1.png",
+            "url": "#",
+            "btn_text": "Explore More"
+          }
+        },
+        "3d7d237d-7e89-4e92-8deb-99a4aae0fcfb": {
+          "type": "bottom-card",
+          "settings": {
+            "title": "",
+            "bg_img": "shopify:\/\/shop_images\/bottom-card-2.png",
+            "url": "",
+            "btn_text": ""
+          }
+        },
+        "77b8628d-dd45-4661-a473-e2d95a3a43e4": {
+          "type": "bottom-card",
+          "settings": {
+            "title": "",
+            "bg_img": "shopify:\/\/shop_images\/bottom-card-4.png",
+            "url": "",
+            "btn_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "ee61a8ec-9f37-4792-bb73-62a036eae78e",
+        "3d7d237d-7e89-4e92-8deb-99a4aae0fcfb",
+        "77b8628d-dd45-4661-a473-e2d95a3a43e4"
+      ],
       "settings": {
+        "title": "Social Connect"
       }
     },
     "social-connection": {
       "type": "social-connect",
       "settings": {
+        "title": "Social Connect"
       }
     },
     "recently-viwed": {
       "type": "recently-viewed-products",
       "settings": {
+        "display_recently_viewed_products": true,
+        "recently_viewed_products_title": "Recently Viewed Products",
+        "section_title": "Today's Deal",
+        "shop_all_text": "Shop All",
+        "shop_all_url": "",
+        "number_of_recently_viewed_products": "8",
+        "number_of_showing_products": "5"
       }
     }
   },
