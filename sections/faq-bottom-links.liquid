@@ -1,4 +1,5 @@
-<div>
+{{ 'section-faq-bottom-links.css' | asset_url | stylesheet_tag }}
+<div class="section-wrapper page-width">
     {% if section.settings.title != blank %}
         <div class="section-title">
             <h3>{{section.settings.title}}</h3>
