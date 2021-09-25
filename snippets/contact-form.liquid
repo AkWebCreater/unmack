@@ -1,9 +1,11 @@
 {{ 'section-contact-form.css' | asset_url | stylesheet_tag }}
 <div class="contact page-width spaced-section">
     <div class="form-inner-wrapper">
-        <div class="title">
-            <h3 class="h1">Business Form</h3>
-        </div>
+       {% if sectionTitle %}
+       <div class="title">
+        <h3 class="h1">{{sectionTitle}}</h3>
+    </div>
+       {% endif %}
         {%- form 'contact', id: 'ContactForm' -%}
           {%- if form.posted_successfully? -%}
             <div class="form-status form-status-list form__message" tabindex="-1" autofocus>{% render 'icon-success' %} {{ 'templates.contact.form.post_success' | t }}</div>
