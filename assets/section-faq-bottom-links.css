@@ -33,6 +33,9 @@
 }
 .popup-layer{
     display: none;
+    top: 0;
+    left: 0;
+    bottom: 0;
     position: fixed;
     width: 100%;
     height: 100%;
@@ -42,14 +45,12 @@
     display: block;
 }
 .popup-layer .overlay{
-    display: none;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    position: fixed;
     width: 100%;
     height: 100%;
-    z-index: 999;
+    background: rgba(0,0,0,.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .form-inner-wrapper{
     background-color: #fff;
