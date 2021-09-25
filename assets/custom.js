@@ -51,3 +51,15 @@ $(document).on('click','#bulk-add-button',function(){
   })
   
   })
+
+  // faq page pop up layer
+  
+  $(document).ready(function(){
+
+    $('.card-btn').click(function(){
+      $(this).closest('.bottom-card').find('.popup-layer').addClass('open');
+    })
+    $('overlay').click(function(){
+      $(this).closest('.popup-layer').removeClass('open');
+    })
+  })
