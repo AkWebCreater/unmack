@@ -52,6 +52,9 @@
     align-items: center;
     justify-content: center;
 }
+body.scroll-block{
+    overflow-y: hidden;
+}
 .form-inner-wrapper{
     background-color: #fff;
 }

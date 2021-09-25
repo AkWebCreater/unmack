@@ -59,8 +59,10 @@ $(document).on('click','#bulk-add-button',function(){
     $('.card-btn').click(function(e){
       e.preventDefault();
       $(this).closest('.bottom-card').find('.popup-layer').addClass('open');
+      $('body').addClass('scroll-block')
     })
     $('.overlay').click(function(){
       $(this).closest('.popup-layer').removeClass('open');
+      $('body').removeClass('scroll-block');
     })
   })
