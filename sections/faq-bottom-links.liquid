@@ -10,12 +10,6 @@
       {% for block in section.blocks %}
       <div class="grid__item bottom-card">
         <div class="img-container">
-          <div class="popup-layer contact-us">
-            <div class="overlay">
-              
-            </div>
-            <div class="popup">{% include 'contact-form' , sectionTitle:"Contact Form"%}</div>
-          </div>
             <div class="img-layer">
                 <img src="{{block.settings.bg_img | img_url: 'medium'}}" alt="backgroung">
             </div>
@@ -32,6 +26,12 @@
     </div>
           
       {% endfor %}
+    </div>
+    <div class="popup-layer contact-us">
+      <div class="overlay">
+        
+      </div>
+      <div class="popup">{% include 'contact-form' , sectionTitle:"Contact Form"%}</div>
     </div>
 </div>
 
