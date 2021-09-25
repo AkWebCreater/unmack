@@ -32,19 +32,19 @@
         "3d7d237d-7e89-4e92-8deb-99a4aae0fcfb": {
           "type": "bottom-card",
           "settings": {
-            "title": "",
+            "title": "Careers",
             "bg_img": "shopify:\/\/shop_images\/bottom-card-2.png",
-            "url": "",
-            "btn_text": ""
+            "url": "#",
+            "btn_text": "Explore More"
           }
         },
         "77b8628d-dd45-4661-a473-e2d95a3a43e4": {
           "type": "bottom-card",
           "settings": {
-            "title": "",
+            "title": "Feedback",
             "bg_img": "shopify:\/\/shop_images\/bottom-card-4.png",
-            "url": "",
-            "btn_text": ""
+            "url": "#",
+            "btn_text": "Explore More"
           }
         }
       },
