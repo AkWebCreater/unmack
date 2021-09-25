@@ -2,16 +2,24 @@
     border-radius: 4px;
     position: relative;
 }
+.img-container{
+    position: relative;
+}
 .text-layer{
     position: absolute;
+    width: 100%;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    background:transparent;
+    background: rgba(0, 0, 0, 0.4);
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    align-items: self-start;
+}
+.img-layer{
+    font-size: 0;
 }
 .img-layer img{
     width: 100%;
@@ -19,6 +27,8 @@
 .cart-title h2{
     font-size: 35px;
     color: #fff;
+    margin: 0;
+    margin-bottom: 10px;
 }
 .card-btn{
     color: #fff;
