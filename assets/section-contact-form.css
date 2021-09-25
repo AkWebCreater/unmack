@@ -72,16 +72,19 @@ box-shadow: none;
 border-radius: 8px;
 background-color: #f5f5f5;
 }
-.selecte option{
+/* .selecte option{
   display: block;
   margin: 1.5rem;
   border-bottom: 1px solid #ccc;
   background-color: #fdcdab;
-}
+} */
 .selecte option:hover{
   background-color: #f58634;
   color: #fff;
 }
 .contact__button{
   text-align: center;
+}
+.contact__button button{
+  background-color: #a6a6a6;
 }
