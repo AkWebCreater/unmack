@@ -12,8 +12,9 @@
     left: 0;
     bottom: 0;
     right: 0;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.7);
     display: flex;
+    padding-left: 18px;
     flex-direction: column;
     justify-content: center;
     align-items: self-start;
@@ -32,5 +33,9 @@
 }
 .card-btn{
     color: #fff;
-    background-color: rgb(245, 134, 52);
+    text-decoration: none;
+    padding: 0 8px;
+    border-radius: 4px;
+    border: 1px solid  rgb(245, 134, 52);
+    
 }
