@@ -24,10 +24,9 @@
     border: 1px solid #ccc; 
     border-radius: 14px;
     padding: 20px;
+    padding-bottom: 40px;
 }
-.section-social-connect{
-    padding: 0 10rem;
-}
+
 .icon-card img{
     width: 100%;
 }
@@ -35,5 +34,8 @@
     .icon-card{
         max-width: calc(50% - 40px);
         margin-bottom: 20px;
+    }
+    .wrapper{
+        padding-bottom: 20px;
     }
 }
