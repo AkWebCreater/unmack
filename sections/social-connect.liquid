@@ -1,5 +1,5 @@
 {{ 'section-social-connect.css' | asset_url | stylesheet_tag }}
-<div class="tc wrapper page-width">
+<div class="tc wrapper">
     <h3 class="tc">{{section.settings.title}}</h3>
     <div class="card-wapper">
         {% for block in section.blocks %}
@@ -21,7 +21,7 @@
 {% schema %}
 {
   "name": "social connect",
-  "class": "spaced-section section-social-connect",
+  "class": "spaced-section page-width section-social-connect",
   "settings":[
     {
         "type": "text",
