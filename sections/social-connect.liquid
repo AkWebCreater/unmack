@@ -1,6 +1,7 @@
-<div class="page-width">
-    <h3>{{section.settings.title}}</h3>
-    <div class="wrapper grid grid--4-col-desktop grid--2-col-tablet grid--1-col">
+{{ 'section-social-connect.css' | asset_url | stylesheet_tag }}
+<div class="page-width tc wrapper">
+    <h3 class="tc">{{section.settings.title}}</h3>
+    <div class=" grid grid--4-col-desktop grid--2-col-tablet grid--1-col">
         {% for block in section.blocks %}
         <div class="icon-card grid__item">
             <div class="icon">
@@ -20,7 +21,7 @@
 {% schema %}
 {
   "name": "social connect",
-  "class": "spaced-section",
+  "class": "spaced-section page-width",
   "settings":[
     {
         "type": "text",
