@@ -37,4 +37,21 @@
 }
 .question.open::before{
     transform: rotate(90deg);
+} 
+.address-block .address{
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin-right: 20px;
+}
+.map{
+    width: 100%;
+    max-width: calc(100% - 320px);
+}
+@media (max-width:749px) {
+    .address-block .address,.map{
+        max-width:100%;
+    
+    } 
+      
 }
