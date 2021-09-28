@@ -10,10 +10,13 @@
 .faq-inner{
     padding-left: 25px;
 }
+.address > *{
+    margin-bottom: 25px;
+}
 .question{
     position: relative;
 }
-.faq-card h3{
+.section-faq h3{
     text-transform: uppercase;
     font-weight: bold;
     font-size: 25px;
