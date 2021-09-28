@@ -19,6 +19,9 @@
     font-size: 25px;
 
 }
+.faq-inner:not(:last-child){
+    margin-bottom: 25px;
+}
 .question::before{
     content: "\203A";
     position: absolute;
