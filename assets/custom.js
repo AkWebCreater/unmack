@@ -67,6 +67,7 @@ $(document).on('click','#bulk-add-button',function(){
       $('body').removeClass('scroll-block');
     })
     // question answer toggle js on FAQ Page
+    $(".answer").hide();
     $('.question').click(function(){
 $(this).next().slideToggle()
 $(this).toggleClass('open')
