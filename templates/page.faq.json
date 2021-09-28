@@ -171,6 +171,7 @@
   "order": [
     "banner",
     "main",
+    "faq",
     "bottom-links",
     "social-connection",
     "recently-viwed"
