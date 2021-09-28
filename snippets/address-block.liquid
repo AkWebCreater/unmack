@@ -1,0 +1,24 @@
+<div class="address-block">
+    <div class="address">
+        <div class="title-add">
+            <h3 class="h3">Corporate Office</h3>
+        </div>
+       <div class="address-inner">
+        {{shop.address}}
+       </div>
+       <div class="conatct-number">
+           <span>Toll Free No :</span><span> {{shop.phone}}</span>
+       </div>
+       <div class="email"><span>Email :</span> {{shop.email}}</div>
+    </div>
+    <div class="map">   
+         <!--The div element for the map -->
+        <div id="map"></div>
+    
+        <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+        <script
+          src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
+          async
+        ></script>
+    </div>
+</div>

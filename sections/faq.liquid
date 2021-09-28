@@ -95,6 +95,11 @@
     
         </div>
     {% endfor %}
+   {% if section.settings.address-block == true %}
+        <div class="location">
+        {% include 'address-block' %}
+        </div>
+   {% endif %}
 </div>
        
            
@@ -112,6 +117,12 @@
       "id": "card-color",
       "default": "#ccc",
       "label": "Card Background Color"
+    },
+    {
+        "type": "checkbox",
+        "id": "address-block",
+        "label": "Show Address Block",
+        "default": "true"
     }
   ],
   "blocks": [
