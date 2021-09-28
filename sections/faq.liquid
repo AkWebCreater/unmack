@@ -1,0 +1,114 @@
+<div class="container-faq">
+    {% for block in section.blocks %}
+        {%- case block.type -%}
+            {%- when 'card' -%}
+                {% assign card_id = block.settings.card-id %}
+            <div class="faq-card">
+            {% for block in section.blocks %}
+                {%- case block.type -%}
+                    {%- when 'faq' -%}
+                        {% assign faq-id = block.settings.card-id %}
+                    {% if faq-id == card-id %}
+                        <div class="faq-inner">
+                            <div class="question">{{block.settings.question}}</div>
+                            <div class="answer">{{block.settings.answer}}</div>
+                        </div>
+                    {% endif %}
+                        
+                {%- endcase -%}
+            {% endfor %}
+            </div>
+                
+        {%- endcase -%}
+    {% endfor %}
+</div>
+{% schema %}
+{
+  "name": "t:sections.main-blog.name",
+  "tag": "section",
+  "class": "spaced-section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:sections.main-blog.settings.header.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_image",
+      "default": true,
+      "label": "t:sections.main-blog.settings.show_image.label",
+      "info": "t:sections.main-blog.settings.show_image.info"
+    },
+    {
+      "type": "link_list",
+      "id": "blogs_menu",
+      "label": "Blogs Menu"
+    },
+    {
+      "type": "link_list",
+      "id": "recipe_menu",
+      "label": "Recipe Menu"
+    },
+    {
+      "type": "paragraph",
+      "content": "t:sections.main-blog.settings.paragraph.content"
+    },{
+      "type": "header",
+      "content": "Bottom Blog",
+      "info": "You may Choose Secendory Blog to show at bottom here"
+    },
+    {
+      "type": "blog",
+      "id": "bottom-blog",
+      "label": "Bottom Blog"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "card",
+      "name": "Card",
+      "limit": 7,
+      "settings": [
+     
+        {
+          "type": "text",
+          "id": "card-id",
+          "label": "Card Id"
+        }
+      ]
+    },
+    {
+        "type": "faq",
+        "name": "FAQ",
+        "settings": [
+          {
+            "type": "text",
+            "id": "card-id",
+            "label": "Card Id"
+          },
+          {
+            "type": "text",
+            "id": "question",
+            "label": "Question"
+          },
+          {
+            "type": "text",
+            "id": "answer",
+            "label": "Answer"
+          }
+        ]
+      },
+      {
+          "type": "address",
+          "name":"address_block"
+      }
+  ] 
+   , "presets": [
+  {
+      "category": "faq",
+      "name":"FAQ"
+  }
+]
+}
+{% endschema %}
+
