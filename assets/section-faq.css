@@ -7,14 +7,20 @@
 .faq-wrapper{
     margin-bottom: 25px;
 }
+.faq-inner{
+    padding-left: 25px;
+}
 .question{
     position: relative;
 }
 .question::before{
     content: "\203A";
     position: absolute;
-    left: 0;
-    top: 0;
+    display: block;
+    color: #f58634;
+    left: -22px;
+    font-size: 50px;
+    top: 4px;
     width: 15px;
-    height: 15px;
+    height: 15px;;
 }
