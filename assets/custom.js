@@ -66,4 +66,10 @@ $(document).on('click','#bulk-add-button',function(){
       $('.popup-layer').removeClass('open');
       $('body').removeClass('scroll-block');
     })
+    // question answer toggle js on FAQ Page
+    $('.question').click(function(){
+$(this).next().slideToggle()
+$(this).toggleClass('open')
+    })
+    
   })

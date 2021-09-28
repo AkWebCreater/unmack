@@ -18,9 +18,14 @@
     position: absolute;
     display: block;
     color: #f58634;
+    line-height: 0;
     left: -22px;
     font-size: 50px;
-    top: 4px;
+    top: 15px;
     width: 15px;
-    height: 15px;;
+    height: 15px;
+    transition: 0.5s ease-in-out;
+}
+.question.open::before{
+    transform: rotate(90deg);
 }
