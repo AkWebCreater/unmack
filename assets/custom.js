@@ -81,7 +81,7 @@ if($(window).width() < 750){
     $('.account-sidebar .popup').slideUp();
     // var popup = $(this).find('.popup');
   //  var  popup = $("[data-popup="+p+"]");
-  $(this).find('.popup').slideDown();
+  $(this).next().slideDown();
   })
 }
 else{
