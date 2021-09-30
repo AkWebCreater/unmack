@@ -755,7 +755,7 @@ li[data-address] > h2 {
 .accent ,.accent *{
   color: #ff6600;
 }
-.accent-bg ,.account-sidebar > [data-popup-name].active{
+.accent-bg ,.account-sidebar  [data-popup-name].active{
   background-color: #ff6600;
   color: #fff;
 }
@@ -767,7 +767,7 @@ li[data-address] > h2 {
   overflow-y: auto;
 }
 .account-sidebar{
-  max-width: 250px;
+
   padding-right: 20px;
   width: 100%;
   
@@ -800,6 +800,9 @@ span.lable {
 @media(min-width:750px){
 .popup.mobile{
   display: none !important;
+}
+.account-sidebar{
+  max-width: 250px;
 }
 }
 @media (max-width:749px) {
