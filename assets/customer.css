@@ -761,6 +761,10 @@ li[data-address] > h2 {
 }
 .account-sidebar  [data-popup-name]{
   border-radius: 8px;
+  padding-left: 25px;
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: 600;
 }
 [data-popup="profile"] .popup-body{
   overflow-y: auto;
@@ -769,12 +773,6 @@ li[data-address] > h2 {
   padding-right: 20px;
   width: 100%;
   
-}
-.account-sidebar > *{
-  padding-left: 25px;
-  margin-bottom: 5px;
-  font-size: 20px;
-  font-weight: 600;
 }
 .account-main-body{
   flex: 1;
