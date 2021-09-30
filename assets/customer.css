@@ -747,7 +747,7 @@ li[data-address] > h2 {
 }
 .popup-header{
   border-bottom: 1px solid #ccc;
-  padding: 10px;
+  padding-bottom: 10px;
 }
 .account-header .logout{
   margin-left: auto;
@@ -762,7 +762,6 @@ li[data-address] > h2 {
 .account-sidebar  [data-popup-name]{
   border-radius: 8px;
   padding-left: 25px;
-  margin-bottom: 5px;
   font-size: 20px;
   font-weight: 600;
 }
@@ -804,6 +803,11 @@ span.lable {
 @media (max-width:749px) {
   .account-main-body{
     display: none !important;
+  }
+  .popup.mobile{
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
   }
 }
 /* ends here */
