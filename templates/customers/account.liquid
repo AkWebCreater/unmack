@@ -7,7 +7,7 @@
       <div class="logo"></div>
       <div class="account-detail">
         <span>Welcome</span>
-        <h2 class="h2 account-name accent">{{customer.first_name}}</h2>
+        <span class="h1 account-name accent">{{customer.first_name}}</span>
         <span class="email">{{customer.email}}</span>
       </div>
       <div class="logout">
@@ -49,7 +49,7 @@
       <div class="account-main-body">
         <div class="popup open" data-popup="order-history">
           <div class="popup-header accent">
-            <h2>{{ 'customer.orders.title' | t }}</h2>
+            <span class="h2">{{ 'customer.orders.title' | t }}</span>
           </div>
           <div class="popup-body">
             {% paginate customer.orders by customer.orders.size %}
@@ -102,9 +102,7 @@
         <div class="popup" data-popup="change-password">
           {{ 'customer.css' | asset_url | stylesheet_tag }}
           <div class="popup-header accent">
-            <h2 class="h2">
-              Change Password 
-            </h2>
+            <span class="h2"> Change Password </span>
           </div>
           <div class="popup-body">
             <div class="customer reset-password">
@@ -206,7 +204,7 @@
         </div>
         <div class="popup" data-popup="profile">
           <div class="popup-header accent">
-            <h2 class="h2">Basic Information</h2>
+            <span class="h2"> Basic Information </span>
           </div>
           <div class="popup-body">
             <div class="info">

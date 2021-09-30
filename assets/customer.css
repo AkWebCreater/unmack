@@ -720,13 +720,16 @@ li[data-address] > h2 {
   margin-top: 1.5rem;
 }
 /* customer new Layout CSS */
-.account-wrapper{
+.account-wrapper,.account-detail{
   display: flex;
   flex-direction: column;
   padding: 15px;
   margin: 0 !important;
+}
+.account-wrapper{
   background-color: #efefef;
 }
+  
 .main-body{
   padding-top: 20px !important;
 }
@@ -735,6 +738,9 @@ li[data-address] > h2 {
 }
 .account-wrapper .popup.open{
   display: block;
+}
+.account-header{
+  margin-bottom: 20px;
 }
 .account-header,.account-body{
   display: flex;
@@ -753,15 +759,13 @@ li[data-address] > h2 {
   border-radius: 8px;
 }
 .account-sidebar{
-  max-width: 320px;
+  max-width: 220px;
   width: 100%;
 }
 .account-main-body{
   flex: 1;
-  margin-left: 20px;
   background-color: #fff;
   padding: 15px;
-  padding-left: 0;
   overflow-y: scroll;
   max-height: 400px;
 }
