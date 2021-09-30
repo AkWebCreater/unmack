@@ -87,8 +87,8 @@ if($(window).width() < 750){
 }
 else{
   $('.account-sidebar [data-popup-name]').click(function(){
+    $('.account-sidebar [data-popup-name]').removeClass('active')
     $(this).addClass('active');
-    $(this).siblings().removeClass('active');
     var p = $(this).attr('data-popup-name');
    var  popup = $("[data-popup="+p+"]");
    popup.addClass('open');
