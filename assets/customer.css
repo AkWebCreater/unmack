@@ -764,6 +764,7 @@ li[data-address] > h2 {
 }
 [data-popup="profile"] .popup-body{
   max-width: 450px;
+  overflow-y: auto;
 }
 .account-sidebar{
   max-width: 250px;
@@ -795,5 +796,15 @@ span.lable {
 .info{
   display: flex;
   padding: 10px;
+}
+@media(min-width:750px){
+.popup.mobile{
+  display: none !important;
+}
+}
+@media (max-width:749px) {
+  .account-main-body{
+    display: none !important;
+  }
 }
 /* ends here */

@@ -73,13 +73,25 @@ $(this).next().slideToggle()
 $(this).toggleClass('open')
     })
     // account page popup 
-    $('.account-sidebar [data-popup-name]').click(function(){
-      $(this).addClass('active');
-      $(this).siblings().removeClass('active');
-      var p = $(this).attr('data-popup-name');
-     var  popup = $("[data-popup="+p+"]");
-     popup.addClass('open');
-     popup.siblings().removeClass('open');
-    })
-
+   
+if($(window).width() < 750){
+  $('.account-sidebar [data-popup-name]').click(function(){
+    $(this).addClass('active');
+    $(this).siblings().removeClass('active');
+    $('.account-sidebar .popup').slideUp();
+    // var popup = $(this).find('.popup');
+  //  var  popup = $("[data-popup="+p+"]");
+  $(this).find('.popup').slideDown();
+  })
+}
+else{
+  $('.account-sidebar [data-popup-name]').click(function(){
+    $(this).addClass('active');
+    $(this).siblings().removeClass('active');
+    var p = $(this).attr('data-popup-name');
+   var  popup = $("[data-popup="+p+"]");
+   popup.addClass('open');
+   popup.siblings().removeClass('open');
+  })
+}
   })
