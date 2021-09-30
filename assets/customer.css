@@ -760,7 +760,12 @@ li[data-address] > h2 {
 }
 .account-sidebar{
   max-width: 220px;
+  padding-right: 20px;
   width: 100%;
+}
+.account-sidebar > *{
+  padding-left: 25px;
+  margin-bottom: 10px;
 }
 .account-main-body{
   flex: 1;
