@@ -745,10 +745,13 @@ li[data-address] > h2 {
 .account-header,.account-body{
   display: flex;
 }
+.popup-header{
+  border-bottom: 1px solid #ccc;
+}
 .account-header .logout{
   margin-left: auto;
 }
-.accent{
+.accent ,.accent *{
   color: #ff6600;
 }
 .accent-bg ,.account-sidebar > [data-popup-name].active{
@@ -773,5 +776,13 @@ li[data-address] > h2 {
   padding: 15px;
   overflow-y: scroll;
   max-height: 400px;
+}
+span.lable {
+  min-width: 200px;
+  display: inline-block;
+}
+.info:not(:last-child){
+  border-bottom: 1px solid #ccc;
+  line-height: 1.8;
 }
 /* ends here */
