@@ -726,7 +726,7 @@ li[data-address] > h2 {
   margin: 0 !important;
 }
 .account-wrapper{
-  padding: 15px 25px;
+  padding: 15px 20px;
   background-color: #efefef;
 }
   
@@ -761,6 +761,9 @@ li[data-address] > h2 {
 }
 .account-sidebar > [data-popup-name]{
   border-radius: 8px;
+}
+[data-popup="profile"] .popup-body{
+  max-width: 450px;
 }
 .account-sidebar{
   max-width: 250px;
