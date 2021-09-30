@@ -763,14 +763,16 @@ li[data-address] > h2 {
   border-radius: 8px;
 }
 .account-sidebar{
+  max-width: 250px;
+  padding-right: 20px;
+  width: 100%;
+  
+}
+.account-sidebar > *{
   padding-left: 25px;
   margin-bottom: 5px;
   font-size: 20px;
   font-weight: 600;
-}
-.account-sidebar > *{
-  padding-left: 25px;
-  margin-bottom: 10px;
 }
 .account-main-body{
   flex: 1;
