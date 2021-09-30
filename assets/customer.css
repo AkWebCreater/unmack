@@ -747,6 +747,7 @@ li[data-address] > h2 {
 }
 .popup-header{
   border-bottom: 1px solid #ccc;
+  padding: 10px;
 }
 .account-header .logout{
   margin-left: auto;
@@ -762,9 +763,10 @@ li[data-address] > h2 {
   border-radius: 8px;
 }
 .account-sidebar{
-  max-width: 220px;
-  padding-right: 20px;
-  width: 100%;
+  padding-left: 25px;
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: 600;
 }
 .account-sidebar > *{
   padding-left: 25px;
@@ -784,5 +786,8 @@ span.lable {
 .info:not(:last-child){
   border-bottom: 1px solid #ccc;
   line-height: 1.8;
+}
+.info{
+  padding: 10px;
 }
 /* ends here */
