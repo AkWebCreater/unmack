@@ -725,6 +725,10 @@ li[data-address] > h2 {
   flex-direction: column;
   margin: 0 !important;
 }
+.track-detail span{
+  display: block;
+  line-height: 1.8;
+}
 .account-wrapper{
   padding: 15px 20px;
   background-color: #efefef;
