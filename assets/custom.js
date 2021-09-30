@@ -76,6 +76,7 @@ $(this).toggleClass('open')
    
 if($(window).width() < 750){
   $('.account-sidebar [data-popup-name]').click(function(){
+    $('.account-sidebar [data-popup-name]').removeClass('active')
     $(this).addClass('active');
     $(this).siblings().removeClass('active');
     $('.account-sidebar .popup').slideUp();
