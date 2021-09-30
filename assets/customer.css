@@ -727,7 +727,7 @@ li[data-address] > h2 {
 }
 .track-detail span{
   display: block;
-  
+  line-height: 1.5;
 }
 .account-wrapper{
   max-width: 100%;
@@ -738,6 +738,7 @@ li[data-address] > h2 {
    text-decoration: none !important;
    font-size: 12px;
    color: #1a1b18bf ;
+   margin: 0 !important;
  } 
 .main-body{
   padding-top: 20px !important;
@@ -757,6 +758,7 @@ li[data-address] > h2 {
 }
 .breadcrumb{
   margin-bottom: 10px;
+  padding-left: 20px;
 }
 .popup-header{
   border-bottom: 1px solid #ccc;
