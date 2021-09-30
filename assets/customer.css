@@ -723,10 +723,10 @@ li[data-address] > h2 {
 .account-wrapper,.account-detail{
   display: flex;
   flex-direction: column;
-  padding: 15px;
   margin: 0 !important;
 }
 .account-wrapper{
+  padding: 15px 25px;
   background-color: #efefef;
 }
   
