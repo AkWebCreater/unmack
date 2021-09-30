@@ -760,6 +760,9 @@ li[data-address] > h2 {
   margin-bottom: 10px;
   padding-left: 20px;
 }
+.track-detail{
+  text-align: center;
+}
 .popup-header{
   border-bottom: 1px solid #ccc;
   padding-bottom: 10px;
@@ -823,6 +826,13 @@ span.lable {
     padding: 10px;
     background-color: #fff;
     border-radius: 8px;
+  }
+  .producct-details-accound td::after{
+    content: attr(data-label);
+    padding-right: 2rem;
+    text-transform: uppercase;
+    flex-grow: 1;
+    text-align: left;
   }
 }
 /* ends here */
