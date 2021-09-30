@@ -222,7 +222,36 @@
             <div class="info">
               <span class="lable">Default Adderess </span>
               {%- if customer.addresses.size > 0 -%}
-              <span class="details">{{customer.default_address}}</span>
+              <span class="details">
+                {% assign address = customer.default_address %}
+                
+                <div class="addr">
+                  {% if address.company != blank %}
+                      {{ address.company }}
+                      {% endif %}
+                      {% if address.street != blank %}
+                      {{ address.street }}
+                      {% endif %}
+                      {% if address.city != blank %}
+                      {{ address.city | capitalize }}
+                      {% endif %}       
+                      {% if address.province_code != blank %}
+                         {{ address.province_code | upcase }}
+                      {% endif %}
+                      {% if address.zip != blank %}
+                      <span id="address-pincode">{{ address.zip | upcase }}</span>
+                      {% endif %}
+                      {% if address.country != blank %}
+                       {{ address.country }}
+                      {% endif %}
+                       {% if address.phone != blank %}
+                      <strong class="cus-addr">
+                         Mob: {{ address.phone }}
+                      </strong>
+                      {% endif %}
+                     
+                    </div>
+              </span>
               {%- else -%}
                <span> you have not added any address yet</span>
               {%- endif -%}
