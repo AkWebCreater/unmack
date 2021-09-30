@@ -69,6 +69,54 @@
                         <td headers="RowOrder ColumnTotal" role="cell" data-label="{{ 'customer.orders.total' | t }}">
                           {{ order.total_price | money_with_currency }}</td>
                       </tr>
+                      {% for item in order.line_items %}
+            <tr class="producct-details-accound">
+              {% if forloop.last == true %}
+
+              <td>
+                <span><img src="{{item.product.featured_image |img_url}}"></span>
+              </td>
+              <td>
+                <a href="{{ item.url }}"> {{ item.title  }}</a>
+              </td>
+              <td>
+                <div class="track-detail">
+                  <span class="title">Tracking Detail</span>
+                  <span><strong>Courier Name </strong> :{% if item.fulfillment.tracking_company %}{{ item.fulfillment.tracking_company }}{% else %}NA{% endif %}</span>
+                  <span><strong>Tracking No </strong> :{% if item.fulfillment.tracking_number %}<a href="{{ item.fulfillment.tracking_url }}" target="_blank" rel="noopener noreferrer">#{{ item.fulfillment.tracking_number }}</a>{% else %}Not Available {% endif %}</span>
+                </div>
+              </td>
+              <td class="product-item" id="product-{{item.variant.id}}">
+                <form method="post" action="/cart/add" id="add-to-cart-form" accept-charset="UTF-8" class="shopify-product-form" enctype="multipart/form-data"><input type="hidden" name="form_type" value="product"><input type="hidden" name="utf8" value="✓">
+                  <input type="hidden" name="id" value="{{ item.variant.id }}" />
+                  <a href="{{item.url}}" class="add-to-cart-btn">Buy Again</a> 
+                </form>
+              </td>
+
+              <td><a href="{{item.url}}#aproduct">Add Review</a> </td>
+              {% else %}
+              <td>
+                <span><img src="{{item.product.featured_image |img_url}}"></span>
+              </td>
+              <td>
+                <a href="{{ item.url }}">{{ item.title  }}</a>,
+              </td>
+              <td>
+                <div class="track-detail">
+                  <span class="title">Tracking Detail</span>
+                  <span><strong>Courier Name </strong> :{% if item.fulfillment.tracking_company %}{{ item.fulfillment.tracking_company }}{% else %}NA{% endif %}</span>
+                  <span><strong>Tracking No </strong> :{% if item.fulfillment.tracking_number %} <a href="{{ item.fulfillment.tracking_url }}" target="_blank" rel="noopener noreferrer"> #{{ item.fulfillment.tracking_number }}</a>{% else %}Not Available {% endif %}</span>
+
+                </div>
+              </td>
+              <td><a href="{{item.url}}" class="add-to-cart-btn">Buy Again</a> </td>
+
+              <td><a href="{{item.url}}#aproduct">Add Review</a> </td>
+
+              {% endif %}
+            </tr>
+            {% endfor %}
+            {% endfor %}
                     {%- endfor -%}
                   </tbody>
                 </table>
