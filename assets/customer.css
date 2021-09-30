@@ -785,7 +785,7 @@ li[data-address] > h2 {
   max-height: 400px;
 }
 span.lable {
-  min-width: 200px;
+  min-width: 150px;
   display: inline-block;
 }
 .info:not(:last-child){
@@ -793,6 +793,7 @@ span.lable {
   line-height: 1.8;
 }
 .info{
+  display: flex;
   padding: 10px;
 }
 /* ends here */
