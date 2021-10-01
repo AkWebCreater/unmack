@@ -80,6 +80,9 @@
     right: 10px;
     z-index: 1000;
 }
+.login-container .close-popup svg{
+    width: 10px;
+}
 .close-popup path{
     stroke: #fff;
 }
