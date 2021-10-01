@@ -80,6 +80,9 @@
     right: 10px;
     z-index: 1000;
 }
+.close-popup path{
+    stroke: #fff;
+}
 .login-container{
     position: relative;
 }
