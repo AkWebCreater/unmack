@@ -2083,8 +2083,8 @@ details-disclosure > details {
   color: #ff6600;
 }
 .accent-bg{
-  background-color: #ff6600;
-  color: #fff;
+  background-color: #ff6600 !important;
+  color: #fff !important;
 }
 .pincode_validator_color-text{
   color: var(--color-pincode-validator);
