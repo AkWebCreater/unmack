@@ -76,12 +76,12 @@
 .login-container .close-popup{
     position: absolute;
     color: #fff;
-    top: 10px;
-    right: 10px;
+    top: 8px;
+    right: 12px;
     z-index: 1000;
 }
 .login-container .close-popup svg{
-    width: 10px;
+    width: 15px;
 }
 .close-popup path{
     stroke: #fff;
@@ -121,12 +121,22 @@
 }
 .login-header{
     display: flex;
+    position: relative;
     justify-content: center;
     font-weight: 800;
     font-size: 20px;
     padding-bottom: 12px;
     margin-bottom: 25px;
     border-bottom: 1px solid #aaa;
+}
+.login-header::after{
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: fit-content;
+    z-index: 10;
+    bottom: 0;
+    border-bottom: 1px solid #f60;
 }
 .forgot-pass{
     display: none;
