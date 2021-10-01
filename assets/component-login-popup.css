@@ -61,11 +61,27 @@
     color: inherit !important;
 }
 .login-main-body button{
-    padding: 6px;
+    padding: 6px !important;
     margin: 10px 0;
+}
+.accept-term{
+    display: block;
+    font-size: 13px;
+    text-transform: capitalize;
+    text-align: center;
 }
 .login-footer{
     justify-content: space-between;
+}
+.login-container .close-popup{
+    position: absolute;
+    color: #fff;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+}
+.login-container{
+    position: relative;
 }
 .login-container .login-main-body> div{
     flex: 1;

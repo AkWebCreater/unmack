@@ -100,6 +100,10 @@ $('.header__icon--account').click(function(e){
 e.preventDefault();
   $('.loginpopup').stop().toggle();
 })
+$('.close-popup').click(function(){
+  $(this).closest('.loginpopup').hide()
+  // $(this).closest('')
+})
 // login popup Header end
 
   })

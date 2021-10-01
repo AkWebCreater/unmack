@@ -44,7 +44,10 @@
     
 {% else %}
     <div class="login-container">
-       
+      <div class="close-popup">
+
+        {% include 'icon-close-small' %}
+      </div>
        <div class="login-main-body">
         <div class="login-form">
           <div class="login-header accent">
@@ -199,7 +202,7 @@
                 </div>
               {%- endif -%}
             </div>
-            <span>by signingin you agree to our <a class="nolink" href="http://">term & conditions</a></span>
+            <span class="accept-term">by signingin you agree to our <a class="nolink" href="http://">term & conditions</a></span>
       </div>
       <div class="imgbanner">
           <img src="{{settings.login-popup-banner | img_url: 'medium'}}" alt="popupbanner">
