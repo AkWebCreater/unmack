@@ -63,6 +63,17 @@
 .loginpopup .login-form{
     padding: 20px;
 }
+.login-container .field label{
+    position: relative;
+
+} 
+.login-container input{
+    border-radius: 8px;
+}
+.login-container .field{
+    display: flex;
+    flex-direction: column-reverse;
+}
 .login-container:last-child img{
     width: 100%;
     height: 100%;
@@ -74,6 +85,9 @@
     justify-content: center;
     font-weight: 800;
     font-size: 20px;
+    padding-bottom: 12px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #aaa;
 }
 .forgot-pass{
     display: none;

@@ -719,20 +719,20 @@ summary::-webkit-details-marker {
   Focus ring - default (with offset)
 */
 
-*:focus-visible {
+/* *:focus-visible {
   outline: 0.2rem solid var(--color-foreground-50);
   outline-offset: 0.3rem;
   box-shadow: 0 0 0 0.3rem var(--color-background),
     0 0 0.5rem 0.4rem var(--color-foreground-30);
-}
+} */
 
 /* Fallback - for browsers that don't support :focus-visible, a fallback is set for :focus */
-*:focus {
+/* *:focus {
   outline: 0.2rem solid var(--color-foreground-50);
   outline-offset: 0.3rem;
   box-shadow: 0 0 0 0.3rem var(--color-background),
     0 0 0.5rem 0.4rem var(--color-foreground-30);
-}
+} */
 
 /* Negate the fallback side-effect for browsers that support :focus-visible */
 *:focus:not(:focus-visible) {
