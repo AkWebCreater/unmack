@@ -52,7 +52,7 @@
     left: 50%;
     transform: translate(-50%,-50%);
 }
-.login-container{
+.login-main-body{
     display: flex;
 }
 .login-container .login-main-body> div{
