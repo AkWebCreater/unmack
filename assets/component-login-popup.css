@@ -55,7 +55,7 @@
 .login-container{
     display: flex;
 }
-.login-container > div{
+.login-container .login-main-body> div{
     flex: 1;
 }
 .login-container:last-child img{
