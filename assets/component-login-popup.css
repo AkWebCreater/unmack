@@ -57,6 +57,7 @@
 }
 .login-container .login-main-body> div{
     flex: 1;
+    position: relative;
 }
 .login-container:last-child img{
     width: 100%;
