@@ -760,9 +760,7 @@ li[data-address] > h2 {
   margin-bottom: 10px;
   padding-left: 20px;
 }
-.track-detail{
-  text-align: center;
-}
+
 .popup-header{
   border-bottom: 1px solid #ccc;
   padding-bottom: 10px;
@@ -821,6 +819,9 @@ span.lable {
 @media (max-width:749px) {
   .account-main-body{
     display: none !important;
+  }
+  .track-detail{
+    text-align: center;
   }
   .popup.mobile{
     padding: 10px;
