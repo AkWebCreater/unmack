@@ -1335,10 +1335,8 @@ deferred-media {
 
 .field__input:focus ~ .field__label,
 .field__input:not(:placeholder-shown) ~ .field__label,
-.field__input:-webkit-autofill ~ .field__label,
-.customer .field input:focus ~ label,
-.customer .field input:not(:placeholder-shown) ~ label,
-.customer .field input:-webkit-autofill ~ label {
+.field__input:-webkit-autofill ~ .field__label
+{
   font-size: 1rem;
   top: 0.3em;
   letter-spacing: 0.04rem;
@@ -1346,10 +1344,7 @@ deferred-media {
 
 .field__input:focus,
 .field__input:not(:placeholder-shown),
-.field__input:-webkit-autofill,
-.customer .field input:focus,
-.customer .field input:not(:placeholder-shown),
-.customer .field input:-webkit-autofill {
+.field__input:-webkit-autofill {
   padding: 2.2rem 1.5rem 0.8rem;
 }
 

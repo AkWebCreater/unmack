@@ -67,10 +67,14 @@
     position: relative;
     top: 0;
     left: 0;
+    margin-bottom: 15px;
 
 } 
+.login-container .field{
+    margin-bottom: 20px;
+}
 .login-container input{
-    border-radius: 8px;
+    border-radius: 8px !important;
 }
 .login-container .field{
     display: flex;
