@@ -1,11 +1,5 @@
 {{ 'component-login-popup.css' | asset_url | stylesheet_tag }}
-{%- capture loginclass -%}
-{% if customer %}
-    logged-in
-{% else %}
-    logged-out
-{% endif %}
-{%- endcapture -%}
+{%- capture loginclass -%}{% if customer %}logged-in{% else %}logged-out{% endif %}{%- endcapture -%}
 <div class="loginpopup {{loginclass}}">
 {% if loginclass == 'logged-in' %}
 <div class="account-header-main">
