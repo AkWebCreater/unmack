@@ -2084,6 +2084,13 @@ details-disclosure > details {
   background: var(--color-pincode-validator);
   color:#fff;
 }
+.accent ,.accent *{
+  color: #ff6600;
+}
+.accent-bg{
+  background-color: #ff6600;
+  color: #fff;
+}
 .pincode_validator_color-text{
   color: var(--color-pincode-validator);
 } 

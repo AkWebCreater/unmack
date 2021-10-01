@@ -44,20 +44,21 @@
     
 {% else %}
     <div class="login-container">
-       <div class="login-header">
-        <span class="h3" id="recover" tabindex="-1">
-          {{ 'customer.recover_password.title' | t }}
-        </span>
-        <span class="h3" id="login" tabindex="-1">
-          {{ 'customer.login_page.title' | t }}
-        </span>
-
-       </div>
+       
        <div class="login-main-body">
         <div class="login-form">
+          <div class="login-header accent">
+            <span class="h2" id="recover" tabindex="-1">
+              {{ 'customer.recover_password.title' | t }}
+            </span>
+            <span class="h2" id="login" tabindex="-1">
+              {{ 'customer.login_page.title' | t }}
+            </span>
+    
+           </div>
           <div class="customer login">
              
-              <div>
+              <div class="forgot-pass">
                 <p>
                   {{ 'customer.recover_password.subtext' | t }}
                 </p>
@@ -106,7 +107,7 @@
               </div>
             
               
-              <div>
+              <div class="account-login">
                 {%- if recover_success == true -%}
                   <h3 class="form__message" tabindex="-1" autofocus>
                     <svg aria-hidden="true" focusable="false" role="presentation" viewBox="0 0 13 13">
