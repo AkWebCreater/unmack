@@ -169,19 +169,19 @@
                       </label>
                     </div>
             
-                    <a href="#recover">
-                      {{ 'customer.login_page.forgot_password' | t }}
-                    </a>
+                    
                   {%- endif -%}
             
-                  <button>
+                  
+            <div class="login-footer"><a href="#recover">
+              {{ 'customer.login_page.forgot_password' | t }}
+            </a> <a href="{{ routes.account_register_url }}">
+              {{ 'customer.login_page.create_account' | t }}
+            </a></div>
+                 
+                  <button width="100%">
                     {{ 'customer.login_page.sign_in' | t }}
                   </button>
-            
-                  <a href="{{ routes.account_register_url }}">
-                    {{ 'customer.login_page.create_account' | t }}
-                  </a>
-                  
                 {%- endform -%}
               </div>
               

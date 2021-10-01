@@ -53,8 +53,11 @@
     left: 50%;
     transform: translate(-50%,-50%);
 }
-.login-main-body{
+.login-main-body,.login-footer{
     display: flex;
+}
+.login-footer{
+    justify-content: space-between;
 }
 .login-container .login-main-body> div{
     flex: 1;
