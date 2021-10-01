@@ -299,12 +299,12 @@
       "cancel": "Cancel",
       "create_account": "Create account",
       "email": "Email",
-      "forgot_password": "Forgot your password?",
+      "forgot_password": "Forgot password?",
       "guest_continue": "Continue",
       "guest_title": "Continue as a guest",
       "password": "Password",
       "title": "Login",
-      "sign_in": "Sign in",
+      "sign_in": "Login",
       "submit": "Submit"
     },
     "order": {
