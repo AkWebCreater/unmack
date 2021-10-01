@@ -1,0 +1,206 @@
+{{ 'component-login-popup.css' | asset_url | stylesheet_tag }}
+{%- capture loginclass -%}
+{% if customer %}
+    logged-in
+{% else %}
+    logged-out
+{% endif %}
+{%- endcapture -%}
+<div class="loginpopup {{loginclass}}">
+{% if loginclass == logged-in %}
+<div class="account-header-main">
+    <div class="logo"></div>
+      <div class="account-detail">
+        <span>Welcome</span>
+        <span class="h1 account-name accent">{{customer.first_name}}</span>
+        <span class="email">{{customer.email}}</span>
+      </div>
+</div>
+<div class="accountpopup-body">
+    <div class="right">
+        <span class="link">
+            <a href="/pages/faq">Contact Us</a></span>
+        <span class="link">
+            <a href="/accoount">Social Login</a>
+        </span>
+        <span class="link"><a href="/account">Whatsapp</a></span>
+        <span class="link">
+            <a href="{{ routes.account_logout_url }}">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" fill="none" viewBox="0 0 18 19">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M6 4.5a3 3 0 116 0 3 3 0 01-6 0zm3-4a4 4 0 100 8 4 4 0 000-8zm5.58 12.15c1.12.82 1.83 2.24 1.91 4.85H1.51c.08-2.6.79-4.03 1.9-4.85C4.66 11.75 6.5 11.5 9 11.5s4.35.26 5.58 1.15zM9 10.5c-2.5 0-4.65.24-6.17 1.35C1.27 12.98.5 14.93.5 18v.5h17V18c0-3.07-.77-5.02-2.33-6.15-1.52-1.1-3.67-1.35-6.17-1.35z" fill="currentColor">
+                </svg>
+                {{ 'customer.log_out' | t }}
+              </a>
+        </span>
+    </div>
+    <div class="left">
+        <span class="link">
+            <a href="#">Wishlist</a>
+        </span>
+        <span class="link">
+            <a href="/account">Order History</a></span>
+        <span class="link">
+            <a href="/account">Gift Card</a></span>
+        <span class="link">
+            <a href="/account">Wallet</a>
+        </span>
+    </div>
+</div>
+    
+{% else %}
+    <div class="login-container">
+        <div class="login-form">
+            <div class="customer login">
+                <h1 id="recover" tabindex="-1">
+                  {{ 'customer.recover_password.title' | t }}
+                </h1>
+                <div>
+                  <p>
+                    {{ 'customer.recover_password.subtext' | t }}
+                  </p>
+              
+                  {%- form 'recover_customer_password' -%}
+                    {% assign recover_success = form.posted_successfully? %}
+                    <div class="field">
+                      <input type="email"
+                        value=""
+                        name="email"
+                        id="RecoverEmail"
+                        autocorrect="off"
+                        autocapitalize="off"
+                        autocomplete="email"
+                        {% if form.errors %}
+                          aria-invalid="true"
+                          aria-describedby="RecoverEmail-email-error"
+                          autofocus
+                        {% endif %}
+                        placeholder="{{ 'customer.login_page.email' | t }}"
+                      >
+                      <label for="RecoverEmail">
+                        {{ 'customer.login_page.email' | t }}
+                      </label>
+                    </div>
+                    {%- if form.errors -%}
+                      <small id="RecoverEmail-email-error" class="form__message">
+                        <svg aria-hidden="true" focusable="false" role="presentation" viewBox="0 0 13 13">
+                          <circle cx="6.5" cy="6.50049" r="5.5" stroke="white" stroke-width="2"/>
+                          <circle cx="6.5" cy="6.5" r="5.5" fill="#EB001B" stroke="#EB001B" stroke-width="0.7"/>
+                          <path d="M5.87413 3.52832L5.97439 7.57216H7.02713L7.12739 3.52832H5.87413ZM6.50076 9.66091C6.88091 9.66091 7.18169 9.37267 7.18169 9.00504C7.18169 8.63742 6.88091 8.34917 6.50076 8.34917C6.12061 8.34917 5.81982 8.63742 5.81982 9.00504C5.81982 9.37267 6.12061 9.66091 6.50076 9.66091Z" fill="white"/>
+                          <path d="M5.87413 3.17832H5.51535L5.52424 3.537L5.6245 7.58083L5.63296 7.92216H5.97439H7.02713H7.36856L7.37702 7.58083L7.47728 3.537L7.48617 3.17832H7.12739H5.87413ZM6.50076 10.0109C7.06121 10.0109 7.5317 9.57872 7.5317 9.00504C7.5317 8.43137 7.06121 7.99918 6.50076 7.99918C5.94031 7.99918 5.46982 8.43137 5.46982 9.00504C5.46982 9.57872 5.94031 10.0109 6.50076 10.0109Z" fill="white" stroke="#EB001B" stroke-width="0.7">
+                        </svg>
+                        {{ form.errors.messages['form'] }}
+                      </small>
+                    {%- endif -%}
+              
+                    <button>
+                      {{ 'customer.login_page.submit' | t }}
+                    </button>
+              
+                    <a href="#login">
+                      {{ 'customer.login_page.cancel' | t }}
+                    </a>
+                  {%- endform -%}
+                </div>
+              
+                <h1 id="login" tabindex="-1">
+                  {{ 'customer.login_page.title' | t }}
+                </h1>
+                <div>
+                  {%- if recover_success == true -%}
+                    <h3 class="form__message" tabindex="-1" autofocus>
+                      <svg aria-hidden="true" focusable="false" role="presentation" viewBox="0 0 13 13">
+                        <path d="M6.5 12.35C9.73087 12.35 12.35 9.73086 12.35 6.5C12.35 3.26913 9.73087 0.65 6.5 0.65C3.26913 0.65 0.65 3.26913 0.65 6.5C0.65 9.73086 3.26913 12.35 6.5 12.35Z" fill="#428445" stroke="white" stroke-width="0.7"/>
+                        <path d="M5.53271 8.66357L9.25213 4.68197" stroke="white"/>
+                        <path d="M4.10645 6.7688L6.13766 8.62553" stroke="white">
+                      </svg>
+                      {{ 'customer.recover_password.success' | t }}
+                    </h3>
+                  {%- endif -%}
+                  {%- form 'customer_login', novalidate: 'novalidate' -%}
+                    {%- if form.errors -%}
+                      <h2 class="form__message" tabindex="-1" autofocus>
+                        <span class="visually-hidden">{{ 'accessibility.error' | t }} </span>
+                        <svg aria-hidden="true" focusable="false" role="presentation" viewBox="0 0 13 13">
+                          <circle cx="6.5" cy="6.50049" r="5.5" stroke="white" stroke-width="2"/>
+                          <circle cx="6.5" cy="6.5" r="5.5" fill="#EB001B" stroke="#EB001B" stroke-width="0.7"/>
+                          <path d="M5.87413 3.52832L5.97439 7.57216H7.02713L7.12739 3.52832H5.87413ZM6.50076 9.66091C6.88091 9.66091 7.18169 9.37267 7.18169 9.00504C7.18169 8.63742 6.88091 8.34917 6.50076 8.34917C6.12061 8.34917 5.81982 8.63742 5.81982 9.00504C5.81982 9.37267 6.12061 9.66091 6.50076 9.66091Z" fill="white"/>
+                          <path d="M5.87413 3.17832H5.51535L5.52424 3.537L5.6245 7.58083L5.63296 7.92216H5.97439H7.02713H7.36856L7.37702 7.58083L7.47728 3.537L7.48617 3.17832H7.12739H5.87413ZM6.50076 10.0109C7.06121 10.0109 7.5317 9.57872 7.5317 9.00504C7.5317 8.43137 7.06121 7.99918 6.50076 7.99918C5.94031 7.99918 5.46982 8.43137 5.46982 9.00504C5.46982 9.57872 5.94031 10.0109 6.50076 10.0109Z" fill="white" stroke="#EB001B" stroke-width="0.7">
+                        </svg>
+                        {{ 'templates.contact.form.error_heading' | t }}
+                      </h2>
+                      {{ form.errors | default_errors }}
+                    {%- endif -%}
+              
+                    <div class="field">        
+                      <input
+                        type="email"
+                        name="customer[email]"
+                        id="CustomerEmail"
+                        autocomplete="email"
+                        autocorrect="off"
+                        autocapitalize="off"
+                        {% if form.errors contains 'form' %}
+                          aria-invalid="true"
+                        {% endif %}
+                        placeholder="{{ 'customer.login_page.email' | t }}"
+                      >
+                      <label for="CustomerEmail">
+                        {{ 'customer.login_page.email' | t }}
+                      </label>
+                    </div>
+              
+                    {%- if form.password_needed -%}
+                      <div class="field">          
+                        <input
+                          type="password"
+                          value=""
+                          name="customer[password]"
+                          id="CustomerPassword"
+                          autocomplete="current-password"
+                          {% if form.errors contains 'form' %}
+                            aria-invalid="true"
+                          {% endif %}
+                          placeholder="{{ 'customer.login_page.password' | t }}"
+                        >
+                        <label for="CustomerPassword">
+                          {{ 'customer.login_page.password' | t }}
+                        </label>
+                      </div>
+              
+                      <a href="#recover">
+                        {{ 'customer.login_page.forgot_password' | t }}
+                      </a>
+                    {%- endif -%}
+              
+                    <button>
+                      {{ 'customer.login_page.sign_in' | t }}
+                    </button>
+              
+                    <a href="{{ routes.account_register_url }}">
+                      {{ 'customer.login_page.create_account' | t }}
+                    </a>
+                    
+                  {%- endform -%}
+                </div>
+                
+                {%- if shop.checkout.guest_login -%}
+                  <div>
+                    <hr>
+                    <h2>{{ 'customer.login_page.guest_title' | t }}</h2>
+              
+                    {%- form 'guest_login' -%}
+                      <button>
+                        {{ 'customer.login_page.guest_continue' | t }}
+                      </button>
+                    {%- endform -%}
+                  </div>
+                {%- endif -%}
+              </div>
+        </div>
+        <div class="imgbanner">
+            <img src="{{settings.login-popup-banner | img_url: 'medium'}}" alt="popupbanner">
+        </div>
+    </div>
+{% endif %}
+
+</div>

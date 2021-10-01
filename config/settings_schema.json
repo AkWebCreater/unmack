@@ -8,6 +8,16 @@
        "theme_support_url":"https:\/\/support.shopify.com\/"
     },
     {
+       "name":"General",
+       "settings":[
+          {
+        "type":"image_picker",
+        "label":"Login Popup Image",
+        "id":"login-popup-banner" 
+          }
+       ]
+    },
+    {
         "name": "Pin code Validator",
         "settings": [
           {

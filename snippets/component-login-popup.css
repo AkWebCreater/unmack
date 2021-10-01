@@ -1,0 +1,37 @@
+.accountpopup-body{
+    display: flex;
+}
+.loginpopup{
+    background-color: #fff;
+    padding: 10px;
+}
+.accountpopup-body .left,.accountpopup-body .right{
+    display: flex;
+    flex-direction: column;
+}
+.accountpopup-body >div > *{
+    margin: 5px 0;
+}
+.loginpopup{
+    background-color: #fff;
+    display: none;
+    
+}
+.loginpopup.logged-in{
+    width: fit-content;
+    position: absolute;
+}
+.loginpopup.logged-out{
+    max-width: 480px;
+    width: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.login-container{
+    display: flex;
+}
+.login-container:last-child img{
+width: 100%;
+}

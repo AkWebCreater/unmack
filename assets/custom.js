@@ -95,4 +95,11 @@ else{
    popup.siblings().removeClass('open');
   })
 }
+// login popup Header
+$('.header__icon--account').click(function(e){
+e.preventDefault();
+  $('.loginpopup').stop().toggle();
+})
+// login popup Header end
+
   })
