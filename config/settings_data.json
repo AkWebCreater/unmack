@@ -191,21 +191,22 @@
             "type": "popup-card",
             "settings": {
               "image": "shopify:\/\/shop_images\/Untitled-1_8929f435-cd2f-49db-8efc-06b65145f599.png",
-              "title": ""
+              "title": "Explore Offers"
             }
           },
           "1c97bf06-9a5f-4577-a180-e9b3c302613f": {
             "type": "popup-card",
             "settings": {
               "image": "shopify:\/\/shop_images\/Untitled-2_e668d3ea-a0ec-4448-98dd-646f24a0c64c.png",
-              "title": ""
+              "title": "Explore Offers"
             }
           },
           "b7bec691-817d-4783-9f80-ba5572ca6a57": {
             "type": "popup-card",
+            "disabled": true,
             "settings": {
               "image": "shopify:\/\/shop_images\/Untitled-3_9bec601b-9dd6-4a7e-9f68-56778863b614.png",
-              "title": ""
+              "title": "Explore Offers"
             }
           }
         },
