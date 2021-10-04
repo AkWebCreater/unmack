@@ -1,0 +1,157 @@
+<div class="section-wrapper">
+    <h2>{{section.settings.heading}}</h2>
+    <a class="close close-window" title="{{ 'cart.ajax_cart.close' | t }}">
+        {% include 'icon-close' %}
+      </a>
+    <div class="wrapper-inner grid grid--3-col-desktop grid--3-col-tablet">
+        {% for block in section.blocks %}
+            <div class="section-card grid__item">
+                <div class="image">
+                    <img src="{{block.settings.image | img_url: 'medium' }}" alt="popupbanner">
+                </div>
+                <div class="section-footer">
+                    <h4>{{block.settings.title}}</h4>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+<style>
+    .section-wrapper{
+        position: relative;
+        display: none;
+    }
+   .close-window{
+       position: absolute;
+       top: 10px;
+       right: 10px;
+   }
+   .close-window svg{
+       fill: #fff;
+       width: 15px;
+       height: 15px;
+   }
+
+    .section-footer {
+      padding: 10px;
+      text-align: center;
+     font-size: 15px;
+  }
+    .section-wrapper a{
+      display:block;
+      background: #ccc;
+      color:#fff;
+      text-transform: uppercase;
+  }
+    .banner-sub-title {
+      font-weight: 600;
+      padding: 10px 0;
+  }
+    
+    @media(min-width:768px){
+     .banner-column {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+  }
+      .title-banner-cstm{
+    font-size: 25px;
+      }
+      .title-banner-cstm .close svg{
+       width: 40px;
+       height: 40px;
+       stroke-width: 0px;
+   }
+      .banner-subcolumn {
+      margin-right: 10px;
+      }
+      .popup-banner-footer a{
+      padding: 20px;
+      }
+    .banner-middle-content {
+      height:170px;
+  }
+    }
+    @media(max-width:768px){
+    .title-banner-cstm {
+      font-size: 14px;
+    }
+      .title-banner-cstm .close svg {
+      width: 20px;
+      height: 20px;
+      }
+      .title-banner-cstm .close {
+      margin-left:18px;
+      }
+       .banner-popups .slick-arrow.slick-prev {
+      left: -15px;
+  }
+      .slick-arrow.slick-next {
+      right: -15px;
+  }
+      .popup-banner-footer a{
+      padding: 10px;
+      }
+       .banner-middle-content {
+      height:200px;
+  }
+    }
+  </style>
+  
+{% schema %}
+{
+    "name": "Website Popup",
+    "class": "website-popup",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "default": "Explore the Best With Umanac !",
+        "label": "Popup Title"
+      }
+      
+    ],
+    "blocks": [
+      {
+        "type": "popup-card",
+        "name": "popup-card",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Card Image"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Card Name"
+          }
+        ]
+      }
+    
+    ],
+    "max_blocks": 3,
+    "presets": [
+      {
+        "name": "website popup",
+        "blocks": [
+          {
+            "type": "popup-card",
+            "name":"popup-card",
+          },
+          {
+            "type": "popup-card",
+            "name":"popup-card",
+          },
+          {
+            "type": "popup-card",
+            "name":"popup-card",
+          }
+          
+        ]
+      }
+    ]
+}
+  {% endschema %}
+  

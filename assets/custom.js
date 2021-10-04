@@ -109,5 +109,6 @@ $('.login-header span').click(function(){
   $(this).sibling().removeClass('accent')
 })
 // login popup Header end
-
+// website popup homepage
+window.onload = setTimeout(()=>{$('.section-wrapper').show()},3000)
   })
