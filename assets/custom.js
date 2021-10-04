@@ -111,4 +111,7 @@ $('.login-header span').click(function(){
 // login popup Header end
 // website popup homepage
 window.onload = setTimeout(()=>{$('.website-popup').show()},3000)
-  })
+$('.website-popup .close').click(function(){
+  $(this).closest('.website-popup').hide();
+})
+})
