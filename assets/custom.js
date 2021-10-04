@@ -104,6 +104,10 @@ $('.close-popup').click(function(){
   $(this).closest('.loginpopup').hide()
   // $(this).closest('')
 })
+$('.login-header span').click(function(){
+  $(this).addClass('accent');
+  $(this).sibling().removeClass('accent')
+})
 // login popup Header end
 
   })

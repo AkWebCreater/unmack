@@ -132,11 +132,10 @@
 .login-header::after{
     position: absolute;
     content: '';
-    height: 1px;
-    width: fit-content;
+    width: 160px;
     z-index: 10;
-    bottom: 0;
-    border-bottom: 1px solid #f60;
+    bottom: -2px;
+    border-bottom: 3px solid #f60;
 }
 .forgot-pass{
     display: none;
