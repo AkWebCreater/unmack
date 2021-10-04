@@ -1,5 +1,5 @@
 <div class="section-wrapper-outer">
-<div class="overlay"></div>
+
     <div class="section-wrapper">
         <h2>{{section.settings.heading}}</h2>
         <a class="close close-window" title="{{ 'cart.ajax_cart.close' | t }}">
@@ -19,6 +19,7 @@
         </div>
     </div>
 </div>
+<div class="overlay"></div>
 <style>
     .section-wrapper{
         position: relative;
@@ -68,6 +69,7 @@
   .overlay{
       content: ' ';
       position: absolute;
+      display: block !important;
       z-index: 998;
       top: 0;
       bottom: 0;
