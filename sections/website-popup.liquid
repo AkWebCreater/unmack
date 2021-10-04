@@ -12,7 +12,7 @@
                         <img src="{{block.settings.image | img_url: 'medium' }}" alt="popupbanner">
                     </div>
                     <div class="section-footer">
-                        <h4>{{block.settings.title}}</h4>
+                        <a href="{{block.settings.url}}">{{block.settings.title}}</a>
                     </div>
                 </div>
             {% endfor %}
@@ -41,7 +41,7 @@
       text-align: center;
      font-size: 15px;
   }
-    .section-wrapper a{
+    .section-wrapper a:not(.close-window){
       display:block;
       background: #ccc;
       color:#fff;
@@ -58,9 +58,15 @@
       display: none;
       z-index: 999;
   }
+  .image{
+      font-size: 0;
+  }
   .section-wrapper-outer{
+      color: #fff;
+      text-align: center;
       position: fixed;
       max-width: 725px;
+      width: 100%;
       left: 50%;
       top: 50%;
       transform: translate(-50%,-50%);
@@ -150,6 +156,12 @@
             "type": "image_picker",
             "id": "image",
             "label": "Card Image"
+          },
+          {
+              "type": "url",
+              "id": "url",
+              "label": "link for card",
+              "default": ""
           },
           {
             "type": "text",
