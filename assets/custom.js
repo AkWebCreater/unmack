@@ -119,6 +119,7 @@ if($(window).width() < 750){
     dots: false,
     arrows:false,
     infinite: true,
+    variableWidth: true,
     speed: 300,
     slidesToShow: 1
   });
