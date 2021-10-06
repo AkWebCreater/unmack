@@ -121,7 +121,8 @@ if($(window).width() < 750){
     infinite: true,
     variableWidth: true,
     speed: 300,
-    slidesToShow: 1
+    slidesToShow: 1,
+    slidesToScroll: 1
   });
 }
 })
