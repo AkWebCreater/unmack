@@ -18,17 +18,27 @@
     header-drawer {
       display: none;
     }
-  }
-
-  .menu-drawer-container ,.navigation{
-    display: flex;
-  }
-  .navigation{
+    .navigation{
+    position: fixed;
+    width: 100%;
+    margin-top: 10px;
     justify-content: center;
     align-items: center;
   }
+  }
+  @media screen and (max-width: 989px) {
+    .navigation{
+    display: none;
+  }
+  }
+  .menu-drawer-container ,.navigation{
+    display: flex;
+  }
+  
+ 
   .navigation nav li{
-    margin: 0 25px;
+    margin: 0 50px;
+    text-transform: uppercase;
   }
   .list-menu {
     list-style: none;
