@@ -114,4 +114,13 @@ window.onload = setTimeout(()=>{$('.website-popup').show()},3000)
 $('.website-popup .close').click(function(){
   $(this).closest('.website-popup').hide();
 })
+if($(window).width() < 750){
+  $('.wrapper-inner').slick({
+    dots: false,
+    arrows:false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1
+  });
+}
 })

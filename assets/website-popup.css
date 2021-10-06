@@ -41,6 +41,7 @@
   .image{
       font-size: 0;
   }
+  .image img{width: 100%;}
   .section-wrapper-outer h2{
       color: #fff;
   }
