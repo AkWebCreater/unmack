@@ -1,0 +1,112 @@
+.section-wrapper{
+        position: relative;
+        
+    }
+   .close-window{
+       position: absolute;
+       top: 10px;
+       right: 10px;
+   }
+   .close-window svg{
+       fill: #fff;
+       width: 15px;
+       height: 15px;
+   }
+
+    .section-footer {
+      padding: 10px;
+      text-align: center;
+     font-size: 15px;
+  }
+    .section-wrapper a:not(.close-window){
+      display:block;
+      background: #ccc;
+      color:#fff;
+      text-transform: uppercase;
+  }
+    .banner-sub-title {
+      font-weight: 600;
+      padding: 10px 0;
+  }
+  .website-popup{
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      display: none;
+      z-index: 999;
+  }
+  .image{
+      font-size: 0;
+  }
+  .section-wrapper-outer{
+      color: #fff;
+      text-align: center;
+      position: fixed;
+      max-width: 725px;
+      width: 100%;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      z-index: 999;
+  }
+  .overlay{
+      content: ' ';
+      position: absolute;
+      display: block !important;
+      z-index: 998;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background-color: rgba(0,0,0,0.6);
+  }
+    @media(min-width:750px){
+     .banner-column {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+  }
+      .title-banner-cstm{
+    font-size: 25px;
+      }
+      .title-banner-cstm .close svg{
+       width: 40px;
+       height: 40px;
+       stroke-width: 0px;
+   }
+      .banner-subcolumn {
+      margin-right: 10px;
+      }
+      .popup-banner-footer a{
+      padding: 20px;
+      }
+    .banner-middle-content {
+      height:170px;
+  }
+    }
+    @media(max-width:749px){
+    .title-banner-cstm {
+      font-size: 14px;
+    }
+      .title-banner-cstm .close svg {
+      width: 20px;
+      height: 20px;
+      }
+      .title-banner-cstm .close {
+      margin-left:18px;
+      }
+       .banner-popups .slick-arrow.slick-prev {
+      left: -15px;
+  }
+      .slick-arrow.slick-next {
+      right: -15px;
+  }
+      .popup-banner-footer a{
+      padding: 10px;
+      }
+       .banner-middle-content {
+      height:200px;
+  }
+    }
+  
