@@ -55,7 +55,7 @@
           "left-nav": "secendory-menu",
           "right-nav": "secondory-menu",
           "logo": "shopify:\/\/shop_images\/logo.png",
-          "logo_position": "middle-left"
+          "logo_position": "top-center"
         }
       },
       "footer": {
