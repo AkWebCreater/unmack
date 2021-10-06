@@ -20,10 +20,12 @@
     }
   }
 
-  .menu-drawer-container {
+  .menu-drawer-container ,.navigation{
     display: flex;
   }
-
+  .navigation{
+    justify-content: center;
+  }
   .list-menu {
     list-style: none;
     padding: 0;
@@ -415,7 +417,7 @@
       </a>
     </div>
   </header>
-  <header class="header header--{{ section.settings.logo_position }} page-width{% if section.settings.right-nav != blank %} header--has-menu{% endif %}">
+  <header class="navigation">
     <nav class="left-nav header__inline-menu">
       <ul class="list-menu list-menu--inline" role="list">
         {%- for link in section.settings.left-nav.links -%}
@@ -467,11 +469,11 @@
     </nav>
 
        
-    <div class="logo">
+    <div class="">
       {%- if request.page_type == 'index' -%}
       <h1 class="header__heading hidden">
     {%- endif -%}
-        <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
+        <a href="{{ routes.root_url }}" class=" link link--text">
           {%- if section.settings.logo != blank -%}
             {%- assign image_size = section.settings.logo_width | append: 'x' -%}
             <img srcset="{{ section.settings.logo | img_url: image_size }} 1x, {{ section.settings.logo | img_url: image_size, scale: 2 }} 2x"
