@@ -45,9 +45,7 @@
   .section-wrapper-outer h2{
       color: #fff;
   }
-  .section-wrapper-outer .slick-slide {
-    /* width: 200px; */
-}
+ 
   .section-wrapper-outer{
       color: #fff;
       text-align: center;
@@ -96,6 +94,14 @@
   }
     }
     @media(max-width:749px){
+        .wrapper-inner{
+            max-width: 300px;
+            overflow: hidden;
+            margin: auto;
+        }
+        .section-wrapper-outer .slick-slide {
+            width: 300px;
+        }
     .title-banner-cstm {
       font-size: 14px;
     }
