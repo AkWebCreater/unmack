@@ -125,4 +125,13 @@ if($(window).width() < 750){
     slidesToScroll: 1
   });
 }
+// background added to fix nav on scroll
+$(window).scroll(function() {
+  if($(this).scrollTop() > 215) {
+    $(".navigation").addClass("bg");
+  }
+  else{
+    $(".navigation").removeClass("bg");
+  }
+}
 })
