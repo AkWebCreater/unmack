@@ -98,6 +98,7 @@
             max-width: 300px;
             overflow: hidden;
             margin: auto;
+            padding-bottom: 30px;
         }
         .section-wrapper-outer .slick-slide {
             width: 300px;
@@ -106,7 +107,7 @@
             position: absolute;
             bottom: 0;
             padding: 5px 10px;
-            border-radius: 8px;
+            border-radius: 5px;
         }
     .title-banner-cstm {
       font-size: 14px;
@@ -119,10 +120,10 @@
       margin-left:18px;
       }
        .banner-popups .slick-arrow.slick-prev {
-      left: -15px;
+      left: 0;
   }
       .slick-arrow.slick-next {
-      right: -15px;
+      right: 0;
   }
       .popup-banner-footer a{
       padding: 10px;
