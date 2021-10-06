@@ -116,8 +116,8 @@ $('.website-popup .close').click(function(){
 })
 if($(window).width() < 750){
   $('.wrapper-inner').slick({
-    dots: false,
-    arrows:false,
+    dots: true,
+    arrows:true,
     infinite: true,
     variableWidth: true,
     speed: 300,
