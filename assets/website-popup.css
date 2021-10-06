@@ -119,12 +119,12 @@
       .title-banner-cstm .close {
       margin-left:18px;
       }
-       .banner-popups .slick-arrow.slick-prev {
-      left: 0;
-  }
-      .slick-arrow.slick-next {
-      right: 0;
-  }
+        .slick-arrow.slick-prev {
+            left: 0;
+        }
+        .slick-arrow.slick-next {
+            right: 0;
+        }
       .popup-banner-footer a{
       padding: 10px;
       }
