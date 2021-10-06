@@ -102,6 +102,12 @@
         .section-wrapper-outer .slick-slide {
             width: 300px;
         }
+        .section-wrapper-outer  .slick-arrow{
+            position: absolute;
+            bottom: 0;
+            padding: 5px 10px;
+            border-radius: 8px;
+        }
     .title-banner-cstm {
       font-size: 14px;
     }
