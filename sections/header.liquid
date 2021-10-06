@@ -415,7 +415,7 @@
       </a>
     </div>
   </header>
-  <div class="navigation">
+  <header class="header header--{{ section.settings.logo_position }} page-width{% if section.settings.right-nav != blank %} header--has-menu{% endif %}">
     <nav class="left-nav header__inline-menu">
       <ul class="list-menu list-menu--inline" role="list">
         {%- for link in section.settings.left-nav.links -%}
@@ -471,7 +471,7 @@
       {%- if request.page_type == 'index' -%}
       <h1 class="header__heading hidden">
     {%- endif -%}
-        <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset hidden">
+        <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
           {%- if section.settings.logo != blank -%}
             {%- assign image_size = section.settings.logo_width | append: 'x' -%}
             <img srcset="{{ section.settings.logo | img_url: image_size }} 1x, {{ section.settings.logo | img_url: image_size, scale: 2 }} 2x"
@@ -540,7 +540,7 @@
         </ul>
         
       </nav>
-</div>
+    </header>
 </{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %}>
 
 {%- if request.page_type != 'cart' -%}
