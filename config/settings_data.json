@@ -49,10 +49,13 @@
         "settings": {
           "color_scheme": "accent-2",
           "logo_width": 100,
-          "logo_position": "middle-left",
           "menu": "main-menu",
           "show_line_separator": false,
-          "enable_sticky_header": true
+          "enable_sticky_header": true,
+          "left-nav": "secendory-menu",
+          "right-nav": "secondory-menu",
+          "logo": "shopify:\/\/shop_images\/logo.png",
+          "logo_position": "middle-left"
         }
       },
       "footer": {
@@ -191,6 +194,7 @@
             "type": "popup-card",
             "settings": {
               "image": "shopify:\/\/shop_images\/Untitled-1_8929f435-cd2f-49db-8efc-06b65145f599.png",
+              "url": "",
               "title": "Explore Offers"
             }
           },
@@ -198,6 +202,7 @@
             "type": "popup-card",
             "settings": {
               "image": "shopify:\/\/shop_images\/Untitled-2_e668d3ea-a0ec-4448-98dd-646f24a0c64c.png",
+              "url": "",
               "title": "Explore Offers"
             }
           },
@@ -205,6 +210,7 @@
             "type": "popup-card",
             "settings": {
               "image": "shopify:\/\/shop_images\/Untitled-3_9bec601b-9dd6-4a7e-9f68-56778863b614.png",
+              "url": "",
               "title": "Explore Offers"
             }
           }
