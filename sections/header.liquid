@@ -48,12 +48,33 @@
   .navigation nav >ul > li ul li{
     text-transform: capitalize !important;
   }
+  .navigation .header__submenu .list-menu__item:hover{
+background-color: var(--color-background);
+  }
+  .navigation nav >ul > li ul li:not(:last-child)  {
+    border-bottom: 1px solid var(--color-background);
+  }
   .navigation .header__submenu{
     background-color: #fff;
+    border-radius: 8px;
     
+  }
+  .navigation .header__submenu::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 31px solid transparent;
+    border-right: 37px solid transparent;
+    border-bottom: 25px solid #fff;
+    position :absolute;
+    top:0p;
+    top: -15px;
   }
   .navigation .list-menu--disclosure{
     width: 25rem;
+  }
+  .navigation .header__inline-menu details[open]>.header__submenu{
+transform: translateY(25px);
   }
   .navigation .header__submenu .list-menu__item{
     color: #676767;
