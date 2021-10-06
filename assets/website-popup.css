@@ -18,11 +18,14 @@
       text-align: center;
      font-size: 15px;
   }
-    .section-wrapper a:not(.close-window){
+    .section-wrapper a{
       display:block;
-      background: #ccc;
+      text-decoration: none;
       color:#fff;
       text-transform: uppercase;
+  }
+  .section-footer{
+    background: #918d8d;
   }
     .banner-sub-title {
       font-weight: 600;
@@ -37,6 +40,9 @@
   }
   .image{
       font-size: 0;
+  }
+  .section-wrapper-outer h2{
+      color: #fff;
   }
   .section-wrapper-outer{
       color: #fff;
