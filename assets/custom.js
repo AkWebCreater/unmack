@@ -133,5 +133,5 @@ $(window).scroll(function() {
   else{
     $(".navigation").removeClass("bg");
   }
-}
+})
 })
