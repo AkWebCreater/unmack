@@ -644,10 +644,10 @@ transform: translateY(25px);
                           {%- for product in collection.products limit:8 -%}
                             <div class="grid__item">{% render 'product-card',
                               product_card_product: product,
-                              media_size: section.settings.image_ratio,
-                              show_secondary_image: section.settings.show_secondary_image,
-                              add_image_padding: section.settings.add_image_padding,
-                              show_vendor: section.settings.show_vendor
+                              media_size:'square',
+                              show_secondary_image: false,
+                              add_image_padding:false,
+                              show_vendor: false
                             %}</div>
                           {%- endfor -%}
                         </div>
