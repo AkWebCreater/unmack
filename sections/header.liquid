@@ -26,6 +26,9 @@ border: 1px solid var(--color-background);
 .product-popup-menu *{
   color: #000 !important;
 }
+.product-popup-menu.open{
+  display: flex;
+}
 .navigation li{
   position: relative;
 }
@@ -641,7 +644,7 @@ transform: translateY(25px);
                         </a>
                         {% if childlink.type == 'collection_link' %}
                         {%- assign collection = childlink.object -%}
-                        <div class="grid product-popup-menu grid--4-col-desktop">
+                        <div class="grid product-popup-menu grid--4-col-desktop grid--4-col-tablet">
                           {%- for product in collection.products limit:8 -%}
                             <div class="grid__item">{% render 'product-card',
                               product_card_product: product,

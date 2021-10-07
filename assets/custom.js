@@ -136,7 +136,7 @@ $(window).scroll(function() {
 })
 // product megamenu toggle
 $('.list-menu__item').hover(function(){
-  $(this).next().show();
-  $(this).parent().siblings().find('.product-popup-menu').hide();
+  $(this).next().addClass('open');
+  $(this).parent().siblings().find('.product-popup-menu').removeClass('open');
 })
 })
