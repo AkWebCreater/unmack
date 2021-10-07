@@ -624,6 +624,14 @@ transform: translateY(25px);
                         <a href="{{ childlink.url }}" class="header__menu-item list-menu__item link link--text focus-inset caption-large{% if childlink.current %} list-menu__item--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
                           {{ childlink.title | escape }}
                         </a>
+                        {% if childlink.type == 'collection_link' %}
+                        {%- assign collection = childlink.object -%}
+                        <div class="grid product-popup-menu grid--4-col-desktop">
+                          {%- for product in collection.products limit:8 -%}
+                            <div class="grid__item"><span>{{product.title}}</span></div>
+                          {%- endfor -%}
+                        </div>
+                        {% endif %}
                       {%- else -%}
                         <details>
                           <summary class="header__menu-item link link--text list-menu__item focus-inset caption-large">
