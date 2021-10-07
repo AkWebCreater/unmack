@@ -134,4 +134,9 @@ $(window).scroll(function() {
     $(".navigation").removeClass("bg");
   }
 })
+// product megamenu toggle
+$('.list-menu__item').hover(function(){
+  $(this).find('.product-popup-menu').show();
+  $(this).siblings().find('.product-popup-menu').hide();
+})
 })
