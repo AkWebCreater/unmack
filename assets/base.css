@@ -2098,3 +2098,8 @@ details-disclosure > details {
   .pos-r{
     position: relative;
   }
+  /* new navigation issue fixed for cart page */
+  .header-wrapper.fix{
+    margin-bottom: 95px;
+    color: #000;
+  }

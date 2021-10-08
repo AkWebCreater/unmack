@@ -126,12 +126,15 @@ if($(window).width() < 750){
   });
 }
 // background added to fix nav on scroll
+$('.body--cart .header-wrapper').addClass('fix')
 $(window).scroll(function() {
   if($(this).scrollTop() > 215) {
     $(".navigation").addClass("bg");
+    $('.body--cart .header-wrapper').addClass('fix')
   }
   else{
     $(".navigation").removeClass("bg");
+    $('.body--cart .header-wrapper').removeClass('fix')
   }
 })
 // product megamenu toggle
