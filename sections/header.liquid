@@ -13,11 +13,16 @@
     justify-self: start;
     margin-left: -1.2rem;
   }
+  .product-popup-menu  span.card-information__text.h5{
+    padding: 0;
+  }
 .product-popup-menu {
 position: absolute;
 display: none;
 right: -15px;
 top: 0;
+width: 45rem;
+text-align: center;
 transform: translateX(100%);
 background-color: #fff;
 color: #000;
@@ -33,9 +38,11 @@ border: 2.5px solid var(--color-background);
 }
 .product-popup-menu .grid__item{
   border-right: 1px solid #ccc;
-}
-.product-popup-menu .grid__item{
   border-top: 1px solid #ccc;
+  padding: 7px;
+}
+.product-popup-menu .price{
+  display: none;
 }
 .product-popup-menu .grid__item:nth-child(4n){
   border-right: 0;
