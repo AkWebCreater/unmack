@@ -168,6 +168,15 @@ transform: translateY(25px);
       padding-top: 0.5rem;
     }
   }
+  .shop-btn a{
+    display: block;
+    width: 100%;
+    background-color: #ccc;
+    font-weight: 600;
+    color: #000!important;
+    border-radius: 8px;
+    padding: 8px 15px;
+  }
 </style>
 
 <script src="{{ 'details-disclosure.js' | asset_url }}" defer="defer"></script>
@@ -670,13 +679,16 @@ transform: translateY(25px);
                         {%- assign collection = childlink.object -%}
                         <div class="grid product-popup-menu grid--4-col-desktop grid--4-col-tablet">
                           {%- for product in collection.products limit:8 -%}
-                            <div class="grid__item">{% render 'product-card',
+                            <div class="grid__item">
+                              {% render 'product-card',
                               product_card_product: product,
                               media_size:'square',
                               show_secondary_image: false,
                               add_image_padding:false,
                               show_vendor: false
-                            %}</div>
+                            %}
+                            <div class="shop-btn"><a href="{{product.url}}">Shop Now</a></div>
+                          </div>
                           {%- endfor -%}
                         </div>
                         {% endif %}
