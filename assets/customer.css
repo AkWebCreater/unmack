@@ -719,3 +719,121 @@ li[data-address] > h2 {
 .addresses form > div:nth-of-type(7) + div[id] {
   margin-top: 1.5rem;
 }
+/* customer new Layout CSS */
+.account-wrapper,.account-detail{
+  display: flex;
+  flex-direction: column;
+  margin: 0 !important;
+}
+.track-detail span{
+  display: block;
+  line-height: 1.5;
+}
+.account-wrapper{
+  max-width: 100%;
+  padding: 15px 20px;
+  background-color: #efefef;
+}
+ .producct-details-accound *{
+   text-decoration: none !important;
+   font-size: 12px;
+   color: #1a1b18bf ;
+   margin: 0 !important;
+ } 
+.main-body{
+  padding-top: 20px !important;
+}
+.account-wrapper .popup{
+  display: none;
+}
+.account-wrapper .popup.open{
+  display: block;
+}
+.account-header,.account-body{
+  display: flex;
+  margin: 0;
+}
+.account-header{
+  margin-bottom: 20px;
+}
+.breadcrumb{
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+
+.popup-header{
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+.account-header .logout{
+  margin-left: auto;
+}
+.accent ,.accent *{
+  color: #ff6600;
+}
+.accent-bg ,.account-sidebar  [data-popup-name].active{
+  background-color: #ff6600;
+  color: #fff;
+}
+.account-sidebar  [data-popup-name]{
+  border-radius: 8px;
+  padding-left: 25px;
+  font-size: 20px;
+  font-weight: 600;
+}
+[data-popup="profile"] .popup-body{
+  overflow-y: auto;
+}
+.account-sidebar{
+  padding-right: 20px;
+  width: 100%;
+  
+}
+.account-main-body{
+  flex: 1;
+  background-color: #fff;
+  padding: 15px;
+  overflow-y: scroll;
+  max-height: 400px;
+}
+span.lable {
+  min-width: 150px;
+  display: inline-block;
+}
+.info:not(:last-child){
+  border-bottom: 1px solid #ccc;
+  line-height: 1.8;
+}
+.info{
+  display: flex;
+  padding: 10px;
+}
+@media(min-width:750px){
+.popup.mobile{
+  display: none !important;
+}
+.account-sidebar{
+  max-width: 250px;
+}
+}
+@media (max-width:749px) {
+  .account-main-body{
+    display: none !important;
+  }
+  .track-detail{
+    text-align: center;
+  }
+  .popup.mobile{
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+  }
+  .producct-details-accound td::after{
+    content: attr(data-label);
+    padding-right: 2rem;
+    text-transform: uppercase;
+    flex-grow: 1;
+    text-align: left;
+  }
+}
+/* ends here */

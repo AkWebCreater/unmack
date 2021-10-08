@@ -1,0 +1,295 @@
+{{ 'section-faq.css' | asset_url | stylesheet_tag }}
+<div class="container-faq page-width">
+    {% for block in section.blocks %}
+        <div class="faq-card">
+            <h3 class="h3">{{block.settings.title}}</h3>
+        
+                <div class="faq-wrapper">
+                    {% if block.settings.question != blank %}
+                        <div class="faq-inner">
+                            <div class="question"> {{block.settings.question}}</div>
+                            <div class="answer">{{block.settings.answer}}</div>
+                        </div>
+                    {% endif %}
+                    {% if  block.settings.question-1 != blank %}
+                        <div class="faq-inner">
+                            <div class="question">{{block.settings.question-1}}</div>
+                            <div class="answer">{{block.settings.answer-1}}</div>
+                        </div>
+                    {% endif %}
+                    {% if  block.settings.question-2 != blank %}
+                        <div class="faq-inner">
+                            <div class="question">{{block.settings.question-2}}</div>
+                            <div class="answer">{{block.settings.answer-2}}</div>
+                        </div>
+                    {% endif %}
+                    {% if block.settings.question-3 != blank %}
+                        <div class="faq-inner">
+                            <div class="question">{{block.settings.question-3}}</div>
+                            <div class="answer">{{block.settings.answer-3}}</div>
+                        </div>
+                    {% endif %}
+                    {% if block.settings.question-4 != blank %}
+                        <div class="faq-inner">
+                            <div class="question">{{block.settings.question-4}}</div>
+                            <div class="answer">{{block.settings.answer-4}}</div>
+                        </div>
+                    {% endif %}
+                    {% if block.settings.question-5 != blank %}
+                        <div class="faq-inner">
+                            <div class="question">{{block.settings.question-5}}</div>
+                            <div class="answer">{{block.settings.answer-5}}</div>
+                        </div>
+                    {% endif %}
+                    {% if block.settings.question-6 != blank %}
+                        <div class="faq-inner">
+                            <div class="question">{{block.settings.question-6}}</div>
+                            <div class="answer">{{block.settings.answer-6}}</div>
+                        </div>
+                    {% endif %}
+                    {% if block.settings.question-7 != blank %}
+                        <div class="faq-inner">
+                            <div class="question">{{block.settings.question-7}}</div>
+                            <div class="answer">{{block.settings.answer-7}}</div>
+                        </div>
+                    {% endif %}
+                    {% if block.settings.question-8 != blank %}
+                        <div class="faq-inner">
+                            <div class="question">{{block.settings.question-8}}</div>
+                            <div class="answer">{{block.settings.answer-8}}</div>
+                        </div>
+                    {% endif %}
+                    {% if block.settings.question-9 != blank %}
+                        <div class="faq-inner">
+                            <div class="question">{{block.settings.question-9}}</div>
+                            <div class="answer">{{block.settings.answer-9}}</div>
+                        </div>
+                    {% endif %}
+                    {% if block.settings.question-10 != blank %}
+                        <div class="faq-inner">
+                            <div class="question">{{block.settings.question-10}}</div>
+                            <div class="answer">{{block.settings.answer-10}}</div>
+                        </div>
+                    {% endif %}
+                    {% if block.settings.question-11 != blank %}
+                        <div class="faq-inner">
+                            <div class="question">{{block.settings.question-11}}</div>
+                            <div class="answer">{{block.settings.answer-11}}</div>
+                        </div>
+                    {% endif %}
+                    {% if block.settings.question-12 != blank %}
+                        <div class="faq-inner">
+                            <div class="question">{{block.settings.question-12}}</div>
+                            <div class="answer">{{block.settings.answer-12}}</div>
+                        </div>
+                    {% endif %}
+                    {% if block.settings.question-13 != blank %}
+                        <div class="faq-inner">
+                            <div class="question">{{block.settings.question-13}}</div>
+                            <div class="answer">{{block.settings.answer-13}}</div>
+                        </div>
+                    {% endif %}
+                    
+                </div>  
+                    
+    
+        </div>
+    {% endfor %}
+   {% if section.settings.address-block == true %}
+        <div class="location">
+        {% include 'address-block' %}
+        </div>
+   {% endif %}
+</div>
+       
+           
+               
+                
+       
+{% schema %}
+{
+  "name": "faq",
+  "tag": "section",
+  "class": "spaced-section section-faq",
+  "settings": [
+    {
+      "type": "color",
+      "id": "card-color",
+      "default": "#ccc",
+      "label": "Card Background Color"
+    },
+    {
+        "type": "checkbox",
+        "id": "address-block",
+        "label": "Show Address Block",
+        "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "card",
+      "name": "Card",
+      "limit": 7,
+      "settings": [
+     
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Card Title"
+        },
+        {
+          "type": "text",
+          "id": "question",
+          "label": "Question"
+        },
+        {
+          "type": "text",
+          "id": "answer",
+          "label": "Answer"
+        },
+        {
+          "type": "text",
+          "id": "question-1",
+          "label": "Question"
+        },
+        {
+          "type": "text",
+          "id": "answer-1",
+          "label": "Answer"
+        },
+        {
+          "type": "text",
+          "id": "question-2",
+          "label": "Question"
+        },
+        {
+          "type": "text",
+          "id": "answer-2",
+          "label": "Answer"
+        },
+        {
+          "type": "text",
+          "id": "question-3",
+          "label": "Question"
+        },
+        {
+          "type": "text",
+          "id": "answer-3",
+          "label": "Answer"
+        },
+        {
+          "type": "text",
+          "id": "question-4",
+          "label": "Question"
+        },
+        {
+          "type": "text",
+          "id": "answer-4",
+          "label": "Answer"
+        },
+        {
+          "type": "text",
+          "id": "question-5",
+          "label": "Question"
+        },
+        {
+          "type": "text",
+          "id": "answer-5",
+          "label": "Answer"
+        },
+        {
+          "type": "text",
+          "id": "question-6",
+          "label": "Question"
+        },
+        {
+          "type": "text",
+          "id": "answer-6",
+          "label": "Answer"
+        },
+        {
+          "type": "text",
+          "id": "question-7",
+          "label": "Question"
+        },
+        {
+          "type": "text",
+          "id": "answer-7",
+          "label": "Answer"
+        },
+        {
+          "type": "text",
+          "id": "question-8",
+          "label": "Question"
+        },
+        {
+          "type": "text",
+          "id": "answer-8",
+          "label": "Answer"
+        },
+        {
+          "type": "text",
+          "id": "question-9",
+          "label": "Question"
+        },
+        {
+          "type": "text",
+          "id": "answer-9",
+          "label": "Answer"
+        },
+        {
+          "type": "text",
+          "id": "question-10",
+          "label": "Question"
+        },
+        {
+          "type": "text",
+          "id": "answer-10",
+          "label": "Answer"
+        },
+        {
+          "type": "text",
+          "id": "question-11",
+          "label": "Question"
+        },
+        {
+          "type": "text",
+          "id": "answer-11",
+          "label": "Answer"
+        },
+        {
+          "type": "text",
+          "id": "question-12",
+          "label": "Question"
+        },
+        {
+          "type": "text",
+          "id": "answer-12",
+          "label": "Answer"
+        },
+        {
+          "type": "text",
+          "id": "question-13",
+          "label": "Question"
+        },
+        {
+          "type": "text",
+          "id": "answer-13",
+          "label": "Answer"
+        }
+      ]
+    },
+      {
+          "type": "address",
+          "name":"address_block"
+      }
+  ] 
+   , "presets": [
+  {
+      "category": "faq",
+      "name":"FAQ"
+  }
+]
+}
+{% endschema %}
+

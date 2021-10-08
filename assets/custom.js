@@ -33,7 +33,7 @@ function addToCart(qnt,id){
     success: function (data) { 
 //           $('#CartCount span:first').text(data.quantity);
       console.log(data.quantity);
-      alert('added to cart')
+    
     } 
   });
 }
@@ -51,3 +51,97 @@ $(document).on('click','#bulk-add-button',function(){
   })
   
   })
+
+  // faq page pop up layer
+  
+  $(document).ready(function(){
+
+    $('.card-btn').click(function(e){
+      e.preventDefault();
+      $('.popup-layer').addClass('open');
+      $('body').addClass('scroll-block')
+    })
+    $(document).on('click','.overlay',function(e){
+      
+      $('.popup-layer').removeClass('open');
+      $('body').removeClass('scroll-block');
+    })
+    // question answer toggle js on FAQ Page
+    $(".answer").hide();
+    $('.question').click(function(){
+$(this).next().slideToggle()
+$(this).toggleClass('open')
+    })
+    // account page popup 
+   
+if($(window).width() < 750){
+  $('.account-sidebar [data-popup-name]').click(function(){
+    $('.account-sidebar [data-popup-name]').removeClass('active')
+    $(this).addClass('active');
+    $(this).siblings().removeClass('active');
+    $('.account-sidebar .popup').slideUp();
+    // var popup = $(this).find('.popup');
+  //  var  popup = $("[data-popup="+p+"]");
+  $(this).next().stop().slideDown();
+  })
+}
+else{
+  $('.account-sidebar [data-popup-name]').click(function(){
+    $('.account-sidebar [data-popup-name]').removeClass('active')
+    $(this).addClass('active');
+    var p = $(this).attr('data-popup-name');
+   var  popup = $("[data-popup="+p+"]");
+   popup.addClass('open');
+   popup.siblings().removeClass('open');
+  })
+}
+// login popup Header
+$('.header__icon--account').click(function(e){
+e.preventDefault();
+  $('.loginpopup').stop().toggle();
+})
+$('.close-popup').click(function(){
+  $(this).closest('.loginpopup').hide()
+  // $(this).closest('')
+})
+$('.login-header span').click(function(){
+  $(this).addClass('accent');
+  $(this).sibling().removeClass('accent')
+})
+// login popup Header end
+// website popup homepage
+window.onload = setTimeout(()=>{$('.website-popup').show()},3000)
+$('.website-popup .close').click(function(){
+  $(this).closest('.website-popup').hide();
+})
+if($(window).width() < 750){
+  $('.wrapper-inner').slick({
+    dots: false,
+    arrows:true,
+    infinite: true,
+    variableWidth: true,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  });
+}
+// background added to fix nav on scroll
+$(window).scroll(function() {
+  if($(this).scrollTop() > 215) {
+    $(".navigation").addClass("bg");
+  }
+  else{
+    $(".navigation").removeClass("bg");
+  }
+})
+// product megamenu toggle
+$('.list-menu__item').hover(function(){
+  
+  if($(this).next().children().length < 4){
+    $(this).next().addClass('min'); 
+  }
+  $(this).next().addClass('open');
+  $(this).parent().siblings().find('.product-popup-menu').removeClass('open');
+
+})
+})

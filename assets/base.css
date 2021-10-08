@@ -719,20 +719,20 @@ summary::-webkit-details-marker {
   Focus ring - default (with offset)
 */
 
-*:focus-visible {
+/* *:focus-visible {
   outline: 0.2rem solid var(--color-foreground-50);
   outline-offset: 0.3rem;
   box-shadow: 0 0 0 0.3rem var(--color-background),
     0 0 0.5rem 0.4rem var(--color-foreground-30);
-}
+} */
 
 /* Fallback - for browsers that don't support :focus-visible, a fallback is set for :focus */
-*:focus {
+/* *:focus {
   outline: 0.2rem solid var(--color-foreground-50);
   outline-offset: 0.3rem;
   box-shadow: 0 0 0 0.3rem var(--color-background),
     0 0 0.5rem 0.4rem var(--color-foreground-30);
-}
+} */
 
 /* Negate the fallback side-effect for browsers that support :focus-visible */
 *:focus:not(:focus-visible) {
@@ -1335,10 +1335,8 @@ deferred-media {
 
 .field__input:focus ~ .field__label,
 .field__input:not(:placeholder-shown) ~ .field__label,
-.field__input:-webkit-autofill ~ .field__label,
-.customer .field input:focus ~ label,
-.customer .field input:not(:placeholder-shown) ~ label,
-.customer .field input:-webkit-autofill ~ label {
+.field__input:-webkit-autofill ~ .field__label
+{
   font-size: 1rem;
   top: 0.3em;
   letter-spacing: 0.04rem;
@@ -1346,10 +1344,7 @@ deferred-media {
 
 .field__input:focus,
 .field__input:not(:placeholder-shown),
-.field__input:-webkit-autofill,
-.customer .field input:focus,
-.customer .field input:not(:placeholder-shown),
-.customer .field input:-webkit-autofill {
+.field__input:-webkit-autofill {
   padding: 2.2rem 1.5rem 0.8rem;
 }
 
@@ -2083,6 +2078,13 @@ details-disclosure > details {
 .pincode_validator_bg ,.address.selecte,.cutomer-wrap.success{
   background: var(--color-pincode-validator);
   color:#fff;
+}
+.accent ,.accent *{
+  color: #ff6600;
+}
+.accent-bg{
+  background-color: #ff6600 !important;
+  color: #fff !important;
 }
 .pincode_validator_color-text{
   color: var(--color-pincode-validator);

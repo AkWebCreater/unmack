@@ -1,0 +1,83 @@
+{{ 'section-faq-bottom-links.css' | asset_url | stylesheet_tag }}
+<div class="section-wrapper">
+    {% if section.settings.title != blank %}
+        <div class="section-title">
+            <h3>{{section.settings.title}}</h3>
+        </div>
+    {% endif %}
+    
+    <div class="grid grid--3-col-desktop grid--2-col-tablet bottom-wrapper">
+      {% for block in section.blocks %}
+      <div class="grid__item bottom-card">
+        <div class="img-container">
+            <div class="img-layer">
+                <img src="{{block.settings.bg_img | img_url: 'medium'}}" alt="backgroung">
+            </div>
+
+            <div class="text-layer">
+                <div class="cart-title">
+                    <h2>{{block.settings.title}}</h2>
+                </div>
+                <a href="{{block.settings.url}}" class="card-btn">
+                    <span class="text">{{block.settings.btn_text}}</span>
+                </a>
+            </div>
+        </div>
+    </div>
+          
+      {% endfor %}
+    </div>
+    <div class="popup-layer contact-us">
+      <div class="overlay">
+        
+      </div>
+      <div class="popup">{% include 'contact-form' , sectionTitle:"Contact Form"%}</div>
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "social connect",
+  "class": "spaced-section",
+  "settings":[
+    {
+        "type": "text",
+        "id": "title",
+        "label": "Section Title",
+        "default": "Social Connect"
+        
+    }
+    
+
+  ],
+  "blocks": [
+  {
+    "type": "bottom-card",
+    "name": "Bottom Card",
+    "limit": 3,
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Block Title"
+      },
+      {
+          "type": "image_picker",
+          "id": "bg_img",
+          "label": "Background Image"
+      },
+      {
+          "type": "url",
+          "id": "url",
+          "label": "Button Url"
+      },
+      {
+          "type": "text",
+          "id": "btn_text",
+          "label": "Button Text"
+      }
+    ]
+  }
+]
+}
+{% endschema %}

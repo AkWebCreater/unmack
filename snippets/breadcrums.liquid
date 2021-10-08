@@ -8,10 +8,20 @@
    <span aria-hidden="true">&rsaquo;</span>
    <span class="active-page brand-active-page">{{ blog.title }}</span>  
    {% endif %}
+   {% if template contains 'page' %}
+   <span aria-hidden="true">&rsaquo;</span>
+   <span class="active-page brand-active-page">{{ page.title }}</span>  
+   {% endif %}
    {% if template contains 'article' %}
    <span aria-hidden="true">&rsaquo;</span>
    <span class=" brand-active-page">Blogs</span>
    <span aria-hidden="true">&rsaquo;</span>  
    <span class="active-page brand-active-page">{{article.title | capitalize}}</span>
+   {% endif %}
+   {% if template contains 'customer' %}
+   <span aria-hidden="true">&rsaquo;</span>
+   <span class=" brand-active-page">Profile</span>
+   <span aria-hidden="true">&rsaquo;</span>  
+   <span class="active-page brand-active-page">My Account</span>
    {% endif %}
 </nav>  

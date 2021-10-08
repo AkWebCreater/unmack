@@ -1,7 +1,7 @@
 .page-title {
   margin-top: 0;
 }
-.page-wrapper{
+.page-wrapper.sidebar{
   display: grid;
   grid-template-columns: repeat(4,1fr);
   gap: 10px;
@@ -9,7 +9,7 @@
   grid-template-areas: "page-content page-content page-content topimage" "page-content page-content page-content bottomimage";
 
 }
-.page-wrapper img{
+.page-wrapper.sidebar img{
   width: 100%;
   border-radius: 8px;
 }
@@ -26,10 +26,10 @@
     display: none;
   }
 
-  .page-wrapper{
+  .page-wrapper.sidebar{
     grid-template-areas: "bottomimage bottomimage topimage topimage" "page-content page-content page-content page-content";
   }
-  .page-wrapper img{
+  .page-wrapper.sidebar img{
     max-height:300px;
     object-fit: cover;
     object-position: top;
