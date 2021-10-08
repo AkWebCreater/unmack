@@ -2103,6 +2103,6 @@ details-disclosure > details {
     margin-bottom: 95px;
     
   }
-  .header-wrapper.fix a{
+  .header-wrapper.fix .header__menu-item{
     color: #000 !important;
   }
