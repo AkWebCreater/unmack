@@ -2111,9 +2111,19 @@ details-disclosure > details {
   }
   /* home page section titles */
   .section-title{
-    color: #898989;
+    position: relative;
+    color: #898989 !important;
     text-align: center;
     font-size: 30px;
     text-transform: uppercase;
   }
- 
+  .section-title::before{
+    content: '';
+    position: absolute;
+    max-width: 150px;
+    width: 100%;
+    height: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--color-background);
+  }
