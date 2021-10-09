@@ -1615,6 +1615,8 @@ input[type='checkbox'] {
 
 .announcement-bar {
   display: flex;
+  font-size: 13px;
+  align-items: center;
   border-bottom: 0.1rem solid var(--color-foreground-20);
   color: var(--color-foreground);
 }
@@ -2152,4 +2154,7 @@ details-disclosure > details {
   background-color:#b1ea29;
   display: inline-block;
   margin-right: 5px;
+  line-height: 1;
+  padding: 4px 8px;
+  border-radius: 3px;
 }
