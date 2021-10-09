@@ -3,7 +3,7 @@
 {{ 'section-best-sellers.css' | asset_url | stylesheet_tag }}
 <section class="section-{{ section.id }} page-width">
 <div class="heading">
-    <h2 class="title">{{section.settings.section-heading}}</h2></div>
+    <h2 class="section-title title">{{section.settings.section-heading}}</h2></div>
 <div class="best-seller-nav grid" >
 {%- for block in section.blocks -%}
   <span class="best-seller-nav-item {% if forloop.first %}add-border{% endif %} " data-index="{{forloop.index}}"> {% if block.settings.title == blank %}

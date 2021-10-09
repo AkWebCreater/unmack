@@ -2109,4 +2109,11 @@ details-disclosure > details {
   .header-wrapper.fix .navigation .header__menu-item{
     color: #000 !important;
   }
+  /* home page section titles */
+  .section-title{
+    color: #898989;
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+  }
  
