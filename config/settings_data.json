@@ -36,10 +36,19 @@
               "color_scheme": "inverse",
               "link": ""
             }
+          },
+          "7c5c8dcc-7b40-4c36-91bf-9aad8041d966": {
+            "type": "announce-menu",
+            "settings": {
+              "top-menu": "top-menu",
+              "extra-link": "",
+              "link-text": ""
+            }
           }
         },
         "block_order": [
-          "announcement-bar-0"
+          "announcement-bar-0",
+          "7c5c8dcc-7b40-4c36-91bf-9aad8041d966"
         ],
         "settings": {
         }
