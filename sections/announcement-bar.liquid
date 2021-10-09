@@ -22,7 +22,7 @@
       <div class="top-menu-wrapper">
       {% if block.settings.url != blank  %}
         <span class="extra-link"><a href="{{block.settings.url}}">{{block.settings.link-text}}</a> </span>
-      {% endif %}  <ul>
+      {% endif %}  <ul class="list-menu list-menu--inline">
           {% for link in block.settings.top-menu.links %}
             <li><a href="{{link.url}}">{{link.title | escape}}</a></li>
           {% endfor %}
