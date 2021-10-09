@@ -2104,11 +2104,9 @@ details-disclosure > details {
     
   }
   .navigation .header__submenu{
-    filter: drop-shadow(0 0 0.75rem var(--color-background));
+    filter: drop-shadow(0 0 1px var(--color-background));
   }
   .header-wrapper.fix .navigation .header__menu-item{
     color: #000 !important;
   }
-  .header-wrapper.fix .navigation .header__submenu{
-    border: 1px solid var(--color-background);
-  }
+ 
