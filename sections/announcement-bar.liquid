@@ -20,8 +20,8 @@
         {%- endif -%}
         {%- when 'announce-menu' -%}
       <div class="top-menu-wrapper">
-      {% if block.settings.url != blank  %}
-        <span class="extra-link"><a href="{{block.settings.url}}">{{block.settings.link-text}}</a> </span>
+      {% if block.settings.extra-link != blank  %}
+        <span class="extra-link"><a href="{{block.settings.extra-link}}">{{block.settings.link-text}}</a> </span>
       {% endif %}  <ul class="list-menu list-menu--inline">
           {% for link in block.settings.top-menu.links %}
             <li><a href="{{link.url}}">{{link.title | escape}}</a></li>

@@ -1630,6 +1630,8 @@ input[type='checkbox'] {
 }
 .announcement-bar a{
   color: #fff;
+  text-decoration: none;
+  text-transform: capitalize;
 }
 .top-menu-wrapper li::after{
   content: '|';
