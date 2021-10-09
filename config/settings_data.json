@@ -41,8 +41,8 @@
             "type": "announce-menu",
             "settings": {
               "top-menu": "top-menu",
-              "extra-link": "",
-              "link-text": ""
+              "extra-link": "shopify:\/\/collections\/acv",
+              "link-text": "Deal Of The Day"
             }
           }
         },
