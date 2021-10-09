@@ -130,11 +130,12 @@ $('.body--cart .header-wrapper').addClass('fix')
 $(window).scroll(function() {
   if($(this).scrollTop() > 215) {
     $(".navigation").addClass("bg");
-    $('.body--cart .header-wrapper').addClass('fix')
+    $('.body--cart .header-wrapper').removeClass('fix')
+   
   }
   else{
     $(".navigation").removeClass("bg");
-    $('.body--cart .header-wrapper').removeClass('fix')
+    $('.body--cart .header-wrapper').addClass('fix')
   }
 })
 // product megamenu toggle
