@@ -1,5 +1,7 @@
 {%- for block in section.blocks -%}
   {%- case block.type -%}
+  <div class="massage-wrapper">
+
     {%- when 'announcement' -%}
       <div class="announcement-bar color-{{ block.settings.color_scheme }}" role="region" aria-label="{{ 'sections.header.announcement' | t }}">
         {%- if block.settings.text != blank -%}
@@ -16,6 +18,18 @@
             </a>
           {%- endif -%}
         {%- endif -%}
+      </div>
+  </div>
+      {%- when 'announce-menu' -%}
+      <div class="top-menu-wrapper">
+      {% if block.settings.url != blank  %}
+        <span class="extra-link"><a href="{{block.settings.url}}">{{block.settings.link-text}}</a> </span>
+      {% endif %}  <ul>
+          {% for link in block.settings.top-menu.links %}
+            <li><a href="{{link.url}}">{{link.title | escape}}</a></li>
+          {% endfor %}
+        </ul>
+
       </div>
   {%- endcase -%}
 {%- endfor -%}
@@ -69,12 +83,39 @@
           "label": "t:sections.announcement-bar.blocks.announcement.settings.link.label"
         }
       ]
+    },
+    {
+      "type": "announce-menu",
+      "name": "top-menu",
+      "settings": [
+        {
+          "type": "link_list",
+          "id": "top-menu",
+          "label": "Announcement Menu"
+        },
+        {
+          "type": "url",
+          "id": "extra-link",
+          "label": "link before top menu" 
+        },{
+          "type": "text",
+          "id": "link-text",
+          "label": "Link Text"
+        
+        }
+
+      ]
+
     }
   ],
   "default": {
     "blocks": [
       {
         "type": "announcement"
+      },
+      {
+        "type": "announce-menu"
+       
       }
     ]
   }
