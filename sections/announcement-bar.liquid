@@ -18,9 +18,7 @@
             </a>
           {%- endif -%}
         {%- endif -%}
-      </div>
-  </div>
-      {%- when 'announce-menu' -%}
+        {%- when 'announce-menu' -%}
       <div class="top-menu-wrapper">
       {% if block.settings.url != blank  %}
         <span class="extra-link"><a href="{{block.settings.url}}">{{block.settings.link-text}}</a> </span>
@@ -31,6 +29,9 @@
         </ul>
 
       </div>
+      </div>
+  </div>
+      
   {%- endcase -%}
 {%- endfor -%}
 
