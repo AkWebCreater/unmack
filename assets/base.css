@@ -1855,8 +1855,9 @@ input[type='checkbox'] {
 }
 .header__icon::after,
 .header__icon--cart .icon::after{
-content: '|';
+content: '';
 color: #fff;
+border-left: 2px solid #fff;
 
 }
 .header__icon::after{
@@ -1951,6 +1952,7 @@ details[open] > .search-modal {
 
   .search-modal__content {
     padding: 0 6rem;
+    padding-right: 0;
   }
 }
 
