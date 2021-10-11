@@ -2160,7 +2160,7 @@ details-disclosure > details {
 }
 
 /* header menu pipes */
-.header .header__inline-menu > li::after{
+.header nav > .header__inline-menu li::after{
   content: "|";
   color:#000;
 }
