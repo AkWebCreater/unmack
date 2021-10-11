@@ -2164,3 +2164,7 @@ details-disclosure > details {
   content: "|";
   color:#000;
 }
+.header .header__inline-menu .list-menu > li{
+  display: flex;
+  align-items: center;
+}
