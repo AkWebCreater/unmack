@@ -2158,3 +2158,9 @@ details-disclosure > details {
   padding: 4px 8px;
   border-radius: 3px;
 }
+
+/* header menu pipes */
+.header .header__inline-menu > li::after{
+  content: "|";
+  color:#000;
+}
