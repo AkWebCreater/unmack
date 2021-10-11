@@ -1859,7 +1859,7 @@ content: '|';
 color: #fff;
 
 }
-.header__icon::after::after{
+.header__icon::after{
   position: absolute;
   right: -5px;
 }
