@@ -1846,10 +1846,22 @@ input[type='checkbox'] {
 
 .header__icon,
 .header__icon--cart .icon {
-  height: 4.4rem;
+  height: 3.6rem;
   width: 4.4rem;
-}
+  display: flex;
+  align-items: center;
 
+}
+.header__icon::after,
+.header__icon--cart .icon::after{
+content: '|';
+color: #fff;
+
+}
+.header__icon svg path,
+.header__icon--cart .icon svg path{
+  fill: #000;
+}
 .header__icon--cart {
   position: relative;
   margin-right: -1.2rem;
