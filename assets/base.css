@@ -2109,4 +2109,25 @@ details-disclosure > details {
   .header-wrapper.fix .navigation .header__menu-item{
     color: #000 !important;
   }
+   /* home page section titles */
+  .section-title{
+    position: relative;
+    color: #898989 !important;
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+  }
+  .section-title::after{
+    content: '';
+    position: absolute;
+    max-width: 150px;
+    width: 100%;
+    height: 3px;
+    left: 50%;
+    bottom: -6px;
+    transform: translateX(-50%);
+    z-index: 12;
+    border: 0 !important;
+    background: #f58634;
+  }
  
