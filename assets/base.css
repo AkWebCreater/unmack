@@ -2197,3 +2197,21 @@ details-disclosure > details {
 .search-modal__content .field{
   top: 5px;
 }
+/* home page product range */
+.collection-list-section .title-wrapper-with-link h2{
+  width: 100%;
+ }
+ /* announcment  */
+ .top-menu-wrapper .list-menu li:last-child::after{
+   display: none;
+   margin-right: 10px;
+ }
+ @media (max-width:767px) {
+  .announcement-bar{
+    display: block;
+  }
+  .announcement-bar > *{
+    width: 100%;
+    text-align: center !important;
+  }
+ }
