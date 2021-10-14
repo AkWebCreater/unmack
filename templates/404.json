@@ -747,6 +747,7 @@
       "settings": {
         "shadow-effect": true,
         "background-image": "shopify:\/\/shop_images\/8.jpg",
+        "background-image-top": "shopify:\/\/shop_images\/Home_Page1_3db6ee68-04f6-471f-acc4-a6599d099712.jpg",
         "title": "WHY DO PEOPLE LOVE US?",
         "image_width": "half",
         "image_ratio": "circle",
