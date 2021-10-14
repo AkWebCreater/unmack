@@ -53,7 +53,7 @@
       <dt class="price__compare">
         <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
       </dt>
-      <dd class="price__compare">
+      <dd class="price__compare">M.R.P.:
         <s class="price-item price-item--regular">
           {{ compare_at_price | money }}
         </s>
@@ -61,12 +61,33 @@
       <dt>
         <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.sale_price' | t }}</span>
       </dt>
-      <dd {% if show_badges == false %}class="price__last"{% endif %}>
-        <span class="price-item price-item--sale">
+      <dd class="price {% if show_badges == false %}price__last{% endif %}">Price:
+        <span class="price-item price-item--sale Product_price">
           {{ money_price }}
         </span>
       </dd>
+      {% if product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price %}
+      <dd>You save
+          <span class="price-item price-item--discount discount Product_price">:{{ product.selected_or_first_available_variant.compare_at_price | minus: product.selected_or_first_available_variant.price | money_with_currency }}</span>
+          <span class="price-item percentage Product_price">({{product.selected_or_first_available_variant.compare_at_price | minus: product.selected_or_first_available_variant.price |times:100 |divided_by:product.selected_or_first_available_variant.compare_at_price | remove: '.0' | append: '%' }})</span>
+      </dd>
+      {% endif %} 
+      {% if section.settings.tax-note %}
+      <dd>
+        <span class="tax-note form__label">{{ section.settings.tax-note}}</span>
+      </dd>
+      {% endif %}
+      <span class="stock__color price__badge-sale" aria-hidden="true">
+      {{ 'products.product.in_stock' | t }}
+    </span>
+
+    <span class="stock__color price__badge-sold-out" aria-hidden="true">
+      {{ 'products.product.sold_out' | t }}
+    </span>
     </div>
+    
+    {% render 'product_trust_badges'%}
+    
     <small class="unit-price caption{% if available == false or product.selected_or_first_available_variant.unit_price_measurement == nil %} hidden{% endif %}">
       <dt class="visually-hidden">{{ 'products.product.price.unit_price' | t }}</dt>
       <dd {% if show_badges == false %}class="price__last"{% endif %}>
@@ -82,6 +103,8 @@
       </dd>
     </small>
   </dl>
+ 
+  {% comment %}
   {%- if show_badges -%}
     <span class="badge price__badge-sale color-{{ settings.sale_badge_color_scheme }}" aria-hidden="true">
       {{ 'products.product.on_sale' | t }}
@@ -91,4 +114,57 @@
       {{ 'products.product.sold_out' | t }}
     </span>
   {%- endif -%}
+  {% endcomment %}
 </div>
+<style>
+  .price--on-sale .price__sale {
+   	flex-direction:column!important;
+    
+}
+  ul.grid{
+    margin-left:0px;
+  }
+  .multicolumn-card__info h5 {
+    font-size: x-small;
+}
+  slider-component .grid{
+  	margin-bottom:0px;
+    padding-bottom:0px;
+    margin-top:7px;
+    border-bottom: 1px solid #D0D0D0;
+  }
+  slider-component .grid-item{
+    padding-bottom:0px;
+  }
+  .product-form__input input[type=radio]:checked+label {
+    background-color: #F58634;
+  }
+  .product-form__input input[type=radio]+label {
+    border: .1rem solid #F58634;
+    border-radius:1rem;
+    font-size: 15px;
+    font-weight: 400;
+    width: 110px;
+    padding: 0.74rem 2rem;
+  }
+  .product-form__input input[type=radio]+label:hover {
+    border: .1rem solid #F58634;
+}
+  .stock__color{
+    color: #44C8FF;
+    font-weight: 500;
+}
+  .product .price--sold-out .price__badge-sold-out{
+  	color: #44C8FF;
+    font-weight: 500;
+  }
+  .product-details-origin span {
+    color: #f07f2f;
+}
+  span.Product_price{
+  	color: #f07f2f;
+  }
+  dd.price {
+    font-size: 3rem;
+}
+</style>
