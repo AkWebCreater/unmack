@@ -1853,6 +1853,10 @@ input[type='checkbox'] {
   align-items: center;
 
 }
+.header__icon--cart .icon {
+  height: 20px;
+  width: 20px;
+}
 .header__icon::after,
 .header__icon--cart .icon::after{
 content: '';
