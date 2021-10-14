@@ -12,6 +12,7 @@ padding-bottom: 37px;
 display: flex;
 align-items: flex-end;
 width: 100%;
+min-height: 276px;
 }
 .our-journey{
     background-color: #f3f3f3;
