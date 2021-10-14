@@ -1603,8 +1603,8 @@ input[type='checkbox'] {
   justify-content: center;
   align-items: center;
   font-size: 0.9rem;
-  bottom: 0.8rem;
-  left: 2.2rem;
+  top: 0;
+  right:9px;
   line-height: 1.1;
 }
 
@@ -1866,7 +1866,7 @@ border-left: 2px solid #fff;
 }
 .header__icon::after{
   position: absolute;
-  right: -5px;
+  right: 0;
 }
 .header__icon svg path,
 .header__icon--cart .icon svg path{
