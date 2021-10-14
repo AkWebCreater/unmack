@@ -4,6 +4,10 @@
     <span aria-hidden="true">&rsaquo;</span>
     <span class="active-page brand-active-page">{{ collection.title }}</span>
  	{% endif %}
+   {% if template contains 'product' %}
+    <span aria-hidden="true">/</span>
+    <span class="active-page brand-active-page">Products/{{ product.title }}</span>
+ 	{% endif %}
    {% if template contains 'blog' %}
    <span aria-hidden="true">&rsaquo;</span>
    <span class="active-page brand-active-page">{{ blog.title }}</span>  
