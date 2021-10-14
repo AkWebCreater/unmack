@@ -1861,12 +1861,14 @@ input[type='checkbox'] {
 .header__icon--cart .icon::after{
 content: '';
 color: #fff;
+height: 20px;
 border-left: 2px solid #fff;
 
 }
 .header__icon::after{
   position: absolute;
   right: 0;
+
 }
 .header__icon svg path,
 .header__icon--cart .icon svg path{
