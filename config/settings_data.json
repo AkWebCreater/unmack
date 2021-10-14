@@ -25,6 +25,16 @@
     "social_facebook_link": "https:\/\/www.facebook.com\/Umanac\/",
     "social_instagram_link": "https:\/\/www.instagram.com\/umanac.in\/?hl=en",
     "favicon": "shopify:\/\/shop_images\/logo.png",
+    "badge1": "shopify:\/\/shop_images\/T2_1.png",
+    "title1": "Cash On Delivery",
+    "badge2": "shopify:\/\/shop_images\/T1_1.png",
+    "title2": "Authenticity Guaranteed",
+    "badge3": "shopify:\/\/shop_images\/T5_1.png",
+    "title3": "Umanac Delivered",
+    "badge4": "shopify:\/\/shop_images\/T4_1.png",
+    "title4": "Secure Payment",
+    "badge5": "shopify:\/\/shop_images\/T3_1.png",
+    "title5": "Non Returnable",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
