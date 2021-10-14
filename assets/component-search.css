@@ -25,6 +25,7 @@ background:#000;
 }
 .search-modal__content label{
 color:#000;
+top: 5px;
 }
 /* Remove extra spacing for search inputs in Safari */
 input::-webkit-search-decoration {

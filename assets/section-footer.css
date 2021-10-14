@@ -135,17 +135,20 @@ justify-content:flex-start;
 .footer__column--info {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding-left: 2rem;
   padding-right: 2rem;
+  padding-bottom: 2rem;
 }
 
 @media screen and (min-width: 750px) {
   .footer__column--info {
     padding-left: 0;
     padding-right: 0;
+    flex-direction: row;
     align-items: flex-end;
+    
   }
 }
 
