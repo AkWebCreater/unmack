@@ -2,6 +2,10 @@
 .collage-section + .collage-section .no-heading {
   margin-top: -4rem;
 }
+.image-with-text__heading{
+  margin-top: auto;
+  margin-bottom: 20px;
+}
 .collage .image-with-text__heading{
 color: var(--color-background);
 }
