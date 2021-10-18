@@ -502,3 +502,8 @@ overflow:auto;
 .video-collage-section.bg{
 background:#f3f3f3;
 }
+@media (max-width:749px) {
+  .collage-wrapper{
+    text-align: center;
+    }
+}
