@@ -141,7 +141,9 @@ justify-content:flex-start;
   padding-right: 2rem;
   padding-bottom: 2rem;
 }
-
+.footer__blocks-wrapper .header__icon::after{
+  border-left: 0 ;
+}
 @media screen and (min-width: 750px) {
   .footer__column--info {
     padding-left: 0;

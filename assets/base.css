@@ -1629,6 +1629,7 @@ input[type='checkbox'] {
 .announcement-bar > :last-child{
   text-align: right;
   color: #fff;
+  padding-right: 20px;
 }
 .announcement-bar a{
   color: #fff;
@@ -1848,9 +1849,9 @@ input[type='checkbox'] {
 .header__icon--cart .icon {
   height: 3.6rem;
   width: 4.4rem;
-  display: flex;
+
   position: relative;
-  align-items: center;
+
 
 }
 .header__icon--cart .icon {
@@ -2194,9 +2195,7 @@ details-disclosure > details {
   align-items: center;
 }
 /* search fixed */
-.search-modal__content .field{
-  top: 5px;
-}
+
 /* home page product range */
 .collection-list-section .title-wrapper-with-link h2{
   width: 100%;
