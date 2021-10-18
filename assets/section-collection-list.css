@@ -1,8 +1,13 @@
-.collection-list-section,.collection-list-section + section{
+.collection-list-section{
 background:#fff8ed;
-  margin-top:0;
-  padding-top:4rem;
+  margin-top:2rem;
+  padding-top:3rem;
 }
+.collection-list-section + section{
+  background:#fff8ed;
+    margin-top:0;
+    padding-top:3rem;
+  }
 #shopify-section-template--14951749845192__163038833315e79f47 > div::before{
 content:" ";
   display:block;
