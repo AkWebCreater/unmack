@@ -1,14 +1,10 @@
 {
   "sections": {
-    "1630400134fcc17c93": {
-      "type": "image-banner",
+    "16345547351220d2e8": {
+      "type": "background-with-images",
       "settings": {
-        "image": "shopify:\/\/shop_images\/abcde.jpg",
-        "desktop_text_box_position": "center",
-        "color_scheme": "background-1",
-        "stack_images_on_mobile": false,
-        "adapt_height_first_image": true,
-        "logo-url": ""
+        "background-image": "shopify:\/\/shop_images\/abcde.jpg",
+        "heading": ""
       }
     },
     "main": {
@@ -92,7 +88,7 @@
     }
   },
   "order": [
-    "1630400134fcc17c93",
+    "16345547351220d2e8",
     "main",
     "product-recommendations"
   ]
