@@ -5,7 +5,7 @@
 <noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
 <section class="section-{{ section.id}}">
 <div class="multicolumn background-{{ section.settings.background_style }}{% if section.settings.title == blank %} no-heading{% endif %}">
-  <div class="page-width">
+  <div class="full-width">
     <div class="title-wrapper-with-link title-wrapper--self-padded-mobile{% if section.settings.title == blank %} title-wrapper-with-link--no-heading{% endif %}">
       <h2 class="title">
         {{ section.settings.title | escape }}
@@ -312,7 +312,7 @@
   	margin-top:0px;
   }
   .section-{{section.id}} .grid__item {
-    padding-left: 5rem;
+   padding: 0 2rem;
   }  
   .fa-long-arrow-alt-right:before {
     content: "\f30b";
