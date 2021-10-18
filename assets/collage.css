@@ -2,6 +2,9 @@
 .collage-section + .collage-section .no-heading {
   margin-top: -4rem;
 }
+.collage .image-with-text__heading{
+color: var(--color-background);
+}
 
 @media screen and (min-width: 750px) {
   .collage-section + .collage-section .no-heading {
