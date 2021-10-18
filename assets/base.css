@@ -2163,7 +2163,7 @@ details-disclosure > details {
     text-transform: uppercase;
   }
   .section-title.under-bg{
-    color: #fff;
+    color: #fff !important;
   }
   .section-title::after{
     content: '';
