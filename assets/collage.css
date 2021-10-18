@@ -7,7 +7,7 @@
   margin-bottom: 20px;
 }
 .collage .image-with-text__heading{
-color: var(--color-background);
+color: var(--color-pincode-validator);
 }
 
 @media screen and (min-width: 750px) {
