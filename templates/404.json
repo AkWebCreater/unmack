@@ -243,15 +243,6 @@
     "1630397519047103ef": {
       "type": "vedio-collage",
       "blocks": {
-        "1630397519047103ef-0": {
-          "type": "video",
-          "settings": {
-            "cover_image": "shopify:\/\/shop_images\/jouney.png",
-            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "description": "Describe the video for customers using screen readers",
-            "image_padding": false
-          }
-        },
         "1630397519047103ef-1": {
           "type": "heading",
           "settings": {
@@ -263,12 +254,21 @@
           "settings": {
             "text": "<p>Discover our story and experience the exciting moment and milestones  <\/p>"
           }
+        },
+        "1630397519047103ef-0": {
+          "type": "video",
+          "settings": {
+            "cover_image": "shopify:\/\/shop_images\/jouney.png",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "description": "Describe the video for customers using screen readers",
+            "image_padding": false
+          }
         }
       },
       "block_order": [
-        "1630397519047103ef-0",
         "1630397519047103ef-1",
-        "1630397519047103ef-2"
+        "1630397519047103ef-2",
+        "1630397519047103ef-0"
       ],
       "settings": {
         "heading": "Umanac Journey",
