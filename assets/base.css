@@ -2162,6 +2162,9 @@ details-disclosure > details {
     font-size: 30px;
     text-transform: uppercase;
   }
+  .section-title.under-bg{
+    color: #fff;
+  }
   .section-title::after{
     content: '';
     position: absolute;

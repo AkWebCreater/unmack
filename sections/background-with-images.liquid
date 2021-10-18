@@ -4,7 +4,7 @@
       <div class="page-width">
         {% if section.settings.heading != blank %}
           <div class="heading">
-            <h2 class="section-title title">{{ section.settings.heading}}</h2>
+            <h2 class="section-title under-bg title">{{ section.settings.heading}}</h2>
           </div>
         {% endif %}
         
@@ -100,11 +100,15 @@
  color:#fff;
       {% endif %}
   }
-  .section-{{section.id}} .grid.grid-3{
+  .section-{{section.id}} .grid.grid-3,.section-{{section.id}} .grid-down{
   	width:80%;
     margin:auto;
     text-align:center;
   }
+  .section-{{section.id}} .grid.grid-3{
+    padding-bottom: 40px;
+  }
+    
   .section-{{section.id}} .grid-1 {
     width: 33%;
 }
@@ -118,12 +122,12 @@
     width: 100px;
     border-top: 3px solid #B84D1D;
   }
-  .section-{{section.id}} .grid-down span h3 {
+  .section-{{section.id}} .grid-down span h3 ,.section-{{section.id}} .grid-down p {
     color: white;
-    font-weight: 600;
+    margin: 0;
 }
-  .section-{{section.id}} .grid-down p {
-    color: white;
+.section-{{section.id}} .grid-down span h3 {
+  font-weight: 800;
 }
   @media screen and (max-width:768px){
     .section-{{section.id}} .grid-1{
