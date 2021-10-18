@@ -40,7 +40,7 @@
   }
 
   .collage--right {
-    grid-template-columns: minmax(25rem, auto) minmax(auto, 48rem);
+    grid-template-columns: minmax(auto,25rem ) minmax(auto, 48rem);
   }
 }
 
