@@ -1,8 +1,12 @@
-<nav class="breadcrumb" role="navigation" aria-label="breadcrumbs">
+<nav class="breadcrumb page-width" role="navigation" aria-label="breadcrumbs">
   <a href="/" title="Home">Home</a>
   {% if template contains 'collection' and collection.handle %}
     <span aria-hidden="true">&rsaquo;</span>
     <span class="active-page brand-active-page">{{ collection.title }}</span>
+ 	{% endif %}
+   {% if template contains 'product' %}
+    <span aria-hidden="true">/</span>
+    <span class="active-page brand-active-page">Products/{{ product.title }}</span>
  	{% endif %}
    {% if template contains 'blog' %}
    <span aria-hidden="true">&rsaquo;</span>
@@ -24,4 +28,12 @@
    <span aria-hidden="true">&rsaquo;</span>  
    <span class="active-page brand-active-page">My Account</span>
    {% endif %}
-</nav>  
+</nav>
+
+<style>
+  nav.breadcrumb.page-width {
+    margin-left: 5rem;
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+</style>

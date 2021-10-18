@@ -3,6 +3,8 @@
 <link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">
 <noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
 <section class="section-{{ section.id}}">
+  <div class="image-with-text-top">
+  </div>
   <div class="image-with-text  color-scheme-background-1">
   </div>
 <div class="multicolumn background-{{ section.settings.background_style }}{% if section.settings.title == blank %} no-heading{% endif %}">
@@ -115,6 +117,11 @@
       "id": "background-image",
       "type": "image_picker",
       "label": "background-image"
+    },
+	{
+      "id": "background-image-top",
+      "type": "image_picker",
+      "label": "ceritication banner"
     },
     {
       "type": "text",
@@ -293,6 +300,16 @@
   {% if section.settings.background-image != blank %}
   .section-{{section.id}} .image-with-text{
     background-image:url({{section.settings.background-image | img_url: 'master'}});
+    background-position: center center;
+    background-size: cover;
+    height:600px;
+    margin-bottom:0px;
+    margin-top:0;
+  }
+  {% endif %}
+  {% if section.settings.background-image-top != blank %}
+  .section-{{section.id}} .image-with-text-top{
+    background-image:url({{section.settings.background-image-top | img_url: 'master'}});
     background-position: center center;
     background-size: cover;
     height:600px;

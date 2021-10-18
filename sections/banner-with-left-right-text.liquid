@@ -1,0 +1,288 @@
+<!-- start section banner-with-left-right-text-->
+<section class="section-{{ section.id }}">
+  <div class="image-with-text  color-scheme-background-1 mobile-background-image">
+     <div class="">
+        {% if section.settings.heading != blank %}
+          <div class="heading">
+            <h2 class="title">{{ section.settings.heading}}</h2>
+          </div>
+        {% endif %}
+       
+       <div class="banner__content" style="align-items: {{ section.settings.desktop_text_box_position }};">
+    <div class="banner__box">
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when 'heading' -%}
+            <h2 class="banner__heading h2">
+              <span>{{ block.settings.heading | escape }}</span>
+            </h2>
+      	  {%- when 'html' -%}
+            <h2 class="banner__title">
+              <span>{{ block.settings.title | escape }}</span>
+            </h2>
+          {%- when 'text' -%}
+            <div class="banner__text">
+              <span>{{ block.settings.text | escape }}</span>
+            </div>
+          {%- when 'buttons' -%}
+            <div class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_link_1 != blank and block.settings.button_label_2 != blank and block.settings.button_link_2 != blank %} banner__buttons--multiple{% endif %}">
+              {%- if block.settings.button_label_1 != blank -%}
+                <a href="{{ block.settings.button_link_1 }}" class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}"{% if block.settings.button_link_1 == blank %} aria-disabled="true"{% endif %}>{{ block.settings.button_label_1 | escape }}</a>
+              {%- endif -%}
+            </div>
+        {%- endcase -%}
+      {%- endfor -%}
+    </div>
+    {% if section.settings.right_text != blank %}
+    <div class="right__content">
+       <div class="text-image">
+         {{ section.settings.right_text }}
+      </div>
+    </div>
+   {% endif %}       
+  </div>
+    </div> 
+  </div>
+  <div class="mobile_conatiner_banner_box">
+  	{%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when 'heading' -%}
+            <h2 class="mobile_banner_heading">
+              <span>{{ block.settings.heading | escape }}</span>
+            </h2>
+      	  {%- when 'html' -%}
+            <h2 class="mobile_banner_title">
+              <span>{{ block.settings.title | escape }}</span>
+            </h2>
+          {%- when 'text' -%}
+            <div class="mobile_banner_text">
+              <span>{{ block.settings.text | escape }}</span>
+            </div>
+          {%- when 'buttons' -%}
+            <div class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_link_1 != blank and block.settings.button_label_2 != blank and block.settings.button_link_2 != blank %} banner__buttons--multiple{% endif %}">
+              {%- if block.settings.button_label_1 != blank -%}
+                <a href="{{ block.settings.button_link_1 }}" class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}"{% if block.settings.button_link_1 == blank %} aria-disabled="true"{% endif %}>{{ block.settings.button_label_1 | escape }}</a>
+              {%- endif -%}
+            </div>
+        {%- endcase -%}
+      {%- endfor -%}
+  </div>
+</section>
+<!-- End section banner-with-left-right-->
+
+
+{% schema %}
+  {
+    "name": "American Dried Blueberry",
+	"class":"american-dried-blueberries",
+    "settings": [
+					{
+                      "id": "background-image",
+                      "type": "image_picker",
+                      "label": "Choose images for background"
+                    },
+					{
+                      "id": "mobile-background-image",
+                      "type": "image_picker",
+                      "label": "Choose images for mobile background"
+                    },
+					{
+                      "id": "heading",
+                      "type": "text",
+                      "label": "Enter heading"
+                    },
+					{
+                      "id": "right_text",
+                      "type": "html",
+                      "label": "Enter Right Side Text"
+                    }
+				],
+"blocks":[
+    {
+      "type": "heading",
+      "name": "t:sections.image-banner.blocks.heading.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "default": "Image banner",
+          "label": "t:sections.image-banner.blocks.heading.settings.heading.label"
+        }
+      ]
+    },
+	{
+      "type": "html",
+      "name": "title",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "default": "Image banner",
+          "label": "title"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "t:sections.image-banner.blocks.text.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "default": "Give customers details about the banner image(s) or content on the template.",
+          "label": "t:sections.image-banner.blocks.text.settings.text.label"
+        }
+      ]
+    },
+    {
+      "type": "buttons",
+      "name": "t:sections.image-banner.blocks.buttons.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_label_1",
+          "default": "Button label",
+          "label": "t:sections.image-banner.blocks.buttons.settings.button_label_1.label",
+          "info": "t:sections.image-banner.blocks.buttons.settings.button_label_1.info"
+        },
+        {
+          "type": "url",
+          "id": "button_link_1",
+          "label": "t:sections.image-banner.blocks.buttons.settings.button_link_1.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "button_style_secondary_1",
+          "default": false,
+          "label": "t:sections.image-banner.blocks.buttons.settings.button_style_secondary_1.label"
+        }
+      ]
+    }
+  ],
+"presets": [
+{
+      "name": "banner-with-left-right-text",
+      "blocks": [
+        {
+          "type": "heading"
+        },
+		{
+          "type": "html"
+        },
+        {
+          "type": "text"
+        },
+        {
+          "type": "buttons"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
+
+
+<style>
+  {% if section.settings.background-image != blank %}
+  .section-{{section.id}} .image-with-text{
+    background-image:url({{section.settings.background-image | img_url: 'master'}});
+    background-position: center center;
+    background-size: cover;
+	margin-bottom: 2rem; 
+    margin-top:0;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+  }
+  {% endif %}
+  .make-your-own-box .image-with-text{
+  margin-bottom:0;
+  }
+  .section-{{section.id}} .banner__heading {
+    margin-bottom: 0;
+    color: white;
+    font-weight: 600;
+}
+  .banner__text {
+    color: white;
+}
+  .banner__buttons {
+    font-weight: 700;
+}
+  .section-{{section.id}} .button, .customer button, .shopify-challenge__button {
+    padding: 2px;
+    min-width: 0;
+    min-height: 0;
+    border-radius: 5px;
+    border: 1px solid #F28B1C;
+    background-color: transparent;
+    color: #F28B1C;
+    box-shadow: none;
+}
+  .section-{{section.id }} .banner__title{
+  	font-size: 5rem;
+    color:#E58F34;
+  }
+  .section-{{section.id }} .banner__content{
+        display: block;
+        position: unset;
+  }
+  .section-{{section.id }} .banner__box {
+  	position: unset;
+  }
+  .section-{{section.id }} .right__content{
+  	position: absolute;
+    right: 20px;
+    color: #fff;
+    top: 20%;
+    font-size: 35px;
+    line-height: initial;
+    text-align: center;
+  }
+  
+  @media screen and (max-width:768px){
+    {% if section.settings.mobile-background-image != blank %}
+    .section-{{section.id}} .mobile-background-image{
+    background-image:url({{section.settings.mobile-background-image | img_url: 'master'}});
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 0rem;
+  }
+    {% endif %}
+    .section-{{section.id }} .banner__box{
+    	visibility: hidden;
+    }
+    .section-{{section.id }} .mobile_conatiner_banner_box {
+    text-align: center;
+      margin-bottom: 5rem;
+}
+    .section-{{section.id }} .mobile_banner_text {
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+    .section-{{section.id }} .image-with-text{
+    	margin-bottom:0rem;
+    }
+    .section-{{section.id }} .right__content{
+      left: 0px;
+      top: 10%;
+    }
+ }
+  @media screen and (min-width:720px){
+    .section-{{section.id }} .mobile_conatiner_banner_box{
+    	display:none;
+    }
+  }
+</style>

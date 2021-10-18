@@ -1,11 +1,124 @@
 {% assign productDescription = product.description | split:"<!-- split -->" %}
+{% unless template contains 'product' %}
 <div class="decription-main">
   {{ productDescription[0] }}
-
 </div>
+{% endunless %}
+{% if template contains 'product' %}
+<div class="page-width">
+  <div class="product-description-title">
+  {{ productDescription[1] }}
+  </div>
+  <div class="product-description">
+  {{ productDescription[2] }}
+  </div>
+  <div class="shopify-section spaced-section spaced-section--full-width">
+  <div class="image-with-text  color-scheme-background-1">
+    <div class="image-with-text__grid color-background-1 image-with-text__grid--reverse grid grid--gapless grid--1-col grid--2-col-tablet">
+      {% if productDescription[3] != blank %}
+      <div class="grid__item">
+         <div class="image-with-text__content image-with-text__content--adapt">
+           <div class="image-with-text__text rte">
+          {{ productDescription[3] }}
+           </div>
+      	</div>
+      </div>
+      {% endif %}
+      {% if productDescription[4] != blank %}
+      <div class="grid__item">
+        <div class="image-with-text__media image-with-text__media--placeholder">
+        	{{ productDescription[4] }}
+        </div>
+    </div>
+      {% endif %}
+  </div>
+  </div>
+</div>
+  {% if productDescription[7] != blank %}
+  <div class="image-with-text  color-scheme-background-1">
+      <div class="">
+        <div class="grid products">
+          {{ productDescription[7] }}
+        </div>
+    </div>
+  
+  </div>
+  {% endif %}
+  
+  <div class="shopify-section spaced-section spaced-section--full-width">
+  <div class="image-with-text  color-scheme-background-1">
+    <div class="image-with-text__grid color-background-1 image-with-text__grid--reverse grid grid--gapless grid--1-col grid--2-col-tablet">
+      {% if productDescription[5] != blank %}
+      <div class="grid__item">
+        <div class="image-with-text__media image-with-text__media--placeholder">
+        	{{ productDescription[5] }}
+        </div> 
+      </div>
+      {% endif %}
+      {% if productDescription[6] != blank %}
+      <div class="grid__item">
+        <div class="image-with-text__content image-with-text__content--adapt">
+           <div class="image-with-text__text rte">
+          {{ productDescription[6] }}
+           </div>
+      </div>        
+    </div>
+      {% endif %}
+  </div>
+  </div>
+</div>
+  
+
+  <slider-component>
+    <ul class="multicolumn-list grid grid--1-col grid--2-col-tablet"  role="list">
+		   {{ productDescription[8] }}  
+    </ul>
+  </slider-component>
+  
+	{{ productDescription[9] }}
+  
+  <hr>
+  {% render 'product-additional-information' %}
+</div>
+{% endif %}
+
+
 
 
 <style>
+ .multicolumn-card__info {
+    margin: auto;
+    width: 80%;
+}
+li.center.grid__item.multicolumn-list__item {
+    width: 20%;
+}
+  img.image-with-text{
+  	width:100%;
+  }
+   .products .grid-1{
+    width:14%;
+  }
+  img.small-img {
+    height: 120px;
+}
+  .grid {
+    margin-left: 3rem;
+}
+  .image-with-text__media.image-with-text__media--placeholder {
+    margin-left: 40px;
+}
+  .image-with-text__text.rte{
+  	text-align: justify;
+    letter-spacing: 0.03rem;
+    line-height: 1.4;
+  }
+  .product-description {
+    text-align: justify;
+    margin-left: 25px;
+    letter-spacing: 0.03rem;
+    line-height: 1.4;
+}
   .decription-main {
     margin-bottom: 30px;
 }
@@ -24,6 +137,11 @@
     font-weight: 600;
     padding-top: 20px;
   }
+  .product-description-title {
+    border-top: 1px solid #bdbdbd;
+    font-size: 1.65rem;
+    font-weight: 600;
+}
   @media screen and (max-width:767px){
   	.decription-image {
     display: block;
@@ -36,5 +154,7 @@
     }
    
   }
+
+
 </style>
 

@@ -364,5 +364,66 @@
         "label": "Favicon image"
       }
     ]
+  },
+  {
+    "name": "Product-badges",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "show_section",
+        "default": true,
+        "label": "show this badge section"
+      },
+      {
+        "id": "badge1",
+        "type": "image_picker",
+        "label": "Select Badge 1"
+      },
+      {
+        "id": "title1",
+        "type": "html",
+        "label": "Enter title"
+      },
+      {
+        "id": "badge2",
+        "type": "image_picker",
+        "label": "Select Badge 2"
+      },
+      {
+        "id": "title2",
+        "type": "html",
+        "label": "Enter title for 2"
+      },
+      {
+        "id": "badge3",
+        "type": "image_picker",
+        "label": "Select Badge 3"
+      },
+      {
+        "id": "title3",
+        "type": "html",
+        "label": "Enter title for 3"
+      },
+      {
+        "id": "badge4",
+        "type": "image_picker",
+        "label": "Select Badge 4"
+      },
+      {
+        "id": "title4",
+        "type": "html",
+        "label": "Enter title for 4"
+      },
+      {
+        "id": "badge5",
+        "type": "image_picker",
+        "label": "Select Badge 5"
+      },
+      {
+        "id": "title5",
+        "type": "html",
+        "label": "Enter title for 5"
+      }
+    ]
   }
 ]

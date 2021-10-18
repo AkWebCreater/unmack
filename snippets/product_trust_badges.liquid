@@ -1,0 +1,78 @@
+<!-- Start product page badges(trust) snippet product_trust_badges.liquid-->
+    {% if settings.show_section == true %}
+    <slider-component>
+      <ul class="multicolumn-list grid grid--1-col grid--2-col-tablet" role="list">
+        <li class="multicolumn-list__item grid__item center">
+          <div class="multicolumn-card">
+            {% if settings.badge1 != blank %}
+            <div class="multicolumn-card__image-wrapper multicolumn-card__image-wrapper--full-width">
+              <div class="media media--transparent media--square"><img src="{{ settings.badge1 | img_url:'master'}}" alt="Column"></div>
+            </div>
+            {% endif %}
+            {% if  settings.title1 != blank %}
+            <div class="multicolumn-card__info">
+              <h5>{{settings.title1 }}</h5>
+            </div>
+            {% endif %}
+          </div>
+        </li>
+        <li class="multicolumn-list__item grid__item center">
+          <div class="multicolumn-card">
+            {% if settings.badge2 != blank %}
+            <div class="multicolumn-card__image-wrapper multicolumn-card__image-wrapper--full-width">
+              <div class="media media--transparent media--square"><img src="{{ settings.badge2 | img_url:'master'}}" alt="Column"></div>
+            </div>
+            {% endif %}
+            {% if settings.title2 != blank %}
+            <div class="multicolumn-card__info">
+              <h5>{{settings.title2 }}</h5>
+            </div>
+            {% endif %}
+          </div>
+        </li>
+        <li class="multicolumn-list__item grid__item center">
+          <div class="multicolumn-card">
+            {% if settings.badge3 != blank %}
+            <div class="multicolumn-card__image-wrapper multicolumn-card__image-wrapper--full-width">
+              <div class="media media--transparent media--square"><img src="{{ settings.badge3 | img_url:'master'}}" alt="Column"></div>
+            </div>
+            {% endif %}
+            {% if settings.title3 != blank %}
+            <div class="multicolumn-card__info">
+              <h5>{{settings.title3 }}</h5>
+            </div>
+            {% endif %}
+          </div>
+        </li>
+        <li class="multicolumn-list__item grid__item center">
+          <div class="multicolumn-card">
+            {% if settings.badge4 != blank %}
+            <div class="multicolumn-card__image-wrapper multicolumn-card__image-wrapper--full-width">
+              <div class="media media--transparent media--square"><img src="{{ settings.badge4 | img_url:'master'}}" alt="Column"></div>
+            </div>
+            {% endif %}
+            {% if  settings.title4 != blank %}
+            <div class="multicolumn-card__info">
+              <h5>{{settings.title4 }}</h5>
+            </div>
+            {% endif %}
+          </div>
+        </li>
+        <li class="multicolumn-list__item grid__item center">
+          <div class="multicolumn-card">
+            {% if settings.badge5 != blank %}
+            <div class="multicolumn-card__image-wrapper multicolumn-card__image-wrapper--full-width">
+              <div class="media media--transparent media--square"><img src="{{ settings.badge5 | img_url:'master'}}" alt="Column"></div>
+            </div>
+            {% endif %}
+            {% if settings.title5 != blank %}
+            <div class="multicolumn-card__info">
+              <h5>{{settings.title5 }}</h5>
+            </div>
+            {% endif %}
+          </div>
+        </li>
+      </ul>
+    </slider-component>
+    {% endif %}
+    <!--End product page badges(trust) snippet product_trust_badges.liquid-->
