@@ -2154,11 +2154,7 @@ details-disclosure > details {
   .header-wrapper.fix .navigation .header__menu-item{
     color: #000 !important;
   }
-<<<<<<< HEAD
   /* home page section titles */
-=======
-   /* home page section titles */
->>>>>>> c42f08af709204d4837b4cf48a46a672e95a1c2e
   .section-title{
     position: relative;
     color: #898989 !important;
@@ -2166,12 +2162,9 @@ details-disclosure > details {
     font-size: 30px;
     text-transform: uppercase;
   }
-<<<<<<< HEAD
   .section-title.under-bg{
     color: #fff !important;
   }
-=======
->>>>>>> c42f08af709204d4837b4cf48a46a672e95a1c2e
   .section-title::after{
     content: '';
     position: absolute;
@@ -2185,7 +2178,6 @@ details-disclosure > details {
     border: 0 !important;
     background: #f58634;
   }
-<<<<<<< HEAD
 /* top menu in announcment */
 .extra-link{
   background-color:#b1ea29;
@@ -2230,6 +2222,3 @@ details-disclosure > details {
    font-weight: 700;
    color: #fff;
  }
-=======
- 
->>>>>>> c42f08af709204d4837b4cf48a46a672e95a1c2e
