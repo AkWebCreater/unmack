@@ -1,23 +1,14 @@
 {
   "sections": {
-    "16345547351220d2e8": {
-      "type": "background-with-images",
-      "blocks": {
-        "9b4d1722-01f9-47e3-9bd7-ae27b9e2b86d": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/T5_1.png",
-            "title": "WERTYTFUY",
-            "description": "ASRDTYFUY"
-          }
-        }
-      },
-      "block_order": [
-        "9b4d1722-01f9-47e3-9bd7-ae27b9e2b86d"
-      ],
+    "1634622007a4730652": {
+      "type": "image-banner",
       "settings": {
-        "background-image": "shopify:\/\/shop_images\/abcde.jpg",
-        "heading": ""
+        "image": "shopify:\/\/shop_images\/abcde.jpg",
+        "desktop_text_box_position": "center",
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": false,
+        "adapt_height_first_image": true,
+        "logo-url": ""
       }
     },
     "main": {
@@ -101,7 +92,7 @@
     }
   },
   "order": [
-    "16345547351220d2e8",
+    "1634622007a4730652",
     "main",
     "product-recommendations"
   ]
