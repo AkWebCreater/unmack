@@ -4,8 +4,28 @@ justify-content: space-between;
 .best-seller-nav span{
     cursor:pointer;
 }
+.best-seller .grid__item{
+    text-align: center;
+}
+.best-seller .price{
+    justify-content: center;
+}
+.price-compare+.price-main{
+    color: rgb(238, 31, 31);
+}
 .add-btn{
     
+    text-align: center;
+    display: block;
+    background: #f58634;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    padding-bottom: 3px;
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+
 }
 .best-seller-nav .add-border{
     border-bottom:solid 1px #ff8125;
