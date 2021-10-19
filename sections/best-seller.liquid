@@ -20,7 +20,7 @@
         {% assign handle = block.settings.collection %} 
         {%- assign seller_collection = collections[handle] -%}
     <div class="collection-grid-wrapper" data-index="{{forloop.index}}">
-        <div class="grid grid--1-col grid--2-col-tablet grid--4-col-desktop" >
+        <div class="grid grid--2-col grid--3-col-tablet grid--4-col-desktop" >
         {%- for product in seller_collection.products  limit:8 -%}
         <div class="grid__item">
          {% render 'product-card',
@@ -30,6 +30,9 @@
                 add_image_padding: false,
                 show_vendor: false
               %}
+              <div class="no-js-hidden" id="price-{{ section.id }}">
+                {%- render 'price', product: product, use_variant: false, show_badges: false, price_class: 'price--large' -%}
+              </div>
            </div> 
         {%- endfor -%} 
         </div> 
