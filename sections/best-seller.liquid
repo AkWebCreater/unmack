@@ -30,14 +30,14 @@
                 add_image_padding: false,
                 show_vendor: false
               %}
-              <div class="no-js-hidden price"  id="price-{{ section.id }}">
+              <div class="price"  id="price-{{ section.id }}">
                 {% if product.compare_at_price_min > product.price_min %}
                 <span class="price-compare"> 
-                  <span>₹: {{product.compare_at_price_min | money}}</span>
+                  ₹: {{product.compare_at_price_min | money}}
                 </span>  
                 {% endif %}
-                <span class="price-main">₹: 
-                  <span>{{product.price_min | money}}</span>
+                <span class="price-main"> 
+                  ₹: {{product.price_min | money}}
                 </span>
 
               </div>
