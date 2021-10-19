@@ -4,6 +4,9 @@ justify-content: space-between;
 .best-seller-nav span{
     cursor:pointer;
 }
+.add-btn{
+    
+}
 .best-seller-nav .add-border{
     border-bottom:solid 1px #ff8125;
 }

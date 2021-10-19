@@ -31,9 +31,13 @@
                 show_vendor: false
               %}
               <div class="no-js-hidden" id="price-{{ section.id }}">
-                <span class="price">{{product.price}}</span>
-                
+                {% if product.compare_at_price > prodcut.price %}
+                <span class="price">Rs: <span>{{product.compare_at_price | money}}</span></span>  
+                {% endif %}
+                <span class="price">Rs: <span>{{product.price | money}}</span></span>
+
               </div>
+              <div class="add-btn"><a href="{{product.url}}">Add to cart</a></div>
            </div> 
         {%- endfor -%} 
         </div> 
