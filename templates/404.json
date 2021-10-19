@@ -487,6 +487,22 @@
         "url_button2": ""
       }
     },
+    "163419087404bfcfc3": {
+      "type": "image-with-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/2_535x_1.jpg",
+        "image-right": "shopify:\/\/shop_images\/4_535x_1.jpg",
+        "height": "adapt",
+        "color_scheme": "background-1",
+        "layout": "image_first",
+        "text-left": "<p>Loaded with<br> High - Quality<br> Protein<\/p>",
+        "text-right": "<p>Natural source<br> of Fiber!<\/p>",
+        "button-left": "Shop Now",
+        "url_button1": "",
+        "button-right": "Shop Now",
+        "url_button2": ""
+      }
+    },
     "16306511387b5fa446": {
       "type": "best-seller",
       "blocks": {
@@ -559,38 +575,6 @@
       ],
       "settings": {
         "section-heading": "Our Best Sellers"
-      }
-    },
-    "163419087404bfcfc3": {
-      "type": "image-with-image",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/2_535x_1.jpg",
-        "image-right": "shopify:\/\/shop_images\/4_535x_1.jpg",
-        "height": "adapt",
-        "color_scheme": "background-1",
-        "layout": "image_first",
-        "text-left": "<p>Loaded with<br> High - Quality<br> Protein<\/p>",
-        "text-right": "<p>Natural source<br> of Fiber!<\/p>",
-        "button-left": "Shop Now",
-        "url_button1": "",
-        "button-right": "Shop Now",
-        "url_button2": ""
-      }
-    },
-    "16300475096746fb20": {
-      "type": "image-with-image",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/2.jpg",
-        "image-right": "shopify:\/\/shop_images\/4.jpg",
-        "height": "adapt",
-        "color_scheme": "background-1",
-        "layout": "image_first",
-        "text-left": "<p>Loaded with<br> High - Quality<\/p>",
-        "text-right": "<p>Natural source<br> of Fiber!<\/p>",
-        "button-left": "Shop Now",
-        "url_button1": "",
-        "button-right": "Shop Now",
-        "url_button2": ""
       }
     },
     "1630133642e6b919cc": {
@@ -811,9 +795,8 @@
     "16300441400f67cd94",
     "1630071793752a4d2d",
     "1630047374cc6bf00e",
-    "16306511387b5fa446",
     "163419087404bfcfc3",
-    "16300475096746fb20",
+    "16306511387b5fa446",
     "1630133642e6b919cc",
     "1630155100e70d79d8",
     "163004502857e20478",
