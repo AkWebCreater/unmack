@@ -31,7 +31,8 @@
                 show_vendor: false
               %}
               <div class="no-js-hidden" id="price-{{ section.id }}">
-                {%- render 'price', product: product, use_variant: false, show_badges: false, price_class: 'price--large' -%}
+                <span class="price">{{product.price}}</span>
+                
               </div>
            </div> 
         {%- endfor -%} 
