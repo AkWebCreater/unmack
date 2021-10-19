@@ -30,7 +30,7 @@
                 add_image_padding: false,
                 show_vendor: false
               %}
-              <div class="no-js-hidden" class="price" id="price-{{ section.id }}">
+              <div class="no-js-hidden price"  id="price-{{ section.id }}">
                 {% if product.compare_at_price_min > product.price_min %}
                 <span class="price-compare"> 
                   <span>₹: {{product.compare_at_price_min | money}}</span>
