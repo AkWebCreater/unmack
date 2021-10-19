@@ -1,11 +1,15 @@
 .best-seller-nav{
-    gap:2rem;
+justify-content: space-between;
 }
 .best-seller-nav span{
     cursor:pointer;
 }
 .best-seller-nav .add-border{
     border-bottom:solid 1px #ff8125;
+}
+.best-seller-nav-item{
+    text-transform: uppercase;
+    font-size: 18px;
 }
 .explore{
     text-align: center;
