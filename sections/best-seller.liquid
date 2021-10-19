@@ -32,9 +32,13 @@
               %}
               <div class="no-js-hidden" class="price" id="price-{{ section.id }}">
                 {% if product.compare_at_price_min > product.price_min %}
-                <span class="price-compare">₹: <span>{{product.compare_at_price_min | money}}</span></span>  
+                <span class="price-compare"> 
+                  <span>₹: {{product.compare_at_price_min | money}}</span>
+                </span>  
                 {% endif %}
-                <span class="price-main">₹: <span>{{product.price_min | money}}</span></span>
+                <span class="price-main">₹: 
+                  <span>{{product.price_min | money}}</span>
+                </span>
 
               </div>
               <div class="add-btn"><a href="{{product.url}}">Add to cart</a></div>
