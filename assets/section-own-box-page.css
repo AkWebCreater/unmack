@@ -6,23 +6,32 @@
     padding: 0 3rem;
     text-align: center;
 }
+.pro-img{
+    padding: 10px;
+    padding-bottom: 0;
+}
 .product-item img{
     margin: auto;
 }
 .tab{
     background-color: #999999;
+    padding: 5px;
+    padding-left: 15px;
 }
 .tab.active,.add-btn{
     color: #fff;
     background-color: var(--color-pincode-validator);
     padding: 5px;
 }
-.tab,.accordian{
-    margin-bottom: 5px;
-    border-radius: 8px;
+.accordian{ 
+ margin-bottom:5px;
+}
+.tab,.accordian,.add-btn{
+  
+ border-radius: 6px;
 }
 .accordian{
-    background-color: #ccc;
+ background-color: #ccc;
 }
 .left-part{
     max-width: 50%;
