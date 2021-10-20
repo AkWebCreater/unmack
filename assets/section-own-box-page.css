@@ -2,7 +2,7 @@
     display: flex;
 }
 .main-wrapper .accordian{
-    display: none;
+    /* display: none; */
 }
 .tab,.add-btn{
     color: #fff;
