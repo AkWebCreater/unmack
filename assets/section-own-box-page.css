@@ -9,3 +9,7 @@
     background-color: var(--color-pincode-validator);
     padding: 5px;
 }
+.left-part{
+    max-width: 50%;
+    width: 100%;
+}
