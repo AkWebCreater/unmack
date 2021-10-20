@@ -1,0 +1,11 @@
+.main-wrapper{
+    display: flex;
+}
+.main-wrapper .accordian{
+    display: none;
+}
+.tab,.add-btn{
+    color: #fff;
+    background-color: var(--color-pincode-validator);
+    padding: 5px;
+}

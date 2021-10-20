@@ -148,4 +148,17 @@ $('.list-menu__item').hover(function(){
   $(this).parent().siblings().find('.product-popup-menu').removeClass('open');
 
 })
+// own box page 
+$('.product-slider').slick({
+  dots: false,
+  arrows:true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 3,
+  slidesToScroll: 1
+});
+
+$('.main-wrapper .tab').click(function(){
+$(this).next().stop().slideToggle();
+})
 })
