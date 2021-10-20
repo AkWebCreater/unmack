@@ -102,7 +102,11 @@
 .combo-wrapper{
     max-height:300px;
     overflow-y: auto;
+    margin-bottom: 15px;
 
+}
+.combo-header{
+    border-bottom: 1px solid #ccc;
 }
 .combo-wrapper,.combo-price-details{
     border-radius: 4px;
