@@ -155,6 +155,7 @@ $('.product-slider').slick({
   slidesToShow: 3,
   slidesToScroll: 1
 });
+$('.main-wrapper .accordian').hide();
 
 $('.main-wrapper .tab').click(function(){
 $(this).next().stop().slideToggle();
