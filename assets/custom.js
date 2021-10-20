@@ -154,7 +154,7 @@ $('.main-wrapper .accordian').hide();
 
 $('.main-wrapper .tab').click(function(){
 $(this).next().stop().slideToggle();
-$(this).find('.product-slider').slick({
+$(this).next().find('.product-slider').slick({
   infinite: true,
   speed: 300,
   slidesToShow: 3,
