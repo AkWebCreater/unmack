@@ -19,10 +19,26 @@
             "collection": "acv",
             "title": "Ghee Range"
           }
+        },
+        "0ac32830-dfcb-43e8-b890-0a276111fb0f": {
+          "type": "collection",
+          "settings": {
+            "collection": "demo",
+            "title": "oraganic coconut oil"
+          }
+        },
+        "7bf47f91-83e7-41f2-857c-ff8f04549567": {
+          "type": "collection",
+          "settings": {
+            "collection": "ghee",
+            "title": "Apple Cider vinager"
+          }
         }
       },
       "block_order": [
-        "78aff658-cd9f-4d27-b78f-43b46dbcd172"
+        "78aff658-cd9f-4d27-b78f-43b46dbcd172",
+        "0ac32830-dfcb-43e8-b890-0a276111fb0f",
+        "7bf47f91-83e7-41f2-857c-ff8f04549567"
       ],
       "settings": {
       }
