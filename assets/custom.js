@@ -149,7 +149,7 @@ $('.list-menu__item').hover(function(){
 
 })
 // own box page 
-
+// slider and accordian
 $('.main-wrapper .accordian').hide();
 
 $('.main-wrapper .tab').click(function(){
@@ -166,5 +166,11 @@ $(this).next().find('.product-slider').slick({
   slidesToShow: 3,
   slidesToScroll: 1
 });
+})
+// end
+// combo product grid html
+$('.product-slider .add-btn').click(function(){
+var productHtm = $(this).closest('.product-item').clone();
+$('.combo-products-grid').append(productHtm);
 })
 })
