@@ -1,6 +1,6 @@
 
 {{ 'section-own-box-page.css' | asset_url | stylesheet_tag }}
-<div class="main-wrapper page-width">
+<div class="main-wrapper ">
     <div class="left-part">
         {% for block in section.blocks %}
         {%- assign collection = collections[block.settings.collection] -%}
