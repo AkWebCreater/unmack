@@ -14,9 +14,24 @@
     margin: auto;
 }
 .tab{
+    position: relative;
     background-color: #999999;
     padding: 5px;
     padding-left: 15px;
+    margin-bottom:5px;
+}
+.tab::before {
+    content: '';
+    width: 0;
+    height: 0;
+    z-index: 2;
+    border-left: 31px solid transparent;
+    border-right: 37px solid transparent;
+    border-bottom: 25px solid #fff;
+    position: absolute;
+    right:10px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 .tab.active,.add-btn{
     color: #fff;
