@@ -107,6 +107,7 @@
 }
 .combo-header{
     border-bottom: 1px solid #ccc;
+    padding-left: 2rem;
 }
 .combo-wrapper,.combo-price-details{
     border-radius: 4px;
