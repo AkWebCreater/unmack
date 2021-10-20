@@ -172,6 +172,7 @@ $(this).next().find('.product-slider').slick({
 $('.product-slider .add-btn').click(function(){
   
 var productHtm = $(this).closest('.product-item').clone();
+$('.empty-text').remove();
 $('.combo-products-grid').append(productHtm);
 })
 })
