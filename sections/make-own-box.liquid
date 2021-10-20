@@ -1,0 +1,63 @@
+<div class="main-wrapper">
+    <div class="left-part">
+        {% for block in section.blocks %}
+        {%- assign collection = collections[block.settings.collection] -%}
+            <div class="tab"><span>{{block.settings.title}} <span>{{collection.products.size}}</span></span></div>
+            <div class="accordian product-slider">
+                {% for product in collection.products %}
+                    <div class="product-item">
+                      <div class="pro-img">
+                          <img src="{{product.featured_image | img_url: '100x100'}}" alt="product-img">
+                      </div>
+                      <div class="product-bottom">
+                          <span class="main-price">
+                            ₹: {{product.price | money_without_currency}}
+                          </span>
+                          <div class="add-btn">add</div>
+                      </div>  
+                    </div>
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
+    <div class="right-part">
+
+    </div>
+</div>
+
+{% schema %}
+{
+    "name": "Own Box Page",
+    "class":"own-box-page",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "offer-image-1",
+            "label": "Pramotion Image Left"
+        },
+        {
+            "type": "image_picker",
+            "id": "offer-image-2",
+            "label": "Pramotion Image Right"
+        }
+    ],
+    "blocks":[
+    {
+        "type": "collection",
+        "name": "collection",
+        "settings": [
+            {
+                "type": "collection",
+                "id": "collection",
+                "label": "choose collection"
+            },
+            {
+                "type": "text",
+                "id": "title",
+                "label": "tab title"
+            }
+        ]
+    }
+    ]
+}
+{% endschema %}

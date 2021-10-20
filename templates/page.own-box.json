@@ -1,0 +1,38 @@
+{
+    "sections": {
+      "banner": {
+        "type": "banner",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/Untitled-1.png",
+          "desktop_text_box_position": "center",
+          "color_scheme": "background-1",
+          "stack_images_on_mobile": true,
+          "adapt_height_first_image": false
+        }
+      },
+      "main": {
+        "type": "make-own-box",
+        "settings": {
+         
+        }
+      },
+      "recently-viwed": {
+        "type": "recently-viewed-products",
+        "settings": {
+          "display_recently_viewed_products": true,
+          "recently_viewed_products_title": "Recently Viewed Products",
+          "section_title": "Today's Deal",
+          "shop_all_text": "Shop All",
+          "shop_all_url": "",
+          "number_of_recently_viewed_products": "8",
+          "number_of_showing_products": "5"
+        }
+      }
+    },
+    "order": [
+      "banner",
+      "main",
+      "recently-viwed"
+    ]
+  }
+  
