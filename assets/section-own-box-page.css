@@ -10,8 +10,15 @@
     padding: 0 3rem;
     text-align: center;
 }
+.product-bottom{
+    line-height: 1.2;
+}
+.product-bottom > *{
+    margin-bottom: 5px;
+    display: block;
+}
 .pro-img{
-    padding: 10px;
+    padding:0 10px;
     padding-bottom: 0;
 }
 .product-item img{
@@ -23,9 +30,9 @@
     padding: 5px;
     padding-left: 15px;
     margin-bottom:5px;
+    color: #fff;
 }
 .tab.active{
-    color: #fff;
     background-color: var(--color-pincode-validator);
 }
 .tab::before {
@@ -48,10 +55,13 @@
 .add-btn{
     background-color: var(--color-pincode-validator);
     padding: 5px;
+    color: #fff;
+    text-transform: uppercase;
 }
 .accordian{ 
  margin-bottom:5px;
- background-color: #ccc;
+ background-color: #f1f1f1;
+ padding:10px 0 ;
 }
 .tab,.accordian,.add-btn{
   
