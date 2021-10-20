@@ -150,8 +150,6 @@ $('.list-menu__item').hover(function(){
 })
 // own box page 
 $('.product-slider').slick({
-  dots: false,
-  arrows:true,
   infinite: true,
   speed: 300,
   slidesToShow: 3,
