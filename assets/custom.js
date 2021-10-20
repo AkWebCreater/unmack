@@ -170,6 +170,7 @@ $(this).next().find('.product-slider').slick({
 // end
 // combo product grid html
 $('.product-slider .add-btn').click(function(){
+  alert('btn-clicked')
 var productHtm = $(this).closest('.product-item').clone();
 $('.combo-products-grid').append(productHtm);
 })
