@@ -114,6 +114,35 @@
     margin-bottom: 15px;
 
 }
+.right-part .add-btn{
+    display: none;
+}
+.right-part .main-price{
+    color: var(--color-pincode-validator);
+    font-weight: 400;
+    font-size: 32px;
+}
+.right-part .product-bottom,.right-part .product-item{
+    display: flex;
+}
+.left-part .remove-btn{
+    display: none;
+}
+.remove-btn{
+    background-color: #f7f7f7;
+    border: 1px solid #b7b7b7;
+    padding: 4px 6px;
+}
+.right-part .product-bottom{
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #ccc;
+}
+.empty-text{
+    margin-top: 42px;
+    text-align: center;
+}
 .combo-header{
     border-bottom: 1px solid #ccc;
     padding: 0.5rem;

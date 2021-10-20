@@ -14,7 +14,10 @@
                                 <img src="{{product.featured_image | img_url: '100x100'}}" alt="product-img">
                             </div>
                             <div class="product-bottom">
-                                <span class="accent">{{product.title}}</span>
+                                <div class="detail-wrapper">
+                                    <span class="accent">{{product.title}}</span>
+                                    <span class="remove-btn">remove</span>
+                                </div>
                                 <span class="main-price">
                                   ₹: {{product.price | money_without_currency}}
                                 </span>
