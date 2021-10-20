@@ -8,18 +8,20 @@
             <div class="accordian">
                 <div class=" product-slider">
                     {% for product in collection.products %}
+                       <div class="product-slide">
                         <div class="product-item">
-                          <div class="pro-img">
-                              <img src="{{product.featured_image | img_url: '100x100'}}" alt="product-img">
+                            <div class="pro-img">
+                                <img src="{{product.featured_image | img_url: '100x100'}}" alt="product-img">
+                            </div>
+                            <div class="product-bottom">
+                                <span class="accent">{{product.title}}</span>
+                                <span class="main-price">
+                                  ₹: {{product.price | money_without_currency}}
+                                </span>
+                                <div class="add-btn">add</div>
+                            </div>  
                           </div>
-                          <div class="product-bottom">
-                              <span class="accent">{{product.title}}</span>
-                              <span class="main-price">
-                                ₹: {{product.price | money_without_currency}}
-                              </span>
-                              <div class="add-btn">add</div>
-                          </div>  
-                        </div>
+                       </div>
                     {% endfor %}
                 </div>
             </div>
