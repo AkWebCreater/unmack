@@ -98,6 +98,11 @@
         flex: 1;
         padding-left: 25px;
     }
+    .combo-price-details{
+        max-width: 80%;
+        padding:0 2rem;
+        margin: auto;
+    }
 }
 .combo-wrapper{
     max-height:300px;
@@ -107,7 +112,9 @@
 }
 .combo-header{
     border-bottom: 1px solid #ccc;
-    padding-left: 2rem;
+    padding: 0.5rem;
+    padding-left: 1rem;
+
 }
 .combo-wrapper,.combo-price-details{
     border-radius: 4px;
