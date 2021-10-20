@@ -149,15 +149,16 @@ $('.list-menu__item').hover(function(){
 
 })
 // own box page 
-$('.product-slider').slick({
+
+$('.main-wrapper .accordian').hide();
+
+$('.main-wrapper .tab').click(function(){
+$(this).next().stop().slideToggle();
+$(this).find('.product-slider').slick({
   infinite: true,
   speed: 300,
   slidesToShow: 3,
   slidesToScroll: 1
 });
-$('.main-wrapper .accordian').hide();
-
-$('.main-wrapper .tab').click(function(){
-$(this).next().stop().slideToggle();
 })
 })
