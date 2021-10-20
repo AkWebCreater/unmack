@@ -158,9 +158,11 @@ $('.main-wrapper .tab').click(function(){
   $(this).addClass('active');  
 $(this).next().stop().slideToggle();
 $(this).next().find('.product-slider').slick({
-  arrows:false,
+  arrows:true,
   infinite: true,
   speed: 300,
+  nextArrow: '<span  class="slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i></span>',
+  prevArrow: '<span  class="slick-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></span>',
   slidesToShow: 3,
   slidesToScroll: 1
 });
