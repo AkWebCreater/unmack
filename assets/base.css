@@ -2229,6 +2229,7 @@ details-disclosure > details {
   position: absolute;
   top: 35%;
   z-index: 22;
+  font-size: 26px;
 }
 .slick-dots{
   display: flex;

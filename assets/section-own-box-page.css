@@ -1,69 +1,91 @@
-.main-wrapper{
-    display: flex;
-    padding-top: 5px;
+.main-wrapper {
+	display: flex;
+	padding-top: 5px;
 }
-.left-part{
-    max-width: 50%;
-    width: 100%;
+
+.left-part {
+	max-width: 50%;
+	width: 100%;
 }
-.product-item{
-    padding: 0 3rem;
-    text-align: center;
+
+.product-item {
+	padding: 0 3rem;
+	text-align: center;
 }
-.product-bottom{
-    line-height: 1.2;
+
+.product-bottom {
+	line-height: 1.2;
 }
-.product-bottom > *{
-    margin-bottom: 5px;
-    display: block;
+
+.product-bottom>* {
+	margin-bottom: 5px;
+	display: block;
 }
-.pro-img{
-    padding:0 10px;
-    padding-bottom: 0;
+
+.pro-img {
+	padding: 0 10px;
+	padding-bottom: 0;
 }
-.product-item img{
-    margin: auto;
+
+.product-item img {
+	margin: auto;
 }
-.tab{
-    position: relative;
-    background-color: #999999;
-    padding: 5px;
-    padding-left: 15px;
-    margin-bottom:5px;
-    color: #fff;
+
+.tab {
+	position: relative;
+	background-color: #999999;
+	padding: 5px;
+	padding-left: 15px;
+	margin-bottom: 5px;
+	color: #fff;
 }
-.tab.active{
-    background-color: var(--color-pincode-validator);
+
+.tab.active {
+	background-color: var(--color-pincode-validator);
 }
+
 .tab::before {
-    content: '';
-    width: 0;
-    height: 0;
-    z-index: 2;
-    border-top: 13px solid transparent;
-    border-left: 17px solid #fff;
-    border-bottom: 15px solid transparent;
-    position: absolute;
-    right: 19px;
-    top: 19%;
-    transition: all .2s;
-    transform-origin: center;
+	content: '';
+	width: 0;
+	height: 0;
+	z-index: 2;
+	border-top: 13px solid transparent;
+	border-left: 17px solid #fff;
+	border-bottom: 15px solid transparent;
+	position: absolute;
+	right: 19px;
+	top: 19%;
+	transition: all .2s;
+	transform-origin: center;
 }
-.tab.active::before{
-    transform: rotate(90deg);
+
+.tab.active::before {
+	transform: rotate(90deg);
 }
-.add-btn{
-    background-color: var(--color-pincode-validator);
-    padding: 5px;
-    color: #fff;
-    text-transform: uppercase;
+
+.add-btn {
+	background-color: var(--color-pincode-validator);
+	padding: 5px;
+	color: #fff;
+	text-transform: uppercase;
 }
-.accordian{ 
- margin-bottom:5px;
- background-color: #f1f1f1;
- padding:10px 0 ;
+
+.accordian {
+	margin-bottom: 5px;
+	background-color: #f1f1f1;
+	padding: 10px 0;
 }
-.tab,.accordian,.add-btn{
-  
- border-radius: 6px;
+
+.tab,
+.accordian,
+.add-btn {
+	border-radius: 6px;
+}
+
+.product-slider .slick-prev {
+	left: 10px;
+}
+
+.product-slider .slick-next {
+	right: 10px;
 }
