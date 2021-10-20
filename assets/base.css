@@ -2225,7 +2225,7 @@ details-disclosure > details {
   min-width: 145px;
 } 
 /* slick arrows */
-.recently-viewed-products .slick-arrow{
+.slick-arrow{
   position: absolute;
   top: 35%;
   z-index: 22;
