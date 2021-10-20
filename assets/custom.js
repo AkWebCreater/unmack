@@ -153,8 +153,11 @@ $('.list-menu__item').hover(function(){
 $('.main-wrapper .accordian').hide();
 
 $('.main-wrapper .tab').click(function(){
+  $('.tab').removeClass('active');
+  $(this).addClass('active');  
 $(this).next().stop().slideToggle();
 $(this).next().find('.product-slider').slick({
+  arrows:false,
   infinite: true,
   speed: 300,
   slidesToShow: 3,

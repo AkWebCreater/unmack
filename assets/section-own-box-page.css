@@ -1,11 +1,28 @@
 .main-wrapper{
     display: flex;
+    padding-top: 5px;
 }
-
-.tab,.add-btn{
+.product-item{
+    padding: 0 3rem;
+    text-align: center;
+}
+.product-item img{
+    margin: auto;
+}
+.tab{
+    background-color: #999999;
+}
+.tab.active,.add-btn{
     color: #fff;
     background-color: var(--color-pincode-validator);
     padding: 5px;
+}
+.tab,.accordian{
+    margin-bottom: 5px;
+    border-radius: 8px;
+}
+.accordian{
+    background-color: #ccc;
 }
 .left-part{
     max-width: 50%;

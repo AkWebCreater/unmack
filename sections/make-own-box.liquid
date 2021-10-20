@@ -4,7 +4,7 @@
     <div class="left-part">
         {% for block in section.blocks %}
         {%- assign collection = collections[block.settings.collection] -%}
-            <div class="tab"><span>{{block.settings.title}} <span>{{collection.products.size}}</span></span></div>
+            <div class="tab"><span>{{block.settings.title}} <span>({{collection.products.size}})</span></span></div>
             <div class="accordian">
                 <div class=" product-slider">
                     {% for product in collection.products %}
@@ -13,6 +13,7 @@
                               <img src="{{product.featured_image | img_url: '100x100'}}" alt="product-img">
                           </div>
                           <div class="product-bottom">
+                              <span class="accent">{{product.title}}</span>
                               <span class="main-price">
                                 ₹: {{product.price | money_without_currency}}
                               </span>
