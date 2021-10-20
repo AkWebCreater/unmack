@@ -96,7 +96,18 @@
     }
     .right-part{
         flex: 1;
-        max-height:300px;
-        overflow-y: auto;
+        padding-left: 25px;
     }
+}
+.combo-wrapper{
+    max-height:300px;
+    overflow-y: auto;
+
+}
+.combo-wrapper,.combo-price-details{
+    border-radius: 4px;
+    border: 0.5px solid #ccc;
+    box-shadow:1px -1px 6px 0 rgb(0 0 0 / 75%), 0 8px 6px -6px rgb(0 0 0 / 75%) inset;
+    -webkit-box-shadow:1px -1px 6px 0 rgb(0 0 0 / 75%), 0 8px 6px -6px rgb(0 0 0 / 75%) inset;
+    -moz-box-shadow:1px -1px 6px 0 rgb(0 0 0 / 75%), 0 8px 6px -6px rgb(0 0 0 / 75%) inset;
 }
