@@ -168,6 +168,9 @@
     display: flex;
     flex-direction: column;
     margin-left: 15px;
+    padding: 0 10px;
+    max-width: 60%;
+    text-align: left;
 }
 .empty-text{
     display: block;
