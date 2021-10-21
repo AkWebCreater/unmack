@@ -90,13 +90,14 @@
         display: flex;
     } 
     .left-part {
-        max-width: 60%;
+        max-width: 50%;
         width: 100%;
         max-height:500px;
         overflow-y: auto;
     }
     .right-part{
-        flex: 1;
+        max-width: 50%;
+        width: 100%;
         padding-left: 25px;
     }
     .combo-price-details{
