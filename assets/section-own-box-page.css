@@ -138,8 +138,8 @@
 }
 .right-part .main-price{
     color: var(--color-pincode-validator);
-    font-weight: 400;
-    font-size: 20px;
+    font-weight: 600;
+    font-size: 18px;
     margin-left: auto;
     margin-top: auto;
 }

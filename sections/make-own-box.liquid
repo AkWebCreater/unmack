@@ -23,7 +23,7 @@
                                 <span class="remove-btn">remove</span>
                             </div>
                             <span class="main-price">
-                              ₹: {{product.price | money_without_trailing_zeros}}
+                              ₹: {{product.price | money_without_trailing_zeros | money_without_currency}}
                             </span>
                             <div class="add-btn">add</div>
                         </div>  
