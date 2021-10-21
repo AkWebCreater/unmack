@@ -20,6 +20,7 @@
 
 .pro-img {
 	padding-bottom:5px;
+    font-size: 0;
 }
 .product-item img {
 	margin: auto;
@@ -140,6 +141,7 @@
     border: 1px solid #ccc;
 }
 .empty-text{
+    display: block;
     margin-top: 42px;
     text-align: center;
 }
