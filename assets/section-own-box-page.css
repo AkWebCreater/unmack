@@ -10,9 +10,10 @@
 .product-bottom {
 	line-height: 1.2;
 }
-
-.product-bottom>* {
+.left-part .product-bottom>* {
     margin-bottom: 5px;
+}
+.product-bottom>* {
     display: block;
     font-weight: 100;
     font-size: 10px;
@@ -132,13 +133,19 @@
 .right-part .add-btn{
     display: none;
 }
+.right-part .pro-img{
+    padding: 0;
+}
 .right-part .main-price{
     color: var(--color-pincode-validator);
     font-weight: 400;
-    font-size: 32px;
+    font-size: 20px;
+    margin-left: auto;
+    margin-top: auto;
 }
 .right-part .product-bottom,.right-part .product-item{
     display: flex;
+    width: 100%;
 }
 .left-part .remove-btn{
     display: none;
@@ -160,6 +167,7 @@
 .right-part .detail-wrapper{
     display: flex;
     flex-direction: column;
+    margin-left: 15px;
 }
 .empty-text{
     display: block;
