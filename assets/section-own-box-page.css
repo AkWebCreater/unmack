@@ -85,6 +85,9 @@
 .product-slider .slick-next {
 	right: 10px;
 }
+.left-part img,.right-part img{
+    width: 100%;
+} 
 @media (min-width:750px) {
     .main-wrapper {
         display: flex;
