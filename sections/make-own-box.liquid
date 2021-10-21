@@ -2,68 +2,78 @@
 {{ 'section-own-box-page.css' | asset_url | stylesheet_tag }}
 <div class="main-wrapper ">
     <div class="left-part">
-        {% for block in section.blocks %}
-        {%- assign collection = collections[block.settings.collection] -%}
-            <div class="tab"><span>{{block.settings.title}} <span>({{collection.products.size}})</span></span>  </div>
-            <div class="accordian">
-                <div class=" product-slider">
-                    {% for product in collection.products %}
-                       <div class="product-slide">
-                        <div class="product-item">
-                            <div class="pro-img">
-                                <img src="{{product.featured_image | img_url: '100x100'}}" alt="product-img">
+        <div class="upper">
+            <img src="{{section.settings.offer-image-1 | img_url: 'medium'}}" alt="offer-img">
+        </div>
+<div class="lower">
+    {% for block in section.blocks %}
+    {%- assign collection = collections[block.settings.collection] -%}
+        <div class="tab"><span>{{block.settings.title}} <span>({{collection.products.size}})</span></span>  </div>
+        <div class="accordian">
+            <div class=" product-slider">
+                {% for product in collection.products %}
+                   <div class="product-slide">
+                    <div class="product-item">
+                        <div class="pro-img">
+                            <img src="{{product.featured_image | img_url: '100x100'}}" alt="product-img">
+                        </div>
+                        <div class="product-bottom">
+                            <div class="detail-wrapper">
+                                <span class="accent">{{product.title}}</span>
+                                <span class="remove-btn">remove</span>
                             </div>
-                            <div class="product-bottom">
-                                <div class="detail-wrapper">
-                                    <span class="accent">{{product.title}}</span>
-                                    <span class="remove-btn">remove</span>
-                                </div>
-                                <span class="main-price">
-                                  ₹: {{product.price | money_without_currency}}
-                                </span>
-                                <div class="add-btn">add</div>
-                            </div>  
-                          </div>
-                       </div>
-                    {% endfor %}
-                </div>
+                            <span class="main-price">
+                              ₹: {{product.price | money_without_currency}}
+                            </span>
+                            <div class="add-btn">add</div>
+                        </div>  
+                      </div>
+                   </div>
+                {% endfor %}
             </div>
+        </div>
 
-        {% endfor %}
+    {% endfor %}
+</div>
     </div>
     <div class="right-part">
-<div class="combo-wrapper">
-    <div class="combo-header">
-<h3 class="h4 m-0">My Combo</h3>
+        <div class="upper">
+            <img src="{{section.settings.offer-image-2 | img_url: 'medium'}}" alt="offer-img">
+        </div>
+<div class="lower">
+    <div class="combo-wrapper">
+        <div class="combo-header">
+    <h3 class="h4 m-0">My Combo</h3>
+        </div>
+        <div class="combo-products-grid">
+    <span class="empty-text">you have not selected any product</span>
+        </div>
     </div>
-    <div class="combo-products-grid">
-<span class="empty-text">you have not selected any product</span>
+    <div class="combo-price-details">
+        <div class="combo-header">
+            <h3 class="h4 m-0">Price Details</h3>
+                </div>
+                <div class="details">
+                    <div class="detail-item">
+                        <span>price <span class="item-count"></span></span>
+                        <span class="pack-price"></span>
+                    </div>
+                    <div class="detail-item">
+                        <span>Discount </span>
+                        <span class="pack-discount"></span>
+                    </div>
+    
+                    <div class="devider"></div>
+                    <div class="detail-item">
+                        <span>Discount </span>
+                        <span class="pack-discount"></span>
+                    </div>
+                    <div class="devider"></div>
+                    <div class="add-to-cart">
+                        Add To Cart
+                    </div>
+                </div>
     </div>
-</div>
-<div class="combo-price-details">
-    <div class="combo-header">
-        <h3 class="h4 m-0">Price Details</h3>
-            </div>
-            <div class="details">
-                <div class="detail-item">
-                    <span>price <span class="item-count"></span></span>
-                    <span class="pack-price"></span>
-                </div>
-                <div class="detail-item">
-                    <span>Discount </span>
-                    <span class="pack-discount"></span>
-                </div>
-
-                <div class="devider"></div>
-                <div class="detail-item">
-                    <span>Discount </span>
-                    <span class="pack-discount"></span>
-                </div>
-                <div class="devider"></div>
-                <div class="add-to-cart">
-                    Add To Cart
-                </div>
-            </div>
 </div>
     </div>
 </div>
