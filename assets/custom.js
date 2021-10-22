@@ -118,6 +118,8 @@ $(document).ready(function() {
       $('.wrapper-inner').slick({
           dots: false,
           arrows: true,
+          nextArrow: '<span  class="slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i></span>',
+          prevArrow: '<span  class="slick-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></span>',
           infinite: true,
           variableWidth: true,
           speed: 300,
@@ -202,8 +204,8 @@ function priceUpadte() {
   var acprice = parseInt(cprice);
   price+=acprice
 })
-var moneyprice = '₹'+price
-alert(moneyprice)
+var moneyprice = Shopify.formatMoney(price, "{{ shop.money_with_currency_format }}")
+
   $('.combo-price-details .pack-price').html(moneyprice)
   $('.combo-price-details .total-amount').html(moneyprice)
 }

@@ -22,7 +22,7 @@
                                 <span class="accent">{{product.title}}</span>
                                 <span class="remove-btn">remove</span>
                             </div>
-                            <span class="main-price" data-price="{{ product.price | money_without_currency }}">
+                            <span class="main-price" data-price="{{ product.price}}">
                             {{product.price | money_without_trailing_zeros}}
                             </span>
                             <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
