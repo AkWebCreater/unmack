@@ -175,8 +175,8 @@ $(document).ready(function() {
       $('.combo-products-grid').append(productHtm);
   })
   // remove item on click remove BTN
-  $('.remove-btn').click(function() {
-      alert('removed');
+  $(document).on('click','.remove-btn',function() {
+      // alert('removed');
       $(this).closest('.product-item').remove();
   })
 })
