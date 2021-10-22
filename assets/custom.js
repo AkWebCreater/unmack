@@ -169,20 +169,8 @@ $(document).ready(function() {
   // end
   // making combo product grid on product selection from product slider 
   // price update function
-  function priceUpadte() {
-    var price = 0 ;
-    $('.combo-products-grid .product-item').each(function(){
-  
-     var cprice = $(this).find('.main-price').attr('data-price');
-     
-    var acprice = parseInt(cprice);
-    price+=acprice
-    })
-    var moneyprice = '₹'+price
-    $('.combo-price-details .pack-price').html(moneyprice)
-    $('.combo-price-details .total-amount').html(moneyprice)
-  }
-// price update functin end
+ 
+// price update function end
 // add prodcut to combo grid on add btn click
   $('.product-slider .add-btn').click(function() {
       var productHtm = $(this).closest('.product-item').clone();
@@ -205,3 +193,16 @@ $(document).ready(function() {
   })
   // end
 })
+function priceUpadte() {
+  var price = 0 ;
+  $('.combo-products-grid .product-item').each(function(){
+
+   var cprice = $(this).find('.main-price').attr('data-price');
+   
+  var acprice = parseInt(cprice);
+  price+=acprice
+  })
+  var moneyprice = '₹'+price
+  $('.combo-price-details .pack-price').html(moneyprice)
+  $('.combo-price-details .total-amount').html(moneyprice)
+}
