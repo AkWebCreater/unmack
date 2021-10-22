@@ -204,7 +204,7 @@ function priceUpadte() {
   var acprice = parseInt(cprice);
   price+=acprice
 })
-var moneyprice = Shopify.formatMoney(price, "{{ shop.money_with_currency_format }}")
+var moneyprice = '₹'+price/100
 
   $('.combo-price-details .pack-price').html(moneyprice)
   $('.combo-price-details .total-amount').html(moneyprice)
