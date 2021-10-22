@@ -168,31 +168,33 @@ $(document).ready(function() {
   })
   // end
   // making combo product grid on product selection from product slider 
+  // price update function
+  function priceUpadte() {
+    var price = 0 ;
+    $('.combo-products-grid .product-item').each(function(){
+  
+     var cprice = $(this).find('.main-price').attr('data-price');
+     
+    var acprice = parseInt(cprice);
+    price+=acprice
+    })
+    var moneyprice = '₹'+price
+    $('.combo-price-details .pack-price').html(moneyprice)
+    $('.combo-price-details .total-amount').html(moneyprice)
+  }
+// price update functin end
+// add prodcut to combo grid on add btn click
   $('.product-slider .add-btn').click(function() {
-
       var productHtm = $(this).closest('.product-item').clone();
       $('.empty-text').remove();
       $('.combo-products-grid').append(productHtm);
-      priceUpdte()
-function priceUpdte() {
-  var price = 0 ;
-  $('.combo-products-grid .product-item').each(function(){
-
-   var cprice = $(this).find('.main-price').attr('data-price');
-   
-  var acprice = parseInt(cprice);
-  price+=acprice
+      priceUpadte()
   })
-  var moneyprice = '₹'+price
-  $('.combo-price-details .pack-price').html(moneyprice)
-  $('.combo-price-details .total').html(moneyprice)
-}
-
-  })
+  // end
   // remove item on click remove BTN
   $(document).on('click','.remove-btn',function() {
-      // alert('removed');
       $(this).closest('.product-item').remove();
-      priceUpdte()
+      priceUpdate()
   })
+  // end
 })
