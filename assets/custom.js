@@ -177,15 +177,26 @@ $(document).ready(function() {
       $('.combo-products-grid .product-item').each(function(){
 
        var cprice = $(this).find('.main-price').text();
-       var splitWord = cprice.split("");
-       var reverseWord = splitWord.reverse();
-       var joinedWords = reverseWord.join("")
-       cprice = parseInt(joinedWords,10);
-       cprice.toString()
-       var splitWord = cprice.split("");
-       var reverseWord = splitWord.reverse();
-       var joinedWords = reverseWord.join("")
-       alert(cprice);
+       function convertPrice(str) {
+        //  splited price string
+        var splitWord = str.split("");
+        // reversed price string
+        var reverseWord = splitWord.reverse();
+        var joinedWords = reverseWord.join("")
+        // getting price number from reversed string
+        var op = parseInt(joinedWords,10);
+        // converted to string again to get orignal price 
+        var np = op.toString()
+        var splitWord = np.split("");
+        var reverseWord = splitWord.reverse();
+        var joinedWords = reverseWord.join("")
+        // now convert price into number 
+        var oprice = parseInt(joinedWords);
+        return oprice;
+       }
+      var acprice = convertPrice(cprice);
+    
+       alert(acprice);
       })
   })
   // remove item on click remove BTN
