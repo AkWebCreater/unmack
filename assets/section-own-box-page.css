@@ -146,7 +146,7 @@
     display: flex;
     width: 100%;
 }
-.left-part .remove-btn,.right-part .shopify-product-reviews-badge{
+.left-part .remove-btn,.right-part .spr-badge{
     display: none;
 }
 .remove-btn{
