@@ -173,22 +173,26 @@ $(document).ready(function() {
       var productHtm = $(this).closest('.product-item').clone();
       $('.empty-text').remove();
       $('.combo-products-grid').append(productHtm);
-      var price = 0 ;
-      $('.combo-products-grid .product-item').each(function(){
+      priceUpdte()
+function priceUpdte() {
+  var price = 0 ;
+  $('.combo-products-grid .product-item').each(function(){
 
-       var cprice = $(this).find('.main-price').attr('data-price');
-       
-      var acprice = parseInt(cprice);
-      price+=acprice
-       alert(acprice);
-       alert('total '+price);
-      })
-      var moneyprice = '₹'+price
-      $('.combo-price-details .pack-price').html(moneyprice)
+   var cprice = $(this).find('.main-price').attr('data-price');
+   
+  var acprice = parseInt(cprice);
+  price+=acprice
+  })
+  var moneyprice = '₹'+price
+  $('.combo-price-details .pack-price').html(moneyprice)
+  $('.combo-price-details .total').html(moneyprice)
+}
+
   })
   // remove item on click remove BTN
   $(document).on('click','.remove-btn',function() {
       // alert('removed');
       $(this).closest('.product-item').remove();
+      priceUpdte()
   })
 })

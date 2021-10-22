@@ -169,12 +169,15 @@
     background-color: #585858;
     color:#fff;
     text-align: center;
+    justify-content: center !important;
 }
 .total{
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    padding: 5px 0;
     font-weight: 700;
-    padding: 8px 0;
 }
 .right-part .detail-wrapper{
     display: flex;
