@@ -181,6 +181,9 @@ $(document).ready(function() {
        var reverseWord = splitWord.reverse();
        var joinedWords = reverseWord.join("")
        cprice = parseInt(joinedWords,10);
+       var splitWord = cprice.split("");
+       var reverseWord = splitWord.reverse();
+       var joinedWords = reverseWord.join("")
        alert(cprice);
       })
   })
