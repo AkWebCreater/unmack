@@ -173,6 +173,13 @@ $(document).ready(function() {
       var productHtm = $(this).closest('.product-item').clone();
       $('.empty-text').remove();
       $('.combo-products-grid').append(productHtm);
+      var price = 0 ;
+      $('.combo-products-grid .product-item').each(function(){
+
+       var cprice = $(this).find('.main-price').text();
+       cprice = parseInt(cprice);
+       alert(cprice);
+      })
   })
   // remove item on click remove BTN
   $(document).on('click','.remove-btn',function() {
