@@ -168,11 +168,15 @@ $(this).next().find('.product-slider').slick({
 });
 })
 // end
-// combo product grid html
+// making combo product grid on product selection from product slider 
 $('.product-slider .add-btn').click(function(){
   
 var productHtm = $(this).closest('.product-item').clone();
 $('.empty-text').remove();
 $('.combo-products-grid').append(productHtm);
+})
+// remove item on click remove BTN
+$('.remove-btn').click(function(){
+  $(this).closest('.product-item').remove();
 })
 })

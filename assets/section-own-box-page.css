@@ -189,3 +189,6 @@
     -webkit-box-shadow:1px -1px 6px 0 rgb(0 0 0 / 75%), 0 -8px 6px -6px rgb(80 77 77 / 75%) inset;
     -moz-box-shadow:1px -1px 6px 0 rgb(0 0 0 / 75%), 0 -8px 6px -6px rgb(80 77 77 / 75%) inset;
 }
+.devider {
+    border-bottom: 1px solid #cccc;
+}
