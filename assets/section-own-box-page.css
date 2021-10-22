@@ -173,6 +173,7 @@
 .total{
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
+    font-weight: 700;
     padding: 8px 0;
 }
 .right-part .detail-wrapper{
