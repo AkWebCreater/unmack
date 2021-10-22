@@ -177,7 +177,7 @@ $(document).ready(function() {
       $('.combo-products-grid .product-item').each(function(){
 
        var cprice = $(this).find('.main-price').text();
-       cprice = parseInt(cprice);
+       cprice = parseInt(cprice,10);
        alert(cprice);
       })
   })
