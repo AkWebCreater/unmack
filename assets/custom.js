@@ -195,7 +195,7 @@ $(document).ready(function() {
   // remove item on click remove BTN
   $(document).on('click','.remove-btn',function() {
       $(this).closest('.product-item').remove();
-      if (isEmpty($('.combo-products-grid'))) {
+      if ($('.combo-products-grid .product-item').length == 1) {
         // do something
         $('.combo-wrapper').addClass('empty')
         $('.combo-products-grid').html('<span class="empty-text">you have not selected any product</span>')
