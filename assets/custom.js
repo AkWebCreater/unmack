@@ -187,13 +187,19 @@ $(document).ready(function() {
   $('.product-slider .add-btn').click(function() {
       var productHtm = $(this).closest('.product-item').clone();
       $('.empty-text').remove();
-      $('.combo-products-grid').append(productHtm).removeClass('empty');
+      $('.combo-products-grid').append(productHtm);
+      $('.combo-wrapper').removeClass('empty');
       priceUpadte()
   })
   // end
   // remove item on click remove BTN
   $(document).on('click','.remove-btn',function() {
       $(this).closest('.product-item').remove();
+      if (isEmpty($('.combo-products-grid'))) {
+        // do something
+        $('.combo-wrapper').addClass('empty')
+        $('.combo-products-grid').html('<span class="empty-text">you have not selected any product</span>')
+    }
       priceUpdate()
   })
   // end
