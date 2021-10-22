@@ -122,11 +122,12 @@
  padding-bottom: 20px;
 }
 .combo-wrapper{
-    min-height: 200px;
     max-height:300px;
     overflow-y: auto;
     margin-bottom: 15px;
-
+}
+.combo-wrapper.empty{
+    min-height: 200px;
 }
 .right-part .add-btn{
     display: none;

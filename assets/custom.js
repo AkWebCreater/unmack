@@ -187,7 +187,7 @@ $(document).ready(function() {
   $('.product-slider .add-btn').click(function() {
       var productHtm = $(this).closest('.product-item').clone();
       $('.empty-text').remove();
-      $('.combo-products-grid').append(productHtm);
+      $('.combo-products-grid').append(productHtm).removeClass('empty');
       priceUpadte()
   })
   // end
