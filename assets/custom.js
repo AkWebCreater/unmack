@@ -183,7 +183,7 @@ $(document).ready(function() {
   // remove item on click remove BTN
   $(document).on('click','.remove-btn',function() {
       $(this).closest('.product-item').remove();
-      setTimeout(()=>{priceUpdate()},300)
+      setTimeout(()=>{priceUpadte()},100)
       if ($('.combo-products-grid .product-item').length == 0) {
         // do something
         $('.combo-wrapper').addClass('empty')
