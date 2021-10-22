@@ -94,9 +94,7 @@
     margin-bottom: 15px;
     margin-top: 15px;
 }
-.remove-btn{
-    text-transform: uppercase;
-}
+
 .left-part .lower{
     max-height:500px;
     overflow-y: auto;
@@ -151,6 +149,8 @@
     display: none;
 }
 .remove-btn{
+    text-transform: uppercase;
+    cursor: pointer;
     background-color: #f7f7f7;
     border: 1px solid #ababab;
     padding: 2px 6px;
