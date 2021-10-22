@@ -183,7 +183,7 @@ $(document).ready(function() {
        alert(acprice);
        alert('total '+price);
       })
-      var moneyprice = '₹ '+price
+      var moneyprice = '₹'+price
       $('.combo-price-details .pack-price').html(moneyprice)
   })
   // remove item on click remove BTN
