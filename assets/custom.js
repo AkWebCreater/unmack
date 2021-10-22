@@ -201,8 +201,9 @@ function priceUpadte() {
    
   var acprice = parseInt(cprice);
   price+=acprice
-  })
-  var moneyprice = '₹'+price
+})
+var moneyprice = '₹'+price
+alert(moneyprice)
   $('.combo-price-details .pack-price').html(moneyprice)
   $('.combo-price-details .total-amount').html(moneyprice)
 }
