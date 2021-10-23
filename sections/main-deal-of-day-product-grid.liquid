@@ -384,6 +384,7 @@
 </div>
 
 <script src="{{ 'collection-filters-form.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'ajaxinate.js' | asset_url }}" defer="defer"></script>
 <div class="offer-timer">
     <div id="offer-time">12/12/2021</div>
     <div id="countdown">
@@ -418,7 +419,7 @@
   font-size: 1.5rem;
 }
 </style>
-<div id="CollectionProductGrid">
+<div id="CollectionProductGrid-1">
   {%- paginate collection.products by section.settings.products_per_page -%}
     {%- if collection.products.size == 0 -%}
       <div class="collection collection--empty page-width" id="main-collection-product-grid" data-id="{{ section.id }}">
@@ -469,18 +470,31 @@
                 add_image_padding: section.settings.add_image_padding,
                 show_vendor: section.settings.show_vendor
               %}
+              <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
             </li>
           {%- endfor -%}
         </ul>
 
-        {%- if paginate.pages > 1 -%}
-          {% render 'pagination', paginate: paginate, anchor: '', class: '' %}
-        {%- endif -%}
+        <div id="AjaxinatePagination">
+            {% if paginate.next %}
+              <a href="{{ paginate.next.url }}"></a>
+            {% endif %}
+          </div>
       </div>
     {%- endif -%}
   {%- endpaginate -%}
 </div>
+<script>
+    /*------------------load more---------*/
+    document.addEventListener("DOMContentLoaded", function() {
+      var endlessScroll = new Ajaxinate({
+        container: '#AjaxinateContainer',
+        pagination: '#AjaxinatePagination',
+        loadingText: '<div class="loadmore_gif"><img  style ="height:250px; text-align:center;" src="https://cdn.shopify.com/s/files/1/0287/0634/0912/files/giphy.gif" alt="lodar-gif" /></div>',
+      });
+    });
 
+  </script>
 {% schema %}
 {
   "name": "t:sections.main-collection-product-grid.name",
