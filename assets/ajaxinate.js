@@ -96,7 +96,7 @@ Ajaxinate.prototype.checkIfPaginationInView = function handleScrollEvent() {
     this.removeScrollListener();
 
     if (this.nextPageLinkElement) {
-      this.nextPageLinkElement.innerText = this.settings.loadingText;
+      this.nextPageLinkElement.innerHTML = this.settings.loadingText;
       this.nextPageUrl = this.nextPageLinkElement.href;
       this.loadMore();
     }
