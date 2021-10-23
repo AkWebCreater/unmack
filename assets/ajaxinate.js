@@ -24,7 +24,7 @@
  */
 
 /* eslint-env browser */
-export function Ajaxinate(config) {
+ function Ajaxinate(config) {
     const settings = config || {};
   
     const defaults = {
@@ -170,4 +170,3 @@ export function Ajaxinate(config) {
     return this;
   };
   
-  export default Ajaxinate;
