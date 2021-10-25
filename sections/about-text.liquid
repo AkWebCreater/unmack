@@ -6,7 +6,7 @@
 <!-- Start section about-text  -->
 <section class="section-{{section.id}}">
 <div class="rich-text{% if section.settings.full_width %} rich-text--full-width{% endif %} color-{{ section.settings.color_scheme }}">
-  <div class="rich-text__blocks">
+  <div class="">
     {%- for block in section.blocks -%}
       {%- case block.type -%}
         {%- when 'heading' -%}
@@ -26,7 +26,7 @@
 {
   "name": "about text",
   "tag": "section",
-  "class": "spaced-section spaced-section--full-width",
+  "class": "spaced-section page-width spaced-section--full-width",
   "settings": [
     {
       "type": "select",
