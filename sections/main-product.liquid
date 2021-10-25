@@ -300,7 +300,7 @@
         
         <div class="product-details-right">
           <div class="wishlist">
-            <i class="fa fa-heart-o" style="font-size:25px;color:white;background-color:orange"></i>
+            {% capture the_snippet_fave %}{% render 'socialshopwave-widget-fave' %}{% endcapture %}{% unless the_snippet_fave contains 'Liquid error' %}{{ the_snippet_fave }}{% endunless %}
           </div>
           <div class="product-pincode">
             <div class="pincode">
@@ -1107,7 +1107,6 @@
 }
   .wishlist {
     text-align: right;
-    visibility: hidden;
 }
  .pincode {
     border: 1px solid grey;

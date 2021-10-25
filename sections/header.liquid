@@ -664,6 +664,13 @@ transform: translateY(25px);
           </div>
         {%- endif -%}
       </a>
+                <span class="header__icon header__icon--cart link link--text focus-inset" >
+                                
+        {% capture the_snippet_fave_icon_menu %}{% include 'ssw-widget-faveicon-menu' with product.id %}{% endcapture %}
+{% unless the_snippet_fave_icon_menu contains 'Liquid error' %}
+{{ the_snippet_fave_icon_menu }}
+{% endunless %}    
+                </span>    
     </div>
   </header>
   <header class="navigation">

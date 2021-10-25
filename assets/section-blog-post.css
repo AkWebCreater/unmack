@@ -7,6 +7,20 @@
 .ingredients  *{
   text-align: center;
 }
+.ingredients .grid__item{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ingredients .grid__item .card-wrapper{
+  flex:1;
+}
+.ingredients .grid__item .card-wrapper a{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .article-template__hero-container {
   max-width: 130rem;
   margin: 0 auto;
@@ -19,6 +33,7 @@
   margin: auto;
   width: 80%;
   cursor: pointer;
+  margin-top: 10px;
 }
 .bulk-add-button{
   width:fit-content;

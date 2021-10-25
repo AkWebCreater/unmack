@@ -19,6 +19,16 @@
           "settings": {
           }
         },
+        "50fdb97f-443e-47ee-9d7c-938af01eda9f": {
+          "type": "shopify:\/\/apps\/product-reviews\/blocks\/star_rating\/bae150af-8da8-48b2-9867-398188115e5f",
+          "settings": {
+            "stars_fill_color": "#000000",
+            "star_size": 15,
+            "text_align": "flex-start",
+            "product": "{{product}}",
+            "stars_text_empty": "No reviews"
+          }
+        },
         "subtitle": {
           "type": "text",
           "settings": {
@@ -51,6 +61,7 @@
       },
       "block_order": [
         "title",
+        "50fdb97f-443e-47ee-9d7c-938af01eda9f",
         "subtitle",
         "price",
         "variant_picker",
@@ -89,11 +100,51 @@
         "add_image_padding": false,
         "show_vendor": false
       }
+    },
+    "16346366348a3c988d": {
+      "type": "apps",
+      "blocks": {
+        "d7c36d66-edf3-4f91-9b03-d6779ac41c5b": {
+          "type": "shopify:\/\/apps\/product-reviews\/blocks\/reviews\/bae150af-8da8-48b2-9867-398188115e5f",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "d7c36d66-edf3-4f91-9b03-d6779ac41c5b"
+      ],
+      "settings": {
+        "include_margins": false
+      }
+    },
+    "1634636688ca6d0cf4": {
+      "type": "apps",
+      "disabled": true,
+      "blocks": {
+        "1d0d7379-1f0e-45f1-b060-53a0454ca89d": {
+          "type": "shopify:\/\/apps\/product-reviews\/blocks\/star_rating\/bae150af-8da8-48b2-9867-398188115e5f",
+          "settings": {
+            "stars_fill_color": "#000000",
+            "star_size": 15,
+            "text_align": "center",
+            "product": "{{product}}",
+            "stars_text_empty": "No reviews"
+          }
+        }
+      },
+      "block_order": [
+        "1d0d7379-1f0e-45f1-b060-53a0454ca89d"
+      ],
+      "settings": {
+        "include_margins": false
+      }
     }
   },
   "order": [
     "1634622007a4730652",
     "main",
-    "product-recommendations"
+    "product-recommendations",
+    "16346366348a3c988d",
+    "1634636688ca6d0cf4"
   ]
 }
