@@ -13,6 +13,12 @@
 {% endcomment %}
 
 <div class="card-wrapper">
+  
+  {% capture the_snippet_fave_icon %}{% render 'ssw-widget-faveicon' with product.id %}{% endcapture %}
+  {% unless the_snippet_fave_icon contains 'Liquid error' %}
+  {{ the_snippet_fave_icon }}
+  {% endunless %}    
+  
   <a href="{{ product_card_product.url | default: '#' }}" class="full-unstyled-link">
     <span class="visually-hidden">{{ product_card_product.title | escape }}</span>
 
