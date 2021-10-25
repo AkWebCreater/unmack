@@ -102,7 +102,7 @@
 {% schema %}
 {
   "name": "section-grid",
-  "class": "spaced-section--full-width",
+  "class": "spaced-section--full-width section-grid",
   "tag": "section",
   "settings": [
     {
@@ -283,6 +283,10 @@
 }
 {% endschema %}
 <style>
+  .section-grid .multicolumn.background-secondary{
+    padding-top: 0;
+    overflow: auto;
+  }
  .section-{{section.id}} .media.media--transparent.media--square {
     border-top-left-radius: 10px;
   	border-top-right-radius: 10px;
@@ -321,6 +325,7 @@
   @media screen and (max-width:768px){
     .section-{{section.id}} .grid__item {
     padding-left: 0px;
+    padding-right: 0;
 }
   }
 </style>
