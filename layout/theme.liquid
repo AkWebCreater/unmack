@@ -198,5 +198,23 @@ $('.best-seller-collection-grid-wrapper').slick({
 
 </script>
 {% endif %}
+    
+    {% if template == 'product' %}
+    <script>
+      window.addEventListener('sswhelperload', () => {
+        if(typeof sswRun == 'function') {
+          sswRun(() => {
+            const faveBtn = setInterval(() => {
+              if(ssw('#widget-fave-html').length) {
+                clearInterval(faveBtn);
+                ssw('button.product-form__submit.button.button--full-width.button--secondary').after(ssw('#widget-fave-html'));
+              }
+            },1000);
+          }) 
+        }
+      })
+    </script>
+    {% endif %}
+    
   </body>
 </html>
