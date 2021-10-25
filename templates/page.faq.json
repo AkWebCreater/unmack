@@ -33,9 +33,25 @@
             "question-3": "How much is shipping?",
             "answer-3": "How much is shipping?",
             "question-4": "Who will be delivering my order?",
+            "answer-4": "",
             "question-5": "Do I need to be there to sign for it?",
+            "answer-5": "",
             "question-6": "Do you ship to P.O. boxes, APO\/FPO addresses, or international addresses?",
-            "question-7": "What happens if my package gets lost?"
+            "answer-6": "",
+            "question-7": "What happens if my package gets lost?",
+            "answer-7": "",
+            "question-8": "",
+            "answer-8": "",
+            "question-9": "",
+            "answer-9": "",
+            "question-10": "",
+            "answer-10": "",
+            "question-11": "",
+            "answer-11": "",
+            "question-12": "",
+            "answer-12": "",
+            "question-13": "",
+            "answer-13": ""
           }
         },
         "faq-1": {
@@ -43,12 +59,33 @@
           "settings": {
             "title": "payments",
             "question": "How do I make a purchase?",
+            "answer": "",
             "question-1": "When will my payment method be charged?",
+            "answer-1": "",
             "question-2": "Why are there multiple charges on my card?",
+            "answer-2": "",
             "question-3": "How do I add a payment method?",
+            "answer-3": "",
             "question-4": "Why is my credit card not working?",
+            "answer-4": "",
             "question-5": "What information do I need to check out?",
-            "question-6": "What forms of payment do you accept?"
+            "answer-5": "",
+            "question-6": "What forms of payment do you accept?",
+            "answer-6": "",
+            "question-7": "",
+            "answer-7": "",
+            "question-8": "",
+            "answer-8": "",
+            "question-9": "",
+            "answer-9": "",
+            "question-10": "",
+            "answer-10": "",
+            "question-11": "",
+            "answer-11": "",
+            "question-12": "",
+            "answer-12": "",
+            "question-13": "",
+            "answer-13": ""
           }
         },
         "faq-2": {
@@ -56,7 +93,33 @@
           "settings": {
             "title": "returns",
             "question": "How do I request a return or replacement?",
-            "question-1": "What is the status of my refund?"
+            "answer": "",
+            "question-1": "What is the status of my refund?",
+            "answer-1": "",
+            "question-2": "",
+            "answer-2": "",
+            "question-3": "",
+            "answer-3": "",
+            "question-4": "",
+            "answer-4": "",
+            "question-5": "",
+            "answer-5": "",
+            "question-6": "",
+            "answer-6": "",
+            "question-7": "",
+            "answer-7": "",
+            "question-8": "",
+            "answer-8": "",
+            "question-9": "",
+            "answer-9": "",
+            "question-10": "",
+            "answer-10": "",
+            "question-11": "",
+            "answer-11": "",
+            "question-12": "",
+            "answer-12": "",
+            "question-13": "",
+            "answer-13": ""
           }
         },
         "faq-3": {
@@ -64,30 +127,67 @@
           "settings": {
             "title": "autoship",
             "question": "How can | add or remove items in my Autoship?",
+            "answer": "",
+            "question-1": "",
+            "answer-1": "",
             "question-2": "How do I reschedule or delay my Autoship?",
+            "answer-2": "",
             "question-3": "How do I cancel my Autoship?",
+            "answer-3": "",
             "question-4": "How will I know my Autoship is on its way?",
+            "answer-4": "",
             "question-5": "How can I change my payment method?",
+            "answer-5": "",
             "question-6": "How can I change my shipping address?",
+            "answer-6": "",
             "question-7": "When will my payment method be charged?",
+            "answer-7": "",
             "question-8": "Why has the price of an item in my Autoship order changed?",
+            "answer-8": "",
             "question-9": "What is Autoship?",
-            "question-10": " How do I set up an Autoship so I can receive a recurring delivery?",
+            "answer-9": "",
+            "question-10": "How do I set up an Autoship so I can receive a recurring delivery?",
+            "answer-10": "",
             "question-11": "What are the benefits of Autoship?",
+            "answer-11": "",
             "question-12": "Is there a membership fee?",
-            "question-13": "Can I order prescription medications with Autoship?"
+            "answer-12": "",
+            "question-13": "Can I order prescription medications with Autoship?",
+            "answer-13": ""
           }
         },
         "faq-4": {
           "type": "card",
           "settings": {
             "title": "support",
+            "question": "",
+            "answer": "",
             "question-1": "How do I contact customer service?",
+            "answer-1": "",
             "question-2": "What are your customer service hours?",
+            "answer-2": "",
             "question-3": "How can I find out when an item is back in stock?",
+            "answer-3": "",
             "question-4": "Do you charge sales tax?",
+            "answer-4": "",
             "question-5": "Do you work with shelters, rescues, and other pet-related organizations?",
-            "question-6": "What's your Privacy Policy?"
+            "answer-5": "",
+            "question-6": "What's your Privacy Policy?",
+            "answer-6": "",
+            "question-7": "",
+            "answer-7": "",
+            "question-8": "",
+            "answer-8": "",
+            "question-9": "",
+            "answer-9": "",
+            "question-10": "",
+            "answer-10": "",
+            "question-11": "",
+            "answer-11": "",
+            "question-12": "",
+            "answer-12": "",
+            "question-13": "",
+            "answer-13": ""
           }
         }
       },
@@ -99,6 +199,8 @@
         "faq-4"
       ],
       "settings": {
+        "card-color": "#ccc",
+        "address-block": true
       }
     },
     "bottom-links": {
@@ -192,8 +294,8 @@
       "settings": {
         "display_recently_viewed_products": true,
         "recently_viewed_products_title": "Recently Viewed Products",
-        "section_title": "Today's Deal",
-        "shop_all_text": "Shop All",
+        "section_title": "Recently Viewed Products",
+        "shop_all_text": "",
         "shop_all_url": "",
         "number_of_recently_viewed_products": "8",
         "number_of_showing_products": "5"
