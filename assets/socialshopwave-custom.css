@@ -69,3 +69,7 @@ button.ssw-fave-item__button-move.btn-move.button.btn,
 button.ssw-fave-item__button-delete.button.btn {
   min-width: unset;
 }
+
+.ssw-link-fave-menu i {
+  color: #000;
+}
