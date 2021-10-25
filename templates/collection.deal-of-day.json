@@ -1,81 +1,80 @@
 {
-    "sections": {
-      "main-banner": {
-        "type": "image-banner",
-        "blocks": {
-          "main-banner-0": {
-            "type": "heading",
-            "disabled": true,
-            "settings": {
-              "heading": "Image banner"
-            }
-          },
-          "main-banner-1": {
-            "type": "html",
-            "disabled": true,
-            "settings": {
-              "title": "Image banner"
-            }
-          },
-          "main-banner-2": {
-            "type": "text",
-            "disabled": true,
-            "settings": {
-              "text": "Give customers details about the banner image(s) or content on the template."
-            }
-          },
-          "main-banner-3": {
-            "type": "buttons",
-            "disabled": true,
-            "settings": {
-              "button_label_1": "Button label",
-              "button_link_1": "",
-              "button_style_secondary_1": false,
-              "button_label_2": "Button label",
-              "button_link_2": "",
-              "button_style_secondary_2": false
-            }
+  "sections": {
+    "main-banner": {
+      "type": "image-banner",
+      "blocks": {
+        "main-banner-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner"
           }
         },
-        "block_order": [
-          "main-banner-0",
-          "main-banner-1",
-          "main-banner-2",
-          "main-banner-3"
-        ],
-        "settings": {
-          "image": "shopify:\/\/shop_images\/p1.jpg",
-          "desktop_text_box_position": "center",
-          "color_scheme": "background-1",
-          "stack_images_on_mobile": true,
-          "adapt_height_first_image": false,
-          "logo-url": ""
+        "main-banner-1": {
+          "type": "html",
+          "disabled": true,
+          "settings": {
+            "title": "Image banner"
+          }
+        },
+        "main-banner-2": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template."
+          }
+        },
+        "main-banner-3": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
         }
       },
-      "banner": {
-        "type": "main-collection-banner",
-        "settings": {
-          "show_collection_description": false,
-          "show_collection_image": false
-        }
-      },
-      "product-grid": {
-        "type": "main-deal-of-day-product-grid",
-        "settings": {
-          "products_per_page": 16,
-          "image_ratio": "square",
-          "show_secondary_image": false,
-          "add_image_padding": false,
-          "show_vendor": false,
-          "enable_filtering": true,
-          "enable_sorting": true
-        }
+      "block_order": [
+        "main-banner-0",
+        "main-banner-1",
+        "main-banner-2",
+        "main-banner-3"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/p1.jpg",
+        "desktop_text_box_position": "center",
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "adapt_height_first_image": false,
+        "logo-url": ""
       }
     },
-    "order": [
-      "main-banner",
-      "banner",
-      "product-grid"
-    ]
-  }
-  
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": false,
+        "show_collection_image": false
+      }
+    },
+    "product-grid": {
+      "type": "main-deal-of-day-product-grid",
+      "settings": {
+        "products_per_page": 16,
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_vendor": false,
+        "enable_filtering": true,
+        "enable_sorting": true
+      }
+    }
+  },
+  "order": [
+    "main-banner",
+    "banner",
+    "product-grid"
+  ]
+}
