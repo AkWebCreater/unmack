@@ -41,7 +41,7 @@
       "settings": {
         "type_header_font": {
           "label": "Fontti",
-          "info": "Muun fontin valitseminen voi vaikuttaa kauppasi nopeuteen. [Lue lisää järjestelmäfonteista.](https://help.shopify.com/fi/manual/online-store/os/store-speed/improving-speed#fonts)"
+          "info": "Muun fontin valitseminen voi vaikuttaa kauppasi nopeuteen. [Lue lisää järjestelmäfonteista.](https:\/\/help.shopify.com\/fi\/manual\/online-store\/os\/store-speed\/improving-speed#fonts)"
         },
         "header__1": {
           "content": "Otsikot"
@@ -51,7 +51,7 @@
         },
         "type_body_font": {
           "label": "Fontti",
-          "info": "Muun fontin valitseminen voi vaikuttaa kauppasi nopeuteen. [Lue lisää järjestelmäfonteista.](https://help.shopify.com/fi/manual/online-store/os/store-speed/improving-speed#fonts)"
+          "info": "Muun fontin valitseminen voi vaikuttaa kauppasi nopeuteen. [Lue lisää järjestelmäfonteista.](https:\/\/help.shopify.com\/fi\/manual\/online-store\/os\/store-speed\/improving-speed#fonts)"
         }
       }
     },
@@ -88,39 +88,39 @@
         },
         "social_twitter_link": {
           "label": "Twitter",
-          "info": "https://twitter.com/shopify"
+          "info": "https:\/\/twitter.com\/shopify"
         },
         "social_facebook_link": {
           "label": "Facebook",
-          "info": "https://facebook.com/shopify"
+          "info": "https:\/\/facebook.com\/shopify"
         },
         "social_pinterest_link": {
           "label": "Pinterest",
-          "info": "https://facebook.com/shopify"
+          "info": "https:\/\/facebook.com\/shopify"
         },
         "social_instagram_link": {
           "label": "Instagram",
-          "info": "https://instagram.com/shopify"
+          "info": "https:\/\/instagram.com\/shopify"
         },
         "social_tiktok_link": {
           "label": "TikTok",
-          "info": "https://twitter.com/shopify"
+          "info": "https:\/\/twitter.com\/shopify"
         },
         "social_tumblr_link": {
           "label": "Tumblr",
-          "info": "http://shopify.tumblr.com"
+          "info": "http:\/\/shopify.tumblr.com"
         },
         "social_snapchat_link": {
           "label": "Snapchat",
-          "info": "https://www.snapchat.com/add/shopify"
+          "info": "https:\/\/www.snapchat.com\/add\/shopify"
         },
         "social_youtube_link": {
           "label": "YouTube",
-          "info": "https://facebook.com/shopify"
+          "info": "https:\/\/facebook.com\/shopify"
         },
         "social_vimeo_link": {
           "label": "Vimeo",
-          "info": "https://vimeo.com/shopify"
+          "info": "https:\/\/vimeo.com\/shopify"
         }
       }
     }
@@ -304,7 +304,7 @@
           "options__3": {
             "label": "Neliö"
           },
-          "info": "Jos haluat lisätä kuvia, [muokkaa kokoelmiasi] (https://help.shopify.com/fi/manual/products/collections)"
+          "info": "Jos haluat lisätä kuvia, [muokkaa kokoelmiasi] (https:\/\/help.shopify.com\/fi\/manual\/products\/collections)"
         },
         "color_scheme": {
           "options__1": {
@@ -513,7 +513,7 @@
         },
         "header__1": {
           "content": "Sähköpostitilaaja",
-          "info": "Tilaajat lisättiin markkinoinnin hyväksyneiden [asiakasluetteloon.](https://help.shopify.com/fi/manual/customers/manage-customers)"
+          "info": "Tilaajat lisättiin markkinoinnin hyväksyneiden [asiakasluetteloon.](https:\/\/help.shopify.com\/fi\/manual\/customers\/manage-customers)"
         },
         "header__2": {
           "content": "Some-kuvakkeet",
@@ -523,13 +523,13 @@
           "label": "Näytä some-kuvakkeet"
         },
         "header__3": {
-          "content": "Maa-/aluevalitsin"
+          "content": "Maa-\/aluevalitsin"
         },
         "header__4": {
-          "info": "Lisää maa-/alue siirtymällä [maksuasetuksiisi](Ylläpitäjä > Asetukset > Maksut)."
+          "info": "Lisää maa-\/alue siirtymällä [maksuasetuksiisi](Ylläpitäjä > Asetukset > Maksut)."
         },
         "enable_country_selector": {
-          "label": "Näytä maa-/aluevalitsin"
+          "label": "Näytä maa-\/aluevalitsin"
         },
         "header__5": {
           "content": "Kielivalitsin"
@@ -807,7 +807,7 @@
           "info": "Saat parhaat tulokset käyttämällä kuvaa, jonka kuvasuhde on 2:3."
         },
         "paragraph": {
-          "content": "Jos haluat muuttaa otteita, muokkaa [blogijulkaisuja.](https://help.shopify.com/fi/manual/online-store/blogs/writing-blogs#display-an-excerpt-from-a-blog-post)"
+          "content": "Jos haluat muuttaa otteita, muokkaa [blogijulkaisuja.](https:\/\/help.shopify.com\/fi\/manual\/online-store\/blogs\/writing-blogs#display-an-excerpt-from-a-blog-post)"
         }
       },
       "blocks": {
@@ -943,7 +943,7 @@
           "options__3": {
             "label": "Neliö"
           },
-          "info": "Jos haluat lisätä kuvia, [muokkaa kokoelmiasi] (https://help.shopify.com/fi/manual/products/collections)"
+          "info": "Jos haluat lisätä kuvia, [muokkaa kokoelmiasi] (https:\/\/help.shopify.com\/fi\/manual\/products\/collections)"
         },
         "color_scheme": {
           "options__1": {
@@ -1074,7 +1074,7 @@
           "settings": {
             "show_dynamic_checkout": {
               "label": "Näytä dynaamiset kassapainikkeet",
-              "info": "Kun käytät kaupallesi saatavilla olevia maksutapoja, asiakkaat näkevät ensisijaisen vaihtoehtonsa, kuten PayPalin tai Apple Payn. [Lisätietoja](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)"
+              "info": "Kun käytät kaupallesi saatavilla olevia maksutapoja, asiakkaat näkevät ensisijaisen vaihtoehtonsa, kuten PayPalin tai Apple Payn. [Lisätietoja](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)"
             }
           }
         },
@@ -1191,7 +1191,7 @@
       "settings": {
         "header": {
           "content": "Media",
-          "info": "Tutustu tarkemmin [mediatyyppeihin](https://help.shopify.com/fi/manual/products/product-media)"
+          "info": "Tutustu tarkemmin [mediatyyppeihin](https:\/\/help.shopify.com\/fi\/manual\/products\/product-media)"
         },
         "enable_video_looping": {
           "label": "Ota videosilmukka käyttöön"
@@ -1345,7 +1345,7 @@
           "label": "Tee osiosta täysleveä"
         },
         "paragraph": {
-          "content": "Kun asiakkaat rekisteröityvät sähköpostimarkkinoinnin tilaajiksi, asiakastilit luodaan. [Lisätietoja](https://help.shopify.com/fi/manual/customers)"
+          "content": "Kun asiakkaat rekisteröityvät sähköpostimarkkinoinnin tilaajiksi, asiakastilit luodaan. [Lisätietoja](https:\/\/help.shopify.com\/fi\/manual\/customers)"
         }
       },
       "blocks": {
@@ -1489,5 +1489,76 @@
         "name": "Rich text"
       }
     }
+  },
+  "socialshopwave": {
+    "log_in": "Log in",
+    "log_in_to_account": "Log in to your account",
+    "cancel": "cancel",
+    "create_account": "Create Account",
+    "sign_up": "Sign up",
+    "not_created_customer_on_shopify": "Not created customer on Shopify",
+    "create_your_account": "Create your account",
+    "my_orders": "My Orders",
+    "logout": "Logout",
+    "faved": "in wishlist",
+    "fave": "Add to wishlist",
+    "unfave": "Remove from Wishlist",
+    "fave_choose_variant": "Choose options",
+    "add_to_cart": "Add To Cart",
+    "share": "Share",
+    "sharing": "Posting...",
+    "write_a_review": "Write a review",
+    "quantity_review2": "{{ ssw_count_rate }} Review",
+    "quantity_reviews2": "{{ ssw_count_rate }} Reviews",
+    "quantity_review": "{{ ssw_count_rate }} review",
+    "quantity_reviews": "{{ ssw_count_rate }} reviews",
+    "view_cart": "View Cart",
+    "my_faves": "My Wishlist",
+    "close": "Close",
+    "user_commented_product_html": "{{ user_link }} commented {{ product_link }}",
+    "user_faved_product_html": "{{ user_link }} added {{ product_link }} to wishlist",
+    "user_reviewed_product_html": "{{ user_link }} reviewed {{ product_link }}",
+    "adding_to_cart": "Adding...",
+    "sold_out": "Sold Out",
+    "ask_your_friends": "Ask Advice",
+    "description": "Description",
+    "reviews": "Reviews",
+    "view_profile": "View Profile",
+    "edit_profile": "Edit Profile",
+    "sign_in_facebook": "Continue with Facebook",
+    "social_login_facebook": "Continue with Facebook",
+    "sign_in_twitter": "Continue with Twitter",
+    "social_login_twitter": "Twitter",
+    "sign_in_gplus": "Continue with Google",
+    "social_login_gplus": "Google",
+    "sign_in_yahoo": "Continue with Yahoo",
+    "social_login_yahoo": "Yahoo",
+    "sign_in_tumblr": "Continue with Tumblr",
+    "social_login_tumblr": "Tumblr",
+    "sign_in_instagram": "Continue with Instagram",
+    "social_login_instagram": "Instagram",
+    "sign_in_amazon": "Continue with Amazon",
+    "social_login_amazon": "Amazon",
+    "social_login_line": "Line",
+    "sign_in_line": "Continue with Line",
+    "social_login_simple": "Email",
+    "ask_question": "Ask a question",
+    "quantity_question": "{{ ssw_question_count }} answered question",
+    "quantity_questions": "{{ ssw_question_count }} answered questions",
+    "email_address": "Email address",
+    "password": "Password",
+    "forgot_password": "Forgot password?",
+    "give_a_title_for_review": "Give a title for review",
+    "leaving_review": "Posting...",
+    "leave_review": "Post",
+    "share_button": "Post",
+    "fave_view_product": "View Product",
+    "fave_options": "Options {{ option_title }}",
+    "questions": "Questions",
+    "go_to_wishlist_page": "Go to wishlist page",
+    "list_name_limit": "You have exceeded the character limit",
+    "review_token_expired": "You're late. The link is expired!",
+    "view_on_instagram": "View on Instagram",
+    "login_required_to_review": "Please log in to leave your review"
   }
 }
