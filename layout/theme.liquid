@@ -125,6 +125,8 @@
   	{%- endif -%}
 
     <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
+    {{ 'socialshopwave-custom.css' | asset_url | stylesheet_tag }}
+    
   </head>
 
   <body class="body--{{template.name}}">
