@@ -60,3 +60,7 @@
 .ssw-fave-item {
   z-index: unset !important;
 }
+
+.ssw-page {
+  margin: 150px auto 0;
+}
