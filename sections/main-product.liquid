@@ -25,7 +25,7 @@
         <a class="skip-to-content-link button visually-hidden" href="#ProductInfo-{{ section.id }}">
           {{ "accessibility.skip_to_product_info" | t }}
         </a>
-       <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile sider-for" role="list">
+       <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile slider slider-for" role="list">
           {%- if product.selected_or_first_available_variant.featured_media != null -%}
             {%- assign media = product.selected_or_first_available_variant.featured_media -%}
             <li class="product__media-item grid__item slider__slide{% if media.media_type != 'image' %} product__media-item--full{% endif %}" data-media-id="{{ section.id }}-{{ media.id }}">
@@ -41,7 +41,7 @@
           {%- endfor -%}
         </ul>
         {% if template contains 'product' %}
-        <div class="grid slider-navv">
+        <div class="grid slider slider-nav">
         {%- for media in product.media -%}
         <div class="grid--4-col-tablet grid__item">
           	{% render 'product-thumbnail', media: media, position: forloop.index, loop: section.settings.enable_video_looping, modal_id: section.id %}
