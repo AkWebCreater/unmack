@@ -1,0 +1,58 @@
+<!-- start section Header-background -->
+<section class="section-{{section.id}}">
+  <div class="image-with-text  color-scheme-background-1">
+      
+  </div>
+</section>
+<!-- End section Header-background -->
+
+
+{% schema %}
+  {
+    "name": "Header Background",
+"class":"what-make-us-different",
+    "settings": [
+					{
+                      "id": "background-image",
+                      "type": "image_picker",
+                      "label": "Choose images for background"
+                    },
+					{
+                      "id": "heading",
+                      "type": "text",
+                      "label": "Enter heading"
+                    }
+
+				],
+
+"presets": [
+{
+"name": "Header Background",
+"category": "ADVANCED LAYOUT"
+}
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
+
+<style>
+  {% if section.settings.background-image != blank %}
+  .section-{{section.id}} .image-with-text{
+    background-image:url({{section.settings.background-image | img_url: 'master'}});
+    background-position: center center;
+    background-size: cover;
+    margin:0;
+    height:150px;
+  }
+  {% else %}
+  .section-{{section.id}} .image-with-text{
+  	background-color:red;
+  }
+  {% endif %}
+  
+</style>
