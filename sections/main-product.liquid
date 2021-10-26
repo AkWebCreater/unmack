@@ -41,7 +41,7 @@
           {%- endfor -%}
         </ul>
         {% if template contains 'product' %}
-        <div class="grid">
+        <div class="grid slider-nav">
         {%- for media in product.media -%}
         <div class="grid--4-col-tablet grid__item">
           	{% render 'product-thumbnail', media: media, position: forloop.index, loop: section.settings.enable_video_looping, modal_id: section.id %}
