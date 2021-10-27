@@ -3,8 +3,16 @@ $(document).ready(function() {
   // Umanac Journey year section js
   $('.year').click(function() {
     var index = $(this).attr('data-index');
+    $(this).addClass('accent')
+    $(this).siblings().removeClass('accent')
     $('.year-img[data-index=' + index + ']').addClass('active').siblings().removeClass('active')
 })  
+$('.year-img').click(function() {
+  var index = $(this).attr('data-index');
+  $(this).addClass('active')
+  $(this).siblings().removeClass('active')
+  $('.year[data-index=' + index + ']').addClass('accent').siblings().removeClass('accent')
+})
   // custome js for gift wrap button -- check form input on chekout click if outer cechekbox checked
 $('.cart__ctas').click(function() {
       if ($('.gift-wrap-outer input.regular-checkbox').is(":checked")) {

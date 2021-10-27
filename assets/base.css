@@ -1814,8 +1814,8 @@ input[type='checkbox'] {
 .header__icons {
   display: flex;
   grid-area: icons;
-  justify-self: end;
-  width:100%;
+  /* justify-self: end; */
+  width:97%;
 }
 
 .header__icon:not(.header__icon--summary),
@@ -1824,7 +1824,9 @@ input[type='checkbox'] {
   align-items: center;
   justify-content: center;
 }
-
+.header-wrapper .header__icon.header__icon--summary::after{
+  display: none;
+}
 .header__icon span {
   height: 100%;
 }
@@ -2285,4 +2287,7 @@ details-disclosure > details {
  .icons-wrapper{
   display: flex;
   flex: 1;
+ }
+ .ssw-icon-heart:before{
+   font-size: 19px !important;
  }
