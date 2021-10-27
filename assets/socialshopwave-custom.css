@@ -73,3 +73,7 @@ button.ssw-fave-item__button-delete.button.btn {
 .ssw-link-fave-menu i {
   color: #000;
 }
+
+.ssw-faveiticon {
+  z-index: 2;
+}
