@@ -1937,7 +1937,7 @@ details[open] > .search-modal {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 84%;
   height: 100%;
   /* padding: 0 0 0 1rem; */
   line-height: 1.8;
