@@ -2264,3 +2264,24 @@ details-disclosure > details {
 .slick-prev{
    left: -15px;
  }
+ /* ssw review custome css */
+ .ssw-counter-fave-menu{
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  top: 0;
+  left: 40%;
+  position: absolute;
+  background-color: var(--color-base-accent-1);
+  color: var(--color-base-solid-button-labels);
+  height: 1.7rem;
+  width: 1.7rem;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: .9rem;
+  top: 0;
+  right: 9 px;
+  line-height: 1.1;
+ }
