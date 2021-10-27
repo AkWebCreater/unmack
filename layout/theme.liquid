@@ -207,7 +207,7 @@ $('.best-seller-collection-grid-wrapper').slick({
         if(typeof sswRun == 'function') {
           sswRun(() => {
             const faveBtn = setInterval(() => {
-              if((ssw('#widget-fave-html').length) && (sww('#ssw-avg-rate-profile-html').length)) {
+              if((ssw('#widget-fave-html').length) && ssw('#ssw-avg-rate-profile-html').length) {
                 console.log('here app!!!');
                 clearInterval(faveBtn);
                 ssw('button.product-form__submit.button.button--full-width.button--secondary').after(ssw('#widget-fave-html'));
