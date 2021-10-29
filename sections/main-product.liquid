@@ -112,14 +112,18 @@
               <span>{{ product.metafields.my_fields.country_of_origin }}</span>
             </div>
             {% endif %}
-            <div>Reviews</div>
-            <div>Write a review</div>
           </div>
           
           {%- when 'price' -%}
             <div class="no-js-hidden" id="price-{{ section.id }}">
               {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
             </div>
+            {% if product.selected_variant.inventory_quantity > section.settings.inventory_quantity %}
+              <p class="stock-indicator">In Stock</p>
+              {% else %}
+              <p class="stock-indicator"></p>
+              {% endif %}
+                
             {%- form 'product', product, id: 'product-form-installment', class: 'installment caption-large' -%}
               <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
               {{ form | payment_terms }}
@@ -907,6 +911,15 @@
       "id": "enable_sticky_info",
       "default": true,
       "label": "t:sections.main-product.settings.enable_sticky_info.label"
+    },
+    {
+      "type": "range",
+      "id": "in_stock",
+      "label": "In Stcok Treshhold",
+      "min": 1,
+      "max": 10,
+      "step": 1,
+      "default": 3
     },
     {
       "type": "checkbox",
