@@ -103,13 +103,14 @@
         	<hr>
           <div class="about__product grid">
             <div class="product-form-divider">
-          {% if origin != blank %}
-          <p style="margin: 0;"><span>Country Of Origin :</span> <span class="accent">{{origin}}</span></p>
-          {% endif %}
           <div class="product-details-top">
             {% if product.metafields.my_fields.country_of_origin!= blanks %}
             <div class="product-details-origin">Country of origin:
               <span>{{ product.metafields.my_fields.country_of_origin }}</span>
+            </div>
+            {% else %}
+            <div class="product-details-origin">Country of origin:
+              <span>India</span>
             </div>
             {% endif %}
           </div>
@@ -422,13 +423,23 @@
         </div>
         <!-- right end-->
         </div>
-        
-        	{% render 'product-featured-collection' %}
+        {% if product.metafields.my_fields.dummy_collection != blank %}
+        {% render 'product-featured-collection' %}
+        {% endif %}
+          
         
           <!--start section main-product-->
-         	 <div class="veg grid">
-			{{ product.metafields.my_fields.veg_non_veg}}
-          </div>
+          <!-- veg non-veg    -->
+          {% if product.metafields.my_fields.veg_non_veg == 'Veg' %}
+          <div class="veg grid">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 48 48" style=" fill:#000000;"><path fill="#388e3c" d="M42,42H6V6h36V42z M8,40h32V8H8V40z"></path><path fill="#388e3c" d="M24 13A11 11 0 1 0 24 35A11 11 0 1 0 24 13Z"></path></svg><span>This is a vegeterian products. </span>
+                </div>
+            {% else %}
+            <div class="veg grid">
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 48 48" style=" fill:#a70707;"><path fill="#388e3c" d="M42,42H6V6h36V42z M8,40h32V8H8V40z"></path><path fill="#388e3c" d="M24 13A11 11 0 1 0 24 35A11 11 0 1 0 24 13Z"></path></svg><span>This is a non-vegeterian products. </span>
+                  </div>
+          {% endif %}
+         	<!-- veg non-veg  end here  -->
           <div>
             <div class="about_this_product">{{ product.metafields.my_fields.about_this_product }}</div>
           </div>
