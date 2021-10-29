@@ -813,7 +813,7 @@ a.product__text {
 }
 /* custome style added */
 ul.grid{
-  margin-left: 0;
+  margin-left: -1rem;
 }
 @media screen and (min-width: 750px){
   .collection .grid__item, .template-search .grid__item {
@@ -1006,12 +1006,8 @@ img.vegi {
   justify-content: center;
   margin: auto;
 }
-.product-form__input input[type=radio]+label {
-  
-}
- li.grid__item{
-      max-width: 15%;
-      padding-left: 0;
+.price dl{
+  flex: 1;
 }
 .card-wrapper {
   border: 1px solid #D2D3D5;

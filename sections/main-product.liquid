@@ -118,11 +118,7 @@
             <div class="no-js-hidden" id="price-{{ section.id }}">
               {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
             </div>
-            {% if product.selected_variant.inventory_quantity > section.settings.inventory_quantity %}
-              <p class="stock-indicator">In Stock</p>
-              {% else %}
-              <p class="stock-indicator"></p>
-              {% endif %}
+           
                 
             {%- form 'product', product, id: 'product-form-installment', class: 'installment caption-large' -%}
               <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
