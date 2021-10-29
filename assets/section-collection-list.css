@@ -160,3 +160,6 @@ padding:1rem 0;
 /*   text-align:center */
     justify-content:center;
 }
+.collection-list-wrapper .title-wrapper-with-link{
+  margin-top: 0;
+}

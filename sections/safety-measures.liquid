@@ -99,9 +99,8 @@
     width: 100px;
     border-top: 3px solid #B84D1D;
   }
-  .safety-measure .grid .grid-1{
-    width:16%;
-  }
+
+
   .section-{{section.id}} .small-img{
   	height:120px;
   }
@@ -109,7 +108,7 @@
     font-weight: 600;
 }
  .section-{{section.id}} h2.title {
-    padding-top: 10px;
+    /* padding-top: 10px; */
 }
 
   @media screen and (max-width:768px){
@@ -117,5 +116,14 @@
     	width: 50%;
     }
   }
- 
+  @media (max-width:991px) {
+    .safety-measure .grid .grid-1{
+   max-width: 33.33%;
+  }
+  }
+  @media (min-width:992px) {
+    .safety-measure .grid .grid-1{
+   flex:1;
+  }
+  }
 </style>

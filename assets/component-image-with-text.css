@@ -1,7 +1,13 @@
 .image-with-text {
   margin-top: 5rem;
 }
-
+.image-with-text .image-with-text__media img{
+  transition: all 0.5s;
+  transform-origin: center;
+}
+.image-with-text .image-with-text__media:hover img{
+  transform: scale(1.3);
+}
 .image-with-text:not(.color-scheme-background-1) {
   margin-bottom: 5rem;
 }
