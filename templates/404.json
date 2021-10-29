@@ -159,7 +159,7 @@
         "color_scheme": "background-2",
         "swipe_on_mobile": true,
         "image_padding": false,
-        "show_view_all": true
+        "show_view_all": false
       }
     },
     "163038833315e79f47": {
