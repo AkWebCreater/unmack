@@ -14,8 +14,10 @@ justify-content: space-between;
     color: rgb(238, 31, 31);
 }
 .best-seller{
-    max-width:75%;
+    max-width:95%;
+    width: 100%;
     margin: auto;
+    padding: 0 !important;
 }
 .add-btn a{
     
