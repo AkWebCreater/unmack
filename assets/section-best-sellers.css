@@ -13,6 +13,10 @@ justify-content: space-between;
 .price-compare + .price-main{
     color: rgb(238, 31, 31);
 }
+.best-seller{
+    max-width:75%;
+    margin: auto;
+}
 .add-btn a{
     
     text-align: center;
