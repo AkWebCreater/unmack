@@ -23,6 +23,10 @@ justify-content: space-between;
 
     padding: 40px 20px;
 }
+.card-information__text{
+    font-size: 1.7rem;
+    color: 838383;
+}
 .add-btn a{
     
     text-align: center;
