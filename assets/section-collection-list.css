@@ -163,3 +163,20 @@ padding:1rem 0;
 .collection-list-wrapper .title-wrapper-with-link{
   margin-top: 0;
 }
+.collection-list-wrapper .card__text{
+
+  background-color: #fef9ed;
+}
+
+/* slider component override */
+.collection-list-wrapper .slider-counter{
+  display: none;
+}
+.collection-list-wrapper .slider-buttons{
+
+  width: calc(100% + 88px);
+  justify-content: space-between;
+  left: -44px;
+  top: 50%;
+  transform: translateY(-50%);
+}

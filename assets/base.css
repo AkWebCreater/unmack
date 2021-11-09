@@ -2182,6 +2182,7 @@ details-disclosure > details {
 .extra-link{
   background-color:#b1ea29;
   display: inline-block;
+  color: #000 !important;
   margin-right: 5px;
   line-height: 1;
   padding: 4px 8px;
