@@ -180,3 +180,14 @@ padding:1rem 0;
   top: 50%;
   transform: translateY(-50%);
 }
+.collection-list-wrapper .slider-button{
+
+  background-color: transparent;
+  border: 0;
+}
+.collection-list-wrapper .slider-button svg{
+fill: #000;
+width: 18px;
+height: 25px;
+
+}
