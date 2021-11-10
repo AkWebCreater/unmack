@@ -191,3 +191,15 @@ width: 18px;
 height: 25px;
 
 }
+.collection-list-wrapper slider-component .slider{
+
+  padding-bottom: 0;
+}
+@media (max-width:749px) {
+  .collection-list-wrapper .slider-buttons{
+
+    width: 100%;
+    justify-content: space-between;
+    left:44px;
+  }
+}
