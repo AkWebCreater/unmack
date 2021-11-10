@@ -1,7 +1,7 @@
 
 $(document).ready(function() {
   // product page sliders
-  $('.product-recommendations').slick({
+  $('.product-recommendations .grid').slick({
     dots: false,
     arrows: true,
     nextArrow: '<span  class="slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i></span>',
