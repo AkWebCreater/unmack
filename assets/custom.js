@@ -9,7 +9,17 @@ $(document).ready(function() {
     infinite: true,
     speed: 300,
     slidesToShow: 4,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 750,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          adaptiveHeight: true,
+        },
+      }
+    ]
 })
   // Umanac Journey year section js
   $('.year').click(function() {
