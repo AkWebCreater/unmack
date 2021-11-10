@@ -91,6 +91,18 @@
     },
     "1636538016f8bc7421": {
       "type": "best-seller",
+      "blocks": {
+        "8dfbd503-4bae-4113-aa3d-e03bde268574": {
+          "type": "collection",
+          "settings": {
+            "title": "Collection",
+            "collection": "acv"
+          }
+        }
+      },
+      "block_order": [
+        "8dfbd503-4bae-4113-aa3d-e03bde268574"
+      ],
       "settings": {
         "section-heading": "Try Our Other Products"
       }
