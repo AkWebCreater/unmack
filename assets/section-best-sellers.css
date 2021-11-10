@@ -55,14 +55,21 @@ justify-content: space-between;
 .explore-button{
     display: flex;
     background-color: #b3aaaa;
-    display: inline-block;
+    margin: auto;
+    width: fit-content;
+    align-items: center;
     padding: 8px 14px;
+
     text-decoration: none;
     line-height: 1;
     border-radius: 5px;
     z-index: 2;
     color: #fff;
     border: 1px solid #b3aaaa;
+}
+.explore-button img{
+    margin-left: 10px;
+    width: 16px;
 }
 .explore::before{
     content: '';
