@@ -53,6 +53,7 @@ justify-content: space-between;
     position: relative;
 }
 .explore-button{
+    display: flex;
     background-color: #b3aaaa;
     display: inline-block;
     padding: 8px 14px;
