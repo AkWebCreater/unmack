@@ -1,26 +1,26 @@
 
 $(document).ready(function() {
   // product page sliders
-  $('.product-recommendations .grid').slick({
-    dots: false,
-    arrows: true,
-    nextArrow: '<span  class="slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i></span>',
-    prevArrow: '<span  class="slick-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></span>',
-    infinite: true,
-    speed: 300,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 750,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          adaptiveHeight: true,
-        },
-      }
-    ]
-})
+setTimeout(()=>{  $('.product-recommendations .grid').slick({
+  dots: false,
+  arrows: true,
+  nextArrow: '<span  class="slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i></span>',
+  prevArrow: '<span  class="slick-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></span>',
+  infinite: true,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 750,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        adaptiveHeight: true,
+      },
+    }
+  ]
+})},3000)
   // Umanac Journey year section js
   $('.year').click(function() {
     var index = $(this).attr('data-index');
