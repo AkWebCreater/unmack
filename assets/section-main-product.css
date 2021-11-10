@@ -1028,16 +1028,16 @@ button.slick-prev.slick-arrow {
   background: transparent;
   border: none;
 }
-.slick-prev.slick-arrow:before {
+/* .slick-prev.slick-arrow:before {
 content: "<";
 color: black;
 font-size: 30px;
-}
-.slick-next.slick-arrow:before {
+} */
+/* .slick-next.slick-arrow:before {
 content: ">";
 color: black;
 font-size: 30px;
-}
+} */
 button.product__media-toggle {
   background: none;
 }
