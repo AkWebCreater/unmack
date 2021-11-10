@@ -108,7 +108,7 @@
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
-        "heading": "You may also like",
+        "heading": "Customer Reviews",
         "image_ratio": "square",
         "show_secondary_image": false,
         "add_image_padding": false,
