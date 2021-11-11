@@ -429,7 +429,7 @@
             {% if collection.products_count == 4 %} grid--4-col-desktop{% else %} grid--3-col-tablet grid--one-third-max grid--4-col-desktop grid--quarter-max{% endif %}
           {% endif %} negative-margin">{% endcomment %}
           {%- for product in collection.products -%}
-            <div class="image-text" data-aos="fade-up">
+            <div class="image-text" >
               {% render 'image-with-text-collection',
                 product_card_product: product,
                 media_size: section.settings.image_ratio,
