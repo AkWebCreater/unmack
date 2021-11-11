@@ -1815,7 +1815,6 @@ input[type='checkbox'] {
   display: flex;
   grid-area: icons;
   /* justify-self: end; */
-  width:97%;
 }
 
 .header__icon:not(.header__icon--summary),
@@ -2287,6 +2286,7 @@ details-disclosure > details {
  }
  .icons-wrapper{
   display: flex;
+  justify-content: end;
   flex: 1;
  }
  .ssw-icon-heart:before{
