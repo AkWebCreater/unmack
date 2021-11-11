@@ -3,6 +3,9 @@ background:#fff8ed;
   margin-top:2rem;
   padding-top:3rem;
 }
+.card--light-border{
+border:0 !important;
+}
 .collection-list-section + section{
   background:#fff8ed;
     margin-top:0;
