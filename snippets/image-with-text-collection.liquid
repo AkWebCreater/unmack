@@ -23,6 +23,7 @@
                width="{{ product_card_product.featured_media.width }}"
                height="{{ product_card_product.featured_media.height }}"
                data-aos="fade-down"
+               data-aos-easing="ease-in-out"
                >
 
           {%- if product_card_product.media[1] != nil and show_secondary_image -%}
@@ -40,6 +41,7 @@
                width="{{ product_card_product.media[1].width }}"
                height="{{ product_card_product.media[1].height }}"
                data-aos="fade-down"
+               data-aos-easing="ease-in-out"
                >
           {%- endif -%}
 			
