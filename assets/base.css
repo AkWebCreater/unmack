@@ -2305,6 +2305,6 @@ details-disclosure > details {
   }
   
 /* home num animation   */
-  .num-animation-wrtapper{
+  .num-animation-wrtapper > *{
   color:#000;
   }
