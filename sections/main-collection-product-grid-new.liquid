@@ -5,6 +5,7 @@
 <link rel="preload" href="{{ 'component-price.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <link rel="preload" href="{{ 'component-badge.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <link rel="preload" href="{{ 'component-rte.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
 <noscript>{{ 'component-card.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-price.css' | asset_url | stylesheet_tag }}</noscript>
@@ -428,7 +429,7 @@
             {% if collection.products_count == 4 %} grid--4-col-desktop{% else %} grid--3-col-tablet grid--one-third-max grid--4-col-desktop grid--quarter-max{% endif %}
           {% endif %} negative-margin">{% endcomment %}
           {%- for product in collection.products -%}
-            <div class="image-text">
+            <div class="image-text" data-animation="fadeInLeft">
               {% render 'image-with-text-collection',
                 product_card_product: product,
                 media_size: section.settings.image_ratio,
@@ -447,7 +448,7 @@
     {%- endif -%}
   {%- endpaginate -%}
 </div>
-
+<script src="animate-on-scroll.min.js"></script>
 {% schema %}
 {
   "name": "t:sections.main-collection-product-grid.name",
