@@ -31,7 +31,7 @@ function onVisibilityChange(el, callback) {
   
   var handler = onVisibilityChange($('.image-text'), function() {
     /* Your code go here */
-    alert($(this))
+//     alert($(this))
     
 });
   // jQuery
