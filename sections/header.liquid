@@ -647,8 +647,15 @@ transform: translateY(25px);
                   </span>
                 </a>
               {%- endif -%}
+              <span class="header__icon header__icon--cart link link--text focus-inset" >
+                              
+                {% capture the_snippet_fave_icon_menu %}{% include 'ssw-widget-faveicon-menu' with product.id %}{% endcapture %}
+                {% unless the_snippet_fave_icon_menu contains 'Liquid error' %}
+                {{ the_snippet_fave_icon_menu }}
+                {% endunless %}    
+                </span> 
         
-              <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link link--text focus-inset" id="cart-icon-bubble">
+              <a href="{{ routes.cart_url }}" class="header__icon--cart link link--text focus-inset" id="cart-icon-bubble">
                 {%- liquid
                   if cart == empty
                     render 'icon-cart-empty'
@@ -666,13 +673,7 @@ transform: translateY(25px);
                   </div>
                 {%- endif -%}
               </a>
-              <span class="header__icon header__icon--cart link link--text focus-inset" >
-                              
-              {% capture the_snippet_fave_icon_menu %}{% include 'ssw-widget-faveicon-menu' with product.id %}{% endcapture %}
-              {% unless the_snippet_fave_icon_menu contains 'Liquid error' %}
-              {{ the_snippet_fave_icon_menu }}
-              {% endunless %}    
-              </span>    
+                
             </div>
     </div>
   </header>
