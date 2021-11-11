@@ -2303,3 +2303,8 @@ details-disclosure > details {
   background-image:url(https://cdn.shopify.com/s/files/1/0591/8192/4552/files/bg.png?v=1636633083);
     background-size:100%;
   }
+  
+/* home num animation   */
+  .num-animation-wrtapper{
+  color:#000;
+  }
