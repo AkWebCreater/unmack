@@ -2228,6 +2228,7 @@ details-disclosure > details {
 /* logo */
 .left-nav + div a{
   min-width: 145px;
+  transition:all .5s;
 } 
 /* slick arrows */
 .slick-arrow{
