@@ -1,5 +1,41 @@
 
 $(document).ready(function() {
+// product page animation
+  function isElementInViewport (el) {
+
+    // solution to jQuery object
+    if (typeof jQuery === "function" && el instanceof jQuery) {
+        el = el[0];
+    }
+// end
+    var rect = el.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && /* or $(window).height() */
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth) /* or $(window).width() */
+    );
+}
+function onVisibilityChange(el, callback) {
+    var old_visible;
+    return function () {
+        var visible = isElementInViewport(el);
+        if (visible != old_visible) {
+            old_visible = visible;
+            if (typeof callback == 'function') {
+                callback();
+            }
+        }
+    }
+}  
+  
+  var handler = onVisibilityChange($('.image-text'), function() {
+    /* Your code go here */
+    alert('visibality chaged')
+    
+});
+  // jQuery
+$(window).on('DOMContentLoaded load resize scroll', handler);
   // product page sliders
 setTimeout(()=>{  $('.product-recommendations .grid').slick({
   dots: false,
@@ -21,6 +57,7 @@ setTimeout(()=>{  $('.product-recommendations .grid').slick({
     }
   ]
 })},3000)
+// product page slider end
   // Umanac Journey year section js
   $('.year').click(function() {
     var index = $(this).attr('data-index');
