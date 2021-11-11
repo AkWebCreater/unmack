@@ -2,6 +2,9 @@
 width:100%;
   
 }
+.footer-login-link path{
+fill:#efbe79 !important;
+}
 .footer-top-bg{
 font-size:0;
 }
