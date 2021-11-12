@@ -845,7 +845,7 @@ opacity: 1; /* Firefox */
 
 .grid--peek.list-unstyled.slider.slider--mobile{
   padding-bottom: 0rem;
-  margin-bottom:-120px;
+  /* margin-bottom:-120px; */
   border:none;
 }
 .grid.slider.slider-nav{
