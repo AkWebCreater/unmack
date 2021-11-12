@@ -2310,3 +2310,10 @@ details-disclosure > details {
   color:#000;
   }
 
+/* breadcrums */
+nav.breadcrumb.page-width{
+margin-left: 0 !important;
+padding-left: 0 !important;
+margin-bottom: 0 !important;
+
+}
