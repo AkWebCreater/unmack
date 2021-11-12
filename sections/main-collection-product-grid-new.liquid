@@ -598,8 +598,11 @@
 
 </script>
 <style>
- #CollectionProductGrid *:not(.price-item){
+ #CollectionProductGrid *:not(.price-item):not(){
     color: #3a383b;
+  }
+  #CollectionProductGrid a:hover *,.variant-option:hover,.variant-option.active{
+    color: #fff !important;
   }
   @media (min-width:750px){
     #CollectionProductGrid .collection 
