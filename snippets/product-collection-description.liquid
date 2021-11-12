@@ -36,7 +36,7 @@
     {%- endunless -%}
     </div>
     <div class="grid-1">
-      {%- unless product.metafields.my_fields.icon_4 -%}
+      {%- unless product.metafields.my_fields.icon_4 == blank-%}
         
       <div class="image"><img alt="img4" src="{{product.metafields.my_fields.icon_4}}"></div>
       {%- endunless -%}
