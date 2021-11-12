@@ -20,6 +20,20 @@ font-size: 2.4rem;
 font-weight:normal;  
 text-transform: uppercase;
 }
+.footer-block--newsletter .footer-block__heading::after{
+  content: '';
+    position: absolute;
+    max-width: 150px;
+    width: 100%;
+    height: 3px;
+    left: 50%;
+    bottom: -6px;
+    transform: translateX(-50%);
+    z-index: 12;
+    border: 0!important;
+    background: #f58634;
+}
+}
 .newsletter-form__field-wrapper input{
 background: #fff;
   outline:0 !important;
