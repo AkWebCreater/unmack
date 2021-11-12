@@ -633,12 +633,12 @@
             "image": "shopify:\/\/shop_images\/aa.png",
             "title": "HEALTH TIPS",
             "text": "",
-            "background-color": "#053512",
+            "background-color": "#667319",
             "text-color": "#ffffff",
-            "button-text-color": "#f58634",
+            "button-text-color": "#f6ca67",
             "button-text": "Explore Now",
             "button-url": "",
-            "border-color": "#f58634"
+            "border-color": "#f6ca67"
           }
         },
         "1630155100e70d79d8-1": {
@@ -648,11 +648,11 @@
             "title": "BEAUTY TIPS",
             "text": "",
             "background-color": "#ffffff",
-            "text-color": "#0e0e0e",
-            "button-text-color": "#0e0e0e",
-            "button-text": "Explore Now",
+            "text-color": "#2f2e33",
+            "button-text-color": "#878785",
+            "button-text": "Explore More",
             "button-url": "",
-            "border-color": "#0e0e0e"
+            "border-color": "#878785"
           }
         },
         "1630155100e70d79d8-2": {
@@ -661,10 +661,10 @@
             "image": "shopify:\/\/shop_images\/c.png",
             "title": "RECIPIE TIPS",
             "text": "",
-            "background-color": "#f9bdef",
-            "text-color": "#d61010",
-            "button-text-color": "#0e0e0e",
-            "button-text": "Explore Now",
+            "background-color": "#d8bdb6",
+            "text-color": "#972100",
+            "button-text-color": "#38363b",
+            "button-text": "Explore More",
             "button-url": "",
             "border-color": "#0e0e0e"
           }
