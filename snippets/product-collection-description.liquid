@@ -6,19 +6,31 @@
   <div class="decription-image">
     <div class="grid-1">
     <div class="image"><img alt="img1" src="{{product.metafields.product-badge-icon.icon_image}}"></div>
-    <div class="image-text">{{product.metafields.product-badge-icon.icon-label}}</div>
+    {%- unless product.metafields.my_fields.icon_label == blank -%}
+      
+    <div class="image-text">{{product.metafields.my_fields.icon_label}}</div>
+    {%- endunless -%}
     </div>
     <div class="grid-1">
     <div class="image"><img alt="img2" src="{{product.metafields.product-badge-icon.icon_image_2}}"></div>
-    <div class="image-text">{{product.metafields.product-badge-icon.label_2}}</div>
+    {%- unless product.metafields.my_fields.icon_label_2 == blank -%}
+      
+    <div class="image-text">{{product.metafields.my_fields.icon_label_2}}</div>
+    {%- endunless -%}
     </div>
     <div class="grid-1">
     <div class="image"><img alt="img3" src="{{product.metafields.product-badge-icon.icon-3}}"></div>
+    {%- unless product.metafields.my_fields.icon_label_3 == blank -%}
+      
     <div class="image-text">{{product.metafields.product-badge-icon.label-3}}</div>
+    {%- endunless -%}
     </div>
     <div class="grid-1">
     <div class="image"><img alt="img4" src="{{product.metafields.product-badge-icon.icon-4}}"></div>
-    <div class="image-text">{{product.metafields.product-badge-icon.label-4}}</div>
+    {%- unless product.metafields.my_fields.icon_label_4 == blank-%}
+      
+    <div class="image-text">{{product.metafields.my_fields.icon_label_4}}</div>
+    {%- endunless -%}
     </div>
     </div>
 </div>
