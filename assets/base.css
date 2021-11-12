@@ -1682,7 +1682,7 @@ input[type='checkbox'] {
 
 /* section-header */
 #shopify-section-header {
-  z-index: 3;
+  z-index:99;
   will-change: transform;
 }
 
