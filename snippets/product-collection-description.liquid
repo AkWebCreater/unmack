@@ -18,7 +18,7 @@
     <div class="grid-1">
       {%- unless product.metafields.my_fields.icon_2 == blank -%}
         
-      <div class="image"><img alt="img2" src="{{product.metafields.my_fields.icon_2}}"></div>
+      <div class="image"><img alt="img2" src="{{product.metafields.my_fields.icon_2 | img_url:'80x'}}"></div>
       {%- endunless -%}
     {%- unless product.metafields.my_fields.icon_label_2 == blank -%}
       
@@ -28,7 +28,7 @@
     <div class="grid-1">
       {%- unless product.metafields.my_fields.icon_3 -%}
         
-      <div class="image"><img alt="img3" src="{{product.metafields.my_fields.icon_3}}"></div>
+      <div class="image"><img alt="img3" src="{{product.metafields.my_fields.icon_3 | img_url:'80x'}}"></div>
       {%- endunless -%}
     {%- unless product.metafields.my_fields.icon_label_3 == blank -%}
       
@@ -38,7 +38,7 @@
     <div class="grid-1">
       {%- unless product.metafields.my_fields.icon_4 == blank-%}
         
-      <div class="image"><img alt="img4" src="{{product.metafields.my_fields.icon_4}}"></div>
+      <div class="image"><img alt="img4" src="{{product.metafields.my_fields.icon_4 | img_url:'80x'}}"></div>
       {%- endunless -%}
     {%- unless product.metafields.my_fields.icon_label_4 == blank-%}
       
