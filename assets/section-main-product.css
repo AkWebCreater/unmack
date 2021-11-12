@@ -1010,7 +1010,7 @@ img.vegi {
   flex: 1;
 }
 .card-wrapper {
-  border: 1px solid #D2D3D5;
+  /* border: 1px solid #D2D3D5; */
 }
 button.slick-next.slick-arrow {
   position: absolute;
