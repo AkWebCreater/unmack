@@ -7,7 +7,7 @@
     <div class="grid-1">
       {%- if product.metafields.my_fields.icon -%}
       <div class="image">
-        <img alt="img1" src="{{product.metafields.my_fields.icon}}">
+        <img alt="img1" src="{{product.metafields.my_fields.icon | img_url:'80x'}}">
       </div>
       {%- endif -%}
       {%- unless product.metafields.my_fields.icon_label == blank -%}
