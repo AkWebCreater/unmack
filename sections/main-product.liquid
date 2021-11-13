@@ -322,7 +322,12 @@
         
         <div class="product-details-right">
           <div class="wishlist">
-            {% capture the_snippet_fave %}{% render 'socialshopwave-widget-fave' %}{% endcapture %}{% unless the_snippet_fave contains 'Liquid error' %}{{ the_snippet_fave }}{% endunless %}
+            
+            {% capture the_snippet_fave_icon %}{% render 'ssw-widget-faveicon' with product.id %}{% endcapture %}
+            {% unless the_snippet_fave_icon contains 'Liquid error' %}
+            {{ the_snippet_fave_icon }}
+            {% endunless %}    
+
           </div>
           <div class="product-pincode">
             <div class="pincode">

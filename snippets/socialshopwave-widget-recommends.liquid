@@ -15,9 +15,6 @@
       {% assign ssw_widget_class = ssw_widget_class | append: ' ssw-new-widget' %}
     {% endif %}
     {% assign ssw_widget_class = ssw_widget_class | append: ' ssw-review-widget-lazyload' %}
-    {% assign ssw_widget_metafield_hash = '' %}
-    {% if product.metafields.ssw_cache.review %}
-    {% assign ssw_widget_metafield_hash = product.metafields.ssw_cache.review | strip | md5 %}
-    {% endif %}
-    <div id="ssw-widget-recommends-html" class="gw-container {{ ssw_widget_class }}" data-request-url="review/index" data-product_id="{{ product.id }}" data-metafield_key="review" data-new_widget="{{ ssw_new_widget }}" data-additional_params="new_widget" data-metafield_hash="{{ ssw_widget_metafield_hash }}"><div class="for_bot" style="display:none">{{ product.metafields.ssw_cache.review }}</div></div> {% endif %}
+    <div id="ssw-widget-recommends-html" class="gw-container {{ ssw_widget_class }}" data-request-url="review/index" data-product_id="{{ product.id }}" data-new_widget="{{ ssw_new_widget }}" data-additional_params="new_widget"></div>
+  {% endif %}
 {% endif %}
