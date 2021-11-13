@@ -2147,13 +2147,14 @@ details-disclosure > details {
   .header-wrapper.fix{
     margin-bottom:135px;
   }
-  .header-wrapper.fix .navigation{background-color:var(--color-background);}
+  .header-wrapper.fix .navigation{
+    background-color:var(--color-background);
+  margin: 0 !important;
+  }
   .navigation .header__submenu{
     filter: drop-shadow(0 0 1px var(--color-background));
   }
-  .header-wrapper.fix .navigation .header__menu-item{
-    color: #000 !important;
-  }
+ 
   /* home page section titles */
   .section-title{
     position: relative;
