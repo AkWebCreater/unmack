@@ -158,7 +158,7 @@ $(document).ready(function() {
       });
   }
   // background added to fix nav on scroll
-  $('.body--cart .header-wrapper,.body--register .header-wrapper,.body--search .header-wrapper,.body--page .header-wrapper').addClass('fix')
+  $('.body--cart .header-wrapper,.body--register .header-wrapper,.body--search .header-wrapper').addClass('fix')
   $(window).scroll(function() {
       if ($(this).scrollTop() > 215) {
           $(".navigation").addClass("bg");
