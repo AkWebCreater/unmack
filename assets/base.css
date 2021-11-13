@@ -2145,8 +2145,8 @@ details-disclosure > details {
   }
   /* new navigation issue fixed for cart page */
   .header-wrapper.fix{
-    margin-bottom: 135px;
-    
+    margin-bottom:135px;
+    background-color:var(--color-background);
   }
   .navigation .header__submenu{
     filter: drop-shadow(0 0 1px var(--color-background));
