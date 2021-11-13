@@ -25,7 +25,7 @@
           {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
         {%- endif -%}
       </div>
-      <div class="text-over-image">
+      <div class="text-over-image left-text">
         {% if section.settings.text-left != blank %}
         	<div class="text-image">{{ section.settings.text-left }}</div>
         {% endif %}
@@ -58,7 +58,7 @@
           {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
         {%- endif -%}
       </div>
-      <div class="text-over-image">
+      <div class="text-over-image right-text">
         
         {% if section.settings.text-right != blank %}
         	<div class="text-image">{{ section.settings.text-right }}</div>
@@ -93,7 +93,85 @@
   </div>
 </div>
 </section>
+<style>
+#section-{{section.id}}  .right-text{
+    color:{{section.settings.text-right-color}};
+  }
+#section-{{section.id}}  .right-text button{
+    border-color:{{section.settings.button-right-color}} !important;
+    color:{{section.settings.button-right-color}};
+  }
+#section-{{section.id}}  .left-text{
+    color: {{section.settings.text-left-color}};
+  }
+#section-{{section.id}}  .left-text button{
+    border-color:{{section.settings.button-left-color}} !important;
+    color:{{section.settings.button-left-color}};
+  }
+  #section-{{section.id}} .image-margin{
+    margin:1rem;
+    margin-right:0;
+  }
+   #section-{{section.id}} .text-image {
+    min-height: 120px;
+    color:{{ section.settings.text-left-color}};
+}
+   #section-{{section.id}} .image-margin-1{
+     margin:1rem;
+     	margin-left:0;
+  }
+   #section-{{section.id}} .grid__item {
+    position: relative;
+}
+ #section-{{section.id}} .text-over-image {
+    position: absolute;
+    color: white;
+    top: 26%;
+    left: 30px;
+   font-size: 22px;
+}
+  #section-{{section.id}} .image-with-text{
+  	    margin-top: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    	margin-bottom: 0rem;
+  }
+  #section-{{section.id}} .banner__buttons {
+    margin-top: 2rem;
+   
+}
+   #section-{{section.id}} .button, .customer button, .shopify-challenge__button{
+      padding:2px;
+     min-width: 0;
+     min-height: 0;
+     border-radius: 5px;
+     background-color: transparent;
+     box-shadow:none;
+   }
+  
+@media screen and (max-width: 750px) {
+  #section-{{section.id}} .text-over-image { 
+  	/* top: -5%; */
+    left: 30px;
+   	font-size: 20px;
+}
+   #section-{{section.id}} .grid__item {
+      padding-top: 10px;
+}
+  #section-{{section.id}} .image-margin{
+  	margin-left:0px;
+  }
+  #section-{{section.id}} .image-with-text{
+  	    margin-top: 5rem;
+  }
+  #section-{{section.id}} .image-margin-1{
+     margin:0rem;
+  }
 
+}
+
+
+</style>
 <!--  End image with image section-->
 {% schema %}
 {
@@ -208,6 +286,34 @@
       "type": "url",
       "id": "url_button2",
       "label": "URL for button2"
+    },
+    {
+      "type": "header",
+      "content": "colors"
+    },
+    {
+      "type": "color",
+      "id": "button-right-color",
+      "label": "Button Right Color",
+      "default": "#000"
+    },
+    {
+      "type": "color",
+      "id": "button-left-color",
+      "label": "Button Left Color",
+      "default": "#000"
+    },
+    {
+      "type": "color",
+      "id": "text-left-color",
+      "label": "Text Left Color",
+      "default": "#000"
+    },
+    {
+      "type": "color",
+      "id": "text-right-color",
+      "label": "Text Right Color",
+      "default": "#000"
     }
   ],
   "blocks": [
@@ -276,70 +382,3 @@
 }
 {% endschema %}
 
-<style>
-  #section-{{section.id}} .image-margin{
-    margin:1rem;
-    margin-right:0;
-  }
-   #section-{{section.id}} .text-image {
-    min-height: 120px;
-    color:{{ section.settings.text-left-color}};
-}
-   #section-{{section.id}} .image-margin-1{
-     margin:1rem;
-     	margin-left:0;
-  }
-   #section-{{section.id}} .grid__item {
-    position: relative;
-}
- #section-{{section.id}} .text-over-image {
-    position: absolute;
-    color: white;
-    top: 26%;
-    left: 30px;
-   font-size: 22px;
-}
-  #section-{{section.id}} .image-with-text{
-  	    margin-top: 1rem;
-        margin-left: 1rem;
-        margin-right: 1rem;
-    	margin-bottom: 0rem;
-  }
-  #section-{{section.id}} .banner__buttons {
-    margin-top: 2rem;
-   
-}
-   #section-{{section.id}} .button, .customer button, .shopify-challenge__button{
-      padding:2px;
-     min-width: 0;
-     min-height: 0;
-     border-radius: 5px;
-     border: 1px solid #F28B1C;
-     background-color: transparent;
-     color:#F28B1C;
-     box-shadow:none;
-     
-   }
-  
-@media screen and (max-width: 750px) {
-  #section-{{section.id}} .text-over-image { 
-  	top: -5%;
-    left: 30px;
-   	font-size: 20px;
-}
-   #section-{{section.id}} .grid__item {
-      padding-top: 10px;
-}
-  #section-{{section.id}} .image-margin{
-  	margin-left:0px;
-  }
-  #section-{{section.id}} .image-with-text{
-  	    margin-top: 5rem;
-  }
-  #section-{{section.id}} .image-margin-1{
-     margin:0rem;
-  }
-
-}
-
-</style>

@@ -18,6 +18,7 @@
     "atc": "Please Input Correct Pin Code",
     "colors_accent_1": "#546d36",
     "colors_accent_2": "#f58634",
+    "colors_text": "#898989",
     "sale_badge_color_scheme": "accent-2",
     "sold_out_badge_color_scheme": "inverse",
     "accent_icons": "text",
@@ -42,7 +43,7 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "text": "<span>Receive <strong>20% off<\/strong> on your next order using code <strong>\"unmanaclife\"<\/strong><\/span>",
+              "text": "<span>Receive <strong>20% off<\/strong> on your next order using code <strong class=\"accent\">'unmanaclife'<\/strong><\/span>",
               "color_scheme": "inverse",
               "link": ""
             }

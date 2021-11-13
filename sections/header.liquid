@@ -56,6 +56,26 @@ border: 2.5px solid var(--color-background);
 .navigation li{
   position: relative;
 }
+  
+  .navigation nav{
+  flex:1;
+        margin-bottom:23px;
+  }
+  .left-nav{
+  text-align:right;
+    
+  }
+  .navigation.bg  .left-nav+div a{
+  min-width:auto;
+  }
+  .search__input+.field__label,.search__input{
+  color:#898989!important;
+  }
+  .left-nav ul,.right-nav ul{
+     justify-content: space-around;
+      max-width: 544px;
+    width:100%;
+  } 
   @media screen and (min-width: 990px) {
     header-drawer {
       display: none;
@@ -122,7 +142,7 @@ color: #fff;
     border-right: 37px solid transparent;
     border-bottom: 25px solid #fff;
     position :absolute;
-    top:0p;
+    left: 0;
     top: -15px;
   }
   .navigation .list-menu--disclosure{
@@ -135,12 +155,21 @@ transform: translateY(25px);
     color: #676767;
     text-decoration: none;
   }
+  .header__submenu{
+    text-align: left !important;
+  }
   .list-menu {
     list-style: none;
     padding: 0;
     margin: 0;
   }
-
+.header__icon--cart{
+  height: 3.6rem;
+    width: 4.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
   .list-menu--inline {
     display: inline-flex;
     flex-wrap: wrap;
@@ -647,8 +676,15 @@ transform: translateY(25px);
                   </span>
                 </a>
               {%- endif -%}
+              <span class="header__icon header__icon--cart link link--text focus-inset" >
+                              
+                {% capture the_snippet_fave_icon_menu %}{% include 'ssw-widget-faveicon-menu' with product.id %}{% endcapture %}
+                {% unless the_snippet_fave_icon_menu contains 'Liquid error' %}
+                {{ the_snippet_fave_icon_menu }}
+                {% endunless %}    
+                </span> 
         
-              <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link link--text focus-inset" id="cart-icon-bubble">
+              <a href="{{ routes.cart_url }}" class="header__icon--cart link link--text focus-inset" id="cart-icon-bubble">
                 {%- liquid
                   if cart == empty
                     render 'icon-cart-empty'
@@ -666,13 +702,7 @@ transform: translateY(25px);
                   </div>
                 {%- endif -%}
               </a>
-              <span class="header__icon header__icon--cart link link--text focus-inset" >
-                              
-              {% capture the_snippet_fave_icon_menu %}{% include 'ssw-widget-faveicon-menu' with product.id %}{% endcapture %}
-              {% unless the_snippet_fave_icon_menu contains 'Liquid error' %}
-              {{ the_snippet_fave_icon_menu }}
-              {% endunless %}    
-              </span>    
+                
             </div>
     </div>
   </header>

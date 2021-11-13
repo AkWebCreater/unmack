@@ -1,10 +1,11 @@
 {{ 'template-collection.css' | asset_url | stylesheet_tag }}
 {{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="preload" href="{{ 'component-card.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <link rel="preload" href="{{ 'component-price.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <link rel="preload" href="{{ 'component-badge.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <link rel="preload" href="{{ 'component-rte.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
 <noscript>{{ 'component-card.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-price.css' | asset_url | stylesheet_tag }}</noscript>
@@ -428,7 +429,7 @@
             {% if collection.products_count == 4 %} grid--4-col-desktop{% else %} grid--3-col-tablet grid--one-third-max grid--4-col-desktop grid--quarter-max{% endif %}
           {% endif %} negative-margin">{% endcomment %}
           {%- for product in collection.products -%}
-            <div class="image-text">
+            <div class="image-text" >
               {% render 'image-with-text-collection',
                 product_card_product: product,
                 media_size: section.settings.image_ratio,
@@ -447,11 +448,17 @@
     {%- endif -%}
   {%- endpaginate -%}
 </div>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+  AOS.init({
+   duration: 1800,
+     once: true, 
+  });
+</script>
 {% schema %}
 {
   "name": "t:sections.main-collection-product-grid.name",
-  "class": "spaced-section collection-grid-section",
+  "class": "collection-grid-section",
   "settings": [
     {
       "type": "range",
@@ -590,3 +597,49 @@
     
 
 </script>
+<style>
+  .collection-hero{
+    padding-bottom: 0;
+  }
+ #CollectionProductGrid .h2, #CollectionProductGrid  td,#CollectionProductGrid .h5,#CollectionProductGrid .h3,#CollectionProductGrid p,#CollectionProductGrid span:not(.price-item){
+    color: #3a383b;
+  }
+  .decription-image{
+
+    flex-wrap: wrap;
+  }
+  .decription-image .grid-1{
+    flex: 1;
+  }
+
+  @media (min-width:750px){
+    #CollectionProductGrid .collection 
+    .image-text:nth-child(even) .grid__item.right a{
+    position: absolute;
+  
+    left: 0;
+    width: 40%;
+    }
+    #CollectionProductGrid .collection 
+    .image-text:nth-child(odd) .grid__item.right a{
+    position: absolute;
+    right: 0;
+    width: 40%;
+    }
+    #CollectionProductGrid .collection 
+    .image-text:nth-child(odd) .right .media{
+      -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+
+    }
+    #CollectionProductGrid .image-with-text{
+margin: 0 !important;
+
+    }
+  }
+
+</style>

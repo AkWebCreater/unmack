@@ -79,6 +79,13 @@
     </div>
     <div class="product__info-wrapper grid__item">
       <div id="ProductInfo-{{ section.id }}" class="product__info-container{% if section.settings.enable_sticky_info %} product__info-container--sticky{% endif %}">
+        {% for tag in product.tags %}
+          {% if tag contains 'Country' %}
+          {%- assign country = tag | split: '-' -%}
+          {%- assign origin = country | last -%}
+           
+          {% endif %}
+        {% endfor %}
         {%- assign product_form_id = 'product-form-' | append: section.id -%}
 
         {%- for block in section.blocks -%}
@@ -94,22 +101,26 @@
               {{ product.title | escape }}
             </h1>
         	<hr>
-        <div class="about__product grid">
-        <div class="product-form-divider">
+          <div class="about__product grid">
+            <div class="product-form-divider">
           <div class="product-details-top">
             {% if product.metafields.my_fields.country_of_origin!= blanks %}
             <div class="product-details-origin">Country of origin:
               <span>{{ product.metafields.my_fields.country_of_origin }}</span>
             </div>
+            {% else %}
+            <div class="product-details-origin">Country of origin:
+              <span>India</span>
+            </div>
             {% endif %}
-            <div>Reviews</div>
-            <div>Write a review</div>
           </div>
           
           {%- when 'price' -%}
             <div class="no-js-hidden" id="price-{{ section.id }}">
               {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
             </div>
+           
+                
             {%- form 'product', product, id: 'product-form-installment', class: 'installment caption-large' -%}
               <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
               {{ form | payment_terms }}
@@ -417,13 +428,23 @@
         </div>
         <!-- right end-->
         </div>
-        
-        	{% render 'product-featured-collection' %}
+        {% if product.metafields.my_fields.dummy_collection != blank %}
+        {% render 'product-featured-collection' %}
+        {% endif %}
+          
         
           <!--start section main-product-->
-         	 <div class="veg grid">
-			{{ product.metafields.my_fields.veg_non_veg}}
-          </div>
+          <!-- veg non-veg    -->
+          {% if product.metafields.my_fields.veg_non_veg == 'Veg' %}
+          <div class="veg grid">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 48 48" style=" fill:#000000;"><path fill="#388e3c" d="M42,42H6V6h36V42z M8,40h32V8H8V40z"></path><path style="fill:#388e3c" d="M24 13A11 11 0 1 0 24 35A11 11 0 1 0 24 13Z"></path></svg><span>This is a vegeterian products. </span>
+                </div>
+            {% else %}
+            <div class="veg grid">
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 48 48" style=" fill:#a70707;"><path style=" fill:#a70707;" d="M42,42H6V6h36V42z M8,40h32V8H8V40z"></path><path style=" fill:#a70707;" d="M24 13A11 11 0 1 0 24 35A11 11 0 1 0 24 13Z"></path></svg><span>This is a non-vegeterian products. </span>
+                  </div>
+          {% endif %}
+         	<!-- veg non-veg  end here  -->
           <div>
             <div class="about_this_product">{{ product.metafields.my_fields.about_this_product }}</div>
           </div>
@@ -904,6 +925,15 @@
       "label": "t:sections.main-product.settings.enable_sticky_info.label"
     },
     {
+      "type": "range",
+      "id": "in_stock",
+      "label": "In Stcok Treshhold",
+      "min": 1,
+      "max": 10,
+      "step": 1,
+      "default": 3
+    },
+    {
       "type": "checkbox",
       "id": "enable_video_looping",
       "default": false,
@@ -1035,309 +1065,6 @@
   ]
 }
 {% endschema %}
-
-
-
-<style>
-  @media screen and (min-width: 750px){
-    .collection .grid__item, .template-search .grid__item {
-    	padding-bottom: 0rem; 
-	}
- .page-width{
-       max-width: 160rem!important;
-  }
-   .pincode-text::placeholder {
-  color: white;
-  opacity: 1; /* Firefox */
-}
-    .grid__item {
-    padding-left: 2rem;
-  }
-  .product-details-origin {
-    font-weight: 500;
-}
-  .product__title{
-  	    margin-bottom: 3.5rem;
-    	font-size: 3rem;
-    font-weight: 400;
-  }
-  .product__info-container>*+* {
-    margin: 0.5rem 0;
-}
-  .about__product.grid{
-  	margin-left: 0rem;
-  }
-}
-  .slider-component.slider{
-  	padding-bottom:0rem;
-  }
-  .grid--peek.list-unstyled.slider.slider--mobile{
-    padding-bottom: 0rem;
-    margin-bottom:-120px;
-    border:none;
-}
-  .grid.slider.slider-nav{
-  	padding-bottom:0rem;
-    border:none;
-  }
-  .img-atc{
-    padding-left:5px;
-  }
-  .product-form__input{
-  	margin: 0 0 0rem 0;
-  }
-  .product-form__input .form__label{
-        padding-left: 0;
-    font-size: 1.45rem;
-    font-weight: 500;
-    color:#686868;
-  }
-  .spaced-section {
-    margin-top: 3rem;
-}
-  
-  .card+.card-information {
-    min-height: 75px;
-}
-  img.vegi {
-    width: 25px;
-    height: 25px;
-    margin-top: 15px;
-}
-  .veg.grid {
-    margin-left: 0px;
-    margin-bottom: 0rem;
-    border-bottom: 1px solid #D0D0D0;
-    padding-bottom: 5px;
-}
-  .about_this_product {
-    font-size: 15px;
-}
-  .veg.grid span {
-    padding: 10px;
-    font-size: 15px;
-    font-weight: 600;
-    margin-top
-}
-  .product .price--sold-out .price__badge-sold-out {
-  	padding:0 0 0 0;
-  }
-  
-  .product:not(.product--no-media) .product__media-wrapper {
-    max-width: 50%;
-}
-  .product:not(.product--no-media) .product__info-wrapper {
-    padding-left: 4rem;
-    max-width: 50%;
-}
-  .product-details-right {
-    float: right;
-    width: 40%;
-    margin-top:5px;
-}
-  .product-form-divider {
-    float: left;
-    width: 60%;
-    margin: 0px;
-    padding-right: 20px;
-}
-  .product-details-top {
-    border-bottom: 1px solid grey;
-    padding-bottom: 10px;
-}
-  .wishlist {
-    text-align: right;
-    visibility: hidden;
-}
- .pincode {
-    border: 1px solid grey;
-    border-radius: 5px;
-   margin-top: 30px;
-}
-  .pincode-form {
-    width: 90%;
-    margin: auto;
-    padding-bottom: 20px;
-}
-  .pincode-text{
-    width: 60%;
-    background-color: #D2D3D5;
-    border-radius: 4px;
-    padding: 4px;
-    border: 1px solid #D2D3D5
-  }
-  .pincode-submit{
-  	padding: 4px;
-    border-radius: 4px;
-    background-color: #F07F2F;
-    color:white;
-    border: 1px solid #F07F2F;
-    width: 36%;
-  }
-  .customer-pincode{
-  	text-align:center;
-        padding-top: 7px;
-  }
-  .deliver-details {
-    border-top: 1px solid grey;
-    border-bottom: 1px solid grey;
-    font-size: 12px;
-    text-align: center;
-  }
-  .product-form__input.product-form__quantity {
-    border-bottom: 1px solid grey;
-    padding-top: 10px;
-    padding-bottom: 20px;
-    text-align: center;
-}
-  .quantity{
-  	margin:auto;
-  }
-  .quantity__button{
-  	border-radius: 0px;
-    background-color:#BDBDBD;
-    color: white;
-  }
-  .quantity__input{
-      border-radius: 0px;
-    max-width: 90px;
-  }
-  .button--full-width {
-    width: 80%;
-    margin: auto;
-    border-radius: 5px;
-    min-height: 0px;
-    color:black;
-    font-weight: 600;
-    background-color: #D2D3D5;
-    box-shadow: none;
-    transition: none;
-}
-  .shopify-payment-button {
-    margin-top: 15px;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-}
-  .shopify-payment-button__button {
-    padding: .9rem 3rem 1.1rem;
-    min-height: 0px;
-    background-color: #F67E28;
-    border-color: #F67E28;
-    box-shadow: none;
-    border-radius: 5px;
-    transition: none;
-  }
-  .button:not([disabled]):hover, .customer button:hover, .shopify-challenge__button:hover {
-    box-shadow: none;
-  }
-  .shopify-payment-button__button--unbranded:hover, .shopify-payment-button__button--unbranded:hover:not([disabled]) {
-    background-color: #F67E28;
-    box-shadow: none;
-}
-  .shopify-payment-button__more-options {
-    display: none;
-  }
- .share.page-width {
-    display: flex;
-    width: 80%;
-    justify-content: center;
-    margin: auto;
-}
-  .product-form__input input[type=radio]+label {
-  	
-  }
-   li.grid__item{
-  	    max-width: 15%;
-  }
-  .card-wrapper {
-    border: 1px solid #D2D3D5;
-  }
-  button.slick-next.slick-arrow {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    font-size: 0;
-    background: transparent;
-    border: none;
-}
-  button.slick-prev.slick-arrow {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    font-size: 0;
-    background: transparent;
-    border: none;
-  }
- .slick-prev.slick-arrow:before {
-  content: "<";
-  color: black;
-  font-size: 30px;
-}
-  .slick-next.slick-arrow:before {
-  content: ">";
-  color: black;
-  font-size: 30px;
-}
-  button.product__media-toggle {
-    background: none;
-}
-  @media screen and (max-width: 767px) {
-  	.product:not(.product--no-media) .product__media-wrapper {
-    	max-width: 100%;
-	}
-    .grid{
-    	margin-left:0px;
-    }
-    .product-details-right {
-    	width: 100%;
-    }
-    .product-form-divider {
-    	width: 100%;
-    }
-    .product:not(.product--no-media) .product__info-wrapper{
-    	max-width:100%;
-        padding-left:0px;
-    }
-    .pincode{
-    	margin-bottom: 20px;
-    }
-    .products .grid-1 {
-    width: 50%;
-    text-align: center;
-}
-    .image-with-text__media.image-with-text__media--placeholder {
-    	margin-left: 0px;
-	}
-    li.center.grid__item.multicolumn-list__item {
-    width: 100%;
-}
-    .table-col-title {
-    width: 50%;
-    }
-    .table-col-info{
-    	width:50%;
-    }
-    .product-description{
-    	margin-left:0px;
-    }
-    li.center.grid__item.multicolumn-list__item {
-    width: 20%;
-}
-    .grid.slider.slider-nav{
-    	margin-top: 70px;
-    }
-    h3.title.globo-heading::after{
-    	top: 55px;
-    }
-  }
-  @media only screen and (min-width: 600px) {
-    .product-form__input.product-form__quantity{
-    	max-width:100%;
-    }
-  }
-</style>
-
 <script>
   $(document).ready(function(){
    $('.slider-for').slick({

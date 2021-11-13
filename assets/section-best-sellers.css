@@ -13,6 +13,21 @@ justify-content: space-between;
 .price-compare + .price-main{
     color: rgb(238, 31, 31);
 }
+.best-seller{
+    max-width:90%;
+    width: 100%;
+    margin: auto;
+    padding: 0 !important;
+  color:#898989!important
+}
+.best-seller .card__inner{
+
+    padding: 40px 20px;
+}
+.card-information__text{
+    font-size: 1.7rem;
+    color: #838383;
+}
 .add-btn a{
     
     text-align: center;
@@ -39,15 +54,23 @@ justify-content: space-between;
     position: relative;
 }
 .explore-button{
+    display: flex;
     background-color: #b3aaaa;
-    display: inline-block;
+    margin: auto;
+    width: fit-content;
+    align-items: center;
     padding: 8px 14px;
+
     text-decoration: none;
     line-height: 1;
     border-radius: 5px;
     z-index: 2;
     color: #fff;
     border: 1px solid #b3aaaa;
+}
+.explore-button img{
+    margin-left: 10px;
+    width: 16px;
 }
 .explore::before{
     content: '';
@@ -59,4 +82,7 @@ justify-content: space-between;
     left: 0;
     top: 50%;
     z-index: -1;
+}
+.best-seller .badge{
+display:none;
 }
