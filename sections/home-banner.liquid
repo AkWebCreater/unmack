@@ -2,17 +2,26 @@
 
 
 <style>
+    .slide-content-wrapper *{
+    color: #fff;
+}
+.slide-wrapper .slick-dots{
+    position: absolute;
+    width: 100vw;
+    bottom: 13px;
+}
 @media (min-width:768px){
 
     .slide-wrapper{
 display: flex;
-min-height: 300px;
+min-height: calc(100vh - 113px);
 text-align: center;
 transition: all 0.4s ease-in-out;
 background-size: cover;
 }
 .banner-slide{
     flex: 1;
+    background-image: none !important;
 }
 .banner-slide:hover{
     background-color:rgba(0,0,0,0.5);
@@ -35,11 +44,9 @@ background-size: cover;
     transition: all 0.4s ease-in-out;
     opacity: 0.8;
 }
-.slide-content-wrapper *{
-    color: #fff;
-}
 
-.slide-content-wrapper:hover{
+
+.banner-slide:hover .slide-content-wrapper{
 transform: translateY(-20px);
 opacity: 1;
 }
@@ -48,6 +55,12 @@ opacity: 1;
 @media (max-width:767px){
     .slide-wrapper .slick-slide img{
     width: 100%;
+}
+
+.slide-wrapper{
+
+min-height: calc(100vh - 119px);
+
 }
 .slide-content-wrapper{
     position: absolute;
@@ -106,11 +119,12 @@ $('.banner-slide').hover(function(){
       <div class="slide-wrapper">
          
           {% for block in section.blocks %}
+          {%- assign bg = block.settings.slide-bg | img_url: 'master' -%}
           <div class="banner-slide" 
           {% if block.settings.slide-bg != blank %}
-          data-bg="{{block.settings.slide-bg | img_url: 'master'}}"{% endif %}
-          >
-          <img src="{{block.settings.slide-bg | img_url: 'master'}}" alt="banner">
+          data-bg="{{bg}}"{% endif %}
+          style="background-image: url({{bg}});">
+          <img src="{{bg}}" alt="banner">
         <div class="slide-content-wrapper">
             <h2 class="slide-title">{{block.settings.title}}</h2>
             <p class="slide-desc">
