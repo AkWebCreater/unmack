@@ -2,7 +2,9 @@
 
 
 <style>
-.slide-wrapper{
+@media (min-width:768px){
+
+    .slide-wrapper{
 display: flex;
 min-height: 300px;
 text-align: center;
@@ -16,9 +18,11 @@ opacity: 0.7;
 .banner-slide:not(:first){
     border-left: 1px solid #fff;
 }
+}
 </style>
 <script>
 $(document).ready(function(){
+    // adding slider to mobile and tab view
 if($(window).width() < 768){
 
     $('.slide-wrapper').slick({
@@ -32,7 +36,11 @@ if($(window).width() < 768){
           slidesToScroll: 1
       });
 }
-
+// changing bg on hover over slide
+$('.banner-slide').hover(function(){
+    var bg = $(this).attr('data-bg');
+    $('slide-wrapper').css("backgroun-image",bg)
+})
 })
 
 </script>
@@ -45,7 +53,7 @@ if($(window).width() < 768){
           {% for block in section.blocks %}
           <div class="banner-slide" 
           {% if block.settings.slide-bg != blank %}
-          data-bg="{{block.settings.slide-bg}}"{% endif %}
+          data-bg="{{block.settings.slide-bg | img_url: 'master'}}"{% endif %}
           >
         <div class="slide-content-wrapper">
             <h2 class="slide-title">{{block.settings.title}}</h2>
