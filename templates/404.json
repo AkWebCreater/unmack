@@ -70,8 +70,8 @@
         "url_button2": "",
         "button-right-color": "#e7c272",
         "button-left-color": "#e7c272",
-        "text-left-color": "#FFFFFF",
-        "text-right-color": "#FFFFFF"
+        "text-left-color": "#ffffff",
+        "text-right-color": "#ffffff"
       }
     },
     "163017222359fc16f2": {
@@ -511,8 +511,8 @@
         "url_button2": "",
         "button-right-color": "#f9b97c",
         "button-left-color": "#040000",
-        "text-left-color": "#FFFFFF",
-        "text-right-color": "#FFFFFF"
+        "text-left-color": "#ffffff",
+        "text-right-color": "#ffffff"
       }
     },
     "16306511387b5fa446": {
@@ -791,6 +791,48 @@
         "img-txt3": "We Support",
         "img-linktext3": "7days, 9am to 9pm"
       }
+    },
+    "1636958667600d5d10": {
+      "type": "home-banner",
+      "blocks": {
+        "4a23b762-0bfe-4250-b2bf-c3b29bc78125": {
+          "type": "slide",
+          "settings": {
+            "title": "Good For Skin Your Skin Brain & Heart",
+            "description": ""
+          }
+        },
+        "66518eee-7490-400d-9ca1-060862a7ad32": {
+          "type": "slide",
+          "settings": {
+            "title": "",
+            "description": ""
+          }
+        },
+        "f5fe3517-a576-4c6a-97be-5d8604be0d65": {
+          "type": "slide",
+          "settings": {
+            "title": "",
+            "description": ""
+          }
+        },
+        "c5d89e91-73f8-4742-8061-d0083a0275cc": {
+          "type": "slide",
+          "settings": {
+            "title": "",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "4a23b762-0bfe-4250-b2bf-c3b29bc78125",
+        "66518eee-7490-400d-9ca1-060862a7ad32",
+        "f5fe3517-a576-4c6a-97be-5d8604be0d65",
+        "c5d89e91-73f8-4742-8061-d0083a0275cc"
+      ],
+      "settings": {
+        "title": "Home Banner"
+      }
     }
   },
   "order": [
@@ -812,6 +854,7 @@
     "1630133642e6b919cc",
     "1630155100e70d79d8",
     "163004502857e20478",
-    "163046513230d6c091"
+    "163046513230d6c091",
+    "1636958667600d5d10"
   ]
 }
