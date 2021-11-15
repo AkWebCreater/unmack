@@ -12,14 +12,33 @@ text-align: center;
 .banner-slide{
     flex: 1;
 }
+.banner-slide.active{
+    background-color:rgba(0,0,0,0.4);
+}
 .banner-slide.active * {
 opacity: 0.7;
 }
 .slide-wrapper .banner-slide{
     border-left: 1px solid #fff;
+    opacity: 1;
 }
 .slide-wrapper .banner-slide:first-child{
     border-left:0;
+}
+.slide-content-wrapper{
+    padding: 15px;
+}
+.slide-content-wrapper *{
+    color: #fff;
+    opacity: 0.8;
+
+}
+.slide-content-wrapper{
+    transform: translateY(20px);
+}
+.slide-content-wrapper.active{
+transform: translateY(-20px);
+    opacity: 1;
 }
 }
 </style>
@@ -42,8 +61,13 @@ if($(window).width() < 768){
 // changing bg on hover over slide
 $('.banner-slide').hover(function(){
     var bg = $(this).attr('data-bg');
+    $(this).addClass('active');
+    $(this).find('.slide-content-wrapper').addClass('active')
     $('.slide-wrapper').css('background-image','url(' + bg + ')')
     
+},function(){
+    $(this).removeClass('active');
+    $(this).find('.slide-content-wrapper').removeClass('active') 
 })
 })
 
