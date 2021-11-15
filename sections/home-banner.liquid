@@ -63,19 +63,7 @@ if($(window).width() < 768){
       });
 }else{
     // changing bg on hover over slide
-var bgDefault = $('.slide-wrapper .banner-slide:first-child').attr('data-bg');
-$('.slide-wrapper').css('background-image','url(' + bgDefault + ')')
-$('.banner-slide').hover(function(){
-    var bg = $(this).attr('data-bg');
-    $(this).addClass('active');
-    $(this).find('.slide-content-wrapper').addClass('active')
-    $('.slide-wrapper').css('background-image','url(' + bg + ')');
-    
-},function(){
-    $(this).removeClass('active');
-    $(this).find('.slide-content-wrapper').removeClass('active') 
-    $('.slide-wrapper').removeClass('active');
-})
+
 }
 
 })
