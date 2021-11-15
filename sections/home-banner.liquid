@@ -1,0 +1,105 @@
+
+
+
+<style>
+.slide-wrapper{
+display: flex;
+min-height: 300px;
+text-align: center;
+}
+.banner-slide{
+    flex: 1;
+}
+.banner-slide.active * {
+opacity: 0.7;
+}
+.banner-slide:not(:first){
+    border-left: 1px solid #fff;
+}
+</style>
+<script>
+$(document).ready(function(){
+if($(window).width() < 768){
+
+    $('.slide-wrapper').slick({
+          arrows: false,
+          infinite: true,
+          dots:true,
+          speed: 300,
+          nextArrow: '<span  class="slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i></span>',
+          prevArrow: '<span  class="slick-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></span>',
+          slidesToShow: 1,
+          slidesToScroll: 1
+      });
+}
+
+})
+
+</script>
+<script src="{{ 'details-disclosure.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'details-modal.js' | asset_url }}" defer="defer"></script>
+
+
+  <div class="">
+      <div class="slide-wrapper">
+          {% for block in section.blocks %}
+          <div class="banner-slide" 
+          {% if block.settings.slide-bg != blank %}
+          data-bg="{{block.settings.slide-bg}}"{% endif %}
+          >
+        <div class="slide-content-wrapper">
+            <h2 class="slide-title">{{block.settings.title}}</h2>
+            <p class="slide-desc">
+                {{block.settings.description}}
+            </p>
+        </div>
+        </div>
+              
+          {% endfor %}
+      </div>
+  </div>
+  
+
+
+{% javascript %}
+  
+{% endjavascript %}
+{% schema %}
+{
+  "name": "t:sections.header.name",
+  "class": "home-banner-section",
+  "settings": [
+
+  ],
+  "max_blocks": 5,
+  "blocks":[
+  {      
+"name": "slide",
+"type": "slide",
+"settings": [
+    {
+        "type": "text",
+        "id": "title",
+        "label": "title"
+    },
+    {
+        "type": "image_picker",
+        "id": "slide-bg",
+        "label": "slide image"
+    },
+    {
+        "type": "text",
+        "id": "description",
+        "label": "Slide Description"
+    }
+]
+  }
+  ],
+  "presets": [
+      {
+          "category": "slider",
+          "name":"Banner Slider"
+      }
+  ]
+}
+{% endschema %}
