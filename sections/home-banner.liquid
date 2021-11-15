@@ -78,12 +78,12 @@ $('.banner-slide').hover(function(){
     var bg = $(this).attr('data-bg');
     $(this).addClass('active');
     $(this).find('.slide-content-wrapper').addClass('active')
-    $('.slide-wrapper').css('background-image','url(' + bg + ')').fadeIn();
+    $('.slide-wrapper').css('background-image','url(' + bg + ')');
     
 },function(){
     $(this).removeClass('active');
     $(this).find('.slide-content-wrapper').removeClass('active') 
-    $('.slide-wrapper').removeClass('active').fadeOut();
+    $('.slide-wrapper').removeClass('active');
 })
 })
 
