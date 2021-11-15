@@ -9,6 +9,7 @@ display: flex;
 min-height: 300px;
 text-align: center;
 transition: all 0.4s ease-in-out;
+position: relative;
 }
 .banner-slide{
     flex: 1;
@@ -42,6 +43,21 @@ opacity: 0.7;
 transform: translateY(-20px);
     opacity: 1;
 }
+.banner-image{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all 0.4s ease-in-out;
+}
+.banner-image{
+    opacity: 0.1;
+}
+.banner-image.active{
+    opacity: 1;
+}
 
 }
 </style>
@@ -66,7 +82,7 @@ $('.banner-slide').hover(function(){
     var bg = $(this).attr('data-bg');
     $(this).addClass('active');
     $(this).find('.slide-content-wrapper').addClass('active')
-    $('.slide-wrapper').css('background-image','url(' + bg + ')')
+    $('.slide-wrapper').find('.banner-image').css('background-image','url(' + bg + ')')
     
 },function(){
     $(this).removeClass('active');
@@ -80,6 +96,7 @@ $('.banner-slide').hover(function(){
 
   <div class="">
       <div class="slide-wrapper">
+          <div class="banner-image"></div>
           {% for block in section.blocks %}
           <div class="banner-slide" 
           {% if block.settings.slide-bg != blank %}
