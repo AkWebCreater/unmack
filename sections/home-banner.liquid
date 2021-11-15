@@ -9,7 +9,7 @@ display: flex;
 min-height: 300px;
 text-align: center;
 transition: all 0.4s ease-in-out;
-position: relative;
+
 background-size: cover;
 }
 .banner-slide{
@@ -21,6 +21,7 @@ background-size: cover;
 
 .slide-wrapper .banner-slide{
     border-left: 1px solid #fff;
+    position: relative;
 }
 .banner-slide img{
     opacity: 0;
@@ -45,6 +46,16 @@ opacity: 1;
 }
 
 }
+.slide-wrapper .slick-slide img{
+    width: 100%;
+}
+.slide-content-wrapper{
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
 </style>
 <script>
 $(document).ready(function(){
@@ -63,7 +74,19 @@ if($(window).width() < 768){
       });
 }else{
     // changing bg on hover over slide
-
+var bgDefault = $('.slide-wrapper .banner-slide:first-child').attr('data-bg');
+$('.slide-wrapper').css('background-image','url(' + bgDefault + ')')
+$('.banner-slide').hover(function(){
+    var bg = $(this).attr('data-bg');
+    $(this).addClass('active');
+    $(this).find('.slide-content-wrapper').addClass('active')
+    $('.slide-wrapper').css('background-image','url(' + bg + ')');
+    
+},function(){
+    $(this).removeClass('active');
+    $(this).find('.slide-content-wrapper').removeClass('active') 
+    $('.slide-wrapper').removeClass('active');
+})
 }
 
 })
