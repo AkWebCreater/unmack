@@ -78,12 +78,12 @@ $('.banner-slide').hover(function(){
     var bg = $(this).attr('data-bg');
     $(this).addClass('active');
     $(this).find('.slide-content-wrapper').addClass('active')
-    $('.slide-wrapper').find('.banner-image').css('background-image','url(' + bg + ')').fadeIn();
+    $('.slide-wrapper').css('background-image','url(' + bg + ')').fadeIn();
     
 },function(){
     $(this).removeClass('active');
     $(this).find('.slide-content-wrapper').removeClass('active') 
-    $('.slide-wrapper').find('.banner-image').removeClass('active').fadeOut();
+    $('.slide-wrapper').removeClass('active').fadeOut();
 })
 })
 
@@ -93,7 +93,7 @@ $('.banner-slide').hover(function(){
 
   <div class="">
       <div class="slide-wrapper">
-          <div class="banner-image"></div>
+         
           {% for block in section.blocks %}
           <div class="banner-slide" 
           {% if block.settings.slide-bg != blank %}
