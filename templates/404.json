@@ -6,8 +6,55 @@
       "settings": {
       }
     },
+    "1636958667600d5d10": {
+      "type": "home-banner",
+      "blocks": {
+        "4a23b762-0bfe-4250-b2bf-c3b29bc78125": {
+          "type": "slide",
+          "settings": {
+            "title": "Good For Skin Your Skin Brain & Heart",
+            "slide-bg": "shopify:\/\/shop_images\/banner1.jpg",
+            "description": "We Assure You That Our Product Manufactured to international standard"
+          }
+        },
+        "66518eee-7490-400d-9ca1-060862a7ad32": {
+          "type": "slide",
+          "settings": {
+            "title": "Good For Skin Your Skin Brain & Heart",
+            "slide-bg": "shopify:\/\/shop_images\/4_535x_1.jpg",
+            "description": "We Assure You That Our Product Manufactured to international standard"
+          }
+        },
+        "f5fe3517-a576-4c6a-97be-5d8604be0d65": {
+          "type": "slide",
+          "settings": {
+            "title": "Good For Skin Your Skin Brain & Heart",
+            "slide-bg": "shopify:\/\/shop_images\/berries_1.jpg",
+            "description": "We Assure You That Our Product Manufactured to international standard"
+          }
+        },
+        "c5d89e91-73f8-4742-8061-d0083a0275cc": {
+          "type": "slide",
+          "settings": {
+            "title": "Good For Skin Your Skin Brain & Heart",
+            "slide-bg": "shopify:\/\/shop_images\/abcde.jpg",
+            "description": "We Assure You That Our Product Manufactured to international standard"
+          }
+        }
+      },
+      "block_order": [
+        "4a23b762-0bfe-4250-b2bf-c3b29bc78125",
+        "66518eee-7490-400d-9ca1-060862a7ad32",
+        "f5fe3517-a576-4c6a-97be-5d8604be0d65",
+        "c5d89e91-73f8-4742-8061-d0083a0275cc"
+      ],
+      "settings": {
+        "title": "Home Banner"
+      }
+    },
     "163004697302ee3adf": {
       "type": "image-banner",
+      "disabled": true,
       "blocks": {
         "163004697302ee3adf-0": {
           "type": "heading",
@@ -791,56 +838,11 @@
         "img-txt3": "We Support",
         "img-linktext3": "7days, 9am to 9pm"
       }
-    },
-    "1636958667600d5d10": {
-      "type": "home-banner",
-      "blocks": {
-        "4a23b762-0bfe-4250-b2bf-c3b29bc78125": {
-          "type": "slide",
-          "settings": {
-            "title": "Good For Skin Your Skin Brain & Heart",
-            "slide-bg": "shopify:\/\/shop_images\/banner1.jpg",
-            "description": "We Assure You That Our Product Manufactured to international standard"
-          }
-        },
-        "66518eee-7490-400d-9ca1-060862a7ad32": {
-          "type": "slide",
-          "settings": {
-            "title": "Good For Skin Your Skin Brain & Heart",
-            "slide-bg": "shopify:\/\/shop_images\/4_535x_1.jpg",
-            "description": "We Assure You That Our Product Manufactured to international standard"
-          }
-        },
-        "f5fe3517-a576-4c6a-97be-5d8604be0d65": {
-          "type": "slide",
-          "settings": {
-            "title": "Good For Skin Your Skin Brain & Heart",
-            "slide-bg": "shopify:\/\/shop_images\/berries_1.jpg",
-            "description": "We Assure You That Our Product Manufactured to international standard"
-          }
-        },
-        "c5d89e91-73f8-4742-8061-d0083a0275cc": {
-          "type": "slide",
-          "settings": {
-            "title": "Good For Skin Your Skin Brain & Heart",
-            "slide-bg": "shopify:\/\/shop_images\/abcde.jpg",
-            "description": "We Assure You That Our Product Manufactured to international standard"
-          }
-        }
-      },
-      "block_order": [
-        "4a23b762-0bfe-4250-b2bf-c3b29bc78125",
-        "66518eee-7490-400d-9ca1-060862a7ad32",
-        "f5fe3517-a576-4c6a-97be-5d8604be0d65",
-        "c5d89e91-73f8-4742-8061-d0083a0275cc"
-      ],
-      "settings": {
-        "title": "Home Banner"
-      }
     }
   },
   "order": [
     "main",
+    "1636958667600d5d10",
     "163004697302ee3adf",
     "1630041953ce8ee818",
     "163017222359fc16f2",
@@ -858,7 +860,6 @@
     "1630133642e6b919cc",
     "1630155100e70d79d8",
     "163004502857e20478",
-    "163046513230d6c091",
-    "1636958667600d5d10"
+    "163046513230d6c091"
   ]
 }
