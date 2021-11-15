@@ -15,8 +15,11 @@ text-align: center;
 .banner-slide.active * {
 opacity: 0.7;
 }
-.banner-slide:not(:first){
+.slide-wrapper .banner-slide{
     border-left: 1px solid #fff;
+}
+.slide-wrapper .banner-slide:first-child{
+    border-left:0;
 }
 }
 </style>
