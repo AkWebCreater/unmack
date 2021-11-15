@@ -43,32 +43,9 @@ opacity: 0.7;
 transform: translateY(-20px);
     opacity: 1;
 }
-.banner-image{
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    transition: all 0.4s ease-in-out;
-}
-.banner-image{
-    -webkit-animation: myfirst 5s ; /* Chrome, Safari, Opera */
-    animation: myfirst 5s ;
-    display: block;
-}
 
-  /* Chrome, Safari, Opera */
-  @-webkit-keyframes myfirst {
-    from {opacity: 0.2;}
-    to {opacity: 1;}
-  }
 
-  /* Standard syntax */
-  @keyframes myfirst {
-    from {opacity: 0.2;}
-    to {opacity: 1;}
-  }
+
 }
 </style>
 <script>
@@ -92,12 +69,12 @@ $('.banner-slide').hover(function(){
     var bg = $(this).attr('data-bg');
     $(this).addClass('active');
     $(this).find('.slide-content-wrapper').addClass('active')
-    $('.slide-wrapper').find('.banner-image').css('background-image','url(' + bg + ')')
+    $('.slide-wrapper').find('.banner-image').css('background-image','url(' + bg + ')').fadeIn();
     
 },function(){
     $(this).removeClass('active');
     $(this).find('.slide-content-wrapper').removeClass('active') 
-    $('.slide-wrapper').find('.banner-image').removeClass('active')
+    $('.slide-wrapper').find('.banner-image').removeClass('active').fadeOut();
 })
 })
 
