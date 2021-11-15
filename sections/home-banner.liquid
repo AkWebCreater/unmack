@@ -10,34 +10,37 @@ min-height: 300px;
 text-align: center;
 transition: all 0.4s ease-in-out;
 position: relative;
+background-size: cover;
 }
 .banner-slide{
     flex: 1;
 }
 .banner-slide:hover{
-    background-color:rgba(0,0,0,0.6);
+    background-color:rgba(0,0,0,0.5);
 }
 
 .slide-wrapper .banner-slide{
     border-left: 1px solid #fff;
-    opacity: 1;
+}
+.banner-slide img{
+    opacity: 0;
 }
 .slide-wrapper .banner-slide:first-child{
     border-left:0;
 }
 .slide-content-wrapper{
     padding: 15px;
+    transform: translateY(20px);
+    transition: all 0.4s ease-in-out;
+    opacity: 0.8;
 }
 .slide-content-wrapper *{
     color: #fff;
 }
-.slide-content-wrapper{
-    transform: translateY(20px);
-    transition: all 0.4s ease-in-out;
-}
+
 .slide-content-wrapper:hover{
 transform: translateY(-20px);
-    opacity: 1;
+opacity: 1;
 }
 
 }
@@ -57,10 +60,10 @@ if($(window).width() < 768){
           slidesToShow: 1,
           slidesToScroll: 1
       });
-}
+}else{
 // changing bg on hover over slide
 var bgDefault = $('.slide-wrapper .banner-slide:first-child').attr('data-bg');
-$('.slide-wrapper').find('.banner-image').css('background-image','url(' + bgDefault + ')')
+$('.slide-wrapper').css('background-image','url(' + bgDefault + ')')
 $('.banner-slide').hover(function(){
     var bg = $(this).attr('data-bg');
     $(this).addClass('active');
@@ -72,6 +75,9 @@ $('.banner-slide').hover(function(){
     $(this).find('.slide-content-wrapper').removeClass('active') 
     $('.slide-wrapper').removeClass('active');
 })
+
+}
+
 })
 
 </script>
@@ -86,6 +92,7 @@ $('.banner-slide').hover(function(){
           {% if block.settings.slide-bg != blank %}
           data-bg="{{block.settings.slide-bg | img_url: 'master'}}"{% endif %}
           >
+          <img src="{{block.settings.slide-bg | img_url: 'master'}}" alt="banner">
         <div class="slide-content-wrapper">
             <h2 class="slide-title">{{block.settings.title}}</h2>
             <p class="slide-desc">
