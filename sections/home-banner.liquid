@@ -53,12 +53,22 @@ transform: translateY(-20px);
     transition: all 0.4s ease-in-out;
 }
 .banner-image{
-    opacity: 0.1;
-}
-.banner-image.active{
-    opacity: 1;
+    -webkit-animation: myfirst 5s ; /* Chrome, Safari, Opera */
+    animation: myfirst 5s ;
+    display: block;
 }
 
+  /* Chrome, Safari, Opera */
+  @-webkit-keyframes myfirst {
+    from {opacity: 0.2;}
+    to {opacity: 1;}
+  }
+
+  /* Standard syntax */
+  @keyframes myfirst {
+    from {opacity: 0.2;}
+    to {opacity: 1;}
+  }
 }
 </style>
 <script>
@@ -82,7 +92,7 @@ $('.banner-slide').hover(function(){
     var bg = $(this).attr('data-bg');
     $(this).addClass('active');
     $(this).find('.slide-content-wrapper').addClass('active')
-    $('.slide-wrapper').find('.banner-image').css('background-image','url(' + bg + ')').addClass('active')
+    $('.slide-wrapper').find('.banner-image').css('background-image','url(' + bg + ')')
     
 },function(){
     $(this).removeClass('active');
