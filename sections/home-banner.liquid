@@ -82,11 +82,12 @@ $('.banner-slide').hover(function(){
     var bg = $(this).attr('data-bg');
     $(this).addClass('active');
     $(this).find('.slide-content-wrapper').addClass('active')
-    $('.slide-wrapper').find('.banner-image').css('background-image','url(' + bg + ')')
+    $('.slide-wrapper').find('.banner-image').css('background-image','url(' + bg + ')').addClass('active')
     
 },function(){
     $(this).removeClass('active');
     $(this).find('.slide-content-wrapper').removeClass('active') 
+    $('.slide-wrapper').find('.banner-image').removeClass('active')
 })
 })
 
