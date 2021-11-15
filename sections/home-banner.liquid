@@ -24,6 +24,7 @@ background-size: cover;
 }
 .banner-slide img{
     opacity: 0;
+    display: none;
 }
 .slide-wrapper .banner-slide:first-child{
     border-left:0;
@@ -60,7 +61,7 @@ if($(window).width() < 768){
           slidesToShow: 1,
           slidesToScroll: 1
       });
-}else{
+}
 // changing bg on hover over slide
 var bgDefault = $('.slide-wrapper .banner-slide:first-child').attr('data-bg');
 $('.slide-wrapper').css('background-image','url(' + bgDefault + ')')
@@ -75,9 +76,6 @@ $('.banner-slide').hover(function(){
     $(this).find('.slide-content-wrapper').removeClass('active') 
     $('.slide-wrapper').removeClass('active');
 })
-
-}
-
 })
 
 </script>
