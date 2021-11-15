@@ -66,10 +66,15 @@ if($(window).width() < 768){
 {% endjavascript %}
 {% schema %}
 {
-  "name": "t:sections.header.name",
+  "name": "Home Banner",
   "class": "home-banner-section",
   "settings": [
-
+{
+    "type": "text",
+    "id": "title",
+    "label": "Section",
+    "default": "Home Banner"
+}
   ],
   "max_blocks": 5,
   "blocks":[
