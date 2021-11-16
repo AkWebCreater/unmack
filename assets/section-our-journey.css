@@ -122,6 +122,7 @@ cursor:pointer;
 }
 .pro-img{
     opacity: 0;
+    width: 100%;
 }
 .product-details{
     position: absolute;
