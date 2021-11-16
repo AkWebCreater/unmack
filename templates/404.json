@@ -335,7 +335,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/1_21dd7cca-b45e-4b51-8cf2-4df51ea11687.jpg",
             "title": "2016",
-            "launched-product": "",
+            "launched-product": "acana-free-run-duck-dry-dog-food",
+            "product-image": "shopify:\/\/shop_images\/4_535x_1.jpg",
             "heading-color": "#fff",
             "description-color": "#000",
             "button-color": "#f58634"
