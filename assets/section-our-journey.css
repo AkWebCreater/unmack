@@ -113,3 +113,8 @@ background: #f97e20;
 .year span{
 cursor:pointer;
 }
+/* launched products */
+.product-slide{
+    min-height: 300px;
+    background-size: cover;
+}

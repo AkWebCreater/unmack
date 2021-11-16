@@ -23,9 +23,17 @@ setTimeout(()=>{  $('.product-recommendations .grid').slick({
 })},3000)
 // product page slider end
   // Umanac Journey year section js
+  $('.journey-products').slick(
+    {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+   }
+   )
   $('.year').click(function() {
+    // var slideno = $(this).attr('data-index');
     var index = $(this).attr('data-index');
     $(this).addClass('accent')
+    $('.journey-products').slick('slickGoTo', index - 1);
     $(this).siblings().removeClass('accent')
     $('.year-img[data-index=' + index + ']').addClass('active').siblings().removeClass('active')
 })  
@@ -33,6 +41,7 @@ $('.year-img').click(function() {
   var index = $(this).attr('data-index');
   $(this).addClass('active')
   $(this).siblings().removeClass('active')
+  $('.journey-products').slick('slickGoTo', index - 1);
   $('.year[data-index=' + index + ']').addClass('accent').siblings().removeClass('accent')
 })
   // custome js for gift wrap button -- check form input on chekout click if outer cechekbox checked

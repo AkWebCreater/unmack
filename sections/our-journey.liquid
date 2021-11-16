@@ -16,6 +16,25 @@
 {% endfor %}
 </ul>
 </div>
+<div class="journey-products">
+
+  {% for block in section.blocks %}
+{%- assign prodcut = all_products[block.settings.launched-product] -%}
+{%- assign bg = block.settings.product-image | img_url: 'master' -%}
+    <div class="product-slide" data-index="{{forloop.index}}" style="background-image: url({{bg}});">
+{% if product != blank %}
+<div class="product-details">
+  <h2 class="title">{{product.title}}</h2>
+  <p class="description">
+    {{product.description}}
+  </p>
+  <div class="banner__buttons">
+    <a href="{{product.url}}" class="button button--primary" >Shop Now</a></div>
+  </div>
+{% endif %}
+    </div>
+  {% endfor %}
+</div>
 
   </div>
 </div>
@@ -42,6 +61,16 @@
           "id": "title",
           "default": "Column",
           "label": "year"
+        },
+        {
+          "type": "product",
+          "id": "launched-product",
+          "label": "Please Pick Product"
+        },
+        {
+          "type": "image_picker",
+          "id": "product-image",
+          "label": "Select Image of Product"
         }
       ]
     }
