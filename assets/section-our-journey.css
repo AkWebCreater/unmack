@@ -133,6 +133,9 @@ cursor:pointer;
     left: 20px;
     max-width:60%;
 }
+.description{
+    text-align: left;
+}
 .product-details .banner__buttons a{
     background-color: transparent !important;
     border-radius: 4px;
