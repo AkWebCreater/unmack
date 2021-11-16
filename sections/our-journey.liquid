@@ -22,7 +22,7 @@
 {%- assign prodcut = all_products[block.settings.launched-product] -%}
 {%- assign bg = block.settings.product-image | img_url: 'master' -%}
     <div class="product-slide" data-index="{{forloop.index}}" style="background-image: url({{bg}});">
-{% if product %}
+{% if product.title != blank %}
 <div class="product-details">
   <h2 class="title">{{product.title}}</h2>
   <p class="description">
