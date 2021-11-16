@@ -416,6 +416,7 @@
     },
     "1634190060fbe2260c": {
       "type": "banner-with-left-right-text",
+      "disabled": true,
       "blocks": {
         "1634190060fbe2260c-0": {
           "type": "heading",
