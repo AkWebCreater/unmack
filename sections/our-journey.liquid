@@ -20,7 +20,10 @@
 
   {% for block in section.blocks %}
 {%- assign product = all_products[block.settings.launched-product] -%}
+{% if block.settings.product-image != blank %}
+  
 {%- assign bg = block.settings.product-image | img_url: 'master' -%}
+{% endif %}
     <div class="product-slide" data-index="{{forloop.index}}" style="background-image: url({{bg}});">
 {% if product %}
 {% if bg %}
@@ -95,7 +98,7 @@
         {
           "type": "color",
           "id": "button-color",
-          "label": "label",
+          "label": "Button Color",
           "default": "#000"
         }
       ]
