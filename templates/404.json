@@ -335,7 +335,10 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/1_21dd7cca-b45e-4b51-8cf2-4df51ea11687.jpg",
             "title": "2016",
-            "launched-product": ""
+            "launched-product": "",
+            "heading-color": "#fff",
+            "description-color": "#000",
+            "button-color": "#f58634"
           }
         },
         "16305577334f548741-1": {
@@ -344,7 +347,10 @@
             "image": "shopify:\/\/shop_images\/2_190d3639-d9eb-43e6-b3e7-1c9adc4f4bce.jpg",
             "title": "2017",
             "launched-product": "acana-adult-small-breed-dry-dog-food",
-            "product-image": "shopify:\/\/shop_images\/berries_1.jpg"
+            "product-image": "shopify:\/\/shop_images\/berries_1.jpg",
+            "heading-color": "#fff",
+            "description-color": "#000",
+            "button-color": "#000"
           }
         },
         "16305577334f548741-2": {
@@ -352,7 +358,10 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/3_c2f63508-9da7-4439-9006-616e48c9b495.jpg",
             "title": "2018",
-            "launched-product": ""
+            "launched-product": "",
+            "heading-color": "#fff",
+            "description-color": "#000",
+            "button-color": "#000"
           }
         },
         "32cfbf6e-af4a-47d1-9131-1664f2c81b92": {
@@ -360,7 +369,10 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/img1.jpg",
             "title": "2019",
-            "launched-product": ""
+            "launched-product": "",
+            "heading-color": "#fff",
+            "description-color": "#000",
+            "button-color": "#000"
           }
         },
         "bca19d82-9764-41ac-a1e1-ca149420262e": {
@@ -368,7 +380,10 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/4_257ce378-7894-4c74-9af6-37a90b9fb22e.jpg",
             "title": "2020",
-            "launched-product": ""
+            "launched-product": "",
+            "heading-color": "#fff",
+            "description-color": "#000",
+            "button-color": "#000"
           }
         },
         "dd193b74-5613-47ef-b1ff-59edd26c5527": {
@@ -376,7 +391,10 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/5_c7f6bd0b-92b7-48db-a54d-15c081edd5de.jpg",
             "title": "2021",
-            "launched-product": ""
+            "launched-product": "",
+            "heading-color": "#fff",
+            "description-color": "#000",
+            "button-color": "#000"
           }
         }
       },
