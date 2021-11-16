@@ -116,8 +116,9 @@ cursor:pointer;
 /* launched products */
 .product-slide{
     /* min-height: 300px !important; */
-    background-size: contain;
+    background-size: cover;
     position: relative;
+    background-position: center;
 }
 .pro-img{
     opacity: 0;
@@ -127,4 +128,7 @@ cursor:pointer;
     left: 0;
     top: 50%;
     transform: translateY(-50%);
+}
+.product-details .banner__buttons a{
+    background-color: transparent !important;
 }
