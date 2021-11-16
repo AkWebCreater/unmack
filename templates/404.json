@@ -330,28 +330,28 @@
     "16305577334f548741": {
       "type": "our-journey",
       "blocks": {
-        "16305577334f548741-0": {
-          "type": "year",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/1_21dd7cca-b45e-4b51-8cf2-4df51ea11687.jpg",
-            "title": "2016",
-            "launched-product": "acana-free-run-duck-dry-dog-food",
-            "product-image": "shopify:\/\/shop_images\/4_535x_1.jpg",
-            "heading-color": "#fff",
-            "description-color": "#000",
-            "button-color": "#f58634"
-          }
-        },
         "16305577334f548741-1": {
           "type": "year",
           "settings": {
             "image": "shopify:\/\/shop_images\/2_190d3639-d9eb-43e6-b3e7-1c9adc4f4bce.jpg",
-            "title": "2017",
+            "title": "2016",
             "launched-product": "acana-adult-small-breed-dry-dog-food",
             "product-image": "shopify:\/\/shop_images\/berries_1.jpg",
             "heading-color": "#fff",
             "description-color": "#000",
             "button-color": "#000"
+          }
+        },
+        "16305577334f548741-0": {
+          "type": "year",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_21dd7cca-b45e-4b51-8cf2-4df51ea11687.jpg",
+            "title": "2017",
+            "launched-product": "acana-free-run-duck-dry-dog-food",
+            "product-image": "shopify:\/\/shop_images\/4_535x_1.jpg",
+            "heading-color": "#fff",
+            "description-color": "#000",
+            "button-color": "#f58634"
           }
         },
         "16305577334f548741-2": {
@@ -404,8 +404,8 @@
         }
       },
       "block_order": [
-        "16305577334f548741-0",
         "16305577334f548741-1",
+        "16305577334f548741-0",
         "16305577334f548741-2",
         "32cfbf6e-af4a-47d1-9131-1664f2c81b92",
         "bca19d82-9764-41ac-a1e1-ca149420262e",
