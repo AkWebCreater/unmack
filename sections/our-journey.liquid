@@ -23,13 +23,14 @@
 {%- assign bg = block.settings.product-image | img_url: 'master' -%}
     <div class="product-slide" data-index="{{forloop.index}}" style="background-image: url({{bg}});">
 {% if product %}
+<img src="{{bg}}" class="pro-img" alt="product image">
 <div class="product-details">
-  <h2 class="title">{{product.title}}</h2>
-  <p class="description">
+  <h2 class="title" style="color:{{block.settings.heading-color}};">{{product.title}}</h2>
+  <p class="description" style="color: {{block.settings.description-color}};">
     {{product.description}}
   </p>
   <div class="banner__buttons">
-    <a href="{{product.url}}" class="button button--primary" >Shop Now</a></div>
+    <a href="{{product.url}}" class="button button--primary" style="border: 1px solid  {{block.settings.button-color}};color:{{block.settings.button-color}};">Shop Now</a></div>
   </div>
 {% endif %}
     </div>
