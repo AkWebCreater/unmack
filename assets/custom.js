@@ -26,7 +26,9 @@ setTimeout(()=>{  $('.product-recommendations .grid').slick({
   $('.journey-products').slick(
     {
       slidesToShow: 1,
-      slidesToScroll: 1,
+      arrows:false,
+      adaptiveHeight: true,
+      slidesToScroll: 1
    }
    )
   $('.year').click(function() {
