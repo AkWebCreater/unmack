@@ -139,5 +139,6 @@ cursor:pointer;
    padding: 2px;
     min-width: 0;
     min-height: 0;
+    margin-top: 15px;
     box-shadow: none;
 }
