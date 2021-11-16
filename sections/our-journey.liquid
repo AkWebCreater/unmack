@@ -23,7 +23,10 @@
 {%- assign bg = block.settings.product-image | img_url: 'master' -%}
     <div class="product-slide" data-index="{{forloop.index}}" style="background-image: url({{bg}});">
 {% if product %}
+{% if bg %}
+  
 <img src="{{bg}}" class="pro-img" alt="product image">
+{% endif %}
 <div class="product-details">
   <h2 class="title" style="color:{{block.settings.heading-color}};">{{product.title}}</h2>
   <p class="description" style="color: {{block.settings.description-color}};">
@@ -72,6 +75,28 @@
           "type": "image_picker",
           "id": "product-image",
           "label": "Select Image of Product"
+        },
+        {
+          "type": "header",
+          "content": "Colors"
+        },
+        {
+          "type": "color",
+          "id": "heading-color",
+          "label": "Heading Color",
+          "default": "#fff"
+        },
+        {
+          "type": "color",
+          "id": "description-color",
+          "label": "description-color",
+          "default": "#000"
+        },
+        {
+          "type": "color",
+          "id": "button-color",
+          "label": "label",
+          "default": "#000"
         }
       ]
     }
