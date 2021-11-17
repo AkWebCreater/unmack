@@ -3,18 +3,20 @@
 
 <div class=" background-{{ section.settings.background_style }}{% if section.settings.title == blank %} no-heading{% endif %}">
   <div class="page-width">
-   <div class="section-images-wrapper">
-   {% for block in section.blocks %}
-   <div  data-index="{{forloop.index}}"  class="year-img {% if forloop.last %}active{% endif %}"><img src="{{block.settings.image | img_url: 'medium'}}"></div> 
-   
-{% endfor %}
-   </div> 
-  <div class="section-nav">
-<ul class="">
-{% for block in section.blocks %}
-   <li data-index="{{forloop.index}}" data-res-id="1" data-survey-res-id="1291" data-res-text="Short" data-res-desc-text="" class="year"><span>{{block.settings.title}}</span></li> 
-{% endfor %}
-</ul>
+<div class="up-sec">
+  <div class="section-images-wrapper">
+    {% for block in section.blocks %}
+    <div  data-index="{{forloop.index}}"  class="year-img {% if forloop.last %}active{% endif %}"><img src="{{block.settings.image | img_url: 'medium'}}"></div> 
+    
+ {% endfor %}
+    </div> 
+   <div class="section-nav">
+ <ul class="">
+ {% for block in section.blocks %}
+    <li data-index="{{forloop.index}}" data-res-id="1" data-survey-res-id="1291" data-res-text="Short" data-res-desc-text="" class="year"><span>{{block.settings.title}}</span></li> 
+ {% endfor %}
+ </ul>
+ </div>
 </div>
 <div class="journey-products">
 
