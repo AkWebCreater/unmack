@@ -2122,7 +2122,7 @@ details-disclosure > details {
   color:#fff;
 }
 .accent ,.accent *{
-  color: #ff6600;
+  color: #f58d3f;
 }
 .accent-bg{
   background-color: #ff6600 !important;
@@ -2188,6 +2188,10 @@ details-disclosure > details {
   line-height: 1;
   padding: 4px 8px;
   border-radius: 3px;
+}
+.extra-link a{
+  color: black;
+  font-weight: bold;
 }
 
 /* header menu pipes */
