@@ -52,7 +52,7 @@
             "type": "announce-menu",
             "settings": {
               "top-menu": "top-menu",
-              "extra-link": "shopify:\/\/collections\/acv",
+              "extra-link": "shopify:\/\/collections\/deals-of-the-day",
               "link-text": "Deal Of The Day"
             }
           }
