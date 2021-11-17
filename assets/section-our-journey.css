@@ -1,13 +1,4 @@
-.section-nav{
-width: 100%;
-line-height: 1.42857;
-font-size: 1rem;
-color: #000;
-text-align: center;
-display: inline-block;
-position: relative;
-padding-bottom: 37px;
-}
+
 .section-images-wrapper{
 display: flex;
 align-items: flex-end;
@@ -56,7 +47,7 @@ margin:0 8px;
 background-color: transparent !important;
 
 }
-.section-nav li:after {
+.nav-link:after {
 position: absolute;
 left: 50%;
 right: auto;
@@ -68,22 +59,8 @@ bottom: -22px;
 height: 9px;
 background-color: #f97e20;
 }
-.section-nav ul{
 
-line-height: 1.42857;
-font-weight: 500;
-font-size: 1rem;
-color: #000;
-text-align: center;
-margin-bottom: 10px;
-display: flex;
-flex-direction: row;
-padding: 0;
-list-style: none;
-margin-top: 21px;
-align-items: flex-end;
-}
-.section-nav li{    
+.nav-link{    
 font-size: 1.5rem;
 letter-spacing: 0.0125rem;
 position: relative;
@@ -101,7 +78,7 @@ line-height: 1;
 .up-sec{
     overflow-x: scroll;
 }
-.year::before {
+.nav-link::before {
 position: absolute;
 bottom: -26px;
 left: 50%;
