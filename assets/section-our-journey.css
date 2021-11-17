@@ -55,7 +55,7 @@ margin:0 8px;
 background-color: transparent !important;
 
 }
-.section-nav ul:before {
+.section-nav li:after {
 position: absolute;
 left: 50%;
 right: auto;
