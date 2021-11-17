@@ -63,12 +63,13 @@
       "type": "main-deal-of-day-product-grid",
       "settings": {
         "products_per_page": 16,
+        "offer-time": "12\/12\/2021",
         "image_ratio": "square",
         "show_secondary_image": false,
         "add_image_padding": false,
         "show_vendor": false,
-        "enable_filtering": true,
-        "enable_sorting": true
+        "enable_filtering": false,
+        "enable_sorting": false
       }
     }
   },
