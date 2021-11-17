@@ -2189,6 +2189,10 @@ details-disclosure > details {
   padding: 4px 8px;
   border-radius: 3px;
 }
+.extra-link a{
+  color: black;
+  font-weight: bold;
+}
 
 /* header menu pipes */
 .header .header__inline-menu .list-menu > li::after{
