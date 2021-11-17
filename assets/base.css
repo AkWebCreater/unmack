@@ -2281,7 +2281,7 @@ details-disclosure > details {
   top: 0;
   left: 40%;
   position: absolute;
-  background-color: #fff;
+  background-color: var(--color-base-accent-1);
   color: var(--color-base-solid-button-labels);
   height: 1.7rem !important;
   width: 1.7rem;
