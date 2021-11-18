@@ -2283,6 +2283,7 @@ details-disclosure > details {
   position: absolute;
   background-color: white;
   color: #f58634;
+  font-weight: bold;
   /*
    background-color: var(--color-base-accent-1);
   color: var(--color-base-solid-button-labels);
