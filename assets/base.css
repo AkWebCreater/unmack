@@ -2278,11 +2278,15 @@ details-disclosure > details {
   display: inline-block;
   text-align: center;
   border-radius: 50%;
-  top: 0;
-  left: 40%;
+  top: -3%;
+  left: 52%;
   position: absolute;
-  background-color: var(--color-base-accent-1);
+  background-color: white;
+  color: #f58634;
+  /*
+   background-color: var(--color-base-accent-1);
   color: var(--color-base-solid-button-labels);
+   */
   height: 1.7rem !important;
   width: 1.7rem;
   border-radius: 100%;
