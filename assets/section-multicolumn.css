@@ -71,7 +71,7 @@ margin-right: 10px;
   padding: 10px;
 }
 #Slider-template--14951749845192__163004502857e20478{
-  padding: 10px !important;
+  padding: 6px !important;
 }
 
 .multicolumn-list__item:only-child {
@@ -164,7 +164,7 @@ margin-right: 10px;
 
   .grid--2-col-tablet .multicolumn-list__item {
     margin-top: 2rem;
-    max-width: 50%;
+    max-width: calc(50% - 20px);
   }
 
   .background-none .grid--2-col-tablet .multicolumn-list__item {

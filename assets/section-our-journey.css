@@ -3,13 +3,6 @@
 display: flex;
 align-items: flex-end;
 width: 100%;
-min-height: 34vh;
-}
-
-@media (min-width:1220px) {
-    .section-images-wrapper{
-        min-height:276px;
-        }
 }
 .our-journey{
     background-color: #f3f3f3;
@@ -135,8 +128,11 @@ cursor:pointer;
         line-height: 1.5;
     }
 }
-@media (max-width:1030px) {
-    .up-sec{
-        overflow-x: scroll;
-    }
+@media (min-width:1220px) {
+    .section-images-wrapper{
+        min-height:276px;
+        }
 }
+    .up-sec{
+        overflow-x: auto;
+    }
