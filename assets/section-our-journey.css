@@ -125,8 +125,14 @@ cursor:pointer;
     box-shadow: none;
 }
 
+
 /* responsive */
-@media (max-width:1024px) {
+@media (max-width:480px) {
+    .slide-wrapper{
+        line-height: 1;
+    }
+}
+@media (max-width:1030px) {
     .up-sec{
         overflow-x: scroll;
     }
