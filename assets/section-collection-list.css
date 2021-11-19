@@ -188,9 +188,7 @@ padding:1rem 0;
   background-color: transparent;
   border: 0;
 }
-.collection-list-wrapper .slider-buttons{
-  z-index: -1;
-}
+
 .collection-list__item:hover .card__text h3{
   color: var(--color-pincode-validator);
 }
