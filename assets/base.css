@@ -2344,3 +2344,9 @@ padding-left: 0 !important;
 margin-bottom: 0 !important;
 
 }
+@media (max-width:989px) {
+  .header__icons .search-modal__content{
+display: none;
+
+  }
+}
