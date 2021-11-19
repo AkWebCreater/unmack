@@ -27,8 +27,7 @@ border-radius: 8px;
     margin:0 8px;
     position: relative;
 }
-.year-img {
-}
+
 .year-img::before{
     content: ' ';
     position: absolute;
@@ -36,7 +35,7 @@ border-radius: 8px;
     top: 0;
     right: 0;
     left: 0;
-    bottom: 0;
+    bottom: 63px;
     border-radius: 8px;
     background: rgba(0,0,0,0.5);
 }
@@ -69,7 +68,7 @@ span.year {
     content: "";
     display: block;
     height: 9px;
-    width: calc(100%);
+    width: calc(100% + 16px);
     transform: translateY(-35px);
     -webkit-transform: translateY(-35px);
 } 
