@@ -53,10 +53,13 @@ background-color: transparent !important;
     display: block;
     height: 9px;
     width: calc(100%);
--webkit-transform: translateX(-50%);
-transform: translateX(-50%);
+    transform: translateY(-35px);
+    -webkit-transform: translateY(-35px);
 }
-
+span.year {
+    display: block;
+    margin-top: 20px;
+}
 .nav-link{    
 font-size: 1.5rem;
 letter-spacing: 0.0125rem;
@@ -83,8 +86,8 @@ line-height: 1;
     left: 50%;
     width: 9px;
     height: 10px;
-    -webkit-transform: translateX(-50%) rotate(45deg);
-    transform: translate(75px, 42px) rotate(45deg);
+    -webkit-transform:translate(75px, 14px) rotate(45deg);
+    transform: translate(75px, 14px) rotate(45deg);
 }  
 .year span{
 cursor:pointer;
