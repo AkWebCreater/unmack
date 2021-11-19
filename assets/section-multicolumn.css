@@ -5,6 +5,10 @@ z-index:1;
 slider-component{
   background-color: #fff;
 }
+li.multicolumn-list__item.grid__item{
+  -webkit-box-shadow: 1px 2px 10px 5px #E7E7E7; 
+box-shadow: 1px 2px 10px 5px #E7E7E7;
+}
 .multicolumn .title {
   margin: 0;
 }
