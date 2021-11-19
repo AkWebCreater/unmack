@@ -86,3 +86,10 @@ justify-content: space-between;
 .best-seller .badge{
 display:none;
 }
+.best-seller .grid__item{
+    display: flex;
+    flex-direction: column;
+}
+.best-seller .grid__item .price{
+    margin-top: auto;
+}
