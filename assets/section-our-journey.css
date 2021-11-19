@@ -138,4 +138,8 @@ cursor:pointer;
         overflow-x: auto;
     }
 }
-    
+@media (min-width:1236px) {
+    .up-sec{
+        overflow-x: hidden;
+    }
+} 
