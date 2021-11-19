@@ -47,6 +47,22 @@ margin:0 8px;
 background-color: transparent !important;
 
 }
+
+span.year {
+    display: block;
+    margin-top: 35px;
+}
+.nav-link::before {
+    position: absolute;
+    background: #f97e20;
+    content: "";
+    display: block;
+    left: 50%;
+    width: 9px;
+    height: 10px;
+    -webkit-transform:translate(-50%, -50%) rotate(45deg);
+    transform:translate(-50%, -50%) rotate(45deg);
+} 
 .nav-link:after {
     background-color: #f97e20;
     content: "";
@@ -55,11 +71,7 @@ background-color: transparent !important;
     width: calc(100%);
     transform: translateY(-35px);
     -webkit-transform: translateY(-35px);
-}
-span.year {
-    display: block;
-    margin-top: 20px;
-}
+} 
 .nav-link{    
 font-size: 1.5rem;
 letter-spacing: 0.0125rem;
@@ -79,16 +91,7 @@ line-height: 1;
     overflow-x: scroll;
     min-height: 250px;
 }
-.nav-link::before {
-    background: #f97e20;
-    content: "";
-    display: block;
-    left: 50%;
-    width: 9px;
-    height: 10px;
-    -webkit-transform:translate(75px, 14px) rotate(45deg);
-    transform: translate(75px, 14px) rotate(45deg);
-}  
+
 .year span{
 cursor:pointer;
 }
