@@ -176,32 +176,7 @@
     <script src="{{ 'custom.js' | asset_url }}" defer="defer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
    
-<script>
-$('.best-seller-collection-grid-wrapper').slick({
-  dots: false,
-  arrows:false,
-  infinite: true,
-  speed: 300,
-  slidesToShow: 1
-});
-$('.best-seller-collection-grid-wrapper').slick(
-  {
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: true,
-    nextArrow: '<span  class="slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i></span>',
-    prevArrow: '<span  class="slick-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></span>'
-  
- }
- )
- $('.best-seller-nav span').click(function(e) {
-   e.preventDefault();
-   var slideno = $(this).attr('data-index');
-   $('.best-seller-collection-grid-wrapper').slick('slickGoTo', slideno - 1);
-   $(this).addClass('add-border').siblings().removeClass('add-border')
- });
 
-</script>
  {% if template contains 'product' or template contains 'blog'%}
  {{ 'jquery-cookie.min.js' | asset_url | script_tag }}
 {{ '//ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js' | script_tag }}

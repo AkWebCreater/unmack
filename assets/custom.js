@@ -147,6 +147,33 @@ $(document).ready(function() {
       $(this).sibling().removeClass('accent')
   })
   // login popup Header end
+
+  // best seller section slider
+
+  $('.best-seller-collection-grid-wrapper').slick({
+    dots: false,
+    arrows:false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1
+  });
+  $('.best-seller-collection-grid-wrapper').slick(
+    {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: true,
+      nextArrow: '<span  class="slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i></span>',
+      prevArrow: '<span  class="slick-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></span>'
+    
+   }
+   )
+   $('.best-seller-nav span').click(function(e) {
+     e.preventDefault();
+     var slideno = $(this).attr('data-index');
+     $('.best-seller-collection-grid-wrapper').slick('slickGoTo', slideno - 1);
+     $(this).addClass('add-border').siblings().removeClass('add-border')
+   });
+
   // website popup homepage
   if (localStorage.getItem("popup-web") === null) {
     //...
