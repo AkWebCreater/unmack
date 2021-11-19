@@ -170,8 +170,7 @@ $(document).ready(function() {
    });
 $('.slick-arrow').on('click',function(){
   var currentIndex = $('.slick-current').attr('data-index');
-  alert(currentIndex)
-  $('.best-seller-nav span[data-indez'+ currentIndex +']').addClass('add-border').siblings().removeClass('add-border');
+  $('.best-seller-nav span[data-index'+ currentIndex +']').addClass('add-border').siblings().removeClass('add-border');
 })
   // website popup homepage
   if (localStorage.getItem("popup-web") === null) {
