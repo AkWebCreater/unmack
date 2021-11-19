@@ -133,7 +133,7 @@ cursor:pointer;
         min-height:276px;
         }
 }
-@media (min-width:1060px) {
+@media (max-width:1235px) {
     .up-sec{
         overflow-x: auto;
     }
