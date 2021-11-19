@@ -171,6 +171,7 @@ $(document).ready(function() {
 $('.slick-arrow').on('click',function(){
   var currentIndex = $('.slick-current').attr('data-index');
   $('.best-seller-nav [data-index'+ currentIndex +']').addClass('add-border').siblings().removeClass('add-border');
+  alert('added')
 })
   // website popup homepage
   if (localStorage.getItem("popup-web") === null) {
