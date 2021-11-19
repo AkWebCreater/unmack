@@ -1,6 +1,6 @@
 
 $(document).ready(function() {
-  // product page sliders
+// product page sliders
 setTimeout(()=>{  $('.product-recommendations .grid').slick({
   dots: false,
   arrows: true,
@@ -22,7 +22,8 @@ setTimeout(()=>{  $('.product-recommendations .grid').slick({
   ]
 })},3000)
 // product page slider end
-  // Umanac Journey year section js
+
+// Umanac Journey year section js
   $('.journey-products').slick(
     {
       slidesToShow: 1,
@@ -40,28 +41,16 @@ setTimeout(()=>{  $('.product-recommendations .grid').slick({
     $(this).addClass('active')
     $(this).siblings().removeClass('active')
 })
-//   $('.year').click(function() {
-//     // var slideno = $(this).attr('data-index');
-//     var index = $(this).attr('data-index');
-//     $(this).addClass('accent')
-//     $('.journey-products').slick('slickGoTo', index - 1);
-//     $(this).closest('.year-slide').siblings().find('.year').removeClass('accent')
-//     $('.year-img[data-index=' + index + ']').addClass('active').siblings().removeClass('active')
-// })  
-// $('.year-img').click(function() {
-//   var index = $(this).attr('data-index');
-//   $(this).addClass('active')
-//   $(this).siblings().removeClass('active')
-//   $('.journey-products').slick('slickGoTo', index - 1);
-//   $('.year[data-index=' + index + ']').addClass('accent').siblings().removeClass('accent')
-// })
-  // custome js for gift wrap button -- check form input on chekout click if outer cechekbox checked
+// end here
+
+// custome js for gift wrap button -- check form input on chekout click if outer cechekbox checked
 $('.cart__ctas').click(function() {
       if ($('.gift-wrap-outer input.regular-checkbox').is(":checked")) {
           $(".gift-wrap-form input.regular-checkbox").prop("checked", true);
       }
   })
 })
+
 // empty cart other items hide
 var empt = $('.cart--wrapper.is-empty').length;
 if (empt) {
@@ -121,6 +110,7 @@ $(document).ready(function() {
       $(this).next().slideToggle()
       $(this).toggleClass('open')
   })
+
   // account page popup 
 
   if ($(window).width() < 750) {
@@ -158,11 +148,16 @@ $(document).ready(function() {
   })
   // login popup Header end
   // website popup homepage
-  window.onload = setTimeout(() => {
+  if (localStorage.getItem("popup-web") === null) {
+    //...
+    window.onload = setTimeout(() => {
       $('.website-popup').show()
   }, 3000)
+  }
+
   $('.website-popup .close').click(function() {
       $(this).closest('.website-popup').hide();
+      localStorage.setItem("popup-web",'shown')
   })
   if ($(window).width() < 750) {
       $('.wrapper-inner').slick({
