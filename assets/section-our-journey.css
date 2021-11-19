@@ -19,15 +19,15 @@ min-height: 34vh;
 width:100%;
 border-radius: 8px;
 }  
-.year-img{
-transition: all 0.5s ease-in;
-font-size:0;
-flex:1;
-min-width: 150px;
-margin:0 8px;
+.year-slide{
+    transition: all 0.5s ease-in;
+    font-size:0;
+    flex:1;
+    min-width: 150px;
+    margin:0 8px;
+    position: relative;
 }
 .year-img {
-    position: relative;
 }
 .year-img::before{
     content: ' ';
@@ -40,10 +40,10 @@ margin:0 8px;
     border-radius: 8px;
     background: rgba(0,0,0,0.5);
 }
-.year-img.active{
+.year-slide.active{
     flex:1.5;
 }
-.year-img.active::before{
+.year-slide.active .year-img::before{
 background-color: transparent !important;
 
 }
@@ -59,6 +59,7 @@ span.year {
     display: block;
     left: 50%;
     width: 9px;
+    top: -11px;
     height: 10px;
     -webkit-transform:translate(-50%, -50%) rotate(45deg);
     transform:translate(-50%, -50%) rotate(45deg);
@@ -89,7 +90,6 @@ line-height: 1;
 
 .up-sec{
     overflow-x: scroll;
-    min-height: 250px;
 }
 
 .year span{

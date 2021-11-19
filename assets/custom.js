@@ -31,21 +31,30 @@ setTimeout(()=>{  $('.product-recommendations .grid').slick({
       slidesToScroll: 1
    }
    )
-  $('.year').click(function() {
-    // var slideno = $(this).attr('data-index');
-    var index = $(this).attr('data-index');
-    $(this).addClass('accent')
+  //  year slide Click 
+  $('.year-slide').click(function() {
+    var index = $(this).find('.year-img').attr('data-index');
     $('.journey-products').slick('slickGoTo', index - 1);
-    $(this).siblings().removeClass('accent')
-    $('.year-img[data-index=' + index + ']').addClass('active').siblings().removeClass('active')
-})  
-$('.year-img').click(function() {
-  var index = $(this).attr('data-index');
-  $(this).addClass('active')
-  $(this).siblings().removeClass('active')
-  $('.journey-products').slick('slickGoTo', index - 1);
-  $('.year[data-index=' + index + ']').addClass('accent').siblings().removeClass('accent')
+    $(this).find('.year').addClass('accent')
+    $(this).siblings().find('.year').removeClass('accent')
+    $(this).addClass('active')
+    $(this).siblings().removeClass('active')
 })
+//   $('.year').click(function() {
+//     // var slideno = $(this).attr('data-index');
+//     var index = $(this).attr('data-index');
+//     $(this).addClass('accent')
+//     $('.journey-products').slick('slickGoTo', index - 1);
+//     $(this).closest('.year-slide').siblings().find('.year').removeClass('accent')
+//     $('.year-img[data-index=' + index + ']').addClass('active').siblings().removeClass('active')
+// })  
+// $('.year-img').click(function() {
+//   var index = $(this).attr('data-index');
+//   $(this).addClass('active')
+//   $(this).siblings().removeClass('active')
+//   $('.journey-products').slick('slickGoTo', index - 1);
+//   $('.year[data-index=' + index + ']').addClass('accent').siblings().removeClass('accent')
+// })
   // custome js for gift wrap button -- check form input on chekout click if outer cechekbox checked
 $('.cart__ctas').click(function() {
       if ($('.gift-wrap-outer input.regular-checkbox').is(":checked")) {
