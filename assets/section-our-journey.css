@@ -48,16 +48,13 @@ background-color: transparent !important;
 
 }
 .nav-link:after {
-position: absolute;
-left: 50%;
-right: auto;
+    background-color: #f97e20;
+    content: "";
+    display: block;
+    height: 9px;
+    width: calc(100%);
 -webkit-transform: translateX(-50%);
 transform: translateX(-50%);
-content: "";
-width: calc(100%);
-bottom: -22px;
-height: 9px;
-background-color: #f97e20;
 }
 
 .nav-link{    
@@ -80,16 +77,14 @@ line-height: 1;
     min-height: 250px;
 }
 .nav-link::before {
-position: absolute;
-bottom: -26px;
-left: 50%;
-content: "";
-width: 9px;
-height: 10px;
--webkit-transform: translateX(-50%) rotate(45deg);
-transform: translateX(-50%) rotate(45deg);
-background: #f97e20;
-
+    background: #f97e20;
+    content: "";
+    display: block;
+    left: 50%;
+    width: 9px;
+    height: 10px;
+    -webkit-transform: translateX(-50%) rotate(45deg);
+    transform: translate(75px, 42px) rotate(45deg);
 }  
 .year span{
 cursor:pointer;
