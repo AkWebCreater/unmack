@@ -168,8 +168,8 @@ $(document).ready(function() {
      $('.best-seller-collection-grid-wrapper').slick('slickGoTo', slideno - 1);
      $(this).addClass('add-border').siblings().removeClass('add-border')
    });
-$('.collection-grid-wrapper .slick-arrow').on('click',function(){
-  var currentIndex = $('.collection-grid-wrapper .slick-current').attr('data-index');
+$('.best-seller-collection-grid-wrapper .slick-arrow').on('click',function(){
+  var currentIndex = $('.best-seller-collection-grid-wrapper .slick-current').attr('data-index');
   console.log('currentIndex = '+currentIndex)
   $('.best-seller-nav span[data-index='+ currentIndex +']').addClass('add-border').siblings().removeClass('add-border');
   console.log('AftercurrentIndex = '+currentIndex)
