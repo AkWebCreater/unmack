@@ -2345,7 +2345,7 @@ margin-bottom: 0 !important;
 
 }
 @media (max-width:989px) {
-  .header__icons .search-modal__content{
+  .header__icons .search-modal__content.two{
 display: none;
 
   }
