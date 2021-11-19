@@ -2122,6 +2122,11 @@ details-disclosure > details {
   }
 }
 /* custome css */
+/* fix for growwaweapp widget */
+#MainContent{
+  padding-left: 30px;
+}
+/*  */
 .pincode_validator_bg ,.address.selecte,.cutomer-wrap.success{
   background: var(--color-pincode-validator);
   color:#fff;

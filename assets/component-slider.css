@@ -11,7 +11,9 @@ slider-component {
     scroll-padding-left: 1rem;
     -webkit-overflow-scrolling: touch;
 }
-
+.collection-list-wrapper .slider-buttons{
+  z-index: 0;
+} 
 
   slider-component .slider {
     padding-bottom: 6rem;

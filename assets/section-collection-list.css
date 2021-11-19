@@ -188,7 +188,10 @@ padding:1rem 0;
   background-color: transparent;
   border: 0;
 }
-
+.collection-list{
+  z-index: 1;
+  background-color: #fef9ed;
+}
 .collection-list__item:hover .card__text h3{
   color: var(--color-pincode-validator);
 }
