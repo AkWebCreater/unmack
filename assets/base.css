@@ -2127,6 +2127,9 @@ details-disclosure > details {
   padding-left: 30px;
 }
 /*  */
+img{
+  transition: all 0.5s ease-in;
+}
 .pincode_validator_bg ,.address.selecte,.cutomer-wrap.success{
   background: var(--color-pincode-validator);
   color:#fff;
