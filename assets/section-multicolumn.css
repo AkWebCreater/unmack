@@ -66,9 +66,12 @@ margin-right: 10px;
   }
 }
 
-.multicolumn-list.grid--4-col-desktop {
+.multicolumn-list {
   margin-bottom: 0;
   padding: 10px;
+}
+#Slider-template--14951749845192__163004502857e20478{
+  padding: 10px !important;
 }
 
 .multicolumn-list__item:only-child {
