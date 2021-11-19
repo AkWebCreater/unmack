@@ -5,6 +5,7 @@ align-items: flex-end;
 width: 100%;
 min-height: 34vh;
 }
+
 @media (min-width:1220px) {
     .section-images-wrapper{
         min-height:276px;
@@ -27,7 +28,9 @@ border-radius: 8px;
     margin:0 8px;
     position: relative;
 }
-
+.year-slide:hover .year{
+    color: var(--color-pincode-validator);
+}
 .year-img::before{
     content: ' ';
     position: absolute;
@@ -39,7 +42,7 @@ border-radius: 8px;
     border-radius: 8px;
     background: rgba(0,0,0,0.5);
 }
-.year-slide.active{
+.year-slide.active,.year-slide:hover{
     flex:1.5;
 }
 .year-slide.active .year-img::before{
