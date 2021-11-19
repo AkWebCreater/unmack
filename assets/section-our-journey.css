@@ -45,7 +45,7 @@ border-radius: 8px;
 .year-slide.active,.year-slide:hover{
     flex:1.5;
 }
-.year-slide.active .year-img::before{
+.year-slide.active .year-img::before,.year-slide:hover .year-img::before{
 background-color: transparent !important;
 
 }
