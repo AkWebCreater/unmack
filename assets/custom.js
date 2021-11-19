@@ -168,7 +168,11 @@ $(document).ready(function() {
      $('.best-seller-collection-grid-wrapper').slick('slickGoTo', slideno - 1);
      $(this).addClass('add-border').siblings().removeClass('add-border')
    });
-
+$('.slick-arrow').on('click',function(){
+  var currentIndex = $('.slick-current').attr('data-index');
+  alert(currentIndex)
+  $('.best-seller-nav span[data-indez'+ currentIndex +']').addClass('add-border').siblings().removeClass('add-border');
+})
   // website popup homepage
   if (localStorage.getItem("popup-web") === null) {
     //...
