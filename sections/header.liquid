@@ -553,7 +553,27 @@ transform: translateY(25px);
         </details>
       </details-modal>
     {%- endif -%}
-
+    {%- if request.page_type == 'index' -%}
+      <h1 class="header__heading">
+    {%- endif -%}
+        <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
+          {%- if section.settings.logo != blank -%}
+            {%- assign image_size = section.settings.logo_width | append: 'x' -%}
+            <img srcset="{{ section.settings.logo | img_url: image_size }} 1x, {{ section.settings.logo | img_url: image_size, scale: 2 }} 2x"
+              src="{{ section.settings.logo | img_url: image_size }}"
+              loading="lazy"
+              class="header__heading-logo"
+              width="{{ section.settings.logo.width }}"
+              height="{{ section.settings.logo.height }}"
+              alt="{{ section.settings.logo.alt | default: shop.name | escape }}"
+            >
+          {%- else -%}
+            <span class="h2">{{ shop.name }}</span>
+          {%- endif -%}
+        </a>
+    {%- if request.page_type == 'index' -%}
+      </h1>
+    {%- endif -%}
 
 
     {%- if section.settings.menu != blank -%}
@@ -609,7 +629,7 @@ transform: translateY(25px);
     {%- endif -%}
 
     <div class="header__icons">
-      {% comment %}
+     
       <details-modal class="header__search">
         <details>
           <summary class="header__icon header__icon--search header__icon--summary link link--text focus-inset modal__toggle" aria-haspopup="dialog" aria-label="{{ 'general.search.search' | t }}">
@@ -645,7 +665,7 @@ transform: translateY(25px);
           </div>
         </details>
       </details-modal>
-{% endcomment %}
+
               <div class="search-modal__content" tabindex="-1">
               <form action="{{ routes.search_url }}" method="get" role="search" class="search search-modal__form">
                 <div class="field">
