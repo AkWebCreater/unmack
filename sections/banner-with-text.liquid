@@ -1,7 +1,19 @@
 <!-- start section banner-with-text-->
 <section class="section-{{ section.id }}">
   <div class="image-with-text  color-scheme-background-1 mobile-background-image">
-    <img src="{{ section.settings.background-image | img_url: 'master'}}" width="100%" alt="banner">
+   <div class="image-box">
+     {% if section.settings.banner-link != blank %}
+       <a href="{{section.settings.banner-link}}">
+     {% endif %}
+     {% if section.settings.background-image != blank %}
+       
+     <img src="{{ section.settings.background-image | img_url: 'master'}}" width="100%" alt="banner">
+     {% endif %}
+    
+    {% if section.settings.banner-link != blank %}
+       </a>
+  {% endif %}
+   </div>
      <div class="page-width">
         {% if section.settings.heading != blank %}
           <div class="heading">
@@ -56,6 +68,11 @@
                       "id": "mobile-background-image",
                       "type": "image_picker",
                       "label": "Choose images for mobile background"
+                    },
+                    {
+                      "type": "text",
+                      "id":"banner-link",
+                      "label":"Banner Link"
                     },
 					{
                       "id": "heading",
@@ -169,6 +186,10 @@
   {% endif %}
   .make-your-own-box .image-with-text{
   margin-bottom:0;
+  }
+  .make-your-own-box .image-box{
+    font-size: 0;
+    line-height: 1;
   }
   .section-{{section.id}} .button, .customer button, .shopify-challenge__button {
     padding: 2px; 
