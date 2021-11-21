@@ -715,6 +715,7 @@
       "settings": {
         "background-image": "shopify:\/\/shop_images\/Untitled-2.jpg",
         "mobile-background-image": "shopify:\/\/shop_images\/mobile.jpg",
+        "banner-link": "shopify:\/\/pages\/make-own-box",
         "heading": ""
       }
     },
