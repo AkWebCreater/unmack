@@ -685,18 +685,21 @@
       "blocks": {
         "1630133642e6b919cc-0": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": ""
           }
         },
         "d5a19040-0102-47d4-a06c-e0e839a5c3d0": {
           "type": "html",
+          "disabled": true,
           "settings": {
             "title": ""
           }
         },
         "1630133642e6b919cc-2": {
           "type": "buttons",
+          "disabled": true,
           "settings": {
             "button_label_1": "Shop Now",
             "button_link_1": "shopify:\/\/pages\/make-own-box",
