@@ -629,7 +629,7 @@ transform: translateY(25px);
     {%- endif -%}
 
     <div class="header__icons">
-     
+      <div class="icons-wrapper">
       <details-modal class="header__search">
         <details>
           <summary class="header__icon header__icon--search header__icon--summary link link--text focus-inset modal__toggle" aria-haspopup="dialog" aria-label="{{ 'general.search.search' | t }}">
@@ -665,7 +665,7 @@ transform: translateY(25px);
           </div>
         </details>
       </details-modal>
-      <div class="icons-wrapper">
+     
               <div class="search-modal__content two" tabindex="-1">
               <form action="{{ routes.search_url }}" method="get" role="search" class="search search-modal__form">
                 <div class="field">
