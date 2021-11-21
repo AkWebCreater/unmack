@@ -2368,6 +2368,6 @@ body  .header__search{
 }
 @media (max-width:480px) {
   .header__heading-link{
-   left: 0;
+   left: 60px;
   }
 }
