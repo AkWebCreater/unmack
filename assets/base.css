@@ -2366,3 +2366,8 @@ body  .header__search{
 .header__search svg use{
   color: #000 !important;
 }
+@media (max-width:480px) {
+  .header__heading-link{
+   left: 0;
+  }
+}
