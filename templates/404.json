@@ -337,9 +337,9 @@
             "title": "2015",
             "launched-product": "",
             "product-image": "shopify:\/\/shop_images\/4_535x_1.jpg",
-            "heading-color": "#fff",
-            "description-color": "#000",
-            "button-color": "#000"
+            "heading-color": "#ffffff",
+            "description-color": "#000000",
+            "button-color": "#000000"
           }
         },
         "16305577334f548741-1": {
@@ -686,13 +686,13 @@
         "1630133642e6b919cc-0": {
           "type": "heading",
           "settings": {
-            "heading": "Make your"
+            "heading": ""
           }
         },
         "d5a19040-0102-47d4-a06c-e0e839a5c3d0": {
           "type": "html",
           "settings": {
-            "title": "OWN BOX"
+            "title": ""
           }
         },
         "1630133642e6b919cc-2": {
@@ -710,7 +710,7 @@
         "1630133642e6b919cc-2"
       ],
       "settings": {
-        "background-image": "shopify:\/\/shop_images\/9.jpg",
+        "background-image": "shopify:\/\/shop_images\/Untitled-1.jpg",
         "mobile-background-image": "shopify:\/\/shop_images\/mobile.jpg",
         "heading": ""
       }
