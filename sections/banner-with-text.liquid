@@ -1,6 +1,7 @@
 <!-- start section banner-with-text-->
 <section class="section-{{ section.id }}">
   <div class="image-with-text  color-scheme-background-1 mobile-background-image">
+    <img src="{{ section.settings.background-image | img_url: 'master'}}" width="100%" alt="banner">
      <div class="page-width">
         {% if section.settings.heading != blank %}
           <div class="heading">
