@@ -665,7 +665,7 @@ transform: translateY(25px);
           </div>
         </details>
       </details-modal>
-
+      <div class="icons-wrapper">
               <div class="search-modal__content two" tabindex="-1">
               <form action="{{ routes.search_url }}" method="get" role="search" class="search search-modal__form">
                 <div class="field">
@@ -680,7 +680,7 @@ transform: translateY(25px);
                 </div>
               </form>
             </div>
-            <div class="icons-wrapper">
+            
 
               {%- if shop.customer_accounts_enabled -%}
                 <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header__icon header__icon--account link link--text focus-inset">
