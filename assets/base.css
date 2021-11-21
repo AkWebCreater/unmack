@@ -2351,7 +2351,7 @@ display: none;
   }
 }
 @media (min-width:990px) {
-  .header__search{
-    display: none;
+body  .header__search{
+    display: none !important;
   }
 }
