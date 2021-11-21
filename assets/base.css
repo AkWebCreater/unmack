@@ -2126,11 +2126,7 @@ details-disclosure > details {
   }
 }
 /* custome css */
-/* fix for growwaweapp widget */
-#MainContent{
-  padding-left: 30px;
-}
-/*  */
+
 img{
   transition: all 0.5s ease-in;
 }
@@ -2349,9 +2345,23 @@ margin-bottom: 0 !important;
 display: none;
 
   }
+  .header__heading-link{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+  }
+
+  .header__heading-logo {
+    height: 100%;
+    width: 100%;
+    padding: 4px 0;
+}
 }
 @media (min-width:990px) {
 body  .header__search{
     display: none !important;
   }
+}
+.header__search svg use{
+  color: #000 !important;
 }
