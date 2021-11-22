@@ -801,6 +801,17 @@
         "img-txt3": "We Support",
         "img-linktext3": "7days, 9am to 9pm"
       }
+    },
+    "163756932415dd61ec": {
+      "type": "parallex-product",
+      "settings": {
+        "menu": "main-menu",
+        "show_line_separator": true,
+        "enable_sticky_header": true,
+        "left-nav": "",
+        "right-nav": "",
+        "logo_position": "middle-left"
+      }
     }
   },
   "order": [
@@ -821,6 +832,7 @@
     "1630133642e6b919cc",
     "1630155100e70d79d8",
     "163004502857e20478",
-    "163046513230d6c091"
+    "163046513230d6c091",
+    "163756932415dd61ec"
   ]
 }
