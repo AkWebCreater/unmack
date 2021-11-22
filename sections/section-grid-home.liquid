@@ -4,8 +4,8 @@
 <link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">
 <noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
 <section class="section-{{ section.id}}">
-<div class="multicolumn background-{{ section.settings.background_style }}{% if section.settings.title == blank %} no-heading{% endif %}">
-  <div class="full-width">
+<div class="">
+  <div class="">
     <div class="title-wrapper-with-link title-wrapper--self-padded-mobile{% if section.settings.title == blank %} title-wrapper-with-link--no-heading{% endif %}">
       <h2 class="title">
         {{ section.settings.title | escape }}
@@ -15,7 +15,7 @@
       {%- endif -%}
     </div>
     <slider-component class="slider-mobile-gutter">
-      <ul class="multicolumn-list grid grid--1-col{% if section.blocks.size > 3 and section.settings.image_width != 'full' %} grid--2-col-tablet grid--4-col-desktop{% elsif section.blocks.size > 3 and section.settings.image_width == 'full' %} grid--2-col-tablet{% else %} grid--3-col-tablet{% endif %}{% if section.settings.swipe_on_mobile and section.blocks.size > 1 %} slider slider--mobile grid--peek{% endif %}"
+      <ul class="grid grid--1-col{% if section.blocks.size > 3 and section.settings.image_width != 'full' %} grid--2-col-tablet grid--4-col-desktop{% elsif section.blocks.size > 3 and section.settings.image_width == 'full' %} grid--2-col-tablet{% else %} grid--3-col-tablet{% endif %}{% if section.settings.swipe_on_mobile and section.blocks.size > 1 %} slider slider--mobile grid--peek{% endif %}"
         id="Slider-{{ section.id }}"
         role="list"
       >
@@ -289,6 +289,9 @@
   }
   .section-grid .multicolumn-list__item img{
     transition:all 0.5s ease-in-out;
+  }
+  .section-grid .multicolumn-list__item {
+    padding: 0;
   }
   .section-template--14951749845192__1630155100e70d79d8 li.multicolumn-list__item.grid__item{
     margin-left: 0;
