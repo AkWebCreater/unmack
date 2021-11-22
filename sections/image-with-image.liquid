@@ -136,10 +136,10 @@
         margin-right: 1rem;
     	margin-bottom: 0rem;
   }
-  #section-{{section.id}} .banner__buttons {
+  /* #section-{{section.id}} .banner__buttons {
     margin-top: 2rem;
    
-}
+} */
    #section-{{section.id}} .button, .customer button, .shopify-challenge__button{
       padding:2px;
      min-width: 0;
@@ -148,7 +148,15 @@
      background-color: transparent;
      box-shadow:none;
    }
-  
+   .image-with-text .text-over-image{
+    min-height: 145px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .text-over-image p{
+    margin: 0;
+  }
 @media screen and (max-width: 750px) {
   #section-{{section.id}} .text-over-image { 
   	/* top: -5%; */
