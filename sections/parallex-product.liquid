@@ -167,12 +167,12 @@
     
 </div>
   <script>
+      let scr = 7051;
       let proimg = document.getElementById('proImg');
       window.addEventListener('scroll',function(){
           var val  = window.scrollY;
-          console.log(val)
-
-        //   proimg.style.transform = "translateY(" + (val - 10) + "px)";
+          console.log(val);
+          proimg.style.transform = "translateY(" + (val - scr) + "px)";
           
       })
   </script>
