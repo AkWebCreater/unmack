@@ -699,7 +699,7 @@
     "163756932415dd61ec": {
       "type": "parallex-product",
       "settings": {
-        "bg_1": "shopify:\/\/shop_images\/Untitled-2.jpg",
+        "bg_1": "shopify:\/\/shop_images\/abcde.jpg",
         "bg_2": "shopify:\/\/shop_images\/img2_medium_49a9ef08-150d-4106-97c3-1e75ffce7a52.png",
         "show_line_separator": true,
         "enable_sticky_header": true,
