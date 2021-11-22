@@ -1834,7 +1834,7 @@ input[type='checkbox'] {
   justify-content: center;
 }
 .menu-drawer-container .header__icon.header__icon--summary::after{
-  /* display: none; */
+  display: none;
 }
 .header__icon span {
   height: 100%;
