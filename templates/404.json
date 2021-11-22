@@ -52,55 +52,6 @@
         "title": "Home Banner"
       }
     },
-    "163004697302ee3adf": {
-      "type": "image-banner",
-      "disabled": true,
-      "blocks": {
-        "163004697302ee3adf-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Good for your"
-          }
-        },
-        "163004697302ee3adf-1": {
-          "type": "html",
-          "settings": {
-            "title": "Skin, Brain & Heart"
-          }
-        },
-        "163004697302ee3adf-2": {
-          "type": "text",
-          "settings": {
-            "text": "We assure you that our product is manufactured to International Standards"
-          }
-        },
-        "163004697302ee3adf-3": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "SHOP NOW",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "163004697302ee3adf-0",
-        "163004697302ee3adf-1",
-        "163004697302ee3adf-2",
-        "163004697302ee3adf-3"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/banner1.jpg",
-        "desktop_text_box_position": "center",
-        "color_scheme": "background-1",
-        "stack_images_on_mobile": true,
-        "adapt_height_first_image": false,
-        "logo-url": ""
-      }
-    },
     "1630041953ce8ee818": {
       "type": "image-with-image",
       "settings": {
@@ -425,42 +376,6 @@
         "dd193b74-5613-47ef-b1ff-59edd26c5527"
       ],
       "settings": {
-      }
-    },
-    "1634190060fbe2260c": {
-      "type": "banner-with-left-right-text",
-      "disabled": true,
-      "blocks": {
-        "1634190060fbe2260c-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "AMERICAN DRIED BLUEBERRIES"
-          }
-        },
-        "1634190060fbe2260c-2": {
-          "type": "text",
-          "settings": {
-            "text": "UMANAC brought to you the gourmet collection of the best dry fruits, nuts, and berries sourced from across the globe. These blueberries come from the best processors in the USA and are then carefully packed in airtight containers to ensure that you get nothing but the best. These tiny juicy wonders are lightly sweetened making it a healthy, ready-to-go snack."
-          }
-        },
-        "1634190060fbe2260c-3": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop Now",
-            "button_link_1": "",
-            "button_style_secondary_1": false
-          }
-        }
-      },
-      "block_order": [
-        "1634190060fbe2260c-0",
-        "1634190060fbe2260c-2",
-        "1634190060fbe2260c-3"
-      ],
-      "settings": {
-        "background-image": "shopify:\/\/shop_images\/berries_1.jpg",
-        "heading": "",
-        "right_text": "<p>Loaded with<br> High - Quality<br> Protein<\/p>"
       }
     },
     "16300441400f67cd94": {
@@ -891,7 +806,6 @@
   "order": [
     "main",
     "1636958667600d5d10",
-    "163004697302ee3adf",
     "1630041953ce8ee818",
     "163017222359fc16f2",
     "163038833315e79f47",
@@ -899,7 +813,6 @@
     "1630493245926e8dc9",
     "1630397519047103ef",
     "16305577334f548741",
-    "1634190060fbe2260c",
     "16300441400f67cd94",
     "1630071793752a4d2d",
     "1630047374cc6bf00e",
