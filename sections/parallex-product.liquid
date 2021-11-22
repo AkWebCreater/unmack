@@ -167,18 +167,20 @@
     
 </div>
   <script>
+         window.addEventListener('scroll',function(){
     if(window.innerWidth > 749){
         let scr = 7051;
       let proimg = document.getElementById('proImg');
-      window.addEventListener('scroll',function(){
+   
           var val  = window.scrollY;
           var off = proimg.offsetTop;
           console.log(window.innerWidth);
           console.log(off);
           proimg.style.transform = "translateY(" + (((val - off) - scr)/6) + "px)";
           
-      })
+    
     }
+})
   </script>
 
   {% schema %}
