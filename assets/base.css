@@ -1833,8 +1833,8 @@ input[type='checkbox'] {
   align-items: center;
   justify-content: center;
 }
-.menu-drawer-container__icon--summary::after{
-  display: none;
+.menu-drawer-container .header__icon.header__icon--summary::after{
+  /* display: none; */
 }
 .header__icon span {
   height: 100%;
