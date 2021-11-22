@@ -148,13 +148,13 @@
                             
                                 <div class="sitewide--title-wrapper">
                                   <h2 class="homepage-sections--title homepage-section-title">
-                                    <a href="/pages/about-us">Why is it so good for me?</a>
+                                    <a href="{{section.settings.product-url}}">{{section.settings.product-title}}</a>
                                   </h2>
                                 </div>
                             
 
                             
-                                <div class="rte featured-row__subtext textarea"><p>Find out what makes our smoothies&nbsp;bursting with&nbsp;<br>nutrients and anti-oxidents!</p></div>
+                                <div class="rte featured-row__subtext textarea"><p>{{section.settings.product-description}}</p></div>
                             
 
                             
@@ -167,23 +167,24 @@
     
 </div>
   <script>
-      let scr = 7051;
+    if(window.innerWidth < 749){
+        let scr = 7051;
       let proimg = document.getElementById('proImg');
       window.addEventListener('scroll',function(){
           var val  = window.scrollY;
           var off = proimg.offsetTop;
-          console.log(val);
+          console.log(window.innerWidth);
           console.log(off);
           proimg.style.transform = "translateY(" + (((val - off) - scr)/6) + "px)";
           
       })
+    }
   </script>
 
   {% schema %}
 {
   "name": "Perrallex",
-  "settings": [
-       
+  "settings": [ 
     {
         "type": "image_picker",
         "id": "bg_1",
@@ -195,56 +196,19 @@
       "label": "Movable Image"
     },
     {
-      "type": "checkbox",
-      "id": "show_line_separator",
-      "default": true,
-      "label": "t:sections.header.settings.show_line_separator.label"
+      "type": "url",
+      "id": "product-url",
+      "label": "Product Url"
     },
     {
-      "type": "checkbox",
-      "id": "enable_sticky_header",
-      "default": true,
-      "label": "t:sections.header.settings.enable_sticky_header.label",
-      "info": "t:sections.header.settings.enable_sticky_header.info"
+      "type": "text",
+      "id": "product-title",
+      "label": "Product Title"
     },
     {
-      "type": "header",
-      "content": "bottom-nav"
-  },
-    {
-        "type": "link_list",
-        "id": "left-nav",
-        "label": "left nav"
-    },
-    {
-        "type": "link_list",
-        "id": "right-nav",
-        "label": "right nav"
-    },
-    {
-      "type": "image_picker",
-      "id": "logo",
-      "label": "t:sections.header.settings.logo.label"
-    },
-    {
-      "type": "select",
-      "id": "logo_position",
-      "options": [
-        {
-          "value": "middle-left",
-          "label": "t:sections.header.settings.logo_position.options__1.label"
-        },
-        {
-          "value": "top-left",
-          "label": "t:sections.header.settings.logo_position.options__2.label"
-        },
-        {
-          "value": "top-center",
-          "label": "t:sections.header.settings.logo_position.options__3.label"
-        }
-      ],
-      "default": "middle-left",
-      "label": "t:sections.header.settings.logo_position.label"
+        "type": "text",
+        "id": "product-description",
+        "label": "Product Description"
     }
   ],
   "presets": [
