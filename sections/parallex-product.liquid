@@ -27,14 +27,14 @@
 
 
 .homepage-content--template--14163371163718__image-text-with-image-overlay-1 .img {
-  background-image: url('//cdn.shopify.com/s/files/1/1367/6069/files/beetroot_berry_parralax_right_2_300x.jpg?v=1604317107');
+  background-image: url('{{section.settings.bg_1 | img_url:"master" }}');
 }
 
 
   
 @media (min-width: 301px) and (max-width: 600px) {
   .homepage-content--template--14163371163718__image-text-with-image-overlay-1 .img {
-    background-image: url('//cdn.shopify.com/s/files/1/1367/6069/files/beetroot_berry_parralax_right_2_600x.jpg?v=1604317107');
+    background-image: url('{{section.settings.bg_1 | img_url:"master" }}');
   }
 }
   
@@ -42,7 +42,7 @@
   
 @media (min-width: 601px) and (max-width: 900px) {
   .homepage-content--template--14163371163718__image-text-with-image-overlay-1 .img {
-    background-image: url('//cdn.shopify.com/s/files/1/1367/6069/files/beetroot_berry_parralax_right_2_900x.jpg?v=1604317107');
+    background-image: url('{{section.settings.bg_1 | img_url:"master" }}');
   }
 }
   
@@ -50,7 +50,7 @@
   
 @media (min-width: 901px) and (max-width: 1200px) {
   .homepage-content--template--14163371163718__image-text-with-image-overlay-1 .img {
-    background-image: url('//cdn.shopify.com/s/files/1/1367/6069/files/beetroot_berry_parralax_right_2_1200x.jpg?v=1604317107');
+    background-image: url('{{section.settings.bg_1 | img_url:"master" }}');
   }
 }
   
@@ -58,7 +58,7 @@
   
 @media (min-width: 1201px) and (max-width: 1500px) {
   .homepage-content--template--14163371163718__image-text-with-image-overlay-1 .img {
-    background-image: url('//cdn.shopify.com/s/files/1/1367/6069/files/beetroot_berry_parralax_right_2_1500x.jpg?v=1604317107');
+    background-image: url('{{section.settings.bg_1 | img_url:"master" }}');
   }
 }
   
@@ -66,7 +66,7 @@
   
 @media (min-width: 1501px) and (max-width: 2000px) {
   .homepage-content--template--14163371163718__image-text-with-image-overlay-1 .img {
-    background-image: url('//cdn.shopify.com/s/files/1/1367/6069/files/beetroot_berry_parralax_right_2_2000x.jpg?v=1604317107');
+    background-image: url('{{section.settings.bg_1 | img_url:"master" }}');
   }
 }
   
@@ -74,7 +74,7 @@
   
 @media (min-width: 2001px) {
   .homepage-content--template--14163371163718__image-text-with-image-overlay-1 .img {
-    background-image: url('//cdn.shopify.com/s/files/1/1367/6069/files/beetroot_berry_parralax_right_2_4000x.jpg?v=1604317107');
+    background-image: url('{{section.settings.bg_1 | img_url:"master" }}');
   }
 }
   
@@ -83,7 +83,7 @@
 
           
           .homepage-content--template--14163371163718__image-text-with-image-overlay-1 {
-            background-image: url('//cdn.shopify.com/s/files/1/1367/6069/files/beetroot_berry_parralax_right_2_10x10.jpg?v=1604317107');
+            background-image: url('{{section.settings.bg_1 | img_url:"master" }}');
             background-size: 1px 1px;
           }
 
@@ -161,18 +161,13 @@
 
   {% schema %}
 {
-  "name": "t:sections.header.name",
+  "name": "Perrallex",
   "settings": [
        
     {
-      "type": "range",
-      "id": "logo_width",
-      "min": 50,
-      "max": 250,
-      "step": 10,
-      "default": 100,
-      "unit": "t:sections.header.settings.logo_width.unit",
-      "label": "t:sections.header.settings.logo_width.label"
+        "type": "image_picker",
+        "id": "bg_1",
+        "label": "Movable Image"
     },
     {
       "type": "link_list",
