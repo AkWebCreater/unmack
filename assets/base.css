@@ -1880,6 +1880,7 @@ border-left: 2px solid #fff;
 .header__icon::after{
   position: absolute;
   right: 0;
+  top: 10px;
 
 }
 .header__icon svg path,
@@ -2363,7 +2364,7 @@ body  .header__search{
     display: none !important;
   }
 }
-.header__search svg use{
+.header__search span svg use{
   color: #000 !important;
 }
 @media (max-width:480px) {
