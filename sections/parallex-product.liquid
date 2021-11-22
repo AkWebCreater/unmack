@@ -1,0 +1,169 @@
+<style>
+    header {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  transform-style: inherit;
+  z-index: -1;
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  display: block;
+  background: url(https://picsum.photos/g/1921/1081?random) top center;
+  background-size: cover;
+  transform: translateZ(-1px) scale(2.1);
+  min-height: 100%;
+  z-index: -2;
+}
+
+
+/*************************************************************
+  SECTIONS
+**************************************************************/
+section {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  transform-style: inherit;
+}
+
+.section1 {
+  background: #fafafa;
+  box-shadow: 0 0 20px #333;
+  z-index: 1;
+}
+
+.section2::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  display: block;
+  background: url(https://picsum.photos/g/1920/1080?random) top center;
+  background-size: cover;
+  transform: translateZ(-.5px) scale(1.6);
+  z-index: -1;
+}
+
+/*************************************************************
+  HEADINGS
+**************************************************************/
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  position: absolute;
+  padding: 1rem;
+  background: #fafafa;
+  box-shadow: 0 0 20px #333;
+  top: 50%;
+  left: 50%;
+  transform: translateZ(-1px) scale(2) translate(-25%, -25%);
+}
+
+.section1 h1 {
+  z-index: 3;
+  transform: translate(-50%, -50%);
+  box-shadow: none;
+}
+
+.section2 h1 {
+  transform: translateZ(-.3px) scale(1.3) translate(-39%, -39%);
+  z-index: 3;
+}
+</style>
+<header>
+    <h1>CSS-Only Parallax Effect</h1>
+  </header>
+  <section class="section1">
+    <h1>Section w/o parallax effect</h1>
+  </section>
+  <section class="section2">
+    <h1>Section w/ parallax effect</h1>
+  </section>
+  
+
+  {% schema %}
+{
+  "name": "t:sections.header.name",
+  "settings": [
+       
+    {
+      "type": "range",
+      "id": "logo_width",
+      "min": 50,
+      "max": 250,
+      "step": 10,
+      "default": 100,
+      "unit": "t:sections.header.settings.logo_width.unit",
+      "label": "t:sections.header.settings.logo_width.label"
+    },
+    {
+      "type": "link_list",
+      "id": "menu",
+      "default": "main-menu",
+      "label": "t:sections.header.settings.menu.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_line_separator",
+      "default": true,
+      "label": "t:sections.header.settings.show_line_separator.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_sticky_header",
+      "default": true,
+      "label": "t:sections.header.settings.enable_sticky_header.label",
+      "info": "t:sections.header.settings.enable_sticky_header.info"
+    },
+    {
+      "type": "header",
+      "content": "bottom-nav"
+  },
+    {
+        "type": "link_list",
+        "id": "left-nav",
+        "label": "left nav"
+    },
+    {
+        "type": "link_list",
+        "id": "right-nav",
+        "label": "right nav"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "t:sections.header.settings.logo.label"
+    },
+    {
+      "type": "select",
+      "id": "logo_position",
+      "options": [
+        {
+          "value": "middle-left",
+          "label": "t:sections.header.settings.logo_position.options__1.label"
+        },
+        {
+          "value": "top-left",
+          "label": "t:sections.header.settings.logo_position.options__2.label"
+        },
+        {
+          "value": "top-center",
+          "label": "t:sections.header.settings.logo_position.options__3.label"
+        }
+      ],
+      "default": "middle-left",
+      "label": "t:sections.header.settings.logo_position.label"
+    }
+  ],
+  "presets": [
+      {
+          "category": "image",
+          "name":"Prallex Section"
+      }
+  ]
+}
+{% endschema %}
