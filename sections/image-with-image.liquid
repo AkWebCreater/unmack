@@ -113,79 +113,14 @@
     margin-right:0;
   }
    #section-{{section.id}} .text-image {
-    /* min-height: 120px; */
     color:{{ section.settings.text-left-color}};
 }
-   #section-{{section.id}} .image-margin-1{
-     margin:1rem;
-     	margin-left:0;
-  }
-   #section-{{section.id}} .grid__item {
-    position: relative;
-}
- #section-{{section.id}} .text-over-image {
-    position: absolute;
-    color: white;
-    top: 26%;
-    left: 30px;
-   font-size: 22px;
-}
-  #section-{{section.id}} .image-with-text{
-  	    margin-top: 1rem;
-        margin-left: 1rem;
-        margin-right: 1rem;
-    	margin-bottom: 0rem;
-  }
-  /* #section-{{section.id}} .banner__buttons {
-    margin-top: 2rem;
-   
-} */
-   #section-{{section.id}} .button, .customer button, .shopify-challenge__button{
-      padding:2px;
-     min-width: 0;
-     min-height: 0;
-     border-radius: 5px;
-     background-color: transparent;
-     box-shadow:none;
-   }
-   .image-with-text .text-over-image{
-    min-height: 120px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .text-over-image p{
-    margin: 0;
-    line-height: 1.2;
-  }
-@media screen and (max-width: 750px) {
-  #section-{{section.id}} .text-over-image { 
-  	/* top: -5%; */
-    left: 30px;
-   	font-size: 20px;
-}
-   #section-{{section.id}} .grid__item {
-      padding-top: 10px;
-}
-  #section-{{section.id}} .image-margin{
-  	margin-left:0px;
-  }
-  #section-{{section.id}} .image-with-text{
-  	    margin-top: 5rem;
-  }
-  #section-{{section.id}} .image-margin-1{
-     margin:0rem;
-  }
-
-}
-
-
 </style>
 <!--  End image with image section-->
 {% schema %}
 {
   "name": "image-with-image",
-  "class": "spaced-section--full-width",
+  "class": "spaced-section--full-width image-with-image",
   "settings": [
     {
       "type": "image_picker",

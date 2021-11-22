@@ -135,3 +135,61 @@
   margin-top: 0;
   margin-bottom: 1rem;
 }
+/* image with image css */
+.image-with-image .button, .customer button, .shopify-challenge__button{
+  padding:2px;
+ min-width: 0;
+ min-height: 0;
+ border-radius: 5px;
+ background-color: transparent;
+ box-shadow:none;
+}
+.image-with-image .text-over-image {
+  position: absolute;
+  color: white;
+  left: 30px;
+  font-size: 22px;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.text-over-image p{
+  margin: 0;
+  line-height: 1.2;
+}
+.image-with-image .grid__item {
+  position: relative;
+}
+
+.image-with-image .image-with-text{
+      margin-top: 1rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    margin-bottom: 0rem;
+}
+.image-with-image .image-margin-1{
+  margin:1rem;
+    margin-left:0;
+}
+@media screen and (max-width: 750px) {
+  .image-with-image .text-over-image { 
+   	font-size: 20px;
+}
+.image-with-image .grid__item {
+      padding-top: 10px;
+}
+.image-with-image  .image-margin{
+  	margin-left:0px;
+  }
+  .image-with-image  .image-with-text{
+  	    margin-top: 5rem;
+  }
+  .image-with-image  .image-margin-1{
+     margin:0rem;
+  }
+
+}
+
