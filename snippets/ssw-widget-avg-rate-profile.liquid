@@ -14,7 +14,7 @@
     {% if shop.metafields.ssw['unite_reviews'] %}
       {% assign ssw_unite_reviews = shop.metafields.ssw['unite_reviews'] | plus: 0 %}
     {% endif %}
-    <div id="ssw-avg-rate-profile-html" data-product-id="{{ product.id }}">
+    <div id="ssw-avg-rate-profile-html" class="gw-hide" data-product-id="{{ product.id }}">
       {% assign ssw_reviews_widget_show = 0 %}
       {% if shop.metafields.ssw.settings %}
          {% assign ssw_reviews_widget_show = shop.metafields.ssw['settings'].reviews_widget_show | plus: 0 %}
@@ -128,10 +128,16 @@
       {% endif %}
       <div class="ssw-clearfix"></div>
     </div>
+    <style>
+        .gw-hide {
+            display: none;
+        }
+    </style>
     <script type="text/javascript" defer>
         if (typeof sswRun === 'function') {
             sswRun(function () {
                 Ssw.gwAssetsManifestLoader.requireByKey("review.critical.css", "STYLE");
+                    ssw('#ssw-avg-rate-profile-html').removeClass('gw-hide');
                 ssw('#ssw-avg-rate-profile-html .ssw-stars, #ssw-avg-rate-profile-html .ssw-question-count').click(function () {
                     if (ssw('#ssw-widget-recommends-html').length > 0) {
                         ssw('html, body').animate({scrollTop : ssw("#ssw-widget-recommends-html").offset().top - 40 }, 500);
