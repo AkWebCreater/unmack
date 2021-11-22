@@ -145,7 +145,14 @@
                 
                     <div class="grid__item homepage-featured-content-box image-with-text-overlay__content-box">
                         <div class="homepage-featured-content-box-inner shown-on-scroll animated fadeInUp">
-                            
+                            <div class="sitewide--title-wrapper">
+                                {% if section.settings.pre-heading != blank %}
+                                    
+                                <h3 class="homepage-sections--title homepage-section-title">
+                                  {{section.settings.pre-heading}}
+                                </h3>
+                                {% endif %}
+                              </div>
                                 <div class="sitewide--title-wrapper">
                                   <h2 class="homepage-sections--title homepage-section-title">
                                     <a href="{{section.settings.product-url}}">{{section.settings.product-title}}</a>
@@ -206,6 +213,12 @@
       "type": "text",
       "id": "product-title",
       "label": "Product Title"
+    },
+    {
+        "type": "text",
+        "id": "pre-heading",
+        "label": "Pre Heading",
+        "default": "Organic Virgin"
     },
     {
         "type": "text",
