@@ -2422,3 +2422,9 @@ body  .header__search{
 div.wishlist{
   min-height: 37px;
 }
+div.wishlist .ssw-faveiticon{
+  right: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #f07f2f;
+}
