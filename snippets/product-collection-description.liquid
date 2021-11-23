@@ -50,12 +50,14 @@
 {% endunless %}
 {% if template contains 'product' %}
 <div class="page-width">
-  <div class="product-description-title">
-  {{ productDescription[1] }}
-  </div>
-  <div class="product-description">
-  {{ productDescription[2] }}
-  </div>
+  {% if productDescription[1] or productDescription[2] %}
+      <div class="product-description-title">
+      {{ productDescription[1] }}
+      </div>
+      <div class="product-description">
+      {{ productDescription[2] }}
+      </div>
+  {% endif %}
   {% if productDescription[3] or productDescription[4] %}
     
       <div class="shopify-section spaced-section spaced-section--full-width">
