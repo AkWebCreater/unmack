@@ -2428,3 +2428,14 @@ div.wishlist .ssw-faveiticon{
   width: 25px;
   background-color: #f07f2f; */
 }
+@media (max-width:989px) {
+  .body--product .what-make-us-different{
+    display: none;
+  }
+}
+  @media (max-width:749px) {
+    div.wishlist .ssw-faveiticon{
+      right: 16px;
+
+    }
+  }
