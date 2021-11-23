@@ -60,9 +60,9 @@
   {% endif %}
   {% if productDescription[3] or productDescription[4] %}
     
-      <div class="spaced-section">
-      <div class="">
-        <div class="grid grid--gapless grid--1-col grid--2-col-tablet">
+      <div class="spaced-section ">
+      <div class="image-with-text  color-scheme-background-1">
+        <div class="image-with-text__grid color-background-1 image-with-text__grid--reverse grid grid--gapless grid--1-col grid--2-col-tablet">
           {% if productDescription[3] != blank %}
           <div class="grid__item">
             <div class="image-with-text__content image-with-text__content--adapt">
@@ -74,7 +74,7 @@
           {% endif %}
           {% if productDescription[4] != blank %}
           <div class="grid__item">
-            <div class="">
+            <div class="image-with-text__media image-with-text__media--placeholder">
               {{ productDescription[4] }}
             </div>
         </div>
@@ -84,7 +84,7 @@
     </div>
   {% endif %}
   {% if productDescription[7] != blank %}
-  <div class="">
+  <div class="image-with-text  color-scheme-background-1">
       <div class="">
         <div class="grid products">
           {{ productDescription[7] }}
@@ -95,7 +95,7 @@
   {% endif %}
   {% if productDescription[5] or productDescription[6]  %}
     
-      <div class="spaced-section">
+      <div class="shopify-section spaced-section spaced-section--full-width">
       <div class="image-with-text  color-scheme-background-1">
         <div class="image-with-text__grid color-background-1 image-with-text__grid--reverse grid grid--gapless grid--1-col grid--2-col-tablet">
           {% if productDescription[5] != blank %}
@@ -121,7 +121,7 @@
   {% if  productDescription[8] %}
     
   <slider-component>
-    <ul class="grid grid--1-col grid--2-col-tablet"  role="list">
+    <ul class="multicolumn-list grid grid--1-col grid--2-col-tablet"  role="list">
 		   {{ productDescription[8] }}  
     </ul>
   </slider-component>
