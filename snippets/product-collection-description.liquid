@@ -186,7 +186,6 @@ li.center.grid__item.multicolumn-list__item {
  }
   .grid-1 {
     font-weight: 600;
-    flex: 1;
 }
 .grid-1 .grid-up{
   max-width: 190px;
@@ -209,6 +208,22 @@ li.center.grid__item.multicolumn-list__item {
  }
 
    
+  }
+  @media (min-width:481px) {
+    .grid-1 {
+         max-width: 50%;
+      }
+  }
+  @media (min-width:769px) {
+      .grid-1 {
+         max-width: 25%;
+      }
+  }
+  @media (min-width:1400px) {
+    .grid-1 {
+      max-width: 100%;
+    flex: 1;
+}
   }
 
 
