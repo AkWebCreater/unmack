@@ -1969,12 +1969,12 @@ details[open] > .search-modal {
     right: 1rem;
   }
 }
-
+@media (max-width:480px){
+  .search-modal__close-button {
+    right: -6px;
+}
 @media screen and (min-width: 990px) {
-/*   .search-modal__form {
-    max-width: 47.8rem;
-  }
- */
+
   .search-modal__close-button {
     position: initial;
     margin-left: 0.5rem;
