@@ -47,7 +47,9 @@
       "type": "main-page",
       "settings": {
         "top_img": "shopify:\/\/shop_images\/all-policy_imsge.png",
+        "top_img_mob": "shopify:\/\/shop_images\/5_c7f6bd0b-92b7-48db-a54d-15c081edd5de.jpg",
         "bottom_img": "shopify:\/\/shop_images\/image-2.png",
+        "bottom_img_mob": "shopify:\/\/shop_images\/img2.jpg",
         "top_link": "",
         "bottom_link": ""
       }
