@@ -51,12 +51,14 @@
 {% if template contains 'product' %}
 <div class="page-width">
   {% if productDescription[1] or productDescription[2] %}
-      <div class="product-description-title">
+   <div class="description">
+    <div class="product-description-title">
       {{ productDescription[1] }}
       </div>
       <div class="product-description">
       {{ productDescription[2] }}
       </div>
+   </div>
   {% endif %}
   {% if productDescription[3] or productDescription[4] %}
     
@@ -156,12 +158,6 @@
     max-width: 190px;
     width: 100%;
 }
-  .grid {
-    margin-left: 3rem;
-}
-  .image-with-text__media.image-with-text__media--placeholder {
-    margin-left: 40px;
-}
   .image-with-text__text.rte{
   	text-align: justify;
     letter-spacing: 0.03rem;
@@ -169,8 +165,6 @@
   }
   .product-description {
     text-align: justify;
-    margin-left: 25px;
-    letter-spacing: 0.03rem;
     line-height: 1.4;
 }
   .decription-main {
