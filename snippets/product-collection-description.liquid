@@ -56,28 +56,31 @@
   <div class="product-description">
   {{ productDescription[2] }}
   </div>
-  <div class="shopify-section spaced-section spaced-section--full-width">
-  <div class="image-with-text  color-scheme-background-1">
-    <div class="image-with-text__grid color-background-1 image-with-text__grid--reverse grid grid--gapless grid--1-col grid--2-col-tablet">
-      {% if productDescription[3] != blank %}
-      <div class="grid__item">
-         <div class="image-with-text__content image-with-text__content--adapt">
-           <div class="image-with-text__text rte">
-          {{ productDescription[3] }}
-           </div>
-      	</div>
-      </div>
-      {% endif %}
-      {% if productDescription[4] != blank %}
-      <div class="grid__item">
-        <div class="image-with-text__media image-with-text__media--placeholder">
-        	{{ productDescription[4] }}
+  {% if productDescription[3] or productDescription[4] %}
+    
+      <div class="shopify-section spaced-section spaced-section--full-width">
+      <div class="image-with-text  color-scheme-background-1">
+        <div class="image-with-text__grid color-background-1 image-with-text__grid--reverse grid grid--gapless grid--1-col grid--2-col-tablet">
+          {% if productDescription[3] != blank %}
+          <div class="grid__item">
+            <div class="image-with-text__content image-with-text__content--adapt">
+              <div class="image-with-text__text rte">
+              {{ productDescription[3] }}
+              </div>
+            </div>
+          </div>
+          {% endif %}
+          {% if productDescription[4] != blank %}
+          <div class="grid__item">
+            <div class="image-with-text__media image-with-text__media--placeholder">
+              {{ productDescription[4] }}
+            </div>
         </div>
+          {% endif %}
+      </div>
+      </div>
     </div>
-      {% endif %}
-  </div>
-  </div>
-</div>
+  {% endif %}
   {% if productDescription[7] != blank %}
   <div class="image-with-text  color-scheme-background-1">
       <div class="">
@@ -88,41 +91,46 @@
   
   </div>
   {% endif %}
-  
-  <div class="shopify-section spaced-section spaced-section--full-width">
-  <div class="image-with-text  color-scheme-background-1">
-    <div class="image-with-text__grid color-background-1 image-with-text__grid--reverse grid grid--gapless grid--1-col grid--2-col-tablet">
-      {% if productDescription[5] != blank %}
-      <div class="grid__item">
-        <div class="image-with-text__media image-with-text__media--placeholder">
-        	{{ productDescription[5] }}
-        </div> 
+  {% if productDescription[5] or productDescription[6]  %}
+    
+      <div class="shopify-section spaced-section spaced-section--full-width">
+      <div class="image-with-text  color-scheme-background-1">
+        <div class="image-with-text__grid color-background-1 image-with-text__grid--reverse grid grid--gapless grid--1-col grid--2-col-tablet">
+          {% if productDescription[5] != blank %}
+          <div class="grid__item">
+            <div class="image-with-text__media image-with-text__media--placeholder">
+              {{ productDescription[5] }}
+            </div> 
+          </div>
+          {% endif %}
+          {% if productDescription[6] != blank %}
+          <div class="grid__item">
+            <div class="image-with-text__content image-with-text__content--adapt">
+              <div class="image-with-text__text rte">
+              {{ productDescription[6] }}
+              </div>
+          </div>        
+        </div>
+          {% endif %}
       </div>
-      {% endif %}
-      {% if productDescription[6] != blank %}
-      <div class="grid__item">
-        <div class="image-with-text__content image-with-text__content--adapt">
-           <div class="image-with-text__text rte">
-          {{ productDescription[6] }}
-           </div>
-      </div>        
+      </div>
     </div>
-      {% endif %}
-  </div>
-  </div>
-</div>
-  
-
+  {% endif %}
+  {% if  productDescription[8] %}
+    
   <slider-component>
     <ul class="multicolumn-list grid grid--1-col grid--2-col-tablet"  role="list">
 		   {{ productDescription[8] }}  
     </ul>
   </slider-component>
-  
-	{{ productDescription[9] }}
-  
+  {% endif %}
+{% if productDescription[9] %}
+{{ productDescription[9] }}
+{% endif %}
+{% if product.metafields.my_fields.product_dimension or metafields.my_fields.date_first_available or metafields.my_fields.sku_code or product.metafields.my_fields.item_part_number or product.metafields.my_fields.item_weight or product.metafields.my_fields.item_dimensions or product.metafields.my_fields.net_quantity or product.metafields.my_fields.ingredients or product.metafields.my_fields.direction%}
   <hr>
   {% render 'product-additional-information' %}
+  {% endif %}
 </div>
 {% endif %}
 
