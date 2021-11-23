@@ -79,13 +79,7 @@
     </div>
     <div class="product__info-wrapper grid__item">
       <div id="ProductInfo-{{ section.id }}" class="product__info-container{% if section.settings.enable_sticky_info %} product__info-container--sticky{% endif %}">
-        {% for tag in product.tags %}
-          {% if tag contains 'Country' %}
-          {%- assign country = tag | split: '-' -%}
-          {%- assign origin = country | last -%}
-           
-          {% endif %}
-        {% endfor %}
+
         {%- assign product_form_id = 'product-form-' | append: section.id -%}
 
         {%- for block in section.blocks -%}
