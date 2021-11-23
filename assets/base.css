@@ -1973,6 +1973,7 @@ details[open] > .search-modal {
   .search-modal__close-button {
     right: -6px;
 }
+}
 @media screen and (min-width: 990px) {
 
   .search-modal__close-button {
