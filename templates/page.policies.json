@@ -1,5 +1,48 @@
 {
   "sections": {
+    "16376316677294f1aa": {
+      "type": "banner",
+      "blocks": {
+        "1637631667523ddad7-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": ""
+          }
+        },
+        "1637631667523ddad7-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template."
+          }
+        },
+        "1637631667523ddad7-2": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "1637631667523ddad7-0",
+        "1637631667523ddad7-1",
+        "1637631667523ddad7-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/policy-page.png",
+        "desktop_text_box_position": "center",
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "adapt_height_first_image": true
+      }
+    },
     "main": {
       "type": "main-page",
       "settings": {
@@ -11,6 +54,7 @@
     }
   },
   "order": [
+    "16376316677294f1aa",
     "main"
   ]
 }
