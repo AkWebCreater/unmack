@@ -2419,6 +2419,9 @@ body  .header__search{
   }
 }
 /* product page */
+.grid.products {
+
+}
 div.wishlist{
   min-height: 37px;
 }
