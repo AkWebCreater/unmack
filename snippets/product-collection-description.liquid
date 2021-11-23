@@ -120,11 +120,11 @@
   {% endif %}
   {% if  productDescription[8] %}
     
-  <slider-component>
-    <ul class="multicolumn-list grid grid--1-col grid--2-col-tablet"  role="list">
+
+    <ul class="product-additional-media grid grid--1-col grid--2-col-tablet"  role="list">
 		   {{ productDescription[8] }}  
     </ul>
-  </slider-component>
+ 
   {% endif %}
 {% if productDescription[9] %}
 {{ productDescription[9] }}
@@ -144,7 +144,8 @@
     margin: auto;
     width: 80%;
 }
-li.center.grid__item.multicolumn-list__item {
+
+.product-additional-media li.center.grid__item.multicolumn-list__item {
     width: 20%;
 }
   img.image-with-text{
@@ -186,6 +187,7 @@ li.center.grid__item.multicolumn-list__item {
  }
   .grid-1 {
     font-weight: 600;
+    max-width: 50%;
     width: 100%;
 }
 .grid-1 .grid-up{
@@ -214,18 +216,29 @@ li.center.grid__item.multicolumn-list__item {
   }
   @media (min-width:481px) {
     .grid-1 {
-         max-width: 50%;
+         max-width: 33.33%;
       }
+      .product-additional-media li.center.grid__item.multicolumn-list__item {
+   
+    max-width: 50%;
+}
   }
-  @media (min-width:769px) {
+  @media (min-width:750px) {
       .grid-1 {
          max-width: 25%;
       }
+      .product-additional-media li.center.grid__item.multicolumn-list__item {
+   
+        max-width: 33.33%;
+}
   }
-  @media (min-width:1400px) {
+  @media (min-width:990px) {
     .grid-1 {
       max-width: 100%;
     flex: 1;
+}
+.product-additional-media li.center.grid__item.multicolumn-list__item {
+   max-width:20%;
 }
   }
 
