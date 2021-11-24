@@ -22,7 +22,33 @@ setTimeout(()=>{  $('.product-recommendations .grid').slick({
   ]
 })},3000)
 // product page slider end
-
+// product range slider home page
+$('.product-range-slider ul').slick({
+  slidesToShow: 6,
+  arrows: true,
+  nextArrow: '<span  class="slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i></span>',
+  prevArrow: '<span  class="slick-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></span>',
+  adaptiveHeight: true,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 750,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 2,
+        adaptiveHeight: true,
+      },
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+      },
+    },
+  ]
+})
+// product range slider end here
 // Umanac Journey year section js
   $('.journey-products').slick(
     {
@@ -46,16 +72,7 @@ setTimeout(()=>{  $('.product-recommendations .grid').slick({
 })
 // end here
 
-// product range slider
-$('.product-range-slider ul').slick({
-    slidesToShow: 6,
-    arrows: true,
-    nextArrow: '<span  class="slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i></span>',
-    prevArrow: '<span  class="slick-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></span>',
-    adaptiveHeight: true,
-    slidesToScroll: 1
- })
-// product range slider end here
+
 
 // custome js for gift wrap button -- check form input on chekout click if outer cechekbox checked
 $('.cart__ctas').click(function() {
