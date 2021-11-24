@@ -1105,15 +1105,17 @@ button.product__media-toggle {
   .product-description{
     margin-left:0px;
   }
-  li.center.grid__item.multicolumn-list__item {
- 
-}
+
   .grid.slider.slider-nav{
     margin-top: 70px;
   }
-  h3.title.globo-heading::after{
-    top: 55px;
-  }
+
+}
+h3.title.globo-heading{
+  position: relative;
+}
+h3.title.globo-heading::after{
+  bottom:0;
 }
 .product-details-right{
   width: 100%;
