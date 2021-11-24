@@ -46,6 +46,15 @@ setTimeout(()=>{  $('.product-recommendations .grid').slick({
 })
 // end here
 
+// product range slider
+$('.product-range-slider ul').slick({
+    slidesToShow: 5,
+    arrows:false,
+    adaptiveHeight: true,
+    slidesToScroll: 1
+ })
+// product range slider end here
+
 // custome js for gift wrap button -- check form input on chekout click if outer cechekbox checked
 $('.cart__ctas').click(function() {
       if ($('.gift-wrap-outer input.regular-checkbox').is(":checked")) {
