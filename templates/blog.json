@@ -82,7 +82,7 @@
         "show_image": true,
         "blogs_menu": "blogs-menu",
         "recipe_menu": "blog-recipe-menu",
-        "bottom-blog": ""
+        "bottom-blog": "all"
       }
     },
     "1631627412ad2cf2fd": {
@@ -139,7 +139,7 @@
         "show_image": true,
         "blogs_menu": "",
         "recipe_menu": "",
-        "bottom-blog": "news"
+        "bottom-blog": "all"
       }
     },
     "1631539707747db7e5": {
