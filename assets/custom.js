@@ -33,6 +33,9 @@ setTimeout(()=>{  $('.product-recommendations .grid').slick({
    }
    )
   //  year slide Click 
+  var sec = $('.up-sec .section-images-wrapper');
+  var h = sec.find('.active').height();
+  sec.height(h);
   $('.year-slide').click(function() {
     var index = $(this).find('.year-img').attr('data-index');
     $('.journey-products').slick('slickGoTo', index - 1);
