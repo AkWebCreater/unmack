@@ -128,4 +128,8 @@
           "articles articles articles sidebar";
     }
   }
+  /* custome style */
+  .recipe-nav .pipe{
+font-weight: 700;
+  }
   
