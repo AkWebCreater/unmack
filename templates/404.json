@@ -157,7 +157,7 @@
       ],
       "settings": {
         "title": "Product Range",
-        "image-width": "180",
+        "image-width": "130",
         "image_ratio": "square",
         "color_scheme": "background-2",
         "swipe_on_mobile": true,
