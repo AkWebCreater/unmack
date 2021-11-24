@@ -1115,7 +1115,7 @@ h3.title.globo-heading{
   position: relative;
 }
 h3.title.globo-heading::after{
-  top: unset;
+  top: unset !important;
   bottom:0;
 }
 .product-details-right{
