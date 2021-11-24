@@ -49,7 +49,9 @@ setTimeout(()=>{  $('.product-recommendations .grid').slick({
 // product range slider
 $('.product-range-slider ul').slick({
     slidesToShow: 6,
-    arrows:false,
+    arrows: true,
+    nextArrow: '<span  class="slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i></span>',
+    prevArrow: '<span  class="slick-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></span>',
     adaptiveHeight: true,
     slidesToScroll: 1
  })

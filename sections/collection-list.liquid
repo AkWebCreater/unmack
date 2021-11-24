@@ -52,7 +52,7 @@
                 {% unless section.settings.image_padding %}<div class="overlay-card"></div>{% endunless %}
                 <h3>
                   {%- if block.settings.collection.title != blank -%}
-                    {{- block.settings.collection.title | escape -}}<span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span>
+                    {{- block.settings.collection.title | escape -}}
                   {%- else -%}
                     {{ 'onboarding.collection_title' | t }}
                   {%- endif -%}
