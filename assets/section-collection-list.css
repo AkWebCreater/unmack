@@ -168,6 +168,9 @@ padding:1rem 0;
   background-color: #fef9ed;
 }
 /* slider component override */
+.product-range-slider{
+  padding: 0 20px;
+}
 .collection-list{
   z-index: 1;
   padding: 0;
