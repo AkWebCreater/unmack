@@ -14,18 +14,18 @@
     {%- endif -%}
   </div>
 <div class="product-range-slider">
-  <ul class="collection-list grid grid--6-col-desktop grid--1-col{% if section.blocks.size < 5 %} grid--{{ section.blocks.size }}-col-tablet{% else %} grid--3-col-tablet{% endif %} slider slider--tablet grid--peek collection-list--{{ section.blocks.size }}-items{% if section.settings.show_view_all == false or section.blocks.size > collections.size %} negative-margin--small{% endif %}"
+  <ul class="collection-list"
     id="Slider-{{ section.id }}"
     role="list"
   >
     {%- for block in section.blocks -%}
-      <li class="collection-list__item grid__item slider__slide">
+      <li class="collection-list__item">
         <a{% if block.settings.collection != blank and block.settings.collection.all_products_count > 0 %} href="{{ block.settings.collection.url }}"{% endif %}
           class="card animate-arrow link{% if block.settings.collection.image != blank %} card--media{% else %}{% if section.settings.image_ratio != 'adapt' %} card--stretch{% endif %}{% endif %}{% unless section.settings.image_padding %} card--light-border{% endunless %}"
         >
           <div class="card--stretch card-colored color-{{ section.settings.color_scheme }}">
             {%- if block.settings.collection.image != blank -%}
-              <div{% if section.settings.image_padding %} class="card__media-spacer"{% endif %}>
+              <div class="card__media-spacer" style="max-width: {{section.settings.image-width}}px;margin:auto">
                 {% if section.settings.image_padding %}<div class="overlay-card"></div>{% endif %}
                 <div class="media{% if section.blocks.size > 1 %} media--{{ section.settings.image_ratio }}{% endif %} media--hover-effect overflow-hidden"
                   {% if section.settings.image_ratio == 'adapt' and section.blocks.size > 1 %}style="padding-bottom: {{ 1 | divided_by: block.settings.collection.image.aspect_ratio | times: 100 }}%;"{% endif %}>
@@ -103,6 +103,12 @@
       "id": "title",
       "default": "Collections",
       "label": "t:sections.collection-list.settings.title.label"
+    },
+    {
+      "type": "text",
+      "id": "image-width",
+      "label": "Set Image Width",
+      "default": "160"
     },
     {
       "type": "select",

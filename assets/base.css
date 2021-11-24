@@ -2374,12 +2374,7 @@ body  .header__search{
   }
 }
 
-/* home product range  */
-@media (max-width:990px) {
-  .collection-list-section .collection-list__item{
-    max-width: 50% !important;
-  }
-}
+
 /* home section grid wrapper */
 @media (max-width:990px) {
   .section-grid-wrapper .grid__item:not(:last-child){

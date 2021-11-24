@@ -172,22 +172,8 @@ padding:1rem 0;
 }
 
 /* slider component override */
-.collection-list-wrapper .slider-counter{
-  display: none;
-}
-.collection-list-wrapper .slider-buttons{
 
-  width: calc(100% + 88px);
-  justify-content: space-between;
-  left: -44px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.collection-list-wrapper .slider-button{
 
-  background-color: transparent;
-  border: 0;
-}
 .collection-list{
   z-index: 1;
   background-color: #fef9ed;
@@ -195,22 +181,5 @@ padding:1rem 0;
 .collection-list__item:hover .card__text h3{
   color: var(--color-pincode-validator);
 }
-.collection-list-wrapper .slider-button svg{
-fill: #000 !important;
-color: #000 !important;
-width: 18px;
-height: 25px;
 
-}
-.collection-list-wrapper slider-component .slider{
 
-  padding-bottom: 0;
-}
-@media (max-width:749px) {
-  .collection-list-wrapper .slider-buttons{
-
-    width: 100%;
-    justify-content: space-between;
-    left:0;
-  }
-}
