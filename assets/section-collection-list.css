@@ -155,9 +155,6 @@ position: relative;
 padding:0;
   text-align:center;
 }
-.collection-list .card .icon-wrap{
-display:none;
-}
 .collection-list .card--media .card__text-spacing{
 padding:1rem 0;
 /*   text-align:center */
@@ -166,17 +163,13 @@ padding:1rem 0;
 .collection-list-wrapper .title-wrapper-with-link{
   margin-top: 0;
 }
-.collection-list-wrapper .card__text{
 
+.collection-list .card-colored,.collection-list,.collection-list-wrapper .card__text{
   background-color: #fef9ed;
 }
-
 /* slider component override */
-
-
 .collection-list{
   z-index: 1;
-  background-color: #fef9ed;
 }
 .collection-list__item:hover .card__text h3{
   color: var(--color-pincode-validator);
