@@ -812,6 +812,9 @@ a.product__text {
   width: 2.2rem;
 }
 /* custome style added */
+.desc-3 img{
+  width: 100%;
+}
 .product-badge .badge-title{
   font-size: 12px;
 }
