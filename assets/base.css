@@ -1622,7 +1622,7 @@ input[type='checkbox'] {
   display: flex;
   font-size: 13px;
   align-items: center;
-  border-bottom: 0.1rem solid var(--color-foreground-20);
+  /* border-bottom: 0.1rem solid var(--color-foreground-20); */
   color: var(--color-foreground);
   background-color: #000;
 }

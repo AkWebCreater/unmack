@@ -511,7 +511,7 @@
                     {%- render 'icon-play' -%}
                   {%- endif -%}
                 </span>
-                <img
+                <img id="pro-img"
                   srcset="{% if media.preview_image.width >= 288 %}{{ media.preview_image | img_url: '288x' }} 288w,{% endif %}
                           {% if media.preview_image.width >= 576 %}{{ media.preview_image | img_url: '576x' }} 576w,{% endif %}
                           {% if media.preview_image.width >= 550 %}{{ media.preview_image | img_url: '550x' }} 550w,{% endif %}
@@ -621,7 +621,10 @@
 
   <script src="{{ 'product-model.js' | asset_url }}" defer></script>
 {%- endif -%}
-
+<script type="text/javascript" src="https://cdn.rawgit.com/igorlino/elevatezoom-plus/1.1.6/src/jquery.ez-plus.js"></script>
+<script>
+  $(".product-zoom-img").ezPlus();
+</script>
 {% schema %}
 {
   "name": "t:sections.main-product.name",
