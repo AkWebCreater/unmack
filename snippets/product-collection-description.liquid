@@ -4,7 +4,7 @@
   {{ productDescription[0] }}
 
   <div class="decription-image">
-    <div class="grid-1">
+    <div class="decription-image-item">
       {%- if product.metafields.my_fields.icon -%}
       <div class="image">
         <img alt="img1" src="{{product.metafields.my_fields.icon | img_url:'80x'}}">
@@ -146,7 +146,12 @@
     margin: auto;
     width: 80%;
 }
-
+.decription-image{
+  display: flex;
+}
+.decription-image-item{
+  flex: 1;
+}
 .product-additional-media li.center.grid__item.multicolumn-list__item {
     width: 100%;
 }
