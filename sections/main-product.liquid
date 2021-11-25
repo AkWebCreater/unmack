@@ -474,7 +474,7 @@
   {%- render 'cart-notification' -%}
  
 
-  <product-modal id="ProductModal-{{ section.id }}" class="product-media-modal">
+  <!-- <product-modal id="ProductModal-{{ section.id }}" class="product-media-modal">
     <div role="dialog" aria-label="{{ 'products.modal.label' | t }}" aria-modal="true" tabindex="-1">
       <button id="ModalClose-{{ section.id }}" type="button" class="product-media-modal__toggle" aria-label="{{ 'accessibility.close' | t }}">{% render 'icon-close' %}</button>
 
@@ -562,7 +562,7 @@
         {%- endfor -%}
       </div>
     </div>
-  </product-modal>
+  </product-modal> -->
 
   {% assign popups = section.blocks | where: "type", "popup" %}
   {%- for block in popups -%}
