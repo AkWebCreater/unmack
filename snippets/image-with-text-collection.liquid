@@ -154,7 +154,7 @@
             </div>
           </div>
           {%- endif -%}
-          <div class="product-button variants">
+          <div class="product-button">
             <div class="left-button mobile-button">
               <a href="{{ product_card_product.url | default: '#' }}" class="full-unstyled-link">
                 <div class="product-view">Product Details</div>
@@ -192,21 +192,18 @@
   .image-text:nth-child(even) .image-with-text .image-with-text__grid span.card-information__text.h2 {
     text-align: end;
 }
-.product-button{
-  flex-wrap: wrap;
-}
+
 .product-button .mobile-button:not(:first-child){
   margin-top: 5px;
 }
  @media (min-width:1024px) {
+  .product-button{
+  display: flex;
+}
   .product-button .mobile-button{
     margin-top: 0;
     margin-left: 5px;
   flex: 1;
-}
-.variants {
-    display: flex;
-    width: 100%;
 }
  }
   .image-with-text__content {
@@ -224,7 +221,10 @@
     padding-right: 30px;
     text-align: justify;
 }
-
+  .variants {
+    display: flex;
+    width: 100%;
+}
 .variant-opt {
     width: 20%;
 }
