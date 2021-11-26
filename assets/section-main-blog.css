@@ -31,6 +31,9 @@ background-color:#f58634;
   .header__submenu.list-menu{
     padding: 0 !important;
   }
+  .product-popup-menu{
+    border: 2.5px solid #f58634;
+  }
   /* end */
   .blogs-main-wrapper{
     display: grid;
