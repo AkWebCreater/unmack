@@ -12,9 +12,25 @@
   .blog-search{
     border-radius: 5px;
   }
+  /* blog menu */
+  .header__submenu{z-index: 2;}
   .blog-search .search-modal__content{
     width: 100%;
   }
+  .list-menu--disclosure{
+    width: 25rem;
+  }
+  
+.blogs-menu >ul > li ul li:not(:last-child) {
+  border-bottom: 1px solid var(--color-background);
+}
+.blogs-menu >ul > li ul li:hover{
+background-color:var(--color-background);
+}
+.blogs-menu >ul > li ul li:hover a{
+  color: #fff;
+  }
+  /* end */
   .blogs-main-wrapper{
     display: grid;
   grid-template-columns: repeat(4,1fr);
