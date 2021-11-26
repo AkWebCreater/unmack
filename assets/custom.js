@@ -101,7 +101,6 @@ function addToCart(qnt, id) {
   $.ajax({
       type: 'POST',
       url: '/cart/add.js',
-      async: false,
       data: {
           quantity: qnt,
           id: id
