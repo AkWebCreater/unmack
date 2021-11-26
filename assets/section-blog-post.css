@@ -20,6 +20,9 @@
   margin-bottom: 20px;
   font-weight: 700;
 }
+.secheader h3{
+  margin: 8px 0;
+}
 
 .ingredients .grid__item{
   display: flex;
