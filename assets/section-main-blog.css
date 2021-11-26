@@ -35,6 +35,9 @@ background-color:#f58634;
     border: 2.5px solid #f58634;
   }
   /* end */
+  .image-box{
+    opacity: 0;
+  }
   .blogs-main-wrapper{
     display: grid;
   grid-template-columns: repeat(4,1fr);
