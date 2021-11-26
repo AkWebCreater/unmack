@@ -98,9 +98,12 @@ if (empt) {
 
 // custom add t cart
 function addToCart(qnt, id) {
+  console.log(qnt);
+  console.log(id);
   $.ajax({
       type: 'POST',
       url: '/cart/add.js',
+      async: false,
       data: {
           quantity: qnt,
           id: id
@@ -111,7 +114,9 @@ function addToCart(qnt, id) {
           console.log(data.quantity);
 
       }
+
   });
+
 }
 // add cart
 $(document).on('click', '.add-cart', function() {
