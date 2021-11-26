@@ -31,11 +31,11 @@
         </div>
         <div class="blogs-menu">
             {%- assign blog_menu = linklists[section.settings.blogs_menu] -%}
-            <nav class="blogs-nav">
+            <nav class="">
             
-                <ul class="list-menu list-menu--inline" role="list">
+                <ul class="list-menu blogs-nav" role="list">
                   {%- for link in blog_menu.links -%}
-                  <li>
+                  <li class="blog-nav-link ">
                     {%- if link.links != blank -%}
                       <details-disclosure>
                         <details>
