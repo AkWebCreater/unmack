@@ -39,6 +39,7 @@
     </a>
     </div>
     <div class="grid__item">
+      <a href="{{ section.settings.url_button2 }}">
       <div class="image-margin image-with-text__media image-with-text__media--{{ section.settings.height }} {% if section.settings.image-right != blank %}media{% else %}image-with-text__media--placeholder placeholder{% endif %}"
         {% if section.settings.height == 'adapt' and section.settings.image-right != blank %} style="padding-bottom: {{ 1 | divided_by: section.settings.image-right.aspect_ratio | times: 100 }}%;"{% endif %}
       >
@@ -71,6 +72,7 @@
         {% endif %}
         </div>
       </div>
+    </a>
     </div>
     {% comment %}
     <div class="grid__item">
