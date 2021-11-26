@@ -28,6 +28,9 @@ background-color:#f58634;
 .blogs-menu nav >ul > li ul li:hover a{
   color: #fff;
   }
+  .header__submenu.list-menu{
+    padding: 0 !important;
+  }
   /* end */
   .blogs-main-wrapper{
     display: grid;
