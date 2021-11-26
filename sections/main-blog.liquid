@@ -40,7 +40,7 @@
                       <details-disclosure>
                         <details>
                           <summary class="header__menu-item list-menu__item link focus-inset">
-                            <span {%- if link.child_active %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
+                            <span  class="main-link"{%- if link.child_active %} class="header__active-menu-item main-link"{% endif %}>{{ link.title | escape }}</span>
                             {% render 'icon-caret' %}
                           </summary>
                           <ul class="header__submenu list-menu list-menu--disclosure caption-large motion-reduce" role="list" tabindex="-1">
@@ -90,7 +90,7 @@
                         </details>
                       </details-disclosure>
                     {%- else -%}
-                      <a href="{{ link.url }}" class="header__menu-item header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
+                      <a href="{{ link.url }}" class="header__menu-item header__menu-item main-link list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
                         <span {%- if link.current %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
                       </a>
                     {%- endif -%}

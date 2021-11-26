@@ -23,7 +23,7 @@
     grid-template-areas:
         "articles articles articles articles";
   }
-  .blog-nav-link a{
+  .blog-nav-link .main-link{
     color: #fff;
     background: #ccc;
     border: 1px solid #969595;
@@ -70,7 +70,7 @@
     flex-wrap: wrap;
     gap: 15px;
   }
-  .blog-nav-link a:hover{
+  .blog-nav-link .main-link:hover{
     background: #f58634;
   }
   .date{
