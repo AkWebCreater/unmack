@@ -10,8 +10,17 @@
 .ingredients-wrapper{
   border: 1px solid #ccc;
   border-radius: 5px ;
-  padding: 15px;
+  padding: 20px;
+  
 }
+.secheader{
+  background-color: #f2f2f2;
+  overflow: auto;
+  border-radius: 5px ;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
 .ingredients .grid__item{
   display: flex;
     flex-direction: column;
@@ -50,6 +59,7 @@
 }
 .ingredients-inner{
   border-radius: 4px;
+  margin-left: 0 !important;
   background-color: #fff;
   box-shadow: 1px 1px 8px 0px rgba(0,0,0,0.75);
   -webkit-box-shadow: 1px 1px 8px 0px rgba(0,0,0,0.75);
