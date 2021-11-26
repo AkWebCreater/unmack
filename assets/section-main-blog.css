@@ -38,7 +38,7 @@ background-color:#f58634;
   .blogs-main-wrapper{
     display: grid;
   grid-template-columns: repeat(4,1fr);
-    gap: 10px;
+    gap: 35px;
     grid-auto-rows: minmax(100px,auto);
     grid-template-areas:
         "articles articles articles articles";
@@ -62,7 +62,7 @@ background-color:#f58634;
   }
   .grid-with-sidebar {
     display: grid;
-    gap: 10px;
+    gap: 35px;
     grid-template-columns: repeat(4,1fr);
   }
   .bottom-sidebar{
@@ -75,7 +75,7 @@ background-color:#f58634;
     grid-column: span 4;
     grid-template-columns: repeat(1,1fr);
   grid-auto-rows: min-content;
-  gap: 10px;
+  gap: 25px;
   }
   .body--blog .make-your-own-box .image-with-text{
     min-height: 300px;
@@ -120,7 +120,7 @@ background-color:#f58634;
       display: grid;
       grid-gap: 1rem;
       grid-template-columns: repeat(2,1fr);
-      gap: 10px;
+      gap: 25px;
       grid-auto-rows:min-content ;
     }
   }
