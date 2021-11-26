@@ -127,7 +127,7 @@ $(document).on('click', '.add-cart', function() {
 // bulk add
 $(document).on('click', '#bulk-button', function() {
   $('.ingredients-inner .grid__item').each(function() {
-      var id = $(this).find('.var-id').data("var-id")
+      var id = $(this).find('.var-id').attr("data-var-id")
       addToCart(1, id)
   })
 
