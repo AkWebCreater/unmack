@@ -68,7 +68,7 @@ background-color:#f58634;
   .bottom-sidebar{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 25px;
   }
   .blog-container{
     display: grid;
@@ -152,7 +152,7 @@ background-color:#f58634;
       grid-area: sidebar;
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      gap: 25px;
     }
     .blogs-main-wrapper{
       grid-template-areas:
