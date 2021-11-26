@@ -6,6 +6,9 @@
 <link rel="preload" href="{{ 'component-badge.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <!-- article post page  started -->
 <div class="ingredients page-width">
+  <div class="secheader">
+    <h3 class="sec-title">{{section.settings.title}}</h3>
+  </div>
     <div class="ingredients-inner grid grid--2-col grid--3-col-tablet grid--one-third-max grid--4-col-desktop grid--quarter-max negative-margin">
 
         {%- for block in section.blocks -%}
@@ -38,6 +41,12 @@
   {
     "type": "header",
     "content": "t:sections.main-collection-product-grid.settings.header__3.content"
+  },
+  {
+    "type": "text",
+    "id": "title",
+    "label": "Section Title",
+    "default": "Umanac ingredients in this blog "
   },
   {
     "type": "select",
