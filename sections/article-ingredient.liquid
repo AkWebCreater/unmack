@@ -6,30 +6,33 @@
 <link rel="preload" href="{{ 'component-badge.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <!-- article post page  started -->
 <div class="ingredients page-width">
-  <div class="secheader">
-    <h3 class="sec-title">{{section.settings.title}}</h3>
-  </div>
-    <div class="ingredients-inner grid grid--2-col grid--3-col-tablet grid--one-third-max grid--4-col-desktop grid--quarter-max negative-margin">
-
-        {%- for block in section.blocks -%}
-        {% assign product = all_products[block.settings.ingredient] %}
-  <div class="grid__item">
-    {% render 'product-card',
-    product_card_product: product,
-    media_size: section.settings.image_ratio,
-    show_secondary_image: section.settings.show_secondary_image,
-    add_image_padding: section.settings.add_image_padding,
-    show_vendor: section.settings.show_vendor
-  %}
-
-  <div  class="btn add-cart">Add to cart</div>
-  </div>
-        {%- endfor -%}
+  <div class="ingredients-wrapper">
+    <div class="secheader">
+      <h3 class="sec-title">{{section.settings.title}}</h3>
     </div>
-    <div id="bulk-add-button" class="bulk-add-button btn">
-        Add All Umanac Ingredients to your cart
+      <div class="ingredients-inner grid grid--2-col grid--3-col-tablet grid--one-third-max grid--4-col-desktop grid--quarter-max negative-margin">
+  
+          {%- for block in section.blocks -%}
+          {% assign product = all_products[block.settings.ingredient] %}
+    <div class="grid__item">
+      {% render 'product-card',
+      product_card_product: product,
+      media_size: section.settings.image_ratio,
+      show_secondary_image: section.settings.show_secondary_image,
+      add_image_padding: section.settings.add_image_padding,
+      show_vendor: section.settings.show_vendor
+    %}
+  
+    <div  class="btn add-cart">Add to cart</div>
     </div>
+          {%- endfor -%}
+      </div>
+      <div id="bulk-add-button" class="bulk-add-button btn">
+          Add All Umanac Ingredients to your cart
+      </div>
+  </div>
 </div>
+
 
 
 

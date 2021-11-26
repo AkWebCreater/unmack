@@ -7,6 +7,11 @@
 .ingredients  *{
   text-align: center;
 }
+.ingredients-wrapper{
+  border: 1px solid #ccc;
+  border-radius: 5px ;
+  padding: 15px;
+}
 .ingredients .grid__item{
   display: flex;
     flex-direction: column;
