@@ -12,6 +12,9 @@
   .blog-search{
     border-radius: 5px;
   }
+  .blog-search .search-modal__content{
+    width: 100%;
+  }
   .blogs-main-wrapper{
     display: grid;
   grid-template-columns: repeat(4,1fr);
