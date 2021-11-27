@@ -14,6 +14,11 @@
         "type": "image_picker",
         "label": "Login Popup Image",
         "id": "login-popup-banner"
+      },
+      {
+        "type": "image_picker",
+        "label": "Certificates Image",
+        "id": "certificates"
       }
     ]
   },

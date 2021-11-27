@@ -2438,3 +2438,7 @@ div.wishlist .ssw-faveiticon{
 
     }
   }
+  /* collection page */
+  .body--collection .image-with-text__grid{
+    overflow: visible;
+  }
