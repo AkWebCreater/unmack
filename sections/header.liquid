@@ -217,14 +217,7 @@ transform: translateY(25px);
 
   }
 </style>
-{% if tamplate contains 'article' %}
-  <style>
 
-.navigation{
-  background-color: #382014;
-}
-  </style>
-{% endif %}
 <script src="{{ 'details-disclosure.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'details-modal.js' | asset_url }}" defer="defer"></script>
 
@@ -883,7 +876,14 @@ transform: translateY(25px);
 {%- if request.page_type != 'cart' -%}
   {%- render 'cart-notification' -%}
 {%- endif -%}
+{% if request.page_type == 'article' %}
+  <style>
 
+.navigation{
+  background-color: #382014;
+}
+  </style>
+{% endif %}
 {% javascript %}
   class StickyHeader extends HTMLElement {
     constructor() {
