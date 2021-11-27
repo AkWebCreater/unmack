@@ -294,6 +294,13 @@
   </div>
   {% endif %}  
   <div class="footer__content-bottom">
+    {% if section.settings.footer-bottom-page != blank %}
+    <div class="footer__content-bottom-page page-width" >
+    {% assign pageHandle = section.settings.footer-bottom-page %}
+    <h2>{{section.settings.footer-bottom-page-heading}}</h2>
+  {{ pages[pageHandle].content }}
+  </div>
+ {% endif %}
     <div class="footer__content-bottom-wrapper page-width">
       <div class="footer__column footer__localization">
         {%- if section.settings.enable_country_selector and localization.available_countries.size > 1 -%}
@@ -400,13 +407,7 @@
         {%- endif -%}
       </div>
     </div>
-   {% if section.settings.footer-bottom-page != blank %}
-      <div class="footer__content-bottom-page page-width" >
-      {% assign pageHandle = section.settings.footer-bottom-page %}
-      <h2>{{section.settings.footer-bottom-page-heading}}</h2>
-    {{ pages[pageHandle].content }}
-    </div>
-   {% endif %}
+
   </div>
 </footer>
 

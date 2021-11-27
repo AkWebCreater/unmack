@@ -11,7 +11,7 @@ font-size:0;
 .footer-top-bg + .footer{
 margin-top: -125px;
 }
-.footer__content-bottom-page{
+.footer__content-bottom-wrapper{
   border-top:5px solid #fff;
   padding-top: 4rem;
 }
