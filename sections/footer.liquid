@@ -407,7 +407,13 @@
         {%- endif -%}
       </div>
     </div>
-
+    <div class="footer__content-bottom">
+      {% if section.settings.footer-bottom-page != blank %}
+      <div class="footer__content-bottom-page page-width" >
+      {% assign pageHandle2 = section.settings.footer-bottom-page-2 %}
+      <h2>{{section.settings.footer-bottom-page-heading-2}}</h2>
+    {{ pages[pageHandle2].content }}
+    </div>
   </div>
 </footer>
 
@@ -745,6 +751,17 @@
       "type": "text",
       "id": "footer-bottom-page-heading",
       "label": "Footer Bootom Page Heading",
+      "default": "Explor Other Options For You Here"
+      
+    },{
+      "type": "page",
+      "id": "footer-bottom-page-2",
+      "label": "Please Chose Page 2",
+      "info": "this will show content from your page"
+    },{
+      "type": "text",
+      "id": "footer-bottom-page-heading-2",
+      "label": "Footer Bootom Page 2 Heading",
       "default": "Explor Other Options For You Here"
       
     }
