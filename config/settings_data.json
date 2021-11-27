@@ -143,7 +143,7 @@
           "enable_country_selector": true,
           "enable_language_selector": true,
           "payment_enable": true,
-          "footer-bottom-page": "other-option-for-you",
+          "footer-bottom-page": "copy-of-other-option-for-you",
           "footer-bottom-page-heading": "Explor Other Options For You Here"
         }
       },
