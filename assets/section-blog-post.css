@@ -1,4 +1,4 @@
-.article-template > *:first-child:not(.article-template__hero-container) {
+.article-template > *:first-child:not(.breadcrums) {
   margin-top: 5rem;
 }
 .ingredients .media{

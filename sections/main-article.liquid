@@ -231,7 +231,23 @@
     {%- endif -%}
   </article>
   <div class="blog-sidebar article-sidebar">
-                
+    <div class="article-search">
+      <div class="search-modal__content two" tabindex="-1">
+        <form action="{{ routes.search_url }}" method="get" role="search" class="search search-modal__form">
+          <div class="field">
+            <input class="search__input field__input" id="Search-In-Modal" type="search" name="q" value="{{ search.terms | escape }}" placeholder="{{ 'general.search.search' | t }}">
+            <label class="field__label" for="Search-In-Modal">Find Recipe / Beauty Tips and more </label>
+            <input type="hidden" name="options[prefix]" value="last">
+            <input type="hidden" name="type" value="article" />
+            <button class="search__button field__button focus-inset" aria-label="{{ 'general.search.search' | t }}">
+              <svg class="icon icon-search" aria-hidden="true" focusable="false" role="presentation">
+                <use href="#icon-search">
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>          
     {%- for link in linklists.top-blogs.links -%}
         {% assign top_blogs = link.object %}
         <h3 class="blog-page-title">{{link.title}}</h3>
