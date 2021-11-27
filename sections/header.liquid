@@ -76,6 +76,7 @@ border: 2.5px solid var(--color-background);
       max-width: 544px;
     width:100%;
   } 
+  
   @media screen and (min-width: 990px) {
     header-drawer {
       display: none;
@@ -83,7 +84,7 @@ border: 2.5px solid var(--color-background);
     .navigation{
     position: fixed;
     width: 100%;
-    margin-top: 10px;
+    padding-top: 10px;
     justify-content: center;
     align-items: flex-end;
     z-index: -1;
@@ -216,7 +217,14 @@ transform: translateY(25px);
 
   }
 </style>
+{% if tamplate contains 'article' %}
+  <style>
 
+.navigation{
+  background-color: #382014;
+}
+  </style>
+{% endif %}
 <script src="{{ 'details-disclosure.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'details-modal.js' | asset_url }}" defer="defer"></script>
 
