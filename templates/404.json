@@ -697,6 +697,49 @@
         "swipe_on_mobile": false
       }
     },
+    "16379911975f7e3d29": {
+      "type": "banner",
+      "blocks": {
+        "16379911973f925933-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner"
+          }
+        },
+        "16379911973f925933-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template."
+          }
+        },
+        "16379911973f925933-2": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "16379911973f925933-0",
+        "16379911973f925933-1",
+        "16379911973f925933-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Home_Page1_3db6ee68-04f6-471f-acc4-a6599d099712.jpg",
+        "desktop_text_box_position": "flex-start",
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "adapt_height_first_image": true
+      }
+    },
     "163756932415dd61ec": {
       "type": "parallex-product",
       "settings": {
@@ -832,6 +875,7 @@
     "16306511387b5fa446",
     "1630133642e6b919cc",
     "1630155100e70d79d8",
+    "16379911975f7e3d29",
     "163756932415dd61ec",
     "163004502857e20478",
     "163046513230d6c091"
