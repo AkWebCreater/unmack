@@ -429,7 +429,8 @@
             {% if collection.products_count == 4 %} grid--4-col-desktop{% else %} grid--3-col-tablet grid--one-third-max grid--4-col-desktop grid--quarter-max{% endif %}
           {% endif %} negative-margin">{% endcomment %}
           {%- for product in collection.products -%}
-            <div class="image-text" >
+          
+            <div class="image-text {% if forloop.index == 1 %}first{% endif %}" >
               {% render 'image-with-text-collection',
                 product_card_product: product,
                 media_size: section.settings.image_ratio,
@@ -598,7 +599,7 @@
 
 </script>
 <style>
-  #CollectionProductGrid .image-text:first-child .image-with-text{
+  #CollectionProductGrid .first .image-with-text{
     margin-top: 0;
   }
   .table-price{
