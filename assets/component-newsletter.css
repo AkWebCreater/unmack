@@ -12,6 +12,10 @@
 box-shadow:none !important;
   border:0 !important;
 }
+.newsletter-form .field{
+  margin-bottom: 0 !important;
+  border-radius: 30px;
+}
 #NewsletterForm--footer,.newsletter-form__button:hover{
 box-shadow:none !important;
 }
