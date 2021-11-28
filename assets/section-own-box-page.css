@@ -6,7 +6,10 @@
 	padding: 0 2rem;
 	text-align: center;
 }
-
+.product-slider .slick-track{
+    display: flex !important;
+    align-items: flex-end;
+}
 .product-bottom {
 	line-height: 1.2;
 }
