@@ -42,9 +42,10 @@
     z-index: 998;
 }
 .popup-layer.open{
-    display: block;
+    display: flex;
 }
 .popup{
+    width: 100%;
     max-width: 80%;
     margin: auto;
 }
