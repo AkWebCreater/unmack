@@ -56,11 +56,18 @@
         "number_of_recently_viewed_products": "8",
         "number_of_showing_products": "5"
       }
+    },
+    "1638093373633f25e0": {
+      "type": "af-instagram-product-slider",
+      "settings": {
+        "width": 90
+      }
     }
   },
   "order": [
     "banner",
     "main",
-    "recently-viwed"
+    "recently-viwed",
+    "1638093373633f25e0"
   ]
 }
