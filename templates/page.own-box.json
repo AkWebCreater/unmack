@@ -59,6 +59,7 @@
     },
     "1638093373633f25e0": {
       "type": "af-instagram-product-slider",
+      "disabled": true,
       "settings": {
         "width": 90
       }
