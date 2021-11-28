@@ -1,0 +1,82 @@
+<div class="products-slider">
+    <div class="header">
+        <h2 class="title accent">{{section.settings.title}}</h2>
+        <p class="subtext">{{section.settings.description}}</p>
+    </div>
+    <div class="slider">
+        {% for block in section.blocks %}
+            {% if block.settings.collection ! blank %}
+                {%- assign collection = collections[block.settings.collection] -%}
+                {% for prodcut in collection.products %}
+                    <div class="slider-slide">
+                        {% render 'product-card',
+              product_card_product: product,
+              media_size: 'square',
+              show_secondary_image: false,
+              add_image_padding: false,
+              show_vendor: false
+            %}
+                    </div>
+                {% endfor %}
+                {% else %}
+                <div class="slider-slide">
+                    {%- assign product = all_products[block.settings.product] -%}
+                    
+                    {% render 'product-card',
+          product_card_product: product,
+          media_size: 'square',
+          show_secondary_image: false,
+          add_image_padding: false,
+          show_vendor: false
+        %}
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>
+
+{% schema %}
+{ 
+     "name": "Product Carousel",
+"class":"product-carousel spaced-section",
+"settings": [
+                {
+                  "id": "description",
+                  "type": "text",
+                  "label": "Our Combo"
+                },
+                {
+                    "id": "title",
+                    "type": "text",
+                    "label": "Our Combo"
+                  }
+            ],
+    "blocks":[
+    {
+        "type": "Slide",
+        "name": "Product Slide",
+        "settings": [
+          {
+            "type": "product",
+            "id": "product",
+            "label": "Pick Product"
+          },
+          {
+              "type": "collection",
+              "id": "collection",
+              "label": "Pick collection",
+              "info": "choose collection hear form which products will be shown please make sure you can choose only one thing either collection or product  "
+          }
+        ]
+      }
+    ],
+    "presets": [
+    {
+        "name": "Product Carousel",
+        "category":"slider"
+
+    }
+  ]
+    
+}
+{% endschema %}
