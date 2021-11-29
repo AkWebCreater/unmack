@@ -45,6 +45,25 @@
         "offer-image-2": "shopify:\/\/shop_images\/Untitled-2_86a992b5-3b61-4984-b9c4-2e4bbc34ddfb.png"
       }
     },
+    "16381445644d9e5a68": {
+      "type": "products-carousel",
+      "blocks": {
+        "f349763a-8da4-4c2a-96dd-23071f2b448a": {
+          "type": "Slide",
+          "settings": {
+            "product": "",
+            "collection": "demo-ghee"
+          }
+        }
+      },
+      "block_order": [
+        "f349763a-8da4-4c2a-96dd-23071f2b448a"
+      ],
+      "settings": {
+        "description": "take your pick from our favorite combos",
+        "title": "Our Favorite Combos"
+      }
+    },
     "recently-viwed": {
       "type": "recently-viewed-products",
       "settings": {
@@ -56,19 +75,12 @@
         "number_of_recently_viewed_products": "8",
         "number_of_showing_products": "5"
       }
-    },
-    "16381445644d9e5a68": {
-      "type": "products-carousel",
-      "settings": {
-        "description": "take your pick from our favorite combos",
-        "title": "Our Favorite Combos"
-      }
     }
   },
   "order": [
     "banner",
     "main",
-    "recently-viwed",
-    "16381445644d9e5a68"
+    "16381445644d9e5a68",
+    "recently-viwed"
   ]
 }
