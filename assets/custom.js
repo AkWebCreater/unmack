@@ -72,7 +72,7 @@ $(document).ready(function() {
       resizeSlider();
   });
   $(window).on("load", function(e) {
-    resizeSlider();
+    setTimeout(resizeSlider,3000)
 });
 
 
