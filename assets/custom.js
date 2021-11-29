@@ -71,7 +71,7 @@ $('.products-slider .slider').slick(
  )
 //  .on("setPosition", function () {
 //   resizeSlider();
-});
+// });
 
 $(window).on("resize", function (e) {
 // resizeSlider();
