@@ -75,7 +75,10 @@ $('.products-slider .slider').slick(
 $(window).on("resize", function (e) {
 resizeSlider();
 });
-
+$(window).on("load", function (e) {
+  resizeSlider();
+  });
+  
 var slickHeight = $(".slick-track").outerHeight();
 
 var slideHeight = $(".slick-track").find(".slick-slide").outerHeight();
