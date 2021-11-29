@@ -4,7 +4,9 @@
 }
 .slider-header .title{
     margin: 0;
-    font-size: 30px;
+    font-size: 40px;
+    font-weight: 700;
+
 }
 </style>
 <div class="products-slider">
@@ -16,7 +18,7 @@
         {% for block in section.blocks %}
             {% if block.settings.collection != blank %}
                 {%- assign collection = collections[block.settings.collection] -%}
-                {% for prodcut in collection.products %}
+                {% for product in collection.products %}
                     <div class="slider-slide">
                         {% render 'product-card',
               product_card_product: product,
