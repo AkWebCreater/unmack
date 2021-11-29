@@ -64,7 +64,7 @@ $('.products-slider .slider').slick(
     arrows:true,
     nextArrow: '<span  class="slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i></span>',
     prevArrow: '<span  class="slick-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></span>',
-    // adaptiveHeight: true,
+// adaptiveHeight: true,
     slidesToScroll: 1
  }
  )
