@@ -21,6 +21,11 @@
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
+.logged-in .accountpopup-body span a{
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+}
 .logged-in .accountpopup-body span a::before{
     content: '';
     display: block;
@@ -29,6 +34,27 @@ background-size: cover;
 width: 40px;
 height: 40px;
 margin-right: 15px;
+}
+.logged-in .accountpopup-body .wishlist a::before{
+    background-position: -30px;
+}
+.logged-in .accountpopup-body .order-history a::before{
+    background-position: -90px;
+}
+.logged-in .accountpopup-body .gift-card a::before{
+    background-position: -123px;
+}
+.logged-in .accountpopup-body .wallet a::before{
+    background-position: -154px;
+}
+.logged-in .accountpopup-body .cont-us a::before{
+    background-position: 188px;
+}
+.logged-in .accountpopup-body .soci-login a::before{
+    background-position: -186px;
+}
+.logged-in .accountpopup-body .whatsapp a::before{
+    background-position: -218px;
 }
 .account-header-main .logo{
     padding-right: 12px;
