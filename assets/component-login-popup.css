@@ -14,6 +14,15 @@
 }
 .account-header-main{
     border-bottom: 1px solid #ccc;
+
+    
+}
+.loginpopup .account-header-main{
+    display: flex;
+}
+.loginpopup .account-header-main .account-detail{
+display: flex;
+flex-direction: column;
 }
 .loginpopup{
     background-color: #fff;
@@ -37,7 +46,7 @@
     width: fit-content;
     position: absolute;
     top: 110px;
-    z-index: 999;
+    z-index: 9999;
     right: 40px;
     box-shadow: 0px 0px 3px 2px rgb(166 157 157 / 75%);
     -webkit-box-shadow: 0px 0px 3px 2px rgb(166 157 157 / 75%);
