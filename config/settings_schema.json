@@ -17,6 +17,11 @@
       },
       {
         "type": "image_picker",
+        "label": "Account Page Logo",
+        "id": "acc-logo"
+      },
+      {
+        "type": "image_picker",
         "label": "Certificates Image",
         "id": "certificates"
       }
