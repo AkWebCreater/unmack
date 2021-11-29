@@ -79,7 +79,7 @@ $(window).on("load", function (e) {
   resizeSlider();
   });
   
-var slickHeight = $(".products-slider .slick-track").outerHeight();
+var slickHeight = $(".products-slider .slick-track").height();
 
 var slideHeight = $(".slick-track").find(".slick-slide").outerHeight();
 
