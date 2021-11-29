@@ -56,11 +56,19 @@
         "number_of_recently_viewed_products": "8",
         "number_of_showing_products": "5"
       }
+    },
+    "16381445644d9e5a68": {
+      "type": "products-carousel",
+      "settings": {
+        "description": "Our Favorite Combos",
+        "title": ""
+      }
     }
   },
   "order": [
     "banner",
     "main",
-    "recently-viwed"
+    "recently-viwed",
+    "16381445644d9e5a68"
   ]
 }
