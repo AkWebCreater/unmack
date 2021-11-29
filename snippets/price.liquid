@@ -86,9 +86,9 @@
     </span>
     </div>
     {% assign product-badges = product-badges %}
-    {% if product-badges == 'show' %}
+    
     {% render 'product_trust_badges'%}
-    {% endif %}
+ 
     
     <small class="unit-price caption{% if available == false or product.selected_or_first_available_variant.unit_price_measurement == nil %} hidden{% endif %}">
       <dt class="visually-hidden">{{ 'products.product.price.unit_price' | t }}</dt>
