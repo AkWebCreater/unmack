@@ -71,6 +71,9 @@ $(document).ready(function() {
   $(window).on("resize", function(e) {
       resizeSlider();
   });
+  $(window).on("load", function(e) {
+    resizeSlider();
+});
 
 
   var slickHeight = $(".products-slider .slick-track").height();
