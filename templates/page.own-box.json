@@ -51,13 +51,53 @@
         "f349763a-8da4-4c2a-96dd-23071f2b448a": {
           "type": "Slide",
           "settings": {
-            "product": "",
-            "collection": "ghee"
+            "product": "acana-pacifica-dry-cat-food",
+            "collection": ""
+          }
+        },
+        "cf728c3b-b076-4d4c-93eb-b40d4350fd83": {
+          "type": "Slide",
+          "settings": {
+            "product": "acana-grass-fed-lamb-dry-dog-food",
+            "collection": ""
+          }
+        },
+        "eda07901-cf13-4346-a07d-254734f942f1": {
+          "type": "Slide",
+          "settings": {
+            "product": "acana-free-run-duck-dry-dog-food",
+            "collection": ""
+          }
+        },
+        "faa5e12a-e995-4d2e-9e9d-a89a81596eae": {
+          "type": "Slide",
+          "settings": {
+            "product": "applaws-chicken-breast-tin-wet-cat-food-70-gm",
+            "collection": ""
+          }
+        },
+        "8e6aba83-0a2a-457f-9b41-f068ebb29ce8": {
+          "type": "Slide",
+          "settings": {
+            "product": "acana-pacifica-dry-cat-food",
+            "collection": ""
+          }
+        },
+        "f9a716bb-3437-4c77-8bbd-4feeba43e7fb": {
+          "type": "Slide",
+          "settings": {
+            "product": "acana-grass-fed-lamb-dry-dog-food",
+            "collection": ""
           }
         }
       },
       "block_order": [
-        "f349763a-8da4-4c2a-96dd-23071f2b448a"
+        "f349763a-8da4-4c2a-96dd-23071f2b448a",
+        "cf728c3b-b076-4d4c-93eb-b40d4350fd83",
+        "eda07901-cf13-4346-a07d-254734f942f1",
+        "faa5e12a-e995-4d2e-9e9d-a89a81596eae",
+        "8e6aba83-0a2a-457f-9b41-f068ebb29ce8",
+        "f9a716bb-3437-4c77-8bbd-4feeba43e7fb"
       ],
       "settings": {
         "description": "take your pick from our favorite combos",
