@@ -85,7 +85,7 @@
       {{ 'products.product.sold_out' | t }}
     </span>
     </div>
-    
+    {% assign product-badges = product-badges %}
     {% if product-badges == 'show' %}
     {% render 'product_trust_badges'%}
     {% endif %}
