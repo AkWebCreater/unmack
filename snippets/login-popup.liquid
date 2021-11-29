@@ -4,7 +4,10 @@
 {% if loginclass == 'logged-in' %}
 <div class="account-header-main">
     <div class="logo">
-      <img src="{{settigns.acc-logo | img_url: '150x'}}" alt="account-logo">
+      {% if settings.acc-logo %}
+        
+      <img src="{{settings.acc-logo | img_url: '150x'}}" alt="account-logo">
+      {% endif %}
     </div>
       <div class="account-detail">
         <span>Welcome</span>
