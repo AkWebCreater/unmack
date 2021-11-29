@@ -57,6 +57,19 @@ $('.product-range-slider ul').slick({
   ]
 })
 // product range slider end here
+// own box page combo slider
+$('.products-slider .slider').slick(
+  {
+    slidesToShow: 4,
+    arrows:true,
+    nextArrow: '<span  class="slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i></span>',
+    prevArrow: '<span  class="slick-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></span>',
+    // adaptiveHeight: true,
+    slidesToScroll: 1
+ }
+ )
+
+// ens here 
 // Umanac Journey year section js
   $('.journey-products').slick(
     {
