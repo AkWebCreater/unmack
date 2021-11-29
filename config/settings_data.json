@@ -1,6 +1,7 @@
 {
   "current": {
     "login-popup-banner": "shopify:\/\/shop_images\/all-policy_imsge.png",
+    "acc-logo": "shopify:\/\/shop_images\/account_logo.jpg",
     "pincode_validator_accent": "#f58634",
     "no_delevery_massage": "Currently we are not delivering at your location.<br> Please modify the PIN code",
     "invalid_pincode_massage": "Please Enter Valid Pincode",
