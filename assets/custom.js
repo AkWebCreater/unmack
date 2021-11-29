@@ -68,19 +68,18 @@ $('.products-slider .slider').slick(
 // adaptiveHeight: true,
     slidesToScroll: 1
  }
- )
-//  .on("setPosition", function () {
-//   resizeSlider();
-// });
+ ).on("setPosition", function () {
+  resizeSlider();
+});
 
 $(window).on("resize", function (e) {
-// resizeSlider();
+resizeSlider();
 });
 $(window).on("load", function (e) {
-  // resizeSlider();
+  resizeSlider();
   });
   
-var slickHeight = $(".slick-track").outerHeight();
+var slickHeight = $(".products-slider .slick-track").outerHeight();
 
 var slideHeight = $(".slick-track").find(".slick-slide").outerHeight();
 
