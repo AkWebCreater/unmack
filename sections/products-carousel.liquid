@@ -12,12 +12,12 @@
 .slider-slide{
     padding: 0 20px;
 }
-.slider-slide .card-wrapper{
+.slider-slide .pro-wrapper{
     border-radius: 10px;
     background-color: #f8f8f8;
     padding: 10px;
 }
-.slider-slide.slick-current .card-wrapper{
+.slider-slide.slick-current .pro-wrapper{
     background-color:#ec7a24;
 }
 .slider-slide.slick-current .card-information__text{
@@ -41,28 +41,33 @@
                 {%- assign collection = collections[block.settings.collection] -%}
                 {% for product in collection.products %}
                     <div class="slider-slide">
-                        {% render 'product-card',
-              product_card_product: product,
-              media_size: 'square',
-              show_secondary_image: false,
-              add_image_padding: false,
-              show_vendor: false
-            %}
-            {% render 'price', product:product, price_class: '' %}
+                        <div class="pro-wrapper">
+                            {% render 'product-card',
+                            product_card_product: product,
+                            media_size: 'square',
+                            show_secondary_image: false,
+                            add_image_padding: false,
+                            show_vendor: false
+                          %}
+                          {% render 'price', product:product, price_class: '' %}
+                        </div>
+           
                     </div>
                 {% endfor %}
                 {% else %}
                 <div class="slider-slide">
                     {%- assign product = all_products[block.settings.product] -%}
                     
+                  <div class="pro-wrapper">
                     {% render 'product-card',
-          product_card_product: product,
-          media_size: 'square',
-          show_secondary_image: false,
-          add_image_padding: false,
-          show_vendor: false
-        %}
-        {% render 'price', product:product, price_class: '' %}
+                    product_card_product: product,
+                    media_size: 'square',
+                    show_secondary_image: false,
+                    add_image_padding: false,
+                    show_vendor: false
+                  %}
+                  {% render 'price', product:product, price_class: '' %}
+                  </div>
                 </div>
             {% endif %}
         {% endfor %}
