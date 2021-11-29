@@ -64,17 +64,13 @@ $(document).ready(function() {
       prevArrow: '<span  class="slick-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></span>',
       // adaptiveHeight: true,
       slidesToScroll: 1
-  })
-  // .on("setPosition", function() {
-  //     resizeSlider();
-  // });
+  }).on("setPosition", function() {
+      resizeSlider();
+  });
 
-  // $(window).on("resize", function(e) {
-  //     resizeSlider();
-  // });
-  $(window).on("load", function(e) {
-    setTimeout(resizeSlider,3000)
-});
+  $(window).on("resize", function(e) {
+      resizeSlider();
+  });
 
 
   var slickHeight = $(".products-slider .slick-track").height();
@@ -82,10 +78,10 @@ $(document).ready(function() {
   var slideHeight = $(".slick-track").find(".slick-slide").outerHeight();
 
   function resizeSlider() {
-      // $(".slick-track")
-      //     .find(".slick-slide .pro-wrapper")
-      //     .css("height", (slickHeight) + "px");
-      alert(slickHeight)
+      $(".slick-track")
+          .find(".slick-slide .pro-wrapper")
+          // deducted height of ssw wishlist icon '24' for avoiding extra height
+          .css("height", (slickHeight - 24) + "px");
   }
 
   // ens here 
