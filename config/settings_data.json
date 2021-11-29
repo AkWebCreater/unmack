@@ -263,7 +263,7 @@
         "type": "image-banner",
         "settings": {
           "image": "shopify:\/\/shop_images\/account.jpg",
-          "desktop_text_box_position": "center",
+          "desktop_text_box_position": "flex-start",
           "color_scheme": "background-1",
           "stack_images_on_mobile": true,
           "adapt_height_first_image": true,
