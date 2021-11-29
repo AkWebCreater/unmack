@@ -64,13 +64,14 @@ $(document).ready(function() {
       prevArrow: '<span  class="slick-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></span>',
       // adaptiveHeight: true,
       slidesToScroll: 1
-  }).on("setPosition", function() {
-      resizeSlider();
-  });
+  })
+  // .on("setPosition", function() {
+  //     resizeSlider();
+  // });
 
-  $(window).on("resize", function(e) {
-      resizeSlider();
-  });
+  // $(window).on("resize", function(e) {
+  //     resizeSlider();
+  // });
   $(window).on("load", function(e) {
     setTimeout(resizeSlider,3000)
 });
