@@ -258,6 +258,17 @@
           "number_of_recently_viewed_products": "8",
           "number_of_showing_products": "5"
         }
+      },
+      "image-banner": {
+        "type": "image-banner",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/account.jpg",
+          "desktop_text_box_position": "center",
+          "color_scheme": "background-1",
+          "stack_images_on_mobile": true,
+          "adapt_height_first_image": true,
+          "logo-url": ""
+        }
       }
     },
     "content_for_index": [
