@@ -86,7 +86,7 @@ var slideHeight = $(".slick-track").find(".slick-slide").outerHeight();
 function resizeSlider() {
 $(".slick-track")
   .find(".slick-slide .pro-wrapper")
-  .css("height", (slickHeight-10) + "px");
+  .css("height", (slickHeight) + "px");
 }
 
 // ens here 
