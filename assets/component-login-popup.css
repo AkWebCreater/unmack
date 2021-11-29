@@ -31,30 +31,30 @@
     display: block;
 background-image: url('https://cdn.shopify.com/s/files/1/0591/8192/4552/files/acc-icons.jpg?v=1638179448');
 background-size: cover;
-width: 40px;
-height: 33px;
+width: 36px;
+height: 30px;
 
 }
 .logged-in .accountpopup-body .wishlist a::before{
     background-position: -30px;
 }
 .logged-in .accountpopup-body .order-history a::before{
-    background-position: -90px;
+    background-position: -88px;
 }
 .logged-in .accountpopup-body .gift-card a::before{
-    background-position: -123px;
+    background-position: -118px;
 }
 .logged-in .accountpopup-body .wallet a::before{
-    background-position: -154px;
+    background-position: -148px;
 }
 .logged-in .accountpopup-body .cont-us a::before{
-    background-position: 188px;
+    background-position: 183px;
 }
 .logged-in .accountpopup-body .soci-login a::before{
-    background-position: -186px;
+    background-position: -179px;
 }
 .logged-in .accountpopup-body .whatsapp a::before{
-    background-position: -218px;
+    background-position: -210px;
 }
 .account-header-main .logo{
     padding-right: 12px;
