@@ -60,6 +60,7 @@ $('.product-range-slider ul').slick({
 // own box page combo slider
 $('.products-slider .slider').slick(
   {
+    centerMode: true,
     slidesToShow: 4,
     arrows:true,
     nextArrow: '<span  class="slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i></span>',
