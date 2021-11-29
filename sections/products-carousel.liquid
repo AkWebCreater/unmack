@@ -20,7 +20,7 @@
 .slider-slide.slick-current .pro-wrapper{
     background-color:#ec7a24;
 }
-.slider-slide.slick-current .card-information__text{
+.slider-slide.slick-current .card-information__text,.slider-slide.slick-current .price {
     color: #fff;
 }
 .products-slider{
@@ -49,7 +49,7 @@
                             add_image_padding: false,
                             show_vendor: false
                           %}
-                          {% render 'price', product:product, price_class: '' %}
+                          {% render 'price', product:product,product-badges:'hide' , price_class: '' %}
                         </div>
            
                     </div>
