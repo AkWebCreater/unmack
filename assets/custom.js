@@ -68,7 +68,23 @@ $('.products-slider .slider').slick(
 // adaptiveHeight: true,
     slidesToScroll: 1
  }
- )
+ ).on("setPosition", function () {
+  resizeSlider();
+});
+
+$(window).on("resize", function (e) {
+resizeSlider();
+});
+
+var slickHeight = $(".slick-track").outerHeight();
+
+var slideHeight = $(".slick-track").find(".slick-slide").outerHeight();
+
+function resizeSlider() {
+$(".slick-track")
+  .find(".slick-slide .pro-wrapper")
+  .css("height", slickHeight + "px");
+}
 
 // ens here 
 // Umanac Journey year section js
