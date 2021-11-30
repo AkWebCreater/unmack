@@ -305,13 +305,16 @@ order: 1;
     border-radius: 50%;
     border: 1px solid #515151;
     color: #515151;
-    flex: auto;
+    flex: unset;
     font-size: 18px;
 }
 .right-part .qtn-changer .qtn{
     width: 50px;
     border: 1px solid #515151;
     color: #515151;
-    flex: auto;
+    flex: unset;
+    min-height: 25px;
+    line-height: 26px;
+    border-radius: 10px;
     font-size: 18px;
 }
