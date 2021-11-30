@@ -207,10 +207,12 @@ $(document).ready(function() {
       e.preventDefault();
       $('.loginpopup').stop().toggle();
       $('.overlay-1').stop().toggle();
+      $('body').toggleClass('blocked')
   })
   $('.overlay-1').click(function(){
     $(this).hide();
     $('.loginpopup').stop().toggle();
+    $('body').removeClass('blocked')
   })
   $('.close-popup').click(function() {
       $(this).closest('.loginpopup').hide()

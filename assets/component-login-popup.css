@@ -15,6 +15,9 @@
 #MainContent{
 position: relative;
 }
+body.blocked{
+    overflow: hidden;
+}
 #MainContent .overlay-1{
     position: absolute;
     top: 0;
