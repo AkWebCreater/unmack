@@ -67,6 +67,8 @@
 	color: #fff;
 	text-transform: uppercase;
     cursor: pointer;
+    min-height: 15px;
+    line-height: 15px;
     flex-basis: 60px;
 }
 
@@ -231,4 +233,7 @@ justify-content: space-between;
 .qtn-changer-wrapper{
     flex: 2;
     margin-right: 10px;
+    min-height: 15px;
+    line-height: 15px;
 }
+
