@@ -15,7 +15,7 @@
 #MainContent{
 position: relative;
 }
-#MainContent .overlay{
+#MainContent .overlay-1{
     position: absolute;
     top: 0;
     bottom: 0;
