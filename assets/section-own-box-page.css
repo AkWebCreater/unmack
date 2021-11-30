@@ -68,7 +68,7 @@
 	text-transform: uppercase;
     cursor: pointer;
     min-height: 15px;
-    line-height: 15px;
+    line-height: 18px;
     flex-basis: 60px;
 }
 
@@ -234,6 +234,6 @@ justify-content: space-between;
     flex: 2;
     margin-right: 10px;
     min-height: 15px;
-    line-height: 15px;
+    line-height: 18px;
 }
 
