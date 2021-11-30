@@ -183,7 +183,7 @@ order: 1;
     margin-top: 5px;
     width: fit-content;
 }
-.left-part .qtn-changer-wrapper,.remove-wrapper{
+.right-part .qtn-changer-wrapper,.remove-wrapper{
 display: flex;
 align-items: center;
 }
