@@ -67,7 +67,8 @@
 	padding: 5px;
 	color: #fff;
 	text-transform: uppercase;
-    cursor: pointer;
+    cursor: pointer;.
+    flex: 1;
 }
 
 .accordian {
@@ -221,4 +222,14 @@ justify-content: space-between;
     align-items: center;
     border: 1px dotted #ccc;
     border-radius: 8px;
+}
+.qtn-changer *{
+    flex: 1;
+}
+.accordian .footer{
+    display: flex;
+}
+.qtn-changer-wrapper{
+    flex: 2;
+    margin-right: 10px;
 }
