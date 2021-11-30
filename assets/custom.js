@@ -209,7 +209,7 @@ $(document).ready(function() {
       $('.overlay-1').stop().toggle();
       $('body').toggleClass('blocked')
       if ($(window).scrollTop() > 115) {
-        $('.loginpopup').css('top',($(window).scrollTop() + 115) +'px')
+        $('.loginpopup').css('top',($(window).scrollTop() + 15) +'px')
       }
   })
   $('.overlay-1').click(function(){
