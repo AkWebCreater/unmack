@@ -8,12 +8,13 @@
        <div class="lower">
           {% for block in section.blocks %}
           {%- assign collection = collections[block.settings.collection] -%}
+          {% assign index1 = forloop.index %}
           <div class="tab"><span>{{block.settings.title}} <span>({{collection.products.size}})</span></span>  </div>
           <div class="accordian">
              <div class=" product-slider">
                 {% for product in collection.products %}
                 <div class="product-slide">
-                   <div class="product-item">
+                   <div class="product-item" data-index="{{index1 | append: '{{forloop.index}}'}}">
                       <div class="pro-img">
                          <img src="{{product.featured_image | img_url: '100x100'}}" alt="product-img">
                       </div>
