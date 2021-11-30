@@ -151,6 +151,12 @@
     display: flex;
     width: 100%;
 }
+.right-part .product-bottom{
+    flex-direction: column-reverse;
+}
+.right-part .detail-wrapper{
+order: 1;
+}
 .left-part .remove-btn,.right-part .spr-badge{
     display: none;
 }
