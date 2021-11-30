@@ -55,36 +55,7 @@ $(document).ready(function() {
       ]
   })
   // product range slider end here
-  // own box page combo slider
-  $('.products-slider .slider').slick({
-      centerMode: true,
-      slidesToShow: 4,
-      arrows: true,
-      nextArrow: '<span  class="slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i></span>',
-      prevArrow: '<span  class="slick-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></span>',
-      // adaptiveHeight: true,
-      slidesToScroll: 1
-  }).on("setPosition", function() {
-      resizeSlider();
-  });
 
-  $(window).on("resize", function(e) {
-      resizeSlider();
-  });
-
-
-  var slickHeight = $(".products-slider .slick-track").height();
-
-  var slideHeight = $(".slick-track").find(".slick-slide").outerHeight();
-
-  function resizeSlider() {
-      $(".slick-track")
-          .find(".slick-slide .pro-wrapper")
-          // deducted height of ssw wishlist icon '24' for avoiding extra height
-          .css("height", (slickHeight - 24) + "px");
-  }
-
-  // ens here 
   // Umanac Journey year section js
   $('.journey-products').slick({
       slidesToShow: 1,
@@ -301,6 +272,13 @@ $(document).ready(function() {
 
   })
   // own box page 
+  // add items to cart
+  $(document).on('click', '.add-cart', function() {
+    var product = $(this).parent();
+    var id = product.find('.var-id').data("var-id")
+    addToCart(1, id)
+  })
+  // end
   // slider and accordian
   $('.main-wrapper .accordian').hide();
 
@@ -319,6 +297,35 @@ $(document).ready(function() {
           slidesToScroll: 1
       });
   })
+
+    // own box page combo slider
+    $('.products-slider .slider').slick({
+      centerMode: true,
+      slidesToShow: 4,
+      arrows: true,
+      nextArrow: '<span  class="slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i></span>',
+      prevArrow: '<span  class="slick-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></span>',
+      // adaptiveHeight: true,
+      slidesToScroll: 1
+  }).on("setPosition", function() {
+      resizeSlider();
+  });
+
+  $(window).on("resize", function(e) {
+      resizeSlider();
+  });
+
+
+  var slickHeight = $(".products-slider .slick-track").height();
+
+  var slideHeight = $(".slick-track").find(".slick-slide").outerHeight();
+
+  function resizeSlider() {
+      $(".slick-track")
+          .find(".slick-slide .pro-wrapper")
+          // deducted height of ssw wishlist icon '24' for avoiding extra height
+          .css("height", (slickHeight - 24) + "px");
+  }
   // end
   // making combo product grid on product selection from product slider 
   // price update function

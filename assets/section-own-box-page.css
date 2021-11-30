@@ -131,17 +131,12 @@
 .combo-wrapper.empty{
     min-height: 200px;
 }
-
-
-
-
-
-
 .add-to-cart{
     border-radius: 4px;
     background-color: #585858;
     color:#fff;
     text-align: center;
+    cursor: pointer;
     justify-content: center !important;
 }
 .total{
