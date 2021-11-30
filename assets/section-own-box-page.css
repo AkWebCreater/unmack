@@ -257,7 +257,11 @@ justify-content: space-between;
 order: 1;
 }
 .right-part .qtn-changer-wrapper{
-    max-width: 150px;
+    max-width: 130px;
+
+}
+.right-part .qtn-changer{
+    justify-content: space-between;
 }
 .right-part .add-btn{
     display: none;
@@ -293,6 +297,15 @@ order: 1;
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    border: 1px solid #706e6e;
-    color: #706e6e;
+    border: 1px solid #515151;
+    color: #515151;
+    flex: auto;
+    font-size: 18px;
+}
+.right-part .qtn-changer .qtn{
+    width: 50px;
+    border: 1px solid #515151;
+    color: #515151;
+    flex: auto;
+    font-size: 18px;
 }
