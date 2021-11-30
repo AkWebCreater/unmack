@@ -17,6 +17,9 @@
 
     
 }
+#shopify-section-image-banner{
+    margin-top: 0 !important;
+}
 .logged-in{
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
