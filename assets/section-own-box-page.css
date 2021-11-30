@@ -227,6 +227,9 @@ justify-content: space-between;
 .qtn-changer *{
     flex: 1;
 }
+.qtn-changer .minus,.qtn-changer .plus{
+    cursor: pointer;
+}
 .accordian .footer{
     display: flex;
 }
