@@ -306,6 +306,7 @@ order: 1;
     border: 1px solid #515151;
     color: #515151;
     flex: unset;
+    line-height: 18px;
     font-size: 18px;
 }
 .right-part .qtn-changer .qtn{
@@ -314,8 +315,8 @@ order: 1;
     color: #515151;
     flex: unset;
     min-height: 20px;
-    line-height: 20px;
+    line-height: 18px;
     border-radius: 10px;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 15px;
 }
