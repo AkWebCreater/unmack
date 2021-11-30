@@ -64,11 +64,10 @@
 
 .add-btn {
 	background-color: var(--color-pincode-validator);
-	padding: 5px;
 	color: #fff;
 	text-transform: uppercase;
-    cursor: pointer;.
-    flex: 1;
+    cursor: pointer;
+    flex-basis: 60px;
 }
 
 .accordian {
