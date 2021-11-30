@@ -206,6 +206,11 @@ $(document).ready(function() {
   $('.header__icon--account').click(function(e) {
       e.preventDefault();
       $('.loginpopup').stop().toggle();
+      $('.overlay').stop().toggle();
+  })
+  $('.overlay').click(function(){
+    $(this).hide();
+    $('.loginpopup').stop().toggle();
   })
   $('.close-popup').click(function() {
       $(this).closest('.loginpopup').hide()
