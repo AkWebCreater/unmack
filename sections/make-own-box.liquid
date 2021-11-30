@@ -20,7 +20,7 @@
                       <div class="product-bottom">
                          <div class="detail-wrapper">
                             <span class="accent">{{product.title}}</span>
-                            <span class="remove-btn">remove</span>
+                           
                          </div>
                          <span class="main-price" data-price="{{ product.selected_or_first_available_variant.price}}">
                          {{product.selected_or_first_available_variant.price | money_without_trailing_zeros}}
@@ -33,10 +33,11 @@
                             <div class="qtn-changer-wrapper">
                                 <div class="qtn-changer">
                                     <span class="minus">-</span>
-                                    <span class="qtn">0</span>
+                                    <span class="qtn">1</span>
                                     <span class="plus">+</span>
                                 </div>
                             </div>
+                            <span class="remove-btn">remove</span>
                              <div class="add-btn">add</div>
                          </div>
                       </div>
