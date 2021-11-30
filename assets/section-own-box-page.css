@@ -265,4 +265,19 @@ justify-content: space-between;
     min-height: 15px;
     line-height: 18px;
 }
+/* right part */
+.right-part .pro-img{
+    max-width: 100px;
+    min-height: 100px;
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+}
+.right-part .pro-img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
 
