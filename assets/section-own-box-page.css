@@ -165,6 +165,9 @@
 .right-part .detail-wrapper{
 order: 1;
 }
+.right-part .qtn-changer-wrapper{
+    max-width: 150px;
+}
 .left-part .remove-btn,.right-part .spr-badge{
     display: none;
 }
@@ -179,6 +182,10 @@ order: 1;
     flex: 1;
     margin-top: 5px;
     width: fit-content;
+}
+.left-part .qtn-changer-wrapper,.remove-wrapper{
+display: flex;
+align-items: center;
 }
 .right-part .product-item{
     display: flex;
