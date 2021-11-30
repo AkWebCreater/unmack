@@ -208,7 +208,7 @@ $(document).ready(function() {
       $('.loginpopup').stop().toggle();
       $('.overlay-1').stop().toggle();
   })
-  $('.overlay').click(function(){
+  $('.overlay-1').click(function(){
     $(this).hide();
     $('.loginpopup').stop().toggle();
   })
