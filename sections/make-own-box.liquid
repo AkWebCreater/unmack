@@ -14,7 +14,7 @@
              <div class=" product-slider">
                 {% for product in collection.products %}
                 <div class="product-slide">
-                   <div class="product-item" data-index="{{index1 | append: '{{forloop.index}}'}}">
+                   <div class="product-item" data-index="{{index1 | append:forloop.index}}">
                       <div class="pro-img">
                          <img src="{{product.featured_image | img_url: '100x100'}}" alt="product-img">
                       </div>
