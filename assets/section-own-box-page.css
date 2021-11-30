@@ -227,6 +227,9 @@ justify-content: space-between;
 .qtn-changer *{
     flex: 1;
 }
+.compare-price{
+    text-decoration: line-through;
+}
 .qtn-changer .minus,.qtn-changer .plus{
     cursor: pointer;
 }
