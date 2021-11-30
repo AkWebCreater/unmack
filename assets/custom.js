@@ -273,10 +273,15 @@ $(document).ready(function() {
   })
   // own box page 
   // add items to cart
-  $(document).on('click', '.add-cart', function() {
-    var product = $(this).parent();
-    var id = product.find('.var-id').data("var-id")
-    addToCart(1, id)
+  $(document).on('click', '.add-combo-in-cart', function() {
+    var $products = $('.combo-products-grid').children();
+
+    $products.each(function(){
+      var id = $(this).find('[data-var-id]').attr("data-var-id")
+      var qt = $(this).find('.qtn').text();
+      addToCart(qt, id)
+    })
+    
   })
   // end
   // slider and accordian
