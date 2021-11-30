@@ -244,6 +244,7 @@ justify-content: space-between;
     flex-direction: column;
     /* margin-left: 15px;
     padding: 0 10px; */
+    font-size: 16px;
     max-width: 60%;
     text-align: left;
 }
@@ -262,7 +263,7 @@ order: 1;
     color: #515151;
 }
 .right-part .qtn-changer-wrapper{
-    max-width: 130px;
+    max-width: 100px;
 
 }
 .right-part .qtn-changer{
@@ -306,7 +307,7 @@ order: 1;
     border: 1px solid #515151;
     color: #515151;
     flex: unset;
-    line-height: 18px;
+    line-height: 14px;
     font-size: 18px;
 }
 .right-part .qtn-changer .qtn{
