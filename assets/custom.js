@@ -208,6 +208,9 @@ $(document).ready(function() {
       $('.loginpopup').stop().toggle();
       $('.overlay-1').stop().toggle();
       $('body').toggleClass('blocked')
+      if ($(window).scrollTop() > 115) {
+        $('.loginpopup').css('top',($(window).scrollTop() + 115) +'px')
+      }
   })
   $('.overlay-1').click(function(){
     $(this).hide();
