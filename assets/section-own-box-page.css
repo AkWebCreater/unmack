@@ -289,3 +289,10 @@ order: 1;
     padding-bottom: 10px;
     border: 1px solid #ccc;
 }
+.right-part .qtn-changer .minus,.right-part .qtn-changer .plus{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid #706e6e;
+    color: #706e6e;
+}
