@@ -316,3 +316,36 @@ order: 1;
     font-weight: 600;
     font-size: 15px;
 }
+
+.overlay{
+    display: none;
+    position: absolute;
+    top: 0;left: 0;bottom: 0;right: 0;
+    z-index: 99999;
+    background-color: rgba(0,0,0,0.5);
+}
+.main-wrapper{
+    position: relative;
+}
+.main-wrapper.blocked{
+    overflow: hidden;
+}
+.cart-success-alert{
+    position: fixed;
+    top: 50%;left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    border-radius: 8px;
+    max-width: 400px;
+    z-index: 100000;
+    width: 100%;
+    margin:0 20px;
+    padding: 20px;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cart-success-alert.closed{
+    display: none !important;
+}
