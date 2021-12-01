@@ -347,10 +347,20 @@ $(document).ready(function() {
   // add prodcut to combo grid on add btn click
   $('.product-slider .add-btn').click(function() {
       var productHtm = $(this).closest('.product-item').clone();
+      var index  = $(this).closest('.product-item').attr(data-index);
+      var qnt = parseInt($(this).closest('.product-item').find('.qtn').text());
       $('.empty-text').remove();
-      $('.combo-products-grid').append(productHtm);
-      $('.combo-wrapper').removeClass('empty');
-      priceUpadte()
+      if($('.combo-products-grid [data-index='+ index +']').length ){
+        var oldQtn = parseInt($('.combo-products-grid [data-index='+ index +']').find('.qtn').text());
+        var newQtn = oldQtn+qnt;
+        $('.combo-products-grid [data-index='+ index +']').find('.qtn').text(newQtn);
+        priceUpadte()
+      }else{
+
+        $('.combo-products-grid').append(productHtm);
+        $('.combo-wrapper').removeClass('empty');
+        priceUpadte()
+      }
   })
   // end
   // plus minus function
