@@ -1,3 +1,4 @@
+/* generel  */
 .accountpopup-body{
     display: flex;
     text-align: left;
@@ -34,48 +35,9 @@ body.blocked{
 #shopify-section-image-banner{
     margin-top: 0 !important;
 }
-.logged-in{
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-}
-.scrolled{
-    
-}
-.logged-in .accountpopup-body span a{
-    display: flex;
-    font-size: 16px;
-    align-items: center;
-}
-.logged-in .accountpopup-body span a::before{
-    content: '';
-    display: block;
-background-image: url('https://cdn.shopify.com/s/files/1/0591/8192/4552/files/acc-icons.jpg?v=1638179448');
-background-size: cover;
-width: 36px;
-height: 30px;
 
-}
-.logged-in .accountpopup-body .wishlist a::before{
-    background-position: -30px;
-}
-.logged-in .accountpopup-body .order-history a::before{
-    background-position: -88px;
-}
-.logged-in .accountpopup-body .gift-card a::before{
-    background-position: -118px;
-}
-.logged-in .accountpopup-body .wallet a::before{
-    background-position: -148px;
-}
-.logged-in .accountpopup-body .cont-us a::before{
-    background-position: 183px;
-}
-.logged-in .accountpopup-body .soci-login a::before{
-    background-position: -179px;
-}
-.logged-in .accountpopup-body .whatsapp a::before{
-    background-position: -210px;
-}
+
+
 .account-header-main .logo{
     padding-right: 12px;
 }
@@ -104,23 +66,14 @@ flex-direction: column;
     display: none;
     
 }
-.loginpopup.logged-in{
-    width: fit-content;
-    position: absolute;
-    top: 110px;
-    z-index: 9999;
-    right: 40px;
-    box-shadow: 0px 0px 3px 2px rgb(166 157 157 / 75%);
-    -webkit-box-shadow: 0px 0px 3px 2px rgb(166 157 157 / 75%);
-    -moz-box-shadow: 0px 0px 3px 2px rgba(166,157,157,0.75);
-}
-.loginpopup.logged-out{
+
+.loginpopup{
     max-width: 650px;
     width: 100%;
     position: fixed;
     padding: 0;
     top: 50%;
-    z-index:999;
+    z-index:9999;
     left: 50%;
     transform: translate(-50%,-50%);
 }
@@ -160,9 +113,19 @@ flex-direction: column;
 .login-container{
     position: relative;
 }
-.login-container .login-main-body> div{
+.login-main-body .login-form{
     flex: 1;
     position: relative;
+}
+.login-main-body .imgbanner{
+    flex: 0;
+    position: relative;
+}
+@media (min-width:751px) {
+    .login-main-body > div{
+        flex: 1;
+        position: relative;
+    }
 }
 .loginpopup .login-form{
     padding: 20px;
@@ -210,4 +173,54 @@ flex-direction: column;
 }
 .forgot-pass{
     display: none;
+}
+/* logged in  */
+.logged-in{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.loginpopup.logged-in{
+    width: fit-content;
+    position: absolute;
+    top: 110px;
+    z-index: 9999;
+    right: 40px;
+    box-shadow: 0px 0px 3px 2px rgb(166 157 157 / 75%);
+    -webkit-box-shadow: 0px 0px 3px 2px rgb(166 157 157 / 75%);
+    -moz-box-shadow: 0px 0px 3px 2px rgba(166,157,157,0.75);
+}
+.logged-in .accountpopup-body span a{
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+}
+.logged-in .accountpopup-body span a::before{
+    content: '';
+    display: block;
+background-image: url('https://cdn.shopify.com/s/files/1/0591/8192/4552/files/acc-icons.jpg?v=1638179448');
+background-size: cover;
+width: 36px;
+height: 30px;
+
+}
+.logged-in .accountpopup-body .wishlist a::before{
+    background-position: -30px;
+}
+.logged-in .accountpopup-body .order-history a::before{
+    background-position: -88px;
+}
+.logged-in .accountpopup-body .gift-card a::before{
+    background-position: -118px;
+}
+.logged-in .accountpopup-body .wallet a::before{
+    background-position: -148px;
+}
+.logged-in .accountpopup-body .cont-us a::before{
+    background-position: 183px;
+}
+.logged-in .accountpopup-body .soci-login a::before{
+    background-position: -179px;
+}
+.logged-in .accountpopup-body .whatsapp a::before{
+    background-position: -210px;
 }
