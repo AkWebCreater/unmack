@@ -9,13 +9,20 @@ $(document).ready(function () {
         var qt = $(this).find('.qtn').text();
         addToCart(qt, id)
       })
-      $('.overlay').show();
+      $('.overlay-own-box').show();
       $('.cart-success-alert').removeClass('closed');
+      $('body.make-own-box').addClass('blocked')
     })
     // end
-    $('.overlay').click(function () {
+    $('.overlay-own-box').click(function(){
       $(this).hide();
       $('.cart-success-alert').addClass('closed');
+      $('body.make-own-box').removeClass('blocked')
+    })
+    $('.cart-success-alert .close').click(function(){
+      $('.overlay-own-box').hide();
+      $('.cart-success-alert').addClass('closed');
+      $('body.make-own-box').removeClass('blocked')
     })
   // slider and accordian
   $('.main-wrapper .accordian').hide();
