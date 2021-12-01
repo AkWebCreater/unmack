@@ -311,7 +311,15 @@ $(document).ready(function() {
       nextArrow: '<span  class="slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i></span>',
       prevArrow: '<span  class="slick-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></span>',
       // adaptiveHeight: true,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      responsive: [{
+        breakpoint: 750,
+        settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            adaptiveHeight: true,
+        },
+    }]
   }).on("setPosition", function() {
       resizeSlider();
   });
