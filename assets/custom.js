@@ -347,7 +347,7 @@ $(document).ready(function() {
   // add prodcut to combo grid on add btn click
   $('.product-slider .add-btn').click(function() {
       var productHtm = $(this).closest('.product-item').clone();
-      var index  = $(this).closest('.product-item').attr(data-index);
+      var index  = $(this).closest('.product-item').attr('data-index');
       var qnt = parseInt($(this).closest('.product-item').find('.qtn').text());
       $('.empty-text').remove();
       if($('.combo-products-grid [data-index='+ index +']').length ){
