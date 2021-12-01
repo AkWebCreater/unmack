@@ -400,8 +400,12 @@ function priceUpadte() {
   var price = 0;
   $('.combo-products-grid .product-item').each(function() {
 
-      var cprice = $(this).find('.main-price').attr('data-price');
+    if(parseInt($(this).find('.qtn').text()) > 1){
+  var cprice = parseInt($(this).find('.main-price').attr('data-price')) * parseInt($(this).find('.qtn').text()) ;
 
+}else{
+  var cprice = $(this).find('.main-price').attr('data-price') ;
+}
       var acprice = parseInt(cprice);
       price += acprice
   })
