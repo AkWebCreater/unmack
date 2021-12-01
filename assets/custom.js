@@ -360,14 +360,13 @@ $('.minus').on('click',function(){
  if (qtn > 1){
   qtn -= 1;
  } 
-
+ $(this).parent().find('.qtn').text(qtn);
 })
 $('.plus').on('click',function(){
   var qt =  $(this).parent().find('.qtn').text();
   var qtn = parseInt(qt);
-  if (qtn > 1){
    qtn += 1;
-  } 
+   $(this).parent().find('.qtn').text(qtn);
  
  })
   // end
