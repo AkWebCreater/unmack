@@ -1,16 +1,22 @@
+// make my own box page 
 $(document).ready(function () {
     // add items to cart
     $(document).on('click', '.add-combo-in-cart', function() {
       var $products = $('.combo-products-grid').children();
-  
-      $products.each(function(){
+  var total = $products.length
+      $products.each(function(index){
         var id = $(this).find('[data-var-id]').attr("data-var-id")
         var qt = $(this).find('.qtn').text();
         addToCart(qt, id)
       })
-      
+      $('.overlay').show();
+      $('.cart-success-alert').removeClass('closed');
     })
     // end
+    $('.overlay').click(function () {
+      $(this).hide();
+      $('.cart-success-alert').addClass('closed');
+    })
   // slider and accordian
   $('.main-wrapper .accordian').hide();
 
@@ -119,7 +125,7 @@ $(document).ready(function () {
 })
 // end
 })
-
+// make my own box page ends here
 $(document).ready(function() {
   // product page sliders
   setTimeout(() => {
@@ -216,7 +222,7 @@ if (empt) {
 }
 
 // custom add t cart
-function addToCart(qnt, id) {
+function addToCart(qnt, id,Callback) {
   console.log(qnt);
   console.log(id);
   $.ajax({
@@ -231,6 +237,7 @@ function addToCart(qnt, id) {
       success: function(data) {
           //           $('#CartCount span:first').text(data.quantity);
           console.log(data.quantity);
+          Callback();
 
       }
 
@@ -393,18 +400,6 @@ $(document).ready(function() {
       $(this).parent().siblings().find('.product-popup-menu').removeClass('open');
 
   })
-  // own box page 
-
-
-
-
-  // making combo product grid on product selection from product slider 
-  // price update function
-
-  // price update function end
-
-
-
 })
 
 function priceUpadte() {

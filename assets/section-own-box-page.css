@@ -349,3 +349,8 @@ order: 1;
 .cart-success-alert.closed{
     display: none !important;
 }
+.cart-success- .close{
+    position: absolute;
+    top: 10px;right: 10px;
+    z-index: 1000001;
+}
