@@ -371,13 +371,14 @@ $(document).on('click','.minus',function(){
   qtn -= 1;
  } 
  $(this).parent().find('.qtn').text(qtn);
+ priceUpadte()
 })
 $(document).on('click','.plus',function(){
   var qt =  $(this).parent().find('.qtn').text();
   var qtn = parseInt(qt);
    qtn += 1;
    $(this).parent().find('.qtn').text(qtn);
- 
+   priceUpadte()
  })
   // end
   // remove item on click remove BTN
