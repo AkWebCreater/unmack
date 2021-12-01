@@ -1,3 +1,125 @@
+$(document).ready(function () {
+    // add items to cart
+    $(document).on('click', '.add-combo-in-cart', function() {
+      var $products = $('.combo-products-grid').children();
+  
+      $products.each(function(){
+        var id = $(this).find('[data-var-id]').attr("data-var-id")
+        var qt = $(this).find('.qtn').text();
+        addToCart(qt, id)
+      })
+      
+    })
+    // end
+  // slider and accordian
+  $('.main-wrapper .accordian').hide();
+
+  $('.main-wrapper .tab').click(function() {
+      $('.tab').removeClass('active');
+      $('.main-wrapper .accordian').slideUp();
+      $(this).toggleClass('active');
+      $(this).next().stop().slideToggle();
+      $(this).next().find('.product-slider').slick({
+          arrows: true,
+          infinite: true,
+          speed: 300,
+          nextArrow: '<span  class="slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i></span>',
+          prevArrow: '<span  class="slick-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></span>',
+          slidesToShow: 3,
+          slidesToScroll: 1
+      });
+  })
+      // combo slider
+      $('.products-slider .slider').slick({
+        centerMode: true,
+        slidesToShow: 4,
+        arrows: true,
+        nextArrow: '<span  class="slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i></span>',
+        prevArrow: '<span  class="slick-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></span>',
+        // adaptiveHeight: true,
+        slidesToScroll: 1,
+        responsive: [{
+          breakpoint: 767,
+          settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+              adaptiveHeight: true,
+          },
+      }]
+    }).on("setPosition", function() {
+        resizeSlider();
+    });
+  
+    $(window).on("resize", function(e) {
+        resizeSlider();
+    });
+  
+  
+    var slickHeight = $(".products-slider .slick-track").height();
+  
+    var slideHeight = $(".slick-track").find(".slick-slide").outerHeight();
+  
+    function resizeSlider() {
+        $(".slick-track")
+            .find(".slick-slide .pro-wrapper")
+            // deducted height of ssw wishlist icon '24' for avoiding extra height
+            .css("height", (slickHeight - 24) + "px");
+    }
+    // end
+
+      // add prodcut to combo grid on add btn click
+  $('.product-slider .add-btn').click(function() {
+    var productHtm = $(this).closest('.product-item').clone();
+    var index  = $(this).closest('.product-item').attr('data-index');
+    var qnt = parseInt($(this).closest('.product-item').find('.qtn').text());
+    $('.empty-text').remove();
+    if($('.combo-products-grid [data-index='+ index +']').length ){
+      var oldQtn = parseInt($('.combo-products-grid [data-index='+ index +']').find('.qtn').text());
+      var newQtn = oldQtn+qnt;
+      $('.combo-products-grid [data-index='+ index +']').find('.qtn').text(newQtn);
+      priceUpadte()
+    }else{
+
+      $('.combo-products-grid').append(productHtm);
+      $('.combo-wrapper').removeClass('empty');
+      priceUpadte()
+    }
+})
+// end
+  // plus minus function
+  $(document).on('click','.minus',function(){
+    var qt =  $(this).parent().find('.qtn').text();
+    var qtn = parseInt(qt);
+    if (qtn > 1){
+     qtn -= 1;
+    } 
+    $(this).parent().find('.qtn').text(qtn);
+    priceUpadte()
+   })
+   $(document).on('click','.plus',function(){
+     var qt =  $(this).parent().find('.qtn').text();
+     var qtn = parseInt(qt);
+      qtn += 1;
+      $(this).parent().find('.qtn').text(qtn);
+      priceUpadte()
+    })
+     // end
+       // remove item on click remove BTN
+  $(document).on('click', '.remove-btn', function() {
+    $(this).closest('.product-item').remove();
+    setTimeout(() => {
+        priceUpadte()
+    }, 100)
+    if ($('.combo-products-grid .product-item').length == 0) {
+        // do something
+        $('.combo-wrapper').addClass('empty')
+        $('.combo-products-grid').html('<span class="empty-text">you have not selected any product</span>')
+    }
+
+})
+// end
+})
+
 $(document).ready(function() {
   // product page sliders
   setTimeout(() => {
@@ -272,129 +394,17 @@ $(document).ready(function() {
 
   })
   // own box page 
-  // add items to cart
-  $(document).on('click', '.add-combo-in-cart', function() {
-    var $products = $('.combo-products-grid').children();
-
-    $products.each(function(){
-      var id = $(this).find('[data-var-id]').attr("data-var-id")
-      var qt = $(this).find('.qtn').text();
-      addToCart(qt, id)
-    })
-    
-  })
-  // end
-  // slider and accordian
-  $('.main-wrapper .accordian').hide();
-
-  $('.main-wrapper .tab').click(function() {
-      $('.tab').removeClass('active');
-      $('.main-wrapper .accordian').slideUp();
-      $(this).toggleClass('active');
-      $(this).next().stop().slideToggle();
-      $(this).next().find('.product-slider').slick({
-          arrows: true,
-          infinite: true,
-          speed: 300,
-          nextArrow: '<span  class="slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i></span>',
-          prevArrow: '<span  class="slick-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></span>',
-          slidesToShow: 3,
-          slidesToScroll: 1
-      });
-  })
-
-    // own box page combo slider
-    $('.products-slider .slider').slick({
-      centerMode: true,
-      slidesToShow: 4,
-      arrows: true,
-      nextArrow: '<span  class="slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i></span>',
-      prevArrow: '<span  class="slick-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></span>',
-      // adaptiveHeight: true,
-      slidesToScroll: 1,
-      responsive: [{
-        breakpoint: 767,
-        settings: {
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            adaptiveHeight: true,
-        },
-    }]
-  }).on("setPosition", function() {
-      resizeSlider();
-  });
-
-  $(window).on("resize", function(e) {
-      resizeSlider();
-  });
 
 
-  var slickHeight = $(".products-slider .slick-track").height();
 
-  var slideHeight = $(".slick-track").find(".slick-slide").outerHeight();
 
-  function resizeSlider() {
-      $(".slick-track")
-          .find(".slick-slide .pro-wrapper")
-          // deducted height of ssw wishlist icon '24' for avoiding extra height
-          .css("height", (slickHeight - 24) + "px");
-  }
-  // end
   // making combo product grid on product selection from product slider 
   // price update function
 
   // price update function end
-  // add prodcut to combo grid on add btn click
-  $('.product-slider .add-btn').click(function() {
-      var productHtm = $(this).closest('.product-item').clone();
-      var index  = $(this).closest('.product-item').attr('data-index');
-      var qnt = parseInt($(this).closest('.product-item').find('.qtn').text());
-      $('.empty-text').remove();
-      if($('.combo-products-grid [data-index='+ index +']').length ){
-        var oldQtn = parseInt($('.combo-products-grid [data-index='+ index +']').find('.qtn').text());
-        var newQtn = oldQtn+qnt;
-        $('.combo-products-grid [data-index='+ index +']').find('.qtn').text(newQtn);
-        priceUpadte()
-      }else{
 
-        $('.combo-products-grid').append(productHtm);
-        $('.combo-wrapper').removeClass('empty');
-        priceUpadte()
-      }
-  })
-  // end
-  // plus minus function
-$(document).on('click','.minus',function(){
- var qt =  $(this).parent().find('.qtn').text();
- var qtn = parseInt(qt);
- if (qtn > 1){
-  qtn -= 1;
- } 
- $(this).parent().find('.qtn').text(qtn);
- priceUpadte()
-})
-$(document).on('click','.plus',function(){
-  var qt =  $(this).parent().find('.qtn').text();
-  var qtn = parseInt(qt);
-   qtn += 1;
-   $(this).parent().find('.qtn').text(qtn);
-   priceUpadte()
- })
-  // end
-  // remove item on click remove BTN
-  $(document).on('click', '.remove-btn', function() {
-      $(this).closest('.product-item').remove();
-      setTimeout(() => {
-          priceUpadte()
-      }, 100)
-      if ($('.combo-products-grid .product-item').length == 0) {
-          // do something
-          $('.combo-wrapper').addClass('empty')
-          $('.combo-products-grid').html('<span class="empty-text">you have not selected any product</span>')
-      }
 
-  })
-  // end
+
 })
 
 function priceUpadte() {
