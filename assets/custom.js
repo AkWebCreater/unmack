@@ -313,7 +313,7 @@ $(document).ready(function() {
       // adaptiveHeight: true,
       slidesToScroll: 1,
       responsive: [{
-        breakpoint: 750,
+        breakpoint: 767,
         settings: {
             slidesToShow: 3,
             slidesToScroll: 1,
@@ -352,6 +352,24 @@ $(document).ready(function() {
       $('.combo-wrapper').removeClass('empty');
       priceUpadte()
   })
+  // end
+  // plus minus function
+$('.minus').on('click',function(){
+ var qt =  $(this).parent().find('.qtn').text();
+ var qtn = parseInt(qt);
+ if (qtn > 1){
+  qtn -= 1;
+ } 
+
+})
+$('.plus').on('click',function(){
+  var qt =  $(this).parent().find('.qtn').text();
+  var qtn = parseInt(qt);
+  if (qtn > 1){
+   qtn += 1;
+  } 
+ 
+ })
   // end
   // remove item on click remove BTN
   $(document).on('click', '.remove-btn', function() {
