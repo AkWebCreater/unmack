@@ -354,7 +354,7 @@ $(document).ready(function() {
   })
   // end
   // plus minus function
-$('.minus').on('click',function(){
+$(document).on('click','.minus',function(){
  var qt =  $(this).parent().find('.qtn').text();
  var qtn = parseInt(qt);
  if (qtn > 1){
@@ -362,7 +362,7 @@ $('.minus').on('click',function(){
  } 
  $(this).parent().find('.qtn').text(qtn);
 })
-$('.plus').on('click',function(){
+$(document).on('click','.plus',function(){
   var qt =  $(this).parent().find('.qtn').text();
   var qtn = parseInt(qt);
    qtn += 1;
