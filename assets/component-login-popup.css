@@ -68,7 +68,7 @@ flex-direction: column;
     
 }
 
-.loginpopup{
+.loginpopup.logged-out{
     max-width: 650px;
     width: 100%;
     position: fixed;
