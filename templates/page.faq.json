@@ -193,7 +193,7 @@
       ],
       "settings": {
         "card-color": "#cccccc",
-        "heading-color": "#000",
+        "heading-color": "#000000",
         "section-heading": "Frequently Asked Questions (FAQs)",
         "address-block": true
       }
@@ -207,6 +207,7 @@
             "title": "Contact Us",
             "bg_img": "shopify:\/\/shop_images\/bottom-card-1.png",
             "url": "#",
+            "show-feedback": false,
             "btn_text": "Explore More"
           }
         },
@@ -216,6 +217,7 @@
             "title": "Careers",
             "bg_img": "shopify:\/\/shop_images\/bottom-card-2.png",
             "url": "#",
+            "show-feedback": false,
             "btn_text": "Explore More"
           }
         },
@@ -225,6 +227,7 @@
             "title": "Feedback",
             "bg_img": "shopify:\/\/shop_images\/bottom-card-4.png",
             "url": "#",
+            "show-feedback": true,
             "btn_text": "Explore More"
           }
         }
