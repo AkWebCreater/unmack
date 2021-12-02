@@ -114,12 +114,7 @@ flex-direction: column;
     position: relative;
 }
 
-@media (min-width:751px) {
-    .login-main-body  .login-form{
-        flex: 1;
-        position: relative;
-    }
-}
+
 .login-main-body .login-form{
     flex: 1;
     position: relative;
@@ -127,6 +122,12 @@ flex-direction: column;
 .login-main-body >:last-child{
     flex: 0;
     position: relative;
+}
+@media (min-width:751px) {
+    .login-main-body  .imgbanner{
+        flex: 1;
+        position: relative;
+    }
 }
 .loginpopup .login-form{
     padding: 20px;
