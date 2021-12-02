@@ -338,10 +338,12 @@ $(document).ready(function() {
   }
   // customer ragister toggle
   $('#signup').click(function () {
-    $('.customer.register').slideDown().prev().stop().slideUp();
+    $('.customer.register').slideDown();
+    $('.customer.login').stop().slideUp();
   })
   $('#login').click(function () {
-    $('.customer.login').slideDown().next().stop().slideUp();
+    $('.customer.login').slideDown();
+    $('.customer.register').stop().slideUp();
   })
   // login popup Header end
 
