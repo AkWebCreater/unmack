@@ -53,7 +53,7 @@
 }
 .popup-layer{
     display: none;
-    top: 40px;
+    top: 0;
     left: 0;
     bottom: 0;
     position: fixed;
