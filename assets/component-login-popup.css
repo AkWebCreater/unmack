@@ -115,7 +115,7 @@ flex-direction: column;
 }
 
 @media (min-width:751px) {
-    .login-main-body > div{
+    .login-main-body  .login-form{
         flex: 1;
         position: relative;
     }
