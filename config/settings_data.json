@@ -147,7 +147,9 @@
           "enable_language_selector": true,
           "payment_enable": true,
           "footer-bottom-page": "copy-of-other-option-for-you",
-          "footer-bottom-page-heading": "Popular Searches"
+          "footer-bottom-page-heading": "Popular Searches",
+          "footer-bottom-page-2": "other-option-for-you",
+          "footer-bottom-page-heading-2": "Explor Other Options For You Here"
         }
       },
       "main-password-header": {
