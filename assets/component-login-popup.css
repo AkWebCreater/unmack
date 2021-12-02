@@ -70,6 +70,8 @@ flex-direction: column;
 
 .loginpopup.logged-out{
     max-width: 650px;
+    max-height: 450px;
+    overflow-y: auto;
     width: 100%;
     position: fixed;
     padding: 0;
