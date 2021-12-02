@@ -14,7 +14,26 @@
                 <img src="{{block.settings.bg_img | img_url: 'medium'}}" alt="backgroung">
             </div>
 
-            <div class="text-layer">
+            <div class="text-layer  {% if block.settings.show-feedback %}with-feedback{% endif %}">
+              {% if block.settings.show-feedback %}
+              <div class="feddback-wrapper">
+                <div class="feeback">
+                  <input type="checbox"><span>Excellent</span>
+                </div>
+                <div class="feeback">
+                  <input type="checbox"><span>Good</span>
+                  
+                </div>
+                <div class="feeback">
+
+                  <input type="checbox"><span>Average</span>
+                </div>
+                <div class="feeback">
+
+                  <input type="checbox"><span>Poor</span>
+                </div>
+              </div>
+              {% endif %}
                 <div class="cart-title">
                     <h2>{{block.settings.title}}</h2>
                 </div>
@@ -75,6 +94,11 @@
           "type": "url",
           "id": "url",
           "label": "Button Url"
+      },
+      {
+        "type": "checkbox",
+        "id": "show-feedback",
+        "label": "Show Feedback"
       },
       {
           "type": "text",
