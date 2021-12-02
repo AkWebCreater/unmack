@@ -1,4 +1,4 @@
-// make my own box page 
+//########################## make my own box page #####################
 $(document).ready(function () {
     // add items to cart
     $(document).on('click', '.add-combo-in-cart', function() {
@@ -132,7 +132,9 @@ $(document).ready(function () {
 })
 // end
 })
-// make my own box page ends here
+// ################### make my own box page ends here #######################
+
+
 $(document).ready(function() {
   // product page sliders
   setTimeout(() => {
@@ -156,6 +158,8 @@ $(document).ready(function() {
       })
   }, 3000)
   // product page slider end
+
+
   // product range slider home page
   $('.product-range-slider ul').slick({
       slidesToShow: 6,
@@ -312,20 +316,22 @@ $(document).ready(function() {
   // login popup Header
   $('.header__icon--account').click(function(e) {
       e.preventDefault();
-      $('.loginpopup').stop().toggle();
-      $('.overlay-1').stop().toggle();
-      $('body').toggleClass('blocked')
+      $('.loginpopup').show();
+      $('.overlay-1').show();
+      $('body').addClass('blocked')
       if ($(window).scrollTop() > 115) {
         $('.loginpopup').css('top',($(window).scrollTop() + 100) +'px')
       }
   })
   $('.overlay-1').click(function(){
     $(this).hide();
-    $('.loginpopup').stop().toggle();
+    $('.loginpopup').hide();
     $('body').removeClass('blocked')
   })
   $('.close-popup').click(function() {
-      $(this).closest('.loginpopup').hide()
+      $(this).closest('.loginpopup').hide();
+      $('.overlay-1').hide();
+      $('body').removeClass('blocked');
       // $(this).closest('')
   })
   $('.login-header span').click(function() {
