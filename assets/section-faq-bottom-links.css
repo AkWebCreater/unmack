@@ -31,6 +31,12 @@
     margin: 0;
     margin-bottom: 10px;
 }
+@media (max-width:480px) {
+    
+.cart-title h2{
+    font-size: 28px;
+}
+}
 .popup-layer{
     display: none;
     top: 40px;
