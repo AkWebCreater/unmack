@@ -1,5 +1,5 @@
 {{ 'section-contact-form.css' | asset_url | stylesheet_tag }}
-{% if type == 'contact' %}
+
   
 <div class="contact page-width spaced-section">
     <div class="form-inner-wrapper">
@@ -173,8 +173,8 @@
     </div>
     
   </div>
-{% endif %}
 
+{%- comment -%}
 {% if type == 'career' %}
 <div class="contact page-width spaced-section">
     <div class="form-inner-wrapper">
@@ -303,8 +303,6 @@
     
   </div>
 {% endif %}
-  
-
 {% if type == 'feedback' %}
 <div class="contact page-width spaced-section">
     <div class="form-inner-wrapper">
@@ -433,4 +431,4 @@
     
   </div>
 {% endif %}
-  
+ {%- endcomment -%} 
