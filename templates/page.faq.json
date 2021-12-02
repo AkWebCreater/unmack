@@ -208,7 +208,9 @@
             "bg_img": "shopify:\/\/shop_images\/bottom-card-1.png",
             "url": "#",
             "show-feedback": false,
-            "btn_text": "Explore More"
+            "btn_text": "Explore More",
+            "form-title": "Contact Or Query",
+            "form_type": "contact"
           }
         },
         "3d7d237d-7e89-4e92-8deb-99a4aae0fcfb": {
@@ -218,7 +220,9 @@
             "bg_img": "shopify:\/\/shop_images\/bottom-card-2.png",
             "url": "#",
             "show-feedback": false,
-            "btn_text": "Explore More"
+            "btn_text": "Explore More",
+            "form-title": "Current Openings",
+            "form_type": "careers"
           }
         },
         "77b8628d-dd45-4661-a473-e2d95a3a43e4": {
@@ -228,7 +232,9 @@
             "bg_img": "shopify:\/\/shop_images\/bottom-card-4.png",
             "url": "#",
             "show-feedback": true,
-            "btn_text": "Explore More"
+            "btn_text": "Explore More",
+            "form-title": "",
+            "form_type": "contact"
           }
         }
       },
