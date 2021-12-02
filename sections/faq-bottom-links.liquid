@@ -8,6 +8,7 @@
     
     <div class="grid grid--3-col-desktop  grid--2-col bottom-wrapper">
       {% for block in section.blocks %}
+      {% assign form_type = block.settings.form_type %}
       <div class="grid__item bottom-card">
         <div class="img-container">
             <div class="img-layer">
@@ -42,21 +43,25 @@
                 </a>
             </div>
         </div>
+
+        <!-- contact form -->
+        <div class="popup-layer contact-us">
+          <div class="overlay">
+            
+          </div>
+          <div class="popup">
+            <div class="form-contact">{% include 'contact-form' , sectionTitle: block.settings.form-title , type:form_type %}</div>
+            <!-- <div class="form-career">
+              {formbuilder:65263}
+            </div> -->
+          </div>
+        </div>
+        <!-- contact form -->
     </div>
           
       {% endfor %}
     </div>
-    <div class="popup-layer contact-us">
-      <div class="overlay">
-        
-      </div>
-      <div class="popup">
-        <div class="form-contact">{% include 'contact-form' , sectionTitle:"Contact Form"%}</div>
-        <!-- <div class="form-career">
-          {formbuilder:65263}
-        </div> -->
-      </div>
-    </div>
+   
 </div>
 
 {% schema %}
@@ -104,6 +109,37 @@
           "type": "text",
           "id": "btn_text",
           "label": "Button Text"
+      },{
+        "type": "header",
+        "content": "Form"
+      },
+      {
+        "type": "text",
+        "id": "form-title",
+        "label": "Form Title"
+        
+      },      
+      {
+        "type": "select",
+        "id": "form_type",
+        "label": "form_type",
+        "options": [
+          {
+            "value": "contact",
+            "label": "Contact",
+           
+          },
+          {
+            "value": "careers",
+            "label": "Career",
+           
+          },
+          {
+            "value": "feedback",
+            "label": "Feedback",
+           
+          }
+        ]
       }
     ]
   }
