@@ -336,6 +336,13 @@ $(document).ready(function() {
       $('body').removeClass('blocked');
     }
   }
+  // customer ragister toggle
+  $('#signup').click(function () {
+    $('.customer.register').slideDown().prev().stop().slideUp();
+  })
+  $('#login').click(function () {
+    $('.customer.login').slideDown().next().stop().slideUp();
+  })
   // login popup Header end
 
   // best seller section slider
