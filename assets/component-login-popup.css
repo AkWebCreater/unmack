@@ -161,10 +161,15 @@ flex-direction: column;
     position: absolute;
     object-fit: cover;
 }
+.login-header .h2{
+    color: #000;
+}
 .login-header{
     display: flex;
     position: relative;
     justify-content: center;
+    align-items: center;
+    color: #000;
     font-weight: 800;
     font-size: 20px;
     padding-bottom: 12px;
