@@ -316,29 +316,16 @@ $(document).ready(function() {
   // login popup Header
   $('.header__icon--account').click(function(e) {
       e.preventDefault();
-      // $('.loginpopup').show();
-      // $('.overlay-1').show();
-      // $('body').addClass('blocked')
       loginpopupToggle('icon')
   })
-  $('.overlay-1').click(function(){
-    // $(this).hide();
-    // $('.loginpopup').hide();
-    // $('body').removeClass('blocked')
+  $('.overlay-1,.close-popup').click(function(){
     loginpopupToggle('close')
-  })
-  $('.close-popup').click(function() {
-      // $(this).closest('.loginpopup').hide();
-      // $('.overlay-1').hide();
-      // $('body').removeClass('blocked');
-      // $(this).closest('')
-      loginpopupToggle('close')
   })
   $('.login-header span').click(function() {
       $(this).addClass('accent');
-      $(this).sibling().removeClass('accent')
+      $(this).siblings().removeClass('accent')
   })
-  function loginpopupToggle(target,method) {
+  function loginpopupToggle(target) {
     if(target == 'icon'){
       $('.overlay-1').toggle();
       $('body').toggleClass('blocked');
