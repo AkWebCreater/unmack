@@ -2442,3 +2442,6 @@ div.wishlist .ssw-faveiticon{
   .body--collection .image-with-text__grid{
     overflow: visible;
   }
+  .header__icons .field{
+    margin-bottom: 0 !important;
+  }
