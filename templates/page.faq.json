@@ -10,13 +10,6 @@
         "adapt_height_first_image": true
       }
     },
-    "main": {
-      "type": "main-page",
-      "settings": {
-        "top_link": "",
-        "bottom_link": ""
-      }
-    },
     "faq": {
       "type": "faq",
       "blocks": {
@@ -304,7 +297,6 @@
   },
   "order": [
     "banner",
-    "main",
     "faq",
     "bottom-links",
     "social-connection",
