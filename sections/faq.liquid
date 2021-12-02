@@ -1,5 +1,6 @@
 {{ 'section-faq.css' | asset_url | stylesheet_tag }}
 <div class="container-faq page-width">
+  <h2 class=" section-title">{{section.settings.section-heading}}</h2>
     {% for block in section.blocks %}
         <div class="faq-card">
             <h3 class="h3 card-heading">{{block.settings.title}}</h3>
@@ -127,6 +128,11 @@
     "id": "heading-color",
     "default": "#000",
     "label": "Headings Color"
+  },
+  {
+    "type": "text",
+    "id": "section-heading",
+    "label": "Heading"
   },
   {
         "type": "checkbox",
