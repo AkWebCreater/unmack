@@ -606,6 +606,7 @@ width: 70px;
 }
 .footer-center{
 text-align:center;
+max-width: 100% !important;
     background: #fff;
     color: #727272;
       padding-bottom: 15px;

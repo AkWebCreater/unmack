@@ -164,6 +164,9 @@ flex-direction: column;
 .login-header .h2{
     color: #000;
 }
+.login-header .accent{
+    color: #f58d3f;
+}
 .login-header{
     display: flex;
     position: relative;
