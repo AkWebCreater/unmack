@@ -1,5 +1,6 @@
 {{ 'section-faq.css' | asset_url | stylesheet_tag }}
 <div class="container-faq page-width">
+  {% render 'breadcrums' %}
   <h2 class=" section-title">{{section.settings.section-heading}}</h2>
     {% for block in section.blocks %}
         <div class="faq-card">
