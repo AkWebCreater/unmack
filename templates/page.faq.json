@@ -193,6 +193,8 @@
       ],
       "settings": {
         "card-color": "#cccccc",
+        "heading-color": "#000",
+        "section-heading": "Frequently Asked Questions (FAQs)",
         "address-block": true
       }
     },
