@@ -2,7 +2,7 @@
 <div class="container-faq page-width">
     {% for block in section.blocks %}
         <div class="faq-card">
-            <h3 class="h3">{{block.settings.title}}</h3>
+            <h3 class="h3 card-heading">{{block.settings.title}}</h3>
         
                 <div class="faq-wrapper">
                     {% if block.settings.question != blank %}
@@ -101,7 +101,11 @@
         </div>
    {% endif %}
 </div>
-       
+   <style>
+     .card-heading{
+       color: {{section.settings.heading-color}};
+     }
+   </style>    
            
                
                 
@@ -112,13 +116,19 @@
   "tag": "section",
   "class": "spaced-section section-faq",
   "settings": [
-    {
-      "type": "color",
-      "id": "card-color",
-      "default": "#ccc",
-      "label": "Card Background Color"
-    },
-    {
+  {
+    "type": "color",
+    "id": "card-color",
+    "default": "#ccc",
+    "label": "Card Background Color"
+  },
+  {
+    "type": "color",
+    "id": "heading-color",
+    "default": "#0000",
+    "label": "Headings Color"
+  },
+  {
         "type": "checkbox",
         "id": "address-block",
         "label": "Show Address Block",
