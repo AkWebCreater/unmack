@@ -623,7 +623,12 @@
 {%- endif -%}
 <script type="text/javascript" src="https://cdn.rawgit.com/igorlino/elevatezoom-plus/1.1.6/src/jquery.ez-plus.js"></script>
 <script>
-  $(".product__media-list .product-zoom-img").ezPlus();
+  $(document).ready(function(){
+    if($(window).width() > 1024){
+
+      $(".product__media-list .product-zoom-img").ezPlus();
+    }
+  })
 </script>
 {% schema %}
 {
