@@ -129,6 +129,11 @@ flex-direction: column;
         position: relative;
     }
 }
+@media (max-width:750px) {
+    .close-popup path{
+        color: #000;
+    }
+}
 .loginpopup .login-form{
     padding: 20px;
 }
