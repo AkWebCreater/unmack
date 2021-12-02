@@ -189,7 +189,7 @@ flex-direction: column;
 }
 .loginpopup.logged-in{
     width: fit-content;
-    position: absolute;
+    position: fixed;
     top: 110px;
     z-index: 100000;
     right: 40px;

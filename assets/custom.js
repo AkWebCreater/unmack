@@ -316,28 +316,39 @@ $(document).ready(function() {
   // login popup Header
   $('.header__icon--account').click(function(e) {
       e.preventDefault();
-      $('.loginpopup').show();
-      $('.overlay-1').show();
-      $('body').addClass('blocked')
-      if ($(window).scrollTop() > 115) {
-        $('.loginpopup').css('top',($(window).scrollTop() + 100) +'px')
-      }
+      // $('.loginpopup').show();
+      // $('.overlay-1').show();
+      // $('body').addClass('blocked')
+      loginpopupToggle('icon')
   })
   $('.overlay-1').click(function(){
-    $(this).hide();
-    $('.loginpopup').hide();
-    $('body').removeClass('blocked')
+    // $(this).hide();
+    // $('.loginpopup').hide();
+    // $('body').removeClass('blocked')
+    loginpopupToggle('close')
   })
   $('.close-popup').click(function() {
-      $(this).closest('.loginpopup').hide();
-      $('.overlay-1').hide();
-      $('body').removeClass('blocked');
+      // $(this).closest('.loginpopup').hide();
+      // $('.overlay-1').hide();
+      // $('body').removeClass('blocked');
       // $(this).closest('')
+      loginpopupToggle('close')
   })
   $('.login-header span').click(function() {
       $(this).addClass('accent');
       $(this).sibling().removeClass('accent')
   })
+  function loginpopupToggle(target,method) {
+    if(target == 'icon'){
+      $('.overlay-1').toggle();
+      $('body').toggleClass('blocked');
+      $('.loginpopup').toggle();
+    }else{
+      $('.loginpopup').hide();
+      $('.overlay-1').hide();
+      $('body').removeClass('blocked');
+    }
+  }
   // login popup Header end
 
   // best seller section slider
