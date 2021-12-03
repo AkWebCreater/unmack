@@ -66,6 +66,7 @@
                 {%- endif -%}
               </div>
          </div>
+          {% if type == 'contact' or business == true %}
           <div class="field">
             <textarea
               rows="10"
@@ -78,6 +79,7 @@
             </textarea>
             <label class="form__label field__label" for="ContactForm-Address">Address</label>
           </div>
+          {% endif %}
           <div class="contact__fields">
             <div class="field">
                 <input type="text"  id="ContactForm-phone" class="field__input" autocomplete="tel" name="contact[city]"  placeholder="City">
