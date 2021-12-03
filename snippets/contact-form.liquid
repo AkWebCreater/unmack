@@ -99,7 +99,7 @@
           </div>
           <div class="field">
               <input class="field__input" type="date" name="contact[_Date of Birth]" placeholder="DOB">
-              <label class="field__label">Date Of Birth (DD/MM/YYYY)</label>
+              <label class="field__label secendory-label">Date Of Birth (DD/MM/YYYY)</label>
             </div>
          
         </div>
@@ -128,7 +128,7 @@
          <div class="contact__fields">
           <div class="field">
             <input class="field__input" autocomplete="name" type="file" id="ContactForm-qualification" name="contact[_Resume]" value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}" placeholder="Resume">
-            <label class="field__label" for="ContactForm-qualification">Resume</label>
+            <label class="field__label secendory-label" for="ContactForm-qualification">Resume</label>
           </div>
           <div class="field">
               <input class="field__input" type="text" name="contact[_Residential Address]" placeholder="Address">
