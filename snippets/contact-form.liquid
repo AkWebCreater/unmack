@@ -1,7 +1,7 @@
 {{ 'section-contact-form.css' | asset_url | stylesheet_tag }}
 
   
-<div class="contact form page-width spaced-section">
+<div class="contact form page-width {{type}} spaced-section">
     <div class="form-inner-wrapper ">
        {% if sectionTitle %}
        <div class="title">
