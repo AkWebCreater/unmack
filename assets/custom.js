@@ -279,10 +279,10 @@ $(document).ready(function() {
       e.preventDefault();
       $(this).closest('.bottom-card').find('.popup-layer').addClass('open');
       $('body').addClass('scroll-block')
-      $(this).closest('.bottom-card').find('.overlay').show();
+      $(this).closest('.bottom-card').find('.overlay').addClass('open');
   })
   $(document).on('click', '.overlay', function(e) {
-    $(this).hide();
+    $(this).removeClass('open');
       $('.popup-layer').removeClass('open');
       $('body').removeClass('scroll-block');
   })

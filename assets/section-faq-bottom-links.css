@@ -86,6 +86,9 @@
     right: 0;
     background: rgba(0,0,0,.6);
 }
+.popup-layer  .overlay.open{
+display: block !important;
+}
 body.scroll-block{
     overflow-y: hidden;
 }
