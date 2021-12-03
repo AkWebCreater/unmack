@@ -7,8 +7,9 @@
 .title h3{
   color: #878787;
   text-align: center;
-  margin: 0;
-  padding-bottom: 15px;
+  font-weight: 600;
+  margin-top: 0;
+  /* padding-bottom: 15px; */
 }
 .form-inner-wrapper{
   border: 1px solid #ccc;
