@@ -120,9 +120,10 @@ background-color: #f5f5f5;
   border-bottom:1px solid #7b7b7b;
   margin-left: -31px;
   margin-right: -31px;
+  padding: 0 31px;
 }
 .below-border a{
-  display: inline;
-  text-transform: capitalize;
-  color:var(--color-pincode-validator);
+  display: inline !important;
+  text-transform: capitalize !important;
+  color:var(--color-pincode-validator) !important;
 }

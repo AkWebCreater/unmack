@@ -70,9 +70,10 @@
               </div>
          </div>
           {% if type == 'contact' or business == true %}
+          
           <div class="field">
             <textarea
-              rows="10"
+              rows="3"
               id="ContactForm-Address"
               class="text-area field__input"
               name="contact[_Address]"
@@ -157,9 +158,11 @@
             </select>
      </div>
           {% endif %}
-         <div class="field">
-            <textarea
-              rows="10"
+          {% if type == 'careers' %}
+          <div class="contact__fields">
+            <div class="field">
+              <textarea
+              rows="3"
               id="ContactForm-body"
               class="text-area field__input"
               name="contact[_Query]"
@@ -168,12 +171,36 @@
               {{- form.body -}}
             </textarea>
             <label class="form__label field__label" for="ContactForm-body">{{ 'templates.contact.form.comment' | t }}</label>
+            </div>
+            <div class="field">
+              <button type="submit" class="button accent-bg button--full-width ">
+                {{ 'templates.contact.form.send' | t }}
+              </button>
+              </div>
+           
           </div>
+          {% else %}
+          <div class="field">
+             <textarea
+               rows="3"
+               id="ContactForm-body"
+               class="text-area field__input"
+               name="contact[_Query]"
+               placeholder="Share The Nature Of Your Query Here"
+             >
+               {{- form.body -}}
+             </textarea>
+             <label class="form__label field__label" for="ContactForm-body">{{ 'templates.contact.form.comment' | t }}</label>
+           </div>
+          {% endif %}
+            
+          {% unless type == 'careers' %}
           <div class="contact__button">
             <button type="submit" class="button">
               {{ 'templates.contact.form.send' | t }}
             </button>
           </div>
+          {% endunless %}
         {%- endform -%}
     </div>
     
