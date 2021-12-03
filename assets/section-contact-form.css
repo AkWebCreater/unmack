@@ -22,6 +22,11 @@
   margin-left: -31px;
   margin-right: -31px;
 }
+.below-border a{
+  display: inline-block;
+  text-transform: capitalize;
+  color:var(--color-pincode-validator);
+}
 .form-inner-wrapper .field > *{
 
   border-radius: 8px;

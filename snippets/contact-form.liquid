@@ -4,10 +4,10 @@
 <div class="contact form page-width spaced-section">
     <div class="form-inner-wrapper ">
        {% if sectionTitle %}
-       <div class="title  {% if subHeading != blank %} below-border{% endif %}">
+       <div class="title">
         <h3 class="h2 section-title">{{sectionTitle}}</h3>
         {% if subHeading != blank %}
-          <p>{{subHeading}}</p>
+          <p class="below-border">{{subHeading}}</p>
         {% endif %}
     </div>
        {% endif %}

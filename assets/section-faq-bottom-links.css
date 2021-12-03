@@ -97,6 +97,7 @@ body.scroll-block{
     max-height: 96vh;
     margin-top: 2vh;
     overflow-y: auto;
+    overflow-x: hidden;
 }
 .card-btn{
     color: #fff;
