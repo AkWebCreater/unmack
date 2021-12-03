@@ -47,9 +47,9 @@
   width: 100%;
   height: 100%;
   left: 0;
-  top: 0;
+  top: 0 !important;
   padding: 9px 15px;
-  font-size: 1.6rem;
+  font-size: 1.6rem !important;
   pointer-events: none;
 }
 @media screen and (min-width: 750px) {
