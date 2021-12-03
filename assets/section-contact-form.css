@@ -122,7 +122,7 @@ background-color: #f5f5f5;
   margin-right: -31px;
   padding: 0 31px;
 }
-.careers text-area{
+.careers textarea{
   min-height: auto;
 }
 .below-border a{
