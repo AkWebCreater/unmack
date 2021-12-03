@@ -277,7 +277,7 @@ $(document).ready(function() {
 
   $('.card-btn').click(function(e) {
       e.preventDefault();
-      $('.popup-layer').addClass('open');
+      $(this).closest('.popup-layer').addClass('open');
       $('body').addClass('scroll-block')
   })
   $(document).on('click', '.overlay', function(e) {
