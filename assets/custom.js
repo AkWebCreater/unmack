@@ -279,8 +279,10 @@ $(document).ready(function() {
       e.preventDefault();
       $(this).closest('.bottom-card').find('.popup-layer').addClass('open');
       $('body').addClass('scroll-block')
+      $(this).closest('.bottom-card').find('.overlay').show();
   })
   $(document).on('click', '.overlay', function(e) {
+    $(this).hide();
       $('.popup-layer').removeClass('open');
       $('body').removeClass('scroll-block');
   })
