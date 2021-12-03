@@ -52,6 +52,15 @@
   font-size: 1.6rem !important;
   pointer-events: none;
 }
+.inner-txt span{
+  font-size: 22px;
+    line-height: 1;
+    margin-right: 5px;
+}
+.resume{
+  display: flex;
+  justify-content: space-between;
+}
 @media screen and (min-width: 750px) {
   .contact__button {
     margin-top: 4rem;

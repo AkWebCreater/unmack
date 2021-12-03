@@ -10,6 +10,7 @@
       {% for block in section.blocks %}
       {% assign form_type = block.settings.form_type %}
       {% assign form_title = block.settings.form-title %}
+      {% assign form_subheading = block.settings.form-subheading %}
       <div class="grid__item bottom-card">
         <div class="img-container">
             <div class="img-layer">
@@ -52,7 +53,7 @@
             
           </div>
           <div class="popup">
-            <div class="form-contact">{% include 'contact-form' ,sectionTitle:form_title,type:form_type %}</div>
+            <div class="form-contact">{% include 'contact-form' ,sectionTitle:form_title,type:form_type,subHeading:form_subheading %}</div>
             <!-- <div class="form-career">
               {formbuilder:65263}
             </div> -->
@@ -119,6 +120,12 @@
         "type": "text",
         "id": "form-title",
         "label": "Form Title"
+        
+      },
+      {
+        "type": "text",
+        "id": "form-subheading",
+        "label": "Form Sub Heading"
         
       },      
       {
