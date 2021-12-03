@@ -3,11 +3,12 @@
 }
 .title{
   margin: 0;
+  text-align: center;
 }
 .title h3{
   color: #878787;
   text-align: center;
-  font-weight: 600;
+  /* font-weight: 600; */
   margin-top: 0;
   /* padding-bottom: 15px; */
 }
@@ -15,6 +16,11 @@
   border: 1px solid #ccc;
   border-radius: 8px;
   padding: 30px;
+}
+.below-border{
+  border: 1px solid inherit;
+  margin-left: -31px;
+  margin-right: -31px;
 }
 .form-inner-wrapper .field > *{
 
