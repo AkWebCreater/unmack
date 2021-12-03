@@ -210,6 +210,7 @@
             "show-feedback": false,
             "btn_text": "Explore More",
             "form-title": "Contact Or Query",
+            "form-subheading": "",
             "form_type": "contact"
           }
         },
@@ -222,6 +223,7 @@
             "show-feedback": false,
             "btn_text": "Explore More",
             "form-title": "Current Openings",
+            "form-subheading": "Candidates who wish to apply can check our career page on  <a href=\"#\" class=\"accent\">Linkdin<\/a> and apply for the job posted",
             "form_type": "careers"
           }
         },
@@ -234,6 +236,7 @@
             "show-feedback": true,
             "btn_text": "Explore More",
             "form-title": "Customer Feed Back Form",
+            "form-subheading": "",
             "form_type": "contact"
           }
         }
