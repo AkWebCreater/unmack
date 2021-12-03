@@ -73,10 +73,11 @@
     margin: 0 !important;
 }
 .popup-layer .overlay{
+    display: none !important;
     width: 100%;
     height: 100%;
     position: fixed;
-    z-index: -1;
+    z-index:99999;
     top: 0;
     bottom: 0;
     left: 0;
