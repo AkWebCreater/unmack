@@ -170,7 +170,8 @@ background-color: #f5f5f5;
 .label{
   flex-basis: 370px;
   flex-grow: 0;
-  flex-shrink: 1;
+  gap:8px;
+  flex-shrink: 5;
 }
 .popup.feedback textarea{
   height: 8rem;
@@ -178,7 +179,7 @@ background-color: #f5f5f5;
 @media (max-width:640px) {
   .popup.feedback .contact__fields{
     flex-wrap: wrap;
-    gap:8px;
+   
 
   } 
 }
