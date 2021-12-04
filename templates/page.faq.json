@@ -237,7 +237,7 @@
             "btn_text": "Explore More",
             "form-title": "Customer Feed Back Form",
             "form-subheading": "",
-            "form_type": "contact"
+            "form_type": "feedback"
           }
         }
       },
