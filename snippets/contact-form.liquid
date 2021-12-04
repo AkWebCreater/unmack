@@ -63,174 +63,104 @@
                   </div>
               <div class="field ">
                 <input
-                  autocomplete="email"
-                  type="email"
+                  type="text"
                   id="ContactForm-email"
                   class="field__input"
-                  name="contact[email]"
+                  name="contact[_Product Name]"
                   spellcheck="false"
                   autocapitalize="off"
-                  value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
-                  aria-required="true"
-                  {% if form.errors contains 'email' %}
-                    aria-invalid="true"
-                    aria-describedby="ContactForm-email-error"
-                  {% endif %}
-                  placeholder="{{ 'templates.contact.form.email' | t }}"
                 >
-
-              
               </div>
             </div>
             <div class="contact__fields">
                 <div class="label">
                     <label class="" for="ContactForm-phone">Product lot no*: <span class="accent">{?}</span></label>
                   </div>
-              <div class="field ">
-                <input
-                  autocomplete="email"
-                  type="email"
-                  id="ContactForm-email"
-                  class="field__input"
-                  name="contact[email]"
-                  spellcheck="false"
-                  autocapitalize="off"
-                  value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
-                  aria-required="true"
-                  {% if form.errors contains 'email' %}
-                    aria-invalid="true"
-                    aria-describedby="ContactForm-email-error"
-                  {% endif %}
-                  placeholder="{{ 'templates.contact.form.email' | t }}"
-                >
-
-              
-              </div>
+                  <div class="field ">
+                    <input
+                      type="text"
+                      id="ContactForm-email"
+                      class="field__input"
+                      name="contact[_Product lot-no]"
+                      spellcheck="false"
+                      autocapitalize="off"
+                    >
+                  </div>
             </div>
             <div class="contact__fields">
                 <div class="label">
                     <label class="" for="ContactForm-phone">Packaging date <span class="accent">{?}</span>:</label>
                   </div>
-              <div class="field ">
-                <input
-                  autocomplete="email"
-                  type="email"
-                  id="ContactForm-email"
-                  class="field__input"
-                  name="contact[email]"
-                  spellcheck="false"
-                  autocapitalize="off"
-                  value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
-                  aria-required="true"
-                  {% if form.errors contains 'email' %}
-                    aria-invalid="true"
-                    aria-describedby="ContactForm-email-error"
-                  {% endif %}
-                  placeholder="{{ 'templates.contact.form.email' | t }}"
-                >
-
-              
-              </div>
+                  <div class="field ">
+                    <input
+                      type="date"
+                      id="ContactForm-email"
+                      class="field__input"
+                      name="contact[_Packaging date]"
+                      spellcheck="false"
+                      autocapitalize="off"
+                    >
+                  </div>
             </div>
             <div class="contact__fields">
                 <div class="label">
                     <label class="" for="ContactForm-phone">Please upload a picture, if applicable:</label>
                   </div>
-              <div class="field ">
-                <input
-                  autocomplete="email"
-                  type="email"
-                  id="ContactForm-email"
-                  class="field__input"
-                  name="contact[email]"
-                  spellcheck="false"
-                  autocapitalize="off"
-                  value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
-                  aria-required="true"
-                  {% if form.errors contains 'email' %}
-                    aria-invalid="true"
-                    aria-describedby="ContactForm-email-error"
-                  {% endif %}
-                  placeholder="{{ 'templates.contact.form.email' | t }}"
-                >
-
-              
-              </div>
+                  <div class="field">
+                    <input
+                      type="file"
+                      id="ContactForm-email"
+                      class="field__input"
+                      name="contact[_Product Image]"
+                      spellcheck="false"
+                      autocapitalize="off"
+                    >
+                  </div>
             </div>
             <div class="contact__fields">
                 <div class="label">
                     <label class="" for="ContactForm-phone">City*:</label>
                   </div>
-              <div class="field ">
-                <input
-                  autocomplete="email"
-                  type="email"
-                  id="ContactForm-email"
-                  class="field__input"
-                  name="contact[email]"
-                  spellcheck="false"
-                  autocapitalize="off"
-                  value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
-                  aria-required="true"
-                  {% if form.errors contains 'email' %}
-                    aria-invalid="true"
-                    aria-describedby="ContactForm-email-error"
-                  {% endif %}
-                  placeholder="{{ 'templates.contact.form.email' | t }}"
-                >
-
-              
-              </div>
+                  <div class="field ">
+                    <input
+                      type="text"
+                      id="ContactForm-email"
+                      class="field__input"
+                      name="contact[_City]"
+                      spellcheck="false"
+                      autocapitalize="off"
+                    >
+                  </div>
             </div>
             <div class="contact__fields">
                 <div class="label">
                     <label class="" for="ContactForm-phone">Store Name:</label>
                   </div>
-              <div class="field ">
-                <input
-                  autocomplete="email"
-                  type="email"
-                  id="ContactForm-email"
-                  class="field__input"
-                  name="contact[email]"
-                  spellcheck="false"
-                  autocapitalize="off"
-                  value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
-                  aria-required="true"
-                  {% if form.errors contains 'email' %}
-                    aria-invalid="true"
-                    aria-describedby="ContactForm-email-error"
-                  {% endif %}
-                  placeholder="{{ 'templates.contact.form.email' | t }}"
-                >
-
-              
-              </div>
+                  <div class="field ">
+                    <input
+                      type="text"
+                      id="ContactForm-email"
+                      class="field__input"
+                      name="contact[_Store Name]"
+                      spellcheck="false"
+                      autocapitalize="off"
+                    >
+                  </div>
             </div>
             <div class="contact__fields">
                 <div class="label">
                     <label class="" for="ContactForm-phone">Area:</label>
                   </div>
-              <div class="field ">
-                <input
-                  autocomplete="email"
-                  type="email"
-                  id="ContactForm-email"
-                  class="field__input"
-                  name="contact[email]"
-                  spellcheck="false"
-                  autocapitalize="off"
-                  value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
-                  aria-required="true"
-                  {% if form.errors contains 'email' %}
-                    aria-invalid="true"
-                    aria-describedby="ContactForm-email-error"
-                  {% endif %}
-                  placeholder="{{ 'templates.contact.form.email' | t }}"
-                >
-
-              
-              </div>
+                  <div class="field ">
+                    <input
+                      type="text"
+                      id="ContactForm-email"
+                      class="field__input"
+                      name="contact[_Area]"
+                      spellcheck="false"
+                      autocapitalize="off"
+                    >
+                  </div>
             </div>
             <div class="contact__fields">
                 <div class="label">
@@ -239,28 +169,17 @@
                       For e.g. Product taste, color, breakage, smell, issue with packaging etc.)</small></label>
                   </div>
               <div class="field ">
-                <input
-                  autocomplete="email"
-                  type="email"
-                  id="ContactForm-email"
-                  class="field__input"
-                  name="contact[email]"
-                  spellcheck="false"
-                  autocapitalize="off"
-                  value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
-                  aria-required="true"
-                  {% if form.errors contains 'email' %}
-                    aria-invalid="true"
-                    aria-describedby="ContactForm-email-error"
-                  {% endif %}
-                  placeholder="{{ 'templates.contact.form.email' | t }}"
-                >
+                <textarea name="contact[_Issue]" id="" cols="30" rows="10"></textarea>
 
               
               </div>
             </div>
              
-            
+            <div class="contact__button">
+              <button type="submit" class="button">
+                {{ 'templates.contact.form.send' | t }}
+              </button>
+            </div>
           </div>
 
          
