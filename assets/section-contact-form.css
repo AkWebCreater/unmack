@@ -146,3 +146,17 @@ background-color: #f5f5f5;
 .popup.feedback{
   max-width: 100%;
 }
+
+.popup.feedback .field__input{
+  padding: 5px;
+  height: auto;
+}
+.popup.feedback .form-inner-wrapper .field>*{
+  border-radius: 4px;
+}
+.popup.feedback .contact__fields{
+  line-height: 1;
+}
+.popup.feedback .field{
+  margin-bottom: 1rem;
+}
