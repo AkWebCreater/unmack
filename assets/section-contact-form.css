@@ -157,6 +157,9 @@ background-color: #f5f5f5;
 .popup.feedback .contact__fields{
   line-height: 1;
 }
+.mini{
+  display: block;
+}
 .popup.feedback .field{
   margin-bottom: 1rem;
 }
