@@ -136,3 +136,10 @@ background-color: #f5f5f5;
 .text-left{
   text-align: left;
 }
+.bottom-wraprer-form .section-title{
+  font-size: 22px;
+}
+.bottom-wraprer-form .section-title::after{
+  left: 0;
+  transform: translate(0 , 0);
+}
