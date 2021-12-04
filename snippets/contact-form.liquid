@@ -1,49 +1,67 @@
 {{ 'section-contact-form.css' | asset_url | stylesheet_tag }}
 
-  
-<div class="contact form page-width {{type}} spaced-section">
+  {% if type == 'feedback' %}
+  <div class="contact form page-width {{type}} spaced-section">
     <div class="form-inner-wrapper ">
        {% if sectionTitle %}
        <div class="title">
         <h3 class="h2 section-title">{{sectionTitle}}</h3>
-        {% if subHeading != blank %}
-          <p class="below-border">{{subHeading}}</p>
-        {% endif %}
+       
+
+
+       
     </div>
        {% endif %}
+       <p class="">
+        <span>Dear Consumer,</span>
+
+        We are committed to delivering high quality, healthy and delicious products to you. We would like you to help us
+        stay this course and consistently fulfill our promise. So, please give us your feedback, whether it is criticism or
+        encouragement.
+        
+        We welcome your comments on our products, your buying experience or anything else that concerns your
+        interaction with our company and our associates. We are listening keenly and assure you of our prompt response.
+        
+        You could also mail us at feedback@uamanc.com or call us at 1-800-4254449/1-800-30004530 (Toll Free) Our
+        working hours are: 9 am to 8 pm - Monday to Saturday
+        
+        <span class="accent form-feedback-footer">
+        - Team Umanac 
+      </span>         
+     </p>
         {%- form 'contact', id: 'ContactForm' -%}
           {%- if form.posted_successfully? -%}
-            <div class="form-status form-status-list form__message" tabindex="-1" autofocus>{% render 'icon-success' %} {{ 'templates.contact.form.post_success' | t }}</div>
-          {%- elsif form.errors -%}
-            <div class="form__message">
-              <h2 class="form-status caption-large" role="alert" tabindex="-1" autofocus>{% render 'icon-error' %} {{ 'templates.contact.form.error_heading' | t }}</h2>
+            <div class="form-status form-status-list form__message" tabindex="-1" autofocus> 
+               {% render 'icon-success' %}
+                {{ 'templates.contact.form.post_success' | t }}
             </div>
-            <ul class="form-status-list caption-large" role="list">
-              <li>
-                <a href="#ContactForm-email" class="link">
-                  {{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}
-                </a>
-              </li>
-            </ul>
           {%- endif -%}
 
           <div class="contact__fields">
             <div class="field">
-              <input class="field__input" autocomplete="name" type="text" id="ContactForm-name" name="contact[{{ 'templates.contact.form.name' | t }}]" value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}" placeholder="first {{ 'templates.contact.form.name' | t }}">
-              <label class="field__label" for="ContactForm-name">{{ 'templates.contact.form.name' | t }}</label>
+              <label class="field__label" for="ContactForm-name">Select Feedback</label>
             </div>
             <div class="field">
-                <input class="field__input" type="text" name="contact[_Last Name]" placeholder="Last Name">
-                <label class="field__label">Last Name</label>
+              <select name="" id="">
+                  <option value="None" selected>Select</option>
+                  <option value="I have a question to ask">I have a question to ask</option>
+                  <option value="I want to offer a suggestion">I want to offer a suggestion</option>
+                  <option value="I want to share something I liked">I want to share something I liked</option>
+                </select>
               </div>
            
           </div>
-         <div class="contact__fields">
-            <div class="field">
-                <input type="tel" id="ContactForm-phone" class="field__input" autocomplete="tel" name="contact[{{ 'templates.contact.form.phone' | t }}]" pattern="[0-9\-]*" value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}" placeholder="{{ 'templates.contact.form.phone' | t }}">
-                <label class="field__label" for="ContactForm-phone">{{ 'templates.contact.form.phone' | t }}</label>
-              </div>
-              <div class="field field--with-error">
+          <div class="bottom-wraprer-form">
+            <div class="title">
+              <h2 class="h2 section-title">
+                i want to report an issue
+              </h2>
+            </div>
+            <div class="contact__fields">
+                <div class="field">
+                    <label class="field__label" for="ContactForm-phone">Product Name <small>(please mention the variant, if any)*</small></label>
+                  </div>
+              <div class="field ">
                 <input
                   autocomplete="email"
                   type="email"
@@ -60,151 +78,406 @@
                   {% endif %}
                   placeholder="{{ 'templates.contact.form.email' | t }}"
                 >
-                <label class="field__label" for="ContactForm-email">{{ 'templates.contact.form.email' | t }} <span aria-hidden="true">*</span></label>
-                {%- if form.errors contains 'email' -%}
-                  <small class="contact__field-error" id="ContactForm-email-error">
-                    <span class="visually-hidden">{{ 'accessibility.error' | t }}</span>
-                    <span class="form__message">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</span>
-                  </small>
-                {%- endif -%}
+
+              
               </div>
-         </div>
-          {% if type == 'contact' or business == true %}
-          
-          <div class="field">
-            <textarea
-              rows="3"
-              id="ContactForm-Address"
-              class="text-area field__input"
-              name="contact[_Address]"
-              placeholder="Address"
-            >
-              {{- form.body -}}
-            </textarea>
-            <label class="form__label field__label" for="ContactForm-Address">Address</label>
-          </div>
-          {% endif %}
-          <div class="contact__fields">
-            <div class="field">
-                <input type="text"  id="ContactForm-phone" class="field__input" autocomplete="tel" name="contact[city]"  placeholder="City">
-                <label class="field__label" for="ContactForm-phone">City</label>
-              </div>
-              <div class="field field--with-error">
-                <input type="number" class="field__input" name="contact[pincode]"  value=""
-                  
-                placeholder="Pincode"
+            </div>
+            <div class="contact__fields">
+                <div class="field">
+                    <label class="field__label" for="ContactForm-phone">Product lot no* {?}</label>
+                  </div>
+              <div class="field ">
+                <input
+                  autocomplete="email"
+                  type="email"
+                  id="ContactForm-email"
+                  class="field__input"
+                  name="contact[email]"
+                  spellcheck="false"
+                  autocapitalize="off"
+                  value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+                  aria-required="true"
+                  {% if form.errors contains 'email' %}
+                    aria-invalid="true"
+                    aria-describedby="ContactForm-email-error"
+                  {% endif %}
+                  placeholder="{{ 'templates.contact.form.email' | t }}"
                 >
-                <label class="field__label">Pincode</label>
+
+              
               </div>
-         </div>
-         {% if type == 'careers' %}
-         <div class="contact__fields">
-          <div class="field">
-            <input class="field__input" autocomplete="name" type="text" id="ContactForm-department" name="contact[department]" value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}" placeholder="Deparment">
-            <label class="field__label" for="ContactForm-department">Deparment</label>
-          </div>
-          <div class="field">
-              <input class="field__input" type="date" name="contact[_Date of Birth]" placeholder="DOB">
-              <label class="field__label secendory-label">Date Of Birth</label>
             </div>
-         
-        </div>
-         <div class="contact__fields">
-          <div class="field">
-            <input class="field__input" autocomplete="name" type="text" id="ContactForm-qualification" name="contact[qualification]" value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}" placeholder="Qualification">
-            <label class="field__label" for="ContactForm-qualification">Qualification</label>
-          </div>
-          <div class="field">
-              <input class="field__input" type="text" name="contact[_Experience]" placeholder="Experience">
-              <label class="field__label">Experience</label>
-            </div>
-         
-        </div>
-         <div class="contact__fields">
-          <div class="field">
-            <input class="field__input" autocomplete="name" type="text" id="ContactForm-qualification" name="contact[_Current CTC]" value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}" placeholder="Current CTC">
-            <label class="field__label" for="ContactForm-qualification">Current CTC</label>
-          </div>
-          <div class="field">
-              <input class="field__input" type="text" name="contact[_Location]" placeholder="Location">
-              <label class="field__label">Location</label>
-            </div>
-         
-        </div>
-         <div class="contact__fields">
-          <div class="field">
-            <input class="field__input" autocomplete="name" type="file" id="ContactForm-qualification" name="contact[_Resume]" value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}" placeholder="Resume">
-            <label class="field__label secendory-label resume" for="ContactForm-qualification">Resume  <span class="inner-txt"><span>+</span>Upload File</span></label>
-          </div>
-          <div class="field">
-              <input class="field__input" type="text" name="contact[_Residential Address]" placeholder="Address">
-              <label class="field__label">Residential Address</label>
-            </div>
-         
-        </div>
-         {% endif %}
-          {% if business == true %}
-          <div class="contact__fields selecte">
-            <label class="">Subject :</label>
-            <select required class="required" id="subject" name="contact[_Subject]">
-              <option value="Distributer">Distributer</option>
-              <option value="Retailer">Retailer</option>
-              <option value="Gifting Corporate & Personal">Gifting Corporate & Personal</option>
-              <option value="Bulk Inquiry">Bulk Inquiry</option>
-              <option value="Private Label">Private Label</option>
-              <option value="Horeca">Horeca</option>
-              <option value="Export Global">Export Global</option>
-              <option value="Others">Others</option>
-            </select>
-     </div>
-          {% endif %}
-          {% if type == 'careers' %}
-          <div class="contact__fields">
-            <div class="field">
-              <textarea
-              rows="3"
-              id="ContactForm-body"
-              class="text-area field__input"
-              name="contact[_Query]"
-              placeholder="Share The Nature Of Your Query Here"
-            >
-              {{- form.body -}}
-            </textarea>
-            <label class="form__label field__label" for="ContactForm-body">{{ 'templates.contact.form.comment' | t }}</label>
-            </div>
-            <div class="field">
-              <button type="submit" class="button accent-bg button--full-width ">
-                {{ 'templates.contact.form.send' | t }}
-              </button>
+            <div class="contact__fields">
+                <div class="field">
+                    <label class="field__label" for="ContactForm-phone">Packaging date {?}:</label>
+                  </div>
+              <div class="field ">
+                <input
+                  autocomplete="email"
+                  type="email"
+                  id="ContactForm-email"
+                  class="field__input"
+                  name="contact[email]"
+                  spellcheck="false"
+                  autocapitalize="off"
+                  value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+                  aria-required="true"
+                  {% if form.errors contains 'email' %}
+                    aria-invalid="true"
+                    aria-describedby="ContactForm-email-error"
+                  {% endif %}
+                  placeholder="{{ 'templates.contact.form.email' | t }}"
+                >
+
+              
               </div>
-           
-          </div>
-          {% else %}
-          <div class="field">
-             <textarea
-               rows="3"
-               id="ContactForm-body"
-               class="text-area field__input"
-               name="contact[_Query]"
-               placeholder="Share The Nature Of Your Query Here"
-             >
-               {{- form.body -}}
-             </textarea>
-             <label class="form__label field__label" for="ContactForm-body">{{ 'templates.contact.form.comment' | t }}</label>
-           </div>
-          {% endif %}
+            </div>
+            <div class="contact__fields">
+                <div class="field">
+                    <label class="field__label" for="ContactForm-phone">Please upload a picture, if applicable:</label>
+                  </div>
+              <div class="field ">
+                <input
+                  autocomplete="email"
+                  type="email"
+                  id="ContactForm-email"
+                  class="field__input"
+                  name="contact[email]"
+                  spellcheck="false"
+                  autocapitalize="off"
+                  value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+                  aria-required="true"
+                  {% if form.errors contains 'email' %}
+                    aria-invalid="true"
+                    aria-describedby="ContactForm-email-error"
+                  {% endif %}
+                  placeholder="{{ 'templates.contact.form.email' | t }}"
+                >
+
+              
+              </div>
+            </div>
+            <div class="contact__fields">
+                <div class="field">
+                    <label class="field__label" for="ContactForm-phone">City*:</label>
+                  </div>
+              <div class="field ">
+                <input
+                  autocomplete="email"
+                  type="email"
+                  id="ContactForm-email"
+                  class="field__input"
+                  name="contact[email]"
+                  spellcheck="false"
+                  autocapitalize="off"
+                  value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+                  aria-required="true"
+                  {% if form.errors contains 'email' %}
+                    aria-invalid="true"
+                    aria-describedby="ContactForm-email-error"
+                  {% endif %}
+                  placeholder="{{ 'templates.contact.form.email' | t }}"
+                >
+
+              
+              </div>
+            </div>
+            <div class="contact__fields">
+                <div class="field">
+                    <label class="field__label" for="ContactForm-phone">Store Name:</label>
+                  </div>
+              <div class="field ">
+                <input
+                  autocomplete="email"
+                  type="email"
+                  id="ContactForm-email"
+                  class="field__input"
+                  name="contact[email]"
+                  spellcheck="false"
+                  autocapitalize="off"
+                  value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+                  aria-required="true"
+                  {% if form.errors contains 'email' %}
+                    aria-invalid="true"
+                    aria-describedby="ContactForm-email-error"
+                  {% endif %}
+                  placeholder="{{ 'templates.contact.form.email' | t }}"
+                >
+
+              
+              </div>
+            </div>
+            <div class="contact__fields">
+                <div class="field">
+                    <label class="field__label" for="ContactForm-phone">Area:</label>
+                  </div>
+              <div class="field ">
+                <input
+                  autocomplete="email"
+                  type="email"
+                  id="ContactForm-email"
+                  class="field__input"
+                  name="contact[email]"
+                  spellcheck="false"
+                  autocapitalize="off"
+                  value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+                  aria-required="true"
+                  {% if form.errors contains 'email' %}
+                    aria-invalid="true"
+                    aria-describedby="ContactForm-email-error"
+                  {% endif %}
+                  placeholder="{{ 'templates.contact.form.email' | t }}"
+                >
+
+              
+              </div>
+            </div>
+            <div class="contact__fields">
+                <div class="field">
+                    <label class="field__label" for="ContactForm-phone">Issue <span class="mini">
+                      (The more specific the feedback, the easier it is for us to act upon,
+                      For e.g. Product taste, color, breakage, smell, issue with packaging etc.)</span></label>
+                  </div>
+              <div class="field ">
+                <input
+                  autocomplete="email"
+                  type="email"
+                  id="ContactForm-email"
+                  class="field__input"
+                  name="contact[email]"
+                  spellcheck="false"
+                  autocapitalize="off"
+                  value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+                  aria-required="true"
+                  {% if form.errors contains 'email' %}
+                    aria-invalid="true"
+                    aria-describedby="ContactForm-email-error"
+                  {% endif %}
+                  placeholder="{{ 'templates.contact.form.email' | t }}"
+                >
+
+              
+              </div>
+            </div>
+             
             
-          {% unless type == 'careers' %}
-          <div class="contact__button">
-            <button type="submit" class="button">
-              {{ 'templates.contact.form.send' | t }}
-            </button>
           </div>
-          {% endunless %}
+
+         
+          
+         
+       
         {%- endform -%}
     </div>
     
   </div>
+  {% else %}
+    
+  <div class="contact form page-width {{type}} spaced-section">
+      <div class="form-inner-wrapper ">
+         {% if sectionTitle %}
+         <div class="title">
+          <h3 class="h2 section-title">{{sectionTitle}}</h3>
+          {% if subHeading != blank %}
+            <p class="below-border">{{subHeading}}</p>
+          {% endif %}
+      </div>
+         {% endif %}
+          {%- form 'contact', id: 'ContactForm' -%}
+            {%- if form.posted_successfully? -%}
+              <div class="form-status form-status-list form__message" tabindex="-1" autofocus>{% render 'icon-success' %} {{ 'templates.contact.form.post_success' | t }}</div>
+            {%- elsif form.errors -%}
+              <div class="form__message">
+                <h2 class="form-status caption-large" role="alert" tabindex="-1" autofocus>{% render 'icon-error' %} {{ 'templates.contact.form.error_heading' | t }}</h2>
+              </div>
+              <ul class="form-status-list caption-large" role="list">
+                <li>
+                  <a href="#ContactForm-email" class="link">
+                    {{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}
+                  </a>
+                </li>
+              </ul>
+            {%- endif -%}
+  
+            <div class="contact__fields">
+              <div class="field">
+                <input class="field__input" autocomplete="name" type="text" id="ContactForm-name" name="contact[{{ 'templates.contact.form.name' | t }}]" value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}" placeholder="first {{ 'templates.contact.form.name' | t }}">
+                <label class="field__label" for="ContactForm-name">{{ 'templates.contact.form.name' | t }}</label>
+              </div>
+              <div class="field">
+                  <input class="field__input" type="text" name="contact[_Last Name]" placeholder="Last Name">
+                  <label class="field__label">Last Name</label>
+                </div>
+             
+            </div>
+           <div class="contact__fields">
+              <div class="field">
+                  <input type="tel" id="ContactForm-phone" class="field__input" autocomplete="tel" name="contact[{{ 'templates.contact.form.phone' | t }}]" pattern="[0-9\-]*" value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}" placeholder="{{ 'templates.contact.form.phone' | t }}">
+                  <label class="field__label" for="ContactForm-phone">{{ 'templates.contact.form.phone' | t }}</label>
+                </div>
+                <div class="field field--with-error">
+                  <input
+                    autocomplete="email"
+                    type="email"
+                    id="ContactForm-email"
+                    class="field__input"
+                    name="contact[email]"
+                    spellcheck="false"
+                    autocapitalize="off"
+                    value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+                    aria-required="true"
+                    {% if form.errors contains 'email' %}
+                      aria-invalid="true"
+                      aria-describedby="ContactForm-email-error"
+                    {% endif %}
+                    placeholder="{{ 'templates.contact.form.email' | t }}"
+                  >
+                  <label class="field__label" for="ContactForm-email">{{ 'templates.contact.form.email' | t }} <span aria-hidden="true">*</span></label>
+                  {%- if form.errors contains 'email' -%}
+                    <small class="contact__field-error" id="ContactForm-email-error">
+                      <span class="visually-hidden">{{ 'accessibility.error' | t }}</span>
+                      <span class="form__message">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</span>
+                    </small>
+                  {%- endif -%}
+                </div>
+           </div>
+            {% if type == 'contact' or business == true %}
+            
+            <div class="field">
+              <textarea
+                rows="3"
+                id="ContactForm-Address"
+                class="text-area field__input"
+                name="contact[_Address]"
+                placeholder="Address"
+              >
+                {{- form.body -}}
+              </textarea>
+              <label class="form__label field__label" for="ContactForm-Address">Address</label>
+            </div>
+            {% endif %}
+            <div class="contact__fields">
+              <div class="field">
+                  <input type="text"  id="ContactForm-phone" class="field__input" autocomplete="tel" name="contact[city]"  placeholder="City">
+                  <label class="field__label" for="ContactForm-phone">City</label>
+                </div>
+                <div class="field field--with-error">
+                  <input type="number" class="field__input" name="contact[pincode]"  value=""
+                    
+                  placeholder="Pincode"
+                  >
+                  <label class="field__label">Pincode</label>
+                </div>
+           </div>
+           {% if type == 'careers' %}
+           <div class="contact__fields">
+            <div class="field">
+              <input class="field__input" autocomplete="name" type="text" id="ContactForm-department" name="contact[department]" value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}" placeholder="Deparment">
+              <label class="field__label" for="ContactForm-department">Deparment</label>
+            </div>
+            <div class="field">
+                <input class="field__input" type="date" name="contact[_Date of Birth]" placeholder="DOB">
+                <label class="field__label secendory-label">Date Of Birth</label>
+              </div>
+           
+          </div>
+           <div class="contact__fields">
+            <div class="field">
+              <input class="field__input" autocomplete="name" type="text" id="ContactForm-qualification" name="contact[qualification]" value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}" placeholder="Qualification">
+              <label class="field__label" for="ContactForm-qualification">Qualification</label>
+            </div>
+            <div class="field">
+                <input class="field__input" type="text" name="contact[_Experience]" placeholder="Experience">
+                <label class="field__label">Experience</label>
+              </div>
+           
+          </div>
+           <div class="contact__fields">
+            <div class="field">
+              <input class="field__input" autocomplete="name" type="text" id="ContactForm-qualification" name="contact[_Current CTC]" value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}" placeholder="Current CTC">
+              <label class="field__label" for="ContactForm-qualification">Current CTC</label>
+            </div>
+            <div class="field">
+                <input class="field__input" type="text" name="contact[_Location]" placeholder="Location">
+                <label class="field__label">Location</label>
+              </div>
+           
+          </div>
+           <div class="contact__fields">
+            <div class="field">
+              <input class="field__input" autocomplete="name" type="file" id="ContactForm-qualification" name="contact[_Resume]" value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}" placeholder="Resume">
+              <label class="field__label secendory-label resume" for="ContactForm-qualification">Resume  <span class="inner-txt"><span>+</span>Upload File</span></label>
+            </div>
+            <div class="field">
+                <input class="field__input" type="text" name="contact[_Residential Address]" placeholder="Address">
+                <label class="field__label">Residential Address</label>
+              </div>
+           
+          </div>
+           {% endif %}
+            {% if business == true %}
+            <div class="contact__fields selecte">
+              <label class="">Subject :</label>
+              <select required class="required" id="subject" name="contact[_Subject]">
+                <option value="Distributer">Distributer</option>
+                <option value="Retailer">Retailer</option>
+                <option value="Gifting Corporate & Personal">Gifting Corporate & Personal</option>
+                <option value="Bulk Inquiry">Bulk Inquiry</option>
+                <option value="Private Label">Private Label</option>
+                <option value="Horeca">Horeca</option>
+                <option value="Export Global">Export Global</option>
+                <option value="Others">Others</option>
+              </select>
+       </div>
+            {% endif %}
+            {% if type == 'careers' %}
+            <div class="contact__fields">
+              <div class="field">
+                <textarea
+                rows="3"
+                id="ContactForm-body"
+                class="text-area field__input"
+                name="contact[_Query]"
+                placeholder="Share The Nature Of Your Query Here"
+              >
+                {{- form.body -}}
+              </textarea>
+              <label class="form__label field__label" for="ContactForm-body">{{ 'templates.contact.form.comment' | t }}</label>
+              </div>
+              <div class="field">
+                <button type="submit" class="button accent-bg button--full-width ">
+                  {{ 'templates.contact.form.send' | t }}
+                </button>
+                </div>
+             
+            </div>
+            {% else %}
+            <div class="field">
+               <textarea
+                 rows="3"
+                 id="ContactForm-body"
+                 class="text-area field__input"
+                 name="contact[_Query]"
+                 placeholder="Share The Nature Of Your Query Here"
+               >
+                 {{- form.body -}}
+               </textarea>
+               <label class="form__label field__label" for="ContactForm-body">{{ 'templates.contact.form.comment' | t }}</label>
+             </div>
+            {% endif %}
+              
+            {% unless type == 'careers' %}
+            <div class="contact__button">
+              <button type="submit" class="button">
+                {{ 'templates.contact.form.send' | t }}
+              </button>
+            </div>
+            {% endunless %}
+          {%- endform -%}
+      </div>
+      
+    </div>
+  {% endif %}
 
 {%- comment -%}
 {% if type == 'career' %}
