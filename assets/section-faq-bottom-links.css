@@ -153,11 +153,13 @@ border-radius: 4px;
     background-color: #f58634;
   } */
   .select__custome{
-      border-radius: 4px;
+    border-radius: 4px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
   }
-  .select-styled:active, .select-styled.active {
+  /* .select-styled:active, .select-styled.active {
     background-color: #f58634;
-  }
+  } */
   .select-styled:active:after, .select-styled.active:after {
     top: 9px;
     border-color: transparent transparent #fff transparent;
