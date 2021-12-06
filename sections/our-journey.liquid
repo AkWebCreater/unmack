@@ -23,12 +23,16 @@
 {% if block.settings.product-image != blank %}
   
 {%- assign bg = block.settings.product-image | img_url: 'master' -%}
+{%- assign bg_mobile = block.settings.product-image-mobile | img_url: 'master' -%}
+
 {% endif %}
     <div class="product-slide" data-index="{{forloop.index}}" style="background-image: url({{bg}});">
 {% if product %}
 {% if bg %}
   
 <img src="{{bg}}" class="pro-img" alt="product image">
+<img src="{{bg_mobile}}" class="pro-img mobile" alt="product image">
+
 {% endif %}
 <div class="product-details">
   <h2 class="" style="color:{{block.settings.heading-color}};margin: 0;">{{product.title}}</h2>
@@ -78,6 +82,11 @@
           "type": "image_picker",
           "id": "product-image",
           "label": "Select Image of Product"
+        },
+        {
+          "type": "image_picker",
+          "id": "product-image-mobile",
+          "label": "Select Image of Product for Mobile View"
         },
         {
           "type": "header",

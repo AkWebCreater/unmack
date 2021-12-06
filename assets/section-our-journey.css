@@ -147,3 +147,14 @@ cursor:pointer;
         overflow-x: hidden;
     }
 } 
+
+@media (min-width:751px) {
+    .pro-img.mobile{
+display: none;
+    }
+}
+@media (max-width:750px) {
+    .pro-img{
+display: none;
+    }
+}
