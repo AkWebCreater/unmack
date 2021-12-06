@@ -137,6 +137,18 @@
       "settings": {
         "include_margins": false
       }
+    },
+    "16387884090aefdfbc": {
+      "type": "recently-viewed-products",
+      "settings": {
+        "display_recently_viewed_products": true,
+        "recently_viewed_products_title": "Recently Viewed Products",
+        "section_title": "Recently Viewed",
+        "shop_all_text": "",
+        "shop_all_url": "",
+        "number_of_recently_viewed_products": "8",
+        "number_of_showing_products": "5"
+      }
     }
   },
   "order": [
@@ -144,6 +156,7 @@
     "main",
     "16346366348a3c988d",
     "product-recommendations",
-    "16355277238ce95301"
+    "16355277238ce95301",
+    "16387884090aefdfbc"
   ]
 }
