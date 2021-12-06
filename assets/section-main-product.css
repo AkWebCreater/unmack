@@ -1122,6 +1122,9 @@ h3.title.globo-heading::after{
   width: 100%;
   margin-top: 15px;
 }
+.best-seller-nav{
+  display: none;
+}
 @media only screen and (min-width: 600px) {
   .product-form__input.product-form__quantity{
     max-width:100%;
