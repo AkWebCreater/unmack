@@ -152,6 +152,12 @@
         "number_of_recently_viewed_products": "8",
         "number_of_showing_products": "5"
       }
+    },
+    "16387906950c9c10a1": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{% render 'product-customer-query-form' %}"
+      }
     }
   },
   "order": [
@@ -160,6 +166,7 @@
     "163878981974e7dd50",
     "16346366348a3c988d",
     "product-recommendations",
-    "16387884090aefdfbc"
+    "16387884090aefdfbc",
+    "16387906950c9c10a1"
   ]
 }
