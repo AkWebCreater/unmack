@@ -108,7 +108,7 @@
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
-        "heading": "You may also like",
+        "heading": "Try Our Other Products",
         "image_ratio": "adapt",
         "show_secondary_image": false,
         "add_image_padding": false,
