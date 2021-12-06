@@ -92,6 +92,7 @@
     },
     "product-recommendations": {
       "type": "product-recommendations",
+      "disabled": true,
       "settings": {
         "heading": "Try Our Other Products",
         "image_ratio": "adapt",
