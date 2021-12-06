@@ -90,6 +90,16 @@
         "show_vendor": false
       }
     },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "Try Our Other Products",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_vendor": false
+      }
+    },
     "163878981974e7dd50": {
       "type": "best-seller",
       "blocks": {
@@ -106,6 +116,12 @@
       ],
       "settings": {
         "section-heading": "Try Our Other Products"
+      }
+    },
+    "16387906950c9c10a1": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{% render 'product-customer-query-form' %}"
       }
     },
     "16346366348a3c988d": {
@@ -131,16 +147,6 @@
         "include_margins": false
       }
     },
-    "product-recommendations": {
-      "type": "product-recommendations",
-      "settings": {
-        "heading": "Try Our Other Products",
-        "image_ratio": "adapt",
-        "show_secondary_image": false,
-        "add_image_padding": false,
-        "show_vendor": false
-      }
-    },
     "16387884090aefdfbc": {
       "type": "recently-viewed-products",
       "settings": {
@@ -152,21 +158,15 @@
         "number_of_recently_viewed_products": "8",
         "number_of_showing_products": "5"
       }
-    },
-    "16387906950c9c10a1": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "{% render 'product-customer-query-form' %}"
-      }
     }
   },
   "order": [
     "1635223039ac8f64b3",
     "main",
-    "163878981974e7dd50",
-    "16346366348a3c988d",
     "product-recommendations",
-    "16387884090aefdfbc",
-    "16387906950c9c10a1"
+    "163878981974e7dd50",
+    "16387906950c9c10a1",
+    "16346366348a3c988d",
+    "16387884090aefdfbc"
   ]
 }
