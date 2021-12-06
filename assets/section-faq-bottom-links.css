@@ -119,12 +119,14 @@ body.scroll-block{
     display: inline-block;
     position: relative;
     font-size: 16px;
-    color: #fff;
+    color: #818181;
+    border-radius: 4px;
     height: 40px;
   }
   
   .select-styled {
     position: absolute;
+border-radius: 4px;
     top: 0;
     right: 0;
     bottom: 0;
@@ -144,6 +146,7 @@ body.scroll-block{
     border-color: #fff transparent transparent transparent;
     position: absolute;
     top: 16px;
+    
     right: 10px;
   }
   .select-styled:hover {
