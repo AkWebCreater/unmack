@@ -16,7 +16,7 @@
           }
         },
         "b610cfc4-b10c-45a9-a88e-3a6bd6ed685e": {
-          "type": "shopify:\/\/apps\/growave\/blocks\/block.product.reviewAvgProfile\/b3d2efbe-110a-4e27-84a8-1f2ed63996a4",
+          "type": "shopify:\/\/apps\/growave-loyalty-wishlist-3\/blocks\/block.product.reviewAvgProfile\/b3d2efbe-110a-4e27-84a8-1f2ed63996a4",
           "settings": {
           }
         },
@@ -50,7 +50,7 @@
           }
         },
         "cfa371d5-837c-4156-850a-822d64a8b126": {
-          "type": "shopify:\/\/apps\/growave\/blocks\/block.product.faveButton\/b3d2efbe-110a-4e27-84a8-1f2ed63996a4",
+          "type": "shopify:\/\/apps\/growave-loyalty-wishlist-3\/blocks\/block.product.faveButton\/b3d2efbe-110a-4e27-84a8-1f2ed63996a4",
           "settings": {
           }
         }
@@ -78,10 +78,10 @@
         "twitter": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" x=\"0px\" y=\"0px\" width=\"24\" height=\"24\" viewbox=\"0 0 172 172\" style=\" fill:#000000;\"><g fill=\"none\" fill-rule=\"nonzero\" stroke=\"none\" stroke-width=\"1\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke-miterlimit=\"10\" stroke-dasharray=\"\" stroke-dashoffset=\"0\" font-family=\"none\" font-weight=\"none\" font-size=\"none\" text-anchor=\"none\" style=\"mix-blend-mode: normal\"><path d=\"M0,172v-172h172v172z\" fill=\"none\"><\/path><g fill=\"#cccccc\"><path d=\"M121.83333,21.5h-71.66667c-15.83117,0 -28.66667,12.8355 -28.66667,28.66667v71.66667c0,15.83117 12.8355,28.66667 28.66667,28.66667h71.66667c15.83117,0 28.66667,-12.8355 28.66667,-28.66667v-71.66667c0,-15.83117 -12.8355,-28.66667 -28.66667,-28.66667zM122.19167,68.18367c0,0.61633 0,1.2255 0,2.45817c0,23.34183 -17.81633,50.3745 -50.3745,50.3745c-9.8255,0 -19.04183,-3.0745 -27.0255,-7.98367c1.2255,0 3.0745,0 4.3,0c7.98367,0 15.9745,-3.0745 22.11633,-7.3745c-7.98367,0 -14.1255,-5.5255 -16.58367,-12.28367c1.2255,0 2.45817,0.61633 3.0745,0.61633c1.84183,0 3.0745,0 4.91633,-0.61633c-7.98367,-1.84183 -14.1255,-8.6 -14.1255,-17.2c2.45817,1.2255 4.91633,1.84183 7.98367,2.45817c-4.91633,-4.3 -7.98367,-9.21633 -7.98367,-15.35817c0,-3.0745 0.61633,-6.14183 2.45817,-8.6c8.6,10.44183 21.5,17.81633 36.24183,18.4255c0,-1.2255 -0.61633,-2.45817 -0.61633,-4.3c0,-9.8255 7.98367,-17.81633 17.81633,-17.81633c4.91633,0 9.8255,1.84183 12.9,5.5255c4.3,-0.61633 7.98367,-2.45817 11.05817,-4.3c-1.2255,4.3 -4.3,7.3745 -7.98367,9.8255c3.68367,-0.61633 6.75817,-1.2255 10.44183,-3.0745c-2.4725,3.698 -5.53983,6.76533 -8.61433,9.2235z\"><\/path><\/g><\/g><\/svg>",
         "other-svg-icon": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" x=\"0px\" y=\"0px\" width=\"24\" height=\"24\" viewbox=\"0 0 172 172\" style=\" fill:#000000;\"><g fill=\"none\" fill-rule=\"nonzero\" stroke=\"none\" stroke-width=\"1\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke-miterlimit=\"10\" stroke-dasharray=\"\" stroke-dashoffset=\"0\" font-family=\"none\" font-weight=\"none\" font-size=\"none\" text-anchor=\"none\" style=\"mix-blend-mode: normal\"><path d=\"M0,172v-172h172v172z\" fill=\"none\"><\/path><g fill=\"#cccccc\"><path d=\"M150.5,35.83333c0,0 -21.5,-7.16667 -64.5,-7.16667c-43,0 -64.5,7.16667 -64.5,7.16667c0,0 -7.16667,21.5 -7.16667,50.16667c0,28.66667 7.16667,50.16667 7.16667,50.16667c0,0 21.5,7.16667 64.5,7.16667c43,0 64.5,-7.16667 64.5,-7.16667c0,0 7.16667,-21.5 7.16667,-50.16667c0,-28.66667 -7.16667,-50.16667 -7.16667,-50.16667zM71.66667,110.82533v-49.65067l43,24.82533z\"><\/path><\/g><\/g><\/svg>",
         "tax-note": "inclusive of all taxes",
-        "title": "*try our other flavours",
-        "collection": "acv",
+        "title": "Try Our Other Flavours",
+        "collection": "",
         "products_to_show": 4,
-        "show_view_all": false,
+        "show_view_all": true,
         "swipe_on_mobile": false,
         "image_ratio": "adapt",
         "show_secondary_image": false,
@@ -89,29 +89,27 @@
         "show_vendor": false
       }
     },
-    "1636538016f8bc7421": {
-      "type": "best-seller",
+    "16346366348a3c988d": {
+      "type": "apps",
       "blocks": {
-        "8dfbd503-4bae-4113-aa3d-e03bde268574": {
-          "type": "collection",
+        "a8b27354-d30e-472f-b7f7-ffbedead2b99": {
+          "type": "shopify:\/\/apps\/growave-loyalty-wishlist-3\/blocks\/block.product.reviewWidget\/b3d2efbe-110a-4e27-84a8-1f2ed63996a4",
           "settings": {
-            "title": "Collection",
-            "collection": "acv"
           }
         }
       },
       "block_order": [
-        "8dfbd503-4bae-4113-aa3d-e03bde268574"
+        "a8b27354-d30e-472f-b7f7-ffbedead2b99"
       ],
       "settings": {
-        "section-heading": "Try Our Other Products"
+        "include_margins": false
       }
     },
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
-        "heading": "Customer Reviews",
-        "image_ratio": "square",
+        "heading": "You may also like",
+        "image_ratio": "adapt",
         "show_secondary_image": false,
         "add_image_padding": false,
         "show_vendor": false
@@ -121,7 +119,7 @@
       "type": "apps",
       "blocks": {
         "510bb3ec-2123-4ff3-adce-6612c50c712f": {
-          "type": "shopify:\/\/apps\/growave\/blocks\/block.index.ReviewsSlider\/b3d2efbe-110a-4e27-84a8-1f2ed63996a4",
+          "type": "shopify:\/\/apps\/growave-loyalty-wishlist-3\/blocks\/block.index.ReviewsSlider\/b3d2efbe-110a-4e27-84a8-1f2ed63996a4",
           "settings": {
           }
         }
@@ -132,24 +130,12 @@
       "settings": {
         "include_margins": false
       }
-    },
-    "16355082818673ba61": {
-      "type": "recently-viewed-products",
-      "settings": {
-        "display_recently_viewed_products": true,
-        "recently_viewed_products_title": "Recently Viewed Products",
-        "section_title": "Recently Viewed Products",
-        "shop_all_text": "",
-        "shop_all_url": "",
-        "number_of_recently_viewed_products": "8",
-        "number_of_showing_products": "5"
-      }
     }
   },
   "order": [
     "1635223039ac8f64b3",
     "main",
-    "1636538016f8bc7421",
+    "16346366348a3c988d",
     "product-recommendations",
     "16355277238ce95301"
   ]
