@@ -150,11 +150,11 @@ cursor:pointer;
 
 @media (min-width:751px) {
     .pro-img.mobile{
-display: none;
+display: none !important;
     }
 }
 @media (max-width:750px) {
     .pro-img{
-display: none;
+display: none !important;
     }
 }
