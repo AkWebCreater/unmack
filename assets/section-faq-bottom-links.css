@@ -146,11 +146,14 @@ border-radius: 4px;
     border-color: #fff transparent transparent transparent;
     position: absolute;
     top: 16px;
-    
+
     right: 10px;
   }
-  .select-styled:hover {
+  /* .select-styled:hover {
     background-color: #f58634;
+  } */
+  .select__custome{
+      border-radius: 4px;
   }
   .select-styled:active, .select-styled.active {
     background-color: #f58634;
@@ -171,6 +174,8 @@ border-radius: 4px;
     padding: 0;
     list-style: none;
     background-color: #f5f5f5;
+    border: 1px solid #7a7a7a;
+    border-top: 0;
   }
   .select-options li {
     margin: 0;
