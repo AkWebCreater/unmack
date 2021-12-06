@@ -134,6 +134,24 @@
         "number_of_recently_viewed_products": "8",
         "number_of_showing_products": "5"
       }
+    },
+    "163878981974e7dd50": {
+      "type": "best-seller",
+      "blocks": {
+        "78f00a11-e8e9-4d6c-a9f2-7ecf48108a09": {
+          "type": "collection",
+          "settings": {
+            "title": "",
+            "collection": "ghee"
+          }
+        }
+      },
+      "block_order": [
+        "78f00a11-e8e9-4d6c-a9f2-7ecf48108a09"
+      ],
+      "settings": {
+        "section-heading": "Try Our Other Products"
+      }
     }
   },
   "order": [
@@ -141,6 +159,7 @@
     "main",
     "16346366348a3c988d",
     "product-recommendations",
-    "16387884090aefdfbc"
+    "16387884090aefdfbc",
+    "163878981974e7dd50"
   ]
 }
