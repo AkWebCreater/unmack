@@ -1034,8 +1034,11 @@ img.vegi {
 .price dl{
   flex: 1;
 }
-.card-wrapper {
-  /* border: 1px solid #D2D3D5; */
+@media (min-width:750px) {
+  
+  .product-description ,.desc-3,.desc-3+.image-with-text{
+    margin-left: 20px;
+  }
 }
 button.slick-next.slick-arrow {
   position: absolute;
