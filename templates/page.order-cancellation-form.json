@@ -1,17 +1,60 @@
 {
-    "sections": {
-      "main": {
-        "type": "main-page",
-        "settings": {
-          "top_img": "shopify:\/\/shop_images\/all-policy_imsge.png",
-          "bottom_img": "shopify:\/\/shop_images\/image-2.png",
-          "top_link": "",
-          "bottom_link": ""
+  "sections": {
+    "1638851049c5c5d207": {
+      "type": "banner",
+      "blocks": {
+        "1638851049cd9b3302-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner"
+          }
+        },
+        "1638851049cd9b3302-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template."
+          }
+        },
+        "1638851049cd9b3302-2": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
         }
+      },
+      "block_order": [
+        "1638851049cd9b3302-0",
+        "1638851049cd9b3302-1",
+        "1638851049cd9b3302-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/policy-page.png",
+        "desktop_text_box_position": "center",
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "adapt_height_first_image": true
       }
     },
-    "order": [
-      "main"
-    ]
-  }
-  
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "top_img": "shopify:\/\/shop_images\/all-policy_imsge.png",
+        "bottom_img": "shopify:\/\/shop_images\/image-2.png",
+        "top_link": "",
+        "bottom_link": ""
+      }
+    }
+  },
+  "order": [
+    "1638851049c5c5d207",
+    "main"
+  ]
+}
