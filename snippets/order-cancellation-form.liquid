@@ -10,7 +10,13 @@
 .label label{
     color: #000;
 }
-
+.contact__feilds{
+    margin-bottom: 3rem;
+}
+.wrap{
+    display: flex;
+    gap: 20px;
+}
 </style>
 <div class="contact form">
     <div class=" ">
@@ -73,8 +79,15 @@
                
                 <label class="" for="ContactForm-phone">Phone Number</label>
               </div>
-              <div class="">
+              <div class="wrap">
+               <div>
+                <input type="tel" id="ContactForm-phone" class="field__input" autocomplete="tel" name="contact[__Area Code]" pattern="[0-9\-]*" value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}" placeholder="{{ 'templates.contact.form.phone' | t }}">
+                <label for="">Area Code</label>
+               </div>
+              <div>
                 <input type="tel" id="ContactForm-phone" class="field__input" autocomplete="tel" name="contact[{{ 'templates.contact.form.phone' | t }}]" pattern="[0-9\-]*" value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}" placeholder="{{ 'templates.contact.form.phone' | t }}">
+                <label for="">Phone Number</label>
+              </div>
               </div>
            
          </div>
@@ -83,11 +96,28 @@
               <div class="contact__fields">
                 <div class="">
 
+                   <div>
                     <input type="text"  id="ContactForm-phone" class="field__input" autocomplete="tel" name="contact[street address]"  placeholder="City">
-                    <input type="text"  id="ContactForm-phone" class="field__input" autocomplete="tel" name="contact[street address line 2]"  placeholder="City">
-                    <input type="text"  id="ContactForm-phone" class="field__input" autocomplete="tel" name="contact[address city ]"  placeholder="City">
-                    <input type="text"  id="ContactForm-phone" class="field__input" autocomplete="tel" name="contact[address state ]"  placeholder="City">
+                    <label for="">Street Address</label>
+                   </div>
+                    <div>
+                        <input type="text"  id="ContactForm-phone" class="field__input" autocomplete="tel" name="contact[street address line 2]"  placeholder="City">
+                        <label for="">Street Address Line 2</label>
+                    </div>
+                 <div class="wrap">
+                        <div>
+                            <input type="text"  id="ContactForm-phone" class="field__input" autocomplete="tel" name="contact[address city ]"  placeholder="City">
+                            <label for="">City</label>
+                        </div>
+                    <div>
+                        <input type="text"  id="ContactForm-phone" class="field__input" autocomplete="tel" name="contact[address state ]"  placeholder="City">
+                        <label for="">State /Province</label>
+                    </div>
+                 </div>
+                   <div>
                     <input type="text"  id="ContactForm-phone" class="field__input" autocomplete="tel" name="contact[address pincode ]"  placeholder="City">
+                    <label for="">Postal/Zip Code</label>
+                   </div>
                     
                   </div>
               </div>
@@ -95,8 +125,8 @@
            
          </div>
 
-         <div class="field">
-             <label class="form__label " for="ContactForm-body">Reason For Cancellation</label>
+         <div class="">
+             <label class="form__label " for="ContactForm-body">Reason For Cancellation/Postpone</label>
             <textarea
               rows="3"
               id="ContactForm-body"
