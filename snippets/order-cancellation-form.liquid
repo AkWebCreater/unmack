@@ -27,7 +27,7 @@
             <div class="label">
                 <label class="" for="ContactForm-phone">Order Number/Id</label>
               </div>
-              <div class="field ">
+              <div class=" ">
                 <input
                   type="text"
                   id="ContactForm-email"
@@ -40,14 +40,14 @@
         </div>
           <div class="contact__fields">
               <div class="label">Name</div>
-            <div class="wrap field">
-                <div class="field">
+            <div class="wrap ">
+                <div class="">
                     <input class="field__input" autocomplete="name" type="text" id="ContactForm-name" name="contact[{{ 'templates.contact.form.name' | t }}]" value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}" placeholder="first {{ 'templates.contact.form.name' | t }}">
-                    <label class="field__label" for="ContactForm-name">{{ 'templates.contact.form.name' | t }}</label>
+                    <label class="" for="ContactForm-name">{{ 'templates.contact.form.name' | t }}</label>
                   </div>
-                  <div class="field">
+                  <div class="">
                       <input class="field__input" type="text" name="contact[_Last Name]" placeholder="Last Name">
-                      <label class="field__label">Last Name</label>
+                      <label class="">Last Name</label>
                     </div>
             </div>
            
@@ -57,7 +57,7 @@
     
                 <label class="field__label" for="ContactForm-phone">Email</label>
               </div>
-              <div class="field">
+              <div class="">
                 <input type="text"  id="ContactForm-phone" class="field__input" autocomplete="tel" name="contact[email]"  placeholder="City">
               </div>
               <div class="field field--with-error">
@@ -65,7 +65,7 @@
                   
                 placeholder="Pincode"
                 >
-                <label class="field__label">Pincode</label>
+                <label class="">Pincode</label>
               </div>
          </div>
          <div class="contact__fields">
@@ -105,7 +105,7 @@
           <div class="contact__fields">
               <div class="label"><label class="field__label" for="ContactForm-phone">Address</label></div>
               <div class="contact__fields">
-                <div class="field">
+                <div class="">
 
                     <input type="text"  id="ContactForm-phone" class="field__input" autocomplete="tel" name="contact[street address]"  placeholder="City">
                     <input type="text"  id="ContactForm-phone" class="field__input" autocomplete="tel" name="contact[street address line 2]"  placeholder="City">
