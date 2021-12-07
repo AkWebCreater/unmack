@@ -55,7 +55,7 @@
           <div class="contact__fields">
             <div class="label">
     
-                <label class="field__label" for="ContactForm-phone">Email</label>
+                <label class="" for="ContactForm-phone">Email</label>
               </div>
               <div class="">
                 <input type="text"  id="ContactForm-phone" class="field__input" autocomplete="tel" name="contact[email]"  placeholder="City">
@@ -65,7 +65,7 @@
          <div class="contact__fields">
             <div class="label">
                
-                <label class="field__label" for="ContactForm-phone">Phone Number</label>
+                <label class="" for="ContactForm-phone">Phone Number</label>
               </div>
               <div class="">
                 <input type="tel" id="ContactForm-phone" class="field__input" autocomplete="tel" name="contact[{{ 'templates.contact.form.phone' | t }}]" pattern="[0-9\-]*" value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}" placeholder="{{ 'templates.contact.form.phone' | t }}">
@@ -73,7 +73,7 @@
            
          </div>
           <div class="contact__fields">
-              <div class="label"><label class="field__label" for="ContactForm-phone">Address</label></div>
+              <div class="label"><label class="" for="ContactForm-phone">Address</label></div>
               <div class="contact__fields">
                 <div class="">
 
@@ -90,7 +90,7 @@
          </div>
 
          <div class="field">
-             <label class="form__label field__label" for="ContactForm-body">Reason For Cancellation</label>
+             <label class="form__label " for="ContactForm-body">Reason For Cancellation</label>
             <textarea
               rows="3"
               id="ContactForm-body"
