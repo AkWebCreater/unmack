@@ -264,7 +264,7 @@
     transition: transform var(--duration-long) ease;
   }
 
-  .card:hover .media.media--hover-effect > img:first-child:only-child,
+  .card:hover .media.media--hover-effect,
   .card-wrapper:hover .media.media--hover-effect{
     transform: scale(1.02);
   }
