@@ -2,9 +2,11 @@
 width:100%;
   
 }
-.footer-login-link path{
+.footer-login-link path,.footer-login-link a{
+  color: #efbe79;
 fill:#efbe79 !important;
 }
+
 .footer-top-bg{
 font-size:0;
 }
