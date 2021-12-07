@@ -25,7 +25,7 @@
         >
           <div class="card--stretch card-colored color-{{ section.settings.color_scheme }}">
             {%- if block.settings.collection.image != blank -%}
-              <div class="" style="max-width: {{section.settings.image-width}}px;margin:auto">
+              <div class="" style="max-width: {{section.settings.image-width}}px;margin:auto;padding: 8px;">
                 {% if section.settings.image_padding %}<div class="overlay-card"></div>{% endif %}
                 <div class="media{% if section.blocks.size > 1 %} media--{{ section.settings.image_ratio }}{% endif %} media--hover-effect overflow-hidden"
                   {% if section.settings.image_ratio == 'adapt' and section.blocks.size > 1 %}style="padding-bottom: {{ 1 | divided_by: block.settings.collection.image.aspect_ratio | times: 100 }}%;"{% endif %}>
