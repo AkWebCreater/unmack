@@ -71,6 +71,7 @@
               </div>
               <div class="">
                 <input type="text"  id="ContactForm-phone" class="field__input" autocomplete="tel" name="contact[email]"  placeholder="City">
+                <label class="" for="ContactForm-phone">example@example.com</label>
               </div>
            
          </div>
@@ -93,7 +94,7 @@
          </div>
           <div class="contact__fields">
               <div class="label"><label class="" for="ContactForm-phone">Address</label></div>
-              <div class="contact__fields">
+              <div class="">
                 <div class="">
 
                    <div>
@@ -125,8 +126,8 @@
            
          </div>
 
-         <div class="">
-             <label class="form__label " for="ContactForm-body">Reason For Cancellation/Postpone</label>
+         <div class="label">
+             <label class=" " for="ContactForm-body">Reason For Cancellation/Postpone</label>
             <textarea
               rows="3"
               id="ContactForm-body"
@@ -137,7 +138,11 @@
               {{- form.body -}}
             </textarea>
           </div>
-         
+          <div class="contact__button">
+            <button type="submit" class="button">
+              {{ 'templates.contact.form.send' | t }}
+            </button>
+          </div>
 
         {%- endform -%}
     </div>
