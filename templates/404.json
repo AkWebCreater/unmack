@@ -663,12 +663,27 @@
             "button-url": "",
             "border-color": "#38363b"
           }
+        },
+        "b3db8ec8-dac1-428d-ba0a-8b1da774aa06": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Untitled-1_f67ca894-ffea-4828-bf01-e48e134111da.png",
+            "title": "DYI",
+            "text": "",
+            "background-color": "#f0c0cc",
+            "text-color": "#070707",
+            "button-text-color": "#070707",
+            "button-text": "",
+            "button-url": "#",
+            "border-color": ""
+          }
         }
       },
       "block_order": [
         "1630155100e70d79d8-0",
         "1630155100e70d79d8-1",
-        "1630155100e70d79d8-2"
+        "1630155100e70d79d8-2",
+        "b3db8ec8-dac1-428d-ba0a-8b1da774aa06"
       ],
       "settings": {
         "title": "",
