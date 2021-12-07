@@ -1046,7 +1046,7 @@ summary::-webkit-details-marker {
 /* component-media */
 .media {
   display: block;
-  background-color: var(--color-foreground-10);
+  /* background-color: var(--color-foreground-10); */
   position: relative;
   overflow: hidden;
 }
