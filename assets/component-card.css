@@ -259,8 +259,8 @@
 }
 
 @media screen and (min-width: 990px) {
-  .card .media.media--hover-effect > img:only-child,
-  .card-wrapper .media.media--hover-effect > img:only-child {
+  .card .media.media--hover-effect,
+  .card-wrapper .media.media--hover-effect{
     transition: transform var(--duration-long) ease;
   }
 
