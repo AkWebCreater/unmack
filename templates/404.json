@@ -673,7 +673,7 @@
             "background-color": "#f0c0cc",
             "text-color": "#070707",
             "button-text-color": "#070707",
-            "button-text": "",
+            "button-text": "Explore More",
             "button-url": "#",
             "border-color": ""
           }
