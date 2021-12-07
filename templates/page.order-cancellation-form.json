@@ -44,7 +44,7 @@
       }
     },
     "main": {
-      "type": "main-page",
+      "type": "page-order-cancellation",
       "settings": {
         "top_img": "shopify:\/\/shop_images\/all-policy_imsge.png",
         "bottom_img": "shopify:\/\/shop_images\/image-2.png",

@@ -1,0 +1,69 @@
+<link rel="stylesheet" href="{{ 'section-main-page.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'component-rte.css' | asset_url }}" media="print" onload="this.media='all'">
+
+<noscript>{{ 'section-main-page.css' | asset_url | stylesheet_tag }}</noscript>
+<noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
+
+<div class="page-width page-width">
+  <h1 class="main-page-title page-title h0">
+    {{ page.title | escape }}
+  </h1>
+  <div class="page-wrapper {% if section.settings.bottom_img != blank %}sidebar{% endif %}">
+  <div class="rte">
+    {% render 'order-cancellation-form' %}
+  </div>
+  
+  {% if section.settings.bottom_img != blank %}
+  <div class="images-bottom"><a href="{{section.settings.bottom_link}}"><img class="desk" src="{{section.settings.bottom_img | img_url:'grande'}}">
+  <img class="mobile" src="{{section.settings.bottom_img_mob | img_url:'grande'}}">
+  </a></div>
+  {% endif %}
+  {% if section.settings.top_img != blank %}
+  <div class="images-top"><a href="{{section.settings.top_link}}"><img class="desk" src="{{section.settings.top_img |img_url:'grande'}}">
+  <img class="mobile" src="{{section.settings.top_img_mob |img_url:'grande'}}">
+  </a></div>
+  {% endif %}
+    
+  </div>
+
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.main-page.name",
+  "tag": "section",
+  "class": "spaced-section",
+  "settings":[
+    {
+      "type": "image_picker",
+      "id": "top_img",
+      "label": "Top Right Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "top_img_mob",
+      "label": "Top Right Image Mobile"
+    },
+    {
+      "type": "image_picker",
+      "id": "bottom_img",
+      "label": "Bottom Right Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "bottom_img_mob",
+      "label": "Bottom Right Image Mobile"
+    },
+    {
+      "type": "url",
+      "id": "top_link",
+      "label": "Top Right Image Link"
+    },
+    {
+      "type": "url",
+      "id": "bottom_link",
+      "label": "Bottom Right Image Link"
+    }
+  ]
+}
+{% endschema %}
