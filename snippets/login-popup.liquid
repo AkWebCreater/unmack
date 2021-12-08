@@ -181,9 +181,14 @@
             <div class="login-footer">
               <a href="#recover">
               {{ 'customer.login_page.forgot_password' | t }}
-            </a> <a href="{{ routes.account_register_url }}">
+            </a> 
+              <a href="#">
+              Login Via OTP
+            </a> 
+            <a href="{{ routes.account_register_url }}">
               {{ 'customer.login_page.create_account' | t }}
-            </a></div>
+            </a>
+          </div>
                  
                   <button class="accent-bg button--full-width " width="100%">
                     {{ 'customer.login_page.sign_in' | t }}
@@ -321,6 +326,10 @@
                 {%- endform -%}
               </div>
               <span class="or-border">or</span>
+              <div class="social-links-container">
+                <div class="ggogle">google</div>
+                <div class="faceboo">facebook</div>
+              </div>
            
             <span class="accept-term">by signingin you agree to our <a class="nolink" href="http://">term & conditions</a></span>
       </div>

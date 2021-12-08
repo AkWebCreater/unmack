@@ -101,6 +101,18 @@ flex-direction: column;
     text-align: center;
     color: #7c7c7c;
 }
+.social-links-container{
+    display: flex;
+    gap: 20px;
+}
+.social-links-container >div{
+    flex: 1;
+    border: 1px solid #515151;
+    color: #515151;
+    border-radius: 4px;
+    text-align: center;
+    padding: 0 10px;
+}
 .or-border{
     position: relative;
     display: block;
