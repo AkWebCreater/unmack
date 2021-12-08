@@ -111,7 +111,7 @@ flex-direction: column;
     cursor: pointer;
 }
 .already-account{
-    display: block;
+    display: none;
     text-align: center;
 }
 .social-links-container{
