@@ -25,13 +25,15 @@
                                 </h2>
                                 
                             </header>
-                            {% if article.tags.size > 0 %}
+                            <div class="article-tags">
+                                {% if article.tags.size > 0 %}
                             {% for tag in article.tags %}
                                 <span class="accent h3">{{tag}}</span>{% unless forloop.last  %}
                                     <span class="dot accent-bg"></span>
                                 {% endunless %}
                             {% endfor %}
                         {% endif %}
+                            </div>
                             {%- if article.excerpt.size > 0 or article.content.size > 0 -%}
                                 
                                 <div class="social-container bottom">
