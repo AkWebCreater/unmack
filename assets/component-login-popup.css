@@ -317,6 +317,10 @@ height: 30px;
     background-position: -210px;
 }
 /* ragister  */
+.form__subtitle{
+    color: #000;
+    margin: 0 !important;
+}
 .register .field{
     margin-bottom: 10px;
 }
