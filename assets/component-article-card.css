@@ -90,9 +90,12 @@ position: relative;
 }
 
 .article-card .list-social__link{
-  padding:5px;
+  padding:3px;
   background: #000;
   color: #fff;
+}
+li.list-social__item{
+  margin: 0 2px;
 }
 .article-card {
   align-self: flex-start;
