@@ -8,9 +8,12 @@
 }
 .dot{
   display: inline-block;
-  width: 5px;
-  height: 5px;
+  width: 8px;
+  height: 8px;
   border-radius: 5px;
+}
+.published-at{
+  font-size: 12px;
 }
 .article-card__excerpt.bottom{
   position: absolute;

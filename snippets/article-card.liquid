@@ -43,7 +43,7 @@
                                     {% endfor %}
                                 {% endif %}
                                 {%- if block.settings.show_date -%}
-                                    <span class="circle-divider">
+                                    <span class="circle-divider published-at">
                                         <span>Published
                                         </span>
                                         <span class="date">{{article.published_at | date: "%B %d, %Y"}}</span>
@@ -62,6 +62,9 @@
                                         {{ article.content | strip_html | truncatewords: 5 }}
                                     {%- endif -%}
                                 </p>
+                                
+                                {%- endif -%}
+                                {%- when 'social-share' -%}   
                                 <div class="social-container">
 
                                   <span class="reading-time" title="Estimated read time">
@@ -78,8 +81,6 @@
                                    <span>Share : </span> {% render 'social-sharing', share_title: article.title, share_permalink: article.url, share_image: article.image %}
                                   </div>
                                 </div>
-                                
-                            {%- endif -%}
 
                         {%- when 'link' -%}
                        
