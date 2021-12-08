@@ -1,4 +1,7 @@
 /* generel  */
+.loginpopup .field input{
+    height: 3.5rem;
+}
 .accountpopup-body{
     display: flex;
     text-align: left;
@@ -96,6 +99,24 @@ flex-direction: column;
     font-size: 13px;
     text-transform: capitalize;
     text-align: center;
+    color: #7c7c7c;
+}
+.or-border{
+    position: relative;
+    display: block;
+    width: fit-content;
+    margin: auto;
+    padding: 0 15px;
+}
+.or-border::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    height: 2px;
+    left: 0;
+    width: 100%;
+    background-color: #ff8331;
+
 }
 .login-footer{
     justify-content: space-between;
@@ -151,7 +172,10 @@ flex-direction: column;
     margin-bottom: 20px;
 }
 .login-container input{
-    border-radius: 8px !important;
+    border-radius: 4px !important;
+}
+.login-container .customer .field label,.login-container .field__label{
+    color: #515151;
 }
 .login-container .field{
     display: flex;
