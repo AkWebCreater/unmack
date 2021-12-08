@@ -4,7 +4,9 @@
   .body--blog h3{
     font-weight: 700;
   }
-
+  .main-blog .breadcrums{
+    opacity: 0.6;
+  }
   .blog-search .search__input{
     background-color: #f2f2f2;
 
@@ -102,6 +104,9 @@ background-color:#f58634;
   .recipe-menu a{
     text-decoration: none;
     color: inherit;
+  }
+  .blog-search use{
+    color: #fff;
   }
   .recipe-menu,.blogs-nav{
     margin-top: 20px;
