@@ -263,6 +263,15 @@ flex-direction: column;
 .forgot-pass{
     display: none;
 }
+.pass{
+    background-image: url('https://cdn.shopify.com/s/files/1/0568/8092/2807/files/eye-icon.jpg?v=1638973599');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+}
 /* logged in  */
 .logged-in{
     border-top-left-radius: 5px;
