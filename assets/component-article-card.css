@@ -150,7 +150,8 @@ position: relative;
   margin: 0;
 }
 .list-social__item .icon{
-  height: 15px;
+  height: 13px !important;
+  width: 13px !important;
 }
 .article-card__link {
  background: #f2f2f2;
