@@ -264,13 +264,20 @@ flex-direction: column;
     display: none;
 }
 .pass{
-    background-image: url('https://cdn.shopify.com/s/files/1/0568/8092/2807/files/eye-icon.jpg?v=1638973599');
     background-repeat: no-repeat;
     background-size: contain;
     display: block;
     position: absolute;
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    right: 9px;
+    height: 26px;
+    cursor: pointer;
+}
+.pass{
+    background-image: url('https://cdn.shopify.com/s/files/1/0568/8092/2807/files/Untitled-2.jpg?v=1638974450');
+}
+.pass.crossed{
+    background-image: url('https://cdn.shopify.com/s/files/1/0568/8092/2807/files/eye-icon.jpg?v=1638973599');
 }
 /* logged in  */
 .logged-in{

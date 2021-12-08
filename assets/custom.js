@@ -403,6 +403,17 @@ $('#login,.login-link').click(function () {
           slidesToScroll: 1
       });
   }
+//   login popup pass toggle on eye button click
+$('.pass').click(function() {
+    $(this).toggleClass('crossed');
+    var type = $(this).next().attr('type');
+    if(type == 'text'){
+        $(this).next().attr('type','password');
+   
+    }else{
+        $(this).next().attr('type','text');
+    }
+})
   // background added to fix nav on scroll
   $('.body--cart .header-wrapper,.body--register .header-wrapper,.body--search .header-wrapper,.about-us .header-wrapper').addClass('fix')
   $(window).scroll(function() {
