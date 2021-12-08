@@ -104,9 +104,8 @@ flex-direction: column;
 .or-border{
     position: relative;
     display: block;
-    width: fit-content;
-    margin: auto;
-    padding: 0 15px;
+    text-align: center;
+    color: #515151;
 }
 .or-border::before{
     content: '';
@@ -121,9 +120,10 @@ flex-direction: column;
 .or-border::after{
     content: '';
     position: absolute;
-    z-index: -1;
+    z-index: -2;
     height: 2px;
     left: 0;
+    top: 16px;
     width: 100%;
     background-color: #ff8331;
 
