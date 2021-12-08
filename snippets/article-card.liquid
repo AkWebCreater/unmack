@@ -35,6 +35,13 @@
                                   {{ article.title | escape }}
                                 </a>
                                 </h2>
+                                {% if article.tags.size > 0 %}
+                                    {% for tag in article.tags %}
+                                        <span class="accent h3">{{tag}}</span>{% unless forloop.last or forloop.first %}
+                                            <span class="dot accent-bg"></span>
+                                        {% endunless %}
+                                    {% endfor %}
+                                {% endif %}
                                 {%- if block.settings.show_date -%}
                                     <span class="circle-divider">
                                         <span>Published
