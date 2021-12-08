@@ -90,7 +90,9 @@ position: relative;
 }
 
 .article-card .list-social__link{
-  padding:0 5px;
+  padding:5px;
+  background: #000;
+  color: #fff;
 }
 .article-card {
   align-self: flex-start;
