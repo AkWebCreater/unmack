@@ -1,6 +1,9 @@
 .blog-articles .blog-page-title{
   grid-column: span 2;
   }
+  nav.breadcrumb.page-width{
+    padding: 15px 0 !important;
+  }
   .body--blog h3{
     font-weight: 700;
   }
