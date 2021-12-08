@@ -350,12 +350,11 @@
               </div>
               <span class="or-border">or</span>
               <div class="social-links-container">
-                            {% capture the_snippet_social_login %}{% render 'ssw-widget-social-login' %}{% endcapture %}
-            
-              {{ the_snippet_social_login }}
-            
-                <div class="ggogle">google</div>
-                <div class="faceboo">facebook</div>
+                          {% capture the_snippet_social_login %}{% render 'ssw-widget-social-login' %}{% endcapture %}
+          {% unless the_snippet_social_login contains 'Liquid error' %}
+            {{ the_snippet_social_login }}
+          {% endunless %}
+                
               </div>
            <span class="accept-term already-account">Already Have an Account <span class="login-link">Log in</span></span>
             <span class="accept-term">by signingin you agree to our <a class="" href="http://">term & conditions</a></span>
