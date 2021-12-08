@@ -37,7 +37,7 @@
                                 </h2>
                                 {% if article.tags.size > 0 %}
                                     {% for tag in article.tags %}
-                                        <span class="accent h3">{{tag}}</span>{% unless forloop.last or forloop.first %}
+                                        <span class="accent h3">{{tag}}</span>{% unless forloop.last  %}
                                             <span class="dot accent-bg"></span>
                                         {% endunless %}
                                     {% endfor %}
