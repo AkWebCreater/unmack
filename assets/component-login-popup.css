@@ -362,4 +362,13 @@ color: #515151;
 }
 body .ssw-fbconnect.ssw-social-btn .ssw-icon-facebook:before{
 display: inline-block !important;
+width: 15px !important;
+height: 15px !important;
+margin-left: 15px;
+
+}
+.ssw-socialconnect>.ssw-fbconnect.ssw-social-btn>a>i{
+    width: 100% !important;
+    display: flex !important;
+    align-items: center;
 }
