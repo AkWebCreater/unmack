@@ -72,10 +72,10 @@
                                       {%- assign readtime = words.size | divided_by: 200 | round | at_least: 1 -%}
                                       {{ readtime }}
                                       {%- if readtime > 1 -%}
-                                      Minutes
+                                      minutes
                                       {%- else -%}
-                                      Minute
-                                      {%- endif -%} Read
+                                      minute
+                                      {%- endif -%}&nbsp;Read
                                   </span>
                                   <div class="article-template__social-sharing">
                                    <span>Share</span> {% render 'social-sharing', share_title: article.title, share_permalink: article.url, share_image: article.image %}

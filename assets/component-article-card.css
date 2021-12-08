@@ -19,6 +19,7 @@
 }
 .published-at,.reading-time{
   font-size: 12px;
+  display: block;
 }
 .article-card__excerpt.bottom{
   position: absolute;
@@ -146,10 +147,13 @@ position: relative;
 .article-card__excerpt{
   margin: 0;
 }
+.list-social__item .icon{
+  height: 15px;
+}
 .article-card__link {
- background: #eee;
+ background: #f2f2f2;
  border-radius: 4px;
- border: 1px solid #585858;
+ border: 1px solid #b8b8b8;
  text-align: center;
  display: block;
 }
@@ -214,6 +218,11 @@ position: relative;
 @media (max-width:480px) {
   .article{
     margin-bottom: 10px;
+  }
+}
+@media (max-width:1023px) {
+  .blog-articles .blog-page-title{
+    margin-bottom: 0;
   }
 }
 /* .article-card__link:not(:only-child) {
