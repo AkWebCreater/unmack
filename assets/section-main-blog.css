@@ -98,7 +98,7 @@ background-color:#f58634;
     flex-wrap: wrap;
     gap: 15px;
   }
-  .blog-nav-link .main-link:hover{
+  .blog-nav-link .main-link:hover,.blog-nav-link .main-link.active{
     background: #f58634;
   }
   .date{
