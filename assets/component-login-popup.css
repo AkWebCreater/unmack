@@ -339,7 +339,6 @@ color: #000;
 }
 .ssw-icon-facebook::after{
 content: 'Facebook';
-width: 100%;
 color: #515151;
 }
 .ssw-icon-facebook{
@@ -356,12 +355,14 @@ flex-shrink: 0;
 border-radius: 0 !important;
 padding: 0 !important;
 font-size: 15px !important;
+margin: 0 !important;
 /* position: absolute; */
 
 }
 .ssw-socialconnect>.ssw-fbconnect.ssw-social-btn>a>i,.ssw-socialconnect>div.ssw-social-btn>a{
     width: 100% !important;
     display: flex !important;
+    gap: 6px;
     align-items: center;
     justify-content: center;
 }
@@ -385,4 +386,5 @@ line-height: 25px !important;
 }
 .ssw-socialconnect>.ssw-social-btn>a>i, .ssw-socialconnect>.ssw-social-btn>a>svg,.ssw-socialconnect>.ssw-social-btn>a>span{
     width: auto !important;
+    padding: 0 !important;
 }
