@@ -150,6 +150,9 @@ flex-direction: column;
     justify-content: space-between;
     margin-bottom: 8px;
 }
+.customer button:hover{
+    box-shadow: none !important;
+}
 .login-container .close-popup{
     position: absolute;
     color: #fff;
