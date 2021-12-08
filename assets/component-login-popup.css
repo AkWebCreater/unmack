@@ -120,6 +120,11 @@ flex-direction: column;
     gap: 20px;
     margin: 20px 0;
 }
+.group__fields{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 2rem;
+}
 .social-links-container >div{
     flex: 1;
     border: 1px solid #515151;
