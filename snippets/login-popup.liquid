@@ -350,6 +350,10 @@
               </div>
               <span class="or-border">or</span>
               <div class="social-links-container">
+                {% capture the_snippet_social_login %}{% include 'ssw-widget-social-login' %}{% endcapture %}
+{% unless the_snippet_social_login contains 'Liquid error' %}
+  {{ the_snippet_social_login }}
+{% endunless %}
                 <div class="ggogle">google</div>
                 <div class="faceboo">facebook</div>
               </div>
