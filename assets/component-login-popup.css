@@ -223,7 +223,7 @@ flex-direction: column;
 .login-container .field{
     margin-bottom: 20px;
 }
-.login-container input{
+.login-container .field input{
     border-radius: 4px !important;
     box-shadow: 0 0 0 .1rem #515151;
 }
