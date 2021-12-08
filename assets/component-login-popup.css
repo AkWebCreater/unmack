@@ -252,7 +252,7 @@ flex-direction: column;
     font-weight: 800;
     font-size: 20px;
     padding-bottom: 12px;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     border-bottom: 1px solid #aaa;
 }
 .login-header::after{
@@ -317,8 +317,12 @@ height: 30px;
     background-position: -210px;
 }
 /* ragister  */
+.title-1{
+    margin-bottom: 10px;
+}
 .form__subtitle{
     color: #000;
+    font-weight: 600;
     margin: 0 !important;
 }
 .register .field{
