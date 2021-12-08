@@ -64,6 +64,7 @@
         },
         "summary": {
           "type": "summary",
+          "disabled": true,
           "settings": {
           }
         },
@@ -105,6 +106,7 @@
         },
         "4f5e6a96-c8df-4c20-bd7a-12d012e263dc": {
           "type": "summary",
+          "disabled": true,
           "settings": {
           }
         },
