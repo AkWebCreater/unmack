@@ -132,19 +132,7 @@ flex-direction: column;
     margin: 0;
     color: #000;
 }
-.ssw-socialconnect>div{
-    flex: 1;
-    border: 1px solid #515151;
-    color: #515151;
-    border-radius: 4px;
-    text-align: center;
-    margin: 0 !important;
-    padding: 5px 0;
-}
-.ssw-socialconnect>.ssw-social-btn>a{
-border: 0 !important;
-box-shadow: none !important;
-}
+
 .or-border{
     position: relative;
     display: block;
@@ -372,4 +360,19 @@ margin:0 20px;
     width: 100% !important;
     display: flex !important;
     align-items: center;
+}
+.ssw-socialconnect>div{
+    flex: 1;
+    border: 1px solid #515151;
+    color: #515151;
+    border-radius: 4px;
+    text-align: center;
+    margin: 0 !important;
+    padding: 5px 0;
+}
+.ssw-socialconnect>.ssw-social-btn>a{
+border: 0 !important;
+box-shadow: none !important;
+width: 100% !important;
+line-height: 1 !important;
 }
