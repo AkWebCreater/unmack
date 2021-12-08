@@ -144,6 +144,9 @@ background-color:#f58634;
     .blog-articles .blog-page-title{
       grid-column: span 3;
     }
+    nav.breadcrumb.page-width{
+      margin-left: -20px !important;
+    }
   }
   .bottom-sidebar,.body--blog .banner__content,.blog-sidebar{
     display: none;
