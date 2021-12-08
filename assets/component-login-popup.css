@@ -342,3 +342,17 @@ margin-bottom: 0;
 font-size: 1.2rem;
 color: #000;
 }
+/* social login */
+.ssw-icon-facebook+span{
+    display: none !important;
+} 
+.ssw-fbconnect a{
+    position: relative;
+}
+.ssw-fbconnect a::after{
+content: 'Facebook';
+position: absolute;
+width: 100%;
+text-align: center;
+color: #515151;
+}
