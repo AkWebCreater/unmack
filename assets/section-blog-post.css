@@ -236,8 +236,7 @@ padding:10px 8px;
   margin: 0 10px;
 }
 .article-wrapper{
-  margin-left: -10px;
-  margin-right: -10px;
+margin: auto !important;
 }
 .article-template{
   grid-column:span 2;
