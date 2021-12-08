@@ -301,21 +301,39 @@
                       {{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}.
                     </span>
                   {%- endif -%}
-                  <div class="field">     
-                    <input
-                      type="password"
-                      name="customer[password]"
-                      id="RegisterForm-password"
-                      aria-required="true"
-                      {% if form.errors contains 'password' %}
-                        aria-invalid="true"
-                        aria-describedby="RegisterForm-password-error"
-                      {% endif %}
-                      placeholder="{{ 'customer.register.password' | t }}"
-                    >
-                    <label for="RegisterForm-password">
-                      {{ 'customer.register.password' | t }}
-                    </label>
+                  <div class="group__fields">
+                    <div class="field">     
+                      <input
+                        type="password"
+                        name="customer[password]"
+                        id="RegisterForm-password"
+                        aria-required="true"
+                        {% if form.errors contains 'password' %}
+                          aria-invalid="true"
+                          aria-describedby="RegisterForm-password-error"
+                        {% endif %}
+                        placeholder="{{ 'customer.register.password' | t }}"
+                      >
+                      <label for="RegisterForm-password">
+                        {{ 'customer.register.password' | t }}
+                      </label>
+                    </div>
+                    <div class="field">     
+                      <input
+                        type="password"
+                        name="customer[password]"
+                        id="RegisterForm-password"
+                        aria-required="true"
+                        {% if form.errors contains 'password' %}
+                          aria-invalid="true"
+                          aria-describedby="RegisterForm-password-error"
+                        {% endif %}
+                        placeholder="{{ 'customer.register.password' | t }}"
+                      >
+                      <label for="RegisterForm-password">
+                        Confirm Password
+                      </label>
+                    </div>
                   </div>
                   {%- if form.errors contains 'password' -%}
                     <span id="RegisterForm-password-error" class="form__message">
