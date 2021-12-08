@@ -138,7 +138,12 @@ flex-direction: column;
     color: #515151;
     border-radius: 4px;
     text-align: center;
+    margin: 0 !important;
     padding: 5px 0;
+}
+.ssw-socialconnect>.ssw-social-btn>a{
+border: 0 !important;
+box-shadow: none !important;
 }
 .or-border{
     position: relative;
