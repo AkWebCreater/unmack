@@ -109,6 +109,7 @@ flex-direction: column;
 .accept-term a,.login-link{
     color: #365ba2;
     cursor: pointer;
+    font-weight: 600;
 }
 .already-account{
     display: none;
