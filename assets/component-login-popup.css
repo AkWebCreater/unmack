@@ -339,9 +339,7 @@ color: #000;
 }
 .ssw-icon-facebook::after{
 content: 'Facebook';
-
 width: 100%;
-text-align: center;
 color: #515151;
 }
 .ssw-icon-facebook{
@@ -353,6 +351,10 @@ display: inline-block !important;
 width: 18px !important;
 height: 18px !important;
 margin:0 20px;
+flex-basis: 18px;
+flex-grow: 0;
+flex-shrink: 0;
+border-radius: 0 !important;
 /* position: absolute; */
 
 }
