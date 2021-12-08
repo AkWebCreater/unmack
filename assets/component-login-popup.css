@@ -350,19 +350,20 @@ body .ssw-fbconnect.ssw-social-btn .ssw-icon-facebook:before{
 display: inline-block !important;
 width: 18px !important;
 height: 18px !important;
-margin:0 20px;
 flex-basis: 18px;
 flex-grow: 0;
 flex-shrink: 0;
 border-radius: 0 !important;
 padding: 0 !important;
+font-size: 15px !important;
 /* position: absolute; */
 
 }
-.ssw-socialconnect>.ssw-fbconnect.ssw-social-btn>a>i{
+.ssw-socialconnect>.ssw-fbconnect.ssw-social-btn>a>i,.ssw-socialconnect>div.ssw-social-btn>a{
     width: 100% !important;
     display: flex !important;
     align-items: center;
+    justify-content: center;
 }
 .ssw-socialconnect>div{
     flex: 1;
@@ -377,5 +378,11 @@ padding: 0 !important;
 border: 0 !important;
 box-shadow: none !important;
 width: 100% !important;
-line-height: 1 !important;
+line-height: 25px !important;
+}
+.ssw-social-login-widget{
+    margin-bottom: 0 !important;
+}
+.ssw-socialconnect>.ssw-social-btn>a>i, .ssw-socialconnect>.ssw-social-btn>a>svg,.ssw-socialconnect>.ssw-social-btn>a>span{
+    width: auto !important;
 }
