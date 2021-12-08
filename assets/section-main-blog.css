@@ -48,7 +48,7 @@ background-color:#f58634;
   }
   .blog-nav-link .main-link{
     color: #fff;
-    background: #ccc;
+    background: #97989a;
     border: 1px solid #969595;
     display: flex;
     align-items: center;
@@ -108,6 +108,7 @@ background-color:#f58634;
   }
   .recipe-menu{
     border: 1px solid rgb(150, 149, 149);
+    border-radius: 4px;
     padding: 15px;
   }
   
