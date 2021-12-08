@@ -349,9 +349,9 @@ color: #000;
 .ssw-fbconnect a{
     position: relative;
 }
-.ssw-fbconnect a::after{
+.ssw-icon-facebook::after{
 content: 'Facebook';
-position: absolute;
+
 width: 100%;
 text-align: center;
 color: #515151;
