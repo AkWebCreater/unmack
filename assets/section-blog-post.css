@@ -266,12 +266,7 @@ margin: auto !important;
   -moz-box-shadow: 1px 1px 8px 0px rgba(0,0,0,0.75);
 padding:10px 8px;
 }
-.dot{
-  display: inline-block;
-  width: 5px;
-  height: 5px;
-  border-radius: 5px;
-}
+
 .date{
   color: rgb(245, 134, 52);
 }

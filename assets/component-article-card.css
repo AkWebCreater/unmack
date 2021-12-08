@@ -6,6 +6,12 @@
   align-items: center;
  
 }
+.dot{
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+}
 .article-card__excerpt.bottom{
   position: absolute;
   right: 0;
