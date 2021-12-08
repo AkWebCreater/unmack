@@ -72,12 +72,18 @@
           "type": "link",
           "settings": {
           }
+        },
+        "cad69f4c-413c-485a-83a7-87d3552d5111": {
+          "type": "social-share",
+          "settings": {
+          }
         }
       },
       "block_order": [
         "title",
         "summary",
-        "link"
+        "link",
+        "cad69f4c-413c-485a-83a7-87d3552d5111"
       ],
       "settings": {
         "show_image": true,
