@@ -356,3 +356,10 @@ width: 100%;
 text-align: center;
 color: #515151;
 }
+.ssw-icon-facebook{
+    font-family: inherit;
+    font-size: 15px !important;
+}
+body .ssw-fbconnect.ssw-social-btn .ssw-icon-facebook:before{
+display: inline !important;
+}
