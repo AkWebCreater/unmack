@@ -274,7 +274,15 @@
                       </label>
                     </div>
                   </div>
-                  <div class="field">      
+                  <div class="field"> 
+                    {%- if form.errors contains 'email' -%}
+                    <span id="RegisterForm-email-error" class="form__message">
+                      <svg aria-hidden="true" focusable="false" role="presentation">
+                        <use href="#icon-error" />
+                      </svg>
+                      {{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}.
+                    </span>
+                  {%- endif -%}     
                     <input
                       type="email"
                       name="customer[email]"
@@ -294,14 +302,7 @@
                       {{ 'customer.register.email' | t }}
                     </label>
                   </div>
-                  {%- if form.errors contains 'email' -%}
-                    <span id="RegisterForm-email-error" class="form__message">
-                      <svg aria-hidden="true" focusable="false" role="presentation">
-                        <use href="#icon-error" />
-                      </svg>
-                      {{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}.
-                    </span>
-                  {%- endif -%}
+                 
                   <div class="group__fields">
                     <div class="field">     
                       <input
