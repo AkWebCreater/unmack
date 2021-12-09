@@ -85,6 +85,10 @@
       {{ 'products.product.sold_out' | t }}
     </span>
     </div>
+    {% assign product-badges = product-badges %}
+    {% if product_badges == true %}
+    {% render 'product_trust_badges'%}
+    {% endif %}
     
     <small class="unit-price caption{% if available == false or product.selected_or_first_available_variant.unit_price_measurement == nil %} hidden{% endif %}">
       <dt class="visually-hidden">{{ 'products.product.price.unit_price' | t }}</dt>
@@ -101,10 +105,7 @@
       </dd>
     </small>
   </dl>
- {% assign product-badges = product-badges %}
-    {% if product_badges == true %}
-    {% render 'product_trust_badges'%}
-    {% endif %}
+ 
   {% comment %}
   {%- if show_badges -%}
     <span class="badge price__badge-sale color-{{ settings.sale_badge_color_scheme }}" aria-hidden="true">
