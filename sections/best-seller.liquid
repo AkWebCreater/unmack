@@ -36,7 +36,7 @@
             <div class="price"  id="price-{{ section.id }}">
               {% if product.compare_at_price_min > product.price_min %}
               <span class="price-compare"> 
-                ₹: {{product.compare_at_price_min | money}}
+                {{product.compare_at_price_min | money}}
               </span>  
               {% endif %}
               <span class="price-main"> 
