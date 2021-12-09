@@ -1,8 +1,7 @@
-.best-seller-nav{
-justify-content: space-between;
-}
+
 .best-seller-nav span{
     cursor:pointer;
+    margin: 0 10px;
 }
 .best-seller .grid__item{
     text-align: center;
