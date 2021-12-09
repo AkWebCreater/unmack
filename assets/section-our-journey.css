@@ -164,4 +164,7 @@ display: none !important;
             .product-slide{
                 background-image: unset;
             }
+            .product-slide .description p{
+                line-height: 1.2;
+            }
 }
