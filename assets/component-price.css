@@ -9,7 +9,9 @@
   gap: 10px;
   color: var(--color-foreground);
 }
-
+.price-compare{
+  text-decoration: line-through;
+}
 .price.price--unavailable {
   visibility: hidden;
 }
