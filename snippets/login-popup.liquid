@@ -228,7 +228,7 @@
                       </svg>
                       {{ 'templates.contact.form.error_heading' | t }}
                     </h2>
-                    <ul> 
+                    <ul class="errors"> 
                       {%- for field in form.errors -%}
                         <li>
                           {%- if field == 'form' -%}

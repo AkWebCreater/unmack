@@ -2,6 +2,9 @@
 .loginpopup .field input{
     height: 3.5rem;
 }
+.errors a{
+    color: red;
+}
 .accountpopup-body{
     display: flex;
     text-align: left;
