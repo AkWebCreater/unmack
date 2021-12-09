@@ -353,7 +353,7 @@ color: #000;
 .ssw-fbconnect a{
     position: relative;
 }
-.ssw-icon-facebook::after{
+.login-container .ssw-icon-facebook::after{
 content: 'Facebook';
 color: #515151;
 }
