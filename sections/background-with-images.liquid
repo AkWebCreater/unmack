@@ -133,5 +133,13 @@
   }
   .what-make-us-different, .section-{{section.id}} .heading{
   overflow:auto;
-  }  
+  } 
+  @media (max-width:1200px) {
+    {% if section.settings.background-image != blank %}
+  .section-{{section.id}} .image-with-text{
+    background-image:url({{section.settings.background-image | img_url: '1200x'}});
+
+  }
+  {% endif %}
+  } 
 </style>

@@ -73,7 +73,7 @@ span.year {
     -webkit-transform: translateY(-35px);
 } 
 .nav-link{    
-font-size: 1.5rem;
+font-size: 1.8rem;
 letter-spacing: 0.0125rem;
 position: relative;
 padding: 0;
@@ -125,7 +125,9 @@ cursor:pointer;
     box-shadow: none;
 }
 
-
+.up-sec{
+    margin-bottom: 15px;
+}
 /* responsive */
 @media (max-width:480px) {
     .slide-wrapper{
