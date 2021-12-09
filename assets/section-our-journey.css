@@ -159,5 +159,9 @@ display: none !important;
     }
     .pro-img.pro-img.mobile{
         display: block !important;
+        opacity: 1;
+            }
+            .product-slide{
+                background-image: unset;
             }
 }
