@@ -1,4 +1,4 @@
-//########################## make my own box page #####################
+//########################## make my own box age #####################
 $(document).ready(function () {
     // add items to cart
     $(document).on('click', '.add-combo-in-cart', function() {
