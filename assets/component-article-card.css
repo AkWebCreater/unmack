@@ -215,7 +215,7 @@ li.list-social__item{
   .article-card__excerpt.bottom{
     background-color: #515151;
     bottom: 0;
-    padding-bottom: 4rem;
+    padding-bottom: 4.5rem;
   }
   .social-container.bottom .article-card__footer{
     flex: 1;
