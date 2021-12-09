@@ -2454,3 +2454,6 @@ div.wishlist .ssw-faveiticon{
   [aria-label="My Wishlist"]{
     line-height: 1 !important;
   }
+  .faves-count{
+    display: none !important;
+  }
