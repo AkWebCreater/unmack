@@ -2445,3 +2445,10 @@ div.wishlist .ssw-faveiticon{
   .header__icons .field{
     margin-bottom: 0 !important;
   }
+  /* ssw wishlist */
+  .ssw-icon-heart-o:before{
+    font-size: 20px;
+  }
+  [aria-label="My Wishlist"]{
+    line-height: 1 !important;
+  }
