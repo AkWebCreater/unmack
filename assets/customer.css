@@ -12,15 +12,14 @@ margin: auto;
   margin-top: 1rem;
 }
 
-.customer button {
+/* .customer button {
   margin: 4rem 0 1.5rem;
-}
+} */
 
 .customer ul {
-  line-height: 1.6;
-  padding-left: 4.4rem;
+  line-height: 1;
   text-align: left;
-  margin-bottom: 4rem;
+  margin: 0;
 }
 
 .customer ul a {
@@ -42,9 +41,9 @@ margin: auto;
   }
 }
 
-.customer .field {
+/* .customer .field {
   margin: 2rem 0 0 0;
-}
+} */
 
 .customer .field:first-of-type {
   margin-top: 0;
