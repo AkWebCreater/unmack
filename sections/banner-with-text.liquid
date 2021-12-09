@@ -7,9 +7,11 @@
      {% endif %}
      {% if section.settings.background-image != blank %}
        
-     <img src="{{ section.settings.background-image | img_url: 'master'}}" width="100%" alt="banner">
+     <img class="desk-banner" src="{{ section.settings.background-image | img_url: 'master'}}" width="100%" alt="banner">
      {% endif %}
-    
+    {% if section.settings.mobile-background-image != blank %}
+      <img class="mobile-banner" src="{{section.settings.mobile-background-image}}" alt="mobile-banner">
+    {% endif %}
     {% if section.settings.banner-link != blank %}
        </a>
   {% endif %}
@@ -228,4 +230,21 @@
  .make-your-own-box .banner__buttons{
    margin-top:2rem 0;
  }
+
+ @media (max-width:749px) {
+   .desk-banner{
+     display:none;
+    }
+    .mobile-banner{
+     display: block;
+    }  
+  }
+  @media (min-width:750px) {
+   .mobile-banner{
+     display:none;
+    }
+    .desk-banner{
+   display: block;
+ }
+}
 </style>
