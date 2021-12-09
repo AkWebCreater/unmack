@@ -148,11 +148,14 @@ position: relative;
 .collection-list__item .card__text,
 .collection-list__item .card-colored {
   position: relative;
-  font-size: 1.5rem;
-  font-weight: 600;
+
 }
 
 /* card component override */
+.collection-list__item .card__text h3{
+  font-size: 1.5rem;
+  font-weight: 600;
+}
 .collection-list .card__text-spacing{
 padding:0;
   text-align:center;
