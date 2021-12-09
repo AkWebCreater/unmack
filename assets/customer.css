@@ -48,7 +48,10 @@ margin: auto;
 .customer .field:first-of-type {
   margin-top: 0;
 }
-
+.errors{
+  color: red;
+  margin-bottom: 10px;
+}
 /* Customer Table */
 .customer table {
   table-layout: auto;
