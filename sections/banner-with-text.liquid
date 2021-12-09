@@ -10,7 +10,7 @@
      <img class="desk-banner" src="{{ section.settings.background-image | img_url: 'master'}}" width="100%" alt="banner">
      {% endif %}
     {% if section.settings.mobile-background-image != blank %}
-      <img class="mobile-banner" src="{{section.settings.mobile-background-image}}" alt="mobile-banner">
+      <img class="mobile-banner" src="{{section.settings.mobile-background-image | img_url: 'master'}}" alt="mobile-banner">
     {% endif %}
     {% if section.settings.banner-link != blank %}
        </a>
