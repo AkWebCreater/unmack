@@ -2159,9 +2159,11 @@ img{
     position: relative;
   }
   /* new navigation issue fixed for cart page */
+@media (min-width:990px) {
   .header-wrapper.fix{
     margin-bottom:135px;
   }
+}
   .header-wrapper.fix .navigation{
     background-color:var(--color-background);
   margin: 0 !important;
