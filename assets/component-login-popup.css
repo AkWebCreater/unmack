@@ -279,6 +279,10 @@ flex-direction: column;
 .pass.crossed{
     background-image: url('https://cdn.shopify.com/s/files/1/0568/8092/2807/files/eye-icon.jpg?v=1638973599');
 }
+.form__message{
+    margin-top: 0;
+    margin-bottom: 0.6rem;
+}
 /* logged in  */
 .logged-in{
     border-top-left-radius: 5px;
