@@ -5,6 +5,10 @@
 .errors a{
     color: red;
 }
+body ul.errors{
+    margin-bottom: 10px !important;
+    
+}
 .accountpopup-body{
     display: flex;
     text-align: left;
