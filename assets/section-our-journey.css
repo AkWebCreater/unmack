@@ -157,4 +157,7 @@ display: none !important;
     .pro-img{
 display: none !important;
     }
+    .pro-img.pro-img.mobile{
+        display: block !important;
+            }
 }
