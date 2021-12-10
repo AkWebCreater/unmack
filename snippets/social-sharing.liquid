@@ -19,32 +19,34 @@
   {%- endif -%}
 
   {%- if settings.share_twitter -%}
-    <li class="list-social__item twitter1 tooltip1">
+    <li class="list-social__item twitter1 ">
       <a
-        class="list-social__link link link--text"
+        class="list-social__link link link--text tooltip1"
         href="//twitter.com/share?text={{ share_title | url_param_escape }}&amp;url={{ shop.url | append: share_permalink }}"
         target="_blank"
       >
         {% render 'icon-twitter' %}
         <span class="visually-hidden visually-hidden--inline">{{ 'general.social.alt_text.share_on_twitter' | t }}</span>
         <span class="visually-hidden visually-hidden--inline">{{ 'accessibility.link_messages.new_window' | t }}</span>
+        <span class="tooltrip_q tooltrip_q2">twitter</span>
       </a>
-      <span class="tooltrip_q tooltrip_q2">twitter</span>
+      
     </li>
   {%- endif -%}
 
   {%- if settings.share_pinterest -%}
-    <li class="list-social__item pinterest1 tooltip1">
+    <li class="list-social__item pinterest1 ">
       <a
-        class="list-social__link link link--text"
+        class="list-social__link link link--text tooltip1"
         href="//pinterest.com/pin/create/button/?url={{ shop.url | append: share_permalink }}}&amp;media={{ share_image | img_url: '1024x1024' }}&amp;description={{ share_title | url_param_escape }}"
         target="_blank"
       >
         {% render 'icon-pinterest' %}
         <span class="visually-hidden visually-hidden--inline">{{ 'general.social.alt_text.share_on_pinterest' | t }}</span>
         <span class="visually-hidden visually-hidden--inline">{{ 'accessibility.link_messages.new_window' | t }}</span>
+        <span class="tooltrip_q tooltrip_q3">Pinterest</span>
       </a>
-       <span class="tooltrip_q tooltrip_q3">Pinterest</span>
+     
     </li>
   {%- endif -%}
 
