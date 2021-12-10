@@ -324,11 +324,11 @@ margin-right: 3rem;
   position: absolute;
   text-align: center;	
   z-index: 2;
-  text-transform: none;
+/*   text-transform: none;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; */
 }
 
 
