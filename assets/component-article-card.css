@@ -343,6 +343,6 @@ span.tooltrip_q.tooltrip_q1{}
 	width: 0;
 }
 
-@media (max-width:749px) {
+@media (max-width:750px) {
   .tooltip1 .tooltrip_q {width: 100%;}
 }
