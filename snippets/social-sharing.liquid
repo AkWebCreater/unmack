@@ -20,7 +20,7 @@
   {%- endif -%}
 
   {%- if settings.share_twitter -%}
-    <li class="list-social__item tooltip1">
+    <li class="list-social__item twitter1 tooltip1">
       <a
         class="list-social__link link link--text"
         href="//twitter.com/share?text={{ share_title | url_param_escape }}&amp;url={{ shop.url | append: share_permalink }}"
@@ -35,7 +35,7 @@
   {%- endif -%}
 
   {%- if settings.share_pinterest -%}
-    <li class="list-social__item tooltip1">
+    <li class="list-social__item pinterest1 tooltip1">
       <a
         class="list-social__link link link--text"
         href="//pinterest.com/pin/create/button/?url={{ shop.url | append: share_permalink }}}&amp;media={{ share_image | img_url: '1024x1024' }}&amp;description={{ share_title | url_param_escape }}"
