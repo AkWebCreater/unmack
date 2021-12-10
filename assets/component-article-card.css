@@ -332,7 +332,7 @@ transition: all 0.2s ease;
 }
 
 
-.tooltip1 .tooltrip_q:after {
+.tooltip1 .tooltrip_q1:after {
 	border-color: #222 transparent;
     border-style: solid;
     border-width: 22px 9px 0;
