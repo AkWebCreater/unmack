@@ -267,7 +267,7 @@ padding-top: 0;
 position: relative;
 }
 
-.tooltip1:hover span {
+.tooltip1:hover .tooltrip_q {
 opacity: 1;
 filter: alpha(opacity=100);
 top: -6em;
@@ -283,7 +283,7 @@ transition: all 0.2s ease;
   color: #fff;
 }
 
-.tooltip1 span {
+.tooltip1 .tooltrip_q {
 	background: none repeat scroll 0 0 #222; /*-- some basic styling */
 	color: #F0B015;
 	font-family: 'Helvetica';
@@ -308,7 +308,7 @@ transition: all 0.2s ease;
 	transition: all 0.3s ease-in-out;
 }
 
-.tooltip1 span:after {
+.tooltip1 .tooltrip_q:after {
 	border-color: #222 rgba(0, 0, 0, 0);
 	border-style: solid;
 	border-width: 15px 15px 0;
