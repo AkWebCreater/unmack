@@ -257,11 +257,7 @@ padding-top: 0;
       z-index: 2;
 
   }
-}
 
-
-.article_cartsokay{height:365px;}
-.side_blgs_k .article-content.motion-reduce.article_cartsokay{height:100%;}
 
 .wrapper1{
 position: relative;
@@ -368,4 +364,6 @@ border-color: #222 transparent;
     margin-left: 45px;
 }
 
-
+}
+.article_cartsokay{height:365px;}
+.side_blgs_k .article-content.motion-reduce.article_cartsokay{height:100%;}
