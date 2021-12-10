@@ -236,6 +236,7 @@ li.list-social__item{
     top: -54px;
     background-color:rgba(81,81,81,.85);
   }
+  .tooltip1 .tooltrip_q{display: none;}
 }
 @media screen and (min-width: 750px) {
   .article-card__excerpt.bottom{
