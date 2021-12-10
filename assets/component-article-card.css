@@ -302,6 +302,7 @@ z-index: 99;
 -moz-transition: all 0.2s ease;
 -o-transition: all 0.2s ease;
 transition: all 0.2s ease;
+      margin-left: 14px;
 }
 
 .box1 {
