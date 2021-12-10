@@ -94,7 +94,7 @@ position: relative;
   color: #fff;
 }
 li.list-social__item{
-  margin: 0 5px;
+  margin: 0 5px;width: 19px;
 }
 .article-card {
   align-self: flex-start;
