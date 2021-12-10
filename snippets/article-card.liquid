@@ -16,7 +16,7 @@
             <div class="article-card__image-wrapper">
               <a href="{{article.url}}" >
                 <div class="article-card__image media media--landscape">
-                  <img srcset="
+                  <img title="{{ article.title | escape }}" srcset="
                                     {%- if article.image.src.width >= 165 -%}{{ article.image.src | img_url: '165x' }} 165w,{%- endif -%}
                                     {%- if article.image.src.width >= 360 -%}{{ article.image.src | img_url: '360x' }} 360w,{%- endif -%}
                                     {%- if article.image.src.width >= 533 -%}{{ article.image.src | img_url: '533x' }} 533w,{%- endif -%}
