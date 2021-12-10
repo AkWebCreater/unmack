@@ -282,8 +282,8 @@ transition: all 0.2s ease;
 .tooltip1:hover .tooltrip_q.tooltrip_q2 {
 opacity: 1;
 filter: alpha(opacity=100);
-top: -6em;
-left: 6px;
+top: -6.5em;
+left: 8px;
 z-index: 99;
 -webkit-transition: all 0.2s ease;
 -moz-transition: all 0.2s ease;
