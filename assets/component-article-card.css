@@ -333,15 +333,15 @@ transition: all 0.2s ease;
 
 
 .tooltip1 .tooltrip_q:after {
-	border-color: #222 rgba(0, 0, 0, 0);
-	border-style: solid;
-	border-width: 15px 15px 0;
-	bottom: -15px;
-	content: "";
-	display: block;
-/* 	left: 31px; */
-	position: absolute;
-	width: 0;
+	border-color: #222 transparent;
+    border-style: solid;
+    border-width: 22px 9px 0;
+    bottom: -13px;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    margin-left: 12px;
 }
 .tooltip1 .tooltrip_q.tooltrip_q2:after{
 border-color: #222 transparent;
