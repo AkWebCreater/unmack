@@ -311,7 +311,7 @@ transition: all 0.2s ease;
 
 .tooltip1 .tooltrip_q {
 	background: none repeat scroll 0 0 #222; /*-- some basic styling */
-	color: #F0B015;
+	color: #fff;
 	font-family: 'Helvetica';
 	font-size: 0.8em;
 	font-weight: normal;
