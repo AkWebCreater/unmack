@@ -7,12 +7,13 @@
       <a
         class="list-social__link link link--text"
         href="//www.facebook.com/sharer.php?u={{ shop.url | append: share_permalink }}"
-        target="_blank"
+        target="_blank" title="facebook.com"
       >
         {% render 'icon-facebook' %}
         <span class="visually-hidden visually-hidden--inline">{{ 'general.social.alt_text.share_on_facebook' | t }}</span>
         <span class="visually-hidden visually-hidden--inline">{{ 'accessibility.link_messages.new_window' | t }}</span>
       </a>
+      
     </li>
   {%- endif -%}
 
