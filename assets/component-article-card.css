@@ -279,7 +279,7 @@ z-index: 99;
 transition: all 0.2s ease;
 }
 
-.tooltip1:hover .tooltrip_q.tooltrip_q1 {
+.tooltip1:hover .tooltrip_q2 {
 opacity: 1;
 filter: alpha(opacity=100);
 top: -6em;
