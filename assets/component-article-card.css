@@ -335,8 +335,8 @@ margin-right: 3rem;
 .tooltip1 .tooltrip_q:after {
   border-color: #222 rgba(0, 0, 0, 0);
   border-style: solid;
-  border-width: 15px 15px 0;
-  bottom: -15px;
+/*   border-width: 15px 15px 0;
+  bottom: -15px; */
   content: "";
   display: block;
   /* 	left: 31px; */
@@ -346,8 +346,8 @@ margin-right: 3rem;
 .tooltip1 .tooltrip_q.tooltrip_q2:after{
   border-color: #222 transparent;
   border-style: solid;
-  border-width: 16px 10px 0;
-  bottom: -15px;
+/*   border-width: 16px 10px 0;
+  bottom: -15px; */
   content: "";
   display: block;
   position: absolute;
@@ -358,8 +358,8 @@ margin-right: 3rem;
 .tooltip1 .tooltrip_q.tooltrip_q3:after{
   border-color: #222 transparent;
   border-style: solid;
-  border-width: 16px 10px 0;
-  bottom: -15px;
+/*   border-width: 16px 10px 0; */
+/*   bottom: -15px; */
   content: "";
   display: block;
   position: absolute;
