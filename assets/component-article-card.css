@@ -218,11 +218,14 @@ li.list-social__item{
   justify-content: flex-start;
   padding: 0;
 }
+
 .article-card__excerpt.bottom{
   position: absolute;
   right: 0;
   padding: 10px;
   color: #fff;
+  font-size: 15px;
+  line-height: 1.3;
   z-index: 1;
 }
 
@@ -230,7 +233,7 @@ li.list-social__item{
 @media (max-width:749px) {
   .article-card__excerpt.bottom{
     transform: translateY(-100%);
-    top: -25px;
+    top: -54px;
     background-color:rgba(81,81,81,.85);
   }
 }
