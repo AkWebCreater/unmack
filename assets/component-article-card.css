@@ -341,7 +341,7 @@ transition: all 0.2s ease;
     display: block;
     position: absolute;
     width: 0;
-    margin-left: 12px;
+    margin-left: 54px;
 }
 .tooltip1 .tooltrip_q.tooltrip_q2:after{
 border-color: #222 transparent;
