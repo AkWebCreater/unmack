@@ -10,7 +10,7 @@
         Usage:
         {% render 'article-card' blog: blog, article: article, show_image: section.settings.show_image %}
 {% endcomment %}
-<article class="article-card{% if article.image == blank or show_image == false %} article-card--no-image{% endif %}" aria-labelledby="Article-{{ article.id }}">
+<article class="article-card{% if article.image == blank or show_image == false %} article-card--no-image{% endif %} article_cartsokay" aria-labelledby="Article-{{ article.id }}">
     <div  class="article-content motion-reduce">
         {%- if show_image == true and article.image -%}
             <div class="article-card__image-wrapper">
