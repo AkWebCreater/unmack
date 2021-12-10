@@ -649,7 +649,7 @@
             "image": "shopify:\/\/shop_images\/b.png",
             "title": "BEAUTY TIPS",
             "text": "",
-            "background-color": "#ffffff",
+            "background-color": "#ebeef5",
             "text-color": "#2f2e33",
             "button-text-color": "#878785",
             "button-text": "Explore More",
@@ -661,7 +661,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/c.png",
-            "title": "RECIPIE TIPS",
+            "title": "RECIPE TIPS",
             "text": "",
             "background-color": "#d8bdb6",
             "text-color": "#972100",
