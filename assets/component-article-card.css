@@ -48,7 +48,7 @@
 }
 .article-card a{
   text-decoration: none;
-  color:#585858 ;
+  color:#232222 ;
 }
 .article-card .social-container{
 display: flex;
@@ -258,3 +258,7 @@ padding-top: 0;
 
   }
 }
+
+
+.article_cartsokay{height:365px;}
+.side_blgs_k .article-content.motion-reduce.article_cartsokay{height:100%;}

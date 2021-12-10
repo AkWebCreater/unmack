@@ -1,250 +1,251 @@
+<!-- main-blog.liquid -->
 {{ 'component-article-card.css' | asset_url | stylesheet_tag }}
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 {{ 'section-main-blog.css' | asset_url | stylesheet_tag }}
 {% comment %}
-    blog strted
+blog strted
 {% endcomment %}
 {%- paginate blog.articles by 6 -%}
-    <div class="main-blog page-width">
-        <div
-            class="breadcrums">
-            <!-- start snippet breadcrumbs-->
-            {% render 'breadcrums' %}
-            <!-- start snippet breadcrumbs-->
-        </div>
-        <div class="blog-search">
-          <div class="search-modal__content two" tabindex="-1">
-            <form action="{{ routes.search_url }}" method="get" role="search" class="search search-modal__form">
-              <div class="field">
-                <input class="search__input field__input" id="Search-In-Modal" type="search" name="q" value="{{ search.terms | escape }}" placeholder="{{ 'general.search.search' | t }}">
-                <label class="field__label" for="Search-In-Modal">Find Recipe / Beauty Tips and more </label>
-                <input type="hidden" name="options[prefix]" value="last">
-                <input type="hidden" name="type" value="article" />
-                <button class="search__button field__button focus-inset" aria-label="{{ 'general.search.search' | t }}">
-                  <svg class="icon icon-search" aria-hidden="true" focusable="false" role="presentation">
-                    <use href="#icon-search">
-                  </svg>
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-        <div class="blogs-menu">
-            {%- assign blog_menu = linklists[section.settings.blogs_menu] -%}
-            <nav class="">
-            
-                <ul class="list-menu blogs-nav" role="list">
-                  {%- for link in blog_menu.links -%}
-                  <li class="blog-nav-link ">
-                    {%- if link.links != blank -%}
-                      <details-disclosure>
-                        <details>
-                          
-                            
-                          <summary class="main-link {% if forloop.first %}active{% endif %}  header__menu-item list-menu__item link focus-inset">
-                            <span  class=""{%- if link.child_active %} class="header__active-menu-item main-link"{% endif %}>{{ link.title | escape }}</span>
-                            {% render 'icon-caret' %}
-                          </summary>
-                          <ul class="header__submenu list-menu list-menu--disclosure caption-large motion-reduce" role="list" tabindex="-1">
-                            {%- for childlink in link.links -%}
-                              <li>
-                                {%- if childlink.links == blank -%}
-                                  <a href="{{ childlink.url }}" class="header__menu-item list-menu__item link link--text focus-inset caption-large{% if childlink.current %} list-menu__item--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
-                                    {{ childlink.title | escape }}
-                                  </a>
-                                  {% if childlink.type == 'collection_link' %}
-                                  {%- assign collection = childlink.object -%}
-                                  <div class="grid product-popup-menu grid--4-col-desktop grid--4-col-tablet">
-                                    {%- for product in collection.products limit:8 -%}
-                                      <div class="grid__item">
-                                        {% render 'product-card',
-                                        product_card_product: product,
-                                        media_size:'square',
-                                        show_secondary_image: false,
-                                        add_image_padding:false,
-                                        show_vendor: false
-                                      %}
-                                      <div class="shop-btn"><a href="{{product.url}}">Shop Now</a></div>
-                                    </div>
-                                    {%- endfor -%}
-                                  </div>
-                                  {% endif %}
-                                {%- else -%}
-                                  <details>
-                                    <summary class="header__menu-item link link--text list-menu__item focus-inset caption-large">
-                                      {{ childlink.title | escape }}
-                                      {% render 'icon-caret' %}
-                                    </summary>
-                                    <ul class="header__submenu list-menu motion-reduce">
-                                      {%- for grandchildlink in childlink.links -%}
-                                        <li>
-                                          <a href="{{ grandchildlink.url }}" class="header__menu-item list-menu__item link link--text focus-inset caption-large{% if grandchildlink.current %} list-menu__item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
-                                            {{ grandchildlink.title | escape }}
-                                          </a>
-                                        </li>
-                                      {%- endfor -%}
-                                    </ul>
-                                  </details>
-                                {%- endif -%}
-                              </li>
-                            {%- endfor -%}
-                          </ul>
-                        </details>
-                      </details-disclosure>
-                    {%- else -%}
-                      <a href="{{ link.url }}" class="header__menu-item header__menu-item main-link list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
-                        <span {%- if link.current %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
-                      </a>
-                    {%- endif -%}
-                  </li>
-                  {%- endfor -%}
-                </ul>
-             
-            </nav>
-        </div>
-        <div class="recipe-menu">
-            {%- assign recipe_menu = linklists[section.settings.recipe_menu] -%}
-            <nav class="recipe-nav">
-                <span class="pipe">
-                    Top
-                    {{ recipe_menu.title | replace: '-', ' ' | capitalize }}
-                    :</span>
-                {%- for link in recipe_menu.links -%}
-                    <span class="recipe-nav-link {% if link.active %}active{% endif %}">
-                        <a href="{{ link.url }}">{{ link.title }}</a>
-                    </span>
-                    {%- unless forloop.last -%}
-                        <span class="pipe">
-                            |
-                        </span>
-                    {%- endunless -%}
-                {%- endfor -%}
-            </nav>
-        </div>
-        {% comment %}
-            <h1 class="title--primary">{{ blog.title | escape }}</h1>
-        {% endcomment %}
-        <div class="blogs-main-wrapper">
-            <div class="blog-articles">
-               
-                <h3 class="blog-page-title">{{blog.title}}</h3>
-                    {% for article in blog.articles %}
-                        <div class="blog-articles__article article">
-                            {%- render 'article-card', article: article, show_image: section.settings.show_image -%}
-                        </div>
-                    {% endfor %}
-              
+<div class="main-blog page-width">
+  <div
+       class="breadcrums">
+    <!-- start snippet breadcrumbs-->
+    {% render 'breadcrums' %}
+    <!-- start snippet breadcrumbs-->
+  </div>
+  <div class="blog-search">
+    <div class="search-modal__content two" tabindex="-1">
+      <form action="{{ routes.search_url }}" method="get" role="search" class="search search-modal__form">
+        <div class="field">
+          <input class="search__input field__input" id="Search-In-Modal" type="search" name="q" value="{{ search.terms | escape }}" placeholder="{{ 'general.search.search' | t }}">
+          <label class="field__label" for="Search-In-Modal">Find Recipe / Beauty Tips and more </label>
+          <input type="hidden" name="options[prefix]" value="last">
+          <input type="hidden" name="type" value="article" />
+          <button class="search__button field__button focus-inset" aria-label="{{ 'general.search.search' | t }}">
+            <svg class="icon icon-search" aria-hidden="true" focusable="false" role="presentation">
+              <use href="#icon-search">
+                </svg>
+              </button>
             </div>
-            <div class="blog-sidebar">
-                
-                {%- for link in linklists.top-blogs.links -%}
-                    {% assign top_blogs = link.object %}
-                    <h3 class="blog-page-title">{{link.title}}</h3>
-                    {% for topArticle in top_blogs.articles %}
-                        <div class="blog-articles__article article">
-                            {%- render 'article-card', article: topArticle, show_image:true -%}
-                        </div>
-                    {% endfor %}
-                {%- endfor -%}
-            </div>
+          </form>
         </div>
-        {%- if paginate.pages > 1 -%}
-            {%- render 'pagination', paginate: paginate -%}
-        {%- endif -%}
     </div>
-{%- endpaginate -%}
+    <div class="blogs-menu">
+      {%- assign blog_menu = linklists[section.settings.blogs_menu] -%}
+      <nav class="">
 
-{% schema %}
-{
-  "name": "t:sections.main-blog.name",
-  "tag": "section",
-  "settings": [
+        <ul class="list-menu blogs-nav" role="list">
+          {%- for link in blog_menu.links -%}
+          <li class="blog-nav-link ">
+            {%- if link.links != blank -%}
+            <details-disclosure>
+              <details>
+
+
+                <summary class="main-link {% if forloop.first %}active{% endif %}  header__menu-item list-menu__item link focus-inset">
+                  <span  class=""{%- if link.child_active %} class="header__active-menu-item main-link"{% endif %}>{{ link.title | escape }}</span>
+                            {% render 'icon-caret' %}
+                        </summary>
+                  <ul class="header__submenu list-menu list-menu--disclosure caption-large motion-reduce" role="list" tabindex="-1">
+                    {%- for childlink in link.links -%}
+                    <li>
+                      {%- if childlink.links == blank -%}
+                      <a href="{{ childlink.url }}" class="header__menu-item list-menu__item link link--text focus-inset caption-large{% if childlink.current %} list-menu__item--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
+                        {{ childlink.title | escape }}
+                      </a>
+                      {% if childlink.type == 'collection_link' %}
+                      {%- assign collection = childlink.object -%}
+                      <div class="grid product-popup-menu grid--4-col-desktop grid--4-col-tablet">
+                        {%- for product in collection.products limit:8 -%}
+                        <div class="grid__item">
+                          {% render 'product-card',
+                                        product_card_product: product,
+                          media_size:'square',
+                          show_secondary_image: false,
+                          add_image_padding:false,
+                          show_vendor: false
+                          %}
+                          <div class="shop-btn"><a href="{{product.url}}">Shop Now</a></div>
+                        </div>
+                        {%- endfor -%}
+                      </div>
+                      {% endif %}
+                      {%- else -%}
+                      <details>
+                        <summary class="header__menu-item link link--text list-menu__item focus-inset caption-large">
+                          {{ childlink.title | escape }}
+                          {% render 'icon-caret' %}
+                        </summary>
+                        <ul class="header__submenu list-menu motion-reduce">
+                          {%- for grandchildlink in childlink.links -%}
+                          <li>
+                            <a href="{{ grandchildlink.url }}" class="header__menu-item list-menu__item link link--text focus-inset caption-large{% if grandchildlink.current %} list-menu__item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                              {{ grandchildlink.title | escape }}
+                            </a>
+                          </li>
+                          {%- endfor -%}
+                        </ul>
+                      </details>
+                      {%- endif -%}
+                    </li>
+                    {%- endfor -%}
+                  </ul>
+                  </details>
+                </details-disclosure>
+              {%- else -%}
+              <a href="{{ link.url }}" class="header__menu-item header__menu-item main-link list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
+                <span {%- if link.current %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
+                      </a>
+                {%- endif -%}
+                </li>
+              {%- endfor -%}
+              </ul>
+
+          </nav>
+        </div>
+      <div class="recipe-menu">
+        {%- assign recipe_menu = linklists[section.settings.recipe_menu] -%}
+        <nav class="recipe-nav">
+          <span class="pipe">
+            Top
+            {{ recipe_menu.title | replace: '-', ' ' | capitalize }}
+            :</span>
+          {%- for link in recipe_menu.links -%}
+          <span class="recipe-nav-link {% if link.active %}active{% endif %}">
+            <a href="{{ link.url }}">{{ link.title }}</a>
+          </span>
+          {%- unless forloop.last -%}
+          <span class="pipe">
+            |
+          </span>
+          {%- endunless -%}
+          {%- endfor -%}
+        </nav>
+      </div>
+      {% comment %}
+      <h1 class="title--primary">{{ blog.title | escape }}</h1>
+      {% endcomment %}
+      <div class="blogs-main-wrapper">
+        <div class="blog-articles">
+
+          <h3 class="blog-page-title">{{blog.title}}</h3>
+          {% for article in blog.articles %}
+          <div class="blog-articles__article article">
+            {%- render 'article-card', article: article, show_image: section.settings.show_image -%}
+          </div>
+          {% endfor %}
+
+        </div>
+        <div class="blog-sidebar side_blgs_k">
+
+          {%- for link in linklists.top-blogs.links -%}
+          {% assign top_blogs = link.object %}
+          <h3 class="blog-page-title">{{link.title}}</h3>
+          {% for topArticle in top_blogs.articles %}
+          <div class="blog-articles__article article">
+            {%- render 'article-card', article: topArticle, show_image:true -%}
+          </div>
+          {% endfor %}
+          {%- endfor -%}
+        </div>
+      </div>
+      {%- if paginate.pages > 1 -%}
+      {%- render 'pagination', paginate: paginate -%}
+      {%- endif -%}
+    </div>
+    {%- endpaginate -%}
+
+    {% schema %}
     {
-      "type": "header",
-      "content": "t:sections.main-blog.settings.header.content"
+    "name": "t:sections.main-blog.name",
+    "tag": "section",
+    "settings": [
+    {
+    "type": "header",
+    "content": "t:sections.main-blog.settings.header.content"
     },
     {
-      "type": "checkbox",
-      "id": "show_image",
-      "default": true,
-      "label": "t:sections.main-blog.settings.show_image.label",
-      "info": "t:sections.main-blog.settings.show_image.info"
+    "type": "checkbox",
+    "id": "show_image",
+    "default": true,
+    "label": "t:sections.main-blog.settings.show_image.label",
+    "info": "t:sections.main-blog.settings.show_image.info"
     },
     {
-      "type": "link_list",
-      "id": "blogs_menu",
-      "label": "Blogs Menu"
+    "type": "link_list",
+    "id": "blogs_menu",
+    "label": "Blogs Menu"
     },
     {
-      "type": "link_list",
-      "id": "recipe_menu",
-      "label": "Recipe Menu"
+    "type": "link_list",
+    "id": "recipe_menu",
+    "label": "Recipe Menu"
     },
     {
-      "type": "paragraph",
-      "content": "t:sections.main-blog.settings.paragraph.content"
+    "type": "paragraph",
+    "content": "t:sections.main-blog.settings.paragraph.content"
     },{
-      "type": "header",
-      "content": "Bottom Blog",
-      "info": "You may Choose Secendory Blog to show at bottom here"
+    "type": "header",
+    "content": "Bottom Blog",
+    "info": "You may Choose Secendory Blog to show at bottom here"
     },
     {
-      "type": "blog",
-      "id": "bottom-blog",
-      "label": "Bottom Blog"
+    "type": "blog",
+    "id": "bottom-blog",
+    "label": "Bottom Blog"
     }
-  ],
-  "blocks": [
+    ],
+    "blocks": [
     {
-      "type": "title",
-      "name": "t:sections.main-blog.blocks.title.name",
-      "limit": 1,
-      "settings": [
-        {
-          "type": "checkbox",
-          "id": "show_date",
-          "default": true,
-          "label": "t:sections.main-blog.blocks.title.settings.show_date.label"
-        },
-        {
-          "type": "checkbox",
-          "id": "show_author",
-          "default": false,
-          "label": "t:sections.main-blog.blocks.title.settings.show_author.label"
-        }
-      ]
+    "type": "title",
+    "name": "t:sections.main-blog.blocks.title.name",
+    "limit": 1,
+    "settings": [
+    {
+    "type": "checkbox",
+    "id": "show_date",
+    "default": true,
+    "label": "t:sections.main-blog.blocks.title.settings.show_date.label"
     },
     {
-      "type": "summary",
-      "name": "t:sections.main-blog.blocks.summary.name",
-      "limit": 1
+    "type": "checkbox",
+    "id": "show_author",
+    "default": false,
+    "label": "t:sections.main-blog.blocks.title.settings.show_author.label"
+    }
+    ]
     },
     {
-      "type": "social-share",
-      "name": "social-share",
-      "limit": 1
+    "type": "summary",
+    "name": "t:sections.main-blog.blocks.summary.name",
+    "limit": 1
     },
     {
-      "type": "link",
-      "name": "t:sections.main-blog.blocks.link.name",
-      "limit": 1
+    "type": "social-share",
+    "name": "social-share",
+    "limit": 1
+    },
+    {
+    "type": "link",
+    "name": "t:sections.main-blog.blocks.link.name",
+    "limit": 1
     },{
-      "type": "second-sidebar-image",
-      "name": "second sidebar image",
-      "limit": 5,
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "sidebar-img",
-          "label": "Sidebar Image"
-        },
-        {
-          "type": "url",
-          "id": "image-link",
-          "label": "sidebar image link"
-        }
-      ]
+    "type": "second-sidebar-image",
+    "name": "second sidebar image",
+    "limit": 5,
+    "settings": [
+    {
+    "type": "image_picker",
+    "id": "sidebar-img",
+    "label": "Sidebar Image"
+    },
+    {
+    "type": "url",
+    "id": "image-link",
+    "label": "sidebar image link"
     }
-  ]
-}
-{% endschema %}
+    ]
+    }
+    ]
+    }
+    {% endschema %}
