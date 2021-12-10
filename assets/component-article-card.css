@@ -270,7 +270,7 @@ margin-right: 3rem;
 .tooltip1:hover .tooltrip_q.tooltrip_q1 {
   opacity: 1;
   filter: alpha(opacity=100);
-  top: -4.6em;
+/*   top: -4.6em; */
   left: -50px;
   margin-left: 33px;
   z-index: 99;
@@ -283,7 +283,7 @@ margin-right: 3rem;
 .tooltip1:hover .tooltrip_q.tooltrip_q2 {
   opacity: 1;
   filter: alpha(opacity=100);
-  top: -4.6em;
+/*   top: -4.6em; */
   left: -27px;
   z-index: 99;
   -webkit-transition: all 0.2s ease;
@@ -295,7 +295,7 @@ margin-right: 3rem;
 .tooltip1:hover .tooltrip_q.tooltrip_q3 {
   opacity: 1;
   filter: alpha(opacity=100);
-  top: -4.6em;
+/*   top: -4.6em; */
   left: 0px;
   z-index: 99;
   -webkit-transition: all 0.2s ease;
