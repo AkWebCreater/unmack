@@ -1,11 +1,11 @@
 <!-- social-sharing.liquid -->
-<div class="social-wrapper">
-<ul class="social-sharing list-social list-unstyled wrapper1 ">
+<div class="social-wrapper wrapper1">
+<ul class="social-sharing list-social list-unstyled box1">
 
   {%- if settings.share_facebook -%}
-    <li class="list-social__item box1 ">
+    <li class="list-social__item tooltip1">
       <a
-        class="list-social__link link link--text tooltip1"
+        class="list-social__link link link--text"
         href="//www.facebook.com/sharer.php?u={{ shop.url | append: share_permalink }}"
         target="_blank" 
       >
