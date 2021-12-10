@@ -240,6 +240,9 @@ li.list-social__item{
     bottom: 0;
     padding-bottom: 3.5rem;
   }
+  .social-container.bottom{
+    margin-top: -5px;
+  }
   .social-container.bottom .article-card__footer{
     flex: 1;
 padding:10px 5px;
