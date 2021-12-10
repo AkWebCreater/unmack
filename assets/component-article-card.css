@@ -369,9 +369,3 @@ border-color: #222 transparent;
 }
 
 
-
-
-
-@media (max-width:750px) {
-  .tooltip1 .tooltrip_q {width: 100%;}
-}
