@@ -243,6 +243,7 @@ li.list-social__item{
   .social-container.bottom .article-card__footer{
     flex: 1;
 padding:10px 5px;
+padding-top: 0;
     margin-left: 1.5rem;
     padding-bottom: 5px;
     margin-right: 1.5rem;
