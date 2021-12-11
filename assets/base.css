@@ -2459,7 +2459,7 @@ div.wishlist .ssw-faveiticon{
   }
   
   
-#insta-feed h2{
+#insta-feed, h2{
     content: '';
     position: absolute;
     max-width: 150px;
