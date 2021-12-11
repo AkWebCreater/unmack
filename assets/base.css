@@ -2466,7 +2466,7 @@ div.wishlist .ssw-faveiticon{
     font-size: 30px;
     text-transform: uppercase;
 }
-#insta-feed::after h2{
+#insta-feed::after{
     content: '';
     position: absolute;
     max-width: 150px;
