@@ -2466,8 +2466,7 @@ div.wishlist .ssw-faveiticon{
     font-size: 30px;
     text-transform: uppercase;
 }
-  /*
-#insta-feed h2{
+#insta-feed h2::after{
     content: '';
     position: absolute;
     max-width: 150px;
@@ -2479,4 +2478,4 @@ div.wishlist .ssw-faveiticon{
     z-index: 12;
     border: 0!important;
     background: #f58634;
-}*/
+}
