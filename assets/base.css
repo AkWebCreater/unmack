@@ -2457,3 +2457,18 @@ div.wishlist .ssw-faveiticon{
   .faves-count{
     display: none !important;
   }
+  
+  
+#insta-feed h2{
+    content: '';
+    position: absolute;
+    max-width: 150px;
+    width: 100%;
+    height: 3px;
+    left: 50%;
+    bottom: -6px;
+    transform: translateX(-50%);
+    z-index: 12;
+    border: 0!important;
+    background: #f58634;
+}
