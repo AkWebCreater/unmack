@@ -213,6 +213,7 @@ $(document).ready(function() {
       $(this).siblings().find('.year').removeClass('accent')
       $(this).addClass('active')
       $(this).siblings().removeClass('active')
+      $(this).siblings().removeClass('initial')
   })
   // end here
 
