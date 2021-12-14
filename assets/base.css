@@ -2457,26 +2457,7 @@ div.wishlist .ssw-faveiticon{
   .faves-count{
     display: none !important;
   }
-  
-/*
-#instafeed{
-  	position: relative;
-    color: #898989!important;
-    text-align: center;
-    font-size: 30px;
-    text-transform: uppercase;
-}
-#insta-feed::after{
-    content: '';
-    position: absolute;
-    max-width: 150px;
-    width: 100%;
-    height: 3px;
-    left: 50%;
-    bottom: -6px;
-    transform: translateX(-50%);
-    z-index: 12;
-    border: 0!important;
-    background: #f58634;
-}
-  */
+
+  #insta-feed{
+  	display: contents !important;
+  }
