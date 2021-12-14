@@ -1,1 +1,0 @@
-(window.webpackJsonpgloboFormbuilder=window.webpackJsonpgloboFormbuilder||[]).push([[1],{50:function(o,l,n){"use strict";n.r(l);n(44);var r=n(48),e=n.n(r),i=n(49),a=n.n(i);l.default={flatpickr:e(),locales:a()}}}]);
