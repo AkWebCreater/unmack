@@ -2458,6 +2458,6 @@ div.wishlist .ssw-faveiticon{
     display: none !important;
   }
 
-  #insta-feed{
+  .insta #insta-feed{
   	display: contents !important;
   }
