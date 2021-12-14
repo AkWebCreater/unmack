@@ -369,4 +369,4 @@ border-color: #222 transparent;
 }
  */
 
-.article_cartsokay .list-social__link.link.link--text.tooltip1: hover{background: #f58d3f;}
+.article_cartsokay a.list-social__link.link.link--text.tooltip1: hover{background: #f58d3f;}
