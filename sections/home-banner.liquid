@@ -95,6 +95,42 @@ padding: 0 20px;
 .home-main-wrapper{
     position: relative;
 }
+.bloop {
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+    animation: bloop 1.8s infinite;
+    -webkit-animation: bloop 1.8s infinite;
+}
+@keyframes bloop {
+    20%, 30%, 40%, 50%, 60%, 0%, 100% {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+15% {
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-out;
+    -webkit-transform: translate3d(0,-12px,0);
+    transform: translate3d(0,-12px,0);
+}
+25% {
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    -webkit-transform: translate3d(0,6px,0);
+    transform: translate3d(0,6px,0);
+}
+35% {
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-out;
+    -webkit-transform: translate3d(0,-3px,0);
+    transform: translate3d(0,-3px,0);
+}
+45% {
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-in;
+    -webkit-transform: translate3d(0,2px,0);
+    transform: translate3d(0,2px,0);
+}
+}
 </style>
 <script>
 $(document).ready(function(){
@@ -162,7 +198,7 @@ $('.banner-slide').hover(function(){
           {% endfor %}
       </div>
       <div class="scroll-icon">
-        <span class="scroll_icon">
+        <span class="scroll_icon bloop">
             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
             width="30" height="30"
             viewBox="0 0 172 172"
