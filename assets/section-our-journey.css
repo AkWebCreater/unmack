@@ -42,7 +42,7 @@ border-radius: 8px;
 .year-slide.active,.year-slide:hover{
     min-width: 200px;
 }
-.year-slide.active .year-img::before,.year-slide:hover .year-img::before{
+.year-slide.active .year-img::before,.year-slide:hover .year-img::before,.year-slide.initial{
 background-color: transparent !important;
 
 }
