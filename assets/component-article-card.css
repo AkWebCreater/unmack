@@ -264,7 +264,7 @@ padding-top: 0;
 .article_cartsokay{height:365px;}
 .side_blgs_k .article-content.motion-reduce.article_cartsokay{height:100%;}
 
-.wrapper1{
+/* .wrapper1{
 position: relative;
 }
 
@@ -310,7 +310,7 @@ transition: all 0.2s ease;
 }
 
 .tooltip1 .tooltrip_q {
-	background: none repeat scroll 0 0 #222; /*-- some basic styling */
+	background: none repeat scroll 0 0 #222; 
 	color: #fff;
 	font-family: 'Helvetica';
 	font-size: 0.8em;
@@ -367,5 +367,5 @@ border-color: #222 transparent;
     width: 0;
     margin-left: 45px;
 }
-
+ */
 
