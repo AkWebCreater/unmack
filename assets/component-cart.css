@@ -34,7 +34,7 @@
   align-items: flex-start;
   flex-direction: column;
   max-width: 140rem;
-  padding:20px 5rem;
+  padding:20px 0;
   gap: 35px;
 }
 @media screen and (max-width:767px){
@@ -234,6 +234,7 @@ cart-items {
   }
   .body--cart #MainContent{
     flex-direction: row;
+    margin: auto;
   }
   .cart__contents > * + * {
     margin-top: 0;
@@ -336,4 +337,7 @@ cart-items {
   box-shadow: unset;
   border-radius: 5px;
   font-size: 20px;
+}
+.spaced-section--full-width:first-child{
+  width: 100%;
 }
