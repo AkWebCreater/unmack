@@ -34,7 +34,7 @@
   align-items: flex-start;
   flex-direction: column;
   max-width: 140rem;
-  padding:20px 0;
+  padding:0 5rem;
   gap: 35px;
 }
 @media screen and (max-width:767px){
