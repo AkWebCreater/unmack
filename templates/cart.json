@@ -1,5 +1,15 @@
 {
   "sections": {
+    "16394946057d924317": {
+      "type": "banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/policy-page.png",
+        "desktop_text_box_position": "center",
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "adapt_height_first_image": true
+      }
+    },
     "cart-items": {
       "type": "main-cart-items",
       "settings": {
@@ -42,6 +52,7 @@
     }
   },
   "order": [
+    "16394946057d924317",
     "cart-items",
     "cart-footer",
     "recently-viewed-products"
