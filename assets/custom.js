@@ -416,7 +416,7 @@ $('.pass').click(function() {
     }
 })
   // background added to fix nav on scroll
-  $('.body--cart .header-wrapper,.body--register .header-wrapper,.body--search .header-wrapper,.about-us .header-wrapper').addClass('fix')
+  $('.body--register .header-wrapper,.body--search .header-wrapper,.about-us .header-wrapper').addClass('fix')
   $(window).scroll(function() {
       if ($(this).scrollTop() > 115) {
           $(".navigation").addClass("bg");
