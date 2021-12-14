@@ -369,3 +369,6 @@ border-color: #222 transparent;
 }
  */
 
+.article_cartsokay li.list-social__item :hover{background: #f58d3f; border-radius: 50%;}
+span.article-card__link.btn_pd { padding: 5px 0px;}
+.blogs-menu nav>ul>li ul li:not(:last-child) :hover{  border-bottom: 1px solid #f58634;background-color: #f58634; width: 320px;}
