@@ -88,6 +88,8 @@ padding: 0 20px;
     text-align: 0;
     bottom: 0;
     left: 50%;
+    line-height: 1;
+    cursor: pointer;
     transform: translateX(-50%);
 }
 .home-main-wrapper{
@@ -96,6 +98,13 @@ padding: 0 20px;
 </style>
 <script>
 $(document).ready(function(){
+    $('.scroll-icon').click(function () {
+        var offset = $(this).closest(".home-banner-section").next().offset();
+$('html, body').animate({
+    scrollTop: offset.top,
+    scrollLeft: offset.left
+}, 1000);
+    })
     // adding slider to mobile and tab view
 if($(window).width() < 768){
 
