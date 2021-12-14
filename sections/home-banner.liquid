@@ -101,7 +101,7 @@ $(document).ready(function(){
     $('.scroll-icon').click(function () {
         var offset = $(this).closest(".home-banner-section").next().offset();
 $('html, body').animate({
-    scrollTop: offset.top,
+    scrollTop: (offset.top - 100),
     scrollLeft: offset.left
 }, 1000);
     })
