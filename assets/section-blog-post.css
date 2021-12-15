@@ -286,3 +286,5 @@ padding:10px 8px;
 }
 a.list-social__link.link.link--text.tooltip1:hover { background: #f58d3f; border-radius: 50%;
 }
+svg.icon.icon-twitter,
+svg.icon.icon-pinterest:hover {color: #fff;}
