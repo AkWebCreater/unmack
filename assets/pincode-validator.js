@@ -73,7 +73,10 @@ function updatePin(pin) {
     $('.header-input-zip').val(pin)
     $('.customer-name').show();
     $('#address_zip').val(pin);
-    $('.cutomer-wrap').addClass('success')
+    if( $('.body--cart').length() == 0 ){
+
+        $('.cutomer-wrap').addClass('success')
+    }
 
 }
 //   hide all alert massages
