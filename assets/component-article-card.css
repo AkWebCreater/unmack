@@ -178,7 +178,7 @@ li.list-social__item{
 
 .article-card__footer {
   letter-spacing: 0.1rem;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 
 .article-card__footer:not(:last-child) {
@@ -261,7 +261,7 @@ padding-top: 0;
 }
 .article-card .list-social__item{margin: 0 4px;width: 19px;}
 
-.article_cartsokay{height:365px;}
+.article_cartsokay{height:390px;}
 .side_blgs_k .article-content.motion-reduce.article_cartsokay{height:100%;}
 
 /* .wrapper1{
@@ -379,3 +379,4 @@ span.article-card__link.btn_pd { padding: 5px 0px;}
 .search-modal__content label{top: 10px;}
 .recipe-nav .pipe,
 .recipe-nav-link{font-size: 2.1rem;}
+.art_crt { border: 1px solid;}
