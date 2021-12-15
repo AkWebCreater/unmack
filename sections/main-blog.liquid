@@ -136,8 +136,9 @@ blog strted
             {%- render 'article-card', article: article, show_image: section.settings.show_image -%}
           </div>
           {% endfor %}
-{% render 'pagination'%}
+          
         </div>
+         {% include 'pagination'%}
         <div class="blog-sidebar side_blgs_k">
 
           {%- for link in linklists.top-blogs.links -%}
