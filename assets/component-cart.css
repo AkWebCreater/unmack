@@ -349,14 +349,15 @@ cart-items {
 }
 .quantity__input{
 max-width: 45px;
+font-weight: 600;
 }
 .quantity__button svg path{
-  fill: #515151;
+  stroke: #515151;
 }
 .body--cart .quantity{
   width: 12rem;
 }
-.cart-remove-button .button{
+cart-remove-button .button{
   text-transform: uppercase !important;
   background-color: #f8f8f8;
   border-color: #a5a5a5;
