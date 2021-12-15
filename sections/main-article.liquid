@@ -248,10 +248,14 @@
           </div>
         </form>
       </div>
-    </div>          
+    </div>   
+    {% for blogs in blogs.blog %}
+
+{{ blog.articles_count }} 
+
+{% endfor %}
     {%- for link in linklists.top-blogs.links -%}
         {% assign top_blogs = link.object %}
-    {{top_blogs}}
         <h3 class="blog-page-title">{{link.title}}</h3>
         {% for topArticle in top_blogs.articles %}
             <div class="blog-articles__article article">
