@@ -345,13 +345,20 @@ cart-items {
 /* input box */
 .quantity__input,.quantity__button{
   border-color: #515151;
+  color: #515151;
 }
 .quantity__input{
 max-width: 45px;
 }
-.quantity__button{
-  color: #515151;
+.quantity__button svg path{
+  fill: #515151;
 }
 .body--cart .quantity{
   width: 12rem;
+}
+.cart-remove-button .button{
+  text-transform: uppercase !important;
+  background-color: #f8f8f8;
+  border-color: #a5a5a5;
+  color: #505050;
 }
