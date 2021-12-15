@@ -342,3 +342,16 @@ cart-items {
 .spaced-section--full-width:first-child{
   width: 100%;
 }
+/* input box */
+.quantity__input,.quantity__button{
+  border-color: #515151;
+}
+.quantity__input{
+max-width: 45px;
+}
+.quantity__button{
+  color: #515151;
+}
+.body--cart .quantity{
+  width: 12rem;
+}
