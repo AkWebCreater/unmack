@@ -28,11 +28,19 @@
           "type": "buttons",
           "settings": {
           }
+        },
+        "c4fc3a8c-916e-45d3-8527-3558982291fb": {
+          "type": "offer_link",
+          "settings": {
+            "offer-image": "shopify:\/\/shop_images\/offer_image_7c88fa07-0f41-4f1b-8559-857228e43219.png",
+            "offer-link": ""
+          }
         }
       },
       "block_order": [
         "subtotal",
-        "buttons"
+        "buttons",
+        "c4fc3a8c-916e-45d3-8527-3558982291fb"
       ],
       "settings": {
         "show_cart_note": false
