@@ -281,3 +281,5 @@ padding:10px 8px;
     display: none;
   }
 }
+a.list-social__link.link.link--text.tooltip1:hover { background: #f58d3f; border-radius: 50%;
+}
