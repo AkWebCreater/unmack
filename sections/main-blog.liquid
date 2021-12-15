@@ -136,14 +136,8 @@ blog strted
             {%- render 'article-card', article: article, show_image: section.settings.show_image -%}
           </div>
           {% endfor %}
-          
-        </div>
-<!--      AAAAA    -->
-        
-       {% paginate results by 2 %}
-      {% render 'pagination', paginate: paginate, anchor: '#yourID' %}
-    {% endpaginate %}
 
+        </div>
         <div class="blog-sidebar side_blgs_k">
 
           {%- for link in linklists.top-blogs.links -%}
