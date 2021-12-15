@@ -245,3 +245,7 @@ width: 100%;
 .body--cart .wrap-inner{
     flex: 1;
 }
+.body--cart .cutomer-wrap{
+background-color: #fff;
+
+}
