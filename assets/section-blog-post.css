@@ -252,7 +252,11 @@ margin: auto !important;
   flex: 1 1 auto;
 }
 .social-container .list-social__link{
-  padding: 0.5rem;
+  padding: 0.3rem;
+  background-color: #000;
+  border-radius: 50%;
+  margin: 0px 1px;
+  color: #fff;
 }
 .article-template__title{
   text-align: center;
@@ -281,3 +285,9 @@ padding:10px 8px;
     display: none;
   }
 }
+.tooltip1:hover { background: #f58d3f; border-radius: 50%;}
+a.list-social__link.link.link--text.tooltip1 img.icon{height: 1.4rem; width: 1.4rem;}
+.article-header-card svg.icon.icon-twitter,
+svg.icon.icon-pinterest{ height: 1.4rem; width: 1.4rem;}
+.art_crt { border: 1px solid;}
+h2.article-card__title.h3 a { color: var(--color-foreground);}
