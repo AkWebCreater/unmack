@@ -253,9 +253,10 @@ margin: auto !important;
 }
 .social-container .list-social__link{
   padding: 0.3rem;
-  background-color: #00000069;
+  background-color: #0000;
   border-radius: 50%;
   margin: 0px 1px
+  color: #fff;
 }
 .article-template__title{
   text-align: center;
