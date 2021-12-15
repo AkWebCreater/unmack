@@ -251,6 +251,7 @@ background-color: #fff;
 }
 .body--cart .pincode_check{
     border: 0;
+    box-shadow: none;
     min-width: 8rem;
     min-height: 3.5rem;
     border-radius: 4px;
