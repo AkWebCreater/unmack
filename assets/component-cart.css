@@ -122,6 +122,7 @@ img.cart-shadow{
 }
 .body--cart .totals{
   justify-content: space-between;
+  margin-top: 1rem;
 }
 .body--cart .tax-note,.body--cart .cart__ctas button{
   text-align: left;
