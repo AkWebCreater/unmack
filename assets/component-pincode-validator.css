@@ -236,3 +236,8 @@
 .flexbox{
     display: flex;
 }     
+.body--cart .pin-city-wrapper{
+display: flex;
+align-items: flex-end;
+
+}
