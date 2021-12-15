@@ -4,6 +4,11 @@
   border: none;
   
 }
+ .cart-item__details{
+max-width: 60%;
+width: 100%;position: relative;
+
+ }
 .write-review{
   font-size: 11px;
   color: #83b3f3;
@@ -51,6 +56,11 @@
 .cart-details-main{
 display: flex;
 flex-direction: column;
+position: absolute;
+top: 1rem;
+bottom: 1rem;
+width: 100%;
+
 
 
 }

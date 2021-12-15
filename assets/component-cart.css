@@ -362,6 +362,7 @@ font-weight: 600;
 }
 .body--cart .quantity{
   width: 12rem;
+  margin-top: auto;
 }
 cart-remove-button .button{
   text-transform: uppercase !important;
