@@ -139,8 +139,9 @@ blog strted
           
         </div>
 <!--      AAAAA    -->
+         {% render 'pagination', paginate: paginate, anchor: '#yourID' %}
        {% paginate results by 2 %}
-      {% render 'pagination', paginate: paginate, anchor: '#yourID' %}
+     
     {% endpaginate %}
 
         <div class="blog-sidebar side_blgs_k">
