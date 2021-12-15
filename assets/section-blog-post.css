@@ -284,11 +284,9 @@ padding:10px 8px;
     display: none;
   }
 }
-.tooltip1,
-svg.icon.icon-twitter,
-svg.icon.icon-pinterest:hover { background: #f58d3f; border-radius: 50%;
-}
+.tooltip1:hover { background: #f58d3f; border-radius: 50%;}
 svg.icon.icon-twitter,
 svg.icon.icon-pinterest:hover {color: #fff;}
-a.list-social__link.link.link--text.tooltip1 img.icon{height: 1.4rem;
-    width: 1.4rem;}
+a.list-social__link.link.link--text.tooltip1 img.icon{height: 1.4rem; width: 1.4rem;}
+svg.icon.icon-twitter,
+svg.icon.icon-pinterest{ height: 1.4rem; width: 1.4rem;}
