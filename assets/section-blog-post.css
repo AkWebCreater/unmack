@@ -292,4 +292,4 @@ a.list-social__link.link.link--text.tooltip1 img.icon{height: 1.4rem; width: 1.4
 .article-header-card svg.icon.icon-twitter,
 svg.icon.icon-pinterest{ height: 1.4rem; width: 1.4rem;}
 .art_crt { border: 1px solid;}
-h2#Article a { color: #000;}
+h2.article-card__title.h3 a { color: #000;}
