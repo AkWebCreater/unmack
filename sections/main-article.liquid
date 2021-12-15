@@ -256,7 +256,7 @@
 {% endfor %}
     {%- for link in linklists.top-blogs.links -%}
         {% assign top_blogs = link.object %}
-        <h3 class="blog-page-title"> Top{{ blog.articles_count }} Blogs {% comment %}{{link.title}} {% endcomment %}</h3>
+        <h3 class="blog-page-title"> Top {{ blog.articles_count }} Blogs {% comment %}{{link.title}} {% endcomment %}</h3>
         {% for topArticle in top_blogs.articles %}
             <div class="blog-articles__article article">
                 {%- render 'article-card', article: topArticle, show_image:true -%}
