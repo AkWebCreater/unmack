@@ -127,6 +127,7 @@ cursor:pointer;
 
 .up-sec{
     margin-bottom: 15px;
+    min-height: 303px;
 }
 /* responsive */
 @media (max-width:480px) {
