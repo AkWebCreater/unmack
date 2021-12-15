@@ -368,7 +368,7 @@ border-color: #222 transparent;
     margin-left: 45px;
 }
  */
-.list-social__item .list-social__link.link.link--text.tooltip1:hover{background: #f58d3f; border-radius: 50%;}
+
 .article_cartsokay li.list-social__item:hover{background: #f58d3f; border-radius: 50%;}
 
 span.article-card__link.btn_pd { padding: 5px 0px;}
