@@ -139,7 +139,10 @@ blog strted
           
         </div>
 <!--      AAAAA    -->
-         {% include 'pagination'%}
+       {% paginate results by 2 %}
+      {% render 'pagination', paginate: paginate, anchor: '#yourID' %}
+    {% endpaginate %}
+
         <div class="blog-sidebar side_blgs_k">
 
           {%- for link in linklists.top-blogs.links -%}
