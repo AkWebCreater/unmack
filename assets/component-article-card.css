@@ -369,7 +369,7 @@ border-color: #222 transparent;
 }
  */
 
-.list-social__item:hover{background: #f58d3f; border-radius: 50%;}
+.list-social__link.link--text:hover{background: #f58d3f; border-radius: 50%;}
 
 span.article-card__link.btn_pd { padding: 5px 0px;}
 .blogs-menu .product_blog_text_li:hover{  border-bottom: 1px solid #f58634;background-color: #f58634; width: 320px;}
