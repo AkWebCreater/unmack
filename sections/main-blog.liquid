@@ -48,7 +48,7 @@ blog strted
                         </summary>
                   <ul class="header__submenu list-menu list-menu--disclosure caption-large motion-reduce" role="list" tabindex="-1">
                     {%- for childlink in link.links -%}
-                    <li>
+                    <li class="{% if childlink.type == 'collection_link' %}product_blog_text_li{% endif %}">
                       {%- if childlink.links == blank -%}
                       
                       <a href="{{ childlink.url }}" class="header__menu-item list-menu__item link link--text focus-inset caption-large{% if childlink.current %} list-menu__item--active{% endif %} {% if childlink.type == 'collection_link' %}product_blog_text{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
