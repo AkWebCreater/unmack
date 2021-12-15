@@ -360,6 +360,8 @@ font-weight: 600;
 cart-remove-button .button{
   text-transform: uppercase !important;
   background-color: #f8f8f8;
+  border: 1px solid;
   border-color: #a5a5a5;
+  font-weight: 600;
   color: #505050;
 }
