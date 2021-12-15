@@ -382,4 +382,4 @@ span.article-card__link.btn_pd { padding: 5px 0px;}
 .art_crt { border: 1px solid;}
 .pipe{color: #6f6a67 !important;}
 
-.article-header-card h1.article-template__title{font-weight: 600;}
+.article-header-card .article-template__title:not(:only-child){font-weight: 600;}
