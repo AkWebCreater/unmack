@@ -274,6 +274,10 @@ $(document).on('click', '#bulk-button', function() {
 // gift wrap option
 $('.gift-wrap-outer .regular-checkbox').click(function() {
     addToCart(1, 41362268422344)
+    var wrapped = localStorage.getItem('gift-wrap');
+    alert(wrapped)
+    
+    localStorage.setItem('gift-wrap','wrap');
 })
 // ends here 
 // faq page pop up layer
