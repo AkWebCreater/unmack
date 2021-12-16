@@ -411,11 +411,16 @@ flex-direction: column;
   font-size: 2rem;
 
 }
-
+.cart-bd{
+  overflow: auto;
+}
 #main-cart-footer .cart-bd{
   margin: 0 -1.5rem;
   padding: 0 1.5rem;
 }
 #main-cart-footer .cart-shadow:last-child{
   padding-top: 0;
+}
+.cart__footer .js-contents *:not(.totals){
+  margin: 0;
 }
