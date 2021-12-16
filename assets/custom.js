@@ -284,10 +284,10 @@ $('.gift-wrap-outer .regular-checkbox').click(function() {
     }else{
         alert('removed')
         localStorage.removeItem("gift-wrap");
-        jQuery.post('/cart/update.js', {updates: {41362268422344: 0}});
+        // jQuery.post('/cart/update.js', {updates: {41362268422344: 0}});
         $.ajax({
             type: 'POST',
-            url: '/cart/update.js',
+            url: '/cart/change.js',
             dataType: 'json',
             data: {
                 quantity:0,
