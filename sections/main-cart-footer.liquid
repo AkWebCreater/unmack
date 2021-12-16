@@ -24,7 +24,7 @@
               <div class="js-contents">
                 <div class="price">
                   <h3 class="totals__subtotal">Price</h3>
-                  <p class="">{{ cart.total_price | money_with_currency }}</p>
+                  <p class="">{{ cart.total_price | money_with_currency | remove: ". " }}</p>
                 </div>
                 <div class="delhivery-charges price">
                   <h3 class="totals__subtotal">Delhivery Charges</h3>

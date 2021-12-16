@@ -297,6 +297,9 @@ $('.gift-wrap-outer .regular-checkbox').click(function() {
     }
 })
 // ends here 
+// cart page wrap function for layout
+$('.recently-viewed-products-bg').
+// end
 // faq page pop up layer
 
 $(document).ready(function() {
