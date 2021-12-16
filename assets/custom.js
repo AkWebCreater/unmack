@@ -301,7 +301,7 @@ $('.gift-wrap-outer .regular-checkbox').click(function() {
                     var nsPrice = Shopify.formatMoney(nprice, "₹{{amount}}");
                 var newCount = Shopify.formatMoney(data.total_price, "₹{{amount}}");
                 $('.totals .totals__subtotal-value').text(newCount)
-                $('.cart__footer .price .items-price').text(nprice)
+                $('.cart__footer .price .items-price').text(nsPrice)
                 });
         })
         $('.gift-wrap').show()
