@@ -422,5 +422,11 @@ flex-direction: column;
   padding-top: 0;
 }
 .cart__footer .js-contents *:not(.totals){
-  margin: 0;
+  margin:0;
+  color: #515151;
+}
+.cart__footer .js-contents  .gift-wrap,.cart__footer .js-contents  .delhivery-charges,.cart__footer .js-contents  .cart__footer>.price{
+  color: #585858;
+font-size: 1.8rem;
+margin: 1rem 0;
 }
