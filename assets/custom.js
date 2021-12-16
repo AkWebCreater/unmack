@@ -273,11 +273,23 @@ $(document).on('click', '#bulk-button', function() {
 })
 // gift wrap option
 $('.gift-wrap-outer .regular-checkbox').click(function() {
-    addToCart(1, 41362268422344)
-    var wrapped = localStorage.getItem('gift-wrap');
-    alert(wrapped)
     
-    localStorage.setItem('gift-wrap','wrap');
+    var wrapped = localStorage.getItem('gift-wrap');
+    if(wrapped == null){
+        addToCart(1, 41362268422344)
+        localStorage.setItem('gift-wrap','wrap');
+    }else{
+        localStorage.removeItem("gift-wrap");
+        $.ajax({
+            type: 'POST',
+            url: '/cart/update.js',
+            dataType: 'json',
+            data: {
+                quantity: 0,
+                id: 7182965473480
+            }
+        })
+    }
 })
 // ends here 
 // faq page pop up layer
