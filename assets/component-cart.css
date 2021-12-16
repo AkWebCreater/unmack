@@ -430,7 +430,7 @@ flex-direction: column;
 font-size: 1.8rem;
 margin: 1.5rem 0;
 }
-.js-contents  *:not(.totals){
+.js-contents  *:not(.totals):not(.totals__subtotal):not(.totals__subtotal-value){
   color: inherit !important;
   font-size: inherit !important;
 }
