@@ -285,7 +285,7 @@ if(wrapped == null){
 }
 $('.gift-wrap-outer .regular-checkbox').click(function() {
     
-   
+    var wrapped = localStorage.getItem('gift-wrap');
     if(wrapped == null){
 
         addToCart(1, 41362268422344)
