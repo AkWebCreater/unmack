@@ -16,31 +16,28 @@
           <textarea class="text-area text-area--resize-vertical field__input" name="note" id="Cart-note" placeholder="{{ 'sections.cart.note' | t }}">{{ cart.note }}</textarea>
         </cart-note>
       {%- endif -%}
-      <div class="delhivery-charges">
-        <h3 class="totals__subtotal">Delhivery Charges</h3>
-        <p class="totals__subtotal-value">{{ section.settings.shipping charges }}</p>
-      </div>
-      <div class="gift-wrap">
-        <h3 class="totals__subtotal">Gift Wrap Charges</h3>
-        <p class="totals__subtotal-value">{{ section.settings.giftwrap_charges }}</p>
-      </div>
-      <div class="totals">
-        <h3 class="totals__subtotal">{{ 'sections.cart.subtotal' | t }}</h3>
-        <p class="totals__subtotal-value">{{ cart.total_price | money_with_currency }}</p>
-      </div>
+
       <div>
         {% for block in section.blocks %}
           {%- case block.type -%}
             {%- when 'subtotal' -%}
-          
               <div class="js-contents">
                 <div class="price">
                   <h3 class="totals__subtotal">Price ()</h3>
                   <p class="totals__subtotal-value">{{ cart.total_price | money_with_currency }}</p>
                 </div>
-               
-
-                <div>
+                <div class="delhivery-charges">
+                  <h3 class="totals__subtotal">Delhivery Charges</h3>
+                  <p class="totals__subtotal-value">{{ cart.total_price | money_with_currency }}</p>
+                </div>
+                <div class="gift-wrap">
+                  <h3 class="totals__subtotal">Gift Wrap Charges</h3>
+                  <p class="totals__subtotal-value">{{ section.settings.giftwrap_chan }}</p>
+                </div>
+                <div class="totals">
+                  <h3 class="totals__subtotal">{{ 'sections.cart.subtotal' | t }}</h3>
+                  <p class="totals__subtotal-value">{{ cart.total_price | money_with_currency }}</p>
+                </div>
                   {%- if cart.cart_level_discount_applications.size > 0 -%}
                     <ul class="discounts list-unstyled" role="list" aria-label="{{ 'customer.order.discount' | t }}">
                       {%- for discount in cart.cart_level_discount_applications -%}
