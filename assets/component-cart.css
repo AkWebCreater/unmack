@@ -136,6 +136,7 @@ img.cart-shadow{
   text-transform: uppercase;
   font-weight: 600;
   min-height: 3.5rem;
+  padding: 0;
 }
 .cart {
   position: relative;
