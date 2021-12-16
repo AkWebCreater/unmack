@@ -278,20 +278,22 @@ var wrapped = localStorage.getItem('gift-wrap');
 if(wrapped == null){
     
     $('.gift-wrap-outer .regular-checkbox')[0].checked = false;
+    $('.gift-wrap').hide()
 }else{
+    $('.gift-wrap').show()
     $('.gift-wrap-outer .regular-checkbox')[0].checked = true;
 }
 $('.gift-wrap-outer .regular-checkbox').click(function() {
     
    
     if(wrapped == null){
-        alert('added')
+
         addToCart(1, 41362268422344)
+        $('.gift-wrap').show()
         localStorage.setItem('gift-wrap','wrap');
     }else{
-        alert('removed')
+        $('.gift-wrap').hide()
         localStorage.removeItem("gift-wrap");
-        // jQuery.post('/cart/update.js', {updates: {41362268422344: 0}});
         $.ajax({
             type: 'POST',
             url: '/cart/change.js',
