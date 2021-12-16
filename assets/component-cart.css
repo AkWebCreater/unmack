@@ -372,3 +372,8 @@ cart-remove-button .button{
   font-weight: 600;
   color: #505050;
 }
+
+/* cart footer */
+.cart__footer .js-contents > div{
+  justify-content: space-between;
+}
