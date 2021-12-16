@@ -274,9 +274,14 @@ $(document).on('click', '#bulk-button', function() {
 
 })
 // gift wrap option
+var wrapped = localStorage.getItem('gift-wrap');
+if(wrapped == null){
+    alert('added')
+    $('.gift-wrap-outer .regular-checkbox').attr('checked',true);
+}
 $('.gift-wrap-outer .regular-checkbox').click(function() {
     
-    var wrapped = localStorage.getItem('gift-wrap');
+   
     if(wrapped == null){
         alert('added')
         addToCart(1, 41362268422344)
