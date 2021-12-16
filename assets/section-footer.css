@@ -640,4 +640,5 @@ line-height: 1;
 }
 span.footer-block__heading,.footer__list-social,.footer__list-social+span{
   margin-bottom: 1rem;
+  display: inline-block;
 }
