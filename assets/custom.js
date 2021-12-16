@@ -273,7 +273,7 @@ $(document).on('click', '#bulk-button', function() {
 })
 // gift wrap option
 $('.gift-wrap-outer .regular-checkbox').click(function() {
-    
+    addToCart(1, 41362268422344)
 })
 // ends here 
 // faq page pop up layer
