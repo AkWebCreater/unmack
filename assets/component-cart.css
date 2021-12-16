@@ -388,3 +388,8 @@ cart-remove-button .button{
 .cart__footer{
 flex-direction: column;
 }
+small.tax-note{
+  margin: 0;
+  margin-top: 10px;
+  text-align: center;
+}
