@@ -121,6 +121,7 @@
     color: #fff ;
     line-height: 1;
     opacity: 1;
+    cursor: pointer;
 }
 .popup-top-text,.pincode-pop-up-footer {
     padding: 10px 30px;
