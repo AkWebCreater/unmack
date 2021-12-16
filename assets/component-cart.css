@@ -427,7 +427,7 @@ flex-direction: column;
 }
 .cart__footer .js-contents  .gift-wrap,.cart__footer .js-contents  .delhivery-charges,.cart__footer .js-contents  >.price{
   color: #585858;
-font-size: 1.8rem;
+font-size: 1.6rem;
 margin: 1.5rem 0;
 }
 .js-contents  *:not(.totals):not(.totals__subtotal):not(.totals__subtotal-value){
