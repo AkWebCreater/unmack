@@ -638,3 +638,6 @@ line-height: 1;
 .footer-center .multicolumn-list p ,.footer-center .multicolumn-list h3{
   margin:8px 0;
 }
+span.footer-block__heading,.footer__list-social,.footer__list-social+span{
+  margin-bottom: 1rem;
+}
