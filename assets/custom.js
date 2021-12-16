@@ -276,8 +276,10 @@ $(document).on('click', '#bulk-button', function() {
 // gift wrap option
 var wrapped = localStorage.getItem('gift-wrap');
 if(wrapped == null){
-    alert('added')
-    $('.gift-wrap-outer .regular-checkbox').attr('checked',true);
+    
+    $('.gift-wrap-outer .regular-checkbox')[0].checked = false;
+}else{
+    $('.gift-wrap-outer .regular-checkbox')[0].checked = true;
 }
 $('.gift-wrap-outer .regular-checkbox').click(function() {
     
