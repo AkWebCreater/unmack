@@ -283,6 +283,17 @@ if(wrapped == null){
     $('.gift-wrap').show()
     if($('.gift-wrap-outer .regular-checkbox').length){
         $('.gift-wrap-outer .regular-checkbox')[0].checked = true;
+        $.ajax({
+            url: '/cart.js',
+            dataType: 'json'
+            })
+            .done(function(data){
+                var nprice = data.total_price - 2000;
+                var nsPrice = Shopify.formatMoney(nprice, "₹{{amount}}");
+            var newCount = Shopify.formatMoney(data.total_price, "₹{{amount}}");
+            $('.totals .totals__subtotal-value').text(newCount)
+            $('.cart__footer .price .items-price').text(nsPrice)
+            });
     }
 
 }
