@@ -430,9 +430,7 @@ flex-direction: column;
 font-size: 1.6rem;
 margin: 1.5rem 0;
 }
-.js-contents  *:not(.totals):not(.totals__subtotal):not(.totals__subtotal-value){
-  color: inherit !important;
-}
+
 .cart__footer h3{
 font-size: 1.6rem;
 }
