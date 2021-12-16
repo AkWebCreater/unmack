@@ -281,7 +281,10 @@ if(wrapped == null){
     $('.gift-wrap').hide()
 }else{
     $('.gift-wrap').show()
-    $('.gift-wrap-outer .regular-checkbox')[0].checked = true;
+    if($('.gift-wrap-outer .regular-checkbox').length){
+        $('.gift-wrap-outer .regular-checkbox')[0].checked = true;
+    }
+
 }
 $('.gift-wrap-outer .regular-checkbox').click(function() {
     
