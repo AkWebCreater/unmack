@@ -452,10 +452,12 @@ noscript .localization-selector.link {
   animation: animateLocalization var(--duration-default) ease;
 }
 
-.footer__payment {
+/* .footer__payment {
   margin-top: 1.5rem;
+} */
+.footer__content-bottom-wrapper .footer__column--info{
+  padding-bottom: 0;
 }
-
 .footer__copyright {
   text-align: center;
 }
