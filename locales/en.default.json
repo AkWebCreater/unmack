@@ -188,7 +188,7 @@
       "title": "Your cart",
       "caption": "Cart items",
       "remove_title": "Remove {{ title }}",
-      "subtotal": "Subtotal",
+      "subtotal": "Total Amount",
       "new_subtotal": "New subtotal",
       "note": "Order special instructions",
       "checkout": "Place Order",
