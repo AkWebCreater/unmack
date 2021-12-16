@@ -14,8 +14,8 @@ font-size:0;
 margin-top: -125px;
 }
 .footer__content-bottom-wrapper{
-  border-top:5px solid #fff;
-  padding-top: 4rem;
+  border-bottom:5px solid #fff;
+  padding:2rem 0;
 }
 .footer__content-bottom-page h2{
   text-align: center;
