@@ -428,5 +428,9 @@ flex-direction: column;
 .cart__footer .js-contents  .gift-wrap,.cart__footer .js-contents  .delhivery-charges,.cart__footer .js-contents  >.price{
   color: #585858;
 font-size: 1.8rem;
-margin: 2rem 0;
+margin: 1.5rem 0;
+}
+.js-contents  *{
+  color: inherit !important;
+  font-size: inherit !important;
 }
