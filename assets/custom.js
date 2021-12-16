@@ -276,13 +276,15 @@ $(document).on('click', '#bulk-button', function() {
 // gift wrap option
 var wrapped = localStorage.getItem('gift-wrap');
 if(wrapped == null){
-    
-    $('.gift-wrap-outer .regular-checkbox')[0].checked = false;
-    $('.gift-wrap').hide()
+    if($('.gift-wrap-outer .regular-checkbox').length){
+
+        $('.gift-wrap-outer .regular-checkbox').checked(false) ;
+        $('.gift-wrap').hide()
+    }
 }else{
     $('.gift-wrap').show()
     if($('.gift-wrap-outer .regular-checkbox').length){
-        $('.gift-wrap-outer .regular-checkbox')[0].checked = true;
+        $('.gift-wrap-outer .regular-checkbox').checked(true);
         $.ajax({
             url: '/cart.js',
             dataType: 'json'
