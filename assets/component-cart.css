@@ -133,6 +133,9 @@ img.cart-shadow{
 }
 .body--cart .cart__ctas button{
   max-width: 100%;
+  text-transform: uppercase;
+  font-weight: 600;
+  min-height: 3.5rem;
 }
 .cart {
   position: relative;
@@ -259,13 +262,16 @@ cart-items {
     padding-top: 0;
   }
 
-  .cart__footer > * {
+  /* .cart__footer > * {
     width: 35rem;
-  }
+  } */
 
   .cart__footer > * + * {
     margin-left: 4rem;
     margin-top: 0;
+  }
+  .cart__ctas{
+    margin: 0 4rem;
   }
 }
 
