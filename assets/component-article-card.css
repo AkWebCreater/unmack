@@ -387,4 +387,6 @@ span.article-card__link.btn_pd { padding: 5px 0px;}
 @media(max-width: 550px){
 .recipe-nav .pipe,
 .recipe-nav-link{font-size: 1.5rem;}
+
+  .product-popup-menu{transform: translateX(50%) !important;}
 }
