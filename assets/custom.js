@@ -276,9 +276,11 @@ $('.gift-wrap-outer .regular-checkbox').click(function() {
     
     var wrapped = localStorage.getItem('gift-wrap');
     if(wrapped == null){
+        alert('added')
         addToCart(1, 41362268422344)
         localStorage.setItem('gift-wrap','wrap');
     }else{
+        alert('removed')
         localStorage.removeItem("gift-wrap");
         $.ajax({
             type: 'POST',
