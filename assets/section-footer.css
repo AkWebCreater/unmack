@@ -635,3 +635,6 @@ line-height: 1;
 .footer-center .grid{
   margin-bottom: 0;
 }
+.footer-center .multicolumn-list p ,.footer-center .multicolumn-list h3{
+  margin:8px 0;
+}
