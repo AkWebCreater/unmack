@@ -182,7 +182,12 @@ justify-content:flex-start;
   .footer-block {
     display: block;
     margin-top: 0;
+    line-height: 1;
   }
+}
+.footer-block__details-content p,a.link.link--text.list-menu__item.list-menu__item--link {
+  line-height: 1;
+  padding: 2px;
 }
 
 .footer-block:empty {
