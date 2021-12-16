@@ -73,7 +73,7 @@ function updatePin(pin) {
     $('.header-input-zip').val(pin)
     $('.customer-name').show();
     $('#address_zip').val(pin);
-    if( $('.body--cart').length() == 0 ){
+    if( $('.body--cart').length == 0 ){
 
         $('.cutomer-wrap').addClass('success')
     }
