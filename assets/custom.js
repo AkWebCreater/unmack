@@ -297,11 +297,11 @@ $('.gift-wrap-outer .regular-checkbox').click(function() {
                 dataType: 'json'
                 })
                 .done(function(data){
-                    var nprice = data.total_price - 20;
+                    var nprice = data.total_price - 2000;
                     var nsPrice = Shopify.formatMoney(nprice, "₹{{amount}}");
                 var newCount = Shopify.formatMoney(data.total_price, "₹{{amount}}");
                 $('.totals .totals__subtotal-value').text(newCount)
-                $('.cart__footer .price p').text(nprice)
+                $('.cart__footer .price .items-price').text(nprice)
                 });
         })
         $('.gift-wrap').show()
@@ -325,7 +325,7 @@ $('.gift-wrap-outer .regular-checkbox').click(function() {
                     .done(function(data){
                     var newCount = Shopify.formatMoney(data.total_price, "₹{{amount}}");
                     $('.totals .totals__subtotal-value').text(newCount)
-                    $('.cart__footer .price p').text(newCount)
+                    $('.cart__footer .price .items-price').text(newCount)
                     });
             }
         })
