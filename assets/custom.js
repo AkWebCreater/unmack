@@ -291,7 +291,16 @@ $('.gift-wrap-outer .regular-checkbox').click(function() {
     var wrapped = localStorage.getItem('gift-wrap');
     if(wrapped == null){
 
-        addToCart(1, 41362268422344)
+        addToCart(1, 41362268422344,function(){
+            $.ajax({
+                url: '/cart.js',
+                dataType: 'json'
+                })
+                .done(function(data){
+                var newCount = Shopify.formatMoney(data.total_price, "₹{{amount}}");
+                $('.totals .totals__subtotal-value').text(newCount)
+                });
+        })
         $('.gift-wrap').show()
         localStorage.setItem('gift-wrap','wrap');
     }else{
@@ -304,6 +313,16 @@ $('.gift-wrap-outer .regular-checkbox').click(function() {
             data: {
                 quantity:0,
                 id:41362268422344
+            },
+            success:function(data) {
+                $.ajax({
+                    url: '/cart.js',
+                    dataType: 'json'
+                    })
+                    .done(function(data){
+                    var newCount = Shopify.formatMoney(data.total_price, "₹{{amount}}");
+                    $('.totals .totals__subtotal-value').text(newCount)
+                    });
             }
         })
     }
