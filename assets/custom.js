@@ -606,9 +606,9 @@ if($('.body--collection.deal-of-day ').length){
       
                 //do something later when date is reached
                 if (distance < 0) {
-                    document.getElementById("headline").innerText = "Offer Gone";
+                    // document.getElementById("headline").innerText = "Offer Gone";
                     document.getElementById("countdown").style.display = "none";
-                    document.getElementById("content").style.display = "block";
+                    // document.getElementById("content").style.display = "block";
                     clearInterval(x);
                 }
                 //seconds
