@@ -246,7 +246,9 @@ cart-remove-button .icon-remove {
   justify-content: flex-end;
   } */
 }
-
+.cart-item ,.cart-item__details{
+  display: flex;
+}
 @media screen and (min-width: 750px) {
   .cart-items {
     border-spacing: 0;
@@ -270,9 +272,7 @@ cart-remove-button .icon-remove {
     border-bottom: 1px solid #1a1b1833;
   }
 
-  .cart-item {
-    display: table-row;
-  }
+
 
   .cart-item > td + td {
     padding-left: 1rem;
