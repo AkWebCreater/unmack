@@ -252,9 +252,12 @@ cart-items {
   padding: 1rem;
 }
 @media (min-width:1025px) {
-  .body--cart #MainContent,.wrap-new-layout{
+  .body--cart #MainContent,.body--cart .wrap-new-layout{
     flex-direction: row;
     margin: auto;
+  }
+  #MainContent{
+    width: 100%;
   }
   .body--cart .cart__footer-wrapper{
     max-width: 30%;
