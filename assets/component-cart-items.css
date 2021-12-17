@@ -34,8 +34,11 @@ width: 100%;
 
 .cart-items *.right {
   text-align: right;
-}
 
+}
+.cart-item__totals.right{
+  flex: 1;
+}
 .cart-item__image {
   max-width: 100%;
   width: 100%;
