@@ -182,6 +182,8 @@
                         <span class="price compare-price price--end">
                           {{ item.variant.compare_at_price | money | remove: " " }}
                         </span>
+
+                        <div class="saving-btn">Save {{item.variant.compare_at_price | minus:item.original_price}}</div>
                         {% endif %}
                       </div>
                       {%- endif -%}
@@ -193,25 +195,6 @@
                         </svg>
                       </div>
                     </div>
-
-                    <div class="cart-item__price-wrapper medium-up">
-                      {%- if item.original_line_price != item.final_line_price -%}
-                        <dl class="cart-item__discounted-prices">
-                          <dt class="visually-hidden">
-                            {{ 'products.product.price.sale_price' | t }}
-                          </dt>
-                          <dd class="price price--end">
-                            {{ item.final_line_price | money }}
-                          </dd>
-                        </dl>
-                      {%- else -%}
-                        <span class="price price--end">
-                          {{ item.original_line_price | money }}
-                        </span>
-                      {%- endif -%}
-                    </div>
-
-                   
                   </td>
                 </tr>
               {%- endfor -%}
