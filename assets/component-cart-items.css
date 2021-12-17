@@ -47,7 +47,7 @@ width: 100%;position: relative;
 
 .cart-details-main > * {
   margin: 0;
-  max-width: 30rem;
+  /* max-width: 30rem; */
 }
 
 .cart-details-main > * + * {
