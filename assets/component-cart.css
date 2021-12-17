@@ -243,20 +243,19 @@ cart-items {
     flex-direction: row;
     margin: auto;
   }
+  .body--cart .cart__footer-wrapper{
+    max-width: 30%;
+    width: 100%;
+  }
 }
 @media screen and (min-width: 750px) {
   .cart__items {
     grid-column-start: 1;
     grid-column-end: 3;
   }
-  .body--cart .cart__footer-wrapper{
-    max-width: 30%;
-  }
-
   .cart__contents > * + * {
     margin-top: 0;
   }
-
   .cart__items + .cart__footer {
     grid-column: 2;
   }
