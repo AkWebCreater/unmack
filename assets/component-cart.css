@@ -42,6 +42,7 @@
   
 .body--cart #MainContent{
   max-width: 140rem;
+  width: 100%;
   padding:15px 2rem;
   gap: 20px;
 }
@@ -237,7 +238,12 @@ cart-items {
 .cart__note .field__input {
   padding: 1rem;
 }
-
+@media (min-width:1025px) {
+  .body--cart #MainContent{
+    flex-direction: row;
+    margin: auto;
+  }
+}
 @media screen and (min-width: 750px) {
   .cart__items {
     grid-column-start: 1;
@@ -246,10 +252,7 @@ cart-items {
   .body--cart .cart__footer-wrapper{
     max-width: 30%;
   }
-  .body--cart #MainContent{
-    flex-direction: row;
-    margin: auto;
-  }
+
   .cart__contents > * + * {
     margin-top: 0;
   }
