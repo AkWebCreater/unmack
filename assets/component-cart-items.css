@@ -328,3 +328,20 @@ cart-remove-button .icon-remove {
 .compare-price{
   text-decoration: line-through;
 }
+.cart-price-wrapper{
+  display: flex;
+  justify-content: end;
+  flex-wrap: wrap;
+}
+.saving-btn{
+  width: 100%;
+}
+.saving-btn span{
+  display: inline-block;
+  width: fit-content;
+  margin-left: auto;
+  background-color: #83b3f3;
+  color: #fff;
+  border-radius: 5px;
+  line-height: 1;
+}
