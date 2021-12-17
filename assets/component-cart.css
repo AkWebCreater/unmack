@@ -440,7 +440,7 @@ flex-direction: column;
 #main-cart-footer .cart-shadow:last-child{
   padding-top: 0;
 }
-.cart__footer .js-contents *:not(.totals){
+.cart__footer .js-contents *:not(.totals):not(.accent){
   margin:0;
   color: #515151;
 }
