@@ -349,7 +349,7 @@ $('.gift-wrap-outer .regular-checkbox').click(function() {
 })
 // ends here 
 // cart page wrap function for layout
-// $('.recently-viewed-products-bg').
+$('.recently-viewed-products-bg,.section--main-cart-items,.cart__footer-wrapper').wrapAll('<div class="page-width"></div>')
 // end
 // faq page pop up layer
 
