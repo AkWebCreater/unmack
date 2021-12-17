@@ -183,7 +183,7 @@
                           {{ item.variant.compare_at_price | money | remove: " " }}
                         </span>
 
-                        <div class="saving-btn">Save {{item.variant.compare_at_price | minus:item.original_price}}</div>
+                        <div class="saving-btn">Save {{item.variant.compare_at_price | minus:item.original_price | money | remove: " "}}</div>
                         {% endif %}
                       </div>
                       {%- endif -%}
