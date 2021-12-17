@@ -291,6 +291,7 @@ if(wrapped == null){
             })
             .done(function(data){
                 var nprice = data.total_price - 2000;
+                console.log(nprice)
                 var nsPrice = Shopify.formatMoney(nprice, "₹{{amount}}");
             var newCount = Shopify.formatMoney(data.total_price, "₹{{amount}}");
             $('.totals .totals__subtotal-value').text(newCount)
