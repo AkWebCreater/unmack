@@ -325,3 +325,6 @@ cart-remove-button .icon-remove {
     max-width: 60%;
      }
 }
+.compare-price{
+  text-decoration: line-through;
+}
