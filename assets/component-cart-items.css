@@ -332,6 +332,10 @@ cart-remove-button .icon-remove {
   display: flex;
   justify-content: end;
   flex-wrap: wrap;
+  align-items: flex-end;
+}
+.cart-price-wrapper *{
+  letter-spacing: 0;
 }
 .saving-btn{
   width: 100%;
@@ -345,4 +349,12 @@ cart-remove-button .icon-remove {
   padding: 6px 15px;
   border-radius: 5px;
   line-height: 1;
+}
+.accent, .accent * {
+  color: #f58d3f;
+}
+.price--end.accent {
+  margin-left: 8px;
+  font-weight: 600;
+  font-size: 2rem;
 }

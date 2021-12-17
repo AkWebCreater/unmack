@@ -148,21 +148,21 @@
                           </dt>
                           <dd>
                             <s class="cart-item__old-price price price--end">
-                              {{ item.original_price | money }}
+                              {{ item.original_price | money_without_trailing_zeros }}
                             </s>
                           </dd>
                           <dt class="visually-hidden">
                             {{ 'products.product.price.sale_price' | t }}
                           </dt>
                           <dd class="price price--end">
-                            {{ item.final_price | money }}
+                            {{ item.final_price | money_without_trailing_zeros }}
                           </dd>
                         </dl>
 
                         {%- if item.variant.available and item.unit_price_measurement -%}
                           <div class="unit-price caption">
                             <span class="visually-hidden">{{ 'products.product.price.unit_price' | t }}</span>
-                            {{ item.variant.unit_price | money }}
+                            {{ item.variant.unit_price | money_without_trailing_zeros }}
                             <span aria-hidden="true">/</span>
                             <span class="visually-hidden">&nbsp;{{ 'accessibility.unit_price_separator' | t }}&nbsp;</span>
                             {%- if item.variant.unit_price_measurement.reference_value != 1 -%}
@@ -178,12 +178,12 @@
                         {% if item.variant.compare_at_price > item.original_price %}
                           
                         <span class="price compare-price price--end">
-                          {{ item.variant.compare_at_price | money | remove: " " }}
+                          {{ item.variant.compare_at_price | money_without_trailing_zeros | remove: " " }}
                         </span>
 
                         {% endif %}
                         <span class="price price--end  {% if item.variant.compare_at_price > item.original_price %} accent {% endif %}">
-                          {{ item.original_price | money | remove: " " }}
+                          {{ item.original_price | money_without_trailing_zeros | remove: " " }}
                         </span>
                         {% if item.variant.compare_at_price > item.original_price %}
                         <div class="saving-btn">
