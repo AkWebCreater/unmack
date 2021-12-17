@@ -314,6 +314,7 @@ cart-remove-button .icon-remove {
 } */
 .cart-image{
   border: 1px solid #d0d0d0;
+  height: 100%;
 }
 .button:hover{
   box-shadow: none !important;
