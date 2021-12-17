@@ -34,10 +34,9 @@
 
             <tbody>
               {%- for item in cart.items -%}
-              {% if item.product.title == 'gift wrap' %}
-                {% assign none = 'hidden' %}
-              {% endif %}
-                <tr class="cart-item {{none}}" id="CartItem-{{ item.index | plus: 1 }}">
+              
+                <tr class="cart-item {% if item.product.title == 'gift wrap' %}hidden
+              {% endif %}" id="CartItem-{{ item.index | plus: 1 }}">
                   <td class="cart-item__media">
                     <div class="cart-image">
                       {% if item.image %}
