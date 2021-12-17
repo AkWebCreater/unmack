@@ -342,6 +342,7 @@ cart-remove-button .icon-remove {
   margin-left: auto;
   background-color: #83b3f3;
   color: #fff;
+  padding: 6px 15px;
   border-radius: 5px;
   line-height: 1;
 }

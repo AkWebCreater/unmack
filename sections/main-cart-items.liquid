@@ -174,22 +174,25 @@
                       {%- else -%}
                       <div class="cart-price-wrapper">
 
-                        <span class="price price--end">
-                          {{ item.original_price | money | remove: " " }}
-                        </span>
+                       
                         {% if item.variant.compare_at_price > item.original_price %}
                           
                         <span class="price compare-price price--end">
                           {{ item.variant.compare_at_price | money | remove: " " }}
                         </span>
 
+                        {% endif %}
+                        <span class="price price--end  {% if item.variant.compare_at_price > item.original_price %} accent {% endif %}">
+                          {{ item.original_price | money | remove: " " }}
+                        </span>
+                        {% if item.variant.compare_at_price > item.original_price %}
                         <div class="saving-btn">
                           <span>
                             Save {{item.variant.compare_at_price | minus:item.original_price | money_without_trailing_zeros | remove: " "}}
                           </span>
 
                         </div>
-                            {% endif %}
+                        {% endif %}
                       </div>
                       {%- endif -%}
                     </div>
