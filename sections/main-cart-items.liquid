@@ -175,6 +175,9 @@
                         <span class="price price--end">
                           {{ item.original_price | money }}
                         </span>
+                        <span class="price compare-price price--end">
+                          {{ item.variant.compare_at_price | money }}
+                        </span>
                       {%- endif -%}
                     </div>
                     <div class="loading-overlay hidden">
@@ -185,7 +188,7 @@
                       </div>
                     </div>
 
-                    <!-- <div class="cart-item__price-wrapper medium-up">
+                    <div class="cart-item__price-wrapper medium-up">
                       {%- if item.original_line_price != item.final_line_price -%}
                         <dl class="cart-item__discounted-prices">
                           <dt class="visually-hidden">
@@ -200,7 +203,7 @@
                           {{ item.original_line_price | money }}
                         </span>
                       {%- endif -%}
-                    </div> -->
+                    </div>
 
                    
                   </td>
