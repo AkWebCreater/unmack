@@ -360,15 +360,15 @@ if($('.check-combo').length){
         $('.combo-overlay').show();
         $('body').addClass('scroll-block');
     })
-    $('.combo-overlay').click(function(){
-        $('.combo-popup').hide();
-        alert('clicked')
-        $('.combo-overlay').hide();
-
-        $('body').removeClass('scroll-block');
-
-    })
 }
+$('.combo-overlay').click(function(){
+    $('.combo-popup').hide();
+    alert('clicked')
+    $('.combo-overlay').hide();
+
+    $('body').removeClass('scroll-block');
+
+})
 
 // faq page pop up layer
 
