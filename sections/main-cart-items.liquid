@@ -104,10 +104,10 @@
       <li class="cart-item ">
         <div class="cart-item__media">
           <div class="cart-image">
-            {% if product-1.image %}
+            {% if product-1.featured_image %}
             <img class="cart-item__image"
-              src="{{ product-1.image | img_url: '150x' }}"
-              alt="{{ product-1.image.alt | escape }}"
+              src="{{ product-1.featured_image | img_url: '150x' }}"
+              alt="{{ product-1.featured_image.alt | escape }}"
               loading="lazy"
             >
           {% endif %}
@@ -156,10 +156,10 @@
     <li class="cart-item">
       <div class="cart-item__media">
         <div class="cart-image">
-          {% if product-2.image %}
+          {% if product-2.featured_image %}
           <img class="cart-item__image"
-            src="{{ product-2.image | img_url: '150x' }}"
-            alt="{{ product-2.image.alt | escape }}"
+            src="{{ product-2.featured_image | img_url: '150x' }}"
+            alt="{{ product-2.featured_image.alt | escape }}"
             loading="lazy"
           >
         {% endif %}
@@ -208,10 +208,10 @@
     <li class="cart-item ">
       <div class="cart-item__media">
         <div class="cart-image">
-          {% if product-3.image %}
+          {% if product-3.featured_image %}
           <img class="cart-item__image"
-            src="{{ product-3.image | img_url: '150x' }}"
-            alt="{{ product-3.image.alt | escape }}"
+            src="{{ product-3.featured_image | img_url: '150x' }}"
+            alt="{{ product-3.featured_image.alt | escape }}"
             loading="lazy"
           >
         {% endif %}
@@ -260,10 +260,10 @@
     <li class="cart-item ">
       <div class="cart-item__media">
         <div class="cart-image">
-          {% if product-4.image %}
+          {% if product-4.featured_image %}
           <img class="cart-item__image"
-            src="{{ product-4.image | img_url: '150x' }}"
-            alt="{{ product-4.image.alt | escape }}"
+            src="{{ product-4.featured_image | img_url: '150x' }}"
+            alt="{{ product-4.featured_image.alt | escape }}"
             loading="lazy"
           >
         {% endif %}
