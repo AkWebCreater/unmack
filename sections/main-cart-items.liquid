@@ -91,7 +91,225 @@
 
                       <p class="product-option">{{ item.selling_plan_allocation.selling_plan.name }}</p>
                     {%- endif -%}
+{% if item.product.metafields.bundle.bundle-product-1 != blank or item.product.metafields.bundle.bundle-product-2 != blank or item.product.metafields.bundle.bundle-product-3 != blank or item.product.metafields.bundle.bundle-product-4 != blank %}
+  <span class="check-combo">Check your combo <span class="scroll_icon ">
+    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 172 172" style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#000000"><path d="M17.2,68.8v-11.46667c0,-2.21307 1.27853,-4.2312 3.27947,-5.18293c2.00093,-0.95173 4.3688,-0.65933 6.0888,0.74533l59.43173,48.63013l59.43747,-48.63013c1.71427,-1.40467 4.08213,-1.69133 6.0888,-0.74533c2.00667,0.946 3.27373,2.96987 3.27373,5.18293v11.46667c0,1.72 -0.774,3.34827 -2.10413,4.4376l-63.06667,51.6c-2.1156,1.72573 -5.14853,1.72573 -7.26413,0l-63.06667,-51.6c-1.3244,-1.08933 -2.0984,-2.7176 -2.0984,-4.4376z"></path></g></g></svg>
+  </span></span>
+  <div class="combo-popup">
+    {% assign bundle = item.product.metafields.bundle %}
+    <ul>
+    {% if bundle.product-1 != blank %}
+    {% assign product-1 = all_products[bundle.product-1] %}
+      <li class="cart-item ">
+        <div class="cart-item__media">
+          <div class="cart-image">
+            {% if product-1.image %}
+            <img class="cart-item__image"
+              src="{{ product-1.image | img_url: '150x' }}"
+              alt="{{ product-1.image.alt | escape }}"
+              loading="lazy"
+            >
+          {% endif %}
+          </div>
+        </div>
+        <div class="cart-item__details">
+          <a href="{{ product-1.url }}" class="cart-item__name h3 break">{{ product-1.title | escape }}</a>
+          <div class="add-btn">Add</div>
+        </div>
+        <div class="cart-item__totals right">
+          <div>
+            <a class="write-review">Write product review</a>
+          </div>
+            <div class="cart-item__price-wrapper">
+              <div class="cart-price-wrapper">
+                {% if product-1.compare_at_price > product-1.price %}              
+                <span class="price compare-price price--end">
+                  {{ product-1.compare_at_price | money_without_trailing_zeros | remove: " " }}
+                </span>
+                {% endif %}
+                <span class="price price--end  {% if product-1.compare_at_price > product-1.price %} accent {% endif %}">
+                  {{ product-1.price | money_without_trailing_zeros | remove: " " }}
+                </span>
+                {% if product-1.compare_at_price > product-1.price %}
+                <div class="saving-btn">
+                  <span>
+                    Save {{product-1.compare_at_price | minus:product-1.price | money_without_trailing_zeros | remove: " "}}
+                  </span>
 
+                </div>
+                {% endif %}
+              </div>
+            </div>
+            <!-- <div class="loading-overlay hidden">
+              <div class="loading-overlay__spinner">
+                <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                  <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                </svg>
+              </div>
+            </div> -->
+          </div>
+      </li>
+
+    {% endif %}
+    {% if bundle.product-2 != blank %}
+    {% assign product-2 = all_products[bundle.product-2] %}
+    <li class="cart-item">
+      <div class="cart-item__media">
+        <div class="cart-image">
+          {% if product-2.image %}
+          <img class="cart-item__image"
+            src="{{ product-2.image | img_url: '150x' }}"
+            alt="{{ product-2.image.alt | escape }}"
+            loading="lazy"
+          >
+        {% endif %}
+        </div>
+      </div>
+      <div class="cart-item__details">
+        <a href="{{ product-2.url }}" class="cart-item__name h3 break">{{ product-2.title | escape }}</a>
+        <div class="add-btn">Add</div>
+      </div>
+      <div class="cart-item__totals right">
+        <div>
+          <a class="write-review">Write product review</a>
+        </div>
+          <div class="cart-item__price-wrapper">
+            <div class="cart-price-wrapper">
+              {% if product-2.compare_at_price > product-2.price %}              
+              <span class="price compare-price price--end">
+                {{ product-2.compare_at_price | money_without_trailing_zeros | remove: " " }}
+              </span>
+              {% endif %}
+              <span class="price price--end  {% if product-2.compare_at_price > product-2.price %} accent {% endif %}">
+                {{ product-2.price | money_without_trailing_zeros | remove: " " }}
+              </span>
+              {% if product-2.compare_at_price > product-2.price %}
+              <div class="saving-btn">
+                <span>
+                  Save {{product-2.compare_at_price | minus:product-2.price | money_without_trailing_zeros | remove: " "}}
+                </span>
+  
+              </div>
+              {% endif %}
+            </div>
+          </div>
+          <!-- <div class="loading-overlay hidden">
+            <div class="loading-overlay__spinner">
+              <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+              </svg>
+            </div>
+          </div> -->
+        </div>
+    </li>
+    {% endif %}
+    {% if bundle.product-3 != blank %}
+    {% assign product-3 = all_products[bundle.product-3] %}
+    <li class="cart-item ">
+      <div class="cart-item__media">
+        <div class="cart-image">
+          {% if product-3.image %}
+          <img class="cart-item__image"
+            src="{{ product-3.image | img_url: '150x' }}"
+            alt="{{ product-3.image.alt | escape }}"
+            loading="lazy"
+          >
+        {% endif %}
+        </div>
+      </div>
+      <div class="cart-item__details">
+        <a href="{{ product-3.url }}" class="cart-item__name h3 break">{{ product-3.title | escape }}</a>
+        <div class="add-btn">Add</div>
+      </div>
+      <div class="cart-item__totals right">
+        <div>
+          <a class="write-review">Write product review</a>
+        </div>
+          <div class="cart-item__price-wrapper">
+            <div class="cart-price-wrapper">
+              {% if product-3.compare_at_price > product-3.price %}              
+              <span class="price compare-price price--end">
+                {{ product-3.compare_at_price | money_without_trailing_zeros | remove: " " }}
+              </span>
+              {% endif %}
+              <span class="price price--end  {% if product-3.compare_at_price > product-3.price %} accent {% endif %}">
+                {{ product-3.price | money_without_trailing_zeros | remove: " " }}
+              </span>
+              {% if product-3.compare_at_price > product-3.price %}
+              <div class="saving-btn">
+                <span>
+                  Save {{product-3.compare_at_price | minus:product-3.price | money_without_trailing_zeros | remove: " "}}
+                </span>
+  
+              </div>
+              {% endif %}
+            </div>
+          </div>
+          <!-- <div class="loading-overlay hidden">
+            <div class="loading-overlay__spinner">
+              <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+              </svg>
+            </div>
+          </div> -->
+        </div>
+    </li>
+    {% endif %}
+    {% if bundle.product-4 != blank %}
+    {% assign product-4 = all_products[bundle.product-4] %}
+    <li class="cart-item ">
+      <div class="cart-item__media">
+        <div class="cart-image">
+          {% if product-4.image %}
+          <img class="cart-item__image"
+            src="{{ product-4.image | img_url: '150x' }}"
+            alt="{{ product-4.image.alt | escape }}"
+            loading="lazy"
+          >
+        {% endif %}
+        </div>
+      </div>
+      <div class="cart-item__details">
+        <a href="{{ product-4.url }}" class="cart-item__name h3 break">{{ product-4.title | escape }}</a>
+        <div class="add-btn">Add</div>
+      </div>
+      <div class="cart-item__totals right">
+        <div>
+          <a class="write-review">Write product review</a>
+        </div>
+          <div class="cart-item__price-wrapper">
+            <div class="cart-price-wrapper">
+              {% if product-4.compare_at_price > product-4.price %}              
+              <span class="price compare-price price--end">
+                {{ product-4.compare_at_price | money_without_trailing_zeros | remove: " " }}
+              </span>
+              {% endif %}
+              <span class="price price--end  {% if product-4.compare_at_price > product-4.price %} accent {% endif %}">
+                {{ product-4.price | money_without_trailing_zeros | remove: " " }}
+              </span>
+              {% if product-4.compare_at_price > product-4.price %}
+              <div class="saving-btn">
+                <span>
+                  Save {{product-4.compare_at_price | minus:product-4.price | money_without_trailing_zeros | remove: " "}}
+                </span>
+  
+              </div>
+              {% endif %}
+            </div>
+          </div>
+          <!-- <div class="loading-overlay hidden">
+            <div class="loading-overlay__spinner">
+              <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+              </svg>
+            </div>
+          </div> -->
+        </div>
+    </li>
+    {% endif %}
+  </ul>
+  </div>
+{% endif %}
                     <ul class="discounts list-unstyled" role="list" aria-label="{{ 'customer.order.discount' | t }}">
                       {%- for discount in item.discounts -%}
                         <li class="discounts__discount">
