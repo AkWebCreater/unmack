@@ -355,7 +355,7 @@ if($(window).width() > 1920){
 // end
 // cart combo toggle
 if($('.check-combo').length){
-    $(document).on('click','.check-combo',function(){
+    $('body').on('click','.check-combo',function(){
         $('.combo-popup').show();
         $('.combo-overlay').show();
         $('body').addClass('scroll-block');
