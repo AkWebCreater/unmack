@@ -482,3 +482,12 @@ width: 50vw;
 .scroll-block{
   overflow: hidden;
 }
+.check-combo ,.check-combo g{
+  color:#83b3f3 ;
+  cursor: pointer;
+}
+.check-combo svg{
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+}
