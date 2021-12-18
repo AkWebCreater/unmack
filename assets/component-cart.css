@@ -475,3 +475,6 @@ font-size: 1.6rem;
   z-index: 100000;
   display: none;
 }
+.scroll-block{
+  overflow: hidden;
+}
