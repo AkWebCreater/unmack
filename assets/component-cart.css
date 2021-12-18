@@ -453,3 +453,14 @@ margin: 1.5rem 0;
 .cart__footer h3{
 font-size: 1.6rem;
 }
+/* combo css */
+.check-combo{
+  position: relative;
+}
+.combo-popup{
+  position: absolute;
+  top: 0;
+  background-color: #fff;
+  border-radius: 4px;
+  display: none;
+}

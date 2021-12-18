@@ -353,6 +353,13 @@ if($(window).width() > 1920){
     $('.recently-viewed-products-bg,.section--main-cart-items,.cart__footer-wrapper').wrapAll('<div class="wrap-new-layout"></div>')
 }
 // end
+// cart combo toggle
+if($('.check-combo').length){
+    $('.check-combo').click(function(){
+        $('.combo-popup').toggle();
+    })
+}
+
 // faq page pop up layer
 
 $(document).ready(function() {
