@@ -361,13 +361,11 @@ if($('.check-combo').length){
         $('body').addClass('scroll-block');
     })
 }
-$('.combo-overlay').on('click',function(){
+$(document).on('click','.combo-overlay',function(){
     $('.combo-popup').hide();
     // alert('clicked')
     $('.combo-overlay').hide();
-
     $('body').removeClass('scroll-block');
-
 })
 
 // faq page pop up layer
