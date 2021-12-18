@@ -363,7 +363,8 @@ if($('.check-combo').length){
     $('.combo-overlay').click(function(){
         $('.combo-popup').hide();
         alert('clicked')
-        $(this).hide();
+        $('.combo-overlay').hide();
+
         $('body').removeClass('scroll-block');
 
     })
