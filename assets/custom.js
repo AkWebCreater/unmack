@@ -361,9 +361,9 @@ if($('.check-combo').length){
         $('body').addClass('scroll-block');
     })
 }
-$('.combo-overlay').click(function(){
+$('.combo-overlay').on('click',function(){
     $('.combo-popup').hide();
-    alert('clicked')
+    // alert('clicked')
     $('.combo-overlay').hide();
 
     $('body').removeClass('scroll-block');
