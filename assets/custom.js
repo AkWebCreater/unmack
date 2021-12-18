@@ -356,7 +356,15 @@ if($(window).width() > 1920){
 // cart combo toggle
 if($('.check-combo').length){
     $('.check-combo').click(function(){
-        $('.combo-popup').toggle();
+        $('.combo-popup').show();
+        $('.combo-overlay').show();
+        $('body').addClass('scroll-block');
+    })
+    $('.combo-overlay').click(function(){
+        $('.combo-popup').hide();
+        $(this).hide();
+        $('body').removeClass('scroll-block');
+
     })
 }
 
