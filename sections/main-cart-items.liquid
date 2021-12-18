@@ -98,8 +98,8 @@
   <div class="combo-popup">
     {% assign bundle = item.product.metafields.bundle %}
     <ul>
-    {% if bundle.product-1 != blank %}
-    {% assign product-1 = all_products[bundle.product-1] %}
+    {% if bundle.bundle-product-1 != blank %}
+    {% assign product-1 = all_products[bundle.bundle-product-1] %}
       <li class="cart-item ">
         <div class="cart-item__media">
           <div class="cart-image">
