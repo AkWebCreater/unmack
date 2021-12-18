@@ -362,6 +362,7 @@ if($('.check-combo').length){
     })
     $('.combo-overlay').click(function(){
         $('.combo-popup').hide();
+        alert('clicked')
         $(this).hide();
         $('body').removeClass('scroll-block');
 
