@@ -1,13 +1,27 @@
 <div class="header-zipcode">
+
+  {% assign btnText = 'Check' %}
+  {% if template contains 'product'  %}
+  {% assign btnText = 'Apply' %}
+  {% endif %}
+  {% assign mapIcon = false %}
+  {% if template contains 'cart' %}
+  {% assign mapIcon = true %}
+  {% endif %}
+  <!-- {% assign variable = value %}
+  {% assign variable = value %} -->
   <div class="cutomer-wrap">
    
     <div class="wrap-inner">
      {% comment %} <span class="customer-name">
      Deliver To {% if customer %} {{customer.first_name | capitalize | append: ' ' }} {% endif %} </span> {% endcomment %}
-      <span class="pin-city-wrapper"> <div class="icon-location">{% render 'component-map-icon' %}</div><span class="customer-city"></span><span class="customer-pincode">Enter Your Pincode</span></span>
+      <span class="pin-city-wrapper">
+        {% if mapIcon == true %}
+        <div class="icon-location">{% render 'component-map-icon' %}</div>
+        {% endif %}
+         <span class="customer-city"></span><span class="customer-pincode">Enter Your Pincode</span>
+        </span>
     </div>
-    {% if template contains 'cart' %}
-      <button class="accent-bg pincode_check button">Check</button>
-    {% endif %}
+      <button class="accent-bg pincode_check button">{{btnText}}</button>
   </div>
 </div>
