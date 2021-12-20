@@ -2457,3 +2457,7 @@ div.wishlist .ssw-faveiticon{
   .faves-count{
     display: none !important;
   }
+  /* search */
+  .body--search .search__input{
+    border: 1px solid #ccc;
+  }

@@ -1187,3 +1187,7 @@ span.Product_price{
 dd.price {
  font-size: 3rem;
 }
+.product__media-wrapper slider-component{
+  position: sticky;
+  top: 0;
+}
