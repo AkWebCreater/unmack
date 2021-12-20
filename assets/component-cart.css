@@ -492,3 +492,8 @@ width: 50vw;
   width: 15px;
   height: 13px;
 }
+@media (max-width:1024px){
+  .combo-popup{
+    width: 80vw;
+  }
+}
