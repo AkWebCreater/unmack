@@ -454,8 +454,10 @@ margin: 1.5rem 0;
 font-size: 1.6rem;
 }
 /* combo css */
-.check-combo{
-  position: relative;
+@media (min-width:1025px) {
+  .check-combo{
+    position: relative;
+  }
 }
 .combo-overlay{
   position: fixed;
@@ -495,5 +497,6 @@ width: 50vw;
 @media (max-width:1024px){
   .combo-popup{
     width: 80vw;
+    left: 20px;
   }
 }
