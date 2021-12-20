@@ -482,7 +482,7 @@ width: 50vw;
 .scroll-block{
   overflow: hidden;
 }
-.check-combo ,.check-combo g{
+.check-combo ,.check-combo g path{
   color:#83b3f3 ;
   cursor: pointer;
 }
