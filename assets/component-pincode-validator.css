@@ -282,3 +282,6 @@ background-color: #fff;
 .body--product .customer-pincode{
     padding-top: 0;
 }
+.pin-header{
+    text-align: center;
+}
