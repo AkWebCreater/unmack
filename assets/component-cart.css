@@ -470,9 +470,13 @@ font-size: 1.6rem;
 .combo-popup ul{
   padding: 0;
 }
+.combo-popup ul li:not(:last-child){
+  border-bottom: 1px solid #7c7c7c;
+  padding: 1rem 0;
+}
 .combo-popup{
   position: absolute;
-  top: 0;
+
 width: 50vw;
   height: 250px;
   overflow-y: scroll;
@@ -497,6 +501,6 @@ width: 50vw;
 @media (max-width:1024px){
   .combo-popup{
     width: 80vw;
-    left: 20px;
+    left: 13px;
   }
 }
