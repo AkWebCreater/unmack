@@ -6,6 +6,7 @@
   }
   .body--blog h3{
     font-weight: 700;
+    margin-bottom: 0;
   }
   .main-blog .breadcrums{
     opacity: 0.6;
