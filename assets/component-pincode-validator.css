@@ -274,3 +274,8 @@ background-color: #fff;
 .body--product .cutomer-wrap.success{
     background-color: #fff;
 }
+.body--product .pin-city-wrapper{
+    line-height: 1;
+    padding: 4px;
+    font-size: 13.33px;
+}
