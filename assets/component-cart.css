@@ -472,7 +472,7 @@ font-size: 1.6rem;
 }
 .combo-popup ul li:not(:last-child){
   border-bottom: 1px solid #7c7c7c;
-  padding: 1rem 0;
+  padding: 1rem;
 }
 .combo-popup{
   position: absolute;
