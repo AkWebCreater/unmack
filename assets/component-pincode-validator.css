@@ -237,20 +237,20 @@
 .flexbox{
     display: flex;
 }     
-.body--cart .pin-city-wrapper{
+ .pin-city-wrapper{
 display: flex;
 align-items: flex-end;
 width: 100%;
 
 }
-.body--cart .wrap-inner{
+ .wrap-inner{
     flex: 1;
 }
-.body--cart .cutomer-wrap{
+.cutomer-wrap{
 background-color: #fff;
 
 }
-.body--cart .pincode_check{
+ .pincode_check{
     border: 0;
     box-shadow: none;
     min-width: 8rem;
