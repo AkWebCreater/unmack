@@ -179,3 +179,6 @@ background-color:#f58634;
 font-weight: 700;
   }
   
+  .recipe-nav span:first-child{
+    color: #f58634;
+  }
