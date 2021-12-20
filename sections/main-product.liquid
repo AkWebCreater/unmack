@@ -327,11 +327,7 @@
             <div class="pincode">
               <div class="customer-pincode">Enter Pinocde</div>
               {% render 'pincode-input-box' %}
-              <div class="pincode-form">
-                <input type="text" placeholder="Enter pincode" class="pincode-text">
-                <button class="pincode-submit">Apply</button>
-                
-              </div>
+             
               {% if  section.settings.delivery-expectation !=blank %}
                <div class="deliver-details">{{ section.settings.delivery-expectation}}</div>
               {% endif %}

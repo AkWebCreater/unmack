@@ -276,6 +276,9 @@ background-color: #fff;
 }
 .body--product .pin-city-wrapper{
     line-height: 1;
-    padding: 4px;
+    padding: 7px;
     font-size: 13.33px;
+}
+.body--product .customer-pincode{
+    padding-top: 0;
 }
