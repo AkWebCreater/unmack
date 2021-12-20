@@ -329,6 +329,8 @@
               <div class="pincode-form">
                 <input type="text" placeholder="Enter pincode" class="pincode-text">
                 <button class="pincode-submit">Apply</button>
+                <span class="pin-city-wrapper">
+                  <span class="customer-city">Noida</span><span class="customer-pincode">201306</span></span>
               </div>
               {% if  section.settings.delivery-expectation !=blank %}
                <div class="deliver-details">{{ section.settings.delivery-expectation}}</div>
@@ -578,7 +580,7 @@
   {%- endfor -%}
 </section>
 {% render 'product-collection-description' %}
-
+{% render 'pincode-validator' %}
 
 {% javascript %}
   class ProductModal extends ModalDialog {
