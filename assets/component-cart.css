@@ -469,9 +469,21 @@ font-size: 1.6rem;
 }
 .combo-popup ul{
   padding: 0;
+  margin: 0;
+}
+.combo-popup .cart-image{
+  border: 0;
+}
+.combo-popup .cart-item__media{
+  width: 8rem;
+}
+.combo-popup .cart-item__details{
+  flex-direction: column;
 }
 .combo-popup ul li:not(:last-child){
   border-bottom: 1px solid #7c7c7c;
+}
+.combo-popup ul li{
   padding: 1rem;
 }
 .combo-popup{
