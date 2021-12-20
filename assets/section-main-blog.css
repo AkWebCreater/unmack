@@ -77,7 +77,7 @@ background-color:#f58634;
   .bottom-sidebar{
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 35px;
   }
   .blog-container{
     display: grid;
@@ -162,7 +162,9 @@ background-color:#f58634;
       grid-column: span 3;
     }
     .bottom-sidebar{
-      display: block;
+      display: flex;
+      line-height: 1;
+      font-size: 0;
     }
     .blog-sidebar{
       grid-area: sidebar;
