@@ -511,6 +511,14 @@ $('.pass').click(function() {
         $(this).next().attr('type','text');
     }
 })
+// combo popup on cart Add to cart Button
+$('.combo-popup .add-btn').click(function(){
+var varId = $(this).attr('data-var-id');
+addToCart(1,varId,function(){
+    location.reload();
+})
+})
+// combo popup on cart Add to cart Button End Here
   // background added to fix nav on scroll
   $('.body--register .header-wrapper,.body--search .header-wrapper,.about-us .header-wrapper').addClass('fix')
   $(window).scroll(function() {
