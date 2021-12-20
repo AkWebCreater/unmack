@@ -1,12 +1,15 @@
 <div class="header-zipcode">
 
   {% assign btnText = 'Check' %}
+  {% assign btnclass = 'pincode-submit' %}
   {% if template contains 'product'  %}
   {% assign btnText = 'Apply' %}
   {% endif %}
   {% assign mapIcon = false %}
   {% if template contains 'cart' %}
   {% assign mapIcon = true %}
+  {% assign btnclass = 'accent-bg pincode_check button' %}
+
   {% endif %}
   <!-- {% assign variable = value %}
   {% assign variable = value %} -->
@@ -22,6 +25,6 @@
          <span class="customer-city"></span><span class="customer-pincode">Enter Your Pincode</span>
         </span>
     </div>
-      <button class="accent-bg pincode_check button pincode-submit">{{btnText}}</button>
+      <button class="{{btnclass}}">{{btnText}}</button>
   </div>
 </div>
