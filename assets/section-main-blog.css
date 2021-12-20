@@ -182,3 +182,6 @@ font-weight: 700;
   .recipe-nav span:first-child{
     color: #f58634 !important;
   }
+  .recipe-nav-link{
+    color: #4f4f4f;
+  } 
