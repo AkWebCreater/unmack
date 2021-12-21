@@ -308,7 +308,20 @@ $(document).on('click','cart-remove-button',function(){
 
     if($('cart-remove-button').length == 1 ){
 
-        alert('11');
+        $('.gift-wrap').hide()
+        localStorage.removeItem("gift-wrap");
+        $.ajax({
+            type: 'POST',
+            url: '/cart/change.js',
+            dataType: 'json',
+            data: {
+                quantity:0,
+                id:41362268422344
+            },
+            success:function(data){
+                console.log('gift wrap removed')
+            }
+        })
     }
 })
 // add gift wrap product on clicking gift wrap checkbox
