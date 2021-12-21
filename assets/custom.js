@@ -274,6 +274,7 @@ $(document).on('click', '#bulk-button', function() {
 })
 // gift wrap option
 var wrapped = localStorage.getItem('gift-wrap');
+// check on document load if gift wrap checked
 if(wrapped == null){
     if($('.gift-wrap-outer .regular-checkbox').length){
 
@@ -301,6 +302,16 @@ if(wrapped == null){
     }
 
 }
+// remove gift wrap from cart if cart is empty 
+
+$(document).on('click','cart-remove-button',function(){
+
+    if($('cart-remove-button').length == 1 ){
+
+        alert('11');
+    }
+})
+// add gift wrap product on clicking gift wrap checkbox
 $('.gift-wrap-outer .regular-checkbox').click(function() {
     
     var wrapped = localStorage.getItem('gift-wrap');
