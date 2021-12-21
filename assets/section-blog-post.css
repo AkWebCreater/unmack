@@ -66,8 +66,9 @@ color: #898989;
   flex-direction: column;
   justify-content: space-between;
 }
-.article-template__hero-container {
-  max-width: 130rem;
+.article-template__hero-container ,.article-template__hero-container .article-template__hero-adapt{
+  height:calc(100vh - 244px);
+  padding: 0 !important;
   margin: 0 auto;
 }
 .btn{
