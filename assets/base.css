@@ -2461,3 +2461,7 @@ div.wishlist .ssw-faveiticon{
   .body--search .search__input{
     border: 1px solid #ccc;
   }
+/* order cancellation form */
+.order-cancellation-form .wrap label{
+  color: #999999;
+} 
