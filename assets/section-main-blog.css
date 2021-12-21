@@ -31,6 +31,11 @@
 .blogs-menu nav >ul > li ul li:hover{
 background-color:#f58634;
 }
+@media (min-width:750px) {
+  .blogs-menu nav >ul > li ul li:hover{
+    min-width: 30rem;
+    } 
+}
 .blogs-menu nav >ul > li ul li:hover a{
   color: #fff;
   }
@@ -188,3 +193,6 @@ font-weight: 700;
   .recipe-nav-link{
     color: #4f4f4f;
   } 
+  .blogs-menu .list-menu--disclosure{
+    min-width: 27rem;
+  }
