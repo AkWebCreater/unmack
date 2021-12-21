@@ -68,13 +68,13 @@
           "settings": {
           }
         },
-        "link": {
-          "type": "link",
+        "cad69f4c-413c-485a-83a7-87d3552d5111": {
+          "type": "social-share",
           "settings": {
           }
         },
-        "cad69f4c-413c-485a-83a7-87d3552d5111": {
-          "type": "social-share",
+        "link": {
+          "type": "link",
           "settings": {
           }
         }
@@ -82,10 +82,11 @@
       "block_order": [
         "title",
         "summary",
-        "link",
-        "cad69f4c-413c-485a-83a7-87d3552d5111"
+        "cad69f4c-413c-485a-83a7-87d3552d5111",
+        "link"
       ],
       "settings": {
+        "top_blogs_limit": 3,
         "show_image": true,
         "blogs_menu": "blogs-menu",
         "recipe_menu": "blog-recipe-menu",
