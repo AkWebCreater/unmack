@@ -2473,11 +2473,14 @@ div.wishlist .ssw-faveiticon{
   flex-shrink: 0;
   flex-grow: 0;
 }
-.order-cancellation-form .rte{
-  padding-right: 20px;
-}
+
 @media (max-width:480px) {
   .order-cancellation-form .contact__fields{
     display:block;
   } 
+}
+@media (min-width:641px) {
+  .order-cancellation-form .rte{
+    padding-right: 20px;
+  }  
 }
