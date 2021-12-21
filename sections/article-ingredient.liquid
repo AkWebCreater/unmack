@@ -24,9 +24,8 @@
     %}
     <div class="optionval">
       {% for product_option in product.options_with_values %}
-      <span>{{ product_option.selected_value }}</span>
+      <span>{{ product_option.selected_value | remove: ' '}}</span>
     {% endfor %}
-      {{product.selected_or_first_available_variant.option1.selected_value}}
     </div>
     <div class="price">
       <span class="main-price" data-var-id="{{product.selected_or_first_available_variant.id}}" data-price="{{ product.selected_or_first_available_variant.price}}">
