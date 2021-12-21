@@ -256,8 +256,8 @@
     {% endfor %}
     {%- for link in linklists.top-blogs.links -%}
     {% assign top_blogs = link.object %}
-    <h3 class="blog-page-title"><strong class="{{link.title}}-title" style="color: #393636;border-bottom: 2px solid #f58634; padding-bottom: 5px;"> Top {{ blog.articles_count }} Blogs </strong>{% comment %}{{link.title}} {% endcomment %}</h3>
-    {% for topArticle in top_blogs.articles %}
+    <h3 class="blog-page-title"><strong class="{{link.title}}-title" style="color: #393636;border-bottom: 2px solid #f58634; padding-bottom: 5px;"> Top {{ section.settings.top_blogs_limit }} Blogs </strong>{% comment %}{{link.title}} {% endcomment %}</h3>
+    {% for topArticle in top_blogs.articles limit: section.settings.top_blogs_limit %}
     <div class="blog-articles__article article">
       {%- render 'article-card', article: topArticle, show_image:true -%}
     </div>
@@ -271,6 +271,18 @@
 {
   "name": "t:sections.main-article.name",
   "tag": "section",
+  "settings": [
+    {
+      "type": "range",
+      "id": "top_blogs_limit",
+      "label": "top blogs limit",
+      "min": 1,
+      "max": 8,
+      "step": 1,
+      "info":"your top blogs are coming from top blog menu in your admin navigation here you can limit how many blogs you have to show in top blogs",
+      "default": 1
+    },
+  ],
   "blocks": [
     {
       "type": "featured_image",
