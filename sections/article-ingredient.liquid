@@ -22,7 +22,7 @@
       add_image_padding: section.settings.add_image_padding,
       show_vendor: section.settings.show_vendor
     %}
-  
+    {%- render 'price', product: product, use_variant: true, show_badges: false,product_badges:true , price_class: 'price--large' -%}
     <div  class="btn add-cart">Add to cart</div>
     </div>
           {%- endfor -%}
