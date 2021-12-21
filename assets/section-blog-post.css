@@ -14,7 +14,7 @@
 .ingredients .media{
   padding-bottom: 100%;
 }
-.ingredients .card-wrapper{
+.ingredients .card-wrapper,.ingredients .card--product{
   border: 0;
 }
 .ingredients  *{
