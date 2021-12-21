@@ -17,12 +17,15 @@
 .ingredients .card-information,.optionval{
   color: #898989;
 }
+.main-price{
+  color: #da3f45;
+  font-size: 16px;
+  font-weight: 600;
+}
 .compare-price{
 text-decoration: line-through;  
-}
-.main-price{
-  color: #f44739;
-  font-size: 16px;
+font-weight: normal;
+font-size: 14px;
 }
 .ingredients .card-wrapper,.ingredients .card--product{
   border: 0;
