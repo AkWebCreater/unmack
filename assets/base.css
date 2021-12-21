@@ -2461,7 +2461,3 @@ div.wishlist .ssw-faveiticon{
   .body--search .search__input{
     border: 1px solid #ccc;
   }
-  .blog-articles .blog-articles__article{
-    position: sticky;
-    top: 140px;
-  }
