@@ -207,7 +207,7 @@ background-color:#f58634;
     .blogs-menu .list-menu--disclosure{
       width: 95vw;
     }
-    .recipe-nav .product-popup-menu{
+    .blogs-menu .product-popup-menu{
       position: relative;
       width: 100%;
       transform: translateX(0);
