@@ -14,6 +14,9 @@
 .ingredients .media{
   padding-bottom: 100%;
 }
+.ingredients .card-wrapper{
+  border: 0;
+}
 .ingredients  *{
   text-align: center;
 }
