@@ -2468,7 +2468,7 @@ div.wishlist .ssw-faveiticon{
 .order-cancellation-form .contact__fields{
   display: flex;
 }
-.order-cancellation-form label{
+.order-cancellation-form .contact__fields .label{
   flex-basis: 30%;
   flex-shrink: 0;
   flex-grow: 0;
