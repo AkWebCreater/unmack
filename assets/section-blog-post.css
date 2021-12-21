@@ -16,6 +16,7 @@
 }
 .ingredients .card-information .card-information__text,.optionval{
   color: #898989;
+  font-size: 14px;
 }
 .main-price{
   color: #da3f45;
