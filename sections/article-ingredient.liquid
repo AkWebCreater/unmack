@@ -22,7 +22,12 @@
       add_image_padding: section.settings.add_image_padding,
       show_vendor: section.settings.show_vendor
     %}
-    {%- render 'price', product: product, use_variant: true, show_badges: false,product_badges:true , price_class: 'price--large' -%}
+    <div class="price">
+      <span class="main-price" data-var-id="{{product.selected_or_first_available_variant.id}}" data-price="{{ product.selected_or_first_available_variant.price}}">
+        {{product.selected_or_first_available_variant.price | money_without_trailing_zeros}}
+        {% if product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price %}
+        <span class="compare-price">{{product.selected_or_first_available_variant.compare_at_price | money_without_trailing_zeros}}</span>
+    </div>
     <div  class="btn add-cart">Add to cart</div>
     </div>
           {%- endfor -%}
