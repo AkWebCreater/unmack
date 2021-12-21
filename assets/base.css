@@ -2483,4 +2483,7 @@ div.wishlist .ssw-faveiticon{
   .order-cancellation-form .rte{
     padding-right: 20px;
   }  
+  .order-cancellation-form textarea{
+    max-width:80%;
+  }
 }
