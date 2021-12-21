@@ -34,6 +34,7 @@
         "social_sharing"
       ],
       "settings": {
+        "top_blogs_limit": 3
       }
     },
     "ingredients": {
@@ -71,6 +72,7 @@
         "a207e098-8400-4f66-a29a-d0b0aed9a647"
       ],
       "settings": {
+        "title": "Umanac ingredients in this blog",
         "image_ratio": "adapt",
         "show_secondary_image": false,
         "add_image_padding": false,
