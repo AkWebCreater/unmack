@@ -2465,3 +2465,6 @@ div.wishlist .ssw-faveiticon{
 .order-cancellation-form .wrap label{
   color: #999999;
 } 
+.order-cancellation-form .contact__fields{
+  display: flex;
+}
