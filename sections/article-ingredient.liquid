@@ -23,6 +23,9 @@
       show_vendor: section.settings.show_vendor
     %}
     <div class="optionval">
+      {% for product_option in product.options_with_values %}
+      <span>{{ product_option.selected_value }}</span>
+    {% endfor %}
       {{product.selected_or_first_available_variant.option1.selected_value}}
     </div>
     <div class="price">
