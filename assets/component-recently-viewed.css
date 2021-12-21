@@ -29,7 +29,8 @@
   }
   .recently-viewed-products .recent-price{
 font-size: 18px;
-color: var(--color-pincode-validator);
+font-weight: 600;
+color: #c88c58;
   }
   .recently-viewed-products .recent-price-text{
     font-size: 12px;
