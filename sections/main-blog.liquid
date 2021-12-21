@@ -141,9 +141,9 @@ blog strted
         <div class="blog-sidebar side_blgs_k">
 
           {%- for link in linklists.top-blogs.links -%}
-          {% assign top_blogs = link.object limit: section.settings.top_blogs_limit %}
+          {% assign top_blogs = link.object  %}
           <h3 class="blog-page-title">{{link.title}}</h3>
-          {% for topArticle in top_blogs.articles %}
+          {% for topArticle in top_blogs.articles limit: section.settings.top_blogs_limit %}
           <div class="blog-articles__article article">
             {%- render 'article-card', article: topArticle, show_image:true -%}
           </div>
