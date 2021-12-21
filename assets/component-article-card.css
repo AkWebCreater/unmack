@@ -378,7 +378,7 @@ border-color: #222 transparent;
   }
   @media (max-width:600px) {
     
-    .blogs-menu .product_blog_text_li:hover a{ 
+    .blogs-menu .product_blog_text_li:hover> a{ 
       background-color: #f58634;
        /* width: 320px; */
      }
