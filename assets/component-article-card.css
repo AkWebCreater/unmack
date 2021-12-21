@@ -376,7 +376,17 @@ border-color: #222 transparent;
    border-bottom: 1px solid #f58634;background-color: #f58634;
     /* width: 320px; */
   }
-
+  @media (max-width:600px) {
+    
+    .blogs-menu .product_blog_text_li:hover a{ 
+      background-color: #f58634;
+       /* width: 320px; */
+     }
+     .blogs-menu .product_blog_text_li:hover{ 
+      background-color:transparent;
+       /* width: 320px; */
+     }
+  }
 /* search bar */
 .search__button,
 .search__input.field__input {height: 4.6rem;}
