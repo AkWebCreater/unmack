@@ -125,15 +125,15 @@
               </div>
 
                  <div class="price-box">
-	             
+	              {{if compare_at_price_min > price_min}} 
                       <div class="sale"> 
                         <div class="special-price">
-                            {% endraw %}<span class="recent-price-text" >Price :</span>₹<span class=" recent-price">{{html Shopify.formatMoney(price_min, window.money_format)}}</span>{% raw %}
+                            {% endraw %}<span class="recent-price-text" >Price :</span>₹<span class=" recent-price">${price_min.toFixed(2)/100}</span>{% raw %}
                             {{html Shopify.formatMoney(price_min, window.money_format)}}
   						</div>
                        
   						</div>
-                   
+                    {{else}}
                       <div class="regular-product">
                         <div class="special-price without-compare">
                         	{% endraw %}<span class='recent-price-text'>Price</span><span class="recent-price"> ₹ ${price_min.toFixed(2)/100}</span>{% raw %}
@@ -141,7 +141,7 @@
 					 	</div>
                          
 					  </div>
-                   
+                    {{/if}}
  			 	</div>
               <a class="recent-product-title lang1" href="${url}">${splitTitle(title.substring(0, 15))}{{if title.length > 20}}....{{/if}}</a>
 
