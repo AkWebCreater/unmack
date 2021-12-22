@@ -326,7 +326,7 @@ $(document).on('click','cart-remove-button',function(){
 })
 // add proviniance from country select box  for contact form 
 var country = $('#country');
-var proviniance = document.getElementById('proviniance');
+var proviniance = $('#proviniance');
 var provinianceData = country.find(':selected').attr('data-provinces');
 var provinianceDataArr = JSON.parse(states)
 // alert(select)
