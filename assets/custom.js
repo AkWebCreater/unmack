@@ -349,7 +349,7 @@ country.on('change',function(){
     $('.provi').each(function(){
         var $this = $(this), numberOfOptions = $(this).children('option').length;     
         var $styledSelect = $this.next('div.select-styled');
-        var $list = $this.parent().find('.select-options');
+        var $list = $this.parent().find('.select-options').attr('class');
         alert($list)
         $list.html('');
         for (var i = 0; i < numberOfOptions; i++) {
