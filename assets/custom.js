@@ -328,7 +328,7 @@ $(document).on('click','cart-remove-button',function(){
 var country = $('#country');
 var proviniance = $('#proviniance');
 var provinianceData = country.find(':selected').attr('data-provinces');
-var provinianceDataArr = JSON.parse(states)
+var provinianceDataArr = JSON.parse(provinianceData)
 // alert(select)
 // var elmts = ["HTML", "CSS", "JS", "PHP", "jQuery"];
 // up.innerHTML = "Click on the button to "
