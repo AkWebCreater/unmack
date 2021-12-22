@@ -705,7 +705,7 @@ $('.custome-select').each(function(){
 //       }());
 // }
 if($('.body--collection.deal-of-day ').length){
-    var countDownDate = new Date("Jan 5, 2022 15:37:25").getTime();
+    var countDownDate = new Date("5/12/2022").getTime();
     var x = setInterval(function() {
     
         // Get today's date and time
