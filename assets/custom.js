@@ -330,7 +330,8 @@ var country = $('#country');
 var proviniance = $('#proviniance');
 var provinianceData = country.find(':selected').attr('data-provinces');
 
-crateProvinianceOption(provinianceData)
+if(proviniance.length){
+    crateProvinianceOption(provinianceData)
 function crateProvinianceOption(provinianceData) {
     var provinianceDataArr = JSON.parse(provinianceData)
     for (var i = 0; i < provinianceDataArr.length; i++) {
@@ -359,6 +360,7 @@ country.on('change',function(){
         $styledSelect.text($this.children('option').eq(0).text());
       });
 })
+}
 // add gift wrap product on clicking gift wrap checkbox
 $('.gift-wrap-outer .regular-checkbox').click(function() {
     
@@ -699,6 +701,6 @@ if($('.body--collection.deal-of-day ').length){
                     clearInterval(x);
                 }
                 //seconds
-            }, 1000)
+            }, 0)
       }());
 }
