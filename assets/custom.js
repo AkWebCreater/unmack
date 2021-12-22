@@ -347,7 +347,7 @@ function crateProvinianceOption() {
     
 }
 country.on('change',function(){
-    proviniance = $('#proviniance').html('');
+     $('#proviniance').html('');
     alert('changed')
     crateProvinianceOption()
 })
