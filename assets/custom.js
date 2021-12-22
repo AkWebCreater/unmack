@@ -335,7 +335,7 @@ function crateProvinianceOption(provinianceData) {
     var provinianceDataArr = JSON.parse(provinianceData)
     for (var i = 0; i < provinianceDataArr.length; i++) {
         var optn = provinianceDataArr[i][0];
-        var el = document.createElement("li");
+        var el = document.createElement("option");
         el.textContent = optn;
         // el.value = optn;
         proviniance.append(el);
