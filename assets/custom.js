@@ -350,8 +350,6 @@ country.on('change',function(){
         var $this = $(this), numberOfOptions = $(this).children('option').length;     
         var $styledSelect = $this.next('div.select-styled');
         var $list = $this.parent().find('.select-options');
-        alert($list)
-        $list.html('');
         for (var i = 0; i < numberOfOptions; i++) {
             $('<li />', {
                 text: $this.children('option').eq(i).text(),
