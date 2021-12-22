@@ -327,6 +327,8 @@ $(document).on('click','cart-remove-button',function(){
 // add proviniance from country select box  for contact form 
 var country = $('#country');
 var proviniance = $('#proviniance');
+var provinianceData = country.find(':selected').attr('data-provinces');
+crateProvinianceOption(provinianceData)
 function crateProvinianceOption(provinianceData) {
     var provinianceDataArr = JSON.parse(provinianceData)
     for (var i = 0; i < provinianceDataArr.length; i++) {
@@ -341,7 +343,6 @@ function crateProvinianceOption(provinianceData) {
 country.on('change',function(){
     var provinianceData = country.find(':selected').attr('data-provinces');
     proviniance.html('');
-    alert('changed')
     crateProvinianceOption(provinianceData)
 })
 // add gift wrap product on clicking gift wrap checkbox
