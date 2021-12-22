@@ -2449,6 +2449,10 @@ body  .header__search{
     -webkit-transition: all .15s ease-in;
     transition: all .15s ease-in;
 }
+.field__label_custome + div{
+  flex: 1;
+  margin-left: 1rem;
+}
 /* product page */
 .grid.products {
 
