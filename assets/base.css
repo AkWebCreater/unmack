@@ -2422,6 +2422,10 @@ body  .header__search{
 .select-options li{
   list-style: none;
 }
+.field.select__custome{
+  height: 4.5rem;
+  padding: 1rem;
+}
 /* product page */
 .grid.products {
 
