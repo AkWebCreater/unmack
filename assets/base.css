@@ -1171,11 +1171,6 @@ deferred-media {
 
 /* Button - hover */
 
-.button:not([disabled]):hover,
-.shopify-challenge__button:hover,
-.customer button:hover {
-  /* box-shadow: 0 0 0 0.2rem var(--color-button-border); */
-}
 
 /* Button - other */
 
@@ -2458,9 +2453,7 @@ body  .header__search{
   margin-left: 1rem;
 }
 /* product page */
-.grid.products {
 
-}
 
 div.wishlist{
   min-height: 37px;
