@@ -2416,8 +2416,12 @@ body  .header__search{
   }
 }
 /* custome select */
-.select-hidden,.select-options{
+.select-options{
   display: none;
+}
+.select-hidden{
+  opacity: 0;
+  position: absolute;
 }
 .select-options li{
   list-style: none;
