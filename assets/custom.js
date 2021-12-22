@@ -327,16 +327,8 @@ $(document).on('click','cart-remove-button',function(){
 // add proviniance from country select box  for contact form 
 var country = $('#country');
 var proviniance = $('#proviniance');
-var provinianceData = country.find(':selected').attr('data-provinces');
-var provinianceDataArr = JSON.parse(provinianceData)
-// alert(select)
-// var elmts = ["HTML", "CSS", "JS", "PHP", "jQuery"];
-// up.innerHTML = "Click on the button to "
-//             + "perform the operation"+
-//             ".<br>Array - [" + elmts + "]";
-
-// Main function
-function crateProvinianceOption() {
+function crateProvinianceOption(provinianceData) {
+    var provinianceDataArr = JSON.parse(provinianceData)
     for (var i = 0; i < provinianceDataArr.length; i++) {
         var optn = provinianceDataArr[i][0];
         var el = document.createElement("option");
@@ -347,9 +339,10 @@ function crateProvinianceOption() {
     
 }
 country.on('change',function(){
-     $('#proviniance').html('');
+    var provinianceData = country.find(':selected').attr('data-provinces');
+    proviniance.html('');
     alert('changed')
-    crateProvinianceOption()
+    crateProvinianceOption(provinianceData)
 })
 // add gift wrap product on clicking gift wrap checkbox
 $('.gift-wrap-outer .regular-checkbox').click(function() {
