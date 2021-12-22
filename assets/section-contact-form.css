@@ -184,9 +184,9 @@ background-color: #f5f5f5;
 
   } 
 }
-.feeback-select{
+.feedback .feeback-select{
   margin-left: 1rem;
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 }
 .feeback-select .select-styled{
   line-height: 27px;
