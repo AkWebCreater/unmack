@@ -701,6 +701,6 @@ if($('.body--collection.deal-of-day ').length){
                     clearInterval(x);
                 }
                 //seconds
-            }, 0)
+            }, 1000)
       }());
 }
