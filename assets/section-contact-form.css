@@ -186,6 +186,7 @@ background-color: #f5f5f5;
 }
 .feeback-select{
   margin-left: 1rem;
+  margin-bottom: 0;
 }
 .feeback-select .select-styled{
   line-height: 27px;
