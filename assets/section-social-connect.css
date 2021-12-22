@@ -52,7 +52,14 @@
         padding-bottom: 20px;
     }
 }
-
+@media (max-width: 480px){
+    .icon-card {
+        width: 100%;
+        margin: 0;
+        max-width: calc(100%);
+        margin-bottom: 20px;
+    }
+  }
 .section-social-connect{
     margin-bottom: 60px;
 }
