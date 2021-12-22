@@ -72,7 +72,10 @@ body.business-form .main-page-title{
   body.business-form .contact__fields.selecte{
   display:grid;
   }
- 
+  .business-form .page-wrapper p{
+    width: fit-content;
+    margin: auto;
+  }
   
   @media (max-width:480px){
     body.business-form .selecte>*{
