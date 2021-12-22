@@ -675,67 +675,67 @@ $('.custome-select').each(function(){
 });
 
 // countdown timer for deals of day collection page
-// if($('.body--collection.deal-of-day ').length){
-//     function countDown(){
-//         const second = 1000,
-//             minute = second * 60,
-//             hour = minute * 60,
-//             day = hour * 24;
-//         var offerTime = document.getElementById("offer-time").innerText
-//         const countDown = new Date(offerTime).getTime(),
-//             x = setInterval(function() {
-      
-//                 const now = new Date().getTime(),
-//                     distance = countDown - now;
-      
-//                 document.getElementById("days").innerText = Math.floor(distance / (day)),
-//                     document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
-//                     document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
-//                     document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
-      
-//                 //do something later when date is reached
-//                 if (distance < 0) {
-//                     // document.getElementById("headline").innerText = "Offer Gone";
-//                     document.getElementById("countdown").style.display = "none";
-//                     // document.getElementById("content").style.display = "block";
-//                     clearInterval(x);
-//                 }
-//                 //seconds
-//             }, 1000)
-//         }
-
-//         countDown();   
-// }
-
 if($('.body--collection.deal-of-day ').length){
-    var offerTime = document.getElementById("offer-time").innerText
-    var countDownDate = new Date(offerTime).getTime();
-    var x = setInterval(function() {
-    
-        // Get today's date and time
-        var now = new Date().getTime();
+    function countDown(){
+        const second = 1000,
+            minute = second * 60,
+            hour = minute * 60,
+            day = hour * 24;
+        var offerTime = document.getElementById("offer-time").innerText
+        const countDown = new Date(offerTime).getTime(),
+            x = setInterval(function() {
       
-        // Find the distance between now and the count down date
-        var distance = countDownDate - now;
+                const now = new Date().getTime(),
+                    distance = countDown - now;
       
-        // Time calculations for days, hours, minutes and seconds
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                document.getElementById("days").innerText = Math.floor(distance / (day)),
+                    document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+                    document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+                    document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
       
-        // Display the result in the element with id="demo"
-        document.getElementById("days").innerText = days ;
-        document.getElementById("hours").innerText = hours;
-        document.getElementById("minutes").innerText = minutes;
-        document.getElementById("seconds").innerText = seconds;
-        // document.getElementById("offer-time").innerHTML = days + "d " + hours + "h "
-        // + minutes + "m " + seconds + "s ";
-      
-        // If the count down is finished, write some text
-        if (distance < 0) {
-          clearInterval(x);
-          document.getElementById("demo").innerHTML = "EXPIRED";
+                //do something later when date is reached
+                if (distance < 0) {
+                    // document.getElementById("headline").innerText = "Offer Gone";
+                    document.getElementById("countdown").style.display = "none";
+                    // document.getElementById("content").style.display = "block";
+                    clearInterval(x);
+                }
+                //seconds
+            }, 1000)
         }
-      }, 1000);
+
+        countDown();   
 }
+
+// if($('.body--collection.deal-of-day ').length){
+//     var offerTime = document.getElementById("offer-time").innerText
+//     var countDownDate = new Date(offerTime).getTime();
+//     var x = setInterval(function() {
+    
+//         // Get today's date and time
+//         var now = new Date().getTime();
+      
+//         // Find the distance between now and the count down date
+//         var distance = countDownDate - now;
+      
+//         // Time calculations for days, hours, minutes and seconds
+//         var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+//         var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+//         var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+//         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      
+//         // Display the result in the element with id="demo"
+//         document.getElementById("days").innerText = days ;
+//         document.getElementById("hours").innerText = hours;
+//         document.getElementById("minutes").innerText = minutes;
+//         document.getElementById("seconds").innerText = seconds;
+//         // document.getElementById("offer-time").innerHTML = days + "d " + hours + "h "
+//         // + minutes + "m " + seconds + "s ";
+      
+//         // If the count down is finished, write some text
+//         if (distance < 0) {
+//           clearInterval(x);
+//           document.getElementById("demo").innerHTML = "EXPIRED";
+//         }
+//       }, 1000);
+// }
