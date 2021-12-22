@@ -342,11 +342,12 @@ function crateProvinianceOption() {
         var el = document.createElement("option");
         el.textContent = optn;
         el.value = optn;
-        proviniance.appendChild(el);
+        proviniance.append(el);
     }
     
 }
 country.on('change',function(){
+    alert('changed')
     crateProvinianceOption()
 })
 // add gift wrap product on clicking gift wrap checkbox
