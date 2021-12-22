@@ -161,7 +161,7 @@
     },
     "contact": {
       "form": {
-        "name": "Name",
+        "name": "First Name",
         "email": "Email",
         "phone": "Mobile Number",
         "comment": "Comment",
