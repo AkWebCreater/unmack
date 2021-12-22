@@ -344,9 +344,9 @@ function crateProvinianceOption(provinianceData) {
     
 }
 country.on('change',function(){
-    var provinianceData = country.find(':selected').attr('data-provinces');
+    var provinianceData1 = country.find(':selected').attr('data-provinces');
     proviniance.html('');
-    crateProvinianceOption(provinianceData)
+    crateProvinianceOption(provinianceData1)
 })
 // add gift wrap product on clicking gift wrap checkbox
 $('.gift-wrap-outer .regular-checkbox').click(function() {
