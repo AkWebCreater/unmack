@@ -2415,6 +2415,10 @@ body  .header__search{
     transform: translateX(-50%);
   }
 }
+/* custome select */
+.select-hidden{
+  display: none;
+}
 /* product page */
 .grid.products {
 
