@@ -63,7 +63,7 @@
       "type": "main-deal-of-day-product-grid",
       "settings": {
         "products_per_page": 16,
-        "offer-time": "01\/12\/2022",
+        "offer-time": "01\/02\/2022",
         "image_ratio": "square",
         "show_secondary_image": false,
         "add_image_padding": false,
