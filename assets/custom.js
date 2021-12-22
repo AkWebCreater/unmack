@@ -331,14 +331,13 @@ var proviniance = $('#proviniance');
 var provinianceData = country.find(':selected').attr('data-provinces');
 
 crateProvinianceOption(provinianceData)
-$('.select-options').addClass('hide');
 function crateProvinianceOption(provinianceData) {
     var provinianceDataArr = JSON.parse(provinianceData)
     for (var i = 0; i < provinianceDataArr.length; i++) {
         var optn = provinianceDataArr[i][0];
-        var el = document.createElement("option");
+        var el = document.createElement("li");
         el.textContent = optn;
-        el.value = optn;
+        // el.value = optn;
         proviniance.append(el);
     }
     
@@ -349,49 +348,18 @@ country.on('change',function(){
     crateProvinianceOption(provinianceData1)
     $('.provi').each(function(){
         var $this = $(this), numberOfOptions = $(this).children('option').length;
-      
-        $this.addClass('select-hidden'); 
-        $this.wrap('<div class="select"></div>');
-        $this.after('<div class="select-styled"></div>');
-      
+        $this.addClass('select-hidden');       
         var $styledSelect = $this.next('div.select-styled');
         $styledSelect.text($this.children('option').eq(0).text());
       
-        var $list = $('<ul />', {
-            'class': 'select-options'
-        }).insertAfter($styledSelect);
-      
+        var $list = $this.find('.select-options');
+        $list.html('');
         for (var i = 0; i < numberOfOptions; i++) {
             $('<li />', {
                 text: $this.children('option').eq(i).text(),
                 rel: $this.children('option').eq(i).val()
             }).appendTo($list);
         }
-      
-        var $listItems = $list.children('li');
-      
-        $styledSelect.click(function(e) {
-            e.stopPropagation();
-            $('div.select-styled.active').not(this).each(function(){
-                $(this).removeClass('active').next('ul.select-options').hide();
-            });
-            $(this).toggleClass('active').next('ul.select-options').toggle();
-        });
-      
-        $listItems.click(function(e) {
-            e.stopPropagation();
-            $styledSelect.text($(this).text()).removeClass('active');
-            $this.val($(this).attr('rel')).change();
-            
-            $list.hide();
-            //console.log($this.val());
-        });
-      
-        $(document).click(function() {
-            $styledSelect.removeClass('active');
-            $list.hide();
-        });
-      
       });
 })
 // add gift wrap product on clicking gift wrap checkbox
