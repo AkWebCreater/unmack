@@ -344,7 +344,7 @@ function crateProvinianceOption(provinianceData) {
 }
 country.on('change',function(){
     var provinianceData1 = country.find(':selected').attr('data-provinces');
-    
+    proviniance.html(' ')
     crateProvinianceOption(provinianceData1)
     $('.provi').each(function(){
         var $this = $(this), numberOfOptions = $(this).children('option').length;     
