@@ -2419,6 +2419,9 @@ body  .header__search{
 .select-hidden{
   display: none;
 }
+.select-options li{
+  list-style: none;
+}
 /* product page */
 .grid.products {
 

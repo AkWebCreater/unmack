@@ -328,6 +328,7 @@ $(document).on('click','cart-remove-button',function(){
 var country = $('#country');
 var proviniance = $('#proviniance');
 var provinianceData = country.find(':selected').attr('data-provinces');
+$('.select-options').hide();
 crateProvinianceOption(provinianceData)
 function crateProvinianceOption(provinianceData) {
     var provinianceDataArr = JSON.parse(provinianceData)
