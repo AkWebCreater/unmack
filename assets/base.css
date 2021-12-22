@@ -2411,7 +2411,7 @@ body  .header__search{
   }
 }
 /* custome select */
-.select-options{
+.select-hidden,.select-options{
   display: none;
 }
 .select-hidden{
