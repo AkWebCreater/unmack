@@ -644,7 +644,8 @@ $('.custome-select').each(function(){
   $listItems.click(function(e) {
       e.stopPropagation();
       $styledSelect.text($(this).text()).removeClass('active');
-      $this.val($(this).attr('rel'));
+      $this.val($(this).attr('rel')).change();
+      
       $list.hide();
       //console.log($this.val());
   });
