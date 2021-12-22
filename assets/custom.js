@@ -346,21 +346,21 @@ country.on('change',function(){
     var provinianceData1 = country.find(':selected').attr('data-provinces');
     proviniance.html('');
     crateProvinianceOption(provinianceData1)
-    $('.provi').each(function(){
-        var $this = $(this), numberOfOptions = $(this).children('option').length;
-        $this.addClass('select-hidden');       
-        var $styledSelect = $this.next('div.select-styled');
-        $styledSelect.text($this.children('option').eq(0).text());
+    // $('.provi').each(function(){
+    //     var $this = $(this), numberOfOptions = $(this).children('option').length;
+    //     $this.addClass('select-hidden');       
+    //     var $styledSelect = $this.next('div.select-styled');
+    //     $styledSelect.text($this.children('option').eq(0).text());
       
-        var $list = $this.find('.select-options');
-        $list.html('');
-        for (var i = 0; i < numberOfOptions; i++) {
-            $('<li />', {
-                text: $this.children('option').eq(i).text(),
-                rel: $this.children('option').eq(i).val()
-            }).appendTo($list);
-        }
-      });
+    //     var $list = $this.find('.select-options');
+    //     $list.html('');
+    //     for (var i = 0; i < numberOfOptions; i++) {
+    //         $('<li />', {
+    //             text: $this.children('option').eq(i).text(),
+    //             rel: $this.children('option').eq(i).val()
+    //         }).appendTo($list);
+    //     }
+    //   });
 })
 // add gift wrap product on clicking gift wrap checkbox
 $('.gift-wrap-outer .regular-checkbox').click(function() {
