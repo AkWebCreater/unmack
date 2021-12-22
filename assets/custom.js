@@ -327,7 +327,7 @@ $(document).on('click','cart-remove-button',function(){
 // add proviniance from country select box  for contact form 
 var country = $('#country');
 var proviniance = document.getElementById('proviniance');
-var select = country.children().find(':selected').attr('data-provinces');
+var select = country.find(':selected').attr('data-provinces');
 alert(select)
 // var elmts = ["HTML", "CSS", "JS", "PHP", "jQuery"];
 // up.innerHTML = "Click on the button to "
