@@ -288,6 +288,32 @@
                   <label class="field__label">Pincode</label>
                 </div>
            </div>
+           {% if type == 'contact' or business == true %}
+             <div class="contact__fields">
+              <div class="field">
+                <div class="">
+                  <label class="" for="ContactForm-name">Country</label>
+                </div>
+                <div class="field select__custome">
+                  <select name="contact[country]" class="custome-select" id="">
+                    {{all_country_option_tags}}
+                    </select>
+                  </div>
+               
+              </div>
+              <div class="field">
+                <div class="">
+                  <label class="" for="ContactForm-name">Country</label>
+                </div>
+                <div class="field select__custome">
+                  <select name="contact[state]" class="custome-select" id="">
+                    {{all_country_option_tags}}
+                    </select>
+                  </div>
+               
+              </div>
+             </div>
+           {% endif %}
            {% if type == 'careers' %}
            <div class="contact__fields">
             <div class="field">
