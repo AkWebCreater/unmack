@@ -324,6 +324,27 @@ $(document).on('click','cart-remove-button',function(){
         })
     }
 })
+// add proviniance from country select box  for contact form 
+var country = $('#country');
+var proviniance = document.getElementById('proviniance');
+var select = country.children().find(':selected').attr('data-provinces');
+alert(select)
+// var elmts = ["HTML", "CSS", "JS", "PHP", "jQuery"];
+// up.innerHTML = "Click on the button to "
+//             + "perform the operation"+
+//             ".<br>Array - [" + elmts + "]";
+
+// Main function
+// function GFG_Fun() {
+//     for (var i = 0; i < elmts.length; i++) {
+//         var optn = elmts[i];
+//         var el = document.createElement("option");
+//         el.textContent = optn;
+//         el.value = optn;
+//         select.appendChild(el);
+//     }
+//     down.innerHTML = "Elements Added";
+// }
 // add gift wrap product on clicking gift wrap checkbox
 $('.gift-wrap-outer .regular-checkbox').click(function() {
     
