@@ -347,7 +347,16 @@
                       </span>
                     {%- endif -%}
                   </div>
-                 
+                 <div class="field">
+                   <input
+                   type="text"
+                   class="form-field-input form-field-text"
+                   id="register_phone_number"
+                   name="customer[note][phonenumber]"
+                   value=""
+                   />
+                   <label for="register_phone_number" class="form-field-title" >Phone Number</label><br />
+                 </div>
                   <button class="accent-bg button--full-width">
                     {{ 'customer.register.submit' | t }}
                   </button>
