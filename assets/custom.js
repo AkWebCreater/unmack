@@ -331,7 +331,7 @@ var proviniance = $('#proviniance');
 var provinianceData = country.find(':selected').attr('data-provinces');
 
 crateProvinianceOption(provinianceData)
-$('.select-options').hide();
+$('.select-options').addClass('hide');
 function crateProvinianceOption(provinianceData) {
     var provinianceDataArr = JSON.parse(provinianceData)
     for (var i = 0; i < provinianceDataArr.length; i++) {
