@@ -845,6 +845,9 @@ span.lable {
   gap: 20px;
   text-align: center;
 }
+.iconwrapper p{
+  color: #000;
+}
 .iconwrapper > div{
   background-color: #f7f7f7;
   border-radius: 8px;
