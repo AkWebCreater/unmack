@@ -836,3 +836,23 @@ span.lable {
   }
 }
 /* ends here */
+
+/* social App Connected */
+.iconwrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.iconwrapper > div{
+  background-color: #f7f7f7;
+  border-radius: 8px;
+}
+[data-popup="social-login"]{
+  height: 100%;
+}
+[data-popup="social-login"] .popwrapper{
+  display: flex;
+  height: 100%;
+  justify-content: center;
+}
