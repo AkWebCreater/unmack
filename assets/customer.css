@@ -843,10 +843,13 @@ span.lable {
   justify-content: center;
   align-items: center;
   gap: 20px;
+  text-align: center;
 }
 .iconwrapper > div{
   background-color: #f7f7f7;
   border-radius: 8px;
+  font-size: 0;
+  line-height: 1;
   padding: 1rem 3rem;
 }
 [data-popup="social-login"]{
