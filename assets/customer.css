@@ -847,6 +847,7 @@ span.lable {
 .iconwrapper > div{
   background-color: #f7f7f7;
   border-radius: 8px;
+  padding: 1rem 3rem;
 }
 [data-popup="social-login"]{
   height: 100%;
