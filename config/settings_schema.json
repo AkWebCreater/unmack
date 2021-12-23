@@ -22,6 +22,16 @@
       },
       {
         "type": "image_picker",
+        "label": "Account Icon Google",
+        "id": "account-icon-google"
+      },
+      {
+        "type": "image_picker",
+        "label": "Account Icon FB",
+        "id": "account-icon-fb"
+      },
+      {
+        "type": "image_picker",
         "label": "Certificates Image",
         "id": "certificates"
       }

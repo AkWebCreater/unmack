@@ -197,6 +197,18 @@
           <div class="" data-popup-name="social-login">
             <span>Social Login</span>
           </div>
+          <div class="popup mobile" data-popup="social-login">
+            <div class="popwrapper">
+              <div class="iconwrapper">
+                <div class="img">
+                  <img src="{{settings.account-icon-google | img_url: 'master'}}" alt="social-icon">
+                </div>
+                <div class="img">
+                  <img src="{{settings.account-icon-fb | img_url: 'master'}}" alt="social-icon">
+                </div>
+              </div>
+            </div>
+        </div>
         </div>
        <div class="change-password">
         <div class="" data-popup-name="change-password">
@@ -381,6 +393,18 @@
             {%- endif -%}
           {% endpaginate %}
           </div>
+        </div>
+        <div class="popup" data-popup="social-login">
+            <div class="popwrapper">
+              <div class="iconwrapper">
+                <div class="img">
+                  <img src="{{settings.account-icon-google | img_url: 'master'}}" alt="social-icon">
+                </div>
+                <div class="img">
+                  <img src="{{settings.account-icon-fb | img_url: 'master'}}" alt="social-icon">
+                </div>
+              </div>
+            </div>
         </div>
         <div class="popup" data-popup="change-password">
           {{ 'customer.css' | asset_url | stylesheet_tag }}
