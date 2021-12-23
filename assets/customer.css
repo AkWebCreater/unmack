@@ -847,6 +847,7 @@ span.lable {
 }
 .iconwrapper p{
   color: #000;
+  font-weight: 600;
 }
 .iconwrapper > div{
   background-color: #f7f7f7;
