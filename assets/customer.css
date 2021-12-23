@@ -868,3 +868,31 @@ span.lable {
 .reset-password{
   margin: 0;
 }
+[data-popup="change-password"] .popup-header{
+  border: 0;
+}
+[data-popup="change-password"] button{
+  background-color:#fb660c;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+.field_wrapper p{
+  margin: 0;
+  color: #000;
+  font-weight: 600;
+}
+.field_wrapper{
+  margin-bottom: 1rem;
+}
+.field_wrapper .field input{
+  border: 0;
+  background-color: #efefef;
+  color: #a1a1a1;
+  height: 3.5rem;
+border-radius: 4px;
+}
+.field_wrapper .field label{
+  color: #a1a1a1;
+  top: 1.7rem;
+}
