@@ -360,7 +360,7 @@
       "subtext": "Enter a new password for {{ email }}",
       "password": "Password",
       "password_confirm": "Confirm password",
-      "submit": "Reset password"
+      "submit": "Save"
     }
   },
   "gift_cards": {
