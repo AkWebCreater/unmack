@@ -864,3 +864,7 @@ span.lable {
   height: 100%;
   justify-content: center;
 }
+/* change password */
+.reset-password{
+  margin: 0;
+}
