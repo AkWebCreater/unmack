@@ -285,7 +285,7 @@
         "6257f23f-71b7-4859-8c22-153a720c3140": {
           "type": "year",
           "settings": {
-            "image": "shopify:\/\/shop_images\/300_x_354_px___01.jpg",
+            "image": "shopify:\/\/shop_images\/300_x_354_px___01_79f9bf17-0183-4c13-9d1a-8ccfd020e22d.jpg",
             "title": "2015",
             "launched-product": "",
             "product-image": "shopify:\/\/shop_images\/berries_1.jpg",
@@ -298,7 +298,7 @@
         "16305577334f548741-1": {
           "type": "year",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2_190d3639-d9eb-43e6-b3e7-1c9adc4f4bce.jpg",
+            "image": "shopify:\/\/shop_images\/300_x_354_px___02.jpg",
             "title": "2016",
             "launched-product": "acana-adult-small-breed-dry-dog-food",
             "product-image": "shopify:\/\/shop_images\/berries_1.jpg",
@@ -311,7 +311,7 @@
         "16305577334f548741-0": {
           "type": "year",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1_21dd7cca-b45e-4b51-8cf2-4df51ea11687.jpg",
+            "image": "shopify:\/\/shop_images\/300_x_354_px___03.jpg",
             "title": "2017",
             "launched-product": "acana-free-run-duck-dry-dog-food",
             "product-image": "shopify:\/\/shop_images\/berries_1.jpg",
@@ -392,7 +392,7 @@
         "8235c2a9-14db-469e-bae0-5981d02a0874": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/s1.png",
+            "image": "shopify:\/\/shop_images\/What_make_us_different_icon_x_02.png",
             "title": "<h3>FAST &amp; EASY<\/h3>",
             "description": "<p>Get superfood delivered within 3-5 days.<\/p>"
           }
@@ -400,7 +400,7 @@
         "fe05499a-d62d-48fa-8a4b-a5fc2cb09057": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/s2.png",
+            "image": "shopify:\/\/shop_images\/What_make_us_different_icon_x_03.png",
             "title": "<h3>SOURCING &amp; PROCESSING<\/h3>",
             "description": "<p>High quality ingredients sourced from across the globe<\/p>"
           }
@@ -408,7 +408,7 @@
         "4822afcf-b5a0-4844-b8ec-a7ce53680a72": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/s3.png",
+            "image": "shopify:\/\/shop_images\/What_make_us_different_icon_x_01.png",
             "title": "<h3>PACKAGING<\/h3>",
             "description": "<p>Packed in sturdy, reliable bags<\/p>"
           }
@@ -438,7 +438,7 @@
         "0b40a6de-c581-450a-847e-1e85effc054c": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2s.png",
+            "image": "shopify:\/\/shop_images\/Safety_Measures_x_2.png",
             "title": "<h3>Use Soap<\/h3>",
             "description": ""
           }
@@ -446,7 +446,7 @@
         "4920033d-cf38-4ada-b2d5-24cdeb042e1f": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/3s.png",
+            "image": "shopify:\/\/shop_images\/Safety_Measures_x_3.png",
             "title": "<h3>Avoid Crowd<\/h3>",
             "description": ""
           }
@@ -454,7 +454,7 @@
         "e7facd18-0a33-4129-9f19-ea20ac062ee0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/4s.png",
+            "image": "shopify:\/\/shop_images\/Safety_Measures_x_4.png",
             "title": "<h3>Wear Mask<\/h3>",
             "description": ""
           }
@@ -462,7 +462,7 @@
         "4998514a-7991-4a40-bfc1-4ca522442d1d": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/5s.png",
+            "image": "shopify:\/\/shop_images\/Safety_Measures_x_6.png",
             "title": "<h3>Avoid Shakehand<\/h3>",
             "description": ""
           }
