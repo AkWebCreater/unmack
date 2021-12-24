@@ -874,14 +874,14 @@ span.lable {
 [data-popup="change-password"] .popup-header{
   border: 0;
 }
- .customer .popup .btnEdit{
+ .btnEdit{
   background-color:#fb660c;
   color: #fff;
   font-size: 18px;
   font-weight: 600;
   padding: 3px 14px;
 }
-.customer .popup .BtnSave{
+.BtnSave{
   background-color:#727272;
   color: #fff;
   font-size: 18px;
