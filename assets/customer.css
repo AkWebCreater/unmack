@@ -661,10 +661,15 @@ label[for="AddressProvinceNew"] {
 }
 
 li[data-address] {
-  margin-top: 1rem;
+  padding: 0.8rem 0;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
   display: flex;
 }
 
+li[data-address]:last-child{
+  margin-bottom: 1rem;
+}
 .addresses [aria-expanded="false"] ~ div[id] {
   display: none;
 }
@@ -890,6 +895,7 @@ span.lable {
 .customer .popup .BtnSave{
   background-color:#727272;
   color: #fff;
+  margin-right: 0;
 
 }
 .field_wrapper p{
