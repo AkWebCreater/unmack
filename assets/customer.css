@@ -971,6 +971,25 @@ border: 0 !important;
   color: #929292 !important;
   font-weight: 600 !important;
 }
+td.product-item a{
+  position: relative;
+}
+td.product-item a::before,td.product-item a::after{
+  content:"";
+  position: absolute; 
+  width: 100%;
+  height: 30px;
+  background-repeat: no-repeat;
+}
+td.product-item a::after{
+background-image: url('https://cdn.shopify.com/s/files/1/0591/8192/4552/files/icon-3_58f70b03-7e8c-4395-b4c8-2726191d3971.png?v=1640329677');
+
+}
+  td.product-item a::before{
+
+  background-image: url('https://cdn.shopify.com/s/files/1/0591/8192/4552/files/icon-3_58f70b03-7e8c-4395-b4c8-2726191d3971.png?v=1640329677');
+
+  }
 #RowOrder a{
   box-shadow: none;
   font-size: 1.6rem;
