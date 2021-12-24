@@ -661,11 +661,15 @@ label[for="AddressProvinceNew"] {
 }
 
 li[data-address] {
-  margin-top: 5rem;
+  margin-top: 1rem;
+  display: flex;
 }
 
 .addresses [aria-expanded="false"] ~ div[id] {
   display: none;
+}
+.info .details{
+  width: 100%;
 }
 
 .addresses [aria-expanded="true"] ~ div[id] {
