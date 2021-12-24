@@ -866,7 +866,7 @@ span.lable {
 }
 /* change password */
 .reset-password{
-  margin: 0;
+  margin: 0 !important;
 }
 [data-popup="change-password"] .popup-header{
   border: 0;
