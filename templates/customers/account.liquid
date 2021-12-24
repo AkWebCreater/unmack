@@ -32,9 +32,7 @@
             
           </div>
           <div class="popup mobile open" data-popup="order-history">
-            <div class="popup-header accent">
-              <span class="h2">{{ 'customer.orders.title' | t }}</span>
-            </div>
+            
             <div class="popup-body">
               {% paginate customer.orders by customer.orders.size %}
               {%- if customer.orders.size > 0 -%}
@@ -352,9 +350,7 @@
       </div>
       <div class="account-main-body">
         <div class="popup open" data-popup="order-history">
-          <div class="popup-header accent">
-            <span class="h2">{{ 'customer.orders.title' | t }}</span>
-          </div>
+         
           <div class="popup-body">
             {% paginate customer.orders by customer.orders.size %}
             {%- if customer.orders.size > 0 -%}
