@@ -967,8 +967,9 @@ border: 0 !important;
  font-weight:600;
 }
 .producct-details-accound *{
-  font-size: 1.2rem;
-  color: #929292;
+  font-size: 1.2rem !important;
+  color: #929292 !important;
+  font-weight: 600 !important;
 }
 #RowOrder a{
   box-shadow: none;
