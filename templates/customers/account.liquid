@@ -720,6 +720,7 @@
               
                   <ul role="list">
                     {%- for address in customer.addresses -%}
+                    {% if address == customer.default_address %}
                     <li data-address>
                      
                       <span class="accent">{{ 'customer.addresses.default' | t }}</span>
@@ -828,6 +829,7 @@
                       {%- endform -%}
                     </div>
                   </li>
+                  {% endif %}
                     {% endfor %}
                     {%- for address in customer.addresses -%}
                     {% if address != customer.default_address %}
