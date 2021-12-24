@@ -155,7 +155,7 @@
                 <span class="lable">Default Adderess </span>
                 {%- if customer.addresses.size > 0 -%}
                 <span class="details">
-                  {% assign address = customer.default_address %}
+                  <!-- {% assign address = customer.default_address %}
                   
                   <div class="addr">
                     {% if address.company != blank %}
@@ -182,7 +182,7 @@
                         </strong>
                         {% endif %}
                        
-                      </div>
+                      </div> -->
                 </span>
                 <ul role="list">
                   {%- for address in customer.addresses -%}
