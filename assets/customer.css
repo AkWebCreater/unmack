@@ -905,6 +905,10 @@ border-radius: 4px;
   font-weight: 600;
   padding-top: 1.4rem;
   padding-bottom: 1.4rem;
+  border-collapse: collapse;
+}
+.order-history thead,.order-history tbody{
+  border-collapse: collapse;
 }
 .customer .order-history{
   border-collapse: separate;
@@ -912,7 +916,8 @@ border-radius: 4px;
 .order-history th,.order-history td {
   text-align:center;
   border:1px solid black;
-  padding:5px
+  padding:5px;
+  border-collapse: collapse;
 
 }
 .order-history tr{
