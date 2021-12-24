@@ -942,6 +942,7 @@ border: 0 !important;
   border: 1px solid #c2c2c2;
   font-weight: 600;
   padding: 10px !important;
+  text-transform: capitalize;
   text-align: center !important; 
 }
 .customer .order-history tfoot::before, .customer .order-history thead::after,.order-history tr::after{
@@ -953,6 +954,7 @@ border: 0 !important;
 }
 #RowOrder a{
   padding: 0;
+  text-align: center;
 }
 #row-payment,#RowOrder a,#row-date,#row-total,#row-fulfillment{
  color: #de965c; 
