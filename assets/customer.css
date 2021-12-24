@@ -934,7 +934,11 @@ border: 0 !important;
 }
 .head-table{
   border-collapse:collapse ;
+}
+.head-table *{
   color: #818181;
+  background-color: #f5f5f5;
+  font-weight: 600;
 }
 .customer .order-history tfoot::before, .customer .order-history thead::after,.order-history tr::after{
   display: none !important;
@@ -943,11 +947,12 @@ border: 0 !important;
   width: 150px;
   font-weight: 600;
 }
-#row-payment,#RowOrder,#row-total,#row-fulfillment{
+#row-payment,#RowOrder a,#row-date,#row-total,#row-fulfillment{
  color: #de965c; 
  background-color: #fff;
  font-weight:600;
 }
+
 #RowOrder a{
   box-shadow: none;
 }
