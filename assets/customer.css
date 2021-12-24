@@ -925,3 +925,6 @@ border-radius: 4px;
 .order-history tr{
 border: 0 !important;
 }
+.order-history tr::after{
+  display: none !important;
+}
