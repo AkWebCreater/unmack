@@ -726,7 +726,7 @@
                       <span class="accent">{{ 'customer.addresses.default' | t }} &nbsp;</span>
                     
                     {{ address | format_address | replace: '<br>', ','}}
-                    <button class="BtnEdit"
+                    <button class="btnEdit"
                       type="button"
                       id="EditFormButton_{{ address.id }}"
                       aria-label="{{ 'customer.addresses.edit_address' | t }} {{ forloop.index }}"
@@ -837,7 +837,7 @@
                       
                     <li data-address>
                       {{ address | format_address | replace: '<br>', ','}}
-                      <button class="BtnEdit"
+                      <button class="btnEdit"
                         type="button"
                         id="EditFormButton_{{ address.id }}"
                         aria-label="{{ 'customer.addresses.edit_address' | t }} {{ forloop.index }}"
@@ -944,7 +944,7 @@
                     {%- endfor -%}
                   </ul>
                   <div data-address>
-                    <button class="BtnEdit"
+                    <button class="btnEdit"
                       type="button"
                       aria-expanded="false"
                       aria-controls="AddAddress"
