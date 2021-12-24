@@ -958,6 +958,9 @@ border: 0 !important;
   padding: 0;
   text-align: center;
 }
+#ColumnDate,#row-date{
+  min-width: 125px;
+}
 #row-payment,#RowOrder a,#row-date,#row-total,#row-fulfillment{
  color: #de965c; 
  background-color: #fff;
