@@ -951,6 +951,9 @@ border: 0 !important;
   width: 150px;
   font-weight: 600;
 }
+#RowOrder a{
+  padding: 0;
+}
 #row-payment,#RowOrder a,#row-date,#row-total,#row-fulfillment{
  color: #de965c; 
  background-color: #fff;
