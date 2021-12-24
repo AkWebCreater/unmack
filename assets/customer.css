@@ -899,3 +899,20 @@ border-radius: 4px;
   color: #a1a1a1;
   top: .8rem;
 }
+/* order-history */
+.order-history thead th{
+  color: #797979;
+  font-weight: 600;
+  padding-top: 1.4rem;
+  padding-bottom: 1.4rem;
+}
+
+.order-history th,.order-history td {
+  text-align:center;
+  border:1px solid black;
+  padding:5px
+
+}
+.order-history tr{
+  border: 0 !important;
+}
