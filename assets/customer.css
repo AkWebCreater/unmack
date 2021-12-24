@@ -978,17 +978,22 @@ td.product-item a::before,td.product-item a::after{
   content:"";
   position: absolute; 
   width: 100%;
-  height: 30px;
+  height: 16px;
   background-repeat: no-repeat;
+  background-position-x: center;
 }
 td.product-item a::after{
 background-image: url('https://cdn.shopify.com/s/files/1/0591/8192/4552/files/icon-3_58f70b03-7e8c-4395-b4c8-2726191d3971.png?v=1640329677');
+left: 0;
+bottom: -18px;
+
 
 }
   td.product-item a::before{
 
-  background-image: url('https://cdn.shopify.com/s/files/1/0591/8192/4552/files/icon-3_58f70b03-7e8c-4395-b4c8-2726191d3971.png?v=1640329677');
-
+  background-image: url('https://cdn.shopify.com/s/files/1/0591/8192/4552/files/icon-2_b837e083-a1e6-422e-83a5-315186380bb2.png?v=1640329696');
+  left: 0;
+  top: -18px;
   }
 #RowOrder a{
   box-shadow: none;
