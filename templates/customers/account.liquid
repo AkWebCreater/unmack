@@ -723,10 +723,10 @@
                     {% if address == customer.default_address %}
                     <li data-address>
                      
-                      <span class="accent">{{ 'customer.addresses.default' | t }}</span>
+                      <span class="accent">{{ 'customer.addresses.default' | t }} &nbsp;</span>
                     
                     {{ address | format_address | replace: '<br>', ','}}
-                    <button
+                    <button class="BtnEdit"
                       type="button"
                       id="EditFormButton_{{ address.id }}"
                       aria-label="{{ 'customer.addresses.edit_address' | t }} {{ forloop.index }}"
@@ -736,7 +736,7 @@
                     >
                       {{ 'customer.addresses.edit' | t }}
                     </button>
-                    <button
+                    <button class="BtnSave"
                       type="button"
                       aria-label="{{ 'customer.addresses.delete' | t }} {{ forloop.index }}"
                       data-target="{{ address.url }}"
@@ -837,7 +837,7 @@
                       
                     <li data-address>
                       {{ address | format_address | replace: '<br>', ','}}
-                      <button
+                      <button class="BtnEdit"
                         type="button"
                         id="EditFormButton_{{ address.id }}"
                         aria-label="{{ 'customer.addresses.edit_address' | t }} {{ forloop.index }}"
@@ -847,7 +847,7 @@
                       >
                         {{ 'customer.addresses.edit' | t }}
                       </button>
-                      <button
+                      <button class="BtnSave"
                         type="button"
                         aria-label="{{ 'customer.addresses.delete' | t }} {{ forloop.index }}"
                         data-target="{{ address.url }}"
@@ -944,7 +944,7 @@
                     {%- endfor -%}
                   </ul>
                   <div data-address>
-                    <button
+                    <button class="BtnEdit"
                       type="button"
                       aria-expanded="false"
                       aria-controls="AddAddress"

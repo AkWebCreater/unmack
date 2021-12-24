@@ -629,7 +629,7 @@ margin: auto;
 
 @media screen and (min-width: 750px) {
   .addresses li > button:first-of-type {
-    margin-top: 3rem;
+margin-left: auto;
   }
 }
 
@@ -874,8 +874,15 @@ span.lable {
 [data-popup="change-password"] .popup-header{
   border: 0;
 }
-[data-popup="change-password"] button{
+ .BtnEdit{
   background-color:#fb660c;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 3px 14px;
+}
+.BtnSave{
+  background-color:#727272;
   color: #fff;
   font-size: 18px;
   font-weight: 600;
