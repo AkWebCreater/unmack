@@ -931,3 +931,9 @@ border: 0 !important;
 .customer .order-history tfoot::before, .customer .order-history thead::after,.order-history tr::after{
   display: none !important;
 }
+#RowOrder,#ColumnOrder,#row-total,#ColumnTotal{
+  max-width: 150px;
+}
+#row-payment,#ColumnPayment,#row-fulfillment,#ColumnFulfillment{
+  max-width: 160px;
+}

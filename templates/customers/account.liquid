@@ -381,16 +381,16 @@
                           {{ order.name }}
                         </a>
                       </td>
-                      <td headers="RowOrder ColumnDate" role="cell" data-label="{{ 'customer.orders.date' | t }}">
+                      <td id="row-date" headers="RowOrder ColumnDate" role="cell" data-label="{{ 'customer.orders.date' | t }}">
                         {{ order.created_at | time_tag: format: 'date' }}
                       </td>
-                      <td headers="RowOrder ColumnPayment" role="cell" data-label="{{ 'customer.orders.payment_status' | t }}">
+                      <td id="row-payment" headers="RowOrder ColumnPayment" role="cell" data-label="{{ 'customer.orders.payment_status' | t }}">
                         {{ order.financial_status_label }}
                       </td>
-                      <td headers="RowOrder ColumnFulfillment" role="cell" data-label="{{ 'customer.orders.fulfillment_status' | t }}">
+                      <td id="row-fulfillment" headers="RowOrder ColumnFulfillment" role="cell" data-label="{{ 'customer.orders.fulfillment_status' | t }}">
                         {{ order.fulfillment_status_label }}
                       </td>
-                      <td headers="RowOrder ColumnTotal" role="cell" data-label="{{ 'customer.orders.total' | t }}">
+                      <td id="row-total" headers="RowOrder ColumnTotal" role="cell" data-label="{{ 'customer.orders.total' | t }}">
                         {{ order.total_price | money_with_currency }}</td>
                     </tr>
                     {% for item in order.line_items %}
