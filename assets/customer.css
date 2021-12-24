@@ -913,6 +913,9 @@ border-radius: 4px;
 }
 .customer .order-history{
   border-collapse: separate;
+  border: 0 !important;
+  border-collapse: separate;
+  border-spacing: 12px;
 }
 .order-history th,.order-history td {
   text-align:center;
@@ -922,7 +925,5 @@ border-radius: 4px;
 
 }
 .order-history tr{
-  border: 0 !important;
-  border-collapse: separate;
-  border-spacing: 25px;
+
 }
