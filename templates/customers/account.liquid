@@ -354,18 +354,18 @@
           <div class="popup-body">
             {% paginate customer.orders by customer.orders.size %}
             {%- if customer.orders.size > 0 -%}
-            <table class="head-table">
-              <thead role="rowgroup">
-                <tr role="row">
-                  <th id="ColumnOrder" scope="col" role="columnheader">{{ 'customer.orders.order_number' | t }}</th>
-                  <th id="ColumnDate" scope="col" role="columnheader">{{ 'customer.orders.date' | t }}</th>
-                  <th id="ColumnPayment" scope="col" role="columnheader">{{ 'customer.orders.payment_status' | t }}</th>
-                  <th id="ColumnFulfillment" scope="col" role="columnheader">{{ 'customer.orders.fulfillment_status' | t }}</th>
-                  <th id="ColumnTotal" scope="col" role="columnheader">{{ 'customer.orders.total' | t }}</th>
-                </tr>
-              </thead>
-            </table>
-              <table role="table" class="order-history">
+            <table role="table" class="order-history">
+                <table class="head-table">
+                  <thead role="rowgroup">
+                    <tr role="row">
+                      <th id="ColumnOrder" scope="col" role="columnheader">{{ 'customer.orders.order_number' | t }}</th>
+                      <th id="ColumnDate" scope="col" role="columnheader">{{ 'customer.orders.date' | t }}</th>
+                      <th id="ColumnPayment" scope="col" role="columnheader">{{ 'customer.orders.payment_status' | t }}</th>
+                      <th id="ColumnFulfillment" scope="col" role="columnheader">{{ 'customer.orders.fulfillment_status' | t }}</th>
+                      <th id="ColumnTotal" scope="col" role="columnheader">{{ 'customer.orders.total' | t }}</th>
+                    </tr>
+                  </thead>
+                </table>
   
                 
                 <tbody role="rowgroup">
