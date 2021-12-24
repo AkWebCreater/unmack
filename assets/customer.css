@@ -925,6 +925,9 @@ border-radius: 4px;
 .order-history tr{
 border: 0 !important;
 }
-.order-history tr::after{
+.head-table{
+  border-collapse:collapse ;
+}
+.customer .order-history tfoot::before, .customer .order-history thead::after,.order-history tr::after{
   display: none !important;
 }
