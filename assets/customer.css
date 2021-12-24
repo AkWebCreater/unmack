@@ -665,6 +665,7 @@ li[data-address] {
   align-items: center;
   border-bottom: 1px solid #ccc;
   display: flex;
+  position: relative;
 }
 
 li[data-address]:last-child{
@@ -679,6 +680,9 @@ li[data-address]:last-child{
 
 .addresses [aria-expanded="true"] ~ div[id] {
   display: block;
+  position: absolute;
+  background-color: #fff;
+  top: 0;
 }
 
 .addresses h2 {
