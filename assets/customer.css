@@ -921,10 +921,12 @@ border-radius: 4px;
 .customer table{
   box-shadow: none;
 }
-.order-history th,.order-history td {
+.order-history td {
   text-align:center;
   border:1px solid #c5c5c5;
   padding:5px;
+  font-size: 1.6rem;
+  font-weight: 600;
   border-collapse: collapse;
   padding: 10px !important;
 
@@ -950,6 +952,7 @@ border: 0 !important;
 #RowOrder,#ColumnOrder,#row-total,#ColumnTotal{
   width: 150px;
   font-weight: 600;
+  min-width: 125px;
 }
 #RowOrder a{
   padding: 0;
@@ -968,6 +971,7 @@ border: 0 !important;
 }
 #row-payment,#ColumnPayment,#row-fulfillment,#ColumnFulfillment{
   width: 160px;
+  min-width: 125px;
 }
 thead::after{
   display: none!important;
