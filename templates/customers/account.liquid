@@ -354,96 +354,94 @@
           <div class="popup-body">
             {% paginate customer.orders by customer.orders.size %}
             {%- if customer.orders.size > 0 -%}
-            <table role="table" class="order-history">
-                <table class="head-table">
-                  <thead role="rowgroup">
+            <table class="head-table">
+              <thead role="rowgroup">
+                <tr role="row">
+                  <th id="ColumnOrder" scope="col" role="columnheader">{{ 'customer.orders.order_number' | t }}</th>
+                  <th id="ColumnDate" scope="col" role="columnheader">{{ 'customer.orders.date' | t }}</th>
+                  <th id="ColumnPayment" scope="col" role="columnheader">{{ 'customer.orders.payment_status' | t }}</th>
+                  <th id="ColumnFulfillment" scope="col" role="columnheader">{{ 'customer.orders.fulfillment_status' | t }}</th>
+                  <th id="ColumnTotal" scope="col" role="columnheader">{{ 'customer.orders.total' | t }}</th>
+                </tr>
+              </thead>
+            </table>
+              <table role="table" class="order-history">
+  
+                
+                <tbody role="rowgroup">
+                  {%- for order in customer.orders -%}
                     <tr role="row">
-                      <th id="ColumnOrder" scope="col" role="columnheader">{{ 'customer.orders.order_number' | t }}</th>
-                      <th id="ColumnDate" scope="col" role="columnheader">{{ 'customer.orders.date' | t }}</th>
-                      <th id="ColumnPayment" scope="col" role="columnheader">{{ 'customer.orders.payment_status' | t }}</th>
-                      <th id="ColumnFulfillment" scope="col" role="columnheader">{{ 'customer.orders.fulfillment_status' | t }}</th>
-                      <th id="ColumnTotal" scope="col" role="columnheader">{{ 'customer.orders.total' | t }}</th>
+                      <td
+                        id="RowOrder"
+                        role="cell"
+                        headers="ColumnOrder"
+                        data-label="{{ 'customer.orders.order_number' | t }}"
+                      >
+                        <a href="{{ order.customer_url }}" aria-label="{{ 'customer.orders.order_number_link' | t: number: order.name }}">
+                          {{ order.name }}
+                        </a>
+                      </td>
+                      <td headers="RowOrder ColumnDate" role="cell" data-label="{{ 'customer.orders.date' | t }}">
+                        {{ order.created_at | time_tag: format: 'date' }}
+                      </td>
+                      <td headers="RowOrder ColumnPayment" role="cell" data-label="{{ 'customer.orders.payment_status' | t }}">
+                        {{ order.financial_status_label }}
+                      </td>
+                      <td headers="RowOrder ColumnFulfillment" role="cell" data-label="{{ 'customer.orders.fulfillment_status' | t }}">
+                        {{ order.fulfillment_status_label }}
+                      </td>
+                      <td headers="RowOrder ColumnTotal" role="cell" data-label="{{ 'customer.orders.total' | t }}">
+                        {{ order.total_price | money_with_currency }}</td>
                     </tr>
-                  </thead>
-                </table>
-                
-                <table>
-              
-                  <tbody role="rowgroup">
-                    {%- for order in customer.orders -%}
-                      <tr role="row">
-                        <td
-                          id="RowOrder"
-                          role="cell"
-                          headers="ColumnOrder"
-                          data-label="{{ 'customer.orders.order_number' | t }}"
-                        >
-                          <a href="{{ order.customer_url }}" aria-label="{{ 'customer.orders.order_number_link' | t: number: order.name }}">
-                            {{ order.name }}
-                          </a>
-                        </td>
-                        <td headers="RowOrder ColumnDate" role="cell" data-label="{{ 'customer.orders.date' | t }}">
-                          {{ order.created_at | time_tag: format: 'date' }}
-                        </td>
-                        <td headers="RowOrder ColumnPayment" role="cell" data-label="{{ 'customer.orders.payment_status' | t }}">
-                          {{ order.financial_status_label }}
-                        </td>
-                        <td headers="RowOrder ColumnFulfillment" role="cell" data-label="{{ 'customer.orders.fulfillment_status' | t }}">
-                          {{ order.fulfillment_status_label }}
-                        </td>
-                        <td headers="RowOrder ColumnTotal" role="cell" data-label="{{ 'customer.orders.total' | t }}">
-                          {{ order.total_price | money_with_currency }}</td>
-                      </tr>
-                      {% for item in order.line_items %}
-                      <tr class="producct-details-accound">
-                        {% if forloop.last == true %}
-                
-                        <td>
-                          <span><img src="{{item.product.featured_image |img_url}}"></span>
-                        </td>
-                        <td>
-                          <a href="{{ item.url }}"> {{ item.title  }}</a>
-                        </td>
-                        <td>
-                          <div class="track-detail">
-                            <span class="">Tracking Detail</span>
-                            <span><strong>Courier Name </strong> :{% if item.fulfillment.tracking_company %}{{ item.fulfillment.tracking_company }}{% else %}NA{% endif %}</span>
-                            <span><strong>Tracking No </strong> :{% if item.fulfillment.tracking_number %}<a href="{{ item.fulfillment.tracking_url }}" target="_blank" rel="noopener noreferrer">#{{ item.fulfillment.tracking_number }}</a>{% else %}Not Available {% endif %}</span>
-                          </div>
-                        </td>
-                        <td class="product-item" id="product-{{item.variant.id}}">
-                          <form method="post" action="/cart/add" id="add-to-cart-form" accept-charset="UTF-8" class="shopify-product-form" enctype="multipart/form-data"><input type="hidden" name="form_type" value="product"><input type="hidden" name="utf8" value="✓">
-                            <input type="hidden" name="id" value="{{ item.variant.id }}" />
-                            <a href="{{item.url}}" class="add-to-cart-btn">Buy Again</a> 
-                          </form>
-                        </td>
-                
-                        <td><a href="{{item.url}}#aproduct">Add Review</a> </td>
-                        {% else %}
-                        <td>
-                          <span><img src="{{item.product.featured_image |img_url}}"></span>
-                        </td>
-                        <td>
-                          <a href="{{ item.url }}">{{ item.title  }}</a>,
-                        </td>
-                        <td>
-                          <div class="track-detail">
-                            <span class="">Tracking Detail</span>
-                            <span><strong>Courier Name </strong> :{% if item.fulfillment.tracking_company %}{{ item.fulfillment.tracking_company }}{% else %}NA{% endif %}</span>
-                            <span><strong>Tracking No </strong> :{% if item.fulfillment.tracking_number %} <a href="{{ item.fulfillment.tracking_url }}" target="_blank" rel="noopener noreferrer"> #{{ item.fulfillment.tracking_number }}</a>{% else %}Not Available {% endif %}</span>
-                
-                          </div>
-                        </td>
-                        <td><a href="{{item.url}}" class="add-to-cart-btn">Buy Again</a> </td>
-                
-                        <td><a href="{{item.url}}#aproduct">Add Review</a> </td>
-                
-                        {% endif %}
-                      </tr>
-                      {% endfor %}
-                    {%- endfor -%}
-                  </tbody>
-                </table>
+                    {% for item in order.line_items %}
+                    <tr class="producct-details-accound">
+                      {% if forloop.last == true %}
+        
+                      <td>
+                        <span><img src="{{item.product.featured_image |img_url}}"></span>
+                      </td>
+                      <td>
+                        <a href="{{ item.url }}"> {{ item.title  }}</a>
+                      </td>
+                      <td>
+                        <div class="track-detail">
+                          <span class="">Tracking Detail</span>
+                          <span><strong>Courier Name </strong> :{% if item.fulfillment.tracking_company %}{{ item.fulfillment.tracking_company }}{% else %}NA{% endif %}</span>
+                          <span><strong>Tracking No </strong> :{% if item.fulfillment.tracking_number %}<a href="{{ item.fulfillment.tracking_url }}" target="_blank" rel="noopener noreferrer">#{{ item.fulfillment.tracking_number }}</a>{% else %}Not Available {% endif %}</span>
+                        </div>
+                      </td>
+                      <td class="product-item" id="product-{{item.variant.id}}">
+                        <form method="post" action="/cart/add" id="add-to-cart-form" accept-charset="UTF-8" class="shopify-product-form" enctype="multipart/form-data"><input type="hidden" name="form_type" value="product"><input type="hidden" name="utf8" value="✓">
+                          <input type="hidden" name="id" value="{{ item.variant.id }}" />
+                          <a href="{{item.url}}" class="add-to-cart-btn">Buy Again</a> 
+                        </form>
+                      </td>
+        
+                      <td><a href="{{item.url}}#aproduct">Add Review</a> </td>
+                      {% else %}
+                      <td>
+                        <span><img src="{{item.product.featured_image |img_url}}"></span>
+                      </td>
+                      <td>
+                        <a href="{{ item.url }}">{{ item.title  }}</a>,
+                      </td>
+                      <td>
+                        <div class="track-detail">
+                          <span class="">Tracking Detail</span>
+                          <span><strong>Courier Name </strong> :{% if item.fulfillment.tracking_company %}{{ item.fulfillment.tracking_company }}{% else %}NA{% endif %}</span>
+                          <span><strong>Tracking No </strong> :{% if item.fulfillment.tracking_number %} <a href="{{ item.fulfillment.tracking_url }}" target="_blank" rel="noopener noreferrer"> #{{ item.fulfillment.tracking_number }}</a>{% else %}Not Available {% endif %}</span>
+        
+                        </div>
+                      </td>
+                      <td><a href="{{item.url}}" class="add-to-cart-btn">Buy Again</a> </td>
+        
+                      <td><a href="{{item.url}}#aproduct">Add Review</a> </td>
+        
+                      {% endif %}
+                    </tr>
+                    {% endfor %}
+                  {%- endfor -%}
+                </tbody>
               </table>
             {%- else -%}
               <p>{{ 'customer.orders.none' | t }}</p>
