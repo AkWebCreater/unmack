@@ -907,8 +907,9 @@ border-radius: 4px;
   padding-bottom: 1.4rem;
   border-collapse: collapse;
 }
-.order-history thead,.order-history tbody{
+.order-history thead,.order-history tbody,.order-history th,.order-history td{
   border-collapse: collapse;
+  border-spacing: 0;
 }
 .customer .order-history{
   border-collapse: separate;
