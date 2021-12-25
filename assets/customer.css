@@ -668,6 +668,10 @@ li[data-address] {
   position: relative;
 }
 
+div[data-address]{
+  position: relative;
+}
+
 li[data-address]:last-child{
   margin-bottom: 1rem;
 }
