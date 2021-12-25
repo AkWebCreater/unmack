@@ -888,7 +888,7 @@ span.lable {
 [data-popup="change-password"] .popup-header{
   border: 0;
 }
- .customer .popup .btnEdit,.customer .popup ,.BtnSave,.btnEdit{
+ .customer .popup .btnEdit,.customer .popup .BtnSave{
   color: #fff;
   font-size: 15px;
   text-transform: uppercase;
