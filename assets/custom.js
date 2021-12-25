@@ -260,7 +260,7 @@ function addToCart(qnt, id,Callback) {
 }
 // account logged in page edit address
 $('.btnEdit').click(function(){
-    $(this).parent('li').siblings().find('div[id]').slideDown();
+    // $(this).parent('li').siblings().find('div[id]').slideDown();
     $(this).parent('li').siblings().find('div[id]').slideUp();
 })
 // add cart
