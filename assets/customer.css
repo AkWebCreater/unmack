@@ -888,7 +888,7 @@ span.lable {
 [data-popup="change-password"] .popup-header{
   border: 0;
 }
- .customer .popup .btnEdit,.customer .popup .BtnSave ,.customer .BtnSave, .customer .btnEdit{
+ .customer .popup .btnEdit,.customer .popup .BtnSave ,body  .BtnSave,body .btnEdit{
   color: #fff;
   font-size: 15px;
   text-transform: uppercase;
@@ -898,10 +898,10 @@ span.lable {
   box-shadow: none !important;
   border: 0;
 }
-.customer  .btnEdit{
+ body  .btnEdit{
   background-color:#fb660c;
 }
-.customer  .BtnSave{
+body  .BtnSave{
   background-color:#727272;
   color: #fff;
   margin-right: 0;
