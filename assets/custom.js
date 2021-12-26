@@ -262,6 +262,11 @@ function addToCart(qnt, id,Callback) {
 $('.btnEdit').click(function(){
     // $(this).parent('li').siblings().find('div[id]').slideDown();
     $(this).parent('li').siblings().find('[aria-expanded="true"]').attr("aria-expanded",false);
+    $(this).parent('ul').siblings().find('[aria-expanded="true"]').attr("aria-expanded",false);
+})
+$('.BtnSave').click(function(){
+    // $(this).parent('li').siblings().find('div[id]').slideDown();
+    $(this).closest('div[id]').hide();
 })
 // add cart
 $(document).on('click', '.add-cart', function() {
