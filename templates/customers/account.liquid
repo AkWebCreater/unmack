@@ -171,10 +171,10 @@
                       {%- for address in customer.addresses -%}
                       {% if address == customer.default_address %}
                       <li data-address>
-                        {{ address | format_address | replace: '<br>', ','}}  &nbsp;<span class="accent">{{ 'customer.addresses.default' | t }}</span>
                        
-                       
+                        <span class="accent default">{{ 'customer.addresses.default' | t }} &nbsp;</span>
                       
+                      {{ address | format_address | replace: '<br>', ','}}
                       <button class="btnEdit"
                         type="button"
                         id="EditFormButton_{{ address.id }}"
@@ -944,7 +944,10 @@
                     {%- for address in customer.addresses -%}
                     {% if address == customer.default_address %}
                     <li data-address>
-                      {{ address | format_address | replace: '<br>', ','}}  &nbsp;<span class="accent">{{ 'customer.addresses.default' | t }}</span>
+                     
+                      <span class="accent default">{{ 'customer.addresses.default' | t }} &nbsp;</span>
+                    
+                    {{ address | format_address | replace: '<br>', ','}}
                     <button class="btnEdit"
                       type="button"
                       id="EditFormButton_{{ address.id }}"
