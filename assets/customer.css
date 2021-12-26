@@ -908,9 +908,11 @@ span.lable {
   outline: 0 !important;
   box-shadow: none !important;
   border: 0 !important;
+  flex-shrink: 0;
 }
 .customer .popup .btnEdit{
   background-color:#fb660c !important;
+
 }
 .customer .popup .BtnSave{
   background-color:#727272 !important;
