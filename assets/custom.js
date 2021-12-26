@@ -266,7 +266,7 @@ $('.btnEdit').click(function(){
 })
 $('.BtnSave').click(function(){
     // $(this).parent('li').siblings().find('div[id]').slideDown();
-    $(this).closest('div[id]').hide();
+    $(this).closest('[data-address]').find('[aria-expanded="true"]').attr("aria-expanded",false);;
 })
 // add cart
 $(document).on('click', '.add-cart', function() {
