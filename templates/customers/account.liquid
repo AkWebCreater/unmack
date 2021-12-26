@@ -172,7 +172,7 @@
                       {% if address == customer.default_address %}
                       <li data-address>
                        
-                        <span class="accent default">{{ 'customer.addresses.default' | t }} &nbsp;</span>
+                        <!-- <span class="accent default">{{ 'customer.addresses.default' | t }} &nbsp;</span> -->
                       
                       {{ address | format_address | replace: '<br>', ','}}
                       <button class="btnEdit"
@@ -945,7 +945,7 @@
                     {% if address == customer.default_address %}
                     <li data-address>
                      
-                      <span class="accent default">{{ 'customer.addresses.default' | t }} &nbsp;</span>
+                      <!-- <span class="accent default">{{ 'customer.addresses.default' | t }} &nbsp;</span> -->
                     
                     {{ address | format_address | replace: '<br>', ','}}
                     <button class="btnEdit"
