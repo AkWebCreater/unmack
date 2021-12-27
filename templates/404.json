@@ -737,7 +737,7 @@
             "review": 3,
             "title": "Column",
             "designation": "Profile",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.Pair text with an image to focus on your chosen product, collection, or blog post. Add details on <\/p>"
           }
         },
         "163004502857e20478-1": {
