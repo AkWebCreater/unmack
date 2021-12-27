@@ -253,3 +253,7 @@ margin-right: 10px;
 .card--footer{
   display: flex;
 }
+.card--footer .multicolumn-card__image-wrapper{
+  width: 60px;
+  padding-top: 0 !important;
+}
