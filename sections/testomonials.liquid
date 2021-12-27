@@ -36,32 +36,7 @@
               <div class="quots">
                 <img src="https://cdn.shopify.com/s/files/1/0591/8192/4552/files/icon-quots_e8b45525-003a-4953-a302-b475d3437b8e.png?v=1640604528" alt="quot-icon">
               </div>
-              {%- if block.settings.image != blank -%}
-                {% if section.settings.image_ratio == 'adapt' or section.settings.image_ratio == 'circle' %}
-                  {% assign spaced_image = true %}
-                {% endif %}
-                <div class="multicolumn-card__image-wrapper multicolumn-card__image-wrapper--{{ section.settings.image_width }}-width{% if section.settings.image_width != 'full' or spaced_image %} multicolumn-card-spacing{% endif %}">
-                  <div class="media media--transparent media--{{ section.settings.image_ratio }}"
-                    {% if section.settings.image_ratio == 'adapt' %}
-                      style="padding-bottom: {{ 1 | divided_by: highest_ratio | times: 100 }}%;"
-                    {% endif %}>
-                    <img
-                      srcset="{%- if block.settings.image.width >= 275 -%}{{ block.settings.image | img_url: '275x' }} 275w,{%- endif -%}
-                        {%- if block.settings.image.width >= 550 -%}{{ block.settings.image | img_url: '550x' }} 550w,{%- endif -%}
-                        {%- if block.settings.image.width >= 710 -%}{{ block.settings.image | img_url: '710x' }} 710w,{%- endif -%}
-                        {%- if block.settings.image.width >= 1420 -%}{{ block.settings.image | img_url: '1420x' }} 1420w,{%- endif -%}"
-                      src="{{ block.settings.image | img_url: '550x' }}"
-                      sizes="(min-width: 990px) {% if section.blocks.size <= 2 %}710px{% else %}550px{% endif %},
-                        (min-width: 750px) {% if section.blocks.size == 1 %}710px{% else %}550px{% endif %},
-                        calc(100vw - 30px)"
-                      alt="{{ block.settings.title }}"
-                      height="{{ block.settings.image.height }}"
-                      width="{{ block.settings.image.width }}"
-                      loading="lazy"
-                    >
-                  </div>
-                </div>
-              {%- endif -%}
+              
               <div class="multicolumn-card__info">
                 {%- if block.settings.review == 5 -%}
                 <div class="ssw-stars ssw-stars-large">
@@ -107,6 +82,42 @@
                 {%- if block.settings.text != blank -%}
                   <div class="rte">{{ block.settings.text }}</div>
                 {%- endif -%}
+              </div>
+              <div class="card--footer">
+                {%- if block.settings.image != blank -%}
+                {% if section.settings.image_ratio == 'adapt' or section.settings.image_ratio == 'circle' %}
+                  {% assign spaced_image = true %}
+                {% endif %}
+                <div class="multicolumn-card__image-wrapper multicolumn-card__image-wrapper--{{ section.settings.image_width }}-width{% if section.settings.image_width != 'full' or spaced_image %} multicolumn-card-spacing{% endif %}">
+                  <div class="media media--transparent media--{{ section.settings.image_ratio }}"
+                    {% if section.settings.image_ratio == 'adapt' %}
+                      style="padding-bottom: {{ 1 | divided_by: highest_ratio | times: 100 }}%;"
+                    {% endif %}>
+                    <img
+                      srcset="{%- if block.settings.image.width >= 275 -%}{{ block.settings.image | img_url: '275x' }} 275w,{%- endif -%}
+                        {%- if block.settings.image.width >= 550 -%}{{ block.settings.image | img_url: '550x' }} 550w,{%- endif -%}
+                        {%- if block.settings.image.width >= 710 -%}{{ block.settings.image | img_url: '710x' }} 710w,{%- endif -%}
+                        {%- if block.settings.image.width >= 1420 -%}{{ block.settings.image | img_url: '1420x' }} 1420w,{%- endif -%}"
+                      src="{{ block.settings.image | img_url: '550x' }}"
+                      sizes="(min-width: 990px) {% if section.blocks.size <= 2 %}710px{% else %}550px{% endif %},
+                        (min-width: 750px) {% if section.blocks.size == 1 %}710px{% else %}550px{% endif %},
+                        calc(100vw - 30px)"
+                      alt="{{ block.settings.title }}"
+                      height="{{ block.settings.image.height }}"
+                      width="{{ block.settings.image.width }}"
+                      loading="lazy"
+                    >
+                  </div>
+                </div>
+              {%- endif -%}
+              <div class="foot-wrapper">
+                {% if block.settings.title =! blank %}
+                  <h4>{{block.settings.title}}</h4>
+                {% endif %}
+                {% if block.settings.designation =! blank %}
+                  <span>{{block.settings.designation}}</span>
+                {% endif %}
+              </div>
               </div>
             </div>
           </li>
@@ -287,8 +298,14 @@
         {
           "type": "text",
           "id": "title",
-          "default": "Column",
-          "label": "t:sections.multicolumn.blocks.column.settings.title.label"
+          "default": "Author",
+          "label": "Author"
+        },
+        {
+          "type": "text",
+          "id": "designation",
+          "default": "Profile",
+          "label": "Profile"
         },
         {
           "type": "richtext",

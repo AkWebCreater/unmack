@@ -248,3 +248,6 @@ margin-right: 10px;
 .quots + .multicolumn-card__info{
   padding-top: 5px;
 }
+.card--footer{
+  display: flex;
+}
