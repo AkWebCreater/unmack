@@ -733,64 +733,80 @@
         "163004502857e20478-0": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/images.png",
             "review": 3,
             "title": "Column",
+            "designation": "Profile",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
           }
         },
         "163004502857e20478-1": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/images.png",
             "review": 3,
             "title": "Column",
+            "designation": "Profile",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
           }
         },
         "163004502857e20478-2": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/images.png",
             "review": 4,
             "title": "Column",
+            "designation": "Profile",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
           }
         },
         "ffe76d29-b54f-4351-af43-fefc6c079f7d": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/images.png",
             "review": 5,
             "title": "Column",
+            "designation": "Profile",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
           }
         },
         "c0037366-8024-421e-a325-05613c1a46bd": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/images.png",
             "review": 3,
             "title": "Column",
+            "designation": "Profile",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
           }
         },
         "0468e717-9c2a-4cf8-a8b4-aa4e525def3c": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/images.png",
             "review": 3,
             "title": "Column",
+            "designation": "Profile",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
           }
         },
         "9cc10e08-38c9-46e2-85ad-044854a9a7e1": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/images.png",
             "review": 3,
             "title": "Column",
+            "designation": "Profile",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
           }
         },
         "120214c8-86b4-4a74-afda-ef0c83fbefa2": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/images.png",
             "review": 3,
             "title": "Column",
+            "designation": "Profile",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
           }
         }
