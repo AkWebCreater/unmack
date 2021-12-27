@@ -1035,6 +1035,11 @@ bottom: -22px;
 
 
 }
+@media (max-width:768px) {
+  .body--account .section-image-banner .banner__content{
+    height: 0 !important;
+  }
+}
   td.product-item a::before{
 
   background-image: url('https://cdn.shopify.com/s/files/1/0591/8192/4552/files/icon-2_b837e083-a1e6-422e-83a5-315186380bb2.png?v=1640329696');
