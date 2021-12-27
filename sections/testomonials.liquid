@@ -60,14 +60,46 @@
                 </div>
               {%- endif -%}
               <div class="multicolumn-card__info">
-                {%- if block.settings.title != blank -%}
+                {%- if block.settings.review == 5 -%}
                 <div class="ssw-stars ssw-stars-large">
                   <i class="ssw-icon-star"></i>
                   <i class="ssw-icon-star"></i>
                   <i class="ssw-icon-star"></i>
                   <i class="ssw-icon-star"></i>
-                  <i class="ssw-icon-star-empty"></i>
+                  <i class="ssw-icon-star"></i>
             </div>
+            {% elsif block.settings.review == 4 %}
+            <div class="ssw-stars ssw-stars-large">
+              <i class="ssw-icon-star"></i>
+              <i class="ssw-icon-star"></i>
+              <i class="ssw-icon-star"></i>
+              <i class="ssw-icon-star"></i>
+              <i class="ssw-icon-star-empty"></i>
+        </div>
+            {% elsif block.settings.review == 3 %}
+            <div class="ssw-stars ssw-stars-large">
+              <i class="ssw-icon-star"></i>
+              <i class="ssw-icon-star"></i>
+              <i class="ssw-icon-star"></i>
+              <i class="ssw-icon-star-empty"></i>
+              <i class="ssw-icon-star-empty"></i>
+        </div>
+            {% elsif block.settings.review == 2 %}
+            <div class="ssw-stars ssw-stars-large">
+              <i class="ssw-icon-star"></i>
+              <i class="ssw-icon-star"></i>
+              <i class="ssw-icon-star-empty"></i>
+              <i class="ssw-icon-star-empty"></i>
+              <i class="ssw-icon-star-empty"></i>
+        </div>
+            {% elsif block.settings.review == 1 %}
+            <div class="ssw-stars ssw-stars-large">
+              <i class="ssw-icon-star"></i>
+              <i class="ssw-icon-star-empty"></i>
+              <i class="ssw-icon-star-empty"></i>
+              <i class="ssw-icon-star-empty"></i>
+              <i class="ssw-icon-star-empty"></i>
+        </div>
                 {%- endif -%}
                 {%- if block.settings.text != blank -%}
                   <div class="rte">{{ block.settings.text }}</div>
@@ -239,6 +271,15 @@
           "type": "image_picker",
           "id": "image",
           "label": "t:sections.multicolumn.blocks.column.settings.image.label"
+        },
+        {
+          "type": "range",
+          "id": "review",
+          "label": "Review",
+          "min": 1,
+          "max": 5,
+          "step": 1,
+          "default": 3
         },
         {
           "type": "text",
