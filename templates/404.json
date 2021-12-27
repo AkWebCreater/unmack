@@ -55,8 +55,8 @@
     "1630041953ce8ee818": {
       "type": "image-with-image",
       "settings": {
-        "image": "shopify:\/\/shop_images\/left.jpg",
-        "image-right": "shopify:\/\/shop_images\/right.jpg",
+        "image": "shopify:\/\/shop_images\/Collection_Grid_x_1_As_per_Mockup.jpg",
+        "image-right": "shopify:\/\/shop_images\/Collection_Grid_x_2_As_per_Mockup.jpg",
         "height": "adapt",
         "color_scheme": "background-1",
         "layout": "image_first",
