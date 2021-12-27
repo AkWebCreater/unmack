@@ -45,6 +45,7 @@ border-radius: 8px;
 }
 .year-slide.active .year-img::before,.year-slide:hover .year-img::before,.year-slide.initial .year-img::before{
 background-color: transparent !important;
+  border: 2px solid;
 
 }
 

@@ -89,37 +89,37 @@
           "65eb48c7-0912-4431-a67c-22d9201952fd": {
             "type": "text",
             "settings": {
-              "heading": "#Umanac",
+              "heading": "UMANAC",
               "subtext": "<p>Olympia Industries Limited C-205, Synthofine Industrial Estate, Behind Virwani Industrial Estate , Goregaon (East),Mumbai - 400063 Phone No: <strong>+91 9833379988<\/strong><br\/>Email: <strong>info@petoly.in<\/strong><\/p>"
             }
           },
           "footer-0": {
             "type": "link_list",
             "settings": {
-              "heading": "Know Us",
+              "heading": "KNOW US",
               "menu": "know-us"
-            }
-          },
-          "091da5bd-c03d-4798-bc37-ff6a51c7bf27": {
-            "type": "link_list",
-            "settings": {
-              "heading": "Policies",
-              "menu": "policies"
             }
           },
           "66a9ba47-6031-4db5-a6ab-06240c0fdef2": {
             "type": "link_list",
             "settings": {
-              "heading": "Shop By Category",
+              "heading": "SHOP BY CATEGORY",
               "menu": "shop-by-categories"
+            }
+          },
+          "091da5bd-c03d-4798-bc37-ff6a51c7bf27": {
+            "type": "link_list",
+            "settings": {
+              "heading": "POLICIES",
+              "menu": "policies"
             }
           }
         },
         "block_order": [
           "65eb48c7-0912-4431-a67c-22d9201952fd",
           "footer-0",
-          "091da5bd-c03d-4798-bc37-ff6a51c7bf27",
-          "66a9ba47-6031-4db5-a6ab-06240c0fdef2"
+          "66a9ba47-6031-4db5-a6ab-06240c0fdef2",
+          "091da5bd-c03d-4798-bc37-ff6a51c7bf27"
         ],
         "settings": {
           "footer-top-bg": "shopify:\/\/shop_images\/footer-bg.png",
@@ -141,7 +141,7 @@
           "newsletter_enable": true,
           "newsletter_heading": "Be a Part Of  Umanac Fitness Community",
           "newsletter_bottom_text_enable": true,
-          "newsletter_bottom_heading": "<div class=\"newsletter-bottom\">\n<span>What To Expact!<\/span><span class=\"pipe\">|<\/span>\n<span>Newsletter!<\/span><span class=\"pipe\">|<\/span>\n<span>Offers<\/span><span class=\"pipe\">|<\/span>\n<span>Existing Blogs &amp; Many More...<\/span>\n\n<\/div>",
+          "newsletter_bottom_heading": "<div class=\"newsletter-bottom\">\n<span>What To Expact!<\/span><span class=\"pipe\">|<\/span>\n<span>Newsletter!<\/span><span class=\"pipe\">|<\/span>\n<span>Offers<\/span><span class=\"pipe\">|<\/span>\n<span>Existing Blogs &amp; Many more..<\/span>\n\n<\/div>",
           "newsletter_bottom_menu_enable": false,
           "newsletter_bottom_menu": "",
           "show_social": true,
