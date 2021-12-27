@@ -43,6 +43,8 @@
 }
 .best-seller-nav .add-border{
     border-bottom:solid 1px #ff8125;
+  padding-left: 2px;
+  
 }
 .best-seller-nav-item{
     text-transform: uppercase;
