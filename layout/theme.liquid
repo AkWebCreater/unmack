@@ -143,7 +143,10 @@
     {% section 'announcement-bar' %}
     {% section 'header' %}
     {% render 'login-popup' %}
-    <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
+    {% if tamplate contains 'account' %}
+      {% assign mainClass = 'page-width' %}
+    {% endif %}
+    <main id="MainContent" class="content-for-layout focus-none {{mainClass}}" role="main" tabindex="-1">
       {{ content_for_layout }}
       <div class="overlay-1"></div>
       
