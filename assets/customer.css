@@ -1038,6 +1038,7 @@ bottom: -22px;
 @media (max-width:768px) {
   .body--account .section-image-banner .banner__content{
     height: 0 !important;
+    padding: 0 !important;
   }
 }
   td.product-item a::before{
