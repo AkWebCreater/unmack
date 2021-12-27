@@ -243,4 +243,8 @@ margin-right: 10px;
 /* custom */
 .quots{
   font-size: 0;
+  padding-top: 10px;
+}
+.quots + .multicolumn-card__info{
+  padding-top: 5px;
 }
