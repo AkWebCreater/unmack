@@ -141,7 +141,7 @@
           "newsletter_enable": true,
           "newsletter_heading": "Be a Part Of  Umanac Fitness Community",
           "newsletter_bottom_text_enable": true,
-          "newsletter_bottom_heading": "<div class=\"newsletter-bottom\">\n<span>What To Expact!<\/span><span class=\"pipe\">|<\/span>\n<span>Newsletter!<\/span><span class=\"pipe\">|<\/span>\n<span>Offers<\/span><span class=\"pipe\">|<\/span>\n<span>Existing Blogs &amp; Many More...<\/span>\n\n<\/div>",
+          "newsletter_bottom_heading": "<div class=\"newsletter-bottom\">\n<span>What To Expact!<\/span><span class=\"pipe\">|<\/span>\n<span>Newsletter!<\/span><span class=\"pipe\">|<\/span>\n<span>Offers<\/span><span class=\"pipe\">|<\/span>\n<span>Existing Blogs &amp; Many more..<\/span>\n\n<\/div>",
           "newsletter_bottom_menu_enable": false,
           "newsletter_bottom_menu": "",
           "show_social": true,
