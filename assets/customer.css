@@ -804,7 +804,7 @@ li[data-address] > h2 {
   width: 100%;
   
 }
-@media (max-width:749px) {
+@media (max-width:990px) {
   .info.Adderesses{
     flex-direction: column;
   }
