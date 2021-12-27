@@ -845,7 +845,7 @@ span.lable {
 }
 @media (max-width:749px) {
   .order-history td.product-item{
-    padding: 20px  0 !important;
+    padding: 30px  0 !important;
   }
   .account-main-body{
     display: none !important;
