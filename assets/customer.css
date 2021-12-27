@@ -1007,6 +1007,9 @@ border: 0 !important;
 #ColumnDate,#row-date{
   min-width: 125px;
 }
+.addresses h2{
+  margin: 0 !important;
+}
 #row-payment,#RowOrder a,#row-date,#row-total,#row-fulfillment{
  color: #de965c; 
  background-color: #fff;
