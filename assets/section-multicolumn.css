@@ -252,8 +252,12 @@ margin-right: 10px;
 }
 .card--footer{
   display: flex;
+  align-items: center;
 }
 .card--footer .multicolumn-card__image-wrapper{
   width: 60px;
   padding-top: 0 !important;
+}
+.card--footer .multicolumn-card-spacing{
+  margin-left: 0;
 }
