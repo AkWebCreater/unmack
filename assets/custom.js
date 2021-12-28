@@ -526,15 +526,28 @@ $('.up-sec').css('height',nh)
 }
 // ends here
 // our story nav-itme click
+function bringElIntoView(el) {    
+    var elOffset = el.offset();
+    var $window = $(window);
+    var windowScrollBottom = $window.scrollTop() + $window.height();
+    var scrollToPos = -1;
+    if (elOffset.top < $window.scrollTop()) // element is hidden in the top
+        scrollToPos = elOffset.top - 70;
+    else if (elOffset.top + el.height() > windowScrollBottom) // element is hidden in the bottom
+        scrollToPos = $window.scrollTop() + (elOffset.top + el.height() - (windowScrollBottom + 70));
+    if (scrollToPos !== -1)
+        $('html, body').animate({ scrollTop: scrollToPos });
+}
+
+
 $('.header__menu-item').click(function(e) {
     var check = $(this).text();
-    console.log(check)
     var checkTrim = $.trim(check)
     $.fn.ensureVisible = function () { $(this).each(function () { $(this)[0].scrollIntoView(); }); };
     if(checkTrim == 'Our Story'){
         e.preventDefault();
-        alert('test')
-        $('.video-collage-section').ensureVisible();
+        bringElIntoView($('.video-collage-section'))
+        // $('.video-collage-section').ensureVisible();
     }
 })
 // ends here
