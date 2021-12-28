@@ -282,6 +282,7 @@ $(document).on('click', '#bulk-button', function() {
   })
 
 })
+// 
 // gift wrap option
 var wrapped = localStorage.getItem('gift-wrap');
 // check on document load if gift wrap checked
@@ -518,7 +519,12 @@ $('#login,.login-link').click(function () {
 
   })
   // login popup Header end
-
+// our journey  jumping issue fixed
+$(window).load(function (){
+    var nh = $('.up-sec .active').hight() + 15;
+    setTimeout(()=>{$('.up-sec').css('height',nh)},2000)
+})
+// ends here
   // best seller section slider
 
   $('.best-seller-collection-grid-wrapper').slick({
