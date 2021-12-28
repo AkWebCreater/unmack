@@ -520,10 +520,10 @@ $('#login,.login-link').click(function () {
   })
   // login popup Header end
 // our journey  jumping issue fixed
-$(window).load(function(){
+window.onload =function(){
     var nh = $('.up-sec .active').height() + 15;
 $('.up-sec').css('height',nh)
-})
+}
 // ends here
   // best seller section slider
 
