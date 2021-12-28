@@ -532,9 +532,9 @@ function bringElIntoView(el) {
     var windowScrollBottom = $window.scrollTop() + $window.height();
     var scrollToPos = -1;
     if (elOffset.top < $window.scrollTop()) // element is hidden in the top
-        scrollToPos = elOffset.top - 70;
+        scrollToPos = elOffset.top ;
     else if (elOffset.top + el.height() > windowScrollBottom) // element is hidden in the bottom
-        scrollToPos = $window.scrollTop() + (elOffset.top + el.height() - (windowScrollBottom + 70));
+        scrollToPos = $window.scrollTop() + (elOffset.top + el.height() - windowScrollBottom );
     if (scrollToPos !== -1)
         $('html, body').animate({ scrollTop: scrollToPos });
 }
