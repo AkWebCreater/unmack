@@ -41,11 +41,13 @@
     margin-top: 10px;
 
 }
-.best-seller-nav .add-border .wrap-item{
-    border-bottom:solid 1px #ff8125;
+.wrap-item{
   padding-left: 2px;
   width: fit-content;
   
+}
+.best-seller-nav .add-border .wrap-item{
+    border-bottom:solid 1px #ff8125;
 }
 .best-seller-nav-item{
     text-transform: uppercase;
