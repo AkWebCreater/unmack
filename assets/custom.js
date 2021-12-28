@@ -526,10 +526,11 @@ $('.up-sec').css('height',nh)
 }
 // ends here
 // our story nav-itme click
-$('.header__menu-item').click(function() {
+$('.header__menu-item').click(function(e) {
     var check = $(this).text();
     $.fn.ensureVisible = function () { $(this).each(function () { $(this)[0].scrollIntoView(); }); };
     if(check == 'Our Story'){
+        e.preventDefault();
         $('.video-collage-section').ensureVisible();
     }
 })
