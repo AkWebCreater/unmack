@@ -7,12 +7,14 @@
     <h2 class="section-title title">{{section.settings.section-heading}}</h2></div>
 <div class="best-seller-nav grid" >
 {%- for block in section.blocks -%}
-  <span class="best-seller-nav-item {% if forloop.first %}add-border{% endif %} " data-index="{{forloop.index}}"> {% if block.settings.title == blank %}
-      {% assign handle = block.settings.collection %}
-      {{collections[handle].title}}
-  {% else %}
-      {{block.settings.title}}
-  {% endif %} </span>  
+  <span class="best-seller-nav-item {% if forloop.first %}add-border{% endif %} " data-index="{{forloop.index}}"><div class="wrap-item">
+    {% if block.settings.title == blank %}
+    {% assign handle = block.settings.collection %}
+    {{collections[handle].title}}
+{% else %}
+    {{block.settings.title}}
+{% endif %}
+  </div> </span>  
 {%- endfor -%}
 </div>
 <div class="best-seller-collection-grid-wrapper ">
