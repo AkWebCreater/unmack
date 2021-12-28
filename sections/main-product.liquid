@@ -372,6 +372,7 @@
                       {%- else -%}
                         {{ 'products.product.sold_out' | t }}
                       {%- endif -%}
+                    <i class="fa fa-shopping-cart" style="font-size:19px"></i>
                   </button>
                   {%- if block.settings.show_dynamic_checkout -%}
                   	{{ form | payment_button }}
