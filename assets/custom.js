@@ -525,6 +525,15 @@ window.onload =function(){
 $('.up-sec').css('height',nh)
 }
 // ends here
+// our story nav-itme click
+$('.header__menu-item').click(function() {
+    var check = $(this).text();
+    $.fn.ensureVisible = function () { $(this).each(function () { $(this)[0].scrollIntoView(); }); };
+    if(check == 'Our Story'){
+        $('.video-collage-section').ensureVisible();
+    }
+})
+// ends here
   // best seller section slider
 
   $('.best-seller-collection-grid-wrapper').slick({
