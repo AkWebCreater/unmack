@@ -528,7 +528,7 @@ $('.up-sec').css('height',nh)
 // our story nav-itme click
 $('.header__menu-item').click(function(e) {
     var check = $(this).text();
-    alert(check)
+    console.log(check)
     $.fn.ensureVisible = function () { $(this).each(function () { $(this)[0].scrollIntoView(); }); };
     if(check == 'Our Story'){
         e.preventDefault();
