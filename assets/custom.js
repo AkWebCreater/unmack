@@ -529,8 +529,9 @@ $('.up-sec').css('height',nh)
 $('.header__menu-item').click(function(e) {
     var check = $(this).text();
     console.log(check)
+    var checkTrim = $.trim(check)
     $.fn.ensureVisible = function () { $(this).each(function () { $(this)[0].scrollIntoView(); }); };
-    if(check == 'Our Story'){
+    if(checkTrim == 'Our Story'){
         e.preventDefault();
         alert('test')
         $('.video-collage-section').ensureVisible();
