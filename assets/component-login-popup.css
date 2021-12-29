@@ -7,8 +7,10 @@
     align-items: center;
 }
 .accountpopup-body span svg{
-    width: 30px;
+    width: 22px;
     height: 30px;
+    margin-right: 8px;
+    fill: #b2b2b2;
 }
 .errors a{
     color: red;
