@@ -2,6 +2,14 @@
 .loginpopup .field input{
     height: 3.5rem;
 }
+.accountpopup-body .left span,.accountpopup-body .right span{
+    display: flex;
+    align-items: center;
+}
+.accountpopup-body span svg{
+    width: 30px;
+    height: 30px;
+}
 .errors a{
     color: red;
 }
@@ -310,36 +318,7 @@ flex-direction: column;
     font-size: 16px;
     align-items: center;
 }
-.logged-in .accountpopup-body span a::before{
-    content: '';
-    display: block;
-background-image: url('https://cdn.shopify.com/s/files/1/0591/8192/4552/files/acc-icons.jpg?v=1638179448');
-background-size: cover;
-width: 36px;
-height: 30px;
 
-}
-.logged-in .accountpopup-body .wishlist a::before{
-    background-position: -30px;
-}
-.logged-in .accountpopup-body .order-history a::before{
-    background-position: -88px;
-}
-.logged-in .accountpopup-body .gift-card a::before{
-    background-position: -118px;
-}
-.logged-in .accountpopup-body .wallet a::before{
-    background-position: -148px;
-}
-.logged-in .accountpopup-body .cont-us a::before{
-    background-position: 183px;
-}
-.logged-in .accountpopup-body .soci-login a::before{
-    background-position: -179px;
-}
-.logged-in .accountpopup-body .whatsapp a::before{
-    background-position: -210px;
-}
 /* ragister  */
 .title-1{
     margin-bottom: 10px;
