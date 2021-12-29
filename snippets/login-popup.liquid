@@ -18,23 +18,23 @@
 <div class="accountpopup-body">
     <div class="left">
         <span class="wishlist">
-            <a href="#">Wishlist</a>
+           {% render 'icon-wishlist' %} <a href="#">Wishlist</a>
         </span>
         <span class="order-history">
-            <a href="/account">Order History</a></span>
+          {% render 'icon-order-history' %}<a href="/account">Order History</a></span>
         <span class="gift-card">
-            <a href="/account">Gift Card</a></span>
+          {% render 'icon-gift-card' %}<a href="/account">Gift Card</a></span>
         <span class="wallet">
-            <a href="/account">Wallet</a>
+          {% render 'icon-wallet' %}<a href="/account">Wallet</a>
         </span>
     </div>
     <div class="right">
         <span class="cont-us">
-            <a href="/pages/faq">Contact Us</a></span>
-        <span class="soci-login">
-            <a href="/accoount">Social Login</a>
+          {% render 'icon-contact' %}<a href="/pages/faq">Contact Us</a>
         </span>
-        <span class="whatsapp"><a href="/account">Whatsapp</a></span>
+        
+        <span class="whatsapp">
+          {% render 'icon-whatsapp' %}<a href="/account">Whatsapp</a></span>
         <span class="logout">
             <a href="{{ routes.account_logout_url }}">
                 {{ 'customer.log_out' | t }}
