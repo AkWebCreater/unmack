@@ -235,6 +235,7 @@
       ],
       "settings": {
         "background-image": "shopify:\/\/shop_images\/Untitled-2.png",
+        "mobile-background-image": "shopify:\/\/shop_images\/All_Products_Banner_Mobile_Size.png",
         "banner-link": "",
         "heading": ""
       }
@@ -758,8 +759,8 @@
     "163756932415dd61ec": {
       "type": "parallex-product",
       "settings": {
-        "bg_1": "shopify:\/\/shop_images\/abcde.jpg",
-        "bg_2": "shopify:\/\/shop_images\/img2_medium_49a9ef08-150d-4106-97c3-1e75ffce7a52.png",
+        "bg_1": "shopify:\/\/shop_images\/Coconut_oil_banner_1__base_layer_1.jpg",
+        "bg_2": "shopify:\/\/shop_images\/Coconut_oil_banner_2___Mid_layer_1.png",
         "product-url": "shopify:\/\/products\/acana-light-and-fit-dry-dog-food",
         "product-title": "Oraganic Coconut Oil",
         "pre-heading": "Organic Virgin",
