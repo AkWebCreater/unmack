@@ -11,6 +11,21 @@
     "name": "General",
     "settings": [
       {
+        "type": "text",
+        "label": "Account Page Whatsapp Tab Accordian Title",
+        "id": "login-whatsapp-tab-title"
+      },
+      {
+        "type": "text",
+        "label": "Account Page Whatsapp Number",
+        "id": "login-whatsapp-number"
+      },
+      {
+        "type": "text",
+        "label": "Account Page Whatsapp Massage",
+        "id": "login-whatsapp-massage"
+      },
+      {
         "type": "image_picker",
         "label": "Login Popup Image",
         "id": "login-popup-banner"
