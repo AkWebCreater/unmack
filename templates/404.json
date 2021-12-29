@@ -167,12 +167,6 @@
         "show_view_all": false
       }
     },
-    "163038833315e79f47": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<div class=\"img-wrapper\">\n<div class=\"page-width page-width-desktop\">\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0591\/8192\/4552\/files\/Untitled-2.png?v=1630178012\" width=\"100%\">\n<\/div>\n<\/div>"
-      }
-    },
     "16300432373f322551": {
       "type": "about-text",
       "blocks": {
@@ -197,6 +191,52 @@
       "settings": {
         "color_scheme": "background-1",
         "full_width": true
+      }
+    },
+    "1640759556f9b68464": {
+      "type": "banner-with-text",
+      "blocks": {
+        "16407595564df769dd-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner"
+          }
+        },
+        "16407595564df769dd-1": {
+          "type": "html",
+          "disabled": true,
+          "settings": {
+            "title": "Image banner"
+          }
+        },
+        "16407595564df769dd-2": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template."
+          }
+        },
+        "16407595564df769dd-3": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false
+          }
+        }
+      },
+      "block_order": [
+        "16407595564df769dd-0",
+        "16407595564df769dd-1",
+        "16407595564df769dd-2",
+        "16407595564df769dd-3"
+      ],
+      "settings": {
+        "background-image": "shopify:\/\/shop_images\/Untitled-2.png",
+        "banner-link": "",
+        "heading": ""
       }
     },
     "1630493245926e8dc9": {
@@ -863,8 +903,8 @@
     "1636958667600d5d10",
     "1630041953ce8ee818",
     "163017222359fc16f2",
-    "163038833315e79f47",
     "16300432373f322551",
+    "1640759556f9b68464",
     "1630493245926e8dc9",
     "1630397519047103ef",
     "16305577334f548741",

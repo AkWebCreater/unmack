@@ -28,6 +28,7 @@
 
 .price dd {
   margin: 0 1rem 0 0;
+  font-family: sans-serif;
 }
 
 .price .price__last:last-of-type {
