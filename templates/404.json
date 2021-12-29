@@ -536,7 +536,7 @@
       "type": "image-with-image",
       "settings": {
         "image": "shopify:\/\/shop_images\/Collection_Grid_1__916_x_445_pixels_1.jpg",
-        "image-right": "shopify:\/\/shop_images\/3.jpg",
+        "image-right": "shopify:\/\/shop_images\/Collection_Grid_2__916_x_445_pixels_1.jpg",
         "height": "adapt",
         "color_scheme": "background-1",
         "layout": "image_first",
