@@ -12,6 +12,10 @@
     margin-right: 8px;
     fill: #b2b2b2;
 }
+.accountpopup-body span:hover a,.accountpopup-body span:hover svg{
+color: #ff8331;
+fill: #ff8331;
+}
 .errors a{
     color: red;
 }
