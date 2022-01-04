@@ -335,6 +335,37 @@ $(document).on('click','cart-remove-button',function(){
         })
     }
 })
+// counterUp Funtion for home map section
+//#region - start of - number counter animation
+const counterAnim = (qSelector, start = 0, end, duration = 1000) => {
+    var html_list = document.querySelectorAll(qSelector); // returns NodeList
+var html_array = [...html_list]; // converts NodeList to Array
+html_array.forEach(counter => {
+
+    // do something awesome with each div
+    const target = counter;
+    let startTimestamp = null;
+    const step = (timestamp) => {
+     if (!startTimestamp) startTimestamp = timestamp;
+     const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+     target.innerText = Math.floor(progress * (end - start) + start);
+     if (progress < 1) {
+      window.requestAnimationFrame(step);
+     }
+    };
+    window.requestAnimationFrame(step);
+    });
+    
+   };
+   //#endregion - end of - number counter animation
+   
+   document.addEventListener("DOMContentLoaded", () => {
+    counterAnim('.counter', 10, 300, 1000);
+    // counterAnim("#count2", 5000, 250, 1500);
+    // counterAnim("#count3", -1000, -150, 2000);
+    // counterAnim("#count4", 500, -100, 2500);
+   });
+// ens here
 // add proviniance from country select box  for contact form 
 
 var country = $('#country');
