@@ -378,7 +378,7 @@ win.on('scroll',function() {
     console.log("win scroll" +  win.scrollTop() ) 
     console.log("win height" + win.height()) 
     console.log("win plus" + windowScrollBottom1)
-       if((counter1.offset().top + counter1.height()) == windowScrollBottom1) {
+       if((counter1.offset().top + counter1.height()) < windowScrollBottom1) {
         counterAnim('.counter', 0);
         alert('counterup')
        }
