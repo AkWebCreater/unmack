@@ -369,6 +369,13 @@ html_array.forEach(counter => {
    $(window).scroll(function(){
        if($(window).scrollTop() == 1550) counterAnim('.counter', 0);
    })
+   $(window).one('scroll',function() {
+    // Stuff
+    if( $(window).scrollTop() > ($('.counter').offset().top + $('.counter').outerHeight())){
+
+        alert('inview')
+    }
+ });
 // ens here
 // add proviniance from country select box  for contact form 
 
