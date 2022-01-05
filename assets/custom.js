@@ -371,7 +371,7 @@ html_array.forEach(counter => {
    })
    $(window).one('scroll',function() {
     // Stuff
-    if( $(window).scrollTop() < ($('.counter').offset().top + $('.counter').outerHeight())){
+    if( $(window).scrollTop() > ($('.counter').offset().top + $('.counter').outerHeight())){
 
         alert('inview')
     }
