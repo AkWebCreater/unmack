@@ -337,7 +337,7 @@ $(document).on('click','cart-remove-button',function(){
 })
 // counterUp Funtion for home map section
 //#region - start of - number counter animation
-const counterAnim = (qSelector, start = 0, duration = 5000) => {
+const counterAnim = (qSelector, start = 0, duration = 2000) => {
     var html_list = document.querySelectorAll(qSelector); // returns NodeList
 var html_array = [...html_list]; // converts NodeList to Array
 html_array.forEach(counter => {
@@ -370,21 +370,21 @@ var win = $(window)
 var counter1 = $('.num-animation-wrtapper');
 var counterPlus = counter1.offset().top + counter1.height();
 
-win.scroll(function(){
-    var windowScrollBottom1 = win.scrollTop() + win.height();  
-   console.log("el offset"+ counter1.offset().top) 
-   console.log("el height"+ counter1.height() ) 
-   console.log("el plus"+ (counter1.offset().top + counter1.height()) ) 
-   console.log("win scroll" +  win.scrollTop() ) 
-   console.log("win height" + win.height()) 
-   console.log("win plus" + windowScrollBottom1) 
-})
+// win.scroll(function(){
+//     var windowScrollBottom1 = win.scrollTop() + win.height();  
+//    console.log("el offset"+ counter1.offset().top) 
+//    console.log("el height"+ counter1.height() ) 
+//    console.log("el plus"+ (counter1.offset().top + counter1.height()) ) 
+//    console.log("win scroll" +  win.scrollTop() ) 
+//    console.log("win height" + win.height()) 
+//    console.log("win plus" + windowScrollBottom1) 
+// })
 win.one('scroll',function() {
     var windowScrollBottom1 = win.scrollTop() + win.height();  
-    var check1 = counterPlus > windowScrollBottom1;
-       if(check1) {
+    // var check1 = counterPlus > windowScrollBottom1;
+       if(counterPlus == windowScrollBottom1) {
         counterAnim('.counter', 0);
-        alert('counterup')
+        // alert('counterup')
        }
     });
 // ens here
