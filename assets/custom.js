@@ -371,6 +371,7 @@ var counter1 = $('.counter').eq(0);
 var counterPlus = counter1.offset().top + counter1.height();
 
 win.scroll(function(){
+    var windowScrollBottom1 = win.scrollTop() + win.height();  
    console.log("el offset"+ counter1.offset().top) 
    console.log("el height"+ counter1.height() ) 
    console.log("el plus"+ counterPlus ) 
