@@ -167,32 +167,6 @@
         "show_view_all": false
       }
     },
-    "16300432373f322551": {
-      "type": "about-text",
-      "blocks": {
-        "16300432373f322551-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "About Umanac",
-            "heading_size": "medium"
-          }
-        },
-        "16300432373f322551-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>\n     \nIn today's fast-paced and dynamic world, health often takes a backseat. Stress, pollution, long hours of work take a toll on your health. Unhealthy eating habits in adults, as well as children, also affect health. Thus, we at UMANAC only believe in offering health and nutrition in your daily life, in the easiest and tastiest way and free of chemicals.\n<br><br>\n     \nUMANAC Gourmet Range is developed with great precision to deliver quality products to its consumers with the intent of promoting every day healthy living without any compromise in taste. Also, in today's fast-paced world, you need to stand out among the crowd and personal grooming is essential to make that first and lasting impression.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "16300432373f322551-0",
-        "16300432373f322551-1"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "full_width": true
-      }
-    },
     "1640759556f9b68464": {
       "type": "banner-with-text",
       "blocks": {
@@ -238,6 +212,32 @@
         "mobile-background-image": "shopify:\/\/shop_images\/All_Products_Banner_Mobile_Size.png",
         "banner-link": "",
         "heading": ""
+      }
+    },
+    "16300432373f322551": {
+      "type": "about-text",
+      "blocks": {
+        "16300432373f322551-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "About Umanac",
+            "heading_size": "medium"
+          }
+        },
+        "16300432373f322551-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>\n     \nIn today's fast-paced and dynamic world, health often takes a backseat. Stress, pollution, long hours of work take a toll on your health. Unhealthy eating habits in adults, as well as children, also affect health. Thus, we at UMANAC only believe in offering health and nutrition in your daily life, in the easiest and tastiest way and free of chemicals.\n<br><br>\n     \nUMANAC Gourmet Range is developed with great precision to deliver quality products to its consumers with the intent of promoting every day healthy living without any compromise in taste. Also, in today's fast-paced world, you need to stand out among the crowd and personal grooming is essential to make that first and lasting impression.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16300432373f322551-0",
+        "16300432373f322551-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
       }
     },
     "1630493245926e8dc9": {
@@ -904,8 +904,8 @@
     "1636958667600d5d10",
     "1630041953ce8ee818",
     "163017222359fc16f2",
-    "16300432373f322551",
     "1640759556f9b68464",
+    "16300432373f322551",
     "1630493245926e8dc9",
     "1630397519047103ef",
     "16305577334f548741",
