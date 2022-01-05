@@ -379,12 +379,12 @@ var counterPlus = counter1.offset().top + counter1.height();
 //    console.log("win height" + win.height()) 
 //    console.log("win plus" + windowScrollBottom1) 
 // })
-win.one('scroll',function() {
+win.on('scroll',function() {
     var windowScrollBottom1 = win.scrollTop() + win.height();  
     // var check1 = counterPlus > windowScrollBottom1;
        if(counterPlus == windowScrollBottom1) {
         counterAnim('.counter', 0);
-        // alert('counterup')
+        alert('counterup')
        }
     });
 // ens here
