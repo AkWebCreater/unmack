@@ -368,6 +368,8 @@ html_array.forEach(counter => {
 //    });
    $(window).scroll(function(){
        if($(window).scrollTop() == 1550) counterAnim('.counter', 0);
+       console.log("window Scroll :"+$(window).scrollTop())
+       console.log("element height "+$('.counter').eq(0).offset().top + $('.counter').eq(0).outerHeight())
    })
    $(window).one('scroll',function() {
     // Stuff
