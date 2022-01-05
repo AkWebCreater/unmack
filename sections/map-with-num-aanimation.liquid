@@ -5,21 +5,12 @@
     {% for block in section.blocks %}
     <div class="animation-block grid__item">
       
-      <div class="grid counter-wrap"><span class="counter">{{block.settings.text}}</span> <span>{{block.settings.text-after-number}}</span></div>
+      <div class="grid counter-wrap"><span class="counter" data-number="{{block.settings.text}}">{{block.settings.text}}</span> <span>{{block.settings.text-after-number}}</span></div>
       <h3 class="mb-0">{{block.settings.heading}}</h3>
     </div>  
     {% endfor %}
   </div>
 </div>
-  
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script>
-      // $('.counter').counterUp({
-      //   delay: 10,
-      //   time: 2000
-      // });
-    </script>
 {% schema %}
   {
     "name": "Map With Number Aniamtion",

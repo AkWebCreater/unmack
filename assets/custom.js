@@ -344,7 +344,7 @@ html_array.forEach(counter => {
 
     // do something awesome with each div
     const target = counter;
-    var end = parseInt(counter.innerText);
+    var end = parseInt(counter.getAttribute('data-number'));
     let startTimestamp = null;
     const step = (timestamp) => {
      if (!startTimestamp) startTimestamp = timestamp;
@@ -373,8 +373,6 @@ win.on('scroll',function() {
     var windowScrollBottom1 = win.scrollTop() + win.height();  
        if((counter1.offset().top + counter1.height()) < windowScrollBottom1) {
         counterAnim('.counter', 0);
-     setTimeout(function(){$(window).off('scroll')},2500)
-        // alert('counterup')
        }
     });
 // ens here
