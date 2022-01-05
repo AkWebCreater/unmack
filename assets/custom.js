@@ -360,12 +360,15 @@ html_array.forEach(counter => {
    };
    //#endregion - end of - number counter animation
    
-   document.addEventListener("DOMContentLoaded", () => {
-    counterAnim('.counter', 0);
-    // counterAnim("#count2", 5000, 250, 1500);
-    // counterAnim("#count3", -1000, -150, 2000);
-    // counterAnim("#count4", 500, -100, 2500);
-   });
+//    document.addEventListener("DOMContentLoaded", () => {
+//     counterAnim('.counter', 0);
+//     // counterAnim("#count2", 5000, 250, 1500);
+//     // counterAnim("#count3", -1000, -150, 2000);
+//     // counterAnim("#count4", 500, -100, 2500);
+//    });
+   $(window).on('scroll',function(){
+       if($(window).scrollTop() == 1550) counterAnim('.counter', 0);
+   })
 // ens here
 // add proviniance from country select box  for contact form 
 
