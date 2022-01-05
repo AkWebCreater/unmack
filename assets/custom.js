@@ -374,7 +374,7 @@ win.on('scroll',function() {
        if((counter1.offset().top + counter1.height()) < windowScrollBottom1) {
         counterAnim('.counter', 0);
      setTimeout(function(){$(window).off('scroll')},2500)
-        alert('counterup')
+        // alert('counterup')
        }
     });
 // ens here
