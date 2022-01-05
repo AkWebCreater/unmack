@@ -374,7 +374,7 @@ win.scroll(function(){
     var windowScrollBottom1 = win.scrollTop() + win.height();  
    console.log("el offset"+ counter1.offset().top) 
    console.log("el height"+ counter1.height() ) 
-   console.log("el plus"+ counterPlus ) 
+   console.log("el plus"+ (counter1.offset().top + counter1.height()) ) 
    console.log("win scroll" +  win.scrollTop() ) 
    console.log("win height" + win.height()) 
    console.log("win plus" + windowScrollBottom1) 
