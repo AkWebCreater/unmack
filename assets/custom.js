@@ -367,12 +367,24 @@ html_array.forEach(counter => {
 //     // counterAnim("#count4", 500, -100, 2500);
 //    });
 var win = $(window)
-var windowScrollBottom1 = win.scrollTop() + win.height();  
-var check1 =  $('.counter').eq(0).offset().top + $('.counter').eq(0).height() > windowScrollBottom1;
+var counter1 = $('.counter').eq(0);
+var counterPlus = counter1.offset().top + counter1.height();
 
-   $(window).one('scroll',function() {
-       if(check1) counterAnim('.counter', 0);
-       alert('counterup')
+win.scroll(function(){
+   console.log("el offset"+ counter1.offset().top) 
+   console.log("el height"+ counter1.height() ) 
+   console.log("el plus"+ counterPlus ) 
+   console.log("win scroll" +  win.scrollTop() ) 
+   console.log("win height" + win.height()) 
+   console.log("win plus" + windowScrollBottom1) 
+})
+win.one('scroll',function() {
+    var windowScrollBottom1 = win.scrollTop() + win.height();  
+    var check1 = counterPlus > windowScrollBottom1;
+       if(check1) {
+        counterAnim('.counter', 0);
+        alert('counterup')
+       }
     });
 // ens here
 // add proviniance from country select box  for contact form 
