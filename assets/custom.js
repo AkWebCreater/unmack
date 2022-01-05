@@ -366,7 +366,7 @@ html_array.forEach(counter => {
 //     // counterAnim("#count3", -1000, -150, 2000);
 //     // counterAnim("#count4", 500, -100, 2500);
 //    });
-   $(window).on('scroll',function(){
+   $(window).scroll(function(){
        if($(window).scrollTop() == 1550) counterAnim('.counter', 0);
    })
 // ens here
