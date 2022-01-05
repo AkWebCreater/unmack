@@ -368,7 +368,7 @@ html_array.forEach(counter => {
 //    });
 var win = $(window)
 var counter1 = $('.counter').eq(0);
-var counterPlus = (counter1.offset().top + counter1.height());
+var counterPlus = parseInt(counter1.offset().top + counter1.height());
 
 win.scroll(function(){
     var windowScrollBottom1 = win.scrollTop() + win.height();  
