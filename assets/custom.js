@@ -367,8 +367,8 @@ html_array.forEach(counter => {
 //     // counterAnim("#count4", 500, -100, 2500);
 //    });
 var win = $(window)
-var counter1 = $('.counter').eq(0);
-var counterPlus = (parseInt(counter1.offset().top) + counter1.height());
+var counter1 = $('.counter-wrap').find('.counter');
+var counterPlus = counter1.offset().top + counter1.height();
 
 win.scroll(function(){
     var windowScrollBottom1 = win.scrollTop() + win.height();  
