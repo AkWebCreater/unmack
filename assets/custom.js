@@ -369,13 +369,13 @@ html_array.forEach(counter => {
 var win = $(window)
 var counter1 = $('.num-animation-wrtapper');
 var counterPlus = counter1.offset().top + counter1.height();
-win.one('scroll',function() {
+win.on('scroll',function() {
     var windowScrollBottom1 = win.scrollTop() + win.height();  
     console.log("bb "+(Math.floor(counter1.offset().top) + Math.floor(counter1.height())) )
     console.log("sb "+windowScrollBottom1 )
        if(Math.floor(counter1.offset().top) + Math.floor(counter1.height()) < windowScrollBottom1) {
         counterAnim('.counter', 0);
-        alert('counted')
+     win.off('scroll')
        }
     });
 // ens here
