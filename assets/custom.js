@@ -370,7 +370,10 @@ var win = $(window)
 var windowScrollBottom1 = win.scrollTop() + win.height();  
 var check1 =  $('.counter').eq(0).offset().top + $('.counter').eq(0).height() > windowScrollBottom1;
 
-   $(window).one('scroll',function() {if(check1) counterAnim('.counter', 0);});
+   $(window).one('scroll',function() {
+       if(check1) counterAnim('.counter', 0);
+       alert('counterup')
+    });
 // ens here
 // add proviniance from country select box  for contact form 
 
