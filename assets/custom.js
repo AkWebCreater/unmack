@@ -337,7 +337,7 @@ $(document).on('click','cart-remove-button',function(){
 })
 // counterUp Funtion for home map section
 //#region - start of - number counter animation
-const counterAnim = (qSelector, start = 0, duration = 2000) => {
+const counterAnim = (qSelector, start = 0, duration = 5000) => {
     var html_list = document.querySelectorAll(qSelector); // returns NodeList
 var html_array = [...html_list]; // converts NodeList to Array
 html_array.forEach(counter => {
@@ -368,7 +368,7 @@ html_array.forEach(counter => {
 //    });
 var win = $(window)
 var counter1 = $('.counter').eq(0);
-var counterPlus = parseInt(counter1.offset().top + counter1.height());
+var counterPlus = (parseInt(counter1.offset().top) + counter1.height());
 
 win.scroll(function(){
     var windowScrollBottom1 = win.scrollTop() + win.height();  
