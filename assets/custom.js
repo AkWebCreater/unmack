@@ -371,7 +371,7 @@ var counter1 = $('.num-animation-wrtapper');
 var counterPlus = counter1.offset().top + counter1.height();
 win.on('scroll',function() {
     var windowScrollBottom1 = win.scrollTop() + win.height();  
-       if((counter1.offset().top + counter1.height()) < windowScrollBottom1) {
+       if((counter1.offset().top + counter1.height()) == windowScrollBottom1) {
         counterAnim('.counter', 0);
        }
     });
@@ -584,7 +584,7 @@ function bringElIntoView(el) {
 $('.header__menu-item').click(function(e) {
     var check = $(this).text();
     var checkTrim = $.trim(check)
-    $.fn.ensureVisible = function () { $(this).each(function () { $(this)[0].scrollIntoView(); }); };
+    // $.fn.ensureVisible = function () { $(this).each(function () { $(this)[0].scrollIntoView(); }); };
     if(checkTrim == 'Our Story'){
         e.preventDefault();
         bringElIntoView($('.video-collage-section'))
