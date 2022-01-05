@@ -369,7 +369,7 @@ html_array.forEach(counter => {
 var win = $(window)
 var counter1 = $('.num-animation-wrtapper');
 var counterPlus = counter1.offset().top + counter1.height();
-win.one('scroll',function() {
+win.on('scroll',function() {
     var windowScrollBottom1 = win.scrollTop() + win.height();  
     // var check1 = counterPlus > windowScrollBottom1;
     console.log("el offset"+ counter1.offset().top) 
@@ -380,6 +380,7 @@ win.one('scroll',function() {
     console.log("win plus" + windowScrollBottom1)
        if((counter1.offset().top + counter1.height()) < windowScrollBottom1) {
         counterAnim('.counter', 0);
+        $(window).off('scroll');
         alert('counterup')
        }
     });
