@@ -366,18 +366,11 @@ html_array.forEach(counter => {
 //     // counterAnim("#count3", -1000, -150, 2000);
 //     // counterAnim("#count4", 500, -100, 2500);
 //    });
-   $(window).scroll(function(){
-       if($(window).scrollTop() == 1550) counterAnim('.counter', 0);
-       console.log("window Scroll :"+$(window).scrollTop())
-       console.log("element height "+$('.counter').eq(0).offset().top + $('.counter').eq(0).outerHeight())
-   })
-   $(window).one('scroll',function() {
-    // Stuff
-    if( $(window).scrollTop() < ($('.counter').eq(0).offset().top + $('.counter').eq(0).outerHeight())){
+var win = $(window)
+var windowScrollBottom1 = win.scrollTop() + win.height();  
+var check1 =  $('.counter').eq(0).offset().top + $('.counter').eq(0).height() > windowScrollBottom1;
 
-        alert('inview')
-    }
- });
+   $(window).one('scroll',function() {if(check1) counterAnim('.counter', 0);});
 // ens here
 // add proviniance from country select box  for contact form 
 
