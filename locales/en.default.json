@@ -54,7 +54,7 @@
     "month_year": "%B %Y"
   },
   "newsletter": {
-    "label": "Your email",
+    "label": "Your E-mail ID",
     "success": "Thanks for subscribing",
     "button_label": "Subscribe"
   },
