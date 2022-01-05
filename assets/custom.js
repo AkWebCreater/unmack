@@ -367,7 +367,7 @@ html_array.forEach(counter => {
 //     // counterAnim("#count4", 500, -100, 2500);
 //    });
 var win = $(window)
-var counter1 = $('.counter-wrap').find('.counter');
+var counter1 = $('.num-animation-wrtapper');
 var counterPlus = counter1.offset().top + counter1.height();
 
 win.scroll(function(){
