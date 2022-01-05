@@ -382,7 +382,7 @@ var counterPlus = counter1.offset().top + counter1.height();
 win.on('scroll',function() {
     var windowScrollBottom1 = win.scrollTop() + win.height();  
     // var check1 = counterPlus > windowScrollBottom1;
-       if(counterPlus == windowScrollBottom1) {
+       if((counter1.offset().top + counter1.height()) == windowScrollBottom1) {
         counterAnim('.counter', 0);
         alert('counterup')
        }
