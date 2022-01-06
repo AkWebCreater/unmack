@@ -492,7 +492,7 @@ color: var(--color-pincode-validator);
   .collage-video__modal-video {
     width: calc(100% - 8.6rem);
     height: calc(100% - 7rem);
-    padding-top: 9rem;
+    padding-top: 4rem;
   }
 }
 
