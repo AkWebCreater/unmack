@@ -828,3 +828,16 @@ if($('.body--collection.deal-of-day ').length){
         }
       }, 1000);
 }
+
+// Video popup section on home page 
+
+$(document).ready(function() {    
+        $(".collage-card__image").click(function() {
+          
+//            $('.navigation').css("display", "none");
+          $('.navigation').addClass("custom-hd");
+    });
+  $('.collage-video__modal-toggle').click(function(){
+   $('.navigation').removeClass("custom-hd");
+  });
+      });
