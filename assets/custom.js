@@ -543,17 +543,17 @@ $(document).ready(function() {
   }
   // customer ragister toggle
   $('#signup ,.sign-up-link').click(function () {
-    $('.forgot-pass').slideUp(); 
+
     $('.customer.register').slideDown();
     $('.customer.login').stop().slideUp();
     $('.already-account').show();
 })
 $('#login,.login-link').click(function () {
     $('.customer.login').slideDown();
-    // $('.account-login').slideDown();
+
     $('.customer.register').stop().slideUp();
     $('.already-account').hide();
-    // $('.forgot-pass').slideUp(); 
+ 
 
   })
 //   forgot pass toggle
