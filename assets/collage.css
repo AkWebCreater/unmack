@@ -511,3 +511,7 @@ background:#f3f3f3;
     text-align: center;
     }
 }
+
+  .custom-hd{
+    display:none !important;
+  }
