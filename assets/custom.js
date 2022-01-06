@@ -543,6 +543,7 @@ $(document).ready(function() {
   }
   // customer ragister toggle
   $('#signup ,.sign-up-link').click(function () {
+    $('.forgot-pass').slideUp(); 
     $('.customer.register').slideDown();
     $('.customer.login').stop().slideUp();
     $('.already-account').show();
@@ -551,12 +552,17 @@ $('#login,.login-link').click(function () {
     $('.customer.login').slideDown();
     $('.customer.register').stop().slideUp();
     $('.already-account').hide();
+    $('.forgot-pass').slideUp(); 
 
   })
 //   forgot pass toggle
 $('.login-footer a').eq(0).click(function(){
     $('.forgot-pass').slideDown();
     $('.account-login').slideUp();    
+})
+$('.forgot-pass a').click(function(){
+    $('.account-login').slideDown();
+    $('.forgot-pass').slideUp();   
 })
   // login popup Header end
 // our journey  jumping issue fixed
