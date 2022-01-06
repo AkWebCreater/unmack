@@ -102,10 +102,96 @@
           </span>
         {%- endif -%}
         
-        {% capture the_snippet_review_avg %}{% render 'ssw-widget-avg-rate-listing', product: product %}{% endcapture %}
-        {% unless the_snippet_review_avg contains 'Liquid error' %}
-        {{ the_snippet_review_avg }}
-        {% endunless %}    
+       <div id="shopify-block-b610cfc4-b10c-45a9-a88e-3a6bd6ed685e" class="shopify-block shopify-app-block">
+
+    <!-- BEGIN app snippet: ssw-widget-avg-rate-profile -->
+    
+    
+    
+    
+    
+    
+    <div id="ssw-avg-rate-profile-html" class="" data-product-id="7202610315464">
+      
+      
+      
+          
+        
+        
+        
+        
+
+        
+          <div class="ssw-stars ssw-stars-large">
+            
+              
+                <i class="ssw-icon-star-empty"></i>
+              
+                <i class="ssw-icon-star-empty"></i>
+              
+                <i class="ssw-icon-star-empty"></i>
+              
+                <i class="ssw-icon-star-empty"></i>
+              
+                <i class="ssw-icon-star-empty"></i>
+              
+            
+            <span class="ssw-review-count">
+                
+                  Write a review
+                
+              </span>
+          </div>
+        
+      
+      
+      <div class="ssw-clearfix"></div>
+    </div>
+    <style>
+        .gw-hide {
+            display: none;
+        }
+    </style>
+    <script type="text/javascript" defer="">
+        window.addEventListener('sswhelperload', () => {
+            sswRun(function () {
+                Ssw.gwAssetsManifestLoader.requireByKey("review.critical.css", "STYLE")
+                    ssw('#ssw-avg-rate-profile-html').removeClass('gw-hide');
+                ssw('#ssw-avg-rate-profile-html .ssw-stars, #ssw-avg-rate-profile-html .ssw-question-count').click(function () {
+                    if (ssw('#ssw-widget-recommends-html').length > 0) {
+                        ssw('html, body').animate({scrollTop : ssw("#ssw-widget-recommends-html").offset().top - 40 }, 500);
+                        var $self = ssw(this);
+                        sswAddEventListener('reviewWidgetLoaded', function() {clickButton($self)});
+                    }
+                });
+            });
+            function clickButton($element) {
+                if ($element.hasClass('ssw-stars')) {
+                    if (ssw('.ssw-nav > li[data-content="#ssw-reviews-content"]').length) {
+                        ssw('.ssw-nav > li[data-content="#ssw-reviews-content"]').click();
+                    }
+                    if (ssw("#add_recommend").length) {
+                        ssw("#add_recommend").click();
+                    }
+                } else if ($element.hasClass('ssw-question-count')) {
+                    if (ssw('.ssw-nav > li[data-content="#ssw-questions-content"]').length || ssw('.ssw-photo-layout__main')) {
+                        ssw('.ssw-nav > li[data-content="#ssw-questions-content"]').click();
+                        if (ssw("a.ssw-ask-question-link.btn.button").length) {
+                            ssw("a.ssw-ask-question-link.btn.button").click();
+                        }
+                        if (ssw('.ssw-ask-question-button').length) {
+                            ssw('.ssw-ask-question-button').click();
+                        }
+                    }
+                }
+            }
+        })
+    </script>
+
+<!-- END app snippet -->
+
+
+</div>   
 
         {% comment %} TODO: metafield {% endcomment %}
         <span class="caption-large light">{{ block.settings.description | escape }}</span>
