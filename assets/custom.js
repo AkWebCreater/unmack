@@ -550,6 +550,7 @@ $(document).ready(function() {
 })
 $('#login,.login-link').click(function () {
     $('.customer.login').slideDown();
+    $('.account-login').slideDown();
     $('.customer.register').stop().slideUp();
     $('.already-account').hide();
     $('.forgot-pass').slideUp(); 
