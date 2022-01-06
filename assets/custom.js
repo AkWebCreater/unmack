@@ -340,9 +340,8 @@ $(document).on('click','cart-remove-button',function(){
 const counterAnim = (qSelector, start = 0, duration = 2000) => {
     var html_list = document.querySelectorAll(qSelector); // returns NodeList
 var html_array = [...html_list]; // converts NodeList to Array
+// run function on each element
 html_array.forEach(counter => {
-
-    // do something awesome with each div
     const target = counter;
     var end = parseInt(counter.getAttribute('data-number'));
     let startTimestamp = null;
@@ -358,21 +357,13 @@ html_array.forEach(counter => {
     });
     
    };
-   //#endregion - end of - number counter animation
-   
-//    document.addEventListener("DOMContentLoaded", () => {
-//     counterAnim('.counter', 0);
-//     // counterAnim("#count2", 5000, 250, 1500);
-//     // counterAnim("#count3", -1000, -150, 2000);
-//     // counterAnim("#count4", 500, -100, 2500);
-//    });
+
 var win = $(window)
 var counter1 = $('.num-animation-wrtapper');
 var counterPlus = counter1.offset().top + counter1.height();
 win.on('scroll',function() {
     var windowScrollBottom1 = win.scrollTop() + win.height();  
-    console.log("bb "+(Math.floor(counter1.offset().top) + Math.floor(counter1.height())) )
-    console.log("sb "+windowScrollBottom1 )
+   
        if(Math.floor(counter1.offset().top) + Math.floor(counter1.height()) < windowScrollBottom1) {
         counterAnim('.counter', 0);
      win.off('scroll')
@@ -562,6 +553,11 @@ $('#login,.login-link').click(function () {
     $('.already-account').hide();
 
   })
+//   forgot pass toggle
+$('.login-footer a').eq(0).click(function(){
+    $('.forgot-pass').slideDown();
+    $('.account-login').slideUp();    
+})
   // login popup Header end
 // our journey  jumping issue fixed
 window.onload =function(){
