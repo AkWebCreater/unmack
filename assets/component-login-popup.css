@@ -272,6 +272,7 @@ flex-direction: column;
     padding-bottom: 12px;
     margin-bottom: 15px;
     border-bottom: 1px solid #aaa;
+    cursor: pointer !important;
 }
 .login-header::after{
     position: absolute;
@@ -399,4 +400,9 @@ line-height: 25px !important;
 .ssw-socialconnect>.ssw-social-btn>a>i, .ssw-socialconnect>.ssw-social-btn>a>svg,.ssw-socialconnect>.ssw-social-btn>a>span{
     width: auto !important;
     padding: 0 !important;
+}
+h1#login{
+  text-align: center;
+    margin-top: 125px;
+
 }
