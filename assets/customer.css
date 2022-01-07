@@ -1062,3 +1062,8 @@ bottom: -22px;
 thead::after{
   display: none!important;
 }
+.cust-link {
+   display: flex;
+    margin-top: 8px;
+    gap: 17px;
+}
