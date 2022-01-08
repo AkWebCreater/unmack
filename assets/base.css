@@ -2521,3 +2521,10 @@ div.wishlist .ssw-faveiticon{
     max-width:80%;
   }
 }
+  a.button.button--primary {
+    border: 1px solid #000000;
+    color: #cdb647;
+    height: 23px;
+    padding: 7px;
+}
+  
