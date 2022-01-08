@@ -2531,13 +2531,11 @@ div.wishlist .ssw-faveiticon{
   button.banner-btn.button.button--primary {
     width: 99px;
     height: 23px;
-    
+    color:#fff !important;
     
   
   }
   
-  #section-template--14951749845192__1630047374cc6bf00e .left-text button{
-  color:white !important;
-  }
+  
   
  
