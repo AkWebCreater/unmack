@@ -610,6 +610,7 @@
         },
         "2fa76388-52fd-417c-b6e2-48fb46818607": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "title": "",
             "collection": "turmeric"
