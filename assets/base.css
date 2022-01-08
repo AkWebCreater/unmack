@@ -2524,7 +2524,8 @@ div.wishlist .ssw-faveiticon{
   a.button.button--primary  {
     border: 1px solid  #564f4f !important;
     color: #e9eb82 !important;
-    height: 23px;
+    height: 26px;
     padding: 7px;
+    margin-left:31px;
 }
   
