@@ -622,11 +622,13 @@ $('.header__menu-item').click(function(e) {
    
   });
   $('.best-seller-collection-grid-wrapper .slick-arrow').on('click', function() {
-      var currentIndex = $('.best-seller-collection-grid-wrapper .slick-current').attr('data-index');
-      console.log('currentIndex = ' + currentIndex)
+     var currentIndex = $('.best-seller-collection-grid-wrapper .slick-current').attr('data-index');
+//       console.log('currentIndex = ' + currentIndex)
       $('.best-seller-nav span[data-index=' + currentIndex + ']').addClass('add-border').siblings().removeClass('add-border');
-      console.log('AftercurrentIndex = ' + currentIndex)
-  })
+//       console.log('AftercurrentIndex = ' + currentIndex);
+      var slickheight = $('.collection-grid-wrapper.slick-slide.slick-current.slick-active .grid').outerHeight();
+ $('.best-seller-collection-grid-wrapper.slick-initialized.slick-slider').find('.slick-track').css("height",slickheight+'px');
+ })
   // website popup homepage
   if (localStorage.getItem("popup-web") === null) {
       //...
