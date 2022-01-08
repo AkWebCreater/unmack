@@ -23,7 +23,7 @@
         "subtitle": {
           "type": "text",
           "settings": {
-            "text": "",
+            "text": "how are u",
             "text_style": "subtitle"
           }
         },
