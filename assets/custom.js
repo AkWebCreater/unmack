@@ -611,6 +611,16 @@ $('.header__menu-item').click(function(e) {
       slidesToScroll: 1,
       slidesToShow: 1
   });
+    setInterval(myslick, 1000);
+function myslick() {
+
+if ($('.best-seller-collection-grid-wrapper').hasClass('slick-initialized')){
+  var slickheight = $('.collection-grid-wrapper.slick-slide.slick-current.slick-active .grid').outerHeight();
+    $('.best-seller-collection-grid-wrapper.slick-initialized.slick-slider').find('.slick-track').css("height",slickheight+'px');
+   clearInterval(myslick);
+
+} 
+}
 
   $('.best-seller-nav span').click(function(e) {
       e.preventDefault();
