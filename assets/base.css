@@ -2535,11 +2535,9 @@ div.wishlist .ssw-faveiticon{
     
   
   }
-  button.banner-btn.button.button--primary{
-    color: white;
-  }
+  
   #section-template--14951749845192__1630047374cc6bf00e .left-text button{
-  color:white;
+  color:white !important;
   }
   
  
