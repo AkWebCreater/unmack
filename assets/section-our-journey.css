@@ -118,13 +118,14 @@ cursor:pointer;
     text-align: left;
 }
 .product-details .banner__buttons a{
-    background-color: transparent !important;
+    
     border-radius: 4px;
    padding: 2px;
     min-width: 0;
     min-height: 0;
     margin-top: 15px;
     box-shadow: none;
+      margin-left: 34px;
 }
 
 .up-sec{
