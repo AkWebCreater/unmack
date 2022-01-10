@@ -360,7 +360,8 @@ html_array.forEach(counter => {
 
 var win = $(window)
 var counter1 = $('.num-animation-wrtapper');
-var counterPlus = counter1.offset().top + counter1.height();
+if(counter1.length){
+    var counterPlus = counter1.offset().top + counter1.height();
 win.on('scroll',function() {
     var windowScrollBottom1 = win.scrollTop() + win.height();  
    
@@ -369,6 +370,7 @@ win.on('scroll',function() {
      win.off('scroll')
        }
     });
+}
 // ens here
 // add proviniance from country select box  for contact form 
 
