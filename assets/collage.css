@@ -518,3 +518,6 @@ background:#f3f3f3;
   .custom-hd{
     display:none !important;
   }
+path {
+  color:#000;
+}
