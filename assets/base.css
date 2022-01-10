@@ -2548,6 +2548,11 @@ div.wishlist .ssw-faveiticon{
     background-color:#fff !important;
   }
   
+  button.accent-bg.button--full-width {
+    height: 41px;
+}
+  
+  
   
   
  
