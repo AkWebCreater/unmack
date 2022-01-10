@@ -4,6 +4,7 @@
 }
 .mobile-otp-login{
     min-height: 100px;
+    display: none;
 }
 .accountpopup-body .left span,.accountpopup-body .right span{
     display: flex;
