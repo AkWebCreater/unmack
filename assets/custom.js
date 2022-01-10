@@ -529,6 +529,11 @@ $(document).ready(function() {
   $('.overlay-1,.close-popup').click(function(){
     loginpopupToggle('close')
   })
+  $('.otp-login').click(function(){
+
+    $('.mobile-otp-login').slideDown();
+    $('.account-login').slideUp();
+  })
   $('.login-header span').click(function() {
       $(this).addClass('accent');
       $(this).siblings().removeClass('accent')

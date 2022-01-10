@@ -111,7 +111,9 @@
                 {%- endform -%}
               </div>
             
-              
+              <div class="mobile-otp-login">
+
+              </div>
               <div class="account-login">
                 {%- if recover_success == true -%}
                   <h3 class="form__message" tabindex="-1" autofocus>
@@ -183,7 +185,7 @@
               <a href="#recover">
               {{ 'customer.login_page.forgot_password' | t }}
             </a> 
-              <a href="#">
+              <a href="#" class="otp-login">
               Login Via OTP
             </a> 
             <a href="#" class="sign-up-link">

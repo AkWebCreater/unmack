@@ -2,6 +2,9 @@
 .loginpopup .field input{
     height: 3.5rem;
 }
+.mobile-otp-login{
+    min-height: 100px;
+}
 .accountpopup-body .left span,.accountpopup-body .right span{
     display: flex;
     align-items: center;
