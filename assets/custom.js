@@ -534,6 +534,11 @@ $(document).ready(function() {
     $('.mobile-otp-login').slideDown();
     $('.account-login').slideUp();
   })
+  $('.mobile-otp-login-close').click(function(){
+
+    $('.mobile-otp-login').slideUp();
+    $('.account-login').slideDown();
+  })
   $('.login-header span').click(function() {
       $(this).addClass('accent');
       $(this).siblings().removeClass('accent')
