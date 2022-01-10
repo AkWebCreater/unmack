@@ -521,3 +521,7 @@ background:#f3f3f3;
 path {
   color:#000;
 }
+
+button.accent-bg.button--full-width {
+  height: 41px;
+}
