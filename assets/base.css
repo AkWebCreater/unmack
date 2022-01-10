@@ -552,6 +552,7 @@ h6:empty {
   color: var(--color-link);
   background-color: transparent;
   font-size: 1.4rem;
+    margin-top:1px;
 }
 
 .link--text {
@@ -1857,6 +1858,7 @@ input[type='checkbox'] {
   width: 4.4rem;
 
   position: relative;
+  margin-top: 7px;
 
 
 }
@@ -2522,12 +2524,18 @@ div.wishlist .ssw-faveiticon{
   }
 }
   a.button.button--primary  {
-    border: 1px solid  #564f4f !important;
-    color: #e9eb82 !important;
-    height: 26px;
-    padding: 7px;
-    margin-left:31px;
+    width: 99px;
+    height: 23px;
+    color:#fff !important;
+    background-color:#f60!important;
+   
 }
+  a.button.button--primary:hover {
+    color:black !important;
+    background-color:#fff !important;
+   
+}
+  
   button.banner-btn.button.button--primary {
     width: 99px;
     height: 23px;
