@@ -523,7 +523,7 @@ $(document).ready(function() {
   // login popup Header
   $('.icons-wrapper .header__icon--account').click(function(e) {
       e.preventDefault();
-      alert('account clicked')
+    
       loginpopupToggle('icon')
   })
   $('.overlay-1,.close-popup').click(function(){
