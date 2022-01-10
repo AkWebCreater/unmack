@@ -73,10 +73,7 @@ opacity: 1;
 
 }
 @media (max-width:767px){
-    .slide-wrapper .slick-slide img{
-    width: 100%;
-    display: none;
-}
+
 .slide-wrapper{
     min-height:calc(100vh - 120px);
 }
@@ -216,10 +213,23 @@ $('.banner-slide').hover(function(){
           {% for block in section.blocks %}
           {%- assign bg = block.settings.slide-bg | img_url: 'master' -%}
           {%- assign bgMobile = block.settings.slide-bg-mobile | img_url: 'master' -%}
-          <div class="banner-slide" 
+          <style>
+@media (min-width768px){
+    .banner--{{forloop.index}}{
+background-image:url({{bg}});
+    }
+}
+@media (max-width:767px){
+    .banner--{{forloop.index}}{
+background-image:url({{bgMobile}});
+    }
+}
+
+          </style>
+          <div class="banner-slide banner--{{forloop.index}}" 
           {% if block.settings.slide-bg != blank %}
           data-bg="{{bg}}"{% endif %}
-          style="background-image: url({{bg}});">
+         >
           <img class="banner" src="{{bg}}" alt="banner">
           <img class="banner-mobile" src="{{bgMobile}}" alt="banner mobile">
         <div class="slide-content-wrapper">
