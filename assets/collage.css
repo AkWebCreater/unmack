@@ -48,7 +48,8 @@ color: var(--color-pincode-validator);
 @media screen and (min-width: 750px) {
   .collage {
     grid-template-columns: minmax(auto, 48rem) minmax(25rem, auto);
-    margin-top:104px
+    margin-top:104px;
+    
   }
 
   .collage--right {
