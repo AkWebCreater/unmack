@@ -5,6 +5,16 @@
     .slide-content-wrapper *{
     color: #fff;
 }
+@media (min-width:768px) {
+    .banner-mobile{
+        display: none;
+    }
+}
+@media (max-width:768px) {
+    .banner-slide .banner{
+        display: none;
+    }
+}
 .slide-wrapper .slick-dots{
     position: absolute;
     width: 100vw;
@@ -205,11 +215,13 @@ $('.banner-slide').hover(function(){
          
           {% for block in section.blocks %}
           {%- assign bg = block.settings.slide-bg | img_url: 'master' -%}
+          {%- assign bgMobile = block.settings.slide-bg-mobile | img_url: 'master' -%}
           <div class="banner-slide" 
           {% if block.settings.slide-bg != blank %}
           data-bg="{{bg}}"{% endif %}
           style="background-image: url({{bg}});">
-          <img src="{{bg}}" alt="banner">
+          <img class="banner" src="{{bg}}" alt="banner">
+          <img class="banner-mobile" src="{{bgMobile}}" alt="banner mobile">
         <div class="slide-content-wrapper">
             <h2 class="slide-title">{{block.settings.title}}</h2>
             <p class="slide-desc">
@@ -262,6 +274,11 @@ $('.banner-slide').hover(function(){
         "type": "image_picker",
         "id": "slide-bg",
         "label": "slide image"
+    },
+    {
+        "type": "image_picker",
+        "id": "slide-bg-mobile",
+        "label": "Slide Image Mobile"
     },
     {
         "type": "text",
