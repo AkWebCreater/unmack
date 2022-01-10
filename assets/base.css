@@ -2524,11 +2524,10 @@ div.wishlist .ssw-faveiticon{
   }
 }
   a.button.button--primary  {
-    border: 1px solid  #564f4f !important;
-    color: #e9eb82 !important;
-    height: 26px;
-    padding: 7px;
-    margin-left:31px;
+    width: 99px;
+    height: 23px;
+    color:#fff !important;
+   
 }
   button.banner-btn.button.button--primary {
     width: 99px;
