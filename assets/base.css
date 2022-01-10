@@ -1114,7 +1114,7 @@ deferred-media {
   text-decoration: none;
   border: 0;
   border-radius: 0;
-  background-color: var(--color-button-background);
+  background-color:#f60!important;
   box-shadow: 0 0 0 0.1rem var(--color-button-border);
   color: var(--color-button-text);
   min-width: 12rem;
@@ -1140,9 +1140,16 @@ deferred-media {
 .button-label,
 .shopify-challenge__button,
 .customer button {
+ 
   font-size: 1.5rem;
-  letter-spacing: 0.1rem;
-  line-height: 1.2;
+    letter-spacing: .1rem;
+    line-height: 0.2;
+    width: 100%;
+    border: 0;
+  box-shadow: none;
+    border-radius: 4px;
+      margin-top: 12px
+  
 }
 
 .button--tertiary {
@@ -1283,6 +1290,7 @@ deferred-media {
   position: relative;
   width: 100%;
   display: flex;
+  margin-top: 7px;
 }
 
 .customer .field {
@@ -2513,3 +2521,25 @@ div.wishlist .ssw-faveiticon{
     max-width:80%;
   }
 }
+  a.button.button--primary  {
+    border: 1px solid  #564f4f !important;
+    color: #e9eb82 !important;
+    height: 26px;
+    padding: 7px;
+    margin-left:31px;
+}
+  button.banner-btn.button.button--primary {
+    width: 99px;
+    height: 23px;
+    color:#fff !important;
+    
+  
+  }
+  button.banner-btn.button.button--primary:hover{
+  color:black !important;
+    background-color:#fff !important;
+  }
+  
+  
+  
+ 

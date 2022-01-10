@@ -27,7 +27,7 @@
   <div class="collection-grid-wrapper" data-index="{{forloop.index}}">
       <div class="grid grid--2-col grid--3-col-tablet grid--4-col-desktop" >
       {%- for product in seller_collection.products  limit:8 -%}
-      <div class="grid__item">
+      <div class="grid__item full-product">
        {% render 'product-card',
               product_card_product: product,
               media_size: 'square',

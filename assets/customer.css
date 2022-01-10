@@ -308,7 +308,7 @@ margin: auto;
 /* Login */
 .login a {
   display: block;
-  margin: 0 auto;
+  
   width: fit-content;
 }
 
@@ -1061,4 +1061,9 @@ bottom: -22px;
 }
 thead::after{
   display: none!important;
+}
+.cust-link {
+   display: flex;
+    margin-top: 8px;
+    gap: 17px;
 }

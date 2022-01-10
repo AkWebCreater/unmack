@@ -27,19 +27,17 @@
         },
         "c5d89e91-73f8-4742-8061-d0083a0275cc": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "title": "Good For Skin Your Skin Brain & Heart",
-            "slide-bg": "shopify:\/\/shop_images\/banner1.jpg",
+            "slide-bg": "shopify:\/\/shop_images\/Ghee_1850px_598px_Desktop_Size.jpg",
             "description": "We Assure You That Our Product Manufactured to international standard"
           }
         },
         "f5fe3517-a576-4c6a-97be-5d8604be0d65": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "title": "Good For Skin Your Skin Brain & Heart",
-            "slide-bg": "shopify:\/\/shop_images\/4.jpg",
+            "slide-bg": "shopify:\/\/shop_images\/Honey_1850px_598px_Desktop_Size.jpg",
             "description": "We Assure You That Our Product Manufactured to international standard"
           }
         }
@@ -331,8 +329,8 @@
             "image": "shopify:\/\/shop_images\/300_x_354_px___01_79f9bf17-0183-4c13-9d1a-8ccfd020e22d.jpg",
             "title": "2015",
             "launched-product": "",
-            "product-image": "shopify:\/\/shop_images\/What_make_us_different_banner_x_1850_x_447_px.jpg",
-            "product-image-mobile": "shopify:\/\/shop_images\/4_535x_1.jpg",
+            "product-image": "shopify:\/\/shop_images\/pink_salt_1955_x_440_0a8afe27-f7e6-4b6c-b9df-677b91fbc940.jpg",
+            "product-image-mobile": "shopify:\/\/shop_images\/Pink-salt-_430-x-238-px.jpg",
             "heading-color": "#ffffff",
             "description-color": "#000000",
             "button-color": "#000000"
@@ -344,8 +342,8 @@
             "image": "shopify:\/\/shop_images\/300_x_354_px___02.jpg",
             "title": "2016",
             "launched-product": "acana-adult-small-breed-dry-dog-food",
-            "product-image": "shopify:\/\/shop_images\/berries_1.jpg",
-            "product-image-mobile": "shopify:\/\/shop_images\/4_535x_1.jpg",
+            "product-image": "shopify:\/\/shop_images\/lakadong_1955_x_440.jpg",
+            "product-image-mobile": "shopify:\/\/shop_images\/Lakadonga_Turmeric_430px_238px_Mobaile_Size.png",
             "heading-color": "#ffffff",
             "description-color": "#ffffff",
             "button-color": "#f58634"
@@ -357,8 +355,8 @@
             "image": "shopify:\/\/shop_images\/300_x_354_px___03.jpg",
             "title": "2017",
             "launched-product": "acana-free-run-duck-dry-dog-food",
-            "product-image": "shopify:\/\/shop_images\/berries_1.jpg",
-            "product-image-mobile": "shopify:\/\/shop_images\/4_535x_1.jpg",
+            "product-image": "shopify:\/\/shop_images\/Honey_1955_x_440.jpg",
+            "product-image-mobile": "shopify:\/\/shop_images\/honey-mobile-size-_430-x-238-pixels.jpg",
             "heading-color": "#ffffff",
             "description-color": "#ffffff",
             "button-color": "#f58634"
@@ -370,8 +368,8 @@
             "image": "shopify:\/\/shop_images\/300_x_354_px___04.jpg",
             "title": "2018",
             "launched-product": "aelous-super-dry-absorption-towels-for-pets-assorted-colours",
-            "product-image": "shopify:\/\/shop_images\/berries_1.jpg",
-            "product-image-mobile": "shopify:\/\/shop_images\/4_535x_1.jpg",
+            "product-image": "shopify:\/\/shop_images\/Seeds_1955_x_440.jpg",
+            "product-image-mobile": "shopify:\/\/shop_images\/Seeds_430px_238px_Mobaile_Size.jpg",
             "heading-color": "#ffffff",
             "description-color": "#000000",
             "button-color": "#000000"
@@ -384,7 +382,7 @@
             "title": "2019",
             "launched-product": "",
             "product-image": "shopify:\/\/shop_images\/berries_1.jpg",
-            "product-image-mobile": "shopify:\/\/shop_images\/4_535x_1.jpg",
+            "product-image-mobile": "shopify:\/\/shop_images\/coconut-mobile-430-x-238_883fa45b-ef58-4562-9719-e3fb3f80195f.jpg",
             "heading-color": "#ffffff",
             "description-color": "#000000",
             "button-color": "#000000"
@@ -396,8 +394,8 @@
             "image": "shopify:\/\/shop_images\/300_x_354_px___06.jpg",
             "title": "2020",
             "launched-product": "andis-large-pin-brush-lime-green",
-            "product-image": "shopify:\/\/shop_images\/berries_1.jpg",
-            "product-image-mobile": "shopify:\/\/shop_images\/4_535x_1.jpg",
+            "product-image": "shopify:\/\/shop_images\/Canadian-Cranberries-1995-x-440.jpg",
+            "product-image-mobile": "shopify:\/\/shop_images\/Canadian-Cranberries-430-x-238_eb117648-1b0e-458c-aa4e-1344831f3488.jpg",
             "heading-color": "#ffffff",
             "description-color": "#000000",
             "button-color": "#000000"
@@ -409,8 +407,8 @@
             "image": "shopify:\/\/shop_images\/300_x_354_px___07.jpg",
             "title": "2021",
             "launched-product": "acana-free-run-duck-dry-dog-food",
-            "product-image": "shopify:\/\/shop_images\/berries_1.jpg",
-            "product-image-mobile": "shopify:\/\/shop_images\/4_535x_1.jpg",
+            "product-image": "shopify:\/\/shop_images\/Moringa_1955_x_440.jpg",
+            "product-image-mobile": "shopify:\/\/shop_images\/moringa-mobile-size-430-x-238_056f47ce-926c-4a02-9580-195204fe69d2.jpg",
             "heading-color": "#ffffff",
             "description-color": "#000000",
             "button-color": "#000000"
@@ -612,6 +610,7 @@
         },
         "2fa76388-52fd-417c-b6e2-48fb46818607": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "title": "",
             "collection": "turmeric"

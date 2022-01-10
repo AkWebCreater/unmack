@@ -433,7 +433,8 @@ color: var(--color-pincode-validator);
 }
 
 .collage-video__modal-toggle {
-  background-color: var(--color-background);
+  background:#000;
+/*   background-color: var(--color-background); */
   border: 0.1rem solid var(--color-foreground-10);
   border-radius: 50%;
   color: var(--color-foreground-55);
@@ -452,15 +453,17 @@ color: var(--color-pincode-validator);
 
 @media screen and (min-width: 750px) {
   .collage-video__modal-toggle {
-    right: 4.8rem;
+   right: 4.8rem;
     top: 3.5rem;
+    background:#000;
   }
 }
 
 @media screen and (min-width: 990px) {
   .collage-video__modal-toggle {
-    right: 4.3rem;
-    top: 3rem;
+    right: 2.3rem;
+    top: 2.5rem;
+    background:#000
   }
 }
 
@@ -474,7 +477,7 @@ color: var(--color-pincode-validator);
   width: calc(100% - 1rem);
   height: calc(100% - 6rem);
   margin: 0 auto;
-  padding-top: 8rem;
+   padding-top: 4rem;
 }
 
 @media screen and (min-width: 750px) {
@@ -489,7 +492,7 @@ color: var(--color-pincode-validator);
   .collage-video__modal-video {
     width: calc(100% - 8.6rem);
     height: calc(100% - 7rem);
-    padding-top: 9rem;
+    padding-top: 4rem;
   }
 }
 
@@ -511,3 +514,7 @@ background:#f3f3f3;
     text-align: center;
     }
 }
+
+  .custom-hd{
+    display:none !important;
+  }

@@ -611,18 +611,36 @@ $('.header__menu-item').click(function(e) {
       slidesToScroll: 1,
       slidesToShow: 1
   });
+    setInterval(myslick, 1000);
+function myslick() {
+
+if ($('.best-seller-collection-grid-wrapper').hasClass('slick-initialized')){
+  var slickheight = $('.collection-grid-wrapper.slick-slide.slick-current.slick-active .grid').outerHeight();
+    $('.best-seller-collection-grid-wrapper.slick-initialized.slick-slider').find('.slick-track').css("height",slickheight+'px');
+   clearInterval(myslick);
+
+} 
+}
 
   $('.best-seller-nav span').click(function(e) {
       e.preventDefault();
       var slideno = $(this).attr('data-index');
       $('.best-seller-collection-grid-wrapper').slick('slickGoTo', slideno - 1);
-      $(this).addClass('add-border').siblings().removeClass('add-border')
+      $(this).addClass('add-border').siblings().removeClass('add-border');
+      var slickheight = $('.collection-grid-wrapper.slick-slide.slick-current.slick-active .grid').outerHeight();
+//     if(slickheight > 200){
+    $('.best-seller-collection-grid-wrapper.slick-initialized.slick-slider').find('.slick-track').css("height",slickheight+'px');
+
   });
   $('.best-seller-collection-grid-wrapper .slick-arrow').on('click', function() {
       var currentIndex = $('.best-seller-collection-grid-wrapper .slick-current').attr('data-index');
       console.log('currentIndex = ' + currentIndex)
       $('.best-seller-nav span[data-index=' + currentIndex + ']').addClass('add-border').siblings().removeClass('add-border');
-      console.log('AftercurrentIndex = ' + currentIndex)
+//       console.log('AftercurrentIndex = ' + currentIndex);
+    var slickheight = $('.collection-grid-wrapper.slick-slide.slick-current.slick-active .grid').outerHeight();
+//     if(slickheight > 200){
+    $('.best-seller-collection-grid-wrapper.slick-initialized.slick-slider').find('.slick-track').css("height",slickheight+'px');
+
   })
   // website popup homepage
   if (localStorage.getItem("popup-web") === null) {
@@ -828,3 +846,16 @@ if($('.body--collection.deal-of-day ').length){
         }
       }, 1000);
 }
+
+// Video popup section on home page 
+
+$(document).ready(function() {    
+        $(".collage-card__image").click(function() {
+          
+//            $('.navigation').css("display", "none");
+          $('.navigation').addClass("custom-hd");
+    });
+  $('.collage-video__modal-toggle').click(function(){
+   $('.navigation').removeClass("custom-hd");
+  });
+      });
