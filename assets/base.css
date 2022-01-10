@@ -1150,6 +1150,7 @@ deferred-media {
   box-shadow: none;
     border-radius: 4px;
       margin-top: 12px
+        height: 41px;
   
 }
 
@@ -2548,9 +2549,7 @@ div.wishlist .ssw-faveiticon{
     background-color:#fff !important;
   }
   
-  button.accent-bg.button--full-width {
-    height: 41px;
-}
+
   
   
   
