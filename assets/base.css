@@ -2529,6 +2529,12 @@ div.wishlist .ssw-faveiticon{
     color:#fff !important;
    
 }
+  a.button.button--primary:hover {
+    color:black !important;
+    background-color:#fff !important;
+   
+}
+  
   button.banner-btn.button.button--primary {
     width: 99px;
     height: 23px;
