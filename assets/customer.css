@@ -790,7 +790,7 @@ li[data-address] > h2 {
 .accent-bg ,.account-sidebar  [data-popup-name].active{
   background-color: #ff6600;
   color: #fff;
-  cursor: pointer;
+  
 }
 .account-sidebar  [data-popup-name]{
   border-radius: 8px;
