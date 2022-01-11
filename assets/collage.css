@@ -528,7 +528,12 @@ button.accent-bg.button--full-width {
   height: 41px;
 }
 
-@media only screen and (min-width: 393px)
+@media only screen and (min-width: 393px) {
 .collage-video__modal-content{
   padding-top: 38px;
+}
+  ..collage-video__modal-toggl{
+    top: 6rem;
+    right: -0.5rem;
+  }
 }
