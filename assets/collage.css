@@ -528,3 +528,14 @@ button.accent-bg.button--full-width {
   height: 41px;
 }
 
+@media only screen and (max-width: 480px) {
+.collage-video__modal-content{
+  padding-top: 30px;
+}
+  .collage-video__modal-toggle{
+    top: 7rem;
+    right: 0.5rem;
+  
+  } 
+  
+}
