@@ -532,7 +532,7 @@ button.accent-bg.button--full-width {
 .collage-video__modal-content{
   padding-top: 38px;
 }
-  ..collage-video__modal-toggl{
+  .collage-video__modal-toggl{
     top: 6rem;
     right: -0.5rem;
   }
