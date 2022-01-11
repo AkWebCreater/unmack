@@ -527,3 +527,8 @@ background:#f3f3f3;
 button.accent-bg.button--full-width {
   height: 41px;
 }
+
+@media only screen and (min-width: 393px)
+.collage-video__modal-content{
+  padding-top: 38px;
+}
