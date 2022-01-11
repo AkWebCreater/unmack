@@ -914,6 +914,7 @@ span.lable {
   box-shadow: none !important;
   border: 0 !important;
   flex-shrink: 0;
+   height: 41px;
 }
 .customer .popup .btnEdit{
   background-color:#fb660c !important;
