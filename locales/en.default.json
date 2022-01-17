@@ -359,7 +359,7 @@
       "title": "Reset account password",
       "subtext": "Enter a new password for {{ email }}",
       "password": "Enter old password",
-      "password_confirm": "Confirm password",
+      "password_confirm": "Enter new password",
       "submit": "Save"
     }
   },
