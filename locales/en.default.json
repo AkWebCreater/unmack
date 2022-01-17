@@ -358,7 +358,7 @@
     "reset_password": {
       "title": "Reset account password",
       "subtext": "Enter a new password for {{ email }}",
-      "password": "Enter new password",
+      "password": "Enter old password",
       "password_confirm": "Confirm password",
       "submit": "Save"
     }
