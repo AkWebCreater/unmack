@@ -267,7 +267,7 @@
       "title": "Activate account",
       "subtext": "Create your password to activate your account.",
       "password": "Password",
-      "password_confirm": "Enter new password",
+      "password_confirm": "Confirm password",
       "submit": "Activate account",
       "cancel": "Decline invitation"
     },
