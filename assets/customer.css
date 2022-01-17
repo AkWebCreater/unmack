@@ -795,7 +795,7 @@ li[data-address] > h2 {
 .account-sidebar  [data-popup-name]{
   border-radius: 8px;
   padding-left: 25px;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 600;
   cursor: pointer;
   display: flex;
