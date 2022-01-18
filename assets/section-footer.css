@@ -41,6 +41,7 @@ transition: all .1s ease-in;
 -webkit-box-shadow: 5px 6px 7px 0px rgba(0,0,0,0.75);
 -moz-box-shadow: 5px 6px 7px 0px rgba(0,0,0,0.75);
       transform: scale(1.1);
+  background-color:#fff;
   
 }
 .footer-login-link svg{
