@@ -2550,10 +2550,9 @@ div.wishlist .ssw-faveiticon{
     background-color:#fff !important;
   }
   svg#Layer_1 {
-   
     width: 22px;
     fill: #b2b2b2;
-}
+  }
   .ac_svg_icon {
     height: 28px;
     width: 35px;
@@ -2561,7 +2560,9 @@ div.wishlist .ssw-faveiticon{
     align-items: center;
   }
   
-
+  .account-sidebar .active svg#Layer_1{
+    fill: #fff;
+  }
   
   
   
