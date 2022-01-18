@@ -38,6 +38,7 @@ transition: all .1s ease-in;
 }
 .footer-login-link .button:hover{
   background:#fff;
+  color:#546d36;
   
 }
 .footer-login-link svg{
