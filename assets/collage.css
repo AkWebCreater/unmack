@@ -524,7 +524,7 @@ background:#f3f3f3;
   color:#000;
 }
 
-.accent-bg.button--full-width {
+button.accent-bg.button--full-width {
   height: 41px;
 }
 
