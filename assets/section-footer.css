@@ -23,6 +23,8 @@ margin-top: -125px;
 }
 .footer-login-link .button{
 padding:0;
+  margin-top: -9px;
+    width: 0px;
   min-width: 11rem;
     min-height: 3.5rem;
   justify-content:center;
