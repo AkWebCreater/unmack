@@ -927,12 +927,6 @@ img.vegi {
   padding-left: 4rem;
   max-width: 50%;
 }
-
-
-.product-details-top {
-  border-bottom: 1px solid grey;
-  padding-bottom: 10px;
-}
 .wishlist {
   text-align: right;
   visibility: hidden;
