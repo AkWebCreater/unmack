@@ -1195,3 +1195,6 @@ dd.price {
   text-align: center;
   margin-top: 0 !important;
 }
+.product__info-container .collection .grid__item{
+  padding-bottom: 0px;
+}
