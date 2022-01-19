@@ -857,13 +857,13 @@ opacity: 1; /* Firefox */
 .product-details-origin {
   font-weight: 500;
 }
-.product__title{
-      margin-bottom: 3.5rem;
+  .product__title{
+    margin-bottom: 3.5rem;
     font-size: 3rem;
-  font-weight: 400;
-}
+    font-weight: 400;
+  }
 .product__info-container>*+* {
-  margin: 0.5rem 0;
+  margin: 2rem 0;
 }
 .about__product.grid{
   margin-left: 0rem;
