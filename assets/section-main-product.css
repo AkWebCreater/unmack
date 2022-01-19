@@ -914,12 +914,10 @@ img.vegi {
   padding: 10px;
   font-size: 15px;
   font-weight: 600;
-
 }
 .product .price--sold-out .price__badge-sold-out {
   padding:0;
 }
-
 .product:not(.product--no-media) .product__media-wrapper {
   max-width: 50%;
   padding-right: 4rem;
