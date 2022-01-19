@@ -222,7 +222,7 @@ function pincodecheckInit() {
         var msg12 = checkDelhivery(pin)
         updateDelhivery(msg12.msg, pin, msg12.city);
     } else {
-        $('.customer-pincode').html("Enter Your Pincode")
+        $('.customer-pincode').html("Enter Pincode")
         $('.customer-name').hide();
     }
 
