@@ -40,12 +40,7 @@
               {% if product.compare_at_price_min > product.price_min %}
               <span class="price-compare"> 
                 {{product.compare_at_price_min | money}}
-                {% capture the_snippet_reviews %}{% include 'socialshopwave-widget-recommends' with 1 %}{% endcapture %}
-{% unless the_snippet_reviews contains 'Liquid error' %}
-    {{ the_snippet_reviews }}
-{% endunless %}
-
-
+                
               </span>  
               {% endif %}
               <span class="price-main"> 
