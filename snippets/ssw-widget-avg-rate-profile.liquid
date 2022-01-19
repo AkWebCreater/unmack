@@ -133,6 +133,40 @@
             display: none;
         }
     </style>
-    
+    <script type="text/javascript">
+        if (typeof sswRun === 'function') {
+            sswRun(function () {
+                Ssw.gwAssetsManifestLoader.requireByKey("review.critical.css", "STYLE");
+                    ssw('#ssw-avg-rate-profile-html').removeClass('gw-hide');
+                ssw('#ssw-avg-rate-profile-html .ssw-stars, #ssw-avg-rate-profile-html .ssw-question-count').click(function () {
+                    if (ssw('#ssw-widget-recommends-html').length > 0) {
+                        ssw('html, body').animate({scrollTop : ssw("#ssw-widget-recommends-html").offset().top - 40 }, 500);
+                        var $self = ssw(this);
+                        sswAddEventListener('reviewWidgetLoaded', function() {clickButton($self)});
+                    }
+                });
+            });
+            function clickButton($element) {
+                if ($element.hasClass('ssw-stars')) {
+                    if (ssw('.ssw-nav > li[data-content="#ssw-reviews-content"]').length) {
+                        ssw('.ssw-nav > li[data-content="#ssw-reviews-content"]').click();
+                    }
+                    if (ssw("#add_recommend").length) {
+                        ssw("#add_recommend").click();
+                    }
+                } else if ($element.hasClass('ssw-question-count')) {
+                    if (ssw('.ssw-nav > li[data-content="#ssw-questions-content"]').length || ssw('.ssw-photo-layout__main')) {
+                        ssw('.ssw-nav > li[data-content="#ssw-questions-content"]').click();
+                        if (ssw("a.ssw-ask-question-link.btn.button").length) {
+                            ssw("a.ssw-ask-question-link.btn.button").click();
+                        }
+                        if (ssw('.ssw-ask-question-button').length) {
+                            ssw('.ssw-ask-question-button').click();
+                        }
+                    }
+                }
+            }
+        }
+    </script>
   {% endif %}
 {% endif %}
