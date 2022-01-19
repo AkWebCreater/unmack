@@ -28,12 +28,7 @@
       <div class="grid grid--2-col grid--3-col-tablet grid--4-col-desktop" >
       {%- for product in seller_collection.products  limit:8 -%}
       <div class="grid__item full-product">
-        {% capture the_snippet_reviews %}{% include 'socialshopwave-widget-recommends' with 1 %}{% endcapture %}
-{% unless the_snippet_reviews contains 'Liquid error' %}
-    {{ the_snippet_reviews }}
-{% endunless %}
-
-
+        
        {% render 'product-card',
               product_card_product: product,
               media_size: 'square',
@@ -45,6 +40,12 @@
               {% if product.compare_at_price_min > product.price_min %}
               <span class="price-compare"> 
                 {{product.compare_at_price_min | money}}
+                {% capture the_snippet_reviews %}{% include 'socialshopwave-widget-recommends' with 1 %}{% endcapture %}
+{% unless the_snippet_reviews contains 'Liquid error' %}
+    {{ the_snippet_reviews }}
+{% endunless %}
+
+
               </span>  
               {% endif %}
               <span class="price-main"> 
