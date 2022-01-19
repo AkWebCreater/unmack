@@ -182,9 +182,6 @@
     .cutomer-wrap.success svg, .cutomer-wrap.success .wrap-inner {
         color: #fff;
    }
-    .pin-city-wrapper {
-        border-bottom: 1px solid;
-   }
     .pin-city-wrapper .customer-city {
         margin-right: 2px;
    }
