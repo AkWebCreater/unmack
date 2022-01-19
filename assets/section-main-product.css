@@ -1123,7 +1123,14 @@ h3.title.globo-heading::after{
 }
 .product-details-right{
   width: 100%;
-  margin-top: 15px;
+  margin-top: 50px;
+  position: relative;
+}
+.product-details-right .wishlist{
+  padding-bottom: 0;
+}
+.product-details-right div.wishlist .ssw-faveiticon{
+      top: -45px;
 }
 .best-seller-nav{
   display: none;
