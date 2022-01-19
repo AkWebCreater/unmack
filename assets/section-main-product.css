@@ -922,9 +922,10 @@ img.vegi {
 
 .product:not(.product--no-media) .product__media-wrapper {
   max-width: 50%;
+  padding-right: 4rem;
 }
 .product:not(.product--no-media) .product__info-wrapper {
-  padding-left: 4rem;
+  padding-left: 0;
   max-width: 50%;
 }
 .wishlist {
