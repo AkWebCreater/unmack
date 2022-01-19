@@ -816,20 +816,22 @@ a.product__text {
   width: 100%;
 }
 .product-badge .badge-title{
-  font-size: 12px;
+  font-size: 10px;
+  margin-top: 5px;
+}
+.product-badge {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
 }
 .product-badge .badge-item{
-  max-width: 20%;
+  max-width: 17%;
+  padding: 0;
 }
 .badge-item-inner{
   max-width: 80px;
   margin: auto;
   width: 100%;
-}
-@media (min-width:750px) and (max-width:1600px) {
-  .product-badge  .badge-item{
-    max-width: 20%;
-  }
 }
 @media (min-width:1025px) and (max-width:1439px) {
   .product-badge  .badge-item{
