@@ -53,10 +53,6 @@
   {{ the_snippet_review_avg }}
   {% endunless %}
 <!--             <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span> -->
-        {% capture the_snippet_review_avg %}{% render 'ssw-widget-avg-rate-profile'  %}{% endcapture %}
-  {% unless the_snippet_review_avg contains 'Liquid error' %}
-  {{ the_snippet_review_avg }}
-  {% endunless %}
         
             <div class="add-btn Amit"><a href="{{product.url}}">Add to cart</a></div>
          </div> 

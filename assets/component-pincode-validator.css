@@ -290,6 +290,10 @@ background-color: #fff;
   font-size: 13.33px;
   height: 28px;
 }
+.custom_hr{
+  margin: 12px 0;
+  height: 1.5px;
+}
 .body--product .customer-pincode{
     padding-top: 0;
 }
