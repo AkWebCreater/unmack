@@ -954,12 +954,12 @@ img.vegi {
   border: 1px solid #D2D3D5
 }
 .pincode-submit{
-  padding: 4px;
+  padding: 4px 10px;
   border-radius: 4px;
   background-color: #F07F2F;
   color:white;
   border: 1px solid #F07F2F;
-  width: 36%;
+  height: 28px;
 }
 .customer-pincode{
   text-align:center;
