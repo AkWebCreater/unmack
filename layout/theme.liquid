@@ -197,7 +197,7 @@
 </script>
 {% endif %}
     
-   
+    {% if template == 'product' %}
     <script>
       window.addEventListener('sswhelperload', () => {
         if(typeof sswRun == 'function') {
@@ -214,7 +214,7 @@
         }
       })
     </script>
-   
+    {% endif %}
     
   </body>
 </html>
