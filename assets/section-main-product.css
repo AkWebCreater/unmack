@@ -997,7 +997,7 @@ img.vegi {
 }
 .product-form .button--full-width {
    height: 40px; 
-  background-color: #D2D3D5;
+  background-color: #d2d3d5 !important;
 }
 .shopify-payment-button {
   margin-top: 15px;
