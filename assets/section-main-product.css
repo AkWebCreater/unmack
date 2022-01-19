@@ -828,7 +828,7 @@ a.product__text {
 }
 @media (min-width:750px) and (max-width:1600px) {
   .product-badge  .badge-item{
-    max-width: 25%;
+    max-width: 20%;
   }
 }
 @media (min-width:1025px) and (max-width:1439px) {
