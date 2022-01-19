@@ -87,8 +87,8 @@
     </div>
     {% assign product-badges = product-badges %}
     {% if product_badges == true %}
-    <hr class="custom_hr">
     {% render 'product_trust_badges'%}
+    <hr class="custom_hr">
     {% endif %}
     
     <small class="unit-price caption{% if available == false or product.selected_or_first_available_variant.unit_price_measurement == nil %} hidden{% endif %}">
