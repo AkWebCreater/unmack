@@ -1190,3 +1190,8 @@ dd.price {
   position: sticky;
   top: 0;
 }
+.product__info-container .card-information__wrapper .ssw-stars{
+  text-align: -webkit-center;
+  text-align: center;
+  margin: 0;
+}
