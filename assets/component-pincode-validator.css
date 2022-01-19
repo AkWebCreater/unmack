@@ -294,6 +294,14 @@ background-color: #fff;
   margin: 12px 0;
   height: 1.5px;
 }
+.quantity__button[name="minus"]{
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.quantity__button[name="plus"]{
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
 .body--product .customer-pincode{
     padding-top: 0;
 }
