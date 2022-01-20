@@ -36,18 +36,19 @@
               add_image_padding: false,
               show_vendor: false
             %}
+        {% unless template contains 'product' %}
             <div class="price"  id="price-{{ section.id }}">
               {% if product.compare_at_price_min > product.price_min %}
               <span class="price-compare"> 
                 {{product.compare_at_price_min | money}}
-                
               </span>  
               {% endif %}
               <span class="price-main"> 
                 {{product.price_min | money}}
               </span>
-
             </div>
+        {% endunless %}
+        
               {% capture the_snippet_review_avg %}{% render 'ssw-widget-avg-rate-profile'  %}{% endcapture %}
   {% unless the_snippet_review_avg contains 'Liquid error' %}
   {{ the_snippet_review_avg }}
