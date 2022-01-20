@@ -1,0 +1,30 @@
+ .blog_p {
+            text-align: justify;
+            color: #6f6b6b;
+        }
+        .heading_para{
+            text-align: center;
+            color: #6f6b6b;
+            font-size: 32px;
+        }
+
+        .image{
+            width: 100%;
+        }
+
+        .blog_link{
+            color: #217ebf;
+            text-decoration: none;
+        }
+        .heading {
+            padding-bottom: 2px;
+            border-bottom: 2px solid #e48c0b;
+            line-height: 50px;
+        }
+
+        .blog_heading_point {
+            color: #6f6b6b;
+            list-style-image:url("icon.png");
+           
+        }
+       
