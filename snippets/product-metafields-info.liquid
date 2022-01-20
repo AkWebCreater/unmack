@@ -33,6 +33,10 @@
   {% endif %}
 </div>
 
+<div class="product_description-section">
+  {{ product.description }}
+</div>
+
 {%- if product.metafields.my_fields.benefits_image != blank -%}
 <div class="product_benefits-section margin_description">
   <img src="{{ product.metafields.my_fields.benefits_image | img_url: 'master' }}" alt="benefits image" />
