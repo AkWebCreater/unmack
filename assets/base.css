@@ -589,8 +589,8 @@ h6:empty {
 
 hr {
   border: none;
-  height: 0.1rem;
-  background-color: var(--color-foreground-20);
+  height: 1.4px;
+  background-color: #e4e4e4;
   display: block;
   margin: 5rem 0;
 }
