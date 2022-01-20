@@ -744,7 +744,7 @@ transform: translateY(25px);
   </div>
 </header>
 {%- endunless -%}
-  <header class="navigation">
+  <header class="navigation {% if template contains 'product' %}navigation_product{% endif %}">
     <nav class="left-nav header__inline-menu">
       <ul class="list-menu list-menu--inline" role="list">
         {%- for link in section.settings.left-nav.links -%}
