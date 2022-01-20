@@ -1,4 +1,4 @@
-<div class="description_metafield-section">
+<div class="description_metafield-section margin_description">
   {%- if product.metafields.my_fields.left_content != blank -%}
   <div class="left_content-product content_section">
     {{ product.metafields.my_fields.left_content }}
@@ -12,7 +12,7 @@
 </div>
 
 <!--- left image and right content ---->
-<div class="description_metafield-section">
+<div class="description_metafield-section margin_description">
   {%- if product.metafields.my_fields.left_image != blank -%}
   <div class="left_image-product content_section">
     <img src="{{ product.metafields.my_fields.left_image | img_url: 'master' }}" alt="left image" /> 
@@ -26,13 +26,16 @@
 </div>
 
 {%- if product.metafields.my_fields.benefits_image != blank -%}
-<div class="product_benefits-section">
+<div class="product_benefits-section margin_description">
   <img src="{{ product.metafields.my_fields.benefits_image | img_url: 'master' }}" alt="benefits image" />
 </div>
 {% endif %}
 
 
 <style>
+  .margin_description{
+    margin-bottom: 40px;
+  }
   .product_benefits-section img, .description_metafield-section img{
     width: 100%;
   }
