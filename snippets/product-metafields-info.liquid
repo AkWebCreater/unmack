@@ -1,5 +1,12 @@
 {%- if product.metafields.my_fields.benefits_image != blank -%}
 <div class="product_benefits-section">
-  <img src="{{ product.metafields.my_fields.benefits_image | img_url: 'master' }}" alt="benefits image">
+  <img src="{{ product.metafields.my_fields.benefits_image | img_url: 'master' }}" alt="benefits image" />
 </div>
 {% endif %}
+
+
+<style>
+  .product_benefits-section img{
+    width: 100%;
+  }
+</style>
