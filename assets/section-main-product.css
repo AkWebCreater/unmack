@@ -1208,3 +1208,11 @@ dd.price {
   border-top: 2px solid #e4e4e4;
   margin-top: 0;
 }
+.product__info-container .collection .card-information__text{
+  padding: 0;
+  padding-top: 12px;
+  padding-right: 0;
+}
+.product__info-container .collection .ssw-icon-star{
+  font-size: 14px;
+}
