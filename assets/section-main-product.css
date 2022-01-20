@@ -1219,6 +1219,6 @@ dd.price {
 .best-seller-product .card-wrapper,.best-seller-product .card--product{
   border-color: transparent;
 }
-.best-seller-product .best-seller .card__inner{
+.best-seller-product.best-seller .card__inner{
   padding: 0;
 }
