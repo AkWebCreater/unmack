@@ -1216,6 +1216,6 @@ dd.price {
 .product__info-container .collection .ssw-icon-star{
   font-size: 14px;
 }
-.best-seller-product .card-wrapper{
+.best-seller-product .card-wrapper,.best-seller-product .card--product{
   border-color: transparent;
 }
