@@ -1201,3 +1201,10 @@ dd.price {
 .product__info-container .collection .grid__item{
   padding-bottom: 0px;
 }
+.product__info-container .collection .card-wrapper{
+    border: 2px solid #e4e4e4;
+}
+.product__info-container .collection .card-information{
+  border-top: 2px solid #e4e4e4;
+  margin-top: 0;
+}
