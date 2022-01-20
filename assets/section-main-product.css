@@ -1225,3 +1225,7 @@ dd.price {
 .best-seller-product .full-product{
   padding: 0 25px;
 }
+.best-seller-product .card-information .ssw-stars-large{
+  padding: 0;
+  margin: 0;
+}
