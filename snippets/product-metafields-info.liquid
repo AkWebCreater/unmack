@@ -19,7 +19,7 @@
   </div>
   {% endif %}
   {%- if product.metafields.my_fields.right_content != blank -%}
-  <div class="left_content-product content_section">
+  <div class="right_content-product content_section">
     {{ product.metafields.my_fields.right_content }}
   </div>
   {% endif %}
@@ -44,5 +44,11 @@
   }
   .description_metafield-section .content_section{
     width: 50%;
+  }
+  .description_metafield-section .left_content-product{
+    padding-right: 40px;
+  }
+  .description_metafield-section .right_content-product{
+    padding-right: 40px;
   }
 </style>
