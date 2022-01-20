@@ -11,6 +11,20 @@
   {% endif %}
 </div>
 
+<!--- left image and right content ---->
+<div class="description_metafield-section">
+  {%- if product.metafields.my_fields.left_image != blank -%}
+  <div class="left_image-product content_section">
+    <img src="{{ product.metafields.my_fields.left_image | img_url: 'master' }}" alt="left image" /> 
+  </div>
+  {% endif %}
+  {%- if product.metafields.my_fields.right_content != blank -%}
+  <div class="left_content-product content_section">
+    {{ product.metafields.my_fields.right_content }}
+  </div>
+  {% endif %}
+</div>
+
 {%- if product.metafields.my_fields.benefits_image != blank -%}
 <div class="product_benefits-section">
   <img src="{{ product.metafields.my_fields.benefits_image | img_url: 'master' }}" alt="benefits image" />
