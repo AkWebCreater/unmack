@@ -1222,3 +1222,6 @@ dd.price {
 .best-seller-product.best-seller .card__inner{
   padding: 0;
 }
+.best-seller-product .full-product{
+  padding: 0 25px;
+}
