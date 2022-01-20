@@ -1,11 +1,11 @@
 <div class="description_left_right-section">
   {%- if product.metafields.my_fields.left_content != blank -%}
-  <div class="left_content-product left_section">
+  <div class="left_content-product content_section">
     {{ product.metafields.my_fields.left_content }}
   </div>
   {% endif %}
   {%- if product.metafields.my_fields.right_image != blank -%}
-  <div class="left_image-product right_section">
+  <div class="left_image-product content_section">
     <img src="{{ product.metafields.my_fields.right_image | img_url: 'master' }}" alt="right image" /> 
   </div>
   {% endif %}
