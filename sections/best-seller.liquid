@@ -57,9 +57,10 @@
   {% unless the_snippet_review_avg contains 'Liquid error' %}
   {{ the_snippet_review_avg }}
   {% endunless %}
-        {% comment %}
+        
+        {% unless template contains 'product' %}
             <div class="add-btn Amit"><a href="{{product.url}}">Add to cart</a></div>
-        {% endcomment %}
+        {% endunless %}
          </div> 
       {%- endfor -%} 
       </div> 
