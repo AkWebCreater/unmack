@@ -109,6 +109,6 @@ display:none;
 .best-seller-index .full-product .gw-hide{
   display: block;
 }
-.best-seller-index .card-wrapper, .best-seller-index .card--product{
+/* .best-seller-index .card-wrapper, .best-seller-index .card--product{
   border-color: transparent;
-}
+} */
