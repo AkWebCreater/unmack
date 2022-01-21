@@ -49,16 +49,16 @@
             </div>
         {% endunless %}
         
-              {% capture the_snippet_review_avg %}{% render 'ssw-widget-avg-rate-profile'  %}{% endcapture %}
-  {% unless the_snippet_review_avg contains 'Liquid error' %}
-  {{ the_snippet_review_avg }}
-  {% endunless %}
+        {% capture the_snippet_review_avg %}{% render 'ssw-widget-avg-rate-profile'  %}{% endcapture %}
+        {% unless the_snippet_review_avg contains 'Liquid error' %}
+        {{ the_snippet_review_avg }}
+        {% endunless %}
 
         {% capture the_snippet_review_avg %}{% render 'ssw-widget-avg-rate-profile'  %}{% endcapture %}
-  {% unless the_snippet_review_avg contains 'Liquid error' %}
-  {{ the_snippet_review_avg }}
-  {% endunless %}
-        
+        {% unless the_snippet_review_avg contains 'Liquid error' %}
+        {{ the_snippet_review_avg }}
+        {% endunless %}
+
         {% unless template contains 'product' %}
             <div class="add-btn Amit"><a href="{{product.url}}">Add to cart</a></div>
         {% endunless %}
