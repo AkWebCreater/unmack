@@ -639,7 +639,7 @@ function myslick() {
       var slideno = $(this).attr('data-index');
       $('.best-seller-collection-grid-wrapper').slick('slickGoTo', slideno - 1);
       $(this).addClass('add-border').siblings().removeClass('add-border');
-      var slickheight = $('.collection-grid-wrapper.slick-slide.slick-current.slick-active ').outerHeight();
+      var slickheight = $('.collection-grid-wrapper.slick-slide.slick-current.slick-active .grid').outerHeight();
     $('.best-seller-collection-grid-wrapper.slick-initialized.slick-slider').find('.slick-track').css("height",slickheight+'px');
 
   });
