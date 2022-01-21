@@ -872,19 +872,6 @@ $(document).ready(function() {
    $('.navigation').removeClass("custom-hd");
   });
       });
-// for blog page video 
 
-var bunnyVideo = document.getElementById("videoid");
-function playPause() { 
-   console.log("hii");
-    if (bunnyVideo.paused)
-    {			
-		 bunnyVideo.play();
-      
-    }
-	else 
-	{
-		bunnyVideo.pause();
-	}
-     
-} 
+
+ 
