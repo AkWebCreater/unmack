@@ -103,3 +103,6 @@ display:none;
 .best-seller-product .best-seller-collection-grid-wrapper {
   padding: 0 100px;
 }
+.best-seller-index .full-product{
+  max-width: 25%;
+}
