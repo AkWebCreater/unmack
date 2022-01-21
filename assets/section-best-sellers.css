@@ -94,11 +94,11 @@
 display:none;
 }
 .best-seller .grid__item{
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .best-seller .grid__item .price{
-    margin-top: auto;
+  margin-top: auto;
 }
 .best-seller-product .best-seller-collection-grid-wrapper {
   padding: 0 100px;
@@ -108,4 +108,7 @@ display:none;
 }
 .best-seller-index .full-product .gw-hide{
   display: block;
+}
+.best-seller-index .card-wrapper{
+  border-color: transparent;
 }
