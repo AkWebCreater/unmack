@@ -39,7 +39,7 @@
             width: 680px;
         }
 
-        .playButton {
+        .blog_video_playButton {
             border-radius: 90px;
             border: 4px solid #fff;
             height: 35px;
@@ -55,7 +55,7 @@
         }
         }
 
-        .playButton:before {
+       .blog_video_playButton:before {
             content: "";
             display: block;
             width: 0;
