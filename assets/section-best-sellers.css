@@ -109,6 +109,16 @@ display:none;
 .best-seller-index .full-product .gw-hide{
   display: block;
 }
-/* .best-seller-index .card-wrapper, .best-seller-index .card--product{
-  border-color: transparent;
-} */
+.explore_more-btn {
+  text-align: -webkit-center;
+  text-align: center;
+  border-bottom: 2px solid #a8a8a8;
+}
+.explore_more-btn a{
+  background-color: #a8a8a8;
+  padding: 10px 25px;
+  position: relative;
+  top: 13px;
+  color: #fff;
+  text-decoration: none;
+}
