@@ -100,3 +100,6 @@ display:none;
 .best-seller .grid__item .price{
     margin-top: auto;
 }
+.best-seller-product{
+  padding: 0 80px !important;
+}
