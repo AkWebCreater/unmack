@@ -106,3 +106,6 @@ display:none;
 .best-seller-index .full-product{
   max-width: 25%;
 }
+.best-seller-index .full-product .gw-hide{
+  display: block;
+}
