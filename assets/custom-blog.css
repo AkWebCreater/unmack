@@ -67,6 +67,7 @@
             right: -10px;
             bottom: 0;
             margin: auto;
+          display: block !important;
         }
 .body--article  nav.breadcrumb.page-width{
       padding-left: 0px !important;
