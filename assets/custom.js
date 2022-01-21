@@ -876,9 +876,11 @@ $(document).ready(function() {
 
 var bunnyVideo = document.getElementById("videoid");
 function playPause() { 
+   console.log("hii");
     if (bunnyVideo.paused)
     {			
 		 bunnyVideo.play();
+      
     }
 	else 
 	{
