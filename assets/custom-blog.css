@@ -68,3 +68,6 @@
             bottom: 0;
             margin: auto;
         }
+.body--article  nav.breadcrumb.page-width{
+      padding-left: 0px !important;
+}
