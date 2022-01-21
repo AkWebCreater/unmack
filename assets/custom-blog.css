@@ -56,7 +56,7 @@
         }
         }
 
-       .blog_video_playButton:before {
+       .blog_video_playButton::before {
             content: "";
             display: block;
             width: 0;
