@@ -61,8 +61,10 @@
          </div> 
       {%- endfor -%} 
       </div> 
-    <div class="explore_more-btn"><a href="{{ seller_collection.url }}"><span>Explore more <i class="fa fa-forward" aria-hidden="true"></i> </span></a></div>
-</div>      
+    {% if template.name == '404' %}
+      <div class="explore_more-btn"><a href="{{ seller_collection.url }}"><span>Explore more <i class="fa fa-forward" aria-hidden="true"></i> </span></a></div>
+	{% endif %}
+  </div>      
   {%- endif -%}
     {% endcase %}
 {%- endfor -%}
