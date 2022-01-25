@@ -135,7 +135,7 @@ background-color: #f5f5f5;
 .contact__button{
   text-align: center;
 }
-.contact__button button{
+.contact__button .button{
   background-color: #a6a6a6;
   border: 0 !important;
   box-shadow: none;
