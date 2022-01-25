@@ -89,7 +89,7 @@
   color: #f58634;
   margin-bottom: 30px;
 }
-.form-inner-wrapper .section-title{
+.form-inner-wrapper .section-title, .business_form-content .section-title{
   font-size: 42px;
 }
 .business_form-btn{
