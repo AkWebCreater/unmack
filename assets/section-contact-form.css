@@ -1,6 +1,9 @@
 .business-partnership .navigation{
   background-color: transparent;
 }
+.business-partnership .navigation.bg{
+  background-color: #f58634;
+}
 .contact img {
   max-width: 100%;
 }
