@@ -1,53 +1,5 @@
 {% assign productDescription = product.description | split:"<!-- split -->" %}
-{% unless template contains 'product' %}
-<div class="decription-main">
-  {{ productDescription[0] }}
 
-  <div class="decription-image">
-    <div class="decription-image-item">
-      {%- if product.metafields.my_fields.icon -%}
-      <div class="image">
-        <img alt="img1" src="{{product.metafields.my_fields.icon | img_url:'80x'}}">
-      </div>
-      {%- endif -%}
-      {%- unless product.metafields.my_fields.icon_label == blank -%}
-      <div class="image-text">{{product.metafields.my_fields.icon_label}}</div>
-      {%- endunless -%}
-        
-    </div>
-    <div class="decription-image-item">
-      {%- unless product.metafields.my_fields.icon_2 == blank -%}
-        
-      <div class="image"><img alt="img2" src="{{product.metafields.my_fields.icon_2 | img_url:'80x'}}"></div>
-      {%- endunless -%}
-    {%- unless product.metafields.my_fields.icon_label_2 == blank -%}
-      
-    <div class="image-text">{{product.metafields.my_fields.icon_label_2}}</div>
-    {%- endunless -%}
-    </div>
-    <div class="decription-image-item">
-      {%- unless product.metafields.my_fields.icon_3 == blank -%}
-        
-      <div class="image"><img alt="img3" src="{{product.metafields.my_fields.icon_3 | img_url:'80x'}}"></div>
-      {%- endunless -%}
-    {%- unless product.metafields.my_fields.icon_label_3 == blank -%}
-      
-    <div class="image-text">{{product.metafields.my_fields.icon_label_3}}</div>
-    {%- endunless -%}
-    </div>
-    <div class="decription-image-item">
-      {%- unless product.metafields.my_fields.icon_4 == blank-%}
-        
-      <div class="image"><img alt="img4" src="{{product.metafields.my_fields.icon_4 | img_url:'80x'}}"></div>
-      {%- endunless -%}
-    {%- unless product.metafields.my_fields.icon_label_4 == blank-%}
-      
-    <div class="image-text">{{product.metafields.my_fields.icon_label_4}}</div>
-    {%- endunless -%}
-    </div>
-    </div>
-</div>
-{% endunless %}
 {% if template contains 'product' %}
 <div class="page-width">
   {% if productDescription[1] or productDescription[2] %}
