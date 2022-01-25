@@ -58,21 +58,11 @@
       {%- endunless -%}
     </div>
     <div class="decription-image-item">
-      {%- if product.metafields.my_fields.custom_icon_1 != blank -%}
-      <div class="image">
-        <img alt="img1" src="{{product.metafields.my_fields.custom_icon_1 | img_url:'80x'}}">
-      </div>
-      {%- endif -%}
-      {%- unless product.metafields.my_fields.custom_icon_text_1 == blank -%}
-      <div class="image-text">{{product.metafields.my_fields.custom_icon_text_1}}</div>
-      {%- endunless -%}        
-    </div>
-    <div class="decription-image-item">
-      {%- unless product.metafields.my_fields.custom_icon_2 == blank -%}  
-      <div class="image"><img alt="img2" src="{{product.metafields.my_fields.custom_icon_2 | img_url:'80x'}}"></div>
+      {%- unless product.metafields.my_fields.custom_icon_5 == blank-%}
+      <div class="image"><img alt="img4" src="{{product.metafields.my_fields.custom_icon_5 | img_url:'80x'}}"></div>
       {%- endunless -%}
-      {%- unless product.metafields.my_fields.custom_icon_text_2 == blank -%}
-      <div class="image-text">{{product.metafields.my_fields.custom_icon_text_2}}</div>
+      {%- unless product.metafields.my_fields.custom_icon_text_5 == blank-%}
+      <div class="image-text">{{product.metafields.my_fields.custom_icon_text_5 }}</div>
       {%- endunless -%}
     </div>
   </div>
