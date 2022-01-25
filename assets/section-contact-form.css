@@ -81,6 +81,7 @@
 }
 .business_info p{
   font-size: 19px;
+  text-align: justify;
 }
 .business_author{
   text-align: -webkit-right;
