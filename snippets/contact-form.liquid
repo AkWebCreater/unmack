@@ -278,27 +278,27 @@
               >
                 {{- form.body -}}
               </textarea>
-              <label class="form__label field__label" for="ContactForm-Address">Address</label>
+              <label class="form__label field__label" for="ContactForm-Address">Address*</label>
             </div>
             {% endif %}
             <div class="contact__fields">
               <div class="field">
                   <input type="text"  id="ContactForm-phone" class="field__input" autocomplete="tel" name="contact[city]"  placeholder="City">
-                  <label class="field__label" for="ContactForm-phone">City</label>
+                  <label class="field__label" for="ContactForm-phone">City*</label>
                 </div>
                 <div class="field field--with-error">
                   <input type="number" class="field__input" name="contact[pincode]"  value=""
                     
                   placeholder="Pincode"
                   >
-                  <label class="field__label">Pincode</label>
+                  <label class="field__label">Pincode*</label>
                 </div>
            </div>
            {% if type == 'contact' or business == true %}
              <div class="contact__fields">
               <div class="field select__custome">
                 <div class="field__label_custome">
-                  <label class="" for="ContactForm-name">Country</label>
+                  <label class="" for="ContactForm-name">Country*</label>
                 </div>
                 <div class=" ">
                   <select name="contact[country]" class="custome-select" id="country">
@@ -309,7 +309,7 @@
               </div>
               <div class="field select__custome">
                 <div class="field__label_custome">
-                  <label class="" for="ContactForm-name">States</label>
+                  <label class="" for="ContactForm-name">States*</label>
                 </div>
                 <div class="">
                   <select name="contact[state]" class="custome-select provi" id="proviniance">
