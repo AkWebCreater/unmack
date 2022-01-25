@@ -1233,4 +1233,5 @@ dd.price {
 }
 .decription-main .decription-image{
   display: flex;
+  justify-content: space-around;
 }
