@@ -73,6 +73,9 @@
   max-width: 1199px;
   margin: 0 auto;
 }
+.space_left-business{
+  padding-left: 60px;
+}
 @media screen and (min-width: 750px) {
   .contact__button {
     margin-top: 4rem;
