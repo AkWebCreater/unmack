@@ -135,8 +135,8 @@ background-color: #f5f5f5;
 .contact__button{
   text-align: center;
 }
-.contact__button .button.business_form-btn{
-  background-color: #a6a6a6;
+.contact__button .button{
+  background-color: #a6a6a6 !important;
   border: 0 !important;
   box-shadow: none;
   text-transform: uppercase;
