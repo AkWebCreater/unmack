@@ -1231,3 +1231,6 @@ dd.price {
   padding: 0;
   margin: 0;
 }
+.decription-main .decription-image{
+  display: flex;
+}
