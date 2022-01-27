@@ -1,5 +1,10 @@
 //########################## make my own box age #####################
 $(document).ready(function () {
+  
+  $('.header__active-menu-item').on('click', function(){
+    alert('Hiii');
+  });
+  
     // add items to cart
     $(document).on('click', '.add-combo-in-cart', function() {
       var $products = $('.combo-products-grid').children();
