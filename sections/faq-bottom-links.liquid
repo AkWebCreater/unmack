@@ -1,17 +1,23 @@
 {{ 'section-faq-bottom-links.css' | asset_url | stylesheet_tag }}
 <script>
   $(document).ready(function(){
-     var url = window.location.href;
+    var url = window.location.href;
     var urlType = url.split('#')[1];
     if(urlType == 'contact' ){
       $('html, body').animate({scrollTop: $('#faq_bottom-links').offset().top - 250}, 1000);
     }
-    
+    if(urlType == 'faq' ){
+      $('html, body').animate({scrollTop: $('#faq_bottom-links').offset().top - 50}, 600);
+    }
+
     $('.header__inline-menu a.header__menu-item').click(function(){
       var urlV = $(this).attr('href');
       var urlTypeV = urlV.split('#')[1];
       if(urlTypeV == 'contact' ){
         $('html, body').animate({scrollTop: $('#faq_bottom-links').offset().top - 150}, 1000);
+      }
+      if(urlTypeV == 'faq' ){
+        $('html, body').animate({scrollTop: $('#faq_bottom-links').offset().top - 50}, 600);
       }
     });
   });
