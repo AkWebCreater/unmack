@@ -1,5 +1,5 @@
 {{ 'section-faq.css' | asset_url | stylesheet_tag }}
-<div class="container-faq page-width">
+<div id="faq_top-links"  class="container-faq page-width">
   {% render 'breadcrums' %}
   <h2 class=" section-title mt-0">{{section.settings.section-heading}}</h2>
     {% for block in section.blocks %}
