@@ -8,7 +8,11 @@
     }
     
     $('.header__inline-menu a.header__menu-item').click(function(){
-      alert('Hii');
+      var urlV = $(this).attr('href');
+      var urlTypeV = urlV.split('#')[1];
+      if(urlTypeV == 'contact' ){
+        $('html, body').animate({scrollTop: $('#faq_bottom-links').offset().top - 250}, 1000);
+      }
     });
   });
 </script>
