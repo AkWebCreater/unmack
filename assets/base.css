@@ -213,6 +213,7 @@ html.no-js .no-js-hidden {
 }
 
 @media screen and (min-width: 990px) {
+  
   .page-width--narrow {
     max-width: 72.6rem;
     padding: 0;
@@ -2385,11 +2386,12 @@ body  .header__search{
 
 /* policy pages headings */
 .main-page-title{
+  margin-left: -2%;
   position: relative;
   color: #050505!important;
-  font-size: 24px;
-  font-weight: 700;
-  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: bolder;
+/*   text-transform: uppercase; */
 }
 .main-page-title::after{
   content: '';
@@ -2555,7 +2557,13 @@ div.wishlist .ssw-faveiticon{
     fill: #fff;
   }
   
-  
+   
+ .main-page-title{
+  font-family: system-ui!important; 
+ }
+.page-wrapper .rte{
+  color:#000;
+}
   
   
  
