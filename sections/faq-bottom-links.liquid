@@ -1,6 +1,9 @@
 {{ 'section-faq-bottom-links.css' | asset_url | stylesheet_tag }}
 <script>
   $(document).ready(function(){
+     var url = window.location.href;
+    var urlType = url.split('#')[1];
+    alert(urlType);
     $('html, body').animate({scrollTop: $('#faq_bottom-links').offset().top - 250}, 1000);
   });
 </script>
