@@ -135,7 +135,7 @@
 
 </head>
 
-  <body class="body--{{template.name}} {{template.suffix}} | {{page.handle}} | {{page_title | handleize }}">
+  <body class="body--{{template.name}} {{template.suffix}}  {{page.handle}} {% unless template.name contains 'account' %}{{page_title | handleize }}{% endunless %}">
 
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ "accessibility.skip_to_text" | t }}
