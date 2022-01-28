@@ -282,7 +282,7 @@ $('.BtnSave').click(function(){
 
 $('.addNewAdd1').hide();
                    $('.addNewAdd > .btnEdit').click(function(){
-                   $('.addNewAdd1').toggle();
+                   $('.addNewAdd1').stop().toggle();
                    })
                    $('.addNewAdd .BtnSave').click(function(e){
                    e.preventDefault()
