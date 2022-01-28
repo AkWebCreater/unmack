@@ -863,7 +863,7 @@ if($('.body--collection.deal-of-day ').length){
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
       
         // Display the result in the element with id="demo"
-        var timesLeft = days+' : '+hours+' : '+minutes+' : '+seconds+ ' LEFT';
+        var timesLeft = days+'Days : '+hours+'Hours : '+minutes+'Minuts : '+seconds+ 'Second LEFT';
         if (distance < 0) {
           clearInterval(x);
           document.getElementById("demo").innerHTML = "OFFER EXPIRED";
