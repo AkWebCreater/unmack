@@ -1,6 +1,6 @@
 {{ 'customer.css' | asset_url | stylesheet_tag }}
 <!-- {{ 'customer.css' | asset_url | stylesheet_tag }} -->
-<script src="{{ 'customer.js' | asset_url }}" defer></script>
+
 {% section 'image-banner' %}
 <div class="main-body page-width">
 
@@ -1379,6 +1379,7 @@
     </div>
   </div>
 </div>
+        <script src="{{ 'customer.js' | asset_url }}" defer></script>
 <script>
   window.onload = () => {
     typeof CustomerAddresses !== 'undefined' && new CustomerAddresses();
