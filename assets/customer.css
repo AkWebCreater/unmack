@@ -1069,3 +1069,7 @@ thead::after{
   line-height: 40px;
   font-weight: 600;
 }
+.account-header_align{
+  display: flex;
+  align-items: center;
+}
