@@ -7,6 +7,7 @@
   {% render 'breadcrums' %}
   <div class="account-wrapper customer account">
     <div class="account-header">
+      <div class="account-header_align">
       <div class="logo">
         {% if settings.acc-logo %}
         <img src="{{settings.acc-logo | img_url: '150x'}}" alt="account-logo">
@@ -16,6 +17,7 @@
         <span>Welcome</span>
         <span class="h1 account-name accent">{{customer.first_name}}</span>
         <span class="email">{{customer.email}}</span>
+      </div>
       </div>
       <div class="logout">
         <a href="{{ routes.account_logout_url }}">
