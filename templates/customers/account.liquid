@@ -1363,7 +1363,7 @@
                   <span>
                   you have not added any address yet
                   </span> 
-                 <div data-address>
+                 <div data-address class="addNewAdd">
                     <button class="btnEdit"
                       type="button"
                       aria-expanded="false"
@@ -1371,7 +1371,7 @@
                     >
                       {{ 'customer.addresses.add_new' | t }}
                     </button>
-                    <div id="AddAddress">
+                    <div id="AddAddress" class="addNewAdd1">
                       <h2 class="accent" id="AddressNewHeading">{{ 'customer.addresses.add_new' | t }}</h2>
                       {%- form 'customer_address', customer.new_address, aria-labelledBy: 'AddressNewHeading' -%}
                         <div class="field">         

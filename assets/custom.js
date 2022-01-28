@@ -280,6 +280,10 @@ $('.BtnSave').click(function(){
                    
 })
 
+$('.addNewAdd1').hide();
+                   $('.addNewAdd > .btnEdit').click(function(){
+                   $('.addNewAdd1').show();
+                   })
 // add cart
 $(document).on('click', '.add-cart', function() {
   var product = $(this).parent();
