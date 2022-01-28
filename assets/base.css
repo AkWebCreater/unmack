@@ -2235,9 +2235,7 @@ img{
    margin-right: 10px;
  }
  @media (max-width:767px) {
-   .images-bottom, .images-top {
-    padding-left: 7%;
-  }
+  
   .announcement-bar{
     display: block;
   }
@@ -2570,6 +2568,7 @@ div.wishlist .ssw-faveiticon{
 }
 
 
-  
-  
- 
+  @media (max-width:767px) { 
+  .images-bottom, .images-top {
+    padding-left: 7%;
+  }}
