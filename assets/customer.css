@@ -17,6 +17,9 @@ margin: auto;
   max-width: 190px;
     margin: 0;
 }
+.body--addresses .addresses [aria-controls="AddAddress"]{
+  max-width: 250px;
+}
 @media screen and (min-width: 750px) {
   .customer:not(.account, .order, .addresses) {
     max-width: 47.8rem;
