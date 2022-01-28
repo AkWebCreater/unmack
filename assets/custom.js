@@ -273,7 +273,8 @@ $('.BtnSave').click(function(){
     $(this).closest('[data-address]').find('[aria-expanded="true"]').attr("aria-expanded",false);;
              Shopify.postLink(trag, {
          parameters: { _method: 'delete' },
-                   });      
+                   }); 
+                   window.location.href = 'https://umanacshop.myshopify.com/account'
 })
 
 // add cart
