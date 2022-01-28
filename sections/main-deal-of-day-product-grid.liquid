@@ -465,6 +465,14 @@
             {% if collection.products_count == 4 %} grid--4-col-desktop{% else %} grid--3-col-tablet grid--one-third-max grid--4-col-desktop grid--quarter-max{% endif %}
           {% endif %} negative-margin">
           {%- for product in collection.products -%}
+          
+          
+          {% if forloop.index == 1 %}
+          <div class="collection_middile_image">
+            <img src="//cdn.shopify.com/s/files/1/0591/8192/4552/files/13_Taste_your_tongue_with_Umanac_Apple_Cider_Vinegar_Flavours_Banner_970px600px_V001.jpg?v=1642680285" alt="collection middle image">
+          </div>
+          {% endif %}
+          
             <li class="grid__item">
               {% render 'product-card',
                 product_card_product: product,
