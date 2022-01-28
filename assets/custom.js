@@ -282,8 +282,12 @@ $('.BtnSave').click(function(){
 
 $('.addNewAdd1').hide();
                    $('.addNewAdd > .btnEdit').click(function(){
-                   $('.addNewAdd1').show();
+                   $('.addNewAdd1').toggle();
                    })
+                   $('.addNewAdd .BtnSave').click(function(e){
+                   e.preventDefault()
+                   $('.addNewAdd1').hide();
+                   })                   
 // add cart
 $(document).on('click', '.add-cart', function() {
   var product = $(this).parent();
