@@ -2565,10 +2565,7 @@ div.wishlist .ssw-faveiticon{
 .page-wrapper .rte{
   color:#000;
  font-size: 2.2rem;
-}
-
-
-  @media (max-width:767px) { 
+} 
   .images-bottom, .images-top {
     padding-left: 7%;
-  }}
+  }
