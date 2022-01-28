@@ -1064,3 +1064,8 @@ thead::after{
     margin-top: 8px;
     gap: 17px;
 }
+.account-header .account-name{
+  text-transform: capitalize;
+  line-height: 40px;
+  font-weight: 600;
+}
