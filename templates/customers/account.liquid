@@ -10,7 +10,9 @@
       <div class="account-header_align">
       <div class="logo">
         {% if settings.acc-logo %}
-        <img src="{{settings.acc-logo | img_url: '150x'}}" alt="account-logo">
+        <a href="/account">
+          <img src="{{settings.acc-logo | img_url: '150x'}}" alt="account-logo">
+        </a>
         {% endif %}
       </div>
       <div class="account-detail">
