@@ -863,10 +863,6 @@ if($('.body--collection.deal-of-day ').length){
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
       
         // Display the result in the element with id="demo"
-        document.getElementById("days").innerText = days ;
-        document.getElementById("hours").innerText = hours;
-        document.getElementById("minutes").innerText = minutes;
-        document.getElementById("seconds").innerText = seconds;
         var timesLeft = days+' : '+hours+' : '+minutes+' : '+seconds+ ' LEFT';
         if (distance < 0) {
           clearInterval(x);
