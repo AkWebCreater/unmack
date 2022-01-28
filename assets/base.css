@@ -2569,3 +2569,7 @@ div.wishlist .ssw-faveiticon{
   .images-bottom, .images-top {
     padding-left: 7%;
   }
+  @media screen and (max-width : 768px) {
+    .images-bottom, .images-top {
+    padding-left: 7%;
+    }}
