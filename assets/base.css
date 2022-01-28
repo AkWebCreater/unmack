@@ -876,7 +876,7 @@ summary::-webkit-details-marker {
   padding-left: 0.5rem;
   padding-bottom: 0.5rem;
   width: calc(25% - 0.5rem * 3 / 4);
-  max-width: 50%;
+  max-width: 25%;
   flex-grow: 1;
   flex-shrink: 0;
 }
