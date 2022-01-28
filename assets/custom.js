@@ -264,6 +264,7 @@ $('.btnEdit').click(function(){
                    alert('hi')
     // $(this).parent('li').siblings().find('div[id]').slideDown();
     $(this).parent('li').siblings().find('[aria-expanded="true"]').attr("aria-expanded",false);
+    $(this).attr("aria-expanded",true);
     $(this).parent('ul').siblings().find('[aria-expanded="true"]').attr("aria-expanded",false);
 })
 $('.BtnSave').click(function(){
