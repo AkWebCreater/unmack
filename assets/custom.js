@@ -867,13 +867,12 @@ if($('.body--collection.deal-of-day ').length){
         document.getElementById("hours").innerText = hours;
         document.getElementById("minutes").innerText = minutes;
         document.getElementById("seconds").innerText = seconds;
-        // document.getElementById("offer-time").innerHTML = days + "d " + hours + "h "
-        // + minutes + "m " + seconds + "s ";
-      
-        // If the count down is finished, write some text
+        var timesLeft = days+' : '+hours+' : '+minutes+' : '+seconds+ ' LEFT';
         if (distance < 0) {
           clearInterval(x);
           document.getElementById("demo").innerHTML = "OFFER EXPIRED";
+        }else{
+          document.getElementById("demo").innerHTML = "<i class='far fa-clock' style='font-size:16px'></i></span> " +timesLeft;
         }
       }, 1000);
 }
