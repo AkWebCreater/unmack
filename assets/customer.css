@@ -1,7 +1,12 @@
 .customer:not(.account, .order) {
 margin: auto;
 }
-
+.body--addresses .navigation{
+  background-color: #f58634 !important;
+}
+.body--addresses .addresses{
+  margin-top: 160px;
+}
 @media screen and (min-width: 750px) {
   .customer:not(.account, .order, .addresses) {
     max-width: 47.8rem;
