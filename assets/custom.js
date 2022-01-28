@@ -268,9 +268,14 @@ $('.btnEdit').click(function(){
     $(this).parent('ul').siblings().find('[aria-expanded="true"]').attr("aria-expanded",false);
 })
 $('.BtnSave').click(function(){
+                   var trag = $(this).attr('data-target');
     // $(this).parent('li').siblings().find('div[id]').slideDown();
     $(this).closest('[data-address]').find('[aria-expanded="true"]').attr("aria-expanded",false);;
+             Shopify.postLink(trag, {
+         parameters: { _method: 'delete' },
+                   });      
 })
+
 // add cart
 $(document).on('click', '.add-cart', function() {
   var product = $(this).parent();
