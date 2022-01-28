@@ -7,6 +7,16 @@ margin: auto;
 .body--addresses .addresses{
   margin-top: 160px;
 }
+.body--addresses .addresses [role="list"] h2{
+  padding-right: 30px;
+}
+.body--addresses .addresses [role="list"] p{
+  width: 100%;
+}
+.body--addresses .addresses [role="list"] button{
+  max-width: 190px;
+    margin: 0;
+}
 @media screen and (min-width: 750px) {
   .customer:not(.account, .order, .addresses) {
     max-width: 47.8rem;
