@@ -261,12 +261,12 @@ function addToCart(qnt, id,Callback) {
 }
 // account logged in page edit address
 $('.btnEdit').click(function(){
-    // $(this).parent('li').siblings().find('div[id]').slideDown();
+    $(this).parent('li').siblings().find('div[id]').slideDown();
     $(this).parent('li').siblings().find('[aria-expanded="true"]').attr("aria-expanded",false);
     $(this).parent('ul').siblings().find('[aria-expanded="true"]').attr("aria-expanded",false);
 })
 $('.BtnSave').click(function(){
-    // $(this).parent('li').siblings().find('div[id]').slideDown();
+    $(this).parent('li').siblings().find('div[id]').slideDown();
     $(this).closest('[data-address]').find('[aria-expanded="true"]').attr("aria-expanded",false);;
 })
 // add cart
