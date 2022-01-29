@@ -779,7 +779,7 @@ transform: translateY(25px);
                         <div class="grid product-popup-menu grid--4-col-desktop grid--4-col-tablet">
                           {%- for product in collection.products limit:8 -%}
                             <div class="grid__item">
-                              {% render 'product-card',
+                              {% render 'product-card-navigation',
                               product_card_product: product,
                               media_size:'square',
                               show_secondary_image: false,
