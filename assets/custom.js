@@ -626,7 +626,7 @@ $('.header__menu-item').click(function(e) {
     if(checkTrim == 'Our Story'){
       var url = window.location.href;
       var urlType = url.split('#')[1];
-      if(urlType == 'our-story' || urlType == 'undefined'){
+      if(urlType == 'our-story'){
         $('html, body').animate({scrollTop: $('#shopify-section-template--14951749845192__1630397519047103ef').offset().top - 90}, 1000);
       }
     }
