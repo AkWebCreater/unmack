@@ -771,7 +771,7 @@ transform: translateY(25px);
                   {%- for childlink in link.links -%}
                     <li>
                       {%- if childlink.links == blank -%}
-                        <a href="{{ childlink.url }}" class="{{ childlink.size }} ppppppppppp header__menu-item list-menu__item link link--text focus-inset caption-large{% if childlink.current %} list-menu__item--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
+                        <a href="{{ childlink.url }}" class="{{ childlink.links.size }} header__menu-item list-menu__item link link--text focus-inset caption-large{% if childlink.current %} list-menu__item--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
                           {{ childlink.title | escape }}
                         </a>
                         {% if childlink.type == 'collection_link' %}
@@ -800,7 +800,7 @@ transform: translateY(25px);
                           <ul class="header__submenu list-menu motion-reduce">
                             {%- for grandchildlink in childlink.links -%}
                               <li>
-                                <a nnnnnnnnnnnnn href="{{ grandchildlink.url }}" class="header__menu-item list-menu__item link link--text focus-inset caption-large{% if grandchildlink.current %} list-menu__item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                                <a href="{{ grandchildlink.url }}" class="header__menu-item list-menu__item link link--text focus-inset caption-large{% if grandchildlink.current %} list-menu__item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
                                   {{ grandchildlink.title | escape }}
                                 </a>
                               </li>
