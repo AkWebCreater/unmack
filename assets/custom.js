@@ -624,7 +624,7 @@ $('.header__menu-item').click(function(e) {
     var check = $(this).text();
     var checkTrim = $.trim(check)
     if(checkTrim == 'Our Story'){
-      e.preventDefault();
+     // e.preventDefault();
       var url = window.location.href;
       var urlType = url.split('#')[1];
       alert(url);
