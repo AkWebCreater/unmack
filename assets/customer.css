@@ -1,3 +1,7 @@
+.account_sidebar-d{
+  height: 35px;
+  margin-bottom: 10px;
+}
 .customer:not(.account, .order) {
 margin: auto;
 }
