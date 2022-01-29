@@ -627,7 +627,8 @@ $('.header__menu-item').click(function(e) {
       e.preventDefault();
       var url = window.location.href;
       var urlType = url.split('#')[1];
-        $('html, body').animate({scrollTop: $('#shopify-section-template--14951749845192__1630397519047103ef').offset().top - 90}, 1000);
+      alert(urlType);
+        //$('html, body').animate({scrollTop: $('#shopify-section-template--14951749845192__1630397519047103ef').offset().top - 90}, 1000);
     }
 })
 // ends here
