@@ -126,8 +126,16 @@ border: 2.5px solid var(--color-background);
     text-transform: capitalize !important;
   }
   .navigation .header__submenu .list-menu__item:hover{
-background-color: var(--color-background);
-color: #fff;
+    background-color: var(--color-background);
+      color: #fff;
+      }
+  .navigation .header__submenu .list-menu__item:hover:before{
+    content: '';
+    position: absolute;
+    right: -16px;
+    width: 20px;
+    height: 100%;
+    background-color: var(--color-background);
   }
   .navigation .header__submenu li:first-child .list-menu__item{
     border-top-left-radius: 8px;
