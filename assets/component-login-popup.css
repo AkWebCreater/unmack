@@ -76,6 +76,10 @@ body.blocked{
 display: flex;
 flex-direction: column;
 }
+.account-detail .account-name{
+  line-height: 35px;
+  font-size: 40px;
+}
 .loginpopup{
     background-color: #fff;
     padding: 10px;
