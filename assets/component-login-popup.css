@@ -1,4 +1,7 @@
 /* generel  */
+.accountpopup-body .wishlist{
+  visibility: visible;
+}
 .loginpopup .field input{
     height: 3.5rem;
 }
