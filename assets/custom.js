@@ -623,11 +623,11 @@ function bringElIntoView(el) {
 $('.header__menu-item').click(function(e) {
     var check = $(this).text();
     var checkTrim = $.trim(check)
-    // $.fn.ensureVisible = function () { $(this).each(function () { $(this)[0].scrollIntoView(); }); };
     if(checkTrim == 'Our Story'){
-        e.preventDefault();
-        bringElIntoView($('.video-collage-section'))
-        // $('.video-collage-section').ensureVisible();
+      e.preventDefault();
+      var url = window.location.href;
+      var urlType = url.split('#')[1];
+        $('html, body').animate({scrollTop: $('#shopify-section-template--14951749845192__1630397519047103ef').offset().top - 250}, 1000);
     }
 })
 // ends here
