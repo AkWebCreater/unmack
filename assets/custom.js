@@ -624,12 +624,12 @@ $('.header__menu-item').click(function(e) {
     var check = $(this).text();
     var checkTrim = $.trim(check)
     if(checkTrim == 'Our Story'){
-     // e.preventDefault();
       var url = window.location.href;
       var urlType = url.split('#')[1];
       alert(url);
-      alert(urlType);
-        //$('html, body').animate({scrollTop: $('#shopify-section-template--14951749845192__1630397519047103ef').offset().top - 90}, 1000);
+      if(urlType == 'our-story'){
+        $('html, body').animate({scrollTop: $('#shopify-section-template--14951749845192__1630397519047103ef').offset().top - 90}, 1000);
+      }
     }
 })
 // ends here
