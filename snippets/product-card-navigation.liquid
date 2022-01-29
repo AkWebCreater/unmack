@@ -15,10 +15,12 @@
 <!-- product-card.liquid -->
 <div class="card-wrapper">
   
+  {% comment %}
   {% capture the_snippet_fave_icon %}{% render 'ssw-widget-faveicon' with product_card_product.id %}{% endcapture %}
   {% unless the_snippet_fave_icon contains 'Liquid error' %}
   {{ the_snippet_fave_icon }}
-  {% endunless %}    
+  {% endunless %}  
+  {% endcomment %}
   
   <a href="{{ product_card_product.url | default: '#' }}" class="full-unstyled-link">
     <span class="visually-hidden">{{ product_card_product.title | escape }}</span>
