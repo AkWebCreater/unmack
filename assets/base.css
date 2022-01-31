@@ -2565,6 +2565,7 @@ div.wishlist .ssw-faveiticon{
 .page-wrapper .rte{
   color:#000;
  font-size: 1.6rem;
+  text-align: justify;
 } 
   
   @media screen and (min-width : 768px) {
