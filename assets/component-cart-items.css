@@ -118,6 +118,7 @@ width: 100%;
 
 cart-remove-button .button {
   
+  #
   padding: 5px 10px;
   background: #eaeaea;
   border-radius: 4px;
@@ -356,4 +357,8 @@ cart-remove-button .icon-remove {
   margin-left: 8px;
   font-weight: 600;
   font-size: 2rem;
+}
+#Remove-1 .button.button--tertiary{
+  background-color:#fff;
+
 }
