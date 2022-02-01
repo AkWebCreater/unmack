@@ -358,13 +358,3 @@ cart-remove-button .icon-remove {
   font-weight: 600;
   font-size: 2rem;
 }
-.remove-btn{
-      cursor: pointer;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    font: inherit;
-      text-decoration: none;
-
-}
