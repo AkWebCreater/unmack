@@ -117,8 +117,7 @@ width: 100%;
 }
 
 cart-remove-button .button {
-  min-width:auto;
-  min-height: auto;
+  
   padding: 5px 10px;
   background: #eaeaea;
   border-radius: 4px;
