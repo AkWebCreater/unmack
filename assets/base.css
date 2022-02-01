@@ -1067,7 +1067,7 @@ summary::-webkit-details-marker {
 }
 
 .media--portrait {
-  padding-bottom: 125%;
+  padding-bottom: 100%;
 }
 
 .media--landscape {
