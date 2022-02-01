@@ -358,7 +358,7 @@ cart-remove-button .icon-remove {
   font-weight: 600;
   font-size: 2rem;
 }
-#Remove-1 .button.button--tertiary{
-  background-color:#fff;
+#Remove-1 .button .button--tertiary{
+  background-color:#fff !important;
 
 }
