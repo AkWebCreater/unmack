@@ -2578,3 +2578,18 @@ div.wishlist .ssw-faveiticon{
 } 
  
   }
+  .cart_rmv_btn{
+    text-transform: uppercase!important;
+    background-color: #fff !important;
+    border: 1px solid;
+    border-color: #a5a5a5;
+    font-weight: 600;
+    color: #000;
+    min-width: auto;
+    min-height: auto;
+    padding: 5px 10px;
+    background: #eaeaea;
+    border-radius: 4px;
+    margin: 0 0.1rem 0.1rem 0;
+    text-decoration: none;
+  }
