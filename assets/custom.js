@@ -83,6 +83,7 @@ $(document).ready(function () {
 
       // add prodcut to combo grid on add btn click
   $('.product-slider .add-btn').click(function() {
+    $(this).text('added');
     var productHtm = $(this).closest('.product-item').clone();
     var index  = $(this).closest('.product-item').attr('data-index');
     var qnt = parseInt($(this).closest('.product-item').find('.qtn').text());
