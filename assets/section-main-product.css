@@ -998,8 +998,8 @@ img.vegi {
 .product-form .button--full-width {
    height: 40px; 
   background-color: #d2d3d5 !important;
-  max-width: 170px;
-    width: 100%;
+  
+    width: 80%;
 }
 .shopify-payment-button {
   margin-top: 15px;
