@@ -75,7 +75,7 @@
                     </div>
                 {% endfor %}
                 {% else %}
-                <div class="slider-slide">
+                <div class="slider-slide" {{all_products[block.settings.product].title }}>
                 {%- assign product = all_products[block.settings.product] -%}
                     
                   <div class="pro-wrapper">
