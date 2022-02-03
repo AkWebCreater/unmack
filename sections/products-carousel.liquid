@@ -57,6 +57,8 @@
     </div>
     <div class="slider">
         {% for block in section.blocks %}
+      {%- assign product = all_products[block.settings.product] -%}
+      {{ product.title }}
             {% if block.settings.collection != blank %}
                 {%- assign collection = collections[block.settings.collection] -%}
                 {% for product in collection.products %}
