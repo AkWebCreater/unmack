@@ -21,15 +21,13 @@
   font-weight: 100;
   font-size: 14px;
 }
-
 .pro-img {
-	padding-bottom:5px;
-    font-size: 0;
+  padding-bottom:5px;
+  font-size: 0;
 }
 .product-item img {
-	margin: auto;
+  margin: auto;
 }
-
 .tab {
 	position: relative;
 	background-color: #999999;
