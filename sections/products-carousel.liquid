@@ -79,7 +79,7 @@
                   {% assign blockProduct = block.settings.product %}
                 {%- assign product = all_products[blockProduct] -%}
                     
-                  <div class="pro-wrapper nn" {{blockProduct}}>
+                  <div {{product.title}}--pp class="pro-wrapper nn" {{blockProduct}}>
                     {% render 'product-card',
                     product_card_product: product,
                     media_size: 'square',
