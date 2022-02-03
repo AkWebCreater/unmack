@@ -111,6 +111,9 @@
 
 
 @media (min-width:750px) {
+  .products-slider{
+    background-position-y: -60px !important;
+  }
     .main-wrapper {
         display: flex;
     } 
