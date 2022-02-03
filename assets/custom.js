@@ -119,18 +119,17 @@ $(document).ready(function () {
     })
      // end
        // remove item on click remove BTN
-  $(document).on('click', '.remove-btn', function() {
-    $(this).closest('.product-item').remove();
-    setTimeout(() => {
-        priceUpadte()
-    }, 100)
-    if ($('.combo-products-grid .product-item').length == 0) {
-        // do something
-        $('.combo-wrapper').addClass('empty')
-        $('.combo-products-grid').html('<span class="empty-text">you have not selected any product</span>')
-    }
-
-})
+   $(document).on('click', '.remove-btn', function() {
+     $(this).closest('.product-item').remove();
+     setTimeout(() => {
+                priceUpadte()
+   }, 100)
+   if ($('.combo-products-grid .product-item').length == 0) {
+     // do something
+     $('.combo-wrapper').addClass('empty')
+     $('.combo-products-grid').html('<span class="empty-text">you have not selected any product</span>')
+   }
+});
 // end
 })
 // ################### make my own box page ends here #######################
