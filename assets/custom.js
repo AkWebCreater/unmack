@@ -93,7 +93,6 @@ $(document).ready(function () {
       $('.combo-products-grid [data-index='+ index +']').find('.qtn').text(newQtn);
       priceUpadte()
     }else{
-
       $('.combo-products-grid').append(productHtm);
       $('.combo-wrapper').removeClass('empty');
       priceUpadte()
