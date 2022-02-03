@@ -120,10 +120,11 @@ $(document).ready(function () {
      // end
        // remove item on click remove BTN
    $(document).on('click', '.remove-btn', function() {
+     $('.add-btn-'+ $(this).attr('removeid') ).text('add');
      $(this).closest('.product-item').remove();
      setTimeout(() => {
                 priceUpadte()
-   }, 100)
+   }, 100);
    if ($('.combo-products-grid .product-item').length == 0) {
      // do something
      $('.combo-wrapper').addClass('empty')
