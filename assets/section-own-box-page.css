@@ -13,6 +13,12 @@
 .product-bottom {
 	line-height: 1.2;
 }
+.product-bottom .detail-wrapper{
+  min-height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .left-part .product-bottom>* {
     margin-bottom: 5px;
 }
