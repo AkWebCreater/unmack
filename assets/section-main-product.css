@@ -191,6 +191,7 @@ fieldset.product-form__input .form__label {
   margin-bottom: 1rem;
   max-width: 170px;
     width: 100%;
+  
 }
 
 .product-form__submit[disabled] + .shopify-payment-button {
