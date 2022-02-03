@@ -78,7 +78,7 @@
                 <div class="slider-slide">
                 {%- assign product = all_products[block.settings.product] -%}
                     
-                  <div class="pro-wrapper" {{product.title}}>
+                  <div class="pro-wrapper" {{product.price}}>
                     {% render 'product-card',
                     product_card_product: product,
                     media_size: 'square',
