@@ -77,7 +77,7 @@ $(document).ready(function () {
         $(".slick-track")
             .find(".slick-slide .pro-wrapper")
             // deducted height of ssw wishlist icon '24' for avoiding extra height
-            .css("height", (slickHeight - 24) + "px");
+            .css("height", (slickHeight) + "px");
     }
     // end
 
