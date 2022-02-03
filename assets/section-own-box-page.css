@@ -112,7 +112,7 @@
 
 @media (min-width:750px) {
   .products-slider{
-    background-position-y: -60px !important;
+    background-position-y: -65px !important;
   }
   .products-slider.page-width{
     padding: 0 8%;
