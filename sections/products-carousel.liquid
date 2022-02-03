@@ -55,11 +55,8 @@
         <h2 class="title accent">{{section.settings.title}}</h2>
         <p class="subtext">{{section.settings.description}}</p>
     </div>
-    <div class="slider ppppppppppppppp">
+    <div class="slider">
         {% for block in section.blocks %}
-      000{{ block.settings.product}}
-      {%- assign product = all_products[block.settings.product] -%}
-      <span class="neeraj" style="display:none;">{{ product.title }}</span>
             {% if block.settings.collection != blank %}
                 {%- assign collection = collections[block.settings.collection] -%}
                 {% for product in collection.products %}
@@ -79,9 +76,9 @@
                 {% endfor %}
                 {% else %}
                 <div class="slider-slide">
-                {%- assign product = all_products[block.settings.product] -%}
+                  {% assign blockProduct = block.settings.product %}
                     
-                  <div class="pro-wrapper" {{product.price}}>
+                  <div class="pro-wrapper" {{blockProduct}}>
                     {% render 'product-card',
                     product_card_product: product,
                     media_size: 'square',
