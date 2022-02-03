@@ -58,7 +58,7 @@
     <div class="slider">
         {% for block in section.blocks %}
       {%- assign product = all_products[block.settings.product] -%}
-      {{ product.title }}
+      <span class="neeraj" style="display:none;">{{ product.title }}</span>
             {% if block.settings.collection != blank %}
                 {%- assign collection = collections[block.settings.collection] -%}
                 {% for product in collection.products %}
