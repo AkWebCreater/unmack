@@ -77,7 +77,7 @@
                 {% else %}
                 <div class="slider-slide">
                   {% assign blockProduct = block.settings.product %}
-                {%- assign product = all_products['cow-ghee-range'] -%}
+                {%- assign product = all_products[block.settings.product] -%}
                     
                   <div {{product.title}}--pp class="pro-wrapper nn" {{blockProduct}}>
                     {% render 'product-card',
