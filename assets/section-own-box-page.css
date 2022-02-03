@@ -22,6 +22,11 @@
 .left-part .product-bottom>* {
     margin-bottom: 5px;
 }
+.main-wrapper .add-btn {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .product-bottom>* {
   display: block;
   font-weight: 100;
@@ -197,10 +202,10 @@ justify-content: space-between;
     display: flex;
 }
 .qtn-changer-wrapper{
-    flex: 2;
-    margin-right: 10px;
-    min-height: 15px;
-    line-height: 18px;
+  flex: 2;
+  margin-right: 10px;
+  min-height: 20px;
+  line-height: 23px;
 }
 /* left part */
 .left-part .lower{
