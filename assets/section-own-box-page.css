@@ -83,16 +83,16 @@
 .add-btn {
 	border-radius: 6px;
 }
-
 .product-slider .slick-prev {
-	left: 10px;
+  left: 10px;
+  cursor: pointer;
 }
-
 .product-slider .slick-next {
-	right: 10px;
+  right: 10px;
+  cursor: pointer;
 }
 .left-part img,.right-part img{
-    width: 100%;
+  width: 100%;
 } 
 .upper{
     font-size: 0;
