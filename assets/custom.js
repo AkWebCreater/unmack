@@ -2,18 +2,18 @@
 $(document).ready(function () {
   
     // add items to cart
-    $(document).on('click', '.add-combo-in-cart', function() {
-      var $products = $('.combo-products-grid').children();
-  var total = $products.length
-      $products.each(function(index){
-        var id = $(this).find('[data-var-id]').attr("data-var-id")
-        var qt = $(this).find('.qtn').text();
-        addToCart(qt, id)
-      })
-      $('.overlay-own-box').show();
-      $('.cart-success-alert').removeClass('closed');
-      $('body.make-own-box').addClass('blocked')
+  $(document).on('click', '.add-combo-in-cart', function() {
+    var $products = $('.combo-products-grid').children();
+    var total = $products.length
+    $products.each(function(index){
+      var id = $(this).find('[data-var-id]').attr("data-var-id")
+      var qt = $(this).find('.qtn').text();
+      addToCart(qt, id)
     })
+    $('.overlay-own-box').show();
+    $('.cart-success-alert').removeClass('closed');
+    $('body.make-own-box').addClass('blocked')
+  });
     // end
     $('.overlay-own-box').click(function(){
       $(this).hide();
