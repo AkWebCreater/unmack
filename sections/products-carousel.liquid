@@ -75,10 +75,10 @@
                     </div>
                 {% endfor %}
                 {% else %}
-                <div class="slider-slide" {{all_products[block.settings.product].title }}>
+                <div class="slider-slide">
                 {%- assign product = all_products[block.settings.product] -%}
                     
-                  <div class="pro-wrapper">
+                  <div class="pro-wrapper" {{product.title}}>
                     {% render 'product-card',
                     product_card_product: product,
                     media_size: 'square',
