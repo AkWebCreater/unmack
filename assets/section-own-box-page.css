@@ -114,6 +114,9 @@
   .products-slider{
     background-position-y: -60px !important;
   }
+  .products-slider.page-width{
+    padding: 0 7%;
+  }
     .main-wrapper {
         display: flex;
     } 
