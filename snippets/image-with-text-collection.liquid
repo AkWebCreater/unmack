@@ -68,6 +68,9 @@
             <div class="metafield_description"><span class="collection_left_spacing"></span>{{product_card_product.metafields.my_fields.product_description}}</div>
             <div class="metafield_description"><span class="collection_left_spacing"></span>{{product_card_product.metafields.my_fields.product_description_1 }}</div>
           </span>
+          
+          {% include 'collection-page-metafields' %}
+          
           <div class="variants">
             <div class="variant-opt">
               {% for variant in product_card_product.variants %}
