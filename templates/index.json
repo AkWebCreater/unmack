@@ -1,1 +1,927 @@
-{"sections":{"image_banner":{"type":"image-banner","blocks":{"4897ff98-5c47-41cf-a214-6f48a7b6f7e7":{"type":"heading","settings":{"heading":"Good for your"}},"7769bffb-25e2-4719-bdd9-966863c436b3":{"type":"html","settings":{"title":"Skin, Brain & Heart"}},"c766293f-31a1-4fc6-8786-f0a40ca2893f":{"type":"text","settings":{"text":"We assure you that our product is manufactured to International Standars"}},"e33514a2-23da-4693-92a5-6cfa639c74ca":{"type":"buttons","settings":{"button_label_1":"shop now","button_link_1":"","button_style_secondary_1":false,"button_label_2":"","button_link_2":"","button_style_secondary_2":false}}},"block_order":["4897ff98-5c47-41cf-a214-6f48a7b6f7e7","7769bffb-25e2-4719-bdd9-966863c436b3","c766293f-31a1-4fc6-8786-f0a40ca2893f","e33514a2-23da-4693-92a5-6cfa639c74ca"],"settings":{"image":"shopify:\/\/shop_images\/banner1.jpg","desktop_text_box_position":"center","color_scheme":"background-1","stack_images_on_mobile":false,"adapt_height_first_image":false,"logo":"shopify:\/\/shop_images\/logo.png","logo-url":"https:\/\/umanacshop.myshopify.com\/"}},"1629442942354c0579":{"type":"image-with-image","settings":{"image":"shopify:\/\/shop_images\/left.jpg","image-right":"shopify:\/\/shop_images\/right.jpg","height":"small","color_scheme":"background-1","layout":"image_first","text-left":"Loaded with High-Quality Protein","text-right":"Natural source of Fiber!","button-left":"Shop Now","url_button1":"","button-right":"Shop Now","url_button2":""}},"1629437096c644785e":{"type":"rich-text","blocks":{"1629437096c644785e-0":{"type":"heading","settings":{"heading":"About Umanac","heading_size":"small"}},"1629437096c644785e-1":{"type":"text","settings":{"text":"<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<\/p><p> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<\/p>"}}},"block_order":["1629437096c644785e-0","1629437096c644785e-1"],"settings":{"color_scheme":"background-1","full_width":true}},"featured_products":{"type":"featured-collection","settings":{"title":"Featured products","collection":"","products_to_show":4,"show_view_all":true,"swipe_on_mobile":false,"image_ratio":"square","show_secondary_image":true,"add_image_padding":false,"show_vendor":true}},"image_text":{"type":"image-with-text","blocks":{"heading":{"type":"heading","settings":{"heading":"Image with text"}},"text":{"type":"text","settings":{"text":"<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"}},"button":{"type":"button","settings":{"button_label":"","button_link":""}}},"block_order":["heading","text","button"],"settings":{"height":"adapt","color_scheme":"background-1","layout":"text_first"}},"162970442599c768f0":{"type":"image-with-image","settings":{"image":"shopify:\/\/shop_images\/1.jpg","image-right":"shopify:\/\/shop_images\/3.jpg","height":"adapt","color_scheme":"background-1","layout":"image_first","text-left":"Loaded with high quality","text-right":"Natural source of Fiber","button-left":"Shop Now","url_button1":"","button-right":"Shop Now","url_button2":""}},"1629717201ce534c37":{"type":"image-with-image","settings":{"image":"shopify:\/\/shop_images\/2.jpg","image-right":"shopify:\/\/shop_images\/4.jpg","height":"adapt","color_scheme":"background-1","layout":"image_first","text-left":"Loaded with High-Quality","text-right":"Natural Source of Fiber","button-left":"Shop Now","url_button1":"","button-right":"Shop Now","url_button2":""}},"162972083300aa45de":{"type":"testomonials","blocks":{"162972083300aa45de-0":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/4.jpg","title":"Column","text":"<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"}},"162972083300aa45de-1":{"type":"column","settings":{"title":"Column","text":"<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"}},"162972083300aa45de-2":{"type":"column","settings":{"title":"Column","text":"<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"}},"9d74ce2e-c1e7-4a22-9356-8448e57a167c":{"type":"column","settings":{"title":"Column","text":"<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"}},"808764c5-6f88-4d0e-8e7b-35caa92bf4a1":{"type":"column","settings":{"title":"Column","text":"<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"}},"c0e26860-df0d-4df9-9965-02a382533a34":{"type":"column","settings":{"title":"Column","text":"<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"}},"618edbf9-5971-4805-a59a-596630db456c":{"type":"column","settings":{"title":"Column","text":"<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"}},"b7a416c7-4a5f-40d4-9306-e379a2dc20d7":{"type":"column","settings":{"title":"Column","text":"<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"}},"13c58bc8-a26f-4a0d-8b45-5b76b265fb4a":{"type":"column","settings":{"title":"Column","text":"<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"}}},"block_order":["162972083300aa45de-0","162972083300aa45de-1","162972083300aa45de-2","9d74ce2e-c1e7-4a22-9356-8448e57a167c","808764c5-6f88-4d0e-8e7b-35caa92bf4a1","c0e26860-df0d-4df9-9965-02a382533a34","618edbf9-5971-4805-a59a-596630db456c","b7a416c7-4a5f-40d4-9306-e379a2dc20d7","13c58bc8-a26f-4a0d-8b45-5b76b265fb4a"],"settings":{"title":"WHY DO PEOPLE LOVE US?","image_width":"half","image_ratio":"circle","column_alignment":"center","background_style":"primary","button_label":"","button_link":"","swipe_on_mobile":false}},"162980320171418539":{"type":"background-with-images","blocks":{"08a32cc5-0a14-49ed-bee5-46f75531ac2d":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/s1.png","title":"<h3>FAST &amp; EASY<\/h3>","description":"Get superfood delivered within 3-5 days."}},"92e120f3-d210-45a4-8a49-1de04d65cfa1":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/s2.png","title":"<h3>SOURCING &amp; PROCESSING<\/h3>","description":"High quality ingredients sourced from across the globe"}},"09d0d071-03ef-409e-bf03-6ea673adbcbd":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/s3.png","title":"<h3>PACKAGING<\/h3>","description":"Packed in sturdy, reliable bags"}}},"block_order":["08a32cc5-0a14-49ed-bee5-46f75531ac2d","92e120f3-d210-45a4-8a49-1de04d65cfa1","09d0d071-03ef-409e-bf03-6ea673adbcbd"],"settings":{"background-image":"shopify:\/\/shop_images\/banner2.jpg","heading":"WHAT MAKES US DIFFERENT"}},"1629975191d683abdf":{"type":"background-with-images","blocks":{"f77395d4-07a5-4a29-b96c-dc268c8cc414":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/s3.png","title":"","description":""}},"4e5dc365-315e-442b-a698-60fdda75bb7c":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/s2.png","title":"","description":""}},"bd5777c2-da53-4638-acc1-31c1aa7a21e7":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/s2.png","title":"","description":""}},"8fa67626-6c92-4764-a7af-435db9d35258":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/s2.png","title":"","description":""}},"a04a482e-950f-496b-a212-98e2f4e12da5":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/s3.png","title":"","description":""}}},"block_order":["f77395d4-07a5-4a29-b96c-dc268c8cc414","4e5dc365-315e-442b-a698-60fdda75bb7c","bd5777c2-da53-4638-acc1-31c1aa7a21e7","8fa67626-6c92-4764-a7af-435db9d35258","a04a482e-950f-496b-a212-98e2f4e12da5"],"settings":{"heading":""}}},"order":["image_banner","1629442942354c0579","1629437096c644785e","featured_products","image_text","162970442599c768f0","1629717201ce534c37","162972083300aa45de","162980320171418539","1629975191d683abdf"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-404",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "1636958667600d5d10": {
+      "type": "home-banner",
+      "blocks": {
+        "4a23b762-0bfe-4250-b2bf-c3b29bc78125": {
+          "type": "slide",
+          "settings": {
+            "title": "Good For Skin Your Skin Brain & Heart",
+            "slide-bg": "shopify:\/\/shop_images\/ACV_as_per_Mockup_1920_x_1000.jpg",
+            "slide-bg-mobile": "shopify:\/\/shop_images\/ACV_1850_x_598.jpg",
+            "description": "We Assure You That Our Product Manufactured to international standard"
+          }
+        },
+        "66518eee-7490-400d-9ca1-060862a7ad32": {
+          "type": "slide",
+          "settings": {
+            "title": "Good For Skin Your Skin Brain & Heart",
+            "slide-bg": "shopify:\/\/shop_images\/Juices-as-per-Mockup-1920-x-1000.jpg",
+            "slide-bg-mobile": "shopify:\/\/shop_images\/Juices_Mobile_430_x_238.jpg",
+            "description": "We Assure You That Our Product Manufactured to international standard"
+          }
+        },
+        "c5d89e91-73f8-4742-8061-d0083a0275cc": {
+          "type": "slide",
+          "settings": {
+            "title": "Good For Skin Your Skin Brain & Heart",
+            "slide-bg": "shopify:\/\/shop_images\/Ghee_1850px_598px_Desktop_Size.jpg",
+            "slide-bg-mobile": "shopify:\/\/shop_images\/Ghee_430px_238px_Mobaile_Size.jpg",
+            "description": "We Assure You That Our Product Manufactured to international standard"
+          }
+        },
+        "f5fe3517-a576-4c6a-97be-5d8604be0d65": {
+          "type": "slide",
+          "settings": {
+            "title": "Good For Skin Your Skin Brain & Heart",
+            "slide-bg": "shopify:\/\/shop_images\/Honey_1850px_598px_Desktop_Size.jpg",
+            "slide-bg-mobile": "shopify:\/\/shop_images\/Honey_430px_238px_Mobaile_Size.jpg",
+            "description": "We Assure You That Our Product Manufactured to international standard"
+          }
+        }
+      },
+      "block_order": [
+        "4a23b762-0bfe-4250-b2bf-c3b29bc78125",
+        "66518eee-7490-400d-9ca1-060862a7ad32",
+        "c5d89e91-73f8-4742-8061-d0083a0275cc",
+        "f5fe3517-a576-4c6a-97be-5d8604be0d65"
+      ],
+      "settings": {
+        "title": "Home Banner"
+      }
+    },
+    "1630041953ce8ee818": {
+      "type": "image-with-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Collection_Grid_x_1_As_per_Mockup.jpg",
+        "image-right": "shopify:\/\/shop_images\/Collection_Grid_x_2_As_per_Mockup.jpg",
+        "height": "adapt",
+        "color_scheme": "background-1",
+        "layout": "image_first",
+        "text-left": "<p>Loaded with<br> High - Quality<br> Protein<\/p>",
+        "text-right": "<p>Natural Source<br> of Fiber!<\/p>",
+        "button-left": "Shop Now",
+        "url_button1": "",
+        "button-right": "Shop Now",
+        "url_button2": "",
+        "button-right-color": "#e7c272",
+        "button-left-color": "#e7c272",
+        "text-left-color": "#ffffff",
+        "text-right-color": "#ffffff"
+      }
+    },
+    "163017222359fc16f2": {
+      "type": "collection-list",
+      "blocks": {
+        "163017222359fc16f2-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "ghee"
+          }
+        },
+        "163017222359fc16f2-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "oil"
+          }
+        },
+        "163017222359fc16f2-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "acv"
+          }
+        },
+        "fcfee2de-3eb0-4d79-ad8b-f777fcc200c9": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "moringa"
+          }
+        },
+        "1565a8e8-ce60-447e-822a-db19903b4957": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "turmeric"
+          }
+        },
+        "fe2806c8-cca1-4096-931e-338d80cb134f": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "pink-salt"
+          }
+        },
+        "ec16222b-e473-4668-afe0-c0c895dcb2ae": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "salt"
+          }
+        },
+        "6b9dbf87-fb61-4724-96f3-e9753b9faa4b": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "ghee"
+          }
+        },
+        "cb942289-53fb-443a-9df2-7aec6adcb286": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "oil"
+          }
+        },
+        "7f25d20b-fb89-4e87-b5c7-ee6b5d953e2a": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "acv"
+          }
+        },
+        "c5a4e0f5-a68d-4815-894f-35cd91c27413": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "moringa"
+          }
+        }
+      },
+      "block_order": [
+        "163017222359fc16f2-0",
+        "163017222359fc16f2-1",
+        "163017222359fc16f2-2",
+        "fcfee2de-3eb0-4d79-ad8b-f777fcc200c9",
+        "1565a8e8-ce60-447e-822a-db19903b4957",
+        "fe2806c8-cca1-4096-931e-338d80cb134f",
+        "ec16222b-e473-4668-afe0-c0c895dcb2ae",
+        "6b9dbf87-fb61-4724-96f3-e9753b9faa4b",
+        "cb942289-53fb-443a-9df2-7aec6adcb286",
+        "7f25d20b-fb89-4e87-b5c7-ee6b5d953e2a",
+        "c5a4e0f5-a68d-4815-894f-35cd91c27413"
+      ],
+      "settings": {
+        "title": "Product Range",
+        "image-width": "130",
+        "image_ratio": "square",
+        "color_scheme": "background-2",
+        "swipe_on_mobile": true,
+        "image_padding": false,
+        "show_view_all": false
+      }
+    },
+    "1640759556f9b68464": {
+      "type": "banner-with-text",
+      "blocks": {
+        "16407595564df769dd-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner"
+          }
+        },
+        "16407595564df769dd-1": {
+          "type": "html",
+          "disabled": true,
+          "settings": {
+            "title": "Image banner"
+          }
+        },
+        "16407595564df769dd-2": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template."
+          }
+        },
+        "16407595564df769dd-3": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false
+          }
+        }
+      },
+      "block_order": [
+        "16407595564df769dd-0",
+        "16407595564df769dd-1",
+        "16407595564df769dd-2",
+        "16407595564df769dd-3"
+      ],
+      "settings": {
+        "background-image": "shopify:\/\/shop_images\/imgpsh_fullsize_anim_13.jpg",
+        "mobile-background-image": "shopify:\/\/shop_images\/All_Products_Banner_Mobile_Size.png",
+        "banner-link": "",
+        "heading": ""
+      }
+    },
+    "16300432373f322551": {
+      "type": "about-text",
+      "blocks": {
+        "16300432373f322551-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "About Umanac",
+            "heading_size": "medium"
+          }
+        },
+        "16300432373f322551-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>\n     \nIn today's fast-paced and dynamic world, health often takes a backseat. Stress, pollution, long hours of work take a toll on your health. Unhealthy eating habits in adults, as well as children, also affect health. Thus, we at UMANAC only believe in offering health and nutrition in your daily life, in the easiest and tastiest way and free of chemicals.\n<br><br>\n     \nUMANAC Gourmet Range is developed with great precision to deliver quality products to its consumers with the intent of promoting every day healthy living without any compromise in taste. Also, in today's fast-paced world, you need to stand out among the crowd and personal grooming is essential to make that first and lasting impression.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16300432373f322551-0",
+        "16300432373f322551-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
+    "1630493245926e8dc9": {
+      "type": "map-with-num-aanimation",
+      "blocks": {
+        "1630493245926e8dc9-0": {
+          "type": "text-block",
+          "settings": {
+            "heading": "Product Range",
+            "text": 45,
+            "text-after-number": "+"
+          }
+        },
+        "1630493245926e8dc9-1": {
+          "type": "text-block",
+          "settings": {
+            "heading": "Popular  Brands",
+            "text": 27,
+            "text-after-number": "+"
+          }
+        },
+        "1630493245926e8dc9-2": {
+          "type": "text-block",
+          "settings": {
+            "heading": "Export Cities",
+            "text": 18,
+            "text-after-number": "+"
+          }
+        },
+        "1630493245926e8dc9-3": {
+          "type": "text-block",
+          "settings": {
+            "heading": "Happy Customer",
+            "text": 21,
+            "text-after-number": "k+"
+          }
+        }
+      },
+      "block_order": [
+        "1630493245926e8dc9-0",
+        "1630493245926e8dc9-1",
+        "1630493245926e8dc9-2",
+        "1630493245926e8dc9-3"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Final_Gif_Comp3.gif"
+      }
+    },
+    "1630397519047103ef": {
+      "type": "vedio-collage",
+      "blocks": {
+        "1630397519047103ef-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Since 2016,Unamac  has been a name you can trust"
+          }
+        },
+        "1630397519047103ef-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Discover our story and experience the exciting moment and milestones  <\/p>"
+          }
+        },
+        "1630397519047103ef-0": {
+          "type": "video",
+          "settings": {
+            "cover_image": "shopify:\/\/shop_images\/jouney.png",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "description": "Describe the video for customers using screen readers",
+            "image_padding": false
+          }
+        }
+      },
+      "block_order": [
+        "1630397519047103ef-1",
+        "1630397519047103ef-2",
+        "1630397519047103ef-0"
+      ],
+      "settings": {
+        "heading": "Umanac Journey",
+        "desktop_layout": "right",
+        "mobile_layout": "column"
+      }
+    },
+    "16305577334f548741": {
+      "type": "our-journey",
+      "blocks": {
+        "6257f23f-71b7-4859-8c22-153a720c3140": {
+          "type": "year",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/300_x_354_px___01_79f9bf17-0183-4c13-9d1a-8ccfd020e22d.jpg",
+            "title": "2015",
+            "launched-product": "",
+            "product-image": "shopify:\/\/shop_images\/pink_salt_1955_x_440_0a8afe27-f7e6-4b6c-b9df-677b91fbc940.jpg",
+            "product-image-mobile": "shopify:\/\/shop_images\/Pink-salt-_430-x-238-px.jpg",
+            "heading-color": "#ffffff",
+            "description-color": "#000000",
+            "button-color": "#000000"
+          }
+        },
+        "16305577334f548741-1": {
+          "type": "year",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/300_x_354_px___02.jpg",
+            "title": "2016",
+            "launched-product": "acana-adult-small-breed-dry-dog-food",
+            "product-image": "shopify:\/\/shop_images\/lakadong_1955_x_440.jpg",
+            "product-image-mobile": "shopify:\/\/shop_images\/Lakadonga_Turmeric_430px_238px_Mobaile_Size.png",
+            "heading-color": "#ffffff",
+            "description-color": "#ffffff",
+            "button-color": "#f58634"
+          }
+        },
+        "16305577334f548741-0": {
+          "type": "year",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/300_x_354_px___03.jpg",
+            "title": "2017",
+            "launched-product": "acana-free-run-duck-dry-dog-food",
+            "product-image": "shopify:\/\/shop_images\/Honey_1955_x_440.jpg",
+            "product-image-mobile": "shopify:\/\/shop_images\/honey-mobile-size-_430-x-238-pixels.jpg",
+            "heading-color": "#ffffff",
+            "description-color": "#ffffff",
+            "button-color": "#f58634"
+          }
+        },
+        "16305577334f548741-2": {
+          "type": "year",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/300_x_354_px___04.jpg",
+            "title": "2018",
+            "launched-product": "aelous-super-dry-absorption-towels-for-pets-assorted-colours",
+            "product-image": "shopify:\/\/shop_images\/Seeds_1955_x_440.jpg",
+            "product-image-mobile": "shopify:\/\/shop_images\/Seeds_430px_238px_Mobaile_Size.jpg",
+            "heading-color": "#ffffff",
+            "description-color": "#000000",
+            "button-color": "#000000"
+          }
+        },
+        "32cfbf6e-af4a-47d1-9131-1664f2c81b92": {
+          "type": "year",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/300_x_354_px___05.jpg",
+            "title": "2019",
+            "launched-product": "",
+            "product-image": "shopify:\/\/shop_images\/berries_1.jpg",
+            "product-image-mobile": "shopify:\/\/shop_images\/coconut-mobile-430-x-238_883fa45b-ef58-4562-9719-e3fb3f80195f.jpg",
+            "heading-color": "#ffffff",
+            "description-color": "#000000",
+            "button-color": "#000000"
+          }
+        },
+        "bca19d82-9764-41ac-a1e1-ca149420262e": {
+          "type": "year",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/300_x_354_px___06.jpg",
+            "title": "2020",
+            "launched-product": "andis-large-pin-brush-lime-green",
+            "product-image": "shopify:\/\/shop_images\/Canadian-Cranberries-1995-x-440.jpg",
+            "product-image-mobile": "shopify:\/\/shop_images\/Canadian-Cranberries-430-x-238_eb117648-1b0e-458c-aa4e-1344831f3488.jpg",
+            "heading-color": "#ffffff",
+            "description-color": "#000000",
+            "button-color": "#000000"
+          }
+        },
+        "dd193b74-5613-47ef-b1ff-59edd26c5527": {
+          "type": "year",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/300_x_354_px___07.jpg",
+            "title": "2021",
+            "launched-product": "acana-free-run-duck-dry-dog-food",
+            "product-image": "shopify:\/\/shop_images\/Moringa_1955_x_440.jpg",
+            "product-image-mobile": "shopify:\/\/shop_images\/moringa-mobile-size-430-x-238_056f47ce-926c-4a02-9580-195204fe69d2.jpg",
+            "heading-color": "#ffffff",
+            "description-color": "#000000",
+            "button-color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "6257f23f-71b7-4859-8c22-153a720c3140",
+        "16305577334f548741-1",
+        "16305577334f548741-0",
+        "16305577334f548741-2",
+        "32cfbf6e-af4a-47d1-9131-1664f2c81b92",
+        "bca19d82-9764-41ac-a1e1-ca149420262e",
+        "dd193b74-5613-47ef-b1ff-59edd26c5527"
+      ],
+      "settings": {
+      }
+    },
+    "16300441400f67cd94": {
+      "type": "background-with-images",
+      "blocks": {
+        "8235c2a9-14db-469e-bae0-5981d02a0874": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/What_make_us_different_icon_x_02.png",
+            "title": "<h3>FAST &amp; EASY<\/h3>",
+            "description": "<p>Get superfood delivered within 3-5 days.<\/p>"
+          }
+        },
+        "fe05499a-d62d-48fa-8a4b-a5fc2cb09057": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/What_make_us_different_icon_x_03.png",
+            "title": "<h3>SOURCING &amp; PROCESSING<\/h3>",
+            "description": "<p>High quality ingredients sourced from across the globe<\/p>"
+          }
+        },
+        "4822afcf-b5a0-4844-b8ec-a7ce53680a72": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/What_make_us_different_icon_x_01.png",
+            "title": "<h3>PACKAGING<\/h3>",
+            "description": "<p>Packed in sturdy, reliable bags<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "8235c2a9-14db-469e-bae0-5981d02a0874",
+        "fe05499a-d62d-48fa-8a4b-a5fc2cb09057",
+        "4822afcf-b5a0-4844-b8ec-a7ce53680a72"
+      ],
+      "settings": {
+        "background-image": "shopify:\/\/shop_images\/banner2.jpg",
+        "heading": "WHAT MAKE US DIFFERENT"
+      }
+    },
+    "1630071793752a4d2d": {
+      "type": "safety-measures",
+      "blocks": {
+        "bf197dc1-363a-4046-ad83-db5b4c96fdb7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1s.png",
+            "title": "<h3>Wash Hand<\/h3>",
+            "description": ""
+          }
+        },
+        "0b40a6de-c581-450a-847e-1e85effc054c": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Safety_Measures_x_2.png",
+            "title": "<h3>Use Soap<\/h3>",
+            "description": ""
+          }
+        },
+        "4920033d-cf38-4ada-b2d5-24cdeb042e1f": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Safety_Measures_x_3.png",
+            "title": "<h3>Avoid Crowd<\/h3>",
+            "description": ""
+          }
+        },
+        "e7facd18-0a33-4129-9f19-ea20ac062ee0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Safety_Measures_x_4.png",
+            "title": "<h3>Wear Mask<\/h3>",
+            "description": ""
+          }
+        },
+        "4998514a-7991-4a40-bfc1-4ca522442d1d": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Safety_Measures_x_6.png",
+            "title": "<h3>Avoid Shakehand<\/h3>",
+            "description": ""
+          }
+        },
+        "36d1d7b8-ca30-4715-8b81-a85f883ca2e3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/6s.png",
+            "title": "<h3>Use Disinfection<\/h3>",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "bf197dc1-363a-4046-ad83-db5b4c96fdb7",
+        "0b40a6de-c581-450a-847e-1e85effc054c",
+        "4920033d-cf38-4ada-b2d5-24cdeb042e1f",
+        "e7facd18-0a33-4129-9f19-ea20ac062ee0",
+        "4998514a-7991-4a40-bfc1-4ca522442d1d",
+        "36d1d7b8-ca30-4715-8b81-a85f883ca2e3"
+      ],
+      "settings": {
+        "background-color": "#f3f3f3",
+        "heading": "SAFETY MEASURES AT UMANAC"
+      }
+    },
+    "1630047374cc6bf00e": {
+      "type": "image-with-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Collection_Grid_1__916_x_445_pixels_1.jpg",
+        "image-right": "shopify:\/\/shop_images\/Collection_Grid_2__916_x_445_pixels_1.jpg",
+        "height": "adapt",
+        "color_scheme": "background-1",
+        "layout": "image_first",
+        "text-left": "<p>Loaded with<br> High - Quality<br> Protein<\/p>",
+        "text-right": "<p>Natural source<br> of Fiber!<\/p>",
+        "button-left": "Shop Now",
+        "url_button1": "",
+        "button-right": "Shop Now",
+        "url_button2": "",
+        "button-right-color": "#7c2e17",
+        "button-left-color": "#af3f34",
+        "text-left-color": "#524137",
+        "text-right-color": "#010206"
+      }
+    },
+    "163419087404bfcfc3": {
+      "type": "image-with-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Collection_Grid_3__916_x_445_pixels_2.jpg",
+        "image-right": "shopify:\/\/shop_images\/Collection_Grid_4__916_x_445_pixels_1_f7d0cb44-7d27-4596-b7a6-bdb00107ef7c.jpg",
+        "height": "adapt",
+        "color_scheme": "background-1",
+        "layout": "image_first",
+        "text-left": "<p>Loaded with<br> High - Quality<br> Protein<\/p>",
+        "text-right": "<p>Natural source<br> of Fiber!<\/p>",
+        "button-left": "Shop Now",
+        "url_button1": "",
+        "button-right": "Shop Now",
+        "url_button2": "",
+        "button-right-color": "#f9b97c",
+        "button-left-color": "#040000",
+        "text-left-color": "#ffffff",
+        "text-right-color": "#ffffff"
+      }
+    },
+    "16306511387b5fa446": {
+      "type": "best-seller",
+      "blocks": {
+        "038637c4-6302-4fa7-96ed-f70802799030": {
+          "type": "collection",
+          "settings": {
+            "title": "",
+            "collection": "acv"
+          }
+        },
+        "ad8b92e6-ac77-4bc2-b57c-277284eff1ce": {
+          "type": "collection",
+          "settings": {
+            "title": "",
+            "collection": "ghee"
+          }
+        },
+        "2a48b96a-4a31-42f0-ae17-389b9090928c": {
+          "type": "collection",
+          "settings": {
+            "title": "",
+            "collection": "moringa"
+          }
+        },
+        "dcc98a3f-23bf-40d9-8ebd-7cef0b1a2fb5": {
+          "type": "collection",
+          "settings": {
+            "title": "",
+            "collection": "oil"
+          }
+        },
+        "24cccf23-3025-4b47-83d4-7ca2d30d63a9": {
+          "type": "collection",
+          "settings": {
+            "title": "",
+            "collection": "pink-salt"
+          }
+        },
+        "2fa76388-52fd-417c-b6e2-48fb46818607": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "collection": "turmeric"
+          }
+        },
+        "2bf5f744-6454-4753-9645-ac8235cae56b": {
+          "type": "collection",
+          "settings": {
+            "title": "Gourmet",
+            "collection": "acv"
+          }
+        },
+        "e0dc8491-7fae-4600-bb5b-aebcbf940382": {
+          "type": "collection",
+          "settings": {
+            "title": "Fashion",
+            "collection": "acv"
+          }
+        }
+      },
+      "block_order": [
+        "038637c4-6302-4fa7-96ed-f70802799030",
+        "ad8b92e6-ac77-4bc2-b57c-277284eff1ce",
+        "2a48b96a-4a31-42f0-ae17-389b9090928c",
+        "dcc98a3f-23bf-40d9-8ebd-7cef0b1a2fb5",
+        "24cccf23-3025-4b47-83d4-7ca2d30d63a9",
+        "2fa76388-52fd-417c-b6e2-48fb46818607",
+        "2bf5f744-6454-4753-9645-ac8235cae56b",
+        "e0dc8491-7fae-4600-bb5b-aebcbf940382"
+      ],
+      "settings": {
+        "section-heading": "Our Best Sellers"
+      }
+    },
+    "1630133642e6b919cc": {
+      "type": "banner-with-text",
+      "blocks": {
+        "1630133642e6b919cc-2": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Shop Now",
+            "button_link_1": "shopify:\/\/pages\/make-own-box",
+            "button_style_secondary_1": true
+          }
+        }
+      },
+      "block_order": [
+        "1630133642e6b919cc-2"
+      ],
+      "settings": {
+        "background-image": "shopify:\/\/shop_images\/make_own_box.jpg",
+        "mobile-background-image": "shopify:\/\/shop_images\/Untitled-4.jpg",
+        "banner-link": "shopify:\/\/pages\/make-own-box",
+        "heading": ""
+      }
+    },
+    "1630155100e70d79d8": {
+      "type": "section-grid-home",
+      "blocks": {
+        "1630155100e70d79d8-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/aa.png",
+            "title": "HEALTH TIPS",
+            "text": "",
+            "background-color": "#667319",
+            "text-color": "#ffffff",
+            "button-text-color": "#f6ca67",
+            "button-text": "Explore More",
+            "button-url": "",
+            "border-color": "#f6ca67"
+          }
+        },
+        "1630155100e70d79d8-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/b.png",
+            "title": "BEAUTY TIPS",
+            "text": "",
+            "background-color": "#ebeef5",
+            "text-color": "#2f2e33",
+            "button-text-color": "#878785",
+            "button-text": "Explore More",
+            "button-url": "",
+            "border-color": "#878785"
+          }
+        },
+        "1630155100e70d79d8-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/c.png",
+            "title": "RECIPE TIPS",
+            "text": "",
+            "background-color": "#d8bdb6",
+            "text-color": "#972100",
+            "button-text-color": "#38363b",
+            "button-text": "Explore More",
+            "button-url": "",
+            "border-color": "#38363b"
+          }
+        },
+        "b3db8ec8-dac1-428d-ba0a-8b1da774aa06": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Untitled-1_f67ca894-ffea-4828-bf01-e48e134111da.png",
+            "title": "DIY",
+            "text": "",
+            "background-color": "#f0c0cc",
+            "text-color": "#070707",
+            "button-text-color": "#070707",
+            "button-text": "Explore More",
+            "button-url": "#",
+            "border-color": ""
+          }
+        }
+      },
+      "block_order": [
+        "1630155100e70d79d8-0",
+        "1630155100e70d79d8-1",
+        "1630155100e70d79d8-2",
+        "b3db8ec8-dac1-428d-ba0a-8b1da774aa06"
+      ],
+      "settings": {
+        "title": "",
+        "image_width": "half",
+        "image_ratio": "square",
+        "column_alignment": "center",
+        "background_style": "secondary",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false
+      }
+    },
+    "16379911975f7e3d29": {
+      "type": "banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Home_Page1_3db6ee68-04f6-471f-acc4-a6599d099712.jpg",
+        "desktop_text_box_position": "flex-start",
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "adapt_height_first_image": true
+      }
+    },
+    "163756932415dd61ec": {
+      "type": "parallex-product",
+      "settings": {
+        "bg_1": "shopify:\/\/shop_images\/Coconut_oil_banner_1__base_layer_1.jpg",
+        "bg_2": "shopify:\/\/shop_images\/Coconut_oil_banner_2___Mid_layer_1.png",
+        "product-url": "shopify:\/\/products\/acana-light-and-fit-dry-dog-food",
+        "product-title": "Oraganic Coconut Oil",
+        "pre-heading": "Organic Virgin",
+        "product-description": "organic virgin coconut oil",
+        "font-color": "#ffffff"
+      }
+    },
+    "163004502857e20478": {
+      "type": "testomonials",
+      "blocks": {
+        "163004502857e20478-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/images.png",
+            "review": 3,
+            "title": "Column",
+            "designation": "Profile",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.Pair text with an image to focus on your chosen product, collection, or blog post. Add details on <\/p>"
+          }
+        },
+        "163004502857e20478-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/images.png",
+            "review": 3,
+            "title": "Column",
+            "designation": "Profile",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "163004502857e20478-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/images.png",
+            "review": 4,
+            "title": "Column",
+            "designation": "Profile",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "ffe76d29-b54f-4351-af43-fefc6c079f7d": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/images.png",
+            "review": 5,
+            "title": "Column",
+            "designation": "Profile",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "c0037366-8024-421e-a325-05613c1a46bd": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/images.png",
+            "review": 3,
+            "title": "Column",
+            "designation": "Profile",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "0468e717-9c2a-4cf8-a8b4-aa4e525def3c": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/images.png",
+            "review": 3,
+            "title": "Column",
+            "designation": "Profile",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "9cc10e08-38c9-46e2-85ad-044854a9a7e1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/images.png",
+            "review": 3,
+            "title": "Column",
+            "designation": "Profile",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "120214c8-86b4-4a74-afda-ef0c83fbefa2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/images.png",
+            "review": 3,
+            "title": "Column",
+            "designation": "Profile",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "163004502857e20478-0",
+        "163004502857e20478-1",
+        "163004502857e20478-2",
+        "ffe76d29-b54f-4351-af43-fefc6c079f7d",
+        "c0037366-8024-421e-a325-05613c1a46bd",
+        "0468e717-9c2a-4cf8-a8b4-aa4e525def3c",
+        "9cc10e08-38c9-46e2-85ad-044854a9a7e1",
+        "120214c8-86b4-4a74-afda-ef0c83fbefa2"
+      ],
+      "settings": {
+        "shadow-effect": true,
+        "background-image": "shopify:\/\/shop_images\/8.jpg",
+        "background-image-top": "shopify:\/\/shop_images\/Home_Page1_3db6ee68-04f6-471f-acc4-a6599d099712.jpg",
+        "title": "WHY DO PEOPLE LOVE US?",
+        "image_width": "half",
+        "image_ratio": "circle",
+        "column_alignment": "left",
+        "background_style": "secondary",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false
+      }
+    },
+    "163046513230d6c091": {
+      "type": "icon-set",
+      "settings": {
+        "footer_new_enable": true,
+        "img_cat": "shopify:\/\/shop_images\/icon-1.png",
+        "img_cat_svg": "",
+        "img-txt": "Free Shipping",
+        "img-linktext": "Order Rs 799 or more",
+        "img_cat1": "shopify:\/\/shop_images\/icon-2.png",
+        "img_cat1_svg": "",
+        "img-txt1": "Free Returns",
+        "img-linktext1": "witin7 days(T&Cs Apply)",
+        "img_cat2": "shopify:\/\/shop_images\/icon-3.png",
+        "img_cat2_svg": "",
+        "img-txt2": "Upto 50% Off",
+        "img-linktext2": "On Pet Products",
+        "img_cat3": "shopify:\/\/shop_images\/icon-4.png",
+        "img_cat3_svg": "",
+        "img-txt3": "We Support",
+        "img-linktext3": "7days, 9am to 9pm"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1636958667600d5d10",
+    "1630041953ce8ee818",
+    "163017222359fc16f2",
+    "1640759556f9b68464",
+    "16300432373f322551",
+    "1630493245926e8dc9",
+    "1630397519047103ef",
+    "16305577334f548741",
+    "16300441400f67cd94",
+    "1630071793752a4d2d",
+    "1630047374cc6bf00e",
+    "163419087404bfcfc3",
+    "16306511387b5fa446",
+    "1630133642e6b919cc",
+    "1630155100e70d79d8",
+    "16379911975f7e3d29",
+    "163756932415dd61ec",
+    "163004502857e20478",
+    "163046513230d6c091"
+  ]
+}
