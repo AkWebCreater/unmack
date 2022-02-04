@@ -1,0 +1,38 @@
+<div class="decription-main margin_description">
+  <div class="decription-image">
+    <div class="decription-image-item">
+      {%- if collection.metafields.my_fields.custom_icon_1 != blank -%}
+      <div class="image">
+        <img alt="img1" src="{{collection.metafields.my_fields.custom_icon_1 | img_url:'80x'}}">
+      </div>
+      {%- endif -%}
+      {%- unless collection.metafields.my_fields.custom_icon_text_1 == blank -%}
+      <div class="image-text">{{collection.metafields.my_fields.custom_icon_text_1}}</div>
+      {%- endunless -%}        
+    </div>
+    <div class="decription-image-item">
+      {%- unless collection.metafields.my_fields.custom_icon_2 == blank -%}  
+      <div class="image"><img alt="img2" src="{{collection.metafields.my_fields.custom_icon_2 | img_url:'80x'}}"></div>
+      {%- endunless -%}
+      {%- unless collection.metafields.my_fields.custom_icon_text_2 == blank -%}
+      <div class="image-text">{{collection.metafields.my_fields.custom_icon_text_2}}</div>
+      {%- endunless -%}
+    </div>
+    <div class="decription-image-item">
+      {%- unless collection.metafields.my_fields.custom_icon_3 == blank -%}  
+      <div class="image"><img alt="img3" src="{{collection.metafields.my_fields.custom_icon_3 | img_url:'80x'}}"></div>
+      {%- endunless -%}
+      {%- unless collection.metafields.my_fields.custom_icon_text_3 == blank -%} 
+      <div class="image-text">{{collection.metafields.my_fields.custom_icon_text_3}}</div>
+      {%- endunless -%}
+    </div>
+    <div class="decription-image-item">
+      {%- unless collection.metafields.my_fields.custom_icon_4 == blank-%}
+      <div class="image"><img alt="img4" src="{{collection.metafields.my_fields.custom_icon_4 | img_url:'80x'}}"></div>
+      {%- endunless -%}
+      {%- unless collection.metafields.my_fields.custom_icon_text_4 == blank-%}
+      <div class="image-text">{{collection.metafields.my_fields.custom_icon_text_4 }}</div>
+      {%- endunless -%}
+    </div>
+  </div>
+</div>
