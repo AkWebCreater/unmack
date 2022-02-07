@@ -124,4 +124,20 @@
   .product_description-grid .grid_item-info{
     width: calc( 20% - 15px);
   }
+  @media(max-width: 767px){
+    .description_metafield-section{
+      flex-direction: column;
+    }
+    .description_metafield-section .content_section{
+      width: 100%;
+    }
+    .description_metafield-section .left_content-product{
+      padding-right: 0;
+      order: 2;
+    }
+    .left_image-product.content_section{
+      padding-right: 0;
+      order: 1;
+    }
+  }
 </style>
