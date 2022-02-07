@@ -274,20 +274,15 @@ color: #f58634;
 
 .footer-block__newsletter .newsletter-form__button.button {
   width: fit-content;
-      border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  margin-top: 0;
 }
 
 @media screen and (min-width: 750px) {
   .footer-block__newsletter:not(:only-child) {
     text-align: left;
   }
-
-  .footer-block__newsletter .newsletter-form__button.button {
-    margin-top: 0;
-/*     margin-left: 1.4rem; */
-  }
-
   .footer-block__newsletter:not(:only-child) .footer__newsletter {
     justify-content: flex-start;
     margin: 0;
