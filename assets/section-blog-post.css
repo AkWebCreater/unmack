@@ -286,7 +286,7 @@ margin: auto !important;
   background-color: #fff;
   box-shadow: 1px 1px 8px 0px rgba(0,0,0,0.75);
   -webkit-box-shadow: 1px 1px 8px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 1px 1px 8px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 1px 1px 3px 0px rgb(0 0 0 / 75%)
 padding:10px 8px;
 }
 
