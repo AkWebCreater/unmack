@@ -2593,6 +2593,6 @@ div.wishlist .ssw-faveiticon{
     margin: 0 0.1rem 0.1rem 0;
     text-decoration: none;
   }
-  .article-header-card.article-template__title{
+  .article-header-card .article-template__title{
     font-size: 3rem !important;
 }
