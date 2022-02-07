@@ -637,10 +637,10 @@ $('.header__menu-item').click(function(e) {
   }
   
   $('.header__submenu .product-popup-menu').on('mouseenter', function(){
-    $(this).parent('.product_available').addClass('menu-active');
+    $(this).parent().find('.product_available').addClass('menu-active');
   });
   $('.header__submenu .product-popup-menu').on('mouseleave', function(){
-    $(this).parent('.product_available').removeClass('menu-active');
+    $(this).parent().find('.product_available').removeClass('menu-active');
   });
   
 // ends here
