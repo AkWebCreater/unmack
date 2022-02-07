@@ -636,6 +636,13 @@ $('.header__menu-item').click(function(e) {
     $('html, body').animate({scrollTop: $('#shopify-section-template--14951749845192__1630397519047103ef').offset().top - 90}, 1000);
   }
   
+  $('.header__submenu .product-popup-menu').on('mouseenter', function(){
+    $(this).parent('.product_available').addClass('menu-active');
+  });
+  $('.header__submenu .product-popup-menu').on('mouseleave', function(){
+    $(this).parent('.product_available').removeClass('menu-active');
+  });
+  
 // ends here
   // best seller section slider
 
