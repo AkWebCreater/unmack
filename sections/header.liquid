@@ -125,11 +125,12 @@ border: 2.5px solid var(--color-background);
   .navigation nav >ul > li ul li{
     text-transform: capitalize !important;
   }
-  .navigation .header__submenu .list-menu__item:hover{
+  .navigation .header__submenu .list-menu__item:hover, .navigation .header__submenu .list-menu__item.menu-active{
     background-color: var(--color-background);
       color: #fff;
       }
-  .navigation .header__submenu .product_available:hover:before{
+  .navigation .header__submenu .product_available:hover:before,
+  .navigation .header__submenu .list-menu__item.menu-active:before{
     content: '';
     position: absolute;
     right: -16px;
