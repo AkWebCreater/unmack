@@ -1239,5 +1239,5 @@ dd.price {
 }
 
 .product-form__buttons .product-form__submit{
-width: 170px;
+width: 170px !important;
 }
