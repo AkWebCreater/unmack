@@ -401,7 +401,7 @@ a.product__text {
 }
 
 .product__modal-opener--image .product__media-toggle:hover {
-  cursor: zoom-in;
+/*   cursor: zoom-in; */
 }
 
 .product__modal-opener:hover .product__media-icon {
