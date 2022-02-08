@@ -430,8 +430,8 @@ a.product__text {
   position: relative;
 }
 
-/* .product__media-toggle {
-  background-color: transparent;
+.product__media-toggle {
+/*   background-color: transparent;
   border: none;
   cursor: pointer;
   display: block;
@@ -442,8 +442,9 @@ a.product__text {
   left: 0;
   z-index: 2;
   height: 100%;
-  width: 100%;
-} */
+  width: 100%; */
+  display: none;
+}
 
 .product-media-modal {
   background-color: var(--color-base-background-1);
