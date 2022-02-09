@@ -1237,3 +1237,7 @@ dd.price {
   display: flex;
   justify-content: space-around;
 }
+
+.product-form__buttons .product-form__submit{
+  padding: 0px;
+}
