@@ -1096,7 +1096,3 @@ thead::after{
   display: flex;
   align-items: center;
 }
-
-.cls-4 {
-    clip-path: none !important;
-}
