@@ -731,7 +731,7 @@ addToCart(1,varId,function(){
 })
 // combo popup on cart Add to cart Button End Here
   // background added to fix nav on scroll
-  $('.body--register .header-wrapper,.body--search .header-wrapper,.about-us .header-wrapper').addClass('fix')
+  $('.body--register .header-wrapper,.body--search .header-wrapper,.about-us .header-wrapper').addClass('fix');
   $(window).scroll(function() {
     console.log($(this).scrollTop());
       if ($(this).scrollTop() > 115) {
