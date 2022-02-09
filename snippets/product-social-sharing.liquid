@@ -1,0 +1,42 @@
+<div class="share page-width">
+                {% if section.settings.share %}
+                <div class="share-tittle">
+                  {{ section.settings.share}}
+                </div>
+                {% endif %}
+                {% if section.settings.facebook %}
+                <div class="facebook">
+                  <a href="{{ section.settings.facebook_link }}" target="_blank">
+                  {{ section.settings.facebook }}
+                  </a>
+                </div>
+                {% endif %}
+                {% if section.settings.instagram %}
+                <div class="instagram">
+                  <a href="{{ section.settings.instagram_link }}" target="_blank">
+                	{{ section.settings.instagram }}
+                  </a>
+                </div>
+                {% endif %}
+                {% if section.settings.pineterest %}
+                <div class="pineterest">
+                  <a href="{{ section.settings.pineterest_link }}" target="_blank">
+                  {{ section.settings.pineterest }}
+                  </a>
+                </div>
+                {% endif %}
+                {% if section.settings.twitter %}
+                <div class="twitter">
+                  <a href="{{ section.settings.twitter_link }}" target="_blank">
+                	{{ section.settings.twitter }}
+                  </a>
+                </div>
+                {% endif %}
+                {% if section.settings.other-svg-icon %}
+                <div class="other">
+                  <a href="{{ section.settings.other-svg-icon_link }}" target="_blank">
+                  {{ section.settings.other-svg-icon }}
+                  </a>
+                </div>
+                {% endif %}
+              </div>
