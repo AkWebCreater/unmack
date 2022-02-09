@@ -1096,3 +1096,7 @@ thead::after{
   display: flex;
   align-items: center;
 }
+
+.image-text svg{
+height: 135px;
+}
