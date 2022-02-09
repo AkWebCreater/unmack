@@ -28,13 +28,14 @@
     top: 3rem;
     z-index: 2;
   }
-
   .product__info-wrapper {
     padding-left: 5rem;
   }
-
   .product__media-container .slider-buttons {
     display: none;
+  }
+  .product__media-wrapper .slider-nav .slick-track{
+    transform: translate3d(0, 0, 0) !important;
   }
 }
 
