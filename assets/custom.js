@@ -733,15 +733,13 @@ addToCart(1,varId,function(){
   // background added to fix nav on scroll
   $('.body--register .header-wrapper,.body--search .header-wrapper,.about-us .header-wrapper').addClass('fix')
   $(window).scroll(function() {
+    console.log($(this).scrollTop());
       if ($(this).scrollTop() > 115) {
           $(".navigation").addClass("bg");
-     
-
       } else {
           $(".navigation").removeClass("bg");
-  
       }
-  })
+  });
   // product megamenu toggle
   $('.list-menu__item').hover(function() {
 
