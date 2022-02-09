@@ -6,7 +6,7 @@
                 {% endif %}
                 {% if section.settings.facebook %}
                 <div class="facebook">
-                  <a href="{{ section.settings.facebook_link }}" target="_blank">
+                  <a target="_blank" href="//www.facebook.com/sharer.php?u={{ shop.url | append: share_permalink }}">
                   {{ section.settings.facebook }}
                   </a>
                 </div>
@@ -20,14 +20,14 @@
                 {% endif %}
                 {% if section.settings.pineterest %}
                 <div class="pineterest">
-                  <a href="{{ section.settings.pineterest_link }}" target="_blank">
+                  <a target="_blank" href="//pinterest.com/pin/create/button/?url={{ shop.url | append: share_permalink }}&amp;media={{ share_image | img_url: '1024x1024' }}&amp;description={{ share_title | url_param_escape }}">
                   {{ section.settings.pineterest }}
                   </a>
                 </div>
                 {% endif %}
                 {% if section.settings.twitter %}
                 <div class="twitter">
-                  <a href="{{ section.settings.twitter_link }}" target="_blank">
+                  <a target="_blank" href="//twitter.com/share?text={{ share_title | url_param_escape }}&amp;url={{ shop.url | append: share_permalink }}">
                 	{{ section.settings.twitter }}
                   </a>
                 </div>
