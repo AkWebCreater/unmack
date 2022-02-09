@@ -13,7 +13,7 @@
                 {% endif %}
                 {% if section.settings.instagram %}
                 <div class="instagram">
-                  <a href="{{ section.settings.instagram_link }}" target="_blank">
+                  <a href="https://www.instagram.com/?text={{ share_title | url_param_escape }}&url={{ shop.url | append: share_permalink }}" target="_blank">
                 	{{ section.settings.instagram }}
                   </a>
                 </div>
