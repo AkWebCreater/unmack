@@ -2599,3 +2599,6 @@ div.wishlist .ssw-faveiticon{
     font-size: 3rem !important;
 }
   
+  ..cls-4{
+  clip-path: none;
+  }
