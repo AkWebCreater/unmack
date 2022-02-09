@@ -732,14 +732,6 @@ addToCart(1,varId,function(){
 // combo popup on cart Add to cart Button End Here
   // background added to fix nav on scroll
   $('.body--register .header-wrapper,.body--search .header-wrapper,.about-us .header-wrapper').addClass('fix');
-  $(window).scroll(function() {
-    console.log('hi');
-      if ($(this).scrollTop() > 115) {
-          $(".navigation").addClass("bg");
-      } else {
-          $(".navigation").removeClass("bg");
-      }
-  });
   // product megamenu toggle
   $('.list-menu__item').hover(function() {
 
@@ -887,15 +879,21 @@ if($('.body--collection.deal-of-day ').length){
 // Video popup section on home page 
 
 $(document).ready(function() {    
-        $(".collage-card__image").click(function() {
-          
-//            $('.navigation').css("display", "none");
-          $('.navigation').addClass("custom-hd");
-    });
-  $('.collage-video__modal-toggle').click(function(){
-   $('.navigation').removeClass("custom-hd");
+  $(".collage-card__image").click(function() {
+    $('.navigation').addClass("custom-hd");
   });
-      });
+  $('.collage-video__modal-toggle').click(function(){
+    $('.navigation').removeClass("custom-hd");
+  });
+  $(window).scroll(function() {
+    console.log('hi');
+    if ($(this).scrollTop() > 115) {
+      $(".navigation").addClass("bg");
+    } else {
+      $(".navigation").removeClass("bg");
+    }
+  });
+});
 
 var bunnyVideo = document.getElementById("videoid");
 function playPause() { 
@@ -909,5 +907,7 @@ function playPause() {
 	}
      
 } 
+
+
 
  
