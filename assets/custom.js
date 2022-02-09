@@ -886,7 +886,7 @@ $(document).ready(function() {
     $('.navigation').removeClass("custom-hd");
   });
   $(window).scroll(function() {
-    console.log('hi');
+    console.log($(this).scrollTop());
     if ($(this).scrollTop() > 115) {
       $(".navigation").addClass("bg");
     } else {
