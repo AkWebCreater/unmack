@@ -2600,5 +2600,5 @@ div.wishlist .ssw-faveiticon{
 }
   
   .cls-4{
-  clip-path: none;
+  clip-path: none !important;
   }
