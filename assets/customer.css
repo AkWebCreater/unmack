@@ -1096,3 +1096,8 @@ thead::after{
   display: flex;
   align-items: center;
 }
+
+.reset_pass{
+      margin-top: 138px;
+
+}
