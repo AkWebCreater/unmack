@@ -15,10 +15,10 @@
 <!-- product-card.liquid -->
 <div class="card-wrapper">
   
-  <!-- {% capture the_snippet_fave_icon %}{% render 'ssw-widget-faveicon' with product_card_product.id %}{% endcapture %}
+  {% capture the_snippet_fave_icon %}{% render 'ssw-widget-faveicon' with product_card_product.id %}{% endcapture %}
   {% unless the_snippet_fave_icon contains 'Liquid error' %}
   {{ the_snippet_fave_icon }}
-  {% endunless %}     -->
+  {% endunless %}    
   
   <a href="{{ product_card_product.url | default: '#' }}" class="full-unstyled-link">
     <span class="visually-hidden">{{ product_card_product.title | escape }}</span>
@@ -102,10 +102,10 @@
           </span>
         {%- endif -%}
        
-        <!-- {% capture the_snippet_review_avg %}{% render 'ssw-widget-avg-rate-listing', product: product %}{% endcapture %}
+        {% capture the_snippet_review_avg %}{% render 'ssw-widget-avg-rate-listing', product: product %}{% endcapture %}
         {% unless the_snippet_review_avg contains 'Liquid error' %}
         {{ the_snippet_review_avg }}
-        {% endunless %}   -->  
+        {% endunless %}    
 
         {% comment %} TODO: metafield {% endcomment %}
         <span class="caption-large light">{{ block.settings.description | escape }}</span>
