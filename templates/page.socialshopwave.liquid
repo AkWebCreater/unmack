@@ -1,3 +1,9 @@
+{% comment %}
+/**************************************************
+* DO NOT MODIFY THIS FILE!!!                      *
+* IT WILL BE OVERWRITTEN BY UPDATES FROM GROWAVE! *
+**************************************************/
+{% endcomment %}
 {% if page.handle == 'collections' %}
   <div id="ssw-page" class="ssw-page ssw-clearfix gw-container">
     {% render 'ssw-widget-listing' %}
@@ -70,6 +76,11 @@
               data += '&resource_id=' + sswCookie('mail_id') + '&resource_type=mail';
             }
             sswUserChecked(function () {
+              if (path_name.substr(ssw_index) == 'reviews') {
+                  /* Define TimeZone offset */
+                  const customer_timezone_offset = -1 * new Date().getTimezoneOffset() * 60;
+                  data += '&customer_timezone_offset=' + customer_timezone_offset;
+              }
               data += '&hash_key=' + sswCookie('hash_key');
               ssw.post(ssw_request_url, data, 'html').done(function (response) {
                 ssw('#ssw-page').css('opacity', 0);
