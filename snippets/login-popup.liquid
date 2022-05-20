@@ -367,11 +367,12 @@
               </div>
               <span class="or-border">or</span>
               <div class="social-links-container">
-                
+                if (typeof sswRun === 'function')
                 {% capture the_snippet_social_login %}{% render 'ssw-widget-social-login' %}{% endcapture %}
                 {% unless the_snippet_social_login contains 'Liquid error' %}
                 {{ the_snippet_social_login }}
                 {% endunless %}
+                
                 
               </div>
            <span class="accept-term already-account">Already Have an Account <span class="login-link">Log in</span></span>
