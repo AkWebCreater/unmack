@@ -1,7 +1,7 @@
 {
   "current": {
     "login-popup-banner": "shopify:\/\/shop_images\/all-policy_imsge.png",
-    "pincode_validator_accent": "#f58634",
+    "pincode_validator_accent": "#9b5e30",
     "no_delevery_massage": "Currently we are not delivering at your location.<br> Please modify the PIN code",
     "invalid_pincode_massage": "Please Enter Valid Pincode",
     "pincode_button_text": "Submit",
